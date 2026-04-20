@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitBook Reviews – Vambe</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace; }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useCallback, useMemo } = React;
+
+const REPO    = 'Jorgeprieto30/vambe-gitbook-docs';
+const DATA_URL = `https://raw.githubusercontent.com/${REPO}/main/pending-reviews.json`;
+const WEBHOOK = 'https://n8n.vambe.me/webhook/gitbook-approve';
+
+// ── Diff Engine ───────────────────────────────────────────────────────────────
+function buildLCS(a, b) {
+  const m = a.length, n = b.length;
+  const dp = Array.from({ length: m + 1 }, () => new Int32Array(n + 1));
+  for (let i = m - 1; i >= 0; i--)
+    for (let j = n - 1; j >= 0; j--)
+      dp[i][j] = a[i] === b[j] ? dp[i+1][j+1] + 1 : Math.max(dp[i+1][j], dp[i][j+1]);
+  const diff = [];
+  let i = 0, j = 0;
+  while (i < m || j < n) {
+    if (i < m && j < n && a[i] === b[j])                               { diff.push({ t:'=', s:a[i] }); i++; j++; }
+    else if (j < n && (i >= m || dp[i+1]?.[j] >= dp[i]?.[j+1]))       { diff.push({ t:'+', s:b[j] }); j++; }
+    else                                                                { diff.push({ t:'-', s:a[i] }); i++; }
+  }
+  return diff;
+}
+function diffLines(oldT, newT) {
+  const a = (oldT||'').split('\n'), b = (newT||'').split('\n');
+  if (a.length > 500 || b.length > 500)
+    return [{ t:'i', s:`Archivo grande (${a.length}→${b.length} líneas). Mostrando primeras 500.` }, ...buildLCS(a.slice(0,500), b.slice(0,500))];
+  return buildLCS(a, b);
+}
+function toHunks(diff, ctx=3) {
+  const ch = diff.map((d,i) => d.t!=='=' && d.t!=='i' ? i : -1).filter(x=>x>=0);
+  if (!ch.length) return [];
+  const ranges = [];
+  let s = Math.max(0,ch[0]-ctx), e = Math.min(diff.length,ch[0]+ctx+1);
+  for (let k=1; k<ch.length; k++) {
+    const ns = Math.max(0,ch[k]-ctx);
+    if (ns<=e) e = Math.min(diff.length,ch[k]+ctx+1);
+    else { ranges.push([s,e]); s=ns; e=Math.min(diff.length,ch[k]+ctx+1); }
+  }
+  ranges.push([s,e]);
+  return ranges;
+}
+
+// ── DiffView ─────────────────────────────────────────────────────────────────
+function DiffView({ oldText, newText }) {
+  const diff  = useMemo(() => diffLines(oldText, newText), [oldText, newText]);
+  const hunks = useMemo(() => toHunks(diff), [diff]);
+  const adds  = diff.filter(d=>d.t==='+').length;
+  const rms   = diff.filter(d=>d.t==='-').length;
+  const info  = diff.find(d=>d.t==='i');
+  if (!adds && !rms) return <p className="text-xs text-gray-400 mt-2 italic">Sin diferencias detectadas.</p>;
+  return (
+    <div className="mt-2">
+      {info && <p className="text-xs text-amber-600 mb-1">⚠️ {info.s}</p>}
+      <p className="text-xs text-gray-400 mb-1.5 mono">
+        <span className="text-emerald-600 font-semibold">+{adds}</span>{' · '}
+        <span className="text-red-500 font-semibold">−{rms}</span>
+      </p>
+      <div className="rounded-lg border border-gray-200 overflow-auto max-h-[400px] text-xs mono bg-white">
+        {hunks.map(([s,e],hi) => (
+          <div key={hi}>
+            {(hi>0||s>0) && <div className="px-3 py-1 bg-gray-50 text-gray-400 text-center border-y border-gray-100 select-none">···</div>}
+            {diff.slice(s,e).map((d,idx) => (
+              <div key={idx} className={`flex gap-2 px-3 py-0.5 leading-5 ${d.t==='+' ? 'bg-emerald-50 text-emerald-900' : d.t==='-' ? 'bg-red-50 text-red-800 line-through opacity-80' : 'bg-white text-gray-500'}`}>
+                <span className="w-3 shrink-0 text-right opacity-40 select-none">{d.t==='+'?'+':d.t==='-'?'−':' '}</span>
+                <span className="break-all whitespace-pre-wrap">{d.s||'\u00a0'}</span>
+              </div>
+            ))}
+            {e<diff.length && <div className="px-3 py-1 bg-gray-50 text-gray-400 text-center border-y border-gray-100 select-none">···</div>}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── ReviewItem ────────────────────────────────────────────────────────────────
+function ReviewItem({ item, onDone }) {
+  const [expanded, setExpanded] = useState(true);
+  const [state, setState] = useState('idle'); // idle | applying | done | error | errMsg
+
+  const handleCheck = async (e) => {
+    if (state !== 'idle') { e.preventDefault(); return; }
+    setState('applying');
+    try {
+      const res = await fetch(WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: item }),
+      });
+      if (!res.ok) throw new Error(`Webhook respondió ${res.status}`);
+      setState('done');
+      setTimeout(() => onDone(item.id), 1500);
+    } catch (err) {
+      setState('error');
+    }
+  };
+
+  const badge = item.tipo === 'actualizar'
+    ? 'bg-blue-100 text-blue-700 border border-blue-200'
+    : 'bg-emerald-100 text-emerald-700 border border-emerald-200';
+
+  return (
+    <div className={`bg-white rounded-xl border shadow-sm mb-3 transition-all duration-300
+      ${state==='done' ? 'opacity-40 scale-[0.98]' : ''}
+      ${state==='applying' ? 'border-l-4 border-l-indigo-400 border-gray-200' : state==='error' ? 'border-l-4 border-l-red-400 border-gray-200' : 'border-l-4 border-l-slate-200 border-gray-200'}
+    `}>
+      <div className="flex items-center gap-3 px-4 py-3">
+        {/* Checkbox / status */}
+        <div className="shrink-0 w-5 flex items-center justify-center">
+          {state === 'idle'     && <input type="checkbox" onChange={handleCheck} className="w-4 h-4 rounded cursor-pointer accent-indigo-600" />}
+          {state === 'applying' && <span className="text-indigo-400 animate-spin text-base">⏳</span>}
+          {state === 'done'     && <span className="text-emerald-500 text-base">✅</span>}
+          {state === 'error'    && <button onClick={() => setState('idle')} title="Reintentar" className="text-red-400 text-base hover:text-red-600">❌</button>}
+        </div>
+
+        {/* Badge */}
+        <span className={`text-xs font-bold px-2 py-0.5 rounded-md tracking-wide shrink-0 ${badge}`}>
+          {item.tipo === 'actualizar' ? 'ACTUALIZAR' : 'CREAR'}
+        </span>
+
+        {/* Path — click to expand */}
+        <button
+          onClick={() => setExpanded(o=>!o)}
+          className="flex-1 text-left text-sm mono text-gray-700 hover:text-blue-600 truncate"
+          title={item.path}
+        >
+          {item.path}
+        </button>
+
+        {/* Status text */}
+        {state === 'applying' && <span className="text-xs text-indigo-500 font-medium shrink-0 animate-pulse">Aplicando…</span>}
+        {state === 'done'     && <span className="text-xs text-emerald-600 font-medium shrink-0">¡Publicado!</span>}
+        {state === 'error'    && <span className="text-xs text-red-500 shrink-0">Error — clic ❌ para reintentar</span>}
+
+        {/* Expand toggle */}
+        <button onClick={() => setExpanded(o=>!o)} className="text-gray-300 hover:text-gray-500 text-xs shrink-0">
+          {expanded ? '▲' : '▼'}
+        </button>
+      </div>
+
+      {expanded && (
+        <div className="px-4 pb-4 border-t border-gray-50">
+          {item.tema && <p className="text-xs font-semibold text-gray-500 mt-3">{item.tema}</p>}
+          {item.justificacion && <p className="text-xs text-gray-400 mt-1 italic">💡 {item.justificacion}</p>}
+          {item.tipo === 'actualizar' && (
+            <DiffView oldText={item.contenido_actual||''} newText={item.contenido_nuevo||''} />
+          )}
+          {item.tipo === 'crear' && item.contenido_nuevo && (
+            <details className="mt-2">
+              <summary className="text-xs text-blue-600 cursor-pointer hover:text-blue-800 font-medium">Ver contenido del artículo nuevo</summary>
+              <pre className="mt-2 p-3 bg-gray-50 border border-gray-200 rounded-lg text-xs mono whitespace-pre-wrap break-all max-h-96 overflow-auto text-gray-700">
+                {item.contenido_nuevo}
+              </pre>
+            </details>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── App ───────────────────────────────────────────────────────────────────────
+function App() {
+  const [items,    setItems]    = useState([]);
+  const [loading,  setLoading]  = useState(true);
+  const [error,    setError]    = useState(null);
+  const [lastFetch,setLastFetch]= useState(null);
+
+  const load = useCallback(async () => {
+    setLoading(true); setError(null);
+    try {
+      const r = await fetch(DATA_URL + '?t=' + Date.now());
+      if (r.status === 404) { setItems([]); setLastFetch(new Date()); return; }
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const data = await r.json();
+      setItems((data.items || []).filter(i => i.tipo !== 'sin_cambios'));
+      setLastFetch(new Date());
+    } catch(e) { setError(e.message); }
+    finally { setLoading(false); }
+  }, []);
+
+  useEffect(() => { load(); }, [load]);
+
+  const handleDone = useCallback(id => setItems(prev => prev.filter(i => i.id !== id)), []);
+
+  return (
+    <div className="max-w-3xl mx-auto px-4 pt-8 pb-16">
+
+      {/* Header */}
+      <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center gap-3">
+          <span className="text-3xl">📚</span>
+          <div>
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-0.5">Vambe Docs</p>
+            <h1 className="text-xl font-bold text-gray-900 leading-tight">Cambios pendientes en GitBook</h1>
+          </div>
+        </div>
+        <button
+          onClick={load}
+          disabled={loading}
+          className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition-all disabled:opacity-50"
+        >
+          <span className={loading ? 'inline-block animate-spin' : ''}>↻</span>
+          {lastFetch ? lastFetch.toLocaleTimeString('es',{hour:'2-digit',minute:'2-digit'}) : 'Actualizar'}
+        </button>
+      </div>
+
+      {/* Loading */}
+      {loading && (
+        <div className="text-center py-16 text-gray-400 text-sm animate-pulse">Cargando cambios pendientes…</div>
+      )}
+
+      {/* Error */}
+      {!loading && error && (
+        <div className="text-center py-16">
+          <p className="text-red-500 text-sm mb-2">⚠️ {error}</p>
+          <button onClick={load} className="text-sm text-blue-600 hover:underline">Reintentar</button>
+        </div>
+      )}
+
+      {/* Empty */}
+      {!loading && !error && items.length === 0 && (
+        <div className="text-center py-24">
+          <div className="text-5xl mb-4">✅</div>
+          <p className="text-gray-600 font-semibold text-lg">Todo al día</p>
+          <p className="text-gray-400 text-sm mt-1">No hay cambios pendientes de revisión.</p>
+          <button onClick={load} className="mt-4 text-sm text-blue-600 hover:underline">Verificar de nuevo</button>
+        </div>
+      )}
+
+      {/* Items */}
+      {!loading && !error && items.length > 0 && (
+        <>
+          <p className="text-sm text-gray-500 mb-5">
+            <span className="font-semibold text-gray-800">{items.length}</span> cambio{items.length!==1?'s':''} pendiente{items.length!==1?'s':''} — marcá el check de cada uno para publicarlo en GitBook
+          </p>
+          {items.map(item => (
+            <ReviewItem key={item.id} item={item} onDone={handleDone} />
+          ))}
+        </>
+      )}
+
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
