@@ -1,6 +1,6 @@
 # Cómo gestionar la disponibilidad de tu equipo y controlar la carga de trabajo
 
-Evita que tus agentes se saturen y asegúrate de que los tickets siempre lleguen a quien puede atenderlos. Con los estados de disponibilidad, los límites de capacidad y la nueva gestión de ejecutivos, tienes control total sobre cómo se distribuye el trabajo en tu equipo en tiempo real.
+Evita que tus agentes se saturen y asegúrate de que los tickets siempre lleguen a quien puede atenderlos. Con los estados de disponibilidad, los límites de capacidad y la nueva gestión de ejecutivos, tienes control total sobre cómo se distribuye el trabajo en tu equipo en tiempo real, incluso con las estrategias de asignación automática más avanzadas de Vambe.
 
 ⚠️ **Nota:** La funcionalidad de estados de disponibilidad e indicador de presencia no está activada por defecto. Si quieres habilitarla para tu cuenta, contacta al equipo de soporte de Vambe.
 
@@ -10,16 +10,16 @@ Evita que tus agentes se saturen y asegúrate de que los tickets siempre lleguen
 
 #### ¿Qué es el estado de disponibilidad?
 
-Cada ejecutivo puede indicar en qué situación se encuentra dentro de Vambe. Esto permite que el sistema sepa a quién puede asignarle un ticket en cada momento.
+Cada ejecutivo puede indicar en qué situación se encuentra en Vambe. Esto permite que el sistema sepa a quién puede asignarle un ticket en cada momento, influyendo directamente en las decisiones de las estrategias de asignación automática.
 
 #### ¿Cómo actualizar tu estado?
 
-1. Haz clic en tu **avatar** (arriba a la derecha).
-2. Haz clic en **Actualiza tu estado**.
+1.  Haz clic en tu **avatar** (arriba a la derecha).
+2.  Haz clic en **Actualiza tu estado**.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt="" width="375"><figcaption></figcaption></figure>
 
-3. Se abrirá un panel donde podrás seleccionar uno de los cinco estados disponibles:
+3.  Se abrirá un panel donde podrás seleccionar uno de los cinco estados disponibles:
 
 | Estado             | Descripción                                  |
 | ------------------ | -------------------------------------------- |
@@ -29,25 +29,25 @@ Cada ejecutivo puede indicar en qué situación se encuentra dentro de Vambe. Es
 | 🤒 **Enfermo**     | No disponible por salud                      |
 | 🍽️ **Almuerzo**   | En pausa de almuerzo                         |
 
-4. Selecciona tu estado y haz clic en **Guardar**.
+4.  Selecciona tu estado y haz clic en **Guardar**.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt="" width="375"><figcaption></figcaption></figure>
 
 > ⚠️ Algunos estados no permiten recibir nuevas asignaciones. El sistema te lo indicará en el panel.
 
 #### Indicador de presencia
 
-Además del estado, cada ejecutivo tiene un **punto verde** visible en su avatar que indica que tiene una pestaña de Vambe activa en su navegador en ese momento. Esto es distinto al estado: un agente puede estar "Disponible" pero no tener la plataforma abierta, o viceversa.
+Además del estado, cada ejecutivo tiene un **punto verde** visible en su avatar que indica que tiene una pestaña de Vambe activa en su navegador en ese momento. Esto es distinto al estado: un agente puede estar "Disponible" pero no tener la aplicación abierta, o viceversa.
 
 ***
 
 ### Parte 2: Filtrar asignaciones por disponibilidad
 
-Puedes configurar tus asignaciones automáticas para que solo asignen tickets a ejecutivos que estén en estado **Disponible**.
+Puedes configurar tus asignaciones automáticas para que solo asignen tickets a ejecutivos que estén en estado **Disponible**, asegurando que los leads solo lleguen a agentes que puedan atenderlos activamente.
 
 #### ¿Dónde se configura?
 
-Al crear o editar una asignación automática desde la configuración de una etapa, verás las siguientes opciones nuevas:
+Al crear o editar una asignación automática desde la configuración de una etapa, verás las siguientes opciones:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -61,9 +61,11 @@ Al crear o editar una asignación automática desde la configuración de una eta
 
 ### Parte 3: Control de carga de trabajo por agente
 
+Las capacidades de carga de trabajo permiten que las estrategias de asignación automática (incluidas las avanzadas con reglas determinísticas e IA contextual) distribuyan los tickets de forma equitativa y eficiente.
+
 #### Etapas de carga de trabajo
 
-Puedes definir qué etapas del embudo cuentan como "trabajo activo" al momento de calcular la carga de un agente. Esto es especialmente útil para la estrategia **Balanceada**, que asigna al agente con menos tickets activos.
+Puedes definir qué etapas del embudo cuentan como "trabajo activo" al momento de calcular la carga de un agente. Esto es especialmente útil para la estrategia **Balanceada**, que asigna al agente con menos tickets activos, y también para que la asignación condicional tome decisiones más informadas.
 
 Por ejemplo, si tienes una etapa de "Espera de respuesta" donde los agentes no están activamente trabajando, puedes excluirla para que no infle artificialmente la carga del agente.
 
@@ -77,9 +79,11 @@ Por defecto el sistema considera **todas las etapas**.
 
 Puedes definir un límite máximo de tickets activos que un ejecutivo puede tener asignados desde un disparador en particular al mismo tiempo.
 
-* Por defecto es **sin límite**.
-* Cuando un agente alcanza el límite definido, no recibirá nuevas asignaciones de ese disparador hasta que cierre o mueva alguno de sus tickets activos.
-* Cuando un ticket se mueve de etapa o se desasigna, el sistema automáticamente reasigna los tickets pendientes a los agentes que tengan capacidad disponible.
+*   Por defecto es **sin límite**.
+*   Cuando un agente alcanza el límite definido, no recibirá nuevas asignaciones de ese disparador hasta que cierre o mueva alguno de sus tickets activos. Este límite es respetado por todas las estrategias de asignación, incluidas las condicionales y de IA.
+*   Cuando un ticket se mueve de etapa o se desasigna, el sistema automáticamente reasigna los tickets pendientes a los agentes que tengan capacidad disponible.
+
+> 💡 **La regla por defecto (fallback) en la asignación condicional** juega un rol clave aquí. Si todos los agentes de una regla están ocupados o han alcanzado su capacidad, el sistema puede recurrir a la regla por defecto para asegurar que ningún ticket quede sin atención.
 
 {% hint style="info" %}
 💡 **Buena práctica:** Cuando tu equipo se desconecta en la noche y vuelve a conectarse al día siguiente, los tickets pendientes se irán asignando en orden de llegada a medida que los agentes se reconecten y liberen capacidad.
@@ -99,17 +103,17 @@ La nueva pestaña **Ejecutivos** te muestra todos los agentes de tu cuenta en fo
 
 Desde cada tarjeta puedes:
 
-* **Ver equipo** — ver a qué equipos pertenece ese ejecutivo.
-* **Editar** — modificar sus permisos de canales, embudos y rol.
+*   **Ver equipo** — ver a qué equipos pertenece ese ejecutivo.
+*   **Editar** — modificar sus permisos de canales, embudos y rol.
 
 #### Invitar un ejecutivo con permisos desde el inicio
 
 Al hacer clic en **Agregar ejecutivo**, ahora puedes definir desde el mismo formulario de invitación:
 
-* Nombre y apellido
-* Rol (Super Admin, Admin, Agente)
-* Embudos disponibles
-* Canales a los que tendrá acceso (todos o algunos específicos)
+*   Nombre y apellido
+*   Rol (Super Admin, Admin, Agente)
+*   Embudos disponibles
+*   Canales a los que tendrá acceso (todos o algunos específicos)
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -121,9 +125,9 @@ En la pestaña **Equipos** puedes crear grupos de ejecutivos y agregar miembros 
 
 Desde la vista de equipos también puedes:
 
-* Ver los miembros de cada equipo.
-* Desasignar miembros.
-* Buscar ejecutivos dentro del equipo.
+*   Ver los miembros de cada equipo.
+*   Desasignar miembros.
+*   Buscar ejecutivos dentro del equipo.
 
 ***
 
@@ -136,3 +140,5 @@ Desde la vista de equipos también puedes:
 | **Tickets máximos por agente**      | Configuración de etapa → Asignación automática → Editar |
 | **Etapas de carga de trabajo**      | Configuración de etapa → Asignación automática → Editar |
 | **Gestión de ejecutivos y equipos** | Ajustes → Equipos                                       |
+
+💡 **Buena práctica:** Los agentes deben revisar y cerrar sus tickets asignados cuando terminen para que la asignación balanceada funcione correctamente. En la asignación condicional, asegúrate de que los campos usados en las condiciones estén siempre completos para evitar que todos los tickets caigan en el Default.
