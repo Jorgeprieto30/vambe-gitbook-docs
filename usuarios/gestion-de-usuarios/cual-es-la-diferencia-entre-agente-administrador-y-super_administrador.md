@@ -6,16 +6,16 @@ A continuación se detalla cada rango de manera clara y formal.
 
 {% stepper %}
 {% step %}
-### Agente
+#### Agente
 
 El **Agente** es el rol con acceso más limitado y está orientado al trabajo operativo individual.
 
-#### Capacidades
+**Capacidades**
 
 * Puede ver únicamente **los tickets que le sean asignados**.
 * Las asignaciones pueden configurarse de forma manual o mediante **asignaciones automáticas** dentro del embudo.
 
-#### Restricciones
+**Restricciones**
 
 * No puede ver tickets que no le correspondan.
 * No tiene permisos para modificar la inteligencia artificial ni acceder a configuraciones avanzadas.
@@ -24,16 +24,16 @@ Este rango es adecuado para ejecutivos de ventas o atención que gestionan únic
 {% endstep %}
 
 {% step %}
-### Administrador
+#### Administrador
 
 El **Administrador** cuenta con mayor visibilidad, pero sigue teniendo restricciones en funciones críticas.
 
-#### Capacidades
+**Capacidades**
 
 * Puede ver **todos los tickets y todos los contactos** presentes en Vambe.
 * Puede supervisar la operación completa del equipo.
 
-#### Restricciones
+**Restricciones**
 
 * No puede modificar configuraciones de la inteligencia artificial.
 * No tiene acceso a la lógica interna ni a funciones avanzadas de automatización.
@@ -42,17 +42,17 @@ Este rol es ideal para líderes, supervisores o coordinadores que requieren una 
 {% endstep %}
 
 {% step %}
-### Superadministrador
+#### Superadministrador
 
 El **Superadministrador** es el rol con acceso total dentro de Vambe.
 
-#### Capacidades
+**Capacidades**
 
 * Puede ver **todos los tickets y contactos**.
 * Puede **modificar la inteligencia artificial**, automatizaciones, asistentes, embudos, etapas y reglas internas.
 * Puede crear, editar y gestionar usuarios, canales y configuraciones generales.
 
-#### Restricciones
+**Restricciones**
 
 * No presenta restricciones de acceso.
 

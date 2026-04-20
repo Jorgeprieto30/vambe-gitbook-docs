@@ -17,7 +17,7 @@ Cada ejecutivo puede indicar en qué situación se encuentra dentro de Vambe. Es
 1. Haz clic en tu **avatar** (arriba a la derecha).
 2. Haz clic en **Actualiza tu estado**.
 
-<figure><img src="../.gitbook/assets/image (19).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. Se abrirá un panel donde podrás seleccionar uno de los cinco estados disponibles:
 
@@ -31,7 +31,7 @@ Cada ejecutivo puede indicar en qué situación se encuentra dentro de Vambe. Es
 
 4. Selecciona tu estado y haz clic en **Guardar**.
 
-<figure><img src="../.gitbook/assets/image (20).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
 > ⚠️ Algunos estados no permiten recibir nuevas asignaciones. El sistema te lo indicará en el panel.
 

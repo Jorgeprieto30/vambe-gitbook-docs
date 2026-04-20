@@ -4,7 +4,7 @@ Para incorporar nuevos miembros a tu organización dentro de Vambe, es necesario
 
 {% stepper %}
 {% step %}
-### Acceder a la sección de creación de usuarios
+#### Acceder a la sección de creación de usuarios
 
 1. Dirígete a la **parte inferior izquierda** de Vambe.
 2. Haz clic en **Ajustes**.
@@ -21,7 +21,7 @@ Para incorporar nuevos miembros a tu organización dentro de Vambe, es necesario
 {% endstep %}
 
 {% step %}
-### Completar los datos del nuevo usuario
+#### Completar los datos del nuevo usuario
 
 Para enviar la invitación, deberás completar la siguiente información:
 
@@ -35,30 +35,30 @@ Para enviar la invitación, deberás completar la siguiente información:
 {% endstep %}
 
 {% step %}
-### Seleccionar el rol del usuario
+#### Seleccionar el rol del usuario
 
 En Vambe existen tres roles, cada uno con niveles de acceso diferentes:
 
 ![](<../.gitbook/assets/image png Nov 19 2025 06 42 47 8112 PM.png>)
 
-#### Agente
+**Agente**
 
 * Puede ver únicamente los **tickets** que se le asignen.
 * No puede modificar la inteligencia artificial.
 
-#### Administrador
+**Administrador**
 
 * Puede ver **todos los tickets y contactos**.
 * No puede modificar la inteligencia artificial.
 
-#### Superadministrador
+**Superadministrador**
 
 * Tiene acceso total.
 * Puede modificar la inteligencia artificial, automatizaciones, embudos, asistentes y configuraciones avanzadas.
 {% endstep %}
 
 {% step %}
-### Definir los embudos a los que tendrá acceso
+#### Definir los embudos a los que tendrá acceso
 
 Si el rol seleccionado es **Agente** o **Administrador**, deberás especificar a qué embudos tendrá acceso dicho usuario.
 
@@ -69,7 +69,7 @@ Si el rol seleccionado es **Agente** o **Administrador**, deberás especificar a
 {% endstep %}
 
 {% step %}
-### Enviar invitación y activar el usuario
+#### Enviar invitación y activar el usuario
 
 1. Haz clic en **Invitar**.
 2. El sistema enviará un correo al usuario que estás creando.
@@ -81,7 +81,7 @@ El usuario **no queda creado** al enviar la invitación. Queda creado **solo cua
 {% endstep %}
 
 {% step %}
-### Editar permisos o roles posteriormente
+#### Editar permisos o roles posteriormente
 
 Si necesitas modificar los permisos de un usuario:
 
@@ -105,4 +105,3 @@ También es posible **crear nuevos roles personalizados**, si tu organización l
 * El usuario **no existe** hasta que acepta la invitación por correo.
 * Los roles determinan qué tickets puede ver y qué configuraciones puede modificar.
 * Los permisos pueden editarse en cualquier momento.
-
