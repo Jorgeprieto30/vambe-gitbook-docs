@@ -505,7 +505,10 @@ async function loadPending() {
     );
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
-    const decoded = atob(data.content.replace(/\n/g, ''));
+    const raw = atob(data.content.replace(/\n/g, ''));
+    const bytes = new Uint8Array(raw.length);
+    for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
+    const decoded = new TextDecoder('utf-8').decode(bytes);
     const json = JSON.parse(decoded);
     items = json.items || [];
   } catch (e) {
