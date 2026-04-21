@@ -391,6 +391,7 @@
     }
     .history-icon.crear { background: rgba(22,163,74,0.15); }
     .history-icon.actualizar { background: rgba(37,99,235,0.15); }
+    .history-icon.rechazado { background: rgba(239,68,68,0.15); }
     .history-body { flex: 1; min-width: 0; }
     .history-title { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
     .history-path { font-size: 11px; color: var(--text-muted); font-family: monospace; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -421,7 +422,10 @@
       Pendientes <span class="nav-count" id="pending-count">–</span>
     </button>
     <button class="nav-tab" onclick="showSection('history')">
-      Historial <span class="nav-count" id="history-count">0</span>
+      Aprobados <span class="nav-count" id="history-count">0</span>
+    </button>
+    <button class="nav-tab" onclick="showSection('rejected')">
+      Rechazados <span class="nav-count" id="rejected-count">0</span>
     </button>
   </div>
 </nav>
@@ -449,7 +453,7 @@
   </div>
 
   <!-- HISTORY SECTION -->
-  <div id="history-section">
+  <div id="history-section" style="display:none">
     <div class="section-header">
       <div>
         <div class="section-title">Historial de cambios aprobados</div>
@@ -464,6 +468,23 @@
     </button>
     <div id="history-container"></div>
   </div>
+
+  <!-- REJECTED SECTION -->
+  <div id="rejected-section" style="display:none">
+    <div class="section-header">
+      <div>
+        <div class="section-title">Cambios rechazados</div>
+        <div class="section-subtitle">Registro de los cambios que decidiste no publicar.</div>
+      </div>
+    </div>
+    <button class="btn btn-ghost history-clear-btn" onclick="clearRejected()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/>
+      </svg>
+      Limpiar rechazados
+    </button>
+    <div id="rejected-container"></div>
+  </div>
 </main>
 
 <div id="toast"></div>
@@ -475,6 +496,7 @@ const REPO = 'Jorgeprieto30/vambe-gitbook-docs';
 const FILE_PATH = 'pending-reviews.json';
 const WEBHOOK_URL = 'https://n8n.vambe.me/webhook/gitbook-approve';
 const HISTORY_KEY = 'vambe_docs_history';
+const REJECTED_KEY = 'vambe_docs_rejected';
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 let items = [];
@@ -484,16 +506,23 @@ let approving = new Set();
 document.addEventListener('DOMContentLoaded', () => {
   loadPending();
   renderHistory();
+  document.getElementById('rejected-count').textContent = getRejected().length;
 });
 
 // ─── SECTION SWITCH ───────────────────────────────────────────────────────────
 function showSection(section) {
   document.getElementById('pending-section').style.display = section === 'pending' ? '' : 'none';
   document.getElementById('history-section').style.display = section === 'history' ? '' : 'none';
+  document.getElementById('rejected-section').style.display = section === 'rejected' ? '' : 'none';
   document.querySelectorAll('.nav-tab').forEach((t, i) => {
-    t.classList.toggle('active', (i === 0 && section === 'pending') || (i === 1 && section === 'history'));
+    t.classList.toggle('active',
+      (i === 0 && section === 'pending') ||
+      (i === 1 && section === 'history') ||
+      (i === 2 && section === 'rejected')
+    );
   });
   if (section === 'history') renderHistory();
+  if (section === 'rejected') renderRejected();
 }
 
 // ─── LOAD PENDING ─────────────────────────────────────────────────────────────
@@ -687,10 +716,16 @@ function renderCards() {
             <span class="stat-add">+${stats.added} líneas añadidas</span>
             <span class="stat-del">−${stats.removed} líneas eliminadas</span>
           </div>
-          <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Actualizar
-          </button>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-ghost" id="btn-reject-${item.id}" onclick="rejectItem('${item.id}')">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Rechazar
+            </button>
+            <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Actualizar
+            </button>
+          </div>
         </div>`;
     }
 
@@ -700,10 +735,16 @@ function renderCards() {
         <div class="stats-row">
           <span class="stat-add">+${(item.contenido_nuevo||'').split('\n').length} líneas nuevas</span>
         </div>
-        <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          Publicar
-        </button>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-ghost" id="btn-reject-${item.id}" onclick="rejectItem('${item.id}')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Rechazar
+          </button>
+          <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Publicar
+          </button>
+        </div>
       </div>` : '';
 
     const card = document.createElement('div');
@@ -798,6 +839,32 @@ async function approveItem(id) {
   approving.delete(id);
 }
 
+// ─── REJECT ───────────────────────────────────────────────────────────────────
+function rejectItem(id) {
+  const item = items.find(i => i.id === id);
+  if (!item) return;
+
+  items = items.filter(i => i.id !== id);
+  addToRejected(item);
+
+  const card = document.getElementById(`card-${id}`);
+  if (card) {
+    card.style.transition = 'opacity 0.3s, transform 0.3s';
+    card.style.opacity = '0';
+    card.style.transform = 'translateX(-20px)';
+    setTimeout(() => card.remove(), 320);
+  }
+
+  document.getElementById('pending-count').textContent = items.length;
+  showToast(`✗ "${articleNameFromPath(item.path)}" rechazado`, 'error', 3000);
+
+  if (items.length === 0) {
+    setTimeout(() => {
+      document.getElementById('empty').style.display = '';
+    }, 400);
+  }
+}
+
 // ─── HISTORY ──────────────────────────────────────────────────────────────────
 function getHistory() {
   try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]'); }
@@ -855,6 +922,63 @@ function clearHistory() {
   localStorage.removeItem(HISTORY_KEY);
   renderHistory();
   showToast('Historial limpiado', 'info');
+}
+
+// ─── REJECTED ─────────────────────────────────────────────────────────────────
+function getRejected() {
+  try { return JSON.parse(localStorage.getItem(REJECTED_KEY) || '[]'); }
+  catch { return []; }
+}
+
+function addToRejected(item) {
+  const rejected = getRejected();
+  rejected.unshift({
+    id: item.id,
+    tipo: item.tipo,
+    path: item.path,
+    tema: item.tema,
+    justificacion: item.justificacion,
+    commit_message: item.commit_message,
+    created_at: item.created_at,
+    rejected_at: new Date().toISOString()
+  });
+  localStorage.setItem(REJECTED_KEY, JSON.stringify(rejected.slice(0, 200)));
+  document.getElementById('rejected-count').textContent = rejected.length + 1 > 200 ? '200+' : rejected.length + 1;
+}
+
+function renderRejected() {
+  const rejected = getRejected();
+  document.getElementById('rejected-count').textContent = rejected.length;
+  const container = document.getElementById('rejected-container');
+
+  if (rejected.length === 0) {
+    container.innerHTML = '<div class="history-empty">No hay cambios rechazados todavía.</div>';
+    return;
+  }
+
+  container.innerHTML = rejected.map(item => {
+    const name = articleNameFromPath(item.path);
+    return `
+    <div class="history-item">
+      <div class="history-icon rechazado">✗</div>
+      <div class="history-body">
+        <div class="history-title">${escapeHtml(name)}</div>
+        <div class="history-path">${escapeHtml(item.path)}</div>
+        ${item.justificacion ? `<div style="font-size:12px;color:var(--text-muted);margin-bottom:4px">${escapeHtml(item.justificacion)}</div>` : ''}
+        <div class="history-meta">
+          <span style="color:var(--red-text)">✗ Rechazado ${formatDate(item.rejected_at)}</span>
+          ${item.tema ? `<span>🏷 ${escapeHtml(item.tema)}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function clearRejected() {
+  if (!confirm('¿Limpiar el historial de rechazados?')) return;
+  localStorage.removeItem(REJECTED_KEY);
+  renderRejected();
+  showToast('Rechazados limpiados', 'info');
 }
 
 // ─── TOAST ────────────────────────────────────────────────────────────────────
