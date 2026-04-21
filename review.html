@@ -1,268 +1,872 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GitBook Reviews – Vambe</title>
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revisión de Cambios · Vambe Docs</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-    .mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace; }
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #22263a;
+      --border: #2e3350;
+      --text: #e2e8f0;
+      --text-muted: #7c85a2;
+      --accent: #6366f1;
+      --accent-hover: #818cf8;
+      --green-bg: #0d2818;
+      --green-text: #4ade80;
+      --green-line: #166534;
+      --red-bg: #2a0d0d;
+      --red-text: #f87171;
+      --red-line: #7f1d1d;
+      --neutral-bg: #161923;
+      --badge-new: #16a34a;
+      --badge-update: #2563eb;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 28px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-brand svg { color: var(--accent); }
+    .nav-tabs {
+      display: flex;
+      gap: 4px;
+    }
+    .nav-tab {
+      padding: 6px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      border: none;
+      background: transparent;
+      transition: all 0.15s;
+    }
+    .nav-tab:hover { background: var(--surface2); color: var(--text); }
+    .nav-tab.active { background: var(--accent); color: #fff; }
+    .nav-count {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 20px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    /* MAIN */
+    main { max-width: 1440px; margin: 0 auto; padding: 28px 24px; }
+
+    /* SECTION HEADER */
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .section-title { font-size: 18px; font-weight: 700; }
+    .section-subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; }
+
+    /* LOADING / EMPTY */
+    .state-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 80px 20px;
+      color: var(--text-muted);
+    }
+    .state-box svg { opacity: 0.4; }
+    .state-box p { font-size: 15px; }
+    .spinner {
+      width: 32px; height: 32px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* CARD */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: var(--accent); }
+
+    .card-header {
+      padding: 18px 22px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .card-article-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-crear { background: rgba(22,163,74,0.2); color: #4ade80; border: 1px solid rgba(22,163,74,0.3); }
+    .badge-actualizar { background: rgba(37,99,235,0.2); color: #60a5fa; border: 1px solid rgba(37,99,235,0.3); }
+
+    .card-path {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      margin-top: 4px;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .card-meta span { display: flex; align-items: center; gap: 4px; }
+
+    .card-justification {
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: var(--surface2);
+      border-radius: 8px;
+      border-left: 3px solid var(--accent);
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .card-justification-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    /* DIFF */
+    .diff-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--border);
+    }
+    .diff-side {
+      overflow: auto;
+      max-height: 480px;
+    }
+    .diff-side:first-child {
+      border-right: 1px solid var(--border);
+    }
+    .diff-side-header {
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      z-index: 2;
+    }
+    .diff-side-header.old {
+      background: var(--red-bg);
+      color: var(--red-text);
+      border-bottom: 1px solid var(--red-line);
+    }
+    .diff-side-header.new {
+      background: var(--green-bg);
+      color: var(--green-text);
+      border-bottom: 1px solid var(--green-line);
+    }
+    .diff-lines { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 12px; }
+    .diff-line {
+      display: flex;
+      min-height: 20px;
+      line-height: 20px;
+    }
+    .diff-line-num {
+      min-width: 40px;
+      text-align: right;
+      padding: 0 8px;
+      color: var(--text-muted);
+      user-select: none;
+      font-size: 11px;
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+    }
+    .diff-line-content {
+      padding: 0 10px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      flex: 1;
+    }
+    .diff-line.removed {
+      background: var(--red-bg);
+    }
+    .diff-line.removed .diff-line-num { background: rgba(239,68,68,0.1); color: var(--red-text); }
+    .diff-line.removed .diff-line-content { color: var(--red-text); }
+    .diff-line.added {
+      background: var(--green-bg);
+    }
+    .diff-line.added .diff-line-num { background: rgba(74,222,128,0.1); color: var(--green-text); }
+    .diff-line.added .diff-line-content { color: var(--green-text); }
+    .diff-line.unchanged .diff-line-content { color: var(--text-muted); }
+    .diff-line.placeholder {
+      background: rgba(255,255,255,0.02);
+    }
+    .diff-line.placeholder .diff-line-content { color: transparent; }
+
+    /* CREAR: full width */
+    .diff-full {
+      padding: 0;
+      border-top: 1px solid var(--border);
+    }
+    .diff-full-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      background: var(--green-bg);
+      color: var(--green-text);
+      border-bottom: 1px solid var(--green-line);
+    }
+    .diff-full-lines { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 12px; max-height: 480px; overflow: auto; }
+
+    /* CARD FOOTER */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 22px;
+      border-top: 1px solid var(--border);
+      background: var(--surface2);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .stats-row { display: flex; gap: 16px; font-size: 12px; color: var(--text-muted); }
+    .stats-row span { display: flex; align-items: center; gap: 4px; }
+    .stat-add { color: var(--green-text); }
+    .stat-del { color: var(--red-text); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.15s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+    .btn-ghost:hover { background: var(--surface2); color: var(--text); }
+
+    /* TOAST */
+    #toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .toast-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      animation: slideIn 0.25s ease;
+      max-width: 340px;
+    }
+    .toast-success { background: #14532d; color: #86efac; border: 1px solid #166534; }
+    .toast-error { background: #450a0a; color: #fca5a5; border: 1px solid #7f1d1d; }
+    .toast-info { background: #1e1b4b; color: #a5b4fc; border: 1px solid #3730a3; }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+
+    /* HISTORY */
+    #history-section { display: none; }
+    .history-empty { padding: 60px 20px; text-align: center; color: var(--text-muted); }
+    .history-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .history-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 16px;
+    }
+    .history-icon.crear { background: rgba(22,163,74,0.15); }
+    .history-icon.actualizar { background: rgba(37,99,235,0.15); }
+    .history-body { flex: 1; min-width: 0; }
+    .history-title { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+    .history-path { font-size: 11px; color: var(--text-muted); font-family: monospace; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .history-meta { font-size: 11px; color: var(--text-muted); display: flex; gap: 12px; flex-wrap: wrap; }
+    .history-clear-btn {
+      margin-bottom: 16px;
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
   </style>
 </head>
-<body class="bg-slate-50 min-h-screen">
-<div id="root"></div>
-<script type="text/babel">
-const { useState, useEffect, useCallback, useMemo } = React;
+<body>
 
-const REPO    = 'Jorgeprieto30/vambe-gitbook-docs';
-const DATA_URL = `https://raw.githubusercontent.com/${REPO}/main/pending-reviews.json`;
-const WEBHOOK = 'https://n8n.vambe.me/webhook/gitbook-approve';
+<nav>
+  <a class="nav-brand" href="#">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+      <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+    </svg>
+    Vambe Docs · Revisión
+  </a>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showSection('pending')">
+      Pendientes <span class="nav-count" id="pending-count">–</span>
+    </button>
+    <button class="nav-tab" onclick="showSection('history')">
+      Historial <span class="nav-count" id="history-count">0</span>
+    </button>
+  </div>
+</nav>
 
-// ── Diff Engine ───────────────────────────────────────────────────────────────
-function buildLCS(a, b) {
-  const m = a.length, n = b.length;
-  const dp = Array.from({ length: m + 1 }, () => new Int32Array(n + 1));
-  for (let i = m - 1; i >= 0; i--)
-    for (let j = n - 1; j >= 0; j--)
-      dp[i][j] = a[i] === b[j] ? dp[i+1][j+1] + 1 : Math.max(dp[i+1][j], dp[i][j+1]);
-  const diff = [];
-  let i = 0, j = 0;
-  while (i < m || j < n) {
-    if (i < m && j < n && a[i] === b[j])                               { diff.push({ t:'=', s:a[i] }); i++; j++; }
-    else if (j < n && (i >= m || dp[i+1]?.[j] >= dp[i]?.[j+1]))       { diff.push({ t:'+', s:b[j] }); j++; }
-    else                                                                { diff.push({ t:'-', s:a[i] }); i++; }
-  }
-  return diff;
-}
-function diffLines(oldT, newT) {
-  const a = (oldT||'').split('\n'), b = (newT||'').split('\n');
-  if (a.length > 500 || b.length > 500)
-    return [{ t:'i', s:`Archivo grande (${a.length}→${b.length} líneas). Mostrando primeras 500.` }, ...buildLCS(a.slice(0,500), b.slice(0,500))];
-  return buildLCS(a, b);
-}
-function toHunks(diff, ctx=3) {
-  const ch = diff.map((d,i) => d.t!=='=' && d.t!=='i' ? i : -1).filter(x=>x>=0);
-  if (!ch.length) return [];
-  const ranges = [];
-  let s = Math.max(0,ch[0]-ctx), e = Math.min(diff.length,ch[0]+ctx+1);
-  for (let k=1; k<ch.length; k++) {
-    const ns = Math.max(0,ch[k]-ctx);
-    if (ns<=e) e = Math.min(diff.length,ch[k]+ctx+1);
-    else { ranges.push([s,e]); s=ns; e=Math.min(diff.length,ch[k]+ctx+1); }
-  }
-  ranges.push([s,e]);
-  return ranges;
-}
-
-// ── DiffView ─────────────────────────────────────────────────────────────────
-function DiffView({ oldText, newText }) {
-  const diff  = useMemo(() => diffLines(oldText, newText), [oldText, newText]);
-  const hunks = useMemo(() => toHunks(diff), [diff]);
-  const adds  = diff.filter(d=>d.t==='+').length;
-  const rms   = diff.filter(d=>d.t==='-').length;
-  const info  = diff.find(d=>d.t==='i');
-  if (!adds && !rms) return <p className="text-xs text-gray-400 mt-2 italic">Sin diferencias detectadas.</p>;
-  return (
-    <div className="mt-2">
-      {info && <p className="text-xs text-amber-600 mb-1">⚠️ {info.s}</p>}
-      <p className="text-xs text-gray-400 mb-1.5 mono">
-        <span className="text-emerald-600 font-semibold">+{adds}</span>{' · '}
-        <span className="text-red-500 font-semibold">−{rms}</span>
-      </p>
-      <div className="rounded-lg border border-gray-200 overflow-auto max-h-[400px] text-xs mono bg-white">
-        {hunks.map(([s,e],hi) => (
-          <div key={hi}>
-            {(hi>0||s>0) && <div className="px-3 py-1 bg-gray-50 text-gray-400 text-center border-y border-gray-100 select-none">···</div>}
-            {diff.slice(s,e).map((d,idx) => (
-              <div key={idx} className={`flex gap-2 px-3 py-0.5 leading-5 ${d.t==='+' ? 'bg-emerald-50 text-emerald-900' : d.t==='-' ? 'bg-red-50 text-red-800 line-through opacity-80' : 'bg-white text-gray-500'}`}>
-                <span className="w-3 shrink-0 text-right opacity-40 select-none">{d.t==='+'?'+':d.t==='-'?'−':' '}</span>
-                <span className="break-all whitespace-pre-wrap">{d.s||'\u00a0'}</span>
-              </div>
-            ))}
-            {e<diff.length && <div className="px-3 py-1 bg-gray-50 text-gray-400 text-center border-y border-gray-100 select-none">···</div>}
-          </div>
-        ))}
+<main>
+  <!-- PENDING SECTION -->
+  <div id="pending-section">
+    <div class="section-header">
+      <div>
+        <div class="section-title">Cambios pendientes de revisión</div>
+        <div class="section-subtitle">Revisa cada artículo y haz clic en <strong>Actualizar</strong> para publicar en GitBook.</div>
       </div>
     </div>
-  );
+    <div id="loading" class="state-box">
+      <div class="spinner"></div>
+      <p>Cargando cambios pendientes…</p>
+    </div>
+    <div id="empty" class="state-box" style="display:none">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
+      <p>¡Todo al día! No hay cambios pendientes.</p>
+    </div>
+    <div id="cards-container"></div>
+  </div>
+
+  <!-- HISTORY SECTION -->
+  <div id="history-section">
+    <div class="section-header">
+      <div>
+        <div class="section-title">Historial de cambios aprobados</div>
+        <div class="section-subtitle">Registro de todos los artículos que has publicado en esta sesión y sesiones anteriores.</div>
+      </div>
+    </div>
+    <button class="btn btn-ghost history-clear-btn" onclick="clearHistory()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/>
+      </svg>
+      Limpiar historial
+    </button>
+    <div id="history-container"></div>
+  </div>
+</main>
+
+<div id="toast"></div>
+
+<script>
+// ─── CONFIG ───────────────────────────────────────────────────────────────────
+const GITHUB_TOKEN = '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';
+const REPO = 'Jorgeprieto30/vambe-gitbook-docs';
+const FILE_PATH = 'pending-reviews.json';
+const WEBHOOK_URL = 'https://n8n.vambe.me/webhook/gitbook-approve';
+const HISTORY_KEY = 'vambe_docs_history';
+
+// ─── STATE ────────────────────────────────────────────────────────────────────
+let items = [];
+let approving = new Set();
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  loadPending();
+  renderHistory();
+});
+
+// ─── SECTION SWITCH ───────────────────────────────────────────────────────────
+function showSection(section) {
+  document.getElementById('pending-section').style.display = section === 'pending' ? '' : 'none';
+  document.getElementById('history-section').style.display = section === 'history' ? '' : 'none';
+  document.querySelectorAll('.nav-tab').forEach((t, i) => {
+    t.classList.toggle('active', (i === 0 && section === 'pending') || (i === 1 && section === 'history'));
+  });
+  if (section === 'history') renderHistory();
 }
 
-// ── ReviewItem ────────────────────────────────────────────────────────────────
-function ReviewItem({ item, onDone }) {
-  const [expanded, setExpanded] = useState(true);
-  const [state, setState] = useState('idle'); // idle | applying | done | error | errMsg
+// ─── LOAD PENDING ─────────────────────────────────────────────────────────────
+async function loadPending() {
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?t=${Date.now()}`,
+      { headers: { Authorization: `token ${GITHUB_TOKEN}`, Accept: 'application/vnd.github.v3+json' } }
+    );
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const decoded = atob(data.content.replace(/\n/g, ''));
+    const json = JSON.parse(decoded);
+    items = json.items || [];
+  } catch (e) {
+    showToast('Error cargando pending-reviews.json: ' + e.message, 'error');
+    items = [];
+  }
 
-  const handleCheck = async (e) => {
-    if (state !== 'idle') { e.preventDefault(); return; }
-    setState('applying');
-    try {
-      const res = await fetch(WEBHOOK, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: item }),
-      });
-      if (!res.ok) throw new Error(`Webhook respondió ${res.status}`);
-      setState('done');
-      setTimeout(() => onDone(item.id), 1500);
-    } catch (err) {
-      setState('error');
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('pending-count').textContent = items.length;
+
+  if (items.length === 0) {
+    document.getElementById('empty').style.display = '';
+  } else {
+    renderCards();
+  }
+}
+
+// ─── ARTICLE NAME FROM PATH ────────────────────────────────────────────────────
+function articleNameFromPath(path) {
+  const filename = path.split('/').pop().replace(/\.(md|mdx|txt)$/i, '');
+  return filename
+    .replace(/[-_]/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function sectionFromPath(path) {
+  const parts = path.split('/');
+  if (parts.length >= 2) {
+    return parts.slice(0, -1).map(p => p.replace(/[-_]/g, ' ')).join(' › ');
+  }
+  return '';
+}
+
+function formatDate(iso) {
+  if (!iso) return '';
+  try {
+    return new Date(iso).toLocaleString('es-CL', { dateStyle: 'medium', timeStyle: 'short' });
+  } catch { return iso; }
+}
+
+// ─── DIFF ENGINE ──────────────────────────────────────────────────────────────
+function computeDiff(oldText, newText) {
+  const oldLines = (oldText || '').split('\n');
+  const newLines = (newText || '').split('\n');
+
+  // LCS-based diff
+  const m = oldLines.length, n = newLines.length;
+  // For performance, limit to 800 lines each
+  const maxLines = 800;
+  if (m > maxLines || n > maxLines) {
+    // Simple fallback: show both as-is
+    return {
+      left: oldLines.map((l, i) => ({ type: 'removed', num: i + 1, content: l })),
+      right: newLines.map((l, i) => ({ type: 'added', num: i + 1, content: l }))
+    };
+  }
+
+  // Build LCS table
+  const dp = Array.from({ length: m + 1 }, () => new Uint16Array(n + 1));
+  for (let i = m - 1; i >= 0; i--) {
+    for (let j = n - 1; j >= 0; j--) {
+      dp[i][j] = oldLines[i] === newLines[j]
+        ? dp[i+1][j+1] + 1
+        : Math.max(dp[i+1][j], dp[i][j+1]);
     }
-  };
+  }
 
-  const badge = item.tipo === 'actualizar'
-    ? 'bg-blue-100 text-blue-700 border border-blue-200'
-    : 'bg-emerald-100 text-emerald-700 border border-emerald-200';
+  // Trace back
+  const left = [], right = [];
+  let i = 0, j = 0;
+  let oldNum = 1, newNum = 1;
 
-  return (
-    <div className={`bg-white rounded-xl border shadow-sm mb-3 transition-all duration-300
-      ${state==='done' ? 'opacity-40 scale-[0.98]' : ''}
-      ${state==='applying' ? 'border-l-4 border-l-indigo-400 border-gray-200' : state==='error' ? 'border-l-4 border-l-red-400 border-gray-200' : 'border-l-4 border-l-slate-200 border-gray-200'}
-    `}>
-      <div className="flex items-center gap-3 px-4 py-3">
-        {/* Checkbox / status */}
-        <div className="shrink-0 w-5 flex items-center justify-center">
-          {state === 'idle'     && <input type="checkbox" onChange={handleCheck} className="w-4 h-4 rounded cursor-pointer accent-indigo-600" />}
-          {state === 'applying' && <span className="text-indigo-400 animate-spin text-base">⏳</span>}
-          {state === 'done'     && <span className="text-emerald-500 text-base">✅</span>}
-          {state === 'error'    && <button onClick={() => setState('idle')} title="Reintentar" className="text-red-400 text-base hover:text-red-600">❌</button>}
-        </div>
+  while (i < m && j < n) {
+    if (oldLines[i] === newLines[j]) {
+      left.push({ type: 'unchanged', num: oldNum++, content: oldLines[i] });
+      right.push({ type: 'unchanged', num: newNum++, content: newLines[j] });
+      i++; j++;
+    } else if (dp[i+1][j] >= dp[i][j+1]) {
+      left.push({ type: 'removed', num: oldNum++, content: oldLines[i] });
+      right.push({ type: 'placeholder', num: null, content: '' });
+      i++;
+    } else {
+      left.push({ type: 'placeholder', num: null, content: '' });
+      right.push({ type: 'added', num: newNum++, content: newLines[j] });
+      j++;
+    }
+  }
+  while (i < m) {
+    left.push({ type: 'removed', num: oldNum++, content: oldLines[i] });
+    right.push({ type: 'placeholder', num: null, content: '' });
+    i++;
+  }
+  while (j < n) {
+    left.push({ type: 'placeholder', num: null, content: '' });
+    right.push({ type: 'added', num: newNum++, content: newLines[j] });
+    j++;
+  }
 
-        {/* Badge */}
-        <span className={`text-xs font-bold px-2 py-0.5 rounded-md tracking-wide shrink-0 ${badge}`}>
-          {item.tipo === 'actualizar' ? 'ACTUALIZAR' : 'CREAR'}
-        </span>
-
-        {/* Path — click to expand */}
-        <button
-          onClick={() => setExpanded(o=>!o)}
-          className="flex-1 text-left text-sm mono text-gray-700 hover:text-blue-600 truncate"
-          title={item.path}
-        >
-          {item.path}
-        </button>
-
-        {/* Status text */}
-        {state === 'applying' && <span className="text-xs text-indigo-500 font-medium shrink-0 animate-pulse">Aplicando…</span>}
-        {state === 'done'     && <span className="text-xs text-emerald-600 font-medium shrink-0">¡Publicado!</span>}
-        {state === 'error'    && <span className="text-xs text-red-500 shrink-0">Error — clic ❌ para reintentar</span>}
-
-        {/* Expand toggle */}
-        <button onClick={() => setExpanded(o=>!o)} className="text-gray-300 hover:text-gray-500 text-xs shrink-0">
-          {expanded ? '▲' : '▼'}
-        </button>
-      </div>
-
-      {expanded && (
-        <div className="px-4 pb-4 border-t border-gray-50">
-          {item.tema && <p className="text-xs font-semibold text-gray-500 mt-3">{item.tema}</p>}
-          {item.justificacion && <p className="text-xs text-gray-400 mt-1 italic">💡 {item.justificacion}</p>}
-          {item.tipo === 'actualizar' && (
-            <DiffView oldText={item.contenido_actual||''} newText={item.contenido_nuevo||''} />
-          )}
-          {item.tipo === 'crear' && item.contenido_nuevo && (
-            <details className="mt-2">
-              <summary className="text-xs text-blue-600 cursor-pointer hover:text-blue-800 font-medium">Ver contenido del artículo nuevo</summary>
-              <pre className="mt-2 p-3 bg-gray-50 border border-gray-200 rounded-lg text-xs mono whitespace-pre-wrap break-all max-h-96 overflow-auto text-gray-700">
-                {item.contenido_nuevo}
-              </pre>
-            </details>
-          )}
-        </div>
-      )}
-    </div>
-  );
+  return { left, right };
 }
 
-// ── App ───────────────────────────────────────────────────────────────────────
-function App() {
-  const [items,    setItems]    = useState([]);
-  const [loading,  setLoading]  = useState(true);
-  const [error,    setError]    = useState(null);
-  const [lastFetch,setLastFetch]= useState(null);
+function diffStats(left, right) {
+  const added = right.filter(l => l.type === 'added').length;
+  const removed = left.filter(l => l.type === 'removed').length;
+  return { added, removed };
+}
 
-  const load = useCallback(async () => {
-    setLoading(true); setError(null);
-    try {
-      const r = await fetch(DATA_URL + '?t=' + Date.now());
-      if (r.status === 404) { setItems([]); setLastFetch(new Date()); return; }
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      const data = await r.json();
-      setItems((data.items || []).filter(i => i.tipo !== 'sin_cambios'));
-      setLastFetch(new Date());
-    } catch(e) { setError(e.message); }
-    finally { setLoading(false); }
-  }, []);
+function renderDiffLines(lines) {
+  return lines.map(line => {
+    const numHtml = line.num !== null
+      ? `<span class="diff-line-num">${line.num}</span>`
+      : `<span class="diff-line-num"></span>`;
+    const content = escapeHtml(line.content);
+    return `<div class="diff-line ${line.type}">${numHtml}<span class="diff-line-content">${content}</span></div>`;
+  }).join('');
+}
 
-  useEffect(() => { load(); }, [load]);
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
 
-  const handleDone = useCallback(id => setItems(prev => prev.filter(i => i.id !== id)), []);
+// ─── RENDER CARDS ─────────────────────────────────────────────────────────────
+function renderCards() {
+  const container = document.getElementById('cards-container');
+  container.innerHTML = '';
 
-  return (
-    <div className="max-w-3xl mx-auto px-4 pt-8 pb-16">
+  items.forEach(item => {
+    const articleName = articleNameFromPath(item.path);
+    const section = sectionFromPath(item.path);
+    const isCriar = item.tipo === 'crear';
+    const tipoBadge = isCriar
+      ? `<span class="badge badge-crear">✦ Nuevo</span>`
+      : `<span class="badge badge-actualizar">↑ Actualización</span>`;
 
-      {/* Header */}
-      <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center gap-3">
-          <span className="text-3xl">📚</span>
-          <div>
-            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-0.5">Vambe Docs</p>
-            <h1 className="text-xl font-bold text-gray-900 leading-tight">Cambios pendientes en GitBook</h1>
+    let diffHtml = '';
+    if (isCriar) {
+      // Full new content
+      const lines = (item.contenido_nuevo || '').split('\n');
+      const linesHtml = lines.map((l, i) => `<div class="diff-line added"><span class="diff-line-num">${i+1}</span><span class="diff-line-content">${escapeHtml(l)}</span></div>`).join('');
+      diffHtml = `
+        <div class="diff-full">
+          <div class="diff-full-header">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Contenido nuevo
+          </div>
+          <div class="diff-full-lines">${linesHtml}</div>
+        </div>`;
+    } else {
+      const { left, right } = computeDiff(item.contenido_actual, item.contenido_nuevo);
+      const stats = diffStats(left, right);
+      const leftHtml = renderDiffLines(left);
+      const rightHtml = renderDiffLines(right);
+      diffHtml = `
+        <div class="diff-container" id="diff-${item.id}">
+          <div class="diff-side">
+            <div class="diff-side-header old">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Versión anterior
+            </div>
+            <div class="diff-lines">${leftHtml}</div>
+          </div>
+          <div class="diff-side">
+            <div class="diff-side-header new">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Versión nueva
+            </div>
+            <div class="diff-lines">${rightHtml}</div>
           </div>
         </div>
-        <button
-          onClick={load}
-          disabled={loading}
-          className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition-all disabled:opacity-50"
-        >
-          <span className={loading ? 'inline-block animate-spin' : ''}>↻</span>
-          {lastFetch ? lastFetch.toLocaleTimeString('es',{hour:'2-digit',minute:'2-digit'}) : 'Actualizar'}
+        <div class="card-footer" id="footer-${item.id}">
+          <div class="stats-row">
+            <span class="stat-add">+${stats.added} líneas añadidas</span>
+            <span class="stat-del">−${stats.removed} líneas eliminadas</span>
+          </div>
+          <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Actualizar
+          </button>
+        </div>`;
+    }
+
+    // For 'crear', footer is separate
+    const footerHtml = isCriar ? `
+      <div class="card-footer">
+        <div class="stats-row">
+          <span class="stat-add">+${(item.contenido_nuevo||'').split('\n').length} líneas nuevas</span>
+        </div>
+        <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Publicar
         </button>
+      </div>` : '';
+
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.id = `card-${item.id}`;
+    card.innerHTML = `
+      <div class="card-header">
+        <div class="card-title-row">
+          <div>
+            <div class="card-article-name">
+              ${tipoBadge}
+              ${escapeHtml(articleName)}
+            </div>
+            ${section ? `<div class="card-path">📁 ${escapeHtml(item.path)}</div>` : ''}
+          </div>
+          <div style="font-size:12px;color:var(--text-muted);text-align:right">
+            ${item.tema ? `<div style="margin-bottom:2px">🏷 ${escapeHtml(item.tema)}</div>` : ''}
+            ${item.created_at ? `<div>${formatDate(item.created_at)}</div>` : ''}
+          </div>
+        </div>
+        ${item.justificacion ? `
+        <div class="card-justification">
+          <div class="card-justification-label">¿Qué cambia?</div>
+          ${escapeHtml(item.justificacion)}
+        </div>` : ''}
       </div>
-
-      {/* Loading */}
-      {loading && (
-        <div className="text-center py-16 text-gray-400 text-sm animate-pulse">Cargando cambios pendientes…</div>
-      )}
-
-      {/* Error */}
-      {!loading && error && (
-        <div className="text-center py-16">
-          <p className="text-red-500 text-sm mb-2">⚠️ {error}</p>
-          <button onClick={load} className="text-sm text-blue-600 hover:underline">Reintentar</button>
-        </div>
-      )}
-
-      {/* Empty */}
-      {!loading && !error && items.length === 0 && (
-        <div className="text-center py-24">
-          <div className="text-5xl mb-4">✅</div>
-          <p className="text-gray-600 font-semibold text-lg">Todo al día</p>
-          <p className="text-gray-400 text-sm mt-1">No hay cambios pendientes de revisión.</p>
-          <button onClick={load} className="mt-4 text-sm text-blue-600 hover:underline">Verificar de nuevo</button>
-        </div>
-      )}
-
-      {/* Items */}
-      {!loading && !error && items.length > 0 && (
-        <>
-          <p className="text-sm text-gray-500 mb-5">
-            <span className="font-semibold text-gray-800">{items.length}</span> cambio{items.length!==1?'s':''} pendiente{items.length!==1?'s':''} — marcá el check de cada uno para publicarlo en GitBook
-          </p>
-          {items.map(item => (
-            <ReviewItem key={item.id} item={item} onDone={handleDone} />
-          ))}
-        </>
-      )}
-
-    </div>
-  );
+      ${diffHtml}
+      ${footerHtml}
+    `;
+    container.appendChild(card);
+  });
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+// ─── APPROVE ──────────────────────────────────────────────────────────────────
+async function approveItem(id) {
+  if (approving.has(id)) return;
+  approving.add(id);
+
+  const btn = document.getElementById(`btn-${id}`);
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = `<div class="spinner" style="width:14px;height:14px;border-width:2px"></div> Publicando…`;
+  }
+
+  const item = items.find(i => i.id === id);
+  if (!item) { approving.delete(id); return; }
+
+  try {
+    const res = await fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: item })
+    });
+
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`Webhook respondió ${res.status}: ${text}`);
+    }
+
+    // Remove from list
+    items = items.filter(i => i.id !== id);
+
+    // Save to history
+    addToHistory(item);
+
+    // Animate card out
+    const card = document.getElementById(`card-${id}`);
+    if (card) {
+      card.style.transition = 'opacity 0.3s, transform 0.3s';
+      card.style.opacity = '0';
+      card.style.transform = 'translateX(20px)';
+      setTimeout(() => card.remove(), 320);
+    }
+
+    document.getElementById('pending-count').textContent = items.length;
+
+    showToast(`✓ "${articleNameFromPath(item.path)}" publicado en GitBook`, 'success');
+
+    if (items.length === 0) {
+      setTimeout(() => {
+        document.getElementById('empty').style.display = '';
+      }, 400);
+    }
+  } catch (e) {
+    showToast('Error al aprobar: ' + e.message, 'error');
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Reintentar`;
+    }
+  }
+
+  approving.delete(id);
+}
+
+// ─── HISTORY ──────────────────────────────────────────────────────────────────
+function getHistory() {
+  try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]'); }
+  catch { return []; }
+}
+
+function addToHistory(item) {
+  const history = getHistory();
+  history.unshift({
+    id: item.id,
+    tipo: item.tipo,
+    path: item.path,
+    tema: item.tema,
+    justificacion: item.justificacion,
+    commit_message: item.commit_message,
+    created_at: item.created_at,
+    approved_at: new Date().toISOString()
+  });
+  // Keep last 200
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 200)));
+  document.getElementById('history-count').textContent = history.length + 1 > 200 ? '200+' : history.length + 1;
+}
+
+function renderHistory() {
+  const history = getHistory();
+  document.getElementById('history-count').textContent = history.length;
+  const container = document.getElementById('history-container');
+
+  if (history.length === 0) {
+    container.innerHTML = '<div class="history-empty">No hay cambios aprobados todavía.</div>';
+    return;
+  }
+
+  container.innerHTML = history.map(item => {
+    const icon = item.tipo === 'crear' ? '✦' : '↑';
+    const name = articleNameFromPath(item.path);
+    return `
+    <div class="history-item">
+      <div class="history-icon ${item.tipo}">${icon}</div>
+      <div class="history-body">
+        <div class="history-title">${escapeHtml(name)}</div>
+        <div class="history-path">${escapeHtml(item.path)}</div>
+        ${item.justificacion ? `<div style="font-size:12px;color:var(--text-muted);margin-bottom:4px">${escapeHtml(item.justificacion)}</div>` : ''}
+        <div class="history-meta">
+          <span>✓ Aprobado ${formatDate(item.approved_at)}</span>
+          ${item.tema ? `<span>🏷 ${escapeHtml(item.tema)}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function clearHistory() {
+  if (!confirm('¿Limpiar el historial de cambios aprobados?')) return;
+  localStorage.removeItem(HISTORY_KEY);
+  renderHistory();
+  showToast('Historial limpiado', 'info');
+}
+
+// ─── TOAST ────────────────────────────────────────────────────────────────────
+function showToast(msg, type = 'info', duration = 4000) {
+  const toast = document.getElementById('toast');
+  const el = document.createElement('div');
+  el.className = `toast-item toast-${type}`;
+  el.textContent = msg;
+  toast.appendChild(el);
+  setTimeout(() => {
+    el.style.transition = 'opacity 0.3s';
+    el.style.opacity = '0';
+    setTimeout(() => el.remove(), 320);
+  }, duration);
+}
 </script>
 </body>
 </html>
