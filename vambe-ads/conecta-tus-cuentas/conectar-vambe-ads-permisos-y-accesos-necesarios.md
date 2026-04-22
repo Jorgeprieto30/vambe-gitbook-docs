@@ -47,11 +47,11 @@ Asegúrate de que el usuario también tenga permisos sobre los activos asociados
 ¿Cómo verificarlo? En la configuración de tu Business Manager, ve a **Usuarios > Personas**, selecciona al usuario y revisa que en "**Activos asignados**" tenga la cuenta publicitaria con permisos de "**Administrar cuenta publicitaria**".
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

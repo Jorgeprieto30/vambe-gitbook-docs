@@ -1,6 +1,13 @@
 # Table of contents
 
 * [Vambe Ads: convierte tus conversaciones en campañas publicitarias que realmente venden](README.md)
+
+## Group 1
+
+* [Conoce al Nuevo Asistente Inteligente de Vambe Ads: Tu Copiloto de Marketing](group-1/conoce-al-nuevo-asistente-inteligente-de-vambe-ads-tu-copiloto-de-marketing.md)
+
+***
+
 * [Cómo ingresar a Vambe Ads](como-ingresar-a-vambe-ads.md)
 
 ## Conecta tus cuentas
