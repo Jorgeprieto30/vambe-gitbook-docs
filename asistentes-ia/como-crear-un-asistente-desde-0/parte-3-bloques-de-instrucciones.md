@@ -31,7 +31,7 @@ Se estructura mediante una secuencia lógica y ordenada (Paso 1, Paso 2, Paso 3)
 * _Subpaso 2.1:_ Si el requerimiento del cliente es Venta, debes ejecutar la función Cambiar etapa a Venta.
 * _Subpaso 2.2:_ Si el requerimiento es Servicio al cliente, debes ejecutar la función Cambiar etapa a Servicio al cliente.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 ⚠️ **Importante**: Para que estas acciones se cumplan, debe asegurarse de agregar correctamente la función utilizando el botón "**+ Agregar función**". 👉 [**\[Visite la sección de Funciones aquí para más detalles\]**](/broken/pages/KsYXjY1ljbT0miwhmAIg)

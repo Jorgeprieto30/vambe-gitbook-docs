@@ -47,7 +47,7 @@ Muchos usuarios intentan crear un "Súper Asistente" que salude, califique, vend
 
 Si flujo se resuelve con muchos asistentes, un ejemplo:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 La solución: Crea un asistente diferente para cada etapa de tu embudo. Por ejemplo: Un asistente "**Inicial**" para perfilar al cliente, y luego lo derivas a un asistente de "**Ventas**" o a uno de "**Servicio al Cliente**". Así mantienes el orden y la IA siempre tiene un objetivo claro.
 
