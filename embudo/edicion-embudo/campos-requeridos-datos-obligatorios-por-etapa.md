@@ -2,12 +2,12 @@
 description: >-
   Asegura la calidad de tus datos. Configura "candados" para que la IA (o tu
   equipo) no pueda ingresar a un cliente en una etapa específica sin tener los
-  datos obligatorios completos.
+  datos obligatorios completos, incluyendo ahora campos de contacto.
 ---
 
 # Campos Requeridos: Datos obligatorios por etapa
 
-La funcionalidad de **Campos Requeridos** actúa como un filtro de calidad en tu embudo de ventas. Te permite definir qué información es **obligatoria para entrar** a una etapa específica.
+La funcionalidad de **Campos Requeridos** actúa como un filtro de calidad en tu embudo de ventas. Te permite definir qué información es **obligatoria para entrar** a una etapa específica, incluyendo ahora **campos de contacto**. Esto permite una personalización más profunda en la recolección de datos por fase del proceso.
 
 **La Regla de Oro**: Los campos son requeridos para **ENTRAR** a la etapa.
 
@@ -15,7 +15,7 @@ La funcionalidad de **Campos Requeridos** actúa como un filtro de calidad en tu
 * Si tú mueves manualmente un ticket a "Cotización", el sistema te pedirá rellenar esos datos manualmente.
 
 {% hint style="danger" %}
-**Requisito Previo**: El Campo (Dato) debe existir previamente en la plataforma y estar asociado al Ticket. _Si aún no los has creado:_ 👉 [\[Cómo crear campos personalizados y asignarlos al Ticket\]](https://academy.vambe.ai/crm/gestion-de-campos-y-datos-a-recopilar)
+**Requisito Previo**: El Campo (Dato), ya sea personalizado o de contacto, debe existir previamente en Vambe y estar asociado al Ticket. _Si aún no los has creado:_ 👉 [\\[Cómo crear campos personalizados y asignarlos al Ticket\\]](https://academy.vambe.ai/crm/gestion-de-campos-y-datos-a-recopilar)
 {% endhint %}
 
 ***
@@ -58,7 +58,7 @@ Para activar estos requisitos de entrada, sigue estos pasos:
 
 3. Ubica la columna de la Etapa de Destino (la etapa a la cual quieres ponerle requisitos de entrada).
 4. Activa el interruptor "Campos requeridos".
-5. Selecciona en la lista los datos que deben estar llenos para permitir la entrada.
+5. Selecciona en la lista los datos (incluyendo campos de contacto) que deben estar llenos para permitir la entrada.
 
 <figure><img src="../.gitbook/assets/image (13).png" alt="" width="563"><figcaption></figcaption></figure>
 
