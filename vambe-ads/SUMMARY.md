@@ -3,10 +3,6 @@
 * [Vambe Ads: convierte tus conversaciones en campañas publicitarias que realmente venden](README.md)
 * [Cómo ingresar a Vambe Ads](como-ingresar-a-vambe-ads.md)
 
-## Asistente Vambe Ads
-
-* [Conoce al Nuevo Asistente Inteligente de Vambe Ads: Tu Copiloto de Marketing](asistente-vambe-ads/conoce-al-nuevo-asistente-inteligente-de-vambe-ads-tu-copiloto-de-marketing.md)
-
 ## Conecta tus cuentas
 
 * [Conectar Vambe Ads: Permisos y Accesos Necesarios](conecta-tus-cuentas/conectar-vambe-ads-permisos-y-accesos-necesarios.md)
@@ -18,6 +14,10 @@
 * [Google Ads: Cómo obtener la atribución correcta](configuracion-plataformas/google-ads-como-obtener-la-atribucion-correcta.md)
 * [Meta Ads: cómo obtener una atribución correcta](configuracion-plataformas/meta-ads-como-obtener-una-atribucion-correcta.md)
 * [Tiktok: Cómo obtener la atribución correcta](configuracion-plataformas/tiktok-como-obtener-la-atribucion-correcta.md)
+
+## Asistente Vambe Ads
+
+* [Conoce al Nuevo Asistente Inteligente de Vambe Ads: Tu Copiloto de Marketing](asistente-vambe-ads/conoce-al-nuevo-asistente-inteligente-de-vambe-ads-tu-copiloto-de-marketing.md)
 
 ## Analiza tus campañas
 
