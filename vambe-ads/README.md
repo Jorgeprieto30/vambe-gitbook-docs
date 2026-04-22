@@ -28,6 +28,18 @@ Vambe Ads elimina estas limitaciones conectando anuncios con resultados reales.
 
 {% stepper %}
 {% step %}
+### Análisis inteligente
+
+<div align="left"><figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure></div>
+
+La interfaz de Vambe Ads está diseñada para la ejecución inmediata a través de un sistema de doble panel. Mientras interactúas con el Asistente en la izquierda, la Mesa de Trabajo en la derecha despliega las herramientas necesarias:
+
+* Configuración de Tracking: Generación instantánea de enlaces para tráfico web, TikTok o WhatsApp.
+* Personalización del Panel: Creación y edición de columnas personalizadas y eventos de conversión mediante comandos de voz o texto.
+* Reportes a medida: Generación y exportación de informes de atribución en formatos como Excel o Google Sheets, listos para su uso externo.
+{% endstep %}
+
+{% step %}
 #### Atribución real de conversiones
 
 ![Atribución real de conversiones](.gitbook/assets/image\(44\).png)
