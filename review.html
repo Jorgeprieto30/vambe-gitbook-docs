@@ -1,999 +1,1797 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Revisión de Cambios · Vambe Docs</title>
-  <style>
-    :root {
-      --bg: #0f1117;
-      --surface: #1a1d27;
-      --surface2: #22263a;
-      --border: #2e3350;
-      --text: #e2e8f0;
-      --text-muted: #7c85a2;
-      --accent: #6366f1;
-      --accent-hover: #818cf8;
-      --green-bg: #0d2818;
-      --green-text: #4ade80;
-      --green-line: #166534;
-      --red-bg: #2a0d0d;
-      --red-text: #f87171;
-      --red-line: #7f1d1d;
-      --neutral-bg: #161923;
-      --badge-new: #16a34a;
-      --badge-update: #2563eb;
-      --radius: 12px;
-      --shadow: 0 4px 24px rgba(0,0,0,0.4);
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Revisión · Vambe Docs</title>
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
-      font-size: 14px;
-      line-height: 1.6;
-      min-height: 100vh;
-    }
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 
-    /* NAV */
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 28px;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-      font-size: 15px;
-      color: var(--text);
-      text-decoration: none;
-    }
-    .nav-brand svg { color: var(--accent); }
-    .nav-tabs {
-      display: flex;
-      gap: 4px;
-    }
-    .nav-tab {
-      padding: 6px 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-muted);
-      border: none;
-      background: transparent;
-      transition: all 0.15s;
-    }
-    .nav-tab:hover { background: var(--surface2); color: var(--text); }
-    .nav-tab.active { background: var(--accent); color: #fff; }
-    .nav-count {
-      background: var(--accent);
-      color: #fff;
-      border-radius: 20px;
-      padding: 2px 8px;
-      font-size: 12px;
-      font-weight: 600;
-      min-width: 24px;
-      text-align: center;
-    }
+<style>
+  :root {
+    /* Notion/GitBook-inspired editorial palette */
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --surface-2: #f5f3ee;
+    --surface-3: #efece4;
+    --border: #e8e4d9;
+    --border-strong: #d6d1c2;
+    --text: #1d1b16;
+    --text-2: #4a463c;
+    --text-3: #807a6c;
+    --text-4: #a7a090;
 
-    /* MAIN */
-    main { max-width: 1440px; margin: 0 auto; padding: 28px 24px; }
+    --accent: #2d4f3e;        /* deep editorial green, Vambe-ish */
+    --accent-2: #3a6650;
+    --accent-soft: #e8efe9;
+    --accent-ink: #1d3628;
 
-    /* SECTION HEADER */
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-    .section-title { font-size: 18px; font-weight: 700; }
-    .section-subtitle { color: var(--text-muted); font-size: 13px; margin-top: 2px; }
+    --add-bg: #ebf5ec;
+    --add-bg-strong: #cfe5d1;
+    --add-line: #dfeee0;
+    --add-ink: #1f5b2c;
 
-    /* LOADING / EMPTY */
-    .state-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      padding: 80px 20px;
-      color: var(--text-muted);
-    }
-    .state-box svg { opacity: 0.4; }
-    .state-box p { font-size: 15px; }
-    .spinner {
-      width: 32px; height: 32px;
-      border: 3px solid var(--border);
-      border-top-color: var(--accent);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    --del-bg: #fbecea;
+    --del-bg-strong: #f4cfc9;
+    --del-line: #f1d9d4;
+    --del-ink: #8a271a;
 
-    /* CARD */
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 24px;
-      overflow: hidden;
-      transition: border-color 0.2s;
-    }
-    .card:hover { border-color: var(--accent); }
+    --blue: #2c5282;
+    --blue-soft: #e6eff7;
 
-    .card-header {
-      padding: 18px 22px 14px;
-      border-bottom: 1px solid var(--border);
-    }
-    .card-title-row {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .card-article-name {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 2px 10px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .badge-crear { background: rgba(22,163,74,0.2); color: #4ade80; border: 1px solid rgba(22,163,74,0.3); }
-    .badge-actualizar { background: rgba(37,99,235,0.2); color: #60a5fa; border: 1px solid rgba(37,99,235,0.3); }
+    --amber: #8a5a12;
+    --amber-soft: #f6ecd6;
 
-    .card-path {
-      font-size: 11px;
-      color: var(--text-muted);
-      font-family: 'SF Mono', 'Fira Code', monospace;
-      margin-top: 4px;
-    }
-    .card-meta {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-top: 10px;
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-    .card-meta span { display: flex; align-items: center; gap: 4px; }
+    --radius: 10px;
+    --radius-sm: 6px;
+    --shadow-sm: 0 1px 0 rgba(20,18,12,0.04);
+    --shadow-md: 0 2px 8px rgba(20,18,12,0.06), 0 1px 0 rgba(20,18,12,0.04);
 
-    .card-justification {
-      margin-top: 10px;
-      padding: 10px 14px;
-      background: var(--surface2);
-      border-radius: 8px;
-      border-left: 3px solid var(--accent);
-      font-size: 13px;
-      color: var(--text);
-      line-height: 1.5;
-    }
-    .card-justification-label {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--accent);
-      margin-bottom: 4px;
-    }
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-serif: 'Lora', Georgia, serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
 
-    /* DIFF */
-    .diff-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      border-top: 1px solid var(--border);
-    }
-    .diff-side {
-      overflow: auto;
-      max-height: 480px;
-    }
-    .diff-side:first-child {
-      border-right: 1px solid var(--border);
-    }
-    .diff-side-header {
-      position: sticky;
-      top: 0;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      z-index: 2;
-    }
-    .diff-side-header.old {
-      background: var(--red-bg);
-      color: var(--red-text);
-      border-bottom: 1px solid var(--red-line);
-    }
-    .diff-side-header.new {
-      background: var(--green-bg);
-      color: var(--green-text);
-      border-bottom: 1px solid var(--green-line);
-    }
-    .diff-lines { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 12px; }
-    .diff-line {
-      display: flex;
-      min-height: 20px;
-      line-height: 20px;
-    }
-    .diff-line-num {
-      min-width: 40px;
-      text-align: right;
-      padding: 0 8px;
-      color: var(--text-muted);
-      user-select: none;
-      font-size: 11px;
-      flex-shrink: 0;
-      border-right: 1px solid var(--border);
-    }
-    .diff-line-content {
-      padding: 0 10px;
-      white-space: pre-wrap;
-      word-break: break-word;
-      flex: 1;
-    }
-    .diff-line.removed {
-      background: var(--red-bg);
-    }
-    .diff-line.removed .diff-line-num { background: rgba(239,68,68,0.1); color: var(--red-text); }
-    .diff-line.removed .diff-line-content { color: var(--red-text); }
-    .diff-line.added {
-      background: var(--green-bg);
-    }
-    .diff-line.added .diff-line-num { background: rgba(74,222,128,0.1); color: var(--green-text); }
-    .diff-line.added .diff-line-content { color: var(--green-text); }
-    .diff-line.unchanged .diff-line-content { color: var(--text-muted); }
-    .diff-line.placeholder {
-      background: rgba(255,255,255,0.02);
-    }
-    .diff-line.placeholder .diff-line-content { color: transparent; }
+    --sidebar-w: 320px;
+    --topbar-h: 52px;
+  }
 
-    /* CREAR: full width */
-    .diff-full {
-      padding: 0;
-      border-top: 1px solid var(--border);
-    }
-    .diff-full-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      background: var(--green-bg);
-      color: var(--green-text);
-      border-bottom: 1px solid var(--green-line);
-    }
-    .diff-full-lines { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 12px; max-height: 480px; overflow: auto; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  button { font-family: inherit; color: inherit; }
+  input, textarea, select { font-family: inherit; color: inherit; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 10px; border: 2px solid var(--bg); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-4); }
 
-    /* CARD FOOTER */
-    .card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 22px;
-      border-top: 1px solid var(--border);
-      background: var(--surface2);
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .stats-row { display: flex; gap: 16px; font-size: 12px; color: var(--text-muted); }
-    .stats-row span { display: flex; align-items: center; gap: 4px; }
-    .stat-add { color: var(--green-text); }
-    .stat-del { color: var(--red-text); }
+  /* ─── TOPBAR ───────────────────────────────────────────── */
+  .topbar {
+    height: var(--topbar-h);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    position: sticky; top: 0; z-index: 50;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 600; font-size: 14px; letter-spacing: -0.01em;
+  }
+  .brand-mark {
+    width: 26px; height: 26px; border-radius: 7px;
+    background: var(--accent);
+    color: #fff;
+    display: grid; place-items: center;
+    font-weight: 700; font-size: 13px; font-family: var(--font-serif);
+    font-style: italic;
+  }
+  .brand-name { color: var(--text); }
+  .brand-sep { width: 1px; height: 14px; background: var(--border-strong); margin: 0 4px; }
+  .brand-sub { color: var(--text-3); font-weight: 500; }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 20px;
-      border-radius: 8px;
-      font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-      border: none;
-      transition: all 0.15s;
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-    }
-    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
-    .btn-primary:active { transform: translateY(0); }
-    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
-    .btn-ghost {
-      background: transparent;
-      color: var(--text-muted);
-      border: 1px solid var(--border);
-    }
-    .btn-ghost:hover { background: var(--surface2); color: var(--text); }
+  .topbar-tabs {
+    display: flex;
+    align-items: center;
+    background: var(--surface-2);
+    padding: 3px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .topbar-tab {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 5px 12px;
+    border: none; background: transparent; cursor: pointer;
+    font-size: 13px; font-weight: 500; color: var(--text-2);
+    border-radius: 6px;
+    transition: all 0.12s;
+  }
+  .topbar-tab:hover { color: var(--text); }
+  .topbar-tab.active {
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow-sm);
+  }
+  .topbar-tab .count {
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+    padding: 1px 7px;
+    border-radius: 20px;
+    background: var(--surface-3);
+    color: var(--text-2);
+    min-width: 20px;
+    text-align: center;
+  }
+  .topbar-tab.active .count { background: var(--accent); color: #fff; }
 
-    /* TOAST */
-    #toast {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .toast-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 18px;
-      border-radius: 10px;
-      font-size: 13px;
-      font-weight: 500;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-      animation: slideIn 0.25s ease;
-      max-width: 340px;
-    }
-    .toast-success { background: #14532d; color: #86efac; border: 1px solid #166534; }
-    .toast-error { background: #450a0a; color: #fca5a5; border: 1px solid #7f1d1d; }
-    .toast-info { background: #1e1b4b; color: #a5b4fc; border: 1px solid #3730a3; }
-    @keyframes slideIn { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+  .topbar-actions { display: flex; align-items: center; gap: 8px; }
 
-    /* HISTORY */
-    #history-section { display: none; }
-    .history-empty { padding: 60px 20px; text-align: center; color: var(--text-muted); }
-    .history-item {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px 20px;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-    }
-    .history-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: 16px;
-    }
-    .history-icon.crear { background: rgba(22,163,74,0.15); }
-    .history-icon.actualizar { background: rgba(37,99,235,0.15); }
-    .history-icon.rechazado { background: rgba(239,68,68,0.15); }
-    .history-body { flex: 1; min-width: 0; }
-    .history-title { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
-    .history-path { font-size: 11px; color: var(--text-muted); font-family: monospace; margin-bottom: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .history-meta { font-size: 11px; color: var(--text-muted); display: flex; gap: 12px; flex-wrap: wrap; }
-    .history-clear-btn {
-      margin-bottom: 16px;
-    }
+  .icon-btn {
+    width: 32px; height: 32px;
+    display: grid; place-items: center;
+    border-radius: 7px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-3);
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+  .icon-btn:hover { background: var(--surface-2); color: var(--text); }
 
-    /* SCROLLBAR */
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
-  </style>
+  /* ─── APP LAYOUT ───────────────────────────────────────── */
+  .app {
+    display: grid;
+    grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+    height: calc(100vh - var(--topbar-h));
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  /* ─── SIDEBAR (queue list) ─────────────────────────────── */
+  .sidebar {
+    border-right: 1px solid var(--border);
+    background: var(--surface);
+    display: flex; flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .sb-header {
+    padding: 16px 16px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sb-title-row {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .sb-title {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .sb-title-meta {
+    font-size: 12px; color: var(--text-3);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .sb-search {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .sb-search svg {
+    position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+    color: var(--text-4);
+  }
+  .sb-search input {
+    width: 100%;
+    padding: 7px 10px 7px 32px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    font-size: 13px;
+    outline: none;
+    transition: all 0.12s;
+  }
+  .sb-search input:focus {
+    background: var(--surface);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(45,79,62,0.08);
+  }
+
+  .sb-filter-row {
+    display: flex; gap: 6px; align-items: center;
+    flex-wrap: wrap;
+  }
+  .chip {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 11.5px; font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-2);
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+  .chip:hover { background: var(--surface-3); }
+  .chip.active {
+    background: var(--accent-ink);
+    border-color: var(--accent-ink);
+    color: #fff;
+  }
+  .chip-select {
+    appearance: none; -webkit-appearance: none;
+    border: 1px solid var(--border); background: var(--surface-2);
+    border-radius: 20px; padding: 3px 22px 3px 8px;
+    font-size: 11.5px; font-weight: 500; color: var(--text-2);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23807a6c' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+  }
+
+  .sb-bulk {
+    display: none;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--accent-soft);
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .sb-bulk.show { display: flex; }
+  .sb-bulk-count { font-weight: 600; color: var(--accent-ink); }
+  .sb-bulk-actions { display: flex; gap: 6px; }
+
+  .sb-list {
+    flex: 1; overflow-y: auto;
+    padding: 4px 0 20px;
+  }
+
+  .queue-item {
+    display: flex; gap: 10px;
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+  .queue-item:hover { background: var(--surface-2); }
+  .queue-item.active {
+    background: var(--accent-soft);
+  }
+  .queue-item.active::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 3px; background: var(--accent);
+  }
+
+  .qi-check {
+    width: 16px; height: 16px;
+    border: 1.5px solid var(--border-strong);
+    border-radius: 4px;
+    flex-shrink: 0; margin-top: 2px;
+    background: var(--surface);
+    cursor: pointer;
+    display: grid; place-items: center;
+    transition: all 0.1s;
+  }
+  .queue-item:hover .qi-check { border-color: var(--text-3); }
+  .qi-check.checked {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .qi-check.checked::after {
+    content: ''; width: 8px; height: 5px;
+    border-left: 1.8px solid #fff; border-bottom: 1.8px solid #fff;
+    transform: rotate(-45deg) translate(1px, -1px);
+  }
+
+  .qi-body { flex: 1; min-width: 0; }
+  .qi-top {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 2px;
+  }
+  .qi-type {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 1px 6px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .qi-type.crear {
+    background: var(--add-bg-strong); color: var(--add-ink);
+  }
+  .qi-type.actualizar {
+    background: var(--blue-soft); color: var(--blue);
+  }
+  .qi-time {
+    font-size: 11px; color: var(--text-4);
+    margin-left: auto;
+    font-variant-numeric: tabular-nums;
+  }
+  .qi-title {
+    font-size: 13.5px; font-weight: 600;
+    color: var(--text);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    letter-spacing: -0.005em;
+  }
+  .qi-path {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--text-3);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    margin-top: 1px;
+  }
+  .qi-tema {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--text-2);
+    background: var(--surface-3);
+    padding: 1px 7px;
+    border-radius: 3px;
+    max-width: 100%;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .qi-stats {
+    display: flex; gap: 10px; margin-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--text-3);
+  }
+  .qi-stats .add { color: var(--add-ink); }
+  .qi-stats .del { color: var(--del-ink); }
+
+  /* ─── DETAIL PANEL ─────────────────────────────────────── */
+  .detail {
+    display: flex; flex-direction: column;
+    background: var(--bg);
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .detail-empty {
+    flex: 1;
+    display: grid; place-items: center;
+    color: var(--text-3);
+    text-align: center;
+    padding: 40px;
+  }
+  .detail-empty svg { margin-bottom: 14px; color: var(--text-4); }
+  .detail-empty h2 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--text);
+    margin: 0 0 6px;
+  }
+  .detail-empty p { margin: 0; font-size: 14px; max-width: 320px; }
+
+  .detail-head {
+    padding: 20px 28px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .dh-crumbs {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 12px; color: var(--text-3);
+    font-family: var(--font-mono);
+    margin-bottom: 8px;
+  }
+  .dh-crumbs .sep { color: var(--text-4); }
+  .dh-title-row {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 20px;
+  }
+  .dh-title {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .dh-meta {
+    display: flex; flex-wrap: wrap; gap: 14px;
+    font-size: 12.5px; color: var(--text-3);
+  }
+  .dh-meta-item { display: inline-flex; align-items: center; gap: 5px; }
+  .dh-meta-item strong { color: var(--text-2); font-weight: 500; }
+
+  .dh-just {
+    margin-top: 14px;
+    padding: 12px 14px;
+    background: var(--amber-soft);
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #5b3c0a;
+    display: flex; gap: 10px;
+    border-left: 3px solid #c98d2a;
+  }
+  .dh-just-label {
+    font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 3px;
+  }
+
+  .dh-actions {
+    display: flex; gap: 8px; flex-shrink: 0;
+  }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 14px;
+    border-radius: 7px;
+    font-size: 13px; font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.12s;
+    white-space: nowrap;
+  }
+  .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .btn-primary:hover:not(:disabled) { background: var(--accent-2); border-color: var(--accent-2); }
+  .btn-ghost {
+    background: var(--surface);
+    color: var(--text-2);
+    border-color: var(--border-strong);
+  }
+  .btn-ghost:hover:not(:disabled) { background: var(--surface-2); border-color: var(--text-4); color: var(--text); }
+  .btn-danger-ghost {
+    background: var(--surface);
+    color: var(--del-ink);
+    border-color: var(--border-strong);
+  }
+  .btn-danger-ghost:hover:not(:disabled) { background: var(--del-bg); border-color: var(--del-bg-strong); }
+
+  /* Detail body */
+  .detail-body {
+    flex: 1 1 0; min-height: 0;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+
+  .view-tabs {
+    display: flex;
+    padding: 0 28px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    gap: 2px;
+    flex-shrink: 0;
+  }
+  .view-tab {
+    background: transparent; border: none; cursor: pointer;
+    padding: 10px 14px;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-3);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: all 0.12s;
+  }
+  .view-tab:hover { color: var(--text); }
+  .view-tab.active {
+    color: var(--accent-ink);
+    border-bottom-color: var(--accent);
+  }
+  .view-tab-spacer { flex: 1; }
+  .view-tab-stats {
+    display: inline-flex; align-items: center; gap: 12px;
+    padding: 10px 0;
+    font-family: var(--font-mono);
+    font-size: 12px;
+  }
+  .view-tab-stats .add { color: var(--add-ink); }
+  .view-tab-stats .del { color: var(--del-ink); }
+
+  .view-content {
+    flex: 1 1 0;
+    min-height: 0;
+    overflow: auto;
+    background: var(--bg);
+  }
+
+  /* ─── UNIFIED DIFF ─────────────────────────────────────── */
+  .diff-unified, .diff-split, .diff-create, .editor-wrap {
+    margin: 16px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .preview-rendered {
+    max-width: 900px;
+    margin: 16px auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .diff-file-head {
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-2);
+  }
+  .diff-file-head .path { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .diff-file-head .stats { display: flex; gap: 10px; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .diff-file-head .add { color: var(--add-ink); }
+  .diff-file-head .del { color: var(--del-ink); }
+
+  .diff-lines {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .diff-row {
+    display: grid;
+    min-height: 22px;
+  }
+  .diff-unified .diff-row {
+    grid-template-columns: 40px 40px 16px minmax(0, 1fr);
+  }
+  .diff-split .diff-row {
+    grid-template-columns: 36px 14px minmax(0, 1fr) 1px 36px 14px minmax(0, 1fr);
+  }
+  .diff-create .diff-row {
+    grid-template-columns: 40px 16px minmax(0, 1fr);
+  }
+  .ln {
+    text-align: right;
+    padding: 0 8px;
+    color: var(--text-4);
+    user-select: none;
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+    border-right: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .marker {
+    text-align: center;
+    color: var(--text-4);
+    user-select: none;
+    font-weight: 600;
+  }
+  .code {
+    padding: 2px 10px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    color: var(--text);
+    min-width: 0;
+  }
+  .diff-row.hunk {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    font-weight: 500;
+    padding: 3px 0;
+  }
+  .diff-row.hunk .ln { background: var(--accent-soft); border-color: var(--accent-soft); color: var(--accent-ink); }
+  .diff-row.hunk .code { color: var(--accent-ink); font-style: italic; }
+  .diff-row.add { background: var(--add-bg); }
+  .diff-row.add .ln { background: var(--add-bg); border-color: var(--add-line); color: var(--add-ink); opacity: 0.85; }
+  .diff-row.add .marker { color: var(--add-ink); }
+  .diff-row.del { background: var(--del-bg); }
+  .diff-row.del .ln { background: var(--del-bg); border-color: var(--del-line); color: var(--del-ink); opacity: 0.85; }
+  .diff-row.del .marker { color: var(--del-ink); }
+  .diff-row.ctx:hover { background: var(--surface-2); }
+  .diff-split .divider { background: var(--border); }
+  .diff-row.empty .code { color: var(--text-4); }
+  .diff-row.empty.add { background: rgba(235,245,236,0.4); }
+  .diff-row.empty.del { background: rgba(251,236,234,0.4); }
+
+  /* ─── RENDERED PREVIEW ─────────────────────────────────── */
+  .preview-rendered {
+    padding: 48px 60px;
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text);
+  }
+  .preview-rendered h1 { font-size: 34px; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 18px; line-height: 1.2; }
+  .preview-rendered h2 { font-size: 24px; font-weight: 600; margin: 36px 0 12px; letter-spacing: -0.01em; }
+  .preview-rendered h3, .preview-rendered h4 { font-size: 19px; font-weight: 600; margin: 28px 0 8px; font-family: var(--font-sans); letter-spacing: -0.005em; }
+  .preview-rendered p { margin: 0 0 14px; }
+  .preview-rendered ul, .preview-rendered ol { margin: 0 0 14px; padding-left: 24px; }
+  .preview-rendered li { margin-bottom: 4px; }
+  .preview-rendered code {
+    background: var(--surface-2); padding: 1px 5px;
+    border-radius: 4px; font-family: var(--font-mono); font-size: 14px;
+  }
+  .preview-rendered pre {
+    background: var(--surface-2); padding: 14px 18px;
+    border-radius: 8px; overflow-x: auto;
+    font-family: var(--font-mono); font-size: 13px;
+    line-height: 1.5;
+  }
+  .preview-rendered pre code { background: none; padding: 0; }
+  .preview-rendered blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 16px;
+    margin: 14px 0;
+    color: var(--text-2);
+    font-style: italic;
+  }
+  .preview-rendered hr {
+    border: none; height: 1px; background: var(--border);
+    margin: 32px 0;
+  }
+  .preview-rendered a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(45,79,62,0.3); }
+  .preview-rendered img {
+    max-width: 100%; border-radius: 6px; border: 1px solid var(--border);
+    margin: 10px 0;
+  }
+  .preview-rendered .gitbook-hint {
+    background: var(--amber-soft);
+    border-left: 3px solid #c98d2a;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin: 14px 0;
+    font-family: var(--font-sans);
+    font-style: normal;
+    font-size: 14px;
+    color: #5b3c0a;
+  }
+  .preview-rendered .gitbook-hint.danger {
+    background: var(--del-bg);
+    border-left-color: #c24a3a;
+    color: var(--del-ink);
+  }
+  .preview-rendered .frontmatter-box {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 22px;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--text-3);
+    font-style: normal;
+  }
+
+  .preview-rendered ins {
+    background: var(--add-bg-strong);
+    text-decoration: none;
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+  .preview-rendered del {
+    background: var(--del-bg-strong);
+    color: var(--del-ink);
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+
+  /* ─── EDITOR ───────────────────────────────────────────── */
+  .editor-wrap { padding: 0; }
+  .editor-head {
+    padding: 10px 16px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12.5px;
+    color: var(--text-2);
+  }
+  .editor-head .status { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-3); }
+  .editor-head .status.dirty { color: var(--amber); }
+  .editor-textarea {
+    width: 100%;
+    min-height: 600px;
+    padding: 20px 24px;
+    border: none;
+    background: var(--surface);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text);
+    resize: vertical;
+    outline: none;
+    display: block;
+  }
+
+  /* ─── TOASTS ───────────────────────────────────────────── */
+  .toaster {
+    position: fixed; bottom: 20px; right: 20px;
+    display: flex; flex-direction: column; gap: 8px;
+    z-index: 200;
+  }
+  .toast {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 14px;
+    background: var(--text);
+    color: var(--bg);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(20,18,12,0.18);
+    min-width: 260px; max-width: 380px;
+    animation: toastIn 0.22s ease;
+  }
+  .toast.success { background: var(--accent-ink); }
+  .toast.error { background: #6a2214; color: #fce7e3; }
+  .toast-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: currentColor; opacity: 0.9;
+    margin-top: 7px; flex-shrink: 0;
+  }
+  @keyframes toastIn {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  /* ─── LOADING ──────────────────────────────────────────── */
+  .sb-loading, .sb-empty {
+    padding: 40px 24px;
+    text-align: center;
+    color: var(--text-3);
+    font-size: 13px;
+  }
+  .spinner {
+    width: 18px; height: 18px;
+    border: 2px solid var(--border-strong);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  .spinner.sm { width: 12px; height: 12px; border-width: 1.5px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* history/rejected */
+  .hist-list { max-width: 1000px; margin: 0 auto; padding: 24px; }
+  .hist-row {
+    display: flex; gap: 12px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+  }
+  .hist-icon {
+    width: 28px; height: 28px; flex-shrink: 0;
+    border-radius: 7px;
+    display: grid; place-items: center;
+    font-weight: 600; font-size: 13px;
+  }
+  .hist-icon.crear { background: var(--add-bg-strong); color: var(--add-ink); }
+  .hist-icon.actualizar { background: var(--blue-soft); color: var(--blue); }
+  .hist-icon.rechazado { background: var(--del-bg-strong); color: var(--del-ink); }
+  .hist-body { flex: 1; min-width: 0; }
+  .hist-title { font-weight: 600; font-size: 14px; margin-bottom: 2px; letter-spacing: -0.005em; }
+  .hist-path { font-family: var(--font-mono); font-size: 11px; color: var(--text-3); margin-bottom: 4px; }
+  .hist-just { font-size: 13px; color: var(--text-2); margin-bottom: 6px; line-height: 1.5; }
+  .hist-meta { font-size: 11.5px; color: var(--text-3); display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .section-hd {
+    max-width: 1000px; margin: 0 auto; padding: 24px 24px 4px;
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 16px;
+  }
+  .section-hd h2 {
+    font-family: var(--font-serif); font-weight: 600; font-size: 26px;
+    letter-spacing: -0.015em; margin: 0;
+  }
+  .section-hd p { margin: 4px 0 0; font-size: 13px; color: var(--text-3); }
+
+  .tab-view { display: none; }
+  .tab-view.active { display: flex; flex-direction: column; height: 100%; }
+  #history-view, #rejected-view { overflow-y: auto; }
+
+  /* responsive-ish */
+  @media (max-width: 980px) {
+    :root { --sidebar-w: 280px; }
+    .preview-rendered { padding: 32px 28px; }
+    .dh-title { font-size: 22px; }
+  }
+
+  .detail-head { padding: 16px 20px 12px; }
+  .dh-title { font-size: 24px; margin: 0 0 6px; }
+  .view-tabs { padding: 0 20px; }
+  .detail-head + .detail-body { flex: 1 1 0; }
+</style>
 </head>
 <body>
 
-<nav>
-  <a class="nav-brand" href="#">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
-      <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
-    </svg>
-    Vambe Docs · Revisión
-  </a>
-  <div class="nav-tabs">
-    <button class="nav-tab active" onclick="showSection('pending')">
-      Pendientes <span class="nav-count" id="pending-count">–</span>
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-mark">V</div>
+    <span class="brand-name">Vambe Docs</span>
+    <span class="brand-sep"></span>
+    <span class="brand-sub">Revisión de cambios</span>
+  </div>
+
+  <div class="topbar-tabs" id="topbar-tabs">
+    <button class="topbar-tab active" data-view="pending">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l2.5 2.5"/><circle cx="12" cy="12" r="9"/></svg>
+      Pendientes
+      <span class="count" id="count-pending">0</span>
     </button>
-    <button class="nav-tab" onclick="showSection('history')">
-      Aprobados <span class="nav-count" id="history-count">0</span>
+    <button class="topbar-tab" data-view="history">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Aprobados
+      <span class="count" id="count-history">0</span>
     </button>
-    <button class="nav-tab" onclick="showSection('rejected')">
-      Rechazados <span class="nav-count" id="rejected-count">0</span>
+    <button class="topbar-tab" data-view="rejected">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      Rechazados
+      <span class="count" id="count-rejected">0</span>
     </button>
   </div>
-</nav>
 
-<main>
-  <!-- PENDING SECTION -->
-  <div id="pending-section">
-    <div class="section-header">
-      <div>
-        <div class="section-title">Cambios pendientes de revisión</div>
-        <div class="section-subtitle">Revisa cada artículo y haz clic en <strong>Actualizar</strong> para publicar en GitBook.</div>
+  <div class="topbar-actions">
+    <button class="icon-btn" id="btn-refresh" title="Recargar desde GitHub">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- PENDING VIEW -->
+<div class="tab-view active" id="pending-view">
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sb-header">
+        <div class="sb-title-row">
+          <div class="sb-title">Cola de revisión</div>
+          <div class="sb-title-meta" id="queue-summary">–</div>
+        </div>
+
+        <div class="sb-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="search" placeholder="Buscar por título, path o tema…" />
+        </div>
+
+        <div class="sb-filter-row">
+          <button class="chip active" data-filter-type="todos">Todos</button>
+          <button class="chip" data-filter-type="actualizar">Actualizar</button>
+          <button class="chip" data-filter-type="crear">Nuevos</button>
+          <select class="chip-select" id="filter-tema"><option value="">Todos los temas</option></select>
+          <select class="chip-select" id="sort-by">
+            <option value="recent">Más recientes</option>
+            <option value="oldest">Más antiguos</option>
+            <option value="az">Alfabético A–Z</option>
+            <option value="tema">Por tema</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <div id="loading" class="state-box">
-      <div class="spinner"></div>
-      <p>Cargando cambios pendientes…</p>
-    </div>
-    <div id="empty" class="state-box" style="display:none">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-      </svg>
-      <p>¡Todo al día! No hay cambios pendientes.</p>
-    </div>
-    <div id="cards-container"></div>
-  </div>
 
-  <!-- HISTORY SECTION -->
-  <div id="history-section" style="display:none">
-    <div class="section-header">
-      <div>
-        <div class="section-title">Historial de cambios aprobados</div>
-        <div class="section-subtitle">Registro de todos los artículos que has publicado en esta sesión y sesiones anteriores.</div>
+      <div class="sb-bulk" id="bulk-bar">
+        <div><span class="sb-bulk-count" id="bulk-count">0</span> seleccionados</div>
+        <div class="sb-bulk-actions">
+          <button class="btn btn-danger-ghost" id="bulk-reject">Rechazar</button>
+          <button class="btn btn-primary" id="bulk-approve">Aprobar todos</button>
+        </div>
       </div>
-    </div>
-    <button class="btn btn-ghost history-clear-btn" onclick="clearHistory()">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/>
-      </svg>
-      Limpiar historial
-    </button>
-    <div id="history-container"></div>
-  </div>
 
-  <!-- REJECTED SECTION -->
-  <div id="rejected-section" style="display:none">
-    <div class="section-header">
-      <div>
-        <div class="section-title">Cambios rechazados</div>
-        <div class="section-subtitle">Registro de los cambios que decidiste no publicar.</div>
+      <div class="sb-list" id="queue-list">
+        <div class="sb-loading"><span class="spinner"></span>Cargando cambios…</div>
       </div>
-    </div>
-    <button class="btn btn-ghost history-clear-btn" onclick="clearRejected()">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/>
-      </svg>
-      Limpiar rechazados
-    </button>
-    <div id="rejected-container"></div>
-  </div>
-</main>
+    </aside>
 
-<div id="toast"></div>
+    <section class="detail" id="detail">
+      <div class="detail-empty" id="detail-empty">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+        <h2>Selecciona un cambio</h2>
+        <p>Elige un artículo de la cola para ver el antes, el después y publicarlo en GitBook.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- HISTORY VIEW -->
+<div class="tab-view" id="history-view">
+  <div class="section-hd">
+    <div>
+      <h2>Cambios aprobados</h2>
+      <p>Registro de artículos publicados en GitBook desde este navegador.</p>
+    </div>
+    <button class="btn btn-ghost" id="clear-history">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/></svg>
+      Limpiar
+    </button>
+  </div>
+  <div class="hist-list" id="history-list"></div>
+</div>
+
+<!-- REJECTED VIEW -->
+<div class="tab-view" id="rejected-view">
+  <div class="section-hd">
+    <div>
+      <h2>Cambios rechazados</h2>
+      <p>Registro local de cambios que decidiste no publicar.</p>
+    </div>
+    <button class="btn btn-ghost" id="clear-rejected">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/></svg>
+      Limpiar
+    </button>
+  </div>
+  <div class="hist-list" id="rejected-list"></div>
+</div>
+
+<div class="toaster" id="toaster"></div>
 
 <script>
-// ─── CONFIG ───────────────────────────────────────────────────────────────────
+// ─── DIFF ENGINE ─────────────────────────────────────────────
+// LCS-based line diff + hunk grouping with context window.
+
+(function(global){
+  const MAX_LINES = 1200;
+
+  function lcs(oldL, newL) {
+    const m = oldL.length, n = newL.length;
+    if (m > MAX_LINES || n > MAX_LINES) {
+      // fallback: treat as full replace
+      return null;
+    }
+    const dp = Array.from({length: m+1}, () => new Uint16Array(n+1));
+    for (let i=m-1; i>=0; i--) {
+      for (let j=n-1; j>=0; j--) {
+        dp[i][j] = oldL[i] === newL[j] ? dp[i+1][j+1]+1 : Math.max(dp[i+1][j], dp[i][j+1]);
+      }
+    }
+    return dp;
+  }
+
+  function diffLines(oldText, newText) {
+    const oldL = (oldText || '').split('\n');
+    const newL = (newText || '').split('\n');
+    const dp = lcs(oldL, newL);
+
+    const ops = []; // {type: 'eq'|'add'|'del', oldIdx, newIdx, text}
+
+    if (!dp) {
+      oldL.forEach((t,i) => ops.push({type:'del', oldIdx:i, newIdx:null, text:t}));
+      newL.forEach((t,i) => ops.push({type:'add', oldIdx:null, newIdx:i, text:t}));
+      return ops;
+    }
+
+    let i=0, j=0;
+    const m=oldL.length, n=newL.length;
+    while (i<m && j<n) {
+      if (oldL[i] === newL[j]) {
+        ops.push({type:'eq', oldIdx:i, newIdx:j, text:oldL[i]});
+        i++; j++;
+      } else if (dp[i+1][j] >= dp[i][j+1]) {
+        ops.push({type:'del', oldIdx:i, newIdx:null, text:oldL[i]});
+        i++;
+      } else {
+        ops.push({type:'add', oldIdx:null, newIdx:j, text:newL[j]});
+        j++;
+      }
+    }
+    while (i<m) { ops.push({type:'del', oldIdx:i, newIdx:null, text:oldL[i]}); i++; }
+    while (j<n) { ops.push({type:'add', oldIdx:null, newIdx:j, text:newL[j]}); j++; }
+    return ops;
+  }
+
+  function stats(ops) {
+    let add=0, del=0;
+    ops.forEach(o => { if(o.type==='add') add++; else if(o.type==='del') del++; });
+    return { add, del };
+  }
+
+  // Group ops into hunks with a context window of `ctx` around changes.
+  function groupHunks(ops, ctx=3) {
+    const hunks = [];
+    const changed = new Array(ops.length).fill(false);
+    ops.forEach((o,k) => { if (o.type !== 'eq') changed[k] = true; });
+    if (!changed.some(Boolean)) return []; // no changes at all
+
+    let k = 0;
+    while (k < ops.length) {
+      if (!changed[k]) { k++; continue; }
+      let start = Math.max(0, k - ctx);
+      let end = k;
+      while (end < ops.length) {
+        if (changed[end]) { end++; continue; }
+        // look ahead: if another change is within 2*ctx, merge
+        let nextChange = -1;
+        for (let q = end; q < Math.min(ops.length, end + 2*ctx + 1); q++) {
+          if (changed[q]) { nextChange = q; break; }
+        }
+        if (nextChange !== -1) { end = nextChange; continue; }
+        break;
+      }
+      const stop = Math.min(ops.length, end + ctx);
+      hunks.push({ start, end: stop });
+      k = stop;
+    }
+    return hunks;
+  }
+
+  // Escape HTML
+  function esc(s) {
+    return (s||'')
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+
+  // Render unified diff HTML from ops + hunks
+  function renderUnified(ops, opts={}) {
+    const ctx = opts.context ?? 3;
+    const hunks = groupHunks(ops, ctx);
+    if (hunks.length === 0) {
+      return '<div class="diff-row ctx"><div class="ln">—</div><div class="ln">—</div><div class="marker"></div><div class="code" style="color:var(--text-3);font-style:italic">Sin diferencias.</div></div>';
+    }
+    let html = '';
+    let lastEnd = 0;
+    hunks.forEach(h => {
+      if (h.start > lastEnd) {
+        // hunk header
+        const firstOld = findOld(ops, h.start);
+        const firstNew = findNew(ops, h.start);
+        html += `<div class="diff-row hunk"><div class="ln">…</div><div class="ln">…</div><div class="marker"></div><div class="code">@@ −${firstOld+1}  +${firstNew+1} @@</div></div>`;
+      }
+      for (let k=h.start; k<h.end; k++) {
+        const o = ops[k];
+        const oldLn = o.oldIdx !== null ? (o.oldIdx+1) : '';
+        const newLn = o.newIdx !== null ? (o.newIdx+1) : '';
+        const cls = o.type === 'add' ? 'add' : o.type === 'del' ? 'del' : 'ctx';
+        const mark = o.type === 'add' ? '+' : o.type === 'del' ? '−' : '';
+        html += `<div class="diff-row ${cls}"><div class="ln">${oldLn}</div><div class="ln">${newLn}</div><div class="marker">${mark}</div><div class="code">${esc(o.text) || '&nbsp;'}</div></div>`;
+      }
+      lastEnd = h.end;
+    });
+    return html;
+  }
+
+  function findOld(ops, from) {
+    for (let i = from; i < ops.length; i++) if (ops[i].oldIdx !== null) return ops[i].oldIdx;
+    return 0;
+  }
+  function findNew(ops, from) {
+    for (let i = from; i < ops.length; i++) if (ops[i].newIdx !== null) return ops[i].newIdx;
+    return 0;
+  }
+
+  // Split view: align dels + adds side by side within each hunk
+  function renderSplit(ops, opts={}) {
+    const ctx = opts.context ?? 3;
+    const hunks = groupHunks(ops, ctx);
+    if (hunks.length === 0) {
+      return '<div class="diff-row ctx"><div class="ln">—</div><div class="marker"></div><div class="code" style="color:var(--text-3);font-style:italic">Sin diferencias.</div><div class="divider"></div><div class="ln">—</div><div class="marker"></div><div class="code"></div></div>';
+    }
+    let html = '';
+    let lastEnd = 0;
+    hunks.forEach(h => {
+      if (h.start > lastEnd) {
+        html += `<div class="diff-row hunk"><div class="ln">…</div><div class="marker"></div><div class="code">@@ fragmento anterior @@</div><div class="divider"></div><div class="ln">…</div><div class="marker"></div><div class="code"></div></div>`;
+      }
+      // collapse runs of dels/adds into aligned pairs
+      const rows = [];
+      let k = h.start;
+      while (k < h.end) {
+        const o = ops[k];
+        if (o.type === 'eq') { rows.push({left:o, right:o}); k++; continue; }
+        // collect run
+        const dels = [], adds = [];
+        while (k < h.end && ops[k].type === 'del') { dels.push(ops[k]); k++; }
+        while (k < h.end && ops[k].type === 'add') { adds.push(ops[k]); k++; }
+        const len = Math.max(dels.length, adds.length);
+        for (let q = 0; q < len; q++) {
+          rows.push({ left: dels[q] || null, right: adds[q] || null });
+        }
+      }
+      rows.forEach(r => {
+        const L = r.left, R = r.right;
+        const lCls = !L ? 'empty add' : L.type === 'del' ? 'del' : L.type === 'add' ? 'add' : 'ctx';
+        const rCls = !R ? 'empty del' : R.type === 'add' ? 'add' : R.type === 'del' ? 'del' : 'ctx';
+        const lLn = L && L.oldIdx !== null ? (L.oldIdx+1) : '';
+        const rLn = R && R.newIdx !== null ? (R.newIdx+1) : '';
+        const lMark = !L ? '' : L.type === 'del' ? '−' : '';
+        const rMark = !R ? '' : R.type === 'add' ? '+' : '';
+        const lText = L ? (esc(L.text) || '&nbsp;') : '&nbsp;';
+        const rText = R ? (esc(R.text) || '&nbsp;') : '&nbsp;';
+        html += `<div class="diff-row"><div class="ln">${lLn}</div><div class="marker ${lCls}">${lMark}</div><div class="code ${lCls}" style="background:${bgFor(lCls)}">${lText}</div><div class="divider"></div><div class="ln">${rLn}</div><div class="marker ${rCls}">${rMark}</div><div class="code ${rCls}" style="background:${bgFor(rCls)}">${rText}</div></div>`;
+      });
+      lastEnd = h.end;
+    });
+    return html;
+  }
+
+  function bgFor(cls){
+    if (cls.includes('add')) return 'var(--add-bg)';
+    if (cls.includes('del')) return 'var(--del-bg)';
+    return 'transparent';
+  }
+
+  // Full create view: number every line of content
+  function renderCreate(text) {
+    const lines = (text||'').split('\n');
+    return lines.map((l,i) =>
+      `<div class="diff-row add"><div class="ln">${i+1}</div><div class="marker">+</div><div class="code">${esc(l) || '&nbsp;'}</div></div>`
+    ).join('');
+  }
+
+  global.VambeDiff = { diffLines, stats, renderUnified, renderSplit, renderCreate };
+})(window);
+
+</script>
+<script>
+// ─── APP ─────────────────────────────────────────────────────
+
+// Config (unchanged from original)
 const GITHUB_TOKEN = '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';
 const REPO = 'Jorgeprieto30/vambe-gitbook-docs';
 const FILE_PATH = 'pending-reviews.json';
 const WEBHOOK_URL = 'https://n8n.vambe.me/webhook/gitbook-approve';
-const HISTORY_KEY = 'vambe_docs_history';
-const REJECTED_KEY = 'vambe_docs_rejected';
 
-// ─── STATE ────────────────────────────────────────────────────────────────────
-let items = [];
-let approving = new Set();
+// Storage keys
+const K_HISTORY   = 'vambe_docs_history';
+const K_REJECTED  = 'vambe_docs_rejected';
+const K_APPROVED  = 'vambe_docs_approved_ids';   // for filter on load (30-day)
+const K_REJECTED_IDS = 'vambe_docs_rejected_ids';
+const K_EDITS     = 'vambe_docs_edits';           // {id: editedContent}
 
-// ─── INIT ─────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
-  loadPending();
-  renderHistory();
-  document.getElementById('rejected-count').textContent = getRejected().length;
-});
+// State
+let items = [];           // filtered-visible
+let allItems = [];        // unfiltered, post-bug-filter
+let selectedId = null;
+let selectedIds = new Set();   // bulk selection
+let currentView = 'diff';      // 'diff' | 'split' | 'preview' | 'edit'
+let busy = new Set();
 
-// ─── SECTION SWITCH ───────────────────────────────────────────────────────────
-function showSection(section) {
-  document.getElementById('pending-section').style.display = section === 'pending' ? '' : 'none';
-  document.getElementById('history-section').style.display = section === 'history' ? '' : 'none';
-  document.getElementById('rejected-section').style.display = section === 'rejected' ? '' : 'none';
-  document.querySelectorAll('.nav-tab').forEach((t, i) => {
-    t.classList.toggle('active',
-      (i === 0 && section === 'pending') ||
-      (i === 1 && section === 'history') ||
-      (i === 2 && section === 'rejected')
-    );
-  });
-  if (section === 'history') renderHistory();
-  if (section === 'rejected') renderRejected();
+// ─── Helpers ─────────────────────────────────────────────────
+function $(id) { return document.getElementById(id); }
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+function getJSON(k, def) { try { return JSON.parse(localStorage.getItem(k) || JSON.stringify(def)); } catch { return def; } }
+function setJSON(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
+
+function prettyDate(iso) {
+  if (!iso) return '';
+  try {
+    const d = new Date(iso);
+    const now = new Date();
+    const diff = (now - d) / 1000;
+    if (diff < 60) return 'hace un momento';
+    if (diff < 3600) return `hace ${Math.floor(diff/60)} min`;
+    if (diff < 86400) return `hace ${Math.floor(diff/3600)} h`;
+    if (diff < 604800) return `hace ${Math.floor(diff/86400)} d`;
+    return d.toLocaleDateString('es-CL', { day: '2-digit', month: 'short' });
+  } catch { return iso; }
+}
+function fullDate(iso) {
+  if (!iso) return '';
+  try { return new Date(iso).toLocaleString('es-CL', { dateStyle: 'medium', timeStyle: 'short' }); }
+  catch { return iso; }
 }
 
-// ─── LOAD PENDING ─────────────────────────────────────────────────────────────
+function articleName(path) {
+  const fn = (path||'').split('/').pop().replace(/\.(md|mdx|txt)$/i, '');
+  return fn.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+function breadcrumbs(path) {
+  const parts = (path||'').split('/');
+  return parts.slice(0, -1).map(p => p.replace(/[-_]/g, ' '));
+}
+
+// ─── Toasts ──────────────────────────────────────────────────
+function toast(msg, type='info', ms=3500) {
+  const el = document.createElement('div');
+  el.className = `toast ${type}`;
+  el.innerHTML = `<span class="toast-dot"></span><span>${esc(msg)}</span>`;
+  $('toaster').appendChild(el);
+  setTimeout(() => { el.style.transition = 'opacity 0.3s, transform 0.3s'; el.style.opacity = '0'; el.style.transform = 'translateY(8px)'; setTimeout(() => el.remove(), 320); }, ms);
+}
+
+// ─── Bug fix: approved/rejected ID tracking ─────────────────
+// We store {id: timestamp} — items approved/rejected in the last 30 days
+// are filtered out on load so they don't reappear while n8n catches up.
+function recordApproved(id) {
+  const map = getJSON(K_APPROVED, {});
+  map[id] = Date.now();
+  setJSON(K_APPROVED, prune(map));
+}
+function recordRejected(id) {
+  const map = getJSON(K_REJECTED_IDS, {});
+  map[id] = Date.now();
+  setJSON(K_REJECTED_IDS, prune(map));
+}
+function prune(map) {
+  const cutoff = Date.now() - 30*24*3600*1000;
+  const out = {};
+  Object.keys(map).forEach(k => { if (map[k] > cutoff) out[k] = map[k]; });
+  return out;
+}
+function isHandled(id) {
+  const a = getJSON(K_APPROVED, {});
+  const r = getJSON(K_REJECTED_IDS, {});
+  return !!(a[id] || r[id]);
+}
+
+// ─── View switching ─────────────────────────────────────────
+function switchMainView(v) {
+  document.querySelectorAll('.topbar-tab').forEach(t => t.classList.toggle('active', t.dataset.view === v));
+  document.querySelectorAll('.tab-view').forEach(el => el.classList.toggle('active', el.id === `${v}-view`));
+  if (v === 'history') renderHistory();
+  if (v === 'rejected') renderRejected();
+}
+
+// ─── Load pending ───────────────────────────────────────────
 async function loadPending() {
+  $('queue-list').innerHTML = '<div class="sb-loading"><span class="spinner"></span>Cargando cambios…</div>';
   try {
-    const res = await fetch(
-      `https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?t=${Date.now()}`,
-      { headers: { Accept: 'application/vnd.github.v3+json' } }
-    );
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}?t=${Date.now()}`, {
+      headers: { Accept: 'application/vnd.github.v3+json' }
+    });
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     const raw = atob(data.content.replace(/\n/g, ''));
     const bytes = new Uint8Array(raw.length);
-    for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
+    for (let i=0; i<raw.length; i++) bytes[i] = raw.charCodeAt(i);
     const decoded = new TextDecoder('utf-8').decode(bytes);
     const json = JSON.parse(decoded);
-    items = json.items || [];
+    allItems = (json.items || []).filter(it => !isHandled(it.id));
   } catch (e) {
-    showToast('Error cargando pending-reviews.json: ' + e.message, 'error');
-    items = [];
+    toast('Error cargando pending-reviews.json: ' + e.message, 'error');
+    allItems = [];
   }
+  populateTemaFilter();
+  applyFiltersAndRender();
+}
 
-  document.getElementById('loading').style.display = 'none';
-  document.getElementById('pending-count').textContent = items.length;
+// ─── Filters ─────────────────────────────────────────────────
+let filterType = 'todos';
+let filterTema = '';
+let sortBy = 'recent';
+let searchQuery = '';
 
+function populateTemaFilter() {
+  const temas = [...new Set(allItems.map(i => i.tema).filter(Boolean))].sort();
+  const sel = $('filter-tema');
+  const prev = sel.value;
+  sel.innerHTML = '<option value="">Todos los temas</option>' +
+    temas.map(t => `<option value="${esc(t)}" ${t===prev?'selected':''}>${esc(t)}</option>`).join('');
+}
+
+function applyFiltersAndRender() {
+  let list = [...allItems];
+  if (filterType !== 'todos') list = list.filter(i => i.tipo === filterType);
+  if (filterTema) list = list.filter(i => i.tema === filterTema);
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    list = list.filter(i =>
+      (i.path||'').toLowerCase().includes(q) ||
+      (i.tema||'').toLowerCase().includes(q) ||
+      articleName(i.path).toLowerCase().includes(q)
+    );
+  }
+  list.sort((a,b) => {
+    if (sortBy === 'recent') return (b.created_at||'').localeCompare(a.created_at||'');
+    if (sortBy === 'oldest') return (a.created_at||'').localeCompare(b.created_at||'');
+    if (sortBy === 'az') return articleName(a.path).localeCompare(articleName(b.path));
+    if (sortBy === 'tema') return (a.tema||'').localeCompare(b.tema||'') || articleName(a.path).localeCompare(articleName(b.path));
+    return 0;
+  });
+  items = list;
+  renderQueue();
+  updateCounts();
+}
+
+function updateCounts() {
+  $('count-pending').textContent = allItems.length;
+  $('count-history').textContent = getJSON(K_HISTORY, []).length;
+  $('count-rejected').textContent = getJSON(K_REJECTED, []).length;
+  $('queue-summary').textContent = items.length === allItems.length
+    ? `${items.length}`
+    : `${items.length} / ${allItems.length}`;
+}
+
+// ─── Render queue (sidebar) ─────────────────────────────────
+function renderQueue() {
+  const list = $('queue-list');
+  if (allItems.length === 0) {
+    list.innerHTML = `<div class="sb-empty"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="opacity:0.4;margin-bottom:10px"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><div>¡Todo al día!</div><div style="font-size:12px;margin-top:4px">No hay cambios pendientes.</div></div>`;
+    clearDetail();
+    return;
+  }
   if (items.length === 0) {
-    document.getElementById('empty').style.display = '';
-  } else {
-    renderCards();
-  }
-}
-
-// ─── ARTICLE NAME FROM PATH ────────────────────────────────────────────────────
-function articleNameFromPath(path) {
-  const filename = path.split('/').pop().replace(/\.(md|mdx|txt)$/i, '');
-  return filename
-    .replace(/[-_]/g, ' ')
-    .replace(/\b\w/g, c => c.toUpperCase());
-}
-
-function sectionFromPath(path) {
-  const parts = path.split('/');
-  if (parts.length >= 2) {
-    return parts.slice(0, -1).map(p => p.replace(/[-_]/g, ' ')).join(' › ');
-  }
-  return '';
-}
-
-function formatDate(iso) {
-  if (!iso) return '';
-  try {
-    return new Date(iso).toLocaleString('es-CL', { dateStyle: 'medium', timeStyle: 'short' });
-  } catch { return iso; }
-}
-
-// ─── DIFF ENGINE ──────────────────────────────────────────────────────────────
-function computeDiff(oldText, newText) {
-  const oldLines = (oldText || '').split('\n');
-  const newLines = (newText || '').split('\n');
-
-  // LCS-based diff
-  const m = oldLines.length, n = newLines.length;
-  // For performance, limit to 800 lines each
-  const maxLines = 800;
-  if (m > maxLines || n > maxLines) {
-    // Simple fallback: show both as-is
-    return {
-      left: oldLines.map((l, i) => ({ type: 'removed', num: i + 1, content: l })),
-      right: newLines.map((l, i) => ({ type: 'added', num: i + 1, content: l }))
-    };
+    list.innerHTML = `<div class="sb-empty">Nada coincide con tus filtros.</div>`;
+    return;
   }
 
-  // Build LCS table
-  const dp = Array.from({ length: m + 1 }, () => new Uint16Array(n + 1));
-  for (let i = m - 1; i >= 0; i--) {
-    for (let j = n - 1; j >= 0; j--) {
-      dp[i][j] = oldLines[i] === newLines[j]
-        ? dp[i+1][j+1] + 1
-        : Math.max(dp[i+1][j], dp[i][j+1]);
-    }
-  }
-
-  // Trace back
-  const left = [], right = [];
-  let i = 0, j = 0;
-  let oldNum = 1, newNum = 1;
-
-  while (i < m && j < n) {
-    if (oldLines[i] === newLines[j]) {
-      left.push({ type: 'unchanged', num: oldNum++, content: oldLines[i] });
-      right.push({ type: 'unchanged', num: newNum++, content: newLines[j] });
-      i++; j++;
-    } else if (dp[i+1][j] >= dp[i][j+1]) {
-      left.push({ type: 'removed', num: oldNum++, content: oldLines[i] });
-      right.push({ type: 'placeholder', num: null, content: '' });
-      i++;
+  list.innerHTML = items.map(it => {
+    const isCreate = it.tipo === 'crear';
+    let statsStr = '';
+    if (isCreate) {
+      const n = (it.contenido_nuevo||'').split('\n').length;
+      statsStr = `<span class="add">+${n}</span>`;
     } else {
-      left.push({ type: 'placeholder', num: null, content: '' });
-      right.push({ type: 'added', num: newNum++, content: newLines[j] });
-      j++;
+      const ops = VambeDiff.diffLines(it.contenido_actual, it.contenido_nuevo);
+      const s = VambeDiff.stats(ops);
+      statsStr = `<span class="add">+${s.add}</span><span class="del">−${s.del}</span>`;
     }
-  }
-  while (i < m) {
-    left.push({ type: 'removed', num: oldNum++, content: oldLines[i] });
-    right.push({ type: 'placeholder', num: null, content: '' });
-    i++;
-  }
-  while (j < n) {
-    left.push({ type: 'placeholder', num: null, content: '' });
-    right.push({ type: 'added', num: newNum++, content: newLines[j] });
-    j++;
-  }
-
-  return { left, right };
-}
-
-function diffStats(left, right) {
-  const added = right.filter(l => l.type === 'added').length;
-  const removed = left.filter(l => l.type === 'removed').length;
-  return { added, removed };
-}
-
-function renderDiffLines(lines) {
-  return lines.map(line => {
-    const numHtml = line.num !== null
-      ? `<span class="diff-line-num">${line.num}</span>`
-      : `<span class="diff-line-num"></span>`;
-    const content = escapeHtml(line.content);
-    return `<div class="diff-line ${line.type}">${numHtml}<span class="diff-line-content">${content}</span></div>`;
-  }).join('');
-}
-
-function escapeHtml(str) {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-// ─── RENDER CARDS ─────────────────────────────────────────────────────────────
-function renderCards() {
-  const container = document.getElementById('cards-container');
-  container.innerHTML = '';
-
-  items.forEach(item => {
-    const articleName = articleNameFromPath(item.path);
-    const section = sectionFromPath(item.path);
-    const isCriar = item.tipo === 'crear';
-    const tipoBadge = isCriar
-      ? `<span class="badge badge-crear">✦ Nuevo</span>`
-      : `<span class="badge badge-actualizar">↑ Actualización</span>`;
-
-    let diffHtml = '';
-    if (isCriar) {
-      // Full new content
-      const lines = (item.contenido_nuevo || '').split('\n');
-      const linesHtml = lines.map((l, i) => `<div class="diff-line added"><span class="diff-line-num">${i+1}</span><span class="diff-line-content">${escapeHtml(l)}</span></div>`).join('');
-      diffHtml = `
-        <div class="diff-full">
-          <div class="diff-full-header">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Contenido nuevo
-          </div>
-          <div class="diff-full-lines">${linesHtml}</div>
-        </div>`;
-    } else {
-      const { left, right } = computeDiff(item.contenido_actual, item.contenido_nuevo);
-      const stats = diffStats(left, right);
-      const leftHtml = renderDiffLines(left);
-      const rightHtml = renderDiffLines(right);
-      diffHtml = `
-        <div class="diff-container" id="diff-${item.id}">
-          <div class="diff-side">
-            <div class="diff-side-header old">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              Versión anterior
-            </div>
-            <div class="diff-lines">${leftHtml}</div>
-          </div>
-          <div class="diff-side">
-            <div class="diff-side-header new">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Versión nueva
-            </div>
-            <div class="diff-lines">${rightHtml}</div>
-          </div>
+    const checked = selectedIds.has(it.id) ? 'checked' : '';
+    return `<div class="queue-item ${selectedId===it.id?'active':''}" data-id="${esc(it.id)}">
+      <div class="qi-check ${checked}" data-check="${esc(it.id)}"></div>
+      <div class="qi-body">
+        <div class="qi-top">
+          <span class="qi-type ${it.tipo}">${it.tipo === 'crear' ? 'Nuevo' : 'Update'}</span>
+          <span class="qi-time">${prettyDate(it.created_at)}</span>
         </div>
-        <div class="card-footer" id="footer-${item.id}">
-          <div class="stats-row">
-            <span class="stat-add">+${stats.added} líneas añadidas</span>
-            <span class="stat-del">−${stats.removed} líneas eliminadas</span>
-          </div>
-          <div style="display:flex;gap:8px">
-            <button class="btn btn-ghost" id="btn-reject-${item.id}" onclick="rejectItem('${item.id}')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-              Rechazar
-            </button>
-            <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Actualizar
-            </button>
-          </div>
-        </div>`;
-    }
-
-    // For 'crear', footer is separate
-    const footerHtml = isCriar ? `
-      <div class="card-footer">
-        <div class="stats-row">
-          <span class="stat-add">+${(item.contenido_nuevo||'').split('\n').length} líneas nuevas</span>
-        </div>
-        <div style="display:flex;gap:8px">
-          <button class="btn btn-ghost" id="btn-reject-${item.id}" onclick="rejectItem('${item.id}')">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            Rechazar
-          </button>
-          <button class="btn btn-primary" id="btn-${item.id}" onclick="approveItem('${item.id}')">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            Publicar
-          </button>
-        </div>
-      </div>` : '';
-
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.id = `card-${item.id}`;
-    card.innerHTML = `
-      <div class="card-header">
-        <div class="card-title-row">
-          <div>
-            <div class="card-article-name">
-              ${tipoBadge}
-              ${escapeHtml(articleName)}
-            </div>
-            ${section ? `<div class="card-path">📁 ${escapeHtml(item.path)}</div>` : ''}
-          </div>
-          <div style="font-size:12px;color:var(--text-muted);text-align:right">
-            ${item.tema ? `<div style="margin-bottom:2px">🏷 ${escapeHtml(item.tema)}</div>` : ''}
-            ${item.created_at ? `<div>${formatDate(item.created_at)}</div>` : ''}
-          </div>
-        </div>
-        ${item.justificacion ? `
-        <div class="card-justification">
-          <div class="card-justification-label">¿Qué cambia?</div>
-          ${escapeHtml(item.justificacion)}
-        </div>` : ''}
+        <div class="qi-title">${esc(articleName(it.path))}</div>
+        <div class="qi-path">${esc(it.path)}</div>
+        ${it.tema ? `<span class="qi-tema">${esc(it.tema)}</span>` : ''}
+        <div class="qi-stats">${statsStr}</div>
       </div>
-      ${diffHtml}
-      ${footerHtml}
-    `;
-    container.appendChild(card);
+    </div>`;
+  }).join('');
+
+  // wire
+  list.querySelectorAll('.queue-item').forEach(el => {
+    el.addEventListener('click', e => {
+      if (e.target.closest('.qi-check')) return;
+      selectItem(el.dataset.id);
+    });
+  });
+  list.querySelectorAll('.qi-check').forEach(el => {
+    el.addEventListener('click', e => {
+      e.stopPropagation();
+      const id = el.dataset.check;
+      if (selectedIds.has(id)) selectedIds.delete(id);
+      else selectedIds.add(id);
+      el.classList.toggle('checked');
+      updateBulkBar();
+    });
   });
 }
 
-// ─── APPROVE ──────────────────────────────────────────────────────────────────
-async function approveItem(id) {
-  if (approving.has(id)) return;
-  approving.add(id);
-
-  const btn = document.getElementById(`btn-${id}`);
-  if (btn) {
-    btn.disabled = true;
-    btn.innerHTML = `<div class="spinner" style="width:14px;height:14px;border-width:2px"></div> Publicando…`;
+function updateBulkBar() {
+  const bar = $('bulk-bar');
+  if (selectedIds.size > 0) {
+    bar.classList.add('show');
+    $('bulk-count').textContent = selectedIds.size;
+  } else {
+    bar.classList.remove('show');
   }
+}
 
-  const item = items.find(i => i.id === id);
-  if (!item) { approving.delete(id); return; }
+// ─── Select / render detail ─────────────────────────────────
+function selectItem(id) {
+  selectedId = id;
+  document.querySelectorAll('.queue-item').forEach(el => el.classList.toggle('active', el.dataset.id === id));
+  renderDetail();
+}
+function clearDetail() {
+  selectedId = null;
+  $('detail').innerHTML = `<div class="detail-empty" id="detail-empty">
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+    <h2>Selecciona un cambio</h2>
+    <p>Elige un artículo de la cola para ver el antes, el después y publicarlo en GitBook.</p>
+  </div>`;
+}
+
+function getEditedContent(id) {
+  const edits = getJSON(K_EDITS, {});
+  return edits[id];
+}
+function setEditedContent(id, content) {
+  const edits = getJSON(K_EDITS, {});
+  if (content === null || content === undefined) delete edits[id];
+  else edits[id] = content;
+  setJSON(K_EDITS, edits);
+}
+
+function renderDetail() {
+  const it = allItems.find(i => i.id === selectedId);
+  if (!it) { clearDetail(); return; }
+
+  const isCreate = it.tipo === 'crear';
+  const edited = getEditedContent(it.id);
+  const effectiveNew = edited !== undefined ? edited : it.contenido_nuevo;
+  const hasEdits = edited !== undefined && edited !== it.contenido_nuevo;
+
+  const ops = isCreate ? null : VambeDiff.diffLines(it.contenido_actual, effectiveNew);
+  const diffStats = ops ? VambeDiff.stats(ops) : { add: (effectiveNew||'').split('\n').length, del: 0 };
+
+  const crumbs = breadcrumbs(it.path);
+  const crumbHtml = crumbs.length
+    ? crumbs.map(c => `<span>${esc(c)}</span>`).join('<span class="sep">/</span>')
+    : `<span>raíz</span>`;
+
+  const primaryLabel = isCreate ? 'Publicar en GitBook' : 'Aprobar y publicar';
+
+  const defaultView = isCreate ? 'preview' : 'diff';
+  if (currentView === 'diff' && isCreate) currentView = 'preview';
+
+  $('detail').innerHTML = `
+    <div class="detail-head">
+      <div class="dh-crumbs">${crumbHtml}<span class="sep">/</span><span style="color:var(--text-2);font-weight:500">${esc(it.path.split('/').pop())}</span></div>
+      <div class="dh-title-row">
+        <div style="flex:1;min-width:0">
+          <h1 class="dh-title">${esc(articleName(it.path))}</h1>
+          <div class="dh-meta">
+            <span class="dh-meta-item"><span class="qi-type ${it.tipo}" style="font-size:10px">${it.tipo === 'crear' ? 'Nuevo artículo' : 'Actualización'}</span></span>
+            ${it.tema ? `<span class="dh-meta-item">🏷 <strong>${esc(it.tema)}</strong></span>` : ''}
+            ${it.created_at ? `<span class="dh-meta-item">🕓 ${esc(fullDate(it.created_at))}</span>` : ''}
+            ${hasEdits ? `<span class="dh-meta-item" style="color:var(--amber)">✎ <strong>Editado localmente</strong></span>` : ''}
+          </div>
+        </div>
+        <div class="dh-actions">
+          <button class="btn btn-danger-ghost" id="btn-reject">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Rechazar
+          </button>
+          <button class="btn btn-primary" id="btn-approve">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            ${primaryLabel}
+          </button>
+        </div>
+      </div>
+      ${it.justificacion ? `<div class="dh-just">
+        <div>
+          <div class="dh-just-label">¿Qué cambia?</div>
+          <div>${esc(it.justificacion)}</div>
+        </div>
+      </div>` : ''}
+    </div>
+
+    <div class="detail-body">
+      <div class="view-tabs">
+        ${!isCreate ? `<button class="view-tab ${currentView==='diff'?'active':''}" data-view-tab="diff">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h12M4 12h8M4 18h16"/></svg>
+          Diff unificado
+        </button>
+        <button class="view-tab ${currentView==='split'?'active':''}" data-view-tab="split">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="8" height="14" rx="1"/><rect x="13" y="5" width="8" height="14" rx="1"/></svg>
+          Antes / Después
+        </button>` : ''}
+        <button class="view-tab ${currentView==='preview'?'active':''}" data-view-tab="preview">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          Vista previa
+        </button>
+        <button class="view-tab ${currentView==='edit'?'active':''}" data-view-tab="edit">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Editar ${hasEdits ? '●' : ''}
+        </button>
+        <div class="view-tab-spacer"></div>
+        <div class="view-tab-stats">
+          <span class="add">+${diffStats.add}</span>
+          ${!isCreate ? `<span class="del">−${diffStats.del}</span>` : ''}
+        </div>
+      </div>
+      <div class="view-content" id="view-content"></div>
+    </div>
+  `;
+
+  // wire
+  document.querySelectorAll('.view-tab').forEach(t => {
+    t.addEventListener('click', () => { currentView = t.dataset.viewTab; renderView(it); });
+  });
+  $('btn-approve').addEventListener('click', () => approveItem(it.id));
+  $('btn-reject').addEventListener('click', () => rejectItem(it.id));
+  renderView(it);
+}
+
+function renderView(it) {
+  document.querySelectorAll('.view-tab').forEach(t => t.classList.toggle('active', t.dataset.viewTab === currentView));
+  const vc = $('view-content');
+  const edited = getEditedContent(it.id);
+  const effectiveNew = edited !== undefined ? edited : it.contenido_nuevo;
+  const isCreate = it.tipo === 'crear';
+
+  if (currentView === 'diff') {
+    const ops = VambeDiff.diffLines(it.contenido_actual, effectiveNew);
+    const s = VambeDiff.stats(ops);
+    vc.innerHTML = `<div class="diff-unified">
+      <div class="diff-file-head">
+        <span class="path">📄 ${esc(it.path)}</span>
+        <div class="stats"><span class="add">+${s.add}</span> <span class="del">−${s.del}</span></div>
+      </div>
+      <div class="diff-lines">${VambeDiff.renderUnified(ops)}</div>
+    </div>`;
+  } else if (currentView === 'split') {
+    const ops = VambeDiff.diffLines(it.contenido_actual, effectiveNew);
+    const s = VambeDiff.stats(ops);
+    vc.innerHTML = `<div class="diff-split">
+      <div class="diff-file-head">
+        <span class="path">📄 ${esc(it.path)}</span>
+        <div class="stats"><span class="del">Antes −${s.del}</span> <span class="add">Después +${s.add}</span></div>
+      </div>
+      <div class="diff-lines">${VambeDiff.renderSplit(ops)}</div>
+    </div>`;
+  } else if (currentView === 'preview') {
+    vc.innerHTML = `<div class="preview-rendered">${renderMarkdownForPreview(effectiveNew, isCreate ? null : it.contenido_actual)}</div>`;
+  } else if (currentView === 'edit') {
+    vc.innerHTML = `<div class="editor-wrap">
+      <div class="editor-head">
+        <div>Editor inline. El contenido editado se enviará al webhook al aprobar.</div>
+        <div class="status ${edited !== undefined ? 'dirty' : ''}" id="editor-status">${edited !== undefined ? 'Modificado localmente' : 'Sin cambios'}</div>
+      </div>
+      <textarea class="editor-textarea" id="editor-ta" spellcheck="false">${esc(effectiveNew || '')}</textarea>
+      <div class="editor-head" style="border-top:1px solid var(--border);border-bottom:none;justify-content:flex-end;gap:8px">
+        <button class="btn btn-ghost" id="editor-reset">Descartar cambios</button>
+        <button class="btn btn-primary" id="editor-save">Guardar edición</button>
+      </div>
+    </div>`;
+    const ta = $('editor-ta');
+    ta.addEventListener('input', () => {
+      $('editor-status').textContent = 'Sin guardar…';
+      $('editor-status').classList.add('dirty');
+    });
+    $('editor-save').addEventListener('click', () => {
+      const v = ta.value;
+      if (v === it.contenido_nuevo) setEditedContent(it.id, undefined);
+      else setEditedContent(it.id, v);
+      toast('Edición guardada', 'success');
+      renderDetail();
+    });
+    $('editor-reset').addEventListener('click', () => {
+      setEditedContent(it.id, undefined);
+      toast('Cambios descartados');
+      renderDetail();
+    });
+  }
+}
+
+// ─── Markdown preview with diff highlights ──────────────────
+function preprocessGitbookMd(md) {
+  if (!md) return '';
+  // frontmatter
+  md = md.replace(/^---\n([\s\S]*?)\n---\n?/, (_, fm) =>
+    `<div class="frontmatter-box">${esc(fm)}</div>\n\n`
+  );
+  // {% hint style="x" %} ... {% endhint %}
+  md = md.replace(/\{%\s*hint\s+style="(\w+)"\s*%\}([\s\S]*?)\{%\s*endhint\s*%\}/g, (_, style, body) =>
+    `<div class="gitbook-hint ${style}">${marked.parse(body.trim())}</div>`
+  );
+  // figure/img with src="../..." — since images are relative to repo, leave as-is
+  md = md.replace(/<figure><img src="([^"]+)"[^>]*>(?:<figcaption>[^<]*<\/figcaption>)?<\/figure>/g,
+    (_, src) => `<img src="${esc(src)}" alt="" style="background:var(--surface-2)" />`);
+  return md;
+}
+
+function renderMarkdownForPreview(newText, oldText) {
+  marked.setOptions({ breaks: false, gfm: true });
+  const processed = preprocessGitbookMd(newText || '');
+  let html;
+  try { html = marked.parse(processed); }
+  catch { html = `<pre>${esc(newText||'')}</pre>`; }
+
+  // When oldText provided, highlight adds/removes at paragraph level.
+  // (Lightweight: we don't re-diff HTML; we diff the raw MD lines, then for
+  // the preview we render the new one but surface a banner with stats.)
+  if (oldText !== null && oldText !== undefined) {
+    const ops = VambeDiff.diffLines(oldText, newText || '');
+    const s = VambeDiff.stats(ops);
+    const addedLines = ops.filter(o => o.type==='add').map(o => o.text.trim()).filter(Boolean);
+    const removedLines = ops.filter(o => o.type==='del').map(o => o.text.trim()).filter(Boolean);
+    // Wrap exact matches of added lines in <ins>
+    if (addedLines.length) {
+      addedLines.forEach(ln => {
+        if (ln.length < 4 || ln.length > 500) return;
+        const escLn = esc(ln).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        try {
+          const re = new RegExp('(^|>)([^<]*?)(' + escLn + ')', 'g');
+          html = html.replace(re, (m, p1, p2, p3) => `${p1}${p2}<ins>${p3}</ins>`);
+        } catch {}
+      });
+    }
+    const banner = `<div style="position:sticky;top:0;background:var(--surface);padding:10px 14px;border-radius:6px;margin:-20px -20px 24px;border:1px solid var(--border);font-family:var(--font-sans);font-size:13px;color:var(--text-2);display:flex;justify-content:space-between;align-items:center;font-style:normal;z-index:1">
+      <span>Vista previa con cambios resaltados <span style="color:var(--text-3)">· texto nuevo en verde</span></span>
+      <span style="font-family:var(--font-mono);font-size:12px"><span style="color:var(--add-ink)">+${s.add}</span> <span style="color:var(--del-ink);margin-left:8px">−${s.del}</span></span>
+    </div>${html}`;
+    return banner;
+  }
+  return html;
+}
+
+// ─── Approve ────────────────────────────────────────────────
+async function approveItem(id) {
+  if (busy.has(id)) return;
+  const it = allItems.find(i => i.id === id);
+  if (!it) return;
+
+  busy.add(id);
+  const btn = $('btn-approve');
+  if (btn) { btn.disabled = true; btn.innerHTML = '<span class="spinner sm"></span> Publicando…'; }
+
+  // Build payload with edits applied
+  const edited = getEditedContent(id);
+  const payload = { ...it };
+  if (edited !== undefined) payload.contenido_nuevo = edited;
 
   try {
     const res = await fetch(WEBHOOK_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: item })
+      body: JSON.stringify({ action: payload })
     });
-
     if (!res.ok) {
       const text = await res.text();
-      throw new Error(`Webhook respondió ${res.status}: ${text}`);
+      throw new Error(`Webhook ${res.status}: ${text.slice(0, 120)}`);
     }
 
-    // Remove from list
-    items = items.filter(i => i.id !== id);
+    recordApproved(id);
+    setEditedContent(id, undefined);
 
-    // Save to history
-    addToHistory(item);
+    const history = getJSON(K_HISTORY, []);
+    history.unshift({
+      id: it.id, tipo: it.tipo, path: it.path, tema: it.tema,
+      justificacion: it.justificacion, created_at: it.created_at,
+      approved_at: new Date().toISOString(),
+      was_edited: edited !== undefined
+    });
+    setJSON(K_HISTORY, history.slice(0, 300));
 
-    // Animate card out
-    const card = document.getElementById(`card-${id}`);
-    if (card) {
-      card.style.transition = 'opacity 0.3s, transform 0.3s';
-      card.style.opacity = '0';
-      card.style.transform = 'translateX(20px)';
-      setTimeout(() => card.remove(), 320);
-    }
-
-    document.getElementById('pending-count').textContent = items.length;
-
-    showToast(`✓ "${articleNameFromPath(item.path)}" publicado en GitBook`, 'success');
-
-    if (items.length === 0) {
-      setTimeout(() => {
-        document.getElementById('empty').style.display = '';
-      }, 400);
-    }
+    allItems = allItems.filter(i => i.id !== id);
+    if (selectedId === id) selectedId = null;
+    selectedIds.delete(id);
+    applyFiltersAndRender();
+    if (!selectedId) clearDetail();
+    toast(`✓ "${articleName(it.path)}" publicado en GitBook`, 'success');
   } catch (e) {
-    showToast('Error al aprobar: ' + e.message, 'error');
+    toast('Error al publicar: ' + e.message, 'error', 6000);
     if (btn) {
       btn.disabled = false;
-      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Reintentar`;
+      btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Reintentar';
     }
   }
-
-  approving.delete(id);
+  busy.delete(id);
 }
 
-// ─── REJECT ───────────────────────────────────────────────────────────────────
+// ─── Reject ─────────────────────────────────────────────────
 function rejectItem(id) {
-  const item = items.find(i => i.id === id);
-  if (!item) return;
+  const it = allItems.find(i => i.id === id);
+  if (!it) return;
 
-  items = items.filter(i => i.id !== id);
-  addToRejected(item);
+  recordRejected(id);
+  setEditedContent(id, undefined);
 
-  const card = document.getElementById(`card-${id}`);
-  if (card) {
-    card.style.transition = 'opacity 0.3s, transform 0.3s';
-    card.style.opacity = '0';
-    card.style.transform = 'translateX(-20px)';
-    setTimeout(() => card.remove(), 320);
-  }
-
-  document.getElementById('pending-count').textContent = items.length;
-  showToast(`✗ "${articleNameFromPath(item.path)}" rechazado`, 'error', 3000);
-
-  if (items.length === 0) {
-    setTimeout(() => {
-      document.getElementById('empty').style.display = '';
-    }, 400);
-  }
-}
-
-// ─── HISTORY ──────────────────────────────────────────────────────────────────
-function getHistory() {
-  try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]'); }
-  catch { return []; }
-}
-
-function addToHistory(item) {
-  const history = getHistory();
-  history.unshift({
-    id: item.id,
-    tipo: item.tipo,
-    path: item.path,
-    tema: item.tema,
-    justificacion: item.justificacion,
-    commit_message: item.commit_message,
-    created_at: item.created_at,
-    approved_at: new Date().toISOString()
-  });
-  // Keep last 200
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 200)));
-  document.getElementById('history-count').textContent = history.length + 1 > 200 ? '200+' : history.length + 1;
-}
-
-function renderHistory() {
-  const history = getHistory();
-  document.getElementById('history-count').textContent = history.length;
-  const container = document.getElementById('history-container');
-
-  if (history.length === 0) {
-    container.innerHTML = '<div class="history-empty">No hay cambios aprobados todavía.</div>';
-    return;
-  }
-
-  container.innerHTML = history.map(item => {
-    const icon = item.tipo === 'crear' ? '✦' : '↑';
-    const name = articleNameFromPath(item.path);
-    return `
-    <div class="history-item">
-      <div class="history-icon ${item.tipo}">${icon}</div>
-      <div class="history-body">
-        <div class="history-title">${escapeHtml(name)}</div>
-        <div class="history-path">${escapeHtml(item.path)}</div>
-        ${item.justificacion ? `<div style="font-size:12px;color:var(--text-muted);margin-bottom:4px">${escapeHtml(item.justificacion)}</div>` : ''}
-        <div class="history-meta">
-          <span>✓ Aprobado ${formatDate(item.approved_at)}</span>
-          ${item.tema ? `<span>🏷 ${escapeHtml(item.tema)}</span>` : ''}
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-function clearHistory() {
-  if (!confirm('¿Limpiar el historial de cambios aprobados?')) return;
-  localStorage.removeItem(HISTORY_KEY);
-  renderHistory();
-  showToast('Historial limpiado', 'info');
-}
-
-// ─── REJECTED ─────────────────────────────────────────────────────────────────
-function getRejected() {
-  try { return JSON.parse(localStorage.getItem(REJECTED_KEY) || '[]'); }
-  catch { return []; }
-}
-
-function addToRejected(item) {
-  const rejected = getRejected();
+  const rejected = getJSON(K_REJECTED, []);
   rejected.unshift({
-    id: item.id,
-    tipo: item.tipo,
-    path: item.path,
-    tema: item.tema,
-    justificacion: item.justificacion,
-    commit_message: item.commit_message,
-    created_at: item.created_at,
+    id: it.id, tipo: it.tipo, path: it.path, tema: it.tema,
+    justificacion: it.justificacion, created_at: it.created_at,
     rejected_at: new Date().toISOString()
   });
-  localStorage.setItem(REJECTED_KEY, JSON.stringify(rejected.slice(0, 200)));
-  document.getElementById('rejected-count').textContent = rejected.length + 1 > 200 ? '200+' : rejected.length + 1;
+  setJSON(K_REJECTED, rejected.slice(0, 300));
+
+  allItems = allItems.filter(i => i.id !== id);
+  if (selectedId === id) selectedId = null;
+  selectedIds.delete(id);
+  applyFiltersAndRender();
+  if (!selectedId) clearDetail();
+  toast(`✗ "${articleName(it.path)}" rechazado`, 'info');
 }
 
-function renderRejected() {
-  const rejected = getRejected();
-  document.getElementById('rejected-count').textContent = rejected.length;
-  const container = document.getElementById('rejected-container');
+// ─── Bulk actions ───────────────────────────────────────────
+async function bulkApprove() {
+  const ids = [...selectedIds];
+  if (ids.length === 0) return;
+  if (!confirm(`¿Aprobar y publicar ${ids.length} cambios?`)) return;
+  toast(`Publicando ${ids.length} cambios…`, 'info');
+  for (const id of ids) {
+    await approveItem(id);
+  }
+  selectedIds.clear();
+  updateBulkBar();
+}
+function bulkReject() {
+  const ids = [...selectedIds];
+  if (ids.length === 0) return;
+  if (!confirm(`¿Rechazar ${ids.length} cambios?`)) return;
+  ids.forEach(id => rejectItem(id));
+  selectedIds.clear();
+  updateBulkBar();
+}
 
-  if (rejected.length === 0) {
-    container.innerHTML = '<div class="history-empty">No hay cambios rechazados todavía.</div>';
+// ─── History + Rejected views ──────────────────────────────
+function renderHistory() {
+  const list = getJSON(K_HISTORY, []);
+  const el = $('history-list');
+  if (list.length === 0) {
+    el.innerHTML = `<div class="sb-empty" style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:60px 20px">No hay cambios aprobados todavía.</div>`;
     return;
   }
-
-  container.innerHTML = rejected.map(item => {
-    const name = articleNameFromPath(item.path);
-    return `
-    <div class="history-item">
-      <div class="history-icon rechazado">✗</div>
-      <div class="history-body">
-        <div class="history-title">${escapeHtml(name)}</div>
-        <div class="history-path">${escapeHtml(item.path)}</div>
-        ${item.justificacion ? `<div style="font-size:12px;color:var(--text-muted);margin-bottom:4px">${escapeHtml(item.justificacion)}</div>` : ''}
-        <div class="history-meta">
-          <span style="color:var(--red-text)">✗ Rechazado ${formatDate(item.rejected_at)}</span>
-          ${item.tema ? `<span>🏷 ${escapeHtml(item.tema)}</span>` : ''}
+  el.innerHTML = list.map(it => {
+    const icon = it.tipo === 'crear' ? '✦' : '↑';
+    return `<div class="hist-row">
+      <div class="hist-icon ${it.tipo}">${icon}</div>
+      <div class="hist-body">
+        <div class="hist-title">${esc(articleName(it.path))}${it.was_edited ? ' <span style="color:var(--amber);font-size:11px;font-weight:500">· editado</span>' : ''}</div>
+        <div class="hist-path">${esc(it.path)}</div>
+        ${it.justificacion ? `<div class="hist-just">${esc(it.justificacion)}</div>` : ''}
+        <div class="hist-meta">
+          <span style="color:var(--add-ink)">✓ Aprobado · ${esc(fullDate(it.approved_at))}</span>
+          ${it.tema ? `<span>${esc(it.tema)}</span>` : ''}
         </div>
       </div>
     </div>`;
   }).join('');
 }
-
-function clearRejected() {
-  if (!confirm('¿Limpiar el historial de rechazados?')) return;
-  localStorage.removeItem(REJECTED_KEY);
-  renderRejected();
-  showToast('Rechazados limpiados', 'info');
+function renderRejected() {
+  const list = getJSON(K_REJECTED, []);
+  const el = $('rejected-list');
+  if (list.length === 0) {
+    el.innerHTML = `<div class="sb-empty" style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:60px 20px">No hay cambios rechazados todavía.</div>`;
+    return;
+  }
+  el.innerHTML = list.map(it => `<div class="hist-row">
+    <div class="hist-icon rechazado">✗</div>
+    <div class="hist-body">
+      <div class="hist-title">${esc(articleName(it.path))}</div>
+      <div class="hist-path">${esc(it.path)}</div>
+      ${it.justificacion ? `<div class="hist-just">${esc(it.justificacion)}</div>` : ''}
+      <div class="hist-meta">
+        <span style="color:var(--del-ink)">✗ Rechazado · ${esc(fullDate(it.rejected_at))}</span>
+        ${it.tema ? `<span>${esc(it.tema)}</span>` : ''}
+      </div>
+    </div>
+  </div>`).join('');
 }
 
-// ─── TOAST ────────────────────────────────────────────────────────────────────
-function showToast(msg, type = 'info', duration = 4000) {
-  const toast = document.getElementById('toast');
-  const el = document.createElement('div');
-  el.className = `toast-item toast-${type}`;
-  el.textContent = msg;
-  toast.appendChild(el);
-  setTimeout(() => {
-    el.style.transition = 'opacity 0.3s';
-    el.style.opacity = '0';
-    setTimeout(() => el.remove(), 320);
-  }, duration);
-}
+// ─── Wire ───────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.topbar-tab').forEach(t => {
+    t.addEventListener('click', () => switchMainView(t.dataset.view));
+  });
+  $('btn-refresh').addEventListener('click', () => loadPending());
+
+  $('search').addEventListener('input', e => { searchQuery = e.target.value.trim(); applyFiltersAndRender(); });
+  document.querySelectorAll('[data-filter-type]').forEach(ch => {
+    ch.addEventListener('click', () => {
+      filterType = ch.dataset.filterType;
+      document.querySelectorAll('[data-filter-type]').forEach(x => x.classList.toggle('active', x === ch));
+      applyFiltersAndRender();
+    });
+  });
+  $('filter-tema').addEventListener('change', e => { filterTema = e.target.value; applyFiltersAndRender(); });
+  $('sort-by').addEventListener('change', e => { sortBy = e.target.value; applyFiltersAndRender(); });
+
+  $('bulk-approve').addEventListener('click', bulkApprove);
+  $('bulk-reject').addEventListener('click', bulkReject);
+  $('clear-history').addEventListener('click', () => {
+    if (!confirm('¿Limpiar historial de aprobados? (No afecta a GitBook ni a GitHub.)')) return;
+    localStorage.removeItem(K_HISTORY); renderHistory(); updateCounts();
+  });
+  $('clear-rejected').addEventListener('click', () => {
+    if (!confirm('¿Limpiar lista de rechazados?')) return;
+    localStorage.removeItem(K_REJECTED); localStorage.removeItem(K_REJECTED_IDS);
+    renderRejected(); loadPending();
+  });
+
+  loadPending();
+  updateCounts();
+});
+
 </script>
 </body>
 </html>
