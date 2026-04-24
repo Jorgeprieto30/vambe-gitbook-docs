@@ -19,10 +19,12 @@ La nueva interfaz se divide en dos áreas clave diseñadas para la productividad
 
 El asistente está entrenado para gestionar tu marketing de punta a punta:
 
-* Análisis de Datos y Decisiones Estratégicas: Al iniciar, le indicas al asistente cuál es tu KPI principal (por ejemplo, "agendamientos" o "ventas"). Luego, simplemente puedes preguntarle: _"¿Cómo rindieron mis campañas en marzo?"_. El asistente analizará la data y te dirá exactamente qué campañas tienen mejor eficiencia, cuáles traen más volumen y, lo más importante, cuáles están desperdiciando tu presupuesto, para que sepas dónde reasignar tu dinero.
-* Generación de Creatividades Simplificada: Pídele al asistente que cree un anuncio o una variación de uno existente (por ejemplo, "modifica este anuncio para el mercado de Chile"). La IA incluso puede absorber el _branding_ de tu empresa simplemente pasándole un link.
-* Gestión Operativa sin Fricción: Olvídate de navegar por menús complejos. Pídele al chat que:
-  * Cree y edite columnas personalizadas.
-  * Configure nuevos eventos y te recomiende cuáles optimizar.
-  * Te ayude a configurar el trackeo (generando los links de TikTok a WhatsApp o de tu sitio web).
-  * Exporte reportes listos para descargar con los filtros que le pidas.
+*   **Creación de Campañas Simplificada:** Ahora es posible crear campañas de leads o tráfico para Meta y Google Ads simplemente conversando con el asistente. La IA se encarga de configurar borradores, sugerir segmentaciones y organizar los conjuntos de anuncios por ti.
+*   Análisis de Datos y Decisiones Estratégicas: Al iniciar, le indicas al asistente cuál es tu KPI principal (por ejemplo, "agendamientos" o "ventas"). Luego, simplemente puedes preguntarle: _"¿Cómo rindieron mis campañas en marzo?"_. El asistente analizará la data y te dirá exactamente qué campañas tienen mejor eficiencia, cuáles traen más volumen y, lo más importante, cuáles están desperdiciando tu presupuesto, para que sepas dónde reasignar tu dinero.
+*   Generación de Creatividades Simplificada: Pídele al asistente que cree un anuncio o una variación de uno existente (por ejemplo, "modifica este anuncio para el mercado de Chile"). La IA incluso puede absorber el _branding_ de tu empresa simplemente pasándole un link. Además, te apoyará para optimizar los textos de tus creatividades.
+*   Gestión Operativa sin Fricción: Olvídate de navegar por menús complejos. Pídele al chat que:
+    *   Cree y edite columnas personalizadas.
+    *   Configure nuevos eventos y te recomiende cuáles optimizar.
+    *   Te ayude a configurar el trackeo (generando los links de TikTok a WhatsApp o de tu sitio web).
+    *   Exporte reportes listos para descargar con los filtros que le pidas.
+    *   **Guarde tus campañas como borradores y las publique cuando estén listas.**
