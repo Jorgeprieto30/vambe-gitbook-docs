@@ -9,3 +9,5 @@
 ## Casos de uso
 
 * [Cómo automatizar acciones por inactividad usando Workflows](casos-de-uso/como-automatizar-acciones-por-inactividad-usando-workflows.md)
+
+* [Como crear y gestionar campanas de meta y google en vambe ads](vambe-ads/creacion-campanas/como-crear-y-gestionar-campanas-de-meta-y-google-en-vambe-ads.md)
