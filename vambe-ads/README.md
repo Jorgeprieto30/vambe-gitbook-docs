@@ -7,7 +7,7 @@ coverY: 0
 
 Vambe Ads es la extensión que conecta tus campañas publicitarias con lo que **realmente ocurre después del clic**: conversaciones, agendamientos, compras y cierres reales dentro de Vambe.
 
-En lugar de optimizar anuncios con métricas superficiales, Vambe Ads permite que tus campañas aprendan directamente de lo que pasa en tu embudo.
+Ahora, Vambe Ads no solo optimiza tus anuncios basándose en métricas superficiales, sino que también te permite **crear y gestionar tus campañas de Meta y Google directamente en Vambe**, integrando el ciclo completo desde la creación hasta la atribución real de resultados.
 
 ***
 
@@ -19,14 +19,28 @@ Los equipos de marketing y growth suelen enfrentarse a los mismos obstáculos:
 * Es difícil saber qué anuncios generan clientes reales y cuáles solo tráfico.
 * Las audiencias se crean y actualizan de forma manual, lenta y poco precisa.
 * El presupuesto se distribuye sin información clara sobre qué realmente convierte.
+* **La creación y gestión de campañas requiere navegar por interfaces externas complejas, lo que consume tiempo y recursos valiosos.**
 
-Vambe Ads elimina estas limitaciones conectando anuncios con resultados reales.
+Vambe Ads elimina estas limitaciones conectando anuncios con resultados reales, y ahora, **centralizando todo el proceso de gestión publicitaria en un solo lugar.**
 
 ***
 
 ## ¿Qué puedes lograr con Vambe Ads?
 
 {% stepper %}
+{% step %}
+### Creación y gestión de campañas de Meta y Google
+
+<div align="left"><figure><img src=".gitbook/assets/Portada 20.png" alt=""><figcaption></figcaption></figure></div>
+
+Ahora puedes crear, editar y gestionar tus campañas publicitarias directamente en Vambe, tanto para Meta (Facebook e Instagram) como para Google Ads. Puedes elegir entre:
+
+*   **Asistente de IA conversacional:** Simplemente describe el objetivo de tu campaña (leads, tráfico) y la IA se encargará de configurar borradores, sugerir segmentaciones y organizar conjuntos de anuncios.
+*   **Creación manual:** Configura cada detalle, como plataforma, objetivos, presupuesto, segmentación y creativos, con control total sobre el proceso. Puedes iniciar este proceso desde tu reporte de atribución para una visión unificada.
+
+Todo el trabajo se puede guardar como borrador, editar y perfeccionar antes de la publicación final.
+{% endstep %}
+
 {% step %}
 ### Análisis inteligente
 
@@ -112,6 +126,8 @@ Esto facilita la creación de:
 * Imágenes para anuncios.
 * Creatividades para redes sociales.
 * Recursos visuales alineados con tus campañas.
+
+Ahora, la IA también te apoya en la optimización de los textos para tus anuncios.
 {% endstep %}
 
 {% step %}
@@ -140,6 +156,7 @@ En el día a día, Vambe Ads permite que:
 * El presupuesto se reasigne hacia lo que sí convierte.
 * Marketing y ventas trabajen con la misma información.
 * Las campañas evolucionen junto al comportamiento de los leads.
+* **Crear, editar y lanzar nuevas campañas de forma ágil y centralizada, sin salir de Vambe.**
 
 ***
 
@@ -151,6 +168,10 @@ Equipos que usan Vambe Ads pueden lograr:
 * Atribución clara y confiable.
 * Menos desperdicio de presupuesto.
 * Campañas más inteligentes y adaptativas.
+* **Adiós a la complejidad técnica:** Ya no necesitas ser un experto en Google Ads o Meta Business Suite. Transformamos una tarea técnica pesada en un proceso fluido y conversacional.
+* **Ahorro masivo de tiempo:** Al automatizar procesos repetitivos y centralizar las plataformas, reduces drásticamente el tiempo de ejecución de tus campañas.
+* **Control financiero preciso:** Gestiona presupuestos diarios o totales a nivel de campaña o conjunto de anuncios desde una única interfaz, evitando errores de configuración en múltiples pestañas.
+* **Unificación operativa:** Al estar integrado con el reporte de atribución, tienes una visión coherente entre la creación de la publicidad y la medición de sus resultados.
 
 ***
 
@@ -158,6 +179,6 @@ Equipos que usan Vambe Ads pueden lograr:
 
 Vambe Ads transforma tus campañas publicitarias en un sistema conectado a la realidad de tu negocio.
 
-Todo lo que ya ocurre en tu embudo de Vambe — conversaciones, decisiones, cierres — pasa a ser información valiosa para tus anuncios.
+Ahora, no solo todo lo que ya ocurre en tu embudo de Vambe — conversaciones, decisiones, cierres — pasa a ser información valiosa para tus anuncios, sino que también puedes **crear y gestionar esas campañas directamente en Vambe.**
 
-Tus campañas dejan de adivinar y empiezan a optimizar con datos reales.
+Tus campañas dejan de adivinar y empiezan a optimizar con datos reales, y todo desde un solo lugar.
