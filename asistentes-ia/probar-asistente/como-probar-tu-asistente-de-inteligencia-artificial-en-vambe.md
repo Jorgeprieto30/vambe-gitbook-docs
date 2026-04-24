@@ -139,6 +139,30 @@ Una vez finalizado el test, recibirás:
 {% endstep %}
 
 {% step %}
+### IA VS IA Masivo: Comparación y optimización a escala
+
+Esta funcionalidad es la herramienta más avanzada para asegurar la máxima calidad y precisión de sus asistentes de IA. Permite comparar y optimizar diferentes modelos y configuraciones de forma masiva, superando las limitaciones de las pruebas manuales unitarias. Con IA VS IA Masivo, puede enfrentar sus inteligencias artificiales entre sí para identificar la versión con mejor rendimiento.
+
+#### ¿Cómo funciona?
+
+1.  **Configure sus versiones de IA**: Defina las distintas configuraciones o modelos de asistente que desea poner a prueba.
+2.  **Ejecute la comparativa**: Vambe enfrentará a sus asistentes en miles de interacciones simultáneas.
+3.  **Analice los resultados**: Acceda a nuevas interfaces en el Dashboard de Vambe, diseñadas para visualizar claramente qué versión de la IA está "ganando" y por qué, basándose en métricas de éxito predefinidas. Podrá identificar patrones, fortalezas y debilidades de cada configuración.
+
+#### Beneficios clave para sus asistentes
+
+*   **Mayor Calidad y Precisión**: Al comparar cientos de interacciones, se asegura que el cliente reciba la respuesta más exacta y refinada, minimizando errores o "alucinaciones".
+*   **Implementaciones más rápidas**: Reduzca drásticamente los tiempos de validación para nuevas funcionalidades de IA, pasando de días a minutos y entregando valor al cliente mucho más rápido.
+*   **Consistencia Garantizada**: Detecte posibles fallos antes de que lleguen a producción, garantizando un servicio más estable y confiable.
+
+#### ¿Cuándo usar IA VS IA Masivo?
+
+*   Al desarrollar nuevas funcionalidades o estrategias para sus asistentes.
+*   Para validar cambios en los prompts o la lógica interna de la IA.
+*   En la búsqueda constante de la máxima eficiencia y rendimiento de sus modelos de IA.
+{% endstep %}
+
+{% step %}
 ### Probar con código QR
 
 Esta opción te permite llevar la experiencia de prueba directamente a tu dispositivo móvil, simulando la interacción real de un cliente a través de WhatsApp.
@@ -173,4 +197,5 @@ Consideraciones importantes
 | Probar asistente individual | Testear solo un asistente               | Revisar lógica interna o bloques específicos            |
 | Playground (flujo completo) | Simular el recorrido de un cliente real | Validar que el embudo completo funciona                 |
 | Probar con IA               | Pruebas masivas con perfiles simulados  | Buscar errores complejos o validar robustez             |
+| IA VS IA Masivo             | Comparar y optimizar modelos de IA      | Escalar la calidad, velocidad y consistencia de sus IA  |
 | Código QR                   | Prueba real en WhatsApp móvil           | Validar la experiencia final antes de conectar un canal |
