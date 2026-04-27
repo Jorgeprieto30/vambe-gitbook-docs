@@ -49,6 +49,7 @@ El **Superadministrador** es el rol con acceso total dentro de Vambe.
 **Capacidades**
 
 * Puede ver **todos los tickets y contactos**.
+* Tiene acceso automático a **todos los dashboards de Vambe**, sin necesidad de invitaciones.
 * Puede **modificar la inteligencia artificial**, automatizaciones, asistentes, embudos, etapas y reglas internas.
 * Puede crear, editar y gestionar usuarios, canales y configuraciones generales.
 
