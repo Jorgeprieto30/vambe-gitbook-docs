@@ -4,6 +4,8 @@ Antes de probar, tu asistente debe estar completamente creado y configurado.
 
 En Vambe existen tres formas de probar cómo responde tu IA, dependiendo de si quieres evaluar una sola inteligencia artificial, todo el embudo o hacer simulaciones avanzadas. A continuación, te explicamos cada una.
 
+En Vambe, nuestro modelo de inteligencia artificial se somete a una evaluación continua para optimizar su rendimiento. Nos enfocamos en la reducción de 'alucinaciones' (respuestas incorrectas o fuera de contexto) y en la mejora constante de su capacidad general. Esto significa que al probar tus asistentes, trabajarás con un modelo cada vez más preciso y confiable, que minimiza errores y maximiza la eficiencia.
+
 ***
 
 {% stepper %}
