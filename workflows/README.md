@@ -180,6 +180,17 @@ El nodo de Espera cuenta con opciones de cancelación automática. Puedes activa
 
 ***
 
-#### 7. Modo Test
+#### 7. Automatización para clientes problemáticos: Alerta y seguimiento
+
+**Trigger:** Etiqueta asignada ("Cliente Problemático")
+**Condición:** (Opcional, ej: Canal = "WhatsApp" para gestión específica)
+**Acción 1:** Asignar ejecutivo → _"Agente de Soporte Senior"_
+**Acción 2:** Crear nota → _"Cliente etiquetado como problemático. Revisar historial para ofrecer solución proactiva."_
+**Acción 3:** Enviar mensaje con IA → _"[Mensaje diseñado para desescalar la situación y proponer una resolución, adaptado al contexto]."_
+**Acción 4:** Agregar fila a Google Sheet → _"Registro de incidentes para análisis y mejora continua."_
+
+***
+
+#### 8. Modo Test
 
 Antes de lanzar tu workflow al público, utiliza el Modo Test. Esta herramienta te permite simular una conversación y ver paso a paso cómo se activan los triggers y si las condiciones se cumplen o fallan, asegurando que tu lógica sea perfecta antes de afectar a clientes reales.
