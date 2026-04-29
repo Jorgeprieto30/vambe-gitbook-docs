@@ -96,6 +96,7 @@ Porque permite:
 * Mantener estándares de calidad consistentes.
 * Resolver dudas sin necesidad de esperar soporte.
 * Lograr asistentes más efectivos, claros y operativos.
+* Beneficiarse directamente de la mejora continua del modelo de Vambe, lo que reduce las 'alucinaciones' y aumenta la precisión en sus sugerencias.
 
 PandaAI actúa como un copiloto dentro de Vambe, ayudando a que cada usuario pueda construir asistentes sólidos incluso sin conocimiento técnico previo.
 {% endstep %}
