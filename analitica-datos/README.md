@@ -1,73 +1,139 @@
----
-description: >-
-  El SLA garantiza el cumplimiento de tiempos de respuesta en cada interacción.
-  Permite visualizar temporizadores en el pipeline para priorizar casos
-  urgentes. Es configurable para humanos e IA mediante
----
-
 # Service Level Agreement (SLA): Gestión y Cumplimiento de Tiempos de Respuesta
 
-**El SLA (Service Level Agreement)** es una herramienta estratégica diseñada para garantizar que tu equipo de atención y tus asistentes de IA cumplan con estándares de calidad y rapidez en la comunicación con los clientes. Esta funcionalidad permite establecer promesas de tiempo para cada interacción, asegurando que ninguna consulta quede desatendida y permitiendo una priorización inteligente de la carga de trabajo.
+Evita que tus clientes queden esperando sin respuesta. Con el SLA (Service Level Agreement) en Vambe puedes establecer compromisos internos de tiempo de respuesta para tu equipo, visualizar el estado de cada ticket en tiempo real y analizar el cumplimiento de tu operación con datos concretos.
 
-Al implementar un SLA en tus embudos, transformas la atención reactiva en una gestión proactiva basada en datos, donde cada segundo cuenta para la satisfacción del usuario final.
-
-### Capacidades de la herramienta
-
-* **Medición de ciclo completo:** Monitorea el tiempo de la **Primera respuesta**, de las **Siguientes respuestas** y el **Tiempo total de resolución** del ticket.
-* **Visibilidad en tiempo real:** Cada ticket en el pipeline muestra un temporizador dinámico que indica el estado del compromiso de tiempo.
-* **Priorización dinámica:** Permite ordenar los tickets en el embudo según su urgencia, colocando automáticamente en la parte superior a aquellos que están más cerca de incumplir su tiempo límite.
-* **Segmentación avanzada:** Puedes definir tiempos de respuesta diferenciados según metadatos o campos específicos (por ejemplo, asignar tiempos más cortos a clientes catalogados como "VIP" o "Urgentes").
-* **Compatibilidad Híbrida:** Las métricas se pueden configurar y medir tanto para el desempeño de ejecutivos humanos como para asistentes de IA.
+El SLA no es solo una métrica: es una herramienta de gestión que te permite pasar de una atención reactiva a una operación proactiva, donde cada segundo cuenta para la satisfacción del cliente.
 
 ***
 
-### Configuración Paso a Paso
+### Parte 1: Configuración del SLA
 
-**1. Selección del Embudo y Tipo de Ticket**
+#### Paso 1 — Acceder a la configuración de tickets
 
-Para comenzar, debes definir sobre qué proceso de negocio quieres aplicar estas reglas:
+El SLA se configura dentro de cada tipo de ticket. Para llegar ahí:
 
-1. Dirígete al menú lateral izquierdo y selecciona CRM.
-2. Entra en la sección de Configurar Tickets.
-3. Ubica la tarjeta del tipo de ticket que deseas editar (ej. Soporte, Ventas o Onboarding) y haz clic en el botón de configuración o Administrar SLA.
+1. Ve al menú lateral izquierdo y selecciona **CRM**.
+2. Dentro de CRM, entra a **Configurar Tickets**.
+3. Ubica el ticket al que quieres aplicar el SLA y haz clic en **Ir a editar**.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+> 💡 Si aún no tienes tickets creados, puedes crear uno nuevo desde esta misma vista con el botón **Crear nuevo ticket**.
 
-**2. Definición de Políticas y Horarios**
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-Una vez dentro del módulo de configuración, establece las reglas base:
+#### Paso 2 — Abrir el módulo de SLA
 
-1. **Activar SLA:** Enciende el interruptor principal para habilitar el seguimiento.
-2. **Horario Laboral:** Selecciona el horario en el que estas métricas deben contabilizarse. Esto asegura que el temporizador se pause automáticamente durante las noches o fines de semana si tu equipo no está operativo.
-3. **Métricas de Medición:** Define cuáles de los tres pilares quieres activar:
-   * **Primera respuesta:** Desde que el cliente inicia el contacto.
-   * **Siguiente respuesta:** Para cada mensaje posterior enviado por el cliente.
-   * **Tiempo de resolución:** Tiempo transcurrido hasta que el ticket se marca como ganado o perdido.
+Dentro del editor del ticket, verás un panel lateral con la opción **Configurar SLA**. Desde ahí puedes gestionar todas las políticas de tiempo para ese tipo de ticket.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-**3. Configuración de Tiempos y Alertas**
+Antes de crear una política, define:
 
-Para cada métrica seleccionada, puedes profundizar en el nivel de exigencia:
+* **Nombre de la política** — ponle un nombre descriptivo (ej: "**SLA Soporte**").
+* **Horario laboral** — asocia un horario para que el temporizador se pause automáticamente fuera del horario de tu equipo (ej: noches y fines de semana). Usa la zona horaria correcta para tu operación.
 
-* **Tiempos de Advertencia y Objetivo:** Define un "Tiempo Objetivo" (ej. 30 minutos) y un "Tiempo de Advertencia" (ej. 20 minutos) para que el sistema alerte visualmente antes de que se produzca un incumplimiento.
-* **Lógica por campos:** Puedes crear reglas de tiempo basadas en opciones de un campo del ticket. Por ejemplo, si el ticket es de "Prioridad Alta", el tiempo de respuesta puede ser de 5 minutos, mientras que para "Prioridad Baja" puede ser de 1 hora.
-* **Modo de Visualización:** Elige si prefieres ver un Temporizador con la cuenta regresiva exacta o un Indicador de color (una señal visual simplificada) en las tarjetas del pipeline.
+> ⚠️ **Importante:** El SLA nunca se pausa automáticamente por otros motivos. Si tu equipo está de vacaciones o hay un feriado, debes pausar el SLA manualmente para que no afecte tus métricas.
+
+#### Paso 3 — Configurar las métricas de medición
+
+Puedes activar hasta tres tipos de métricas independientes. Cada una mide una parte distinta del ciclo de atención:
+
+**Primera respuesta** Mide el tiempo desde que el cliente envía su primer mensaje hasta que el agente responde por primera vez. Es la métrica más crítica: nadie quiere esperar mucho para recibir una respuesta inicial.
+
+**Siguiente respuesta** Mide el tiempo de respuesta para cada interacción posterior. Cada vez que el cliente vuelve a escribir, se genera un nuevo evento de SLA de siguiente respuesta.
+
+**Tiempo de resolución** Mide el tiempo total desde que se crea el ticket hasta que se marca como ganado o perdido. Es un SLA más holgado, puede medirse en horas o días en lugar de minutos.
+
+> 💡 **Recomendación para empezar:** Si eres nuevo en esto, activa primero solo la métrica de **Primera respuesta**. Mídela, contrólala y luego avanza con las demás.
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+#### Paso 4 — Definir tiempos y alertas
+
+Para cada métrica activada puedes configurar:
+
+* **Tiempo objetivo** — el tiempo máximo en que quieres generar esa respuesta (ej: 30 minutos para soporte).
+* **Tiempo de advertencia** — cuándo quieres que el sistema te avise antes de incumplir (ej: alerta a los 20 minutos si el objetivo es 30).
+* **Modo de visualización** — elige entre:
+  * **Temporizador:** muestra la cuenta regresiva exacta en la tarjeta del ticket en el pipeline.
+  * **Indicador de color:** verde (a tiempo), amarillo (en advertencia) o rojo (incumplido).
+
+> 💡 El temporizador es la opción más recomendada para que tu equipo pueda priorizar visualmente.
+
+#### Paso 5 — Configurar tiempos por campo (opcional)
+
+Si quieres aplicar tiempos distintos según el tipo de consulta, puedes usar la opción **Tiempo por campo**. Esto te permite definir reglas basadas en un campo del ticket.
+
+Por ejemplo: si el ticket tiene el campo "Prioridad" con opciones Alta, Media y Baja, puedes asignar 5 minutos para Alta, 15 para Media y 60 para Baja.
+
+#### Consideración importante: un SLA por ticket
+
+Por el momento, se puede configurar **un solo SLA por tipo de ticket**. Esto significa que puedes medir la respuesta de ejecutivos humanos **o** de asistentes de IA, pero no ambos al mismo tiempo dentro del mismo ticket.
+
+Si necesitas medir ambos, crea dos tipos de ticket distintos.
 
 ***
 
-### Monitoreo y Analítica Avanzada
+### Parte 2: Dashboard de analítica SLA
 
-Para una gestión efectiva, el sistema ofrece un **Dashboard de SLA** dedicado donde puedes auditar el cumplimiento de tus promesas de servicio.
+Una vez que tienes tu política activa y comienzan a generarse tickets, puedes monitorear el cumplimiento desde el dashboard de SLA.
 
-1. Accede desde el menú lateral a **Analítica** y selecciona la pestaña de **SLA**.
-2. **Visualización de Cumplimiento:** Revisa gráficos de "Logrados vs. Incumplidos" para identificar tendencias de desempeño.
-3. **Auditoría de Incumplimientos:** El sistema presenta una tabla detallada con todos los casos donde se superó el tiempo límite. Desde esta tabla, puedes hacer clic directamente en el icono de conversación para entrar al chat y analizar la razón del retraso.
-4. **Mapa de Calor:** Identifica en qué franjas horarias o días de la semana tu equipo tiene mayores dificultades para cumplir con los tiempos establecidos.
+#### Cómo acceder
+
+Ve al menú lateral y selecciona **Analítica → SLA**. Desde ahí puedes crear un dashboard nuevo o trabajar con uno existente.
+
+Al crear un dashboard puedes elegir:
+
+* El **embudo** que quieres analizar.
+* Si el dashboard será **público** (visible para todo el equipo) o **privado** (solo para ti como administrador).
+
+> 💡 Si acabas de configurar el SLA, es normal que el dashboard no muestre datos aún. La información aparecerá a medida que se vayan generando y resolviendo tickets.
+
+#### Widgets disponibles
+
+Desde **Agregar widget** puedes construir tu dashboard con los siguientes bloques:
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+**Resumen**
+
+| Widget                            | Para qué sirve                                                                                                             |
+| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Tasa de cumplimiento SLA**      | Porcentaje de SLAs cumplidos en el periodo seleccionado, con comparación al periodo anterior.                              |
+| **Mapa de calor SLA**             | Visualiza el cumplimiento por día de la semana y hora del día. Ideal para identificar en qué franjas colapsa la operación. |
+| **Tendencia SLA**                 | Evolución de la tasa de cumplimiento en el tiempo.                                                                         |
+| **Incumplimientos vs. cumplidos** | Gráfico que muestra cuántos SLAs se cumplieron y cuántos no en el periodo.                                                 |
+| **Tiempo de resolución SLA**      | Tiempo promedio o percentil de resolución en minutos.                                                                      |
+
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+**Resolución y detalle**
+
+| Widget                                          | Para qué sirve                                                                                                               |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Tiempo de respuesta de resolución**           | Tiempo promedio por ticket de la métrica de resolución.                                                                      |
+| **Incumplimientos SLA**                         | Lista detallada de todos los tickets que no cumplieron el SLA, con opción de ir directamente al chat para analizar qué pasó. |
+| **Tendencia de tiempo de resolución SLA**       | Evolución del tiempo de resolución a lo largo del tiempo.                                                                    |
+| **Desglose del tiempo de resolución**           | Cuántos tickets se resolvieron en cada rango de tiempo.                                                                      |
+| **Tendencia tiempo de respuesta de resolución** | Evolución del tiempo promedio por ticket en el tiempo.                                                                       |
+
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+#### Cómo leer el percentil de resolución
+
+El widget de **Tiempo de resolución** permite ver el resultado por percentil. Por ejemplo, si tu percentil 90 es muy alto, significa que el 90% de tus tickets se están resolviendo en un tiempo largo, lo cual es una señal de alerta. El objetivo es que ese percentil sea lo más bajo posible.
+
+#### Información accionable por widget
+
+* **Mapa de calor:** si ves rojo en ciertos horarios, tu operación está colapsando en esas franjas. Puedes redistribuir los turnos de almuerzo o agregar cobertura en esos momentos.
+* **Tendencia:** te permite ver si estás mejorando o empeorando semana a semana, o si hay días específicos (como viernes o lunes) donde el rendimiento cae.
+* **Tabla de incumplimientos:** es el widget más accionable para seguimiento puntual — te dice exactamente qué ticket falló y te lleva directamente al chat.
 
 ***
 
-### Recomendaciones de Uso
+### Buenas prácticas
 
-* **Empieza con tiempos realistas:** Configura tiempos que tu equipo realmente pueda cumplir y ajústalos gradualmente.
-* **Usa los horarios laborales:** No olvides asociar un horario para evitar que los tickets se marquen como "incumplidos" durante las horas de cierre.
+* **Empieza con tiempos realistas.** Configura tiempos que tu equipo realmente pueda cumplir y ajústalos gradualmente a medida que mejora la capacidad de respuesta.
+* **Usa siempre el horario laboral.** Sin él, los tickets generados fuera de horario contarán como incumplidos aunque tu equipo no esté operativo.
+* **Comienza solo con Primera respuesta.** Es la métrica más crítica y la más fácil de controlar. Una vez que la domines, activa Siguiente respuesta y luego Tiempo de resolución.
+* **Revisa la tabla de incumplimientos regularmente.** No solo mires el porcentaje global — entra al detalle para entender por qué fallaron esos tickets específicos.
+* **Pausa el SLA en períodos de cierre.** Si tu equipo está de vacaciones o hay un feriado prolongado, pausa manualmente el SLA para no contaminar tus métricas históricas.
