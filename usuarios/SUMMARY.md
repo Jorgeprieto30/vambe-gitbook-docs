@@ -11,4 +11,4 @@
 ## Notificaciones
 
 * [Cómo elegir qué agente recibe un ticket y activar notificaciones automáticas](notificaciones/como-elegir-que-agente-recibe-un-ticket-y-activar-notificaciones-automaticas.md)
-* [Cómo gestionar la disponibilidad de tu equipo y controlar la carga de trabajo](notificaciones/como-gestionar-la-disponibilidad-de-tu-equipo-y-controlar-la-carga-de-trabajo.md)
+* [Disponibilidad y asignación inteligente de ejecutivos](notificaciones/como-gestionar-la-disponibilidad-de-tu-equipo-y-controlar-la-carga-de-trabajo.md)
