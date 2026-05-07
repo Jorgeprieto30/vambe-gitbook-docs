@@ -24,6 +24,7 @@
 * [Cómo crear Escenarios y Rutas en un Asistente con Escenarios](asistentes-con-escenarios-v3/como-crear-escenarios-y-rutas-en-un-asistente-con-escenarios.md)
 * [Funciones en Asistentes con Escenarios (V3)](asistentes-con-escenarios-v3/funciones-en-asistentes-con-escenarios-v3.md)
 * [Asistentes V3: Construcción Inteligente y Guiada con PandAI](asistentes-con-escenarios-v3/asistentes-v3-construccion-inteligente-y-guiada-con-pandai.md)
+* [Cómo fusionar asistentes v2 en un asistente v3](asistentes-con-escenarios-v3/como-fusionar-asistentes-v2-en-un-asistente-v3.md)
 
 ## Funciones
 

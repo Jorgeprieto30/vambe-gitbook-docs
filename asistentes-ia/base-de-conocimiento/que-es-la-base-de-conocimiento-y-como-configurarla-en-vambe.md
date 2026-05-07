@@ -44,7 +44,7 @@ Una vez conectadas, los asistentes podrán usar esa información para responder.
 
 {% stepper %}
 {% step %}
-### Acceder a la sección de Conocimiento
+#### Acceder a la sección de Conocimiento
 
 * En el menú lateral izquierdo, ingresa a **Asistentes**.
 * En el submenú, haz clic en **Conocimiento**.
@@ -66,7 +66,7 @@ Las carpetas internas almacenan información directamente dentro de Vambe.
 
 {% stepper %}
 {% step %}
-### Crear nueva carpeta
+#### Crear nueva carpeta
 
 * Dentro de **Conocimiento**, haz clic en **Crear nueva carpeta**.
 
@@ -74,7 +74,7 @@ Las carpetas internas almacenan información directamente dentro de Vambe.
 {% endstep %}
 
 {% step %}
-### Asignar nombre
+#### Asignar nombre
 
 * Asigna un nombre claro a la carpeta (por ejemplo: “Tratamientos”, “Preguntas frecuentes”, “Políticas”).
 * Confirma la creación.
@@ -91,7 +91,7 @@ La carpeta se creará vacía y lista para recibir documentos.
 
 {% stepper %}
 {% step %}
-### Añadir documento
+#### Añadir documento
 
 * Ingresa a la carpeta que creaste.
 * Haz clic en **Añadir documento**.
@@ -100,7 +100,7 @@ La carpeta se creará vacía y lista para recibir documentos.
 {% endstep %}
 
 {% step %}
-### Escribir o pegar contenido
+#### Escribir o pegar contenido
 
 * Escribe o pega el contenido que deseas que los asistentes utilicen.
 
@@ -108,7 +108,7 @@ La carpeta se creará vacía y lista para recibir documentos.
 {% endstep %}
 
 {% step %}
-### Guardar
+#### Guardar
 
 * Guarda el documento.\
   Este contenido quedará disponible para la inteligencia artificial.
@@ -123,7 +123,7 @@ La carpeta se creará vacía y lista para recibir documentos.
 
 {% stepper %}
 {% step %}
-### Ir a Documentos externos
+#### Ir a Documentos externos
 
 * Dentro de **Conocimiento**, haz clic en **Documentos externos**.
 * En la parte superior derecha, selecciona **Crear nueva conexión**.
@@ -148,14 +148,14 @@ Recomendación importante: cuando conectas una fuente externa, **siempre debes s
 
 {% stepper %}
 {% step %}
-### Autorizar la plataforma
+#### Autorizar la plataforma
 
 1. Inicia sesión en la plataforma seleccionada.
 2. Acepta los permisos solicitados.
 {% endstep %}
 
 {% step %}
-### Seleccionar carpeta
+#### Seleccionar carpeta
 
 * Cuando aparezca la opción de selección, elige **la carpeta** que contiene los archivos que deseas sincronizar.
 
@@ -163,7 +163,7 @@ Recomendación importante: cuando conectas una fuente externa, **siempre debes s
 {% endstep %}
 
 {% step %}
-### Conectar datos
+#### Conectar datos
 
 * Haz clic en **Seleccionar**.
 * Luego presiona **Connect data**.

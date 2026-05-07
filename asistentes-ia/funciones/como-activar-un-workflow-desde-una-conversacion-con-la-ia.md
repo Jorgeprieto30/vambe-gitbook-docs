@@ -22,7 +22,7 @@ La función Ejecutar Flow es el "botón rojo" que conecta a tu Asistente de Chat
 Para usar esta función, primero debes haber creado la automatización en la sección Workflows y haber seleccionado como "Gatillante" (Trigger) la opción "Flow activado por IA".
 
 {% hint style="info" %}
-Si no sabes cómo hacer esto, revisa primero el artículo: 👉 [\[Cómo crear y configurar Workflows\]](https://app.gitbook.com/s/0xCLgfGby0xiCWJaqr57/)
+Si no sabes cómo hacer esto, revisa primero el artículo: 👉 [\[Cómo crear y configurar Workflows\]](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk/s/0xCLgfGby0xiCWJaqr57/)
 {% endhint %}
 
 ***
@@ -63,8 +63,6 @@ Configura los campos:
    2. **Macros:** Datos del contacto como pueden ser por ejemplo: Id del contacto, numero del contacto, etc
 
 ![](<../.gitbook/assets/image (17).png>)<br>
-
-
 
 **Paso 4: Verificación**
 

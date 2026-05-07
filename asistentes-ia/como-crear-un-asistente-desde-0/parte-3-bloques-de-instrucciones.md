@@ -23,13 +23,13 @@ Se estructura mediante una secuencia lógica y ordenada (Paso 1, Paso 2, Paso 3)
 
 **Regla de Oro: La Secuencialidad** Para que la IA **no se salte preguntas ni envíe toda la información de golpe**, las instrucciones deben estar condicionadas al paso anterior.
 
-*   **Paso 1:** Saludar amablemente al cliente y preguntarle su nombre.
-*   **Paso 2:** _**Únicamente** una vez que tengas su nombre_, debes preguntarle en qué producto está interesado.
+* **Paso 1:** Saludar amablemente al cliente y preguntarle su nombre.
+* **Paso 2:** _**Únicamente** una vez que tengas su nombre_, debes preguntarle en qué producto está interesado.
 
 **Uso de Funciones en los Pasos** Dentro de este flujo, usted puede ordenar a la IA que ejecute acciones técnicas. La más común es el [**Cambio de Etapa**](../funciones/como-cambiar-un-ticket-de-una-etapa-a-otra-de-forma-automatica.md). Por ejemplo:
 
-*   _Subpaso 2.1:_ Si el requerimiento del cliente es Venta, debes ejecutar la función Cambiar etapa a Venta.
-*   _Subpaso 2.2:_ Si el requerimiento es Servicio al cliente, debes ejecutar la función Cambiar etapa a Servicio al cliente.
+* _Subpaso 2.1:_ Si el requerimiento del cliente es Venta, debes ejecutar la función Cambiar etapa a Venta.
+* _Subpaso 2.2:_ Si el requerimiento es Servicio al cliente, debes ejecutar la función Cambiar etapa a Servicio al cliente.
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -51,8 +51,8 @@ Si los "Pasos a seguir" son la ruta principal, los **Casos Posibles son los desv
 
 Este bloque no utiliza pasos secuenciales; funciona bajo una lógica directa de **Causa y Efecto** dividida en dos columnas:
 
-*   **Lado Izquierdo (El Gatillante):** Define la condición. _Ejemplo:_ "Si el cliente pregunta por el estado de su pedido".
-*   **Lado Derecho (La Acción):** Define qué debe hacer la IA. _Ejemplo:_ "Ejecuta la función Get Order Status" o "Deriva a asistencia humana".
+* **Lado Izquierdo (El Gatillante):** Define la condición. _Ejemplo:_ "Si el cliente pregunta por el estado de su pedido".
+* **Lado Derecho (La Acción):** Define qué debe hacer la IA. _Ejemplo:_ "Ejecuta la función Get Order Status" o "Deriva a asistencia humana".
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,14 +66,14 @@ Este bloque es una medida de seguridad crítica. Aquí se listan las acciones qu
 
 **Casos de uso comunes:**
 
-*   **Clasificación silenciosa:** Usted puede pedirle a la IA que clasifique internamente a los clientes en categorías (A, B o C) según su presupuesto, pero en este bloque debe indicarle: _"NUNCA le digas al cliente en qué categoría fue clasificado"_.
-    *   Este `guard rail` evita que la IA revele información interna que podría ser sensible o generar confusión, previniendo una alucinación por divulgación de datos internos.
-*   **Seguridad de datos:** _"No debes enviar datos bancarios de transferencia ni tampoco enviar números de contacto que no estén en tu base de información"_.
-    *   Un `guard rail` crucial para la privacidad y seguridad, deteniendo a la IA de inventar o compartir datos financieros.
-*   **Prevención de errores e información incorrecta:** _"NUNCA debes inventar información"_, _"NO ofrezcas descuentos que no aparecen explícitamente en tu base"_.
-    *   Estos `guard rails` son directrices explícitas para evitar las **alucinaciones** de la IA, asegurando que solo opere con datos verificados y permitidos.
+* **Clasificación silenciosa:** Usted puede pedirle a la IA que clasifique internamente a los clientes en categorías (A, B o C) según su presupuesto, pero en este bloque debe indicarle: _"NUNCA le digas al cliente en qué categoría fue clasificado"_.
+  * Este `guard rail` evita que la IA revele información interna que podría ser sensible o generar confusión, previniendo una alucinación por divulgación de datos internos.
+* **Seguridad de datos:** _"No debes enviar datos bancarios de transferencia ni tampoco enviar números de contacto que no estén en tu base de información"_.
+  * Un `guard rail` crucial para la privacidad y seguridad, deteniendo a la IA de inventar o compartir datos financieros.
+* **Prevención de errores e información incorrecta:** _"NUNCA debes inventar información"_, _"NO ofrezcas descuentos que no aparecen explícitamente en tu base"_.
+  * Estos `guard rails` son directrices explícitas para evitar las **alucinaciones** de la IA, asegurando que solo opere con datos verificados y permitidos.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -85,8 +85,8 @@ El bloque de Etiquetas permite automatizar la segmentación de sus contactos y t
 
 Al igual que los Casos Posibles, se divide en dos secciones:
 
-*   **Lado Izquierdo:** Se seleccionan las etiquetas previamente creadas en Vambe (Ej: "Pequeño", "Mediano", "Grande", o "Santiago").
-*   **Lado Derecho (Descripción):** Se redacta la instrucción de cuándo la IA debe aplicar dichas etiquetas. _Ejemplo:_ "Debes etiquetar al cliente si dice que es de Santiago" o "Si la cantidad es entre 1 a 3 debes usar Pequeño".
+* **Lado Izquierdo:** Se seleccionan las etiquetas previamente creadas en Vambe (Ej: "Pequeño", "Mediano", "Grande", o "Santiago").
+* **Lado Derecho (Descripción):** Se redacta la instrucción de cuándo la IA debe aplicar dichas etiquetas. _Ejemplo:_ "Debes etiquetar al cliente si dice que es de Santiago" o "Si la cantidad es entre 1 a 3 debes usar Pequeño".
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 

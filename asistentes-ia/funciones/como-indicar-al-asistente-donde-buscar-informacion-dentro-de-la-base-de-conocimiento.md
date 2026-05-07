@@ -59,7 +59,7 @@ Ejemplo:
 
 {% stepper %}
 {% step %}
-### Entrar al asistente
+#### Entrar al asistente
 
 * Dirigirse al embudo.
 * Abrir la etapa donde está el asistente.
@@ -69,7 +69,7 @@ Ejemplo:
 {% endstep %}
 
 {% step %}
-### Seleccionar el paso donde se ejecutará la búsqueda
+#### Seleccionar el paso donde se ejecutará la búsqueda
 
 Debe definirse **cuándo** queremos buscar la información.\
 Ejemplo: “Cuando el cliente pregunte por un producto”. Ese será el detonante de la búsqueda.
@@ -78,7 +78,7 @@ Ejemplo: “Cuando el cliente pregunte por un producto”. Ese será el detonant
 {% endstep %}
 
 {% step %}
-### Agregar la función
+#### Agregar la función
 
 * Ir al paso correspondiente.
 * Clic en **Agregar función**.
@@ -89,7 +89,7 @@ Ejemplo: “Cuando el cliente pregunte por un producto”. Ese será el detonant
 {% endstep %}
 
 {% step %}
-### Configurar parámetros
+#### Configurar parámetros
 
 Dentro de la función se debe definir:
 
@@ -114,7 +114,7 @@ Dentro de la función se debe definir:
 {% endstep %}
 
 {% step %}
-### Guardar y usar la función
+#### Guardar y usar la función
 
 En el paso correspondiente escribir la instrucción para ejecutar la función, por ejemplo:
 
@@ -144,19 +144,19 @@ Ejemplo:
 
 {% stepper %}
 {% step %}
-### Entrar al asistente
+#### Entrar al asistente
 
 Mismo procedimiento que en el método anterior.
 {% endstep %}
 
 {% step %}
-### Seleccionar el paso donde ocurrirá la búsqueda
+#### Seleccionar el paso donde ocurrirá la búsqueda
 
 Ejemplo: “Cuando el cliente mencione un producto específico.”
 {% endstep %}
 
 {% step %}
-### Crear la función
+#### Crear la función
 
 * Agregar función.
 * Seleccionar **Buscar fila en hoja**.
@@ -164,7 +164,7 @@ Ejemplo: “Cuando el cliente mencione un producto específico.”
 {% endstep %}
 
 {% step %}
-### Configurar parámetros
+#### Configurar parámetros
 
 La función permite dos formas de conexión:
 

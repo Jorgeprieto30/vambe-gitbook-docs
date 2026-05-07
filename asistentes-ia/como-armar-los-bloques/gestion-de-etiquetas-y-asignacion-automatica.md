@@ -23,7 +23,7 @@ Las etiquetas son marcadores que se pueden asignar para identificar característ
 
 {% stepper %}
 {% step %}
-### Paso: Acceder a la sección de Etiquetas
+#### Paso: Acceder a la sección de Etiquetas
 
 * Ve al menú lateral izquierdo.
 * Ingresa a **CRM**.
@@ -31,13 +31,13 @@ Las etiquetas son marcadores que se pueden asignar para identificar característ
 {% endstep %}
 
 {% step %}
-### Paso: Crear nueva etiqueta
+#### Paso: Crear nueva etiqueta
 
 * Haz clic en **Crear etiqueta**.
 {% endstep %}
 
 {% step %}
-### Paso: Definir parámetros de la etiqueta
+#### Paso: Definir parámetros de la etiqueta
 
 Al crearla, deberás definir:
 
@@ -51,7 +51,7 @@ Al crearla, deberás definir:
 {% endstep %}
 
 {% step %}
-### Paso: Finalizar creación
+#### Paso: Finalizar creación
 
 Cuando esté todo listo, haz clic en **Crear**.
 
@@ -75,7 +75,7 @@ Puedes asignar etiquetas manualmente de dos maneras, según su tipo:
 
 {% stepper %}
 {% step %}
-### Etiquetas de tipo ticket
+#### Etiquetas de tipo ticket
 
 * Abre el ticket del contacto.
 * Ve a la parte superior derecha (información del ticket).
@@ -86,7 +86,7 @@ Puedes asignar etiquetas manualmente de dos maneras, según su tipo:
 {% endstep %}
 
 {% step %}
-### Etiquetas de tipo contacto
+#### Etiquetas de tipo contacto
 
 * Abre el ticket.
 * Ve a la información del **Contacto**.
@@ -111,13 +111,13 @@ Además de asignarlas manualmente, las etiquetas pueden **asignarse automáticam
 
 {% stepper %}
 {% step %}
-### Paso: Acceder al asistente
+#### Paso: Acceder al asistente
 
 1. [Ingresa al Asistente donde quieres que ocurra la asignación.](https://academy.vambe.ai/v1/docs/asistentes-ia-1)
 {% endstep %}
 
 {% step %}
-### Paso: Agregar bloque de Etiquetas
+#### Paso: Agregar bloque de Etiquetas
 
 * En el menú lateral del asistente, haz clic en **Agregar otro bloque**.
 
@@ -130,7 +130,7 @@ Además de asignarlas manualmente, las etiquetas pueden **asignarse automáticam
 {% endstep %}
 
 {% step %}
-### Paso: Configurar el bloque
+#### Paso: Configurar el bloque
 
 Dentro del bloque:
 
@@ -141,7 +141,7 @@ Dentro del bloque:
 {% endstep %}
 
 {% step %}
-### Paso: Guardar y activar
+#### Paso: Guardar y activar
 
 1. Haz clic en **Guardar**.
 2. Verifica que el bloque de etiquetas aparezca activo en el asistente.

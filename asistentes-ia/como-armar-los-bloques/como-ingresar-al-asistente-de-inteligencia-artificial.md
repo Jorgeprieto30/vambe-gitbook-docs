@@ -12,7 +12,7 @@ Si el asistente está vinculado a una etapa específica, el acceso se realiza di
 
 {% stepper %}
 {% step %}
-### Acceder desde la vista del embudo
+#### Acceder desde la vista del embudo
 
 * Dirigirse a la **vista del embudo**.
 * Seleccionar la **etapa** donde se encuentra configurado el asistente.
@@ -35,7 +35,7 @@ Vambe también permite crear asistentes independientes que no están directament
 
 {% stepper %}
 {% step %}
-### Acceder desde el menú de Asistentes
+#### Acceder desde el menú de Asistentes
 
 * En el menú lateral izquierdo, hacer clic en **Asistentes**.
 
