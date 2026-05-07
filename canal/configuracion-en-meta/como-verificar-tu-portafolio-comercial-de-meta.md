@@ -27,7 +27,7 @@ SI no lo tienes verificado, puedes seguir adelante en este articulo
 3. Busca la sección **Verificación del negocio**.
 4. Si aparece el botón **Iniciar verificación**, puedes proceder directamente a la sección _Cómo completar la verificación del portafolio_ más abajo.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### ¿Qué pasa si no aparece el botón para verificar?
 
@@ -47,10 +47,10 @@ Con cualquiera de las dos opciones aparecerá el botón.
 1. Ingresa al link de Meta for Developers: [https://developers.facebook.com](https://business.facebook.com/business/loginpage/new/?next=https%3A%2F%2Fdevelopers.facebook.com%2F)
 2.  Haz clic en **Empezar**.<br>
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Haz clic en **Continuar**.<br>
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 4. Envía un **SMS de verificación** a tu número de celular.
 5. **Confirma tu correo electrónico.**
 
@@ -61,7 +61,7 @@ Con cualquiera de las dos opciones aparecerá el botón.
 #### Paso 2: Crear la app
 
 1. Haz clic en **Crear app**.\
-   ![](<../.gitbook/assets/image (3).png>)
+   ![](<../.gitbook/assets/image (3) (1).png>)
 2. **Nombra la app** (puede ser cualquier nombre) y confirma el correo electrónico de contacto.
 3. En **Caso de uso**, selecciona cualquier opción — no es relevante para este proceso.
 4. **Selecciona el portafolio comercial** al que quieres asociar la app.
@@ -73,7 +73,7 @@ Con cualquiera de las dos opciones aparecerá el botón.
 1. Ve a tu portafolio en el Administrador de negocios → **Cuentas** → **Apps**.
 2. Verás que la app fue creada correctamente.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Paso 4: Volver al Centro de seguridad
 
@@ -82,7 +82,7 @@ Con cualquiera de las dos opciones aparecerá el botón.
 
 > ⚠️ Si en algún momento eliminas la app, el botón de verificación desaparece nuevamente.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -93,12 +93,12 @@ Con cualquiera de las dos opciones aparecerá el botón.
 1.  En el Administrador de negocios, ve al menú lateral → **Páginas de noticias**.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 2. Haz clic en **Seleccionar páginas**.
 3.  Selecciona una página de Facebook que no se esté usando y haz clic en **Listo**.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 > ⚠️ Cuando seleccionas la página, el botón **Listo** puede ocultarse. Si eso pasa, haz clic en la parte blanca de la cajita para que aparezca y puedas confirmar.
 
@@ -114,7 +114,7 @@ Una vez que el botón **Iniciar verificación** está disponible:
 
 Haz clic en **Iniciar verificación** y luego en **Empezar**.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Paso 2: Seleccionar el país
 
