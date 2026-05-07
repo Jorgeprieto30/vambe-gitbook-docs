@@ -11,8 +11,8 @@ Estas credenciales permiten que Vambe se comunique con el sistema clínico para 
 
 #### Requisitos previos
 
-* Tener una cuenta activa en **Dentalink o Medilink**.
-* Iniciar sesión con un **usuario administrador**.
+*   Tener una cuenta activa en **Dentalink o Medilink**.
+*   Iniciar sesión con un **usuario administrador**.
 
 {% hint style="warning" %}
 Importante: si ingresas con un usuario que no es administrador, no podrás ver ni crear credenciales API.
@@ -74,12 +74,14 @@ Este token es la credencial que permitirá a Vambe conectarse con Dentalink o Me
 {% endstep %}
 
 {% step %}
-### Paso 5: Ingresar el token en Vambe
+### Paso 5: Ingresar el token en Vambe desde el catálogo de integraciones
+
+Una vez que tengas tu token API, procede a conectarlo en Vambe:
 
 * Ingresa a Vambe.
 * Dirígete a la **parte inferior izquierda** y haz clic en **Ajustes**.
-* Accede al submenú **Integraciones**.
-* Selecciona **Dentalink** o **Medilink**, según corresponda.
+* Accede al submenú **Integraciones** para explorar el catálogo.
+* En el catálogo, selecciona la tarjeta de **Dentalink** o **Medilink**, según corresponda.
 
 ![](<../.gitbook/assets/image png Dec 17 2025 02 41 11 4473 PM.png>)
 
@@ -101,16 +103,16 @@ Si el token es correcto, Vambe mostrará un mensaje indicando que las credencial
 
 Una vez completados estos pasos:
 
-* Las credenciales quedan correctamente configuradas en Vambe.
-* La integración con Dentalink o Medilink queda habilitada.
-* Vambe podrá utilizar la información clínica según la configuración del asistente y del embudo.
+*   Las credenciales quedan correctamente configuradas en Vambe.
+*   La integración con Dentalink o Medilink queda habilitada.
+*   Vambe podrá utilizar la información clínica según la configuración del asistente y del embudo.
 
 {% hint style="warning" %}
 Errores comunes a evitar:
 
-* Ingresar con un usuario que no es administrador en Dentalink o Medilink.
-* Copiar incorrectamente el token (espacios adicionales o incompleto).
-* Pegar el token en una integración incorrecta dentro de Vambe.
+*   Ingresar con un usuario que no es administrador en Dentalink o Medilink.
+*   Copiar incorrectamente el token (espacios adicionales o incompleto).
+*   Pegar el token en una integración incorrecta dentro de Vambe.
 {% endhint %}
 
 <details>
