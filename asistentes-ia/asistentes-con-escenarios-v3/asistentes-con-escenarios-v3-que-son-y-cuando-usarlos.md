@@ -10,14 +10,15 @@ Al hacer clic en **Crear asistente**, verás dos opciones:
 
 <figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
-|                                      | Asistente con Bloques (V2)                         | Asistente con Escenarios (V3)                                                                                 |
-| ------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **¿Cómo funciona?**                  | Sigue un flujo rígido definido por pasos y bloques | La IA descubre el camino óptimo según el contexto de cada conversación                                        |
-| **Límite de contexto**               | Sí                                                 | No                                                                                                            |
-| **Reutilizable en múltiples etapas** | Parcial                                            | Sí                                                                                                            |
-| **Bloques disponibles**              | Todos (incluyendo Pasos a seguir y Casos posibles) | Solo identidad: Personificación, Objetivo, No Hacer, Etiquetas, Formato de Respuesta, Productos, Agendamiento |
-| **Flujo de conversación**            | Definido por Pasos a seguir y Casos posibles       | Definido por Escenarios y Rutas                                                                               |
-| **Ideal para**                       | Flujos lineales y predecibles                      | Conversaciones complejas, naturales y multi-propósito                                                         |
+|                                      | Asistente con Bloques (V2)                         | Asistente con Escenarios (V3)                                                                                                                              |
+| ------------------------------------ | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **¿Cómo funciona?**                  | Sigue un flujo rígido definido por pasos y bloques | La IA descubre el camino óptimo según el contexto de cada conversación                                                                                     |
+| **Límite de contexto**               | Sí                                                 | No                                                                                                                                                         |
+| **Reutilizable en múltiples etapas** | Parcial                                            | Sí                                                                                                                                                         |
+| **Bloques disponibles**              | Todos (incluyendo Pasos a seguir y Casos posibles) | Solo identidad: Personificación, Objetivo, No Hacer, Etiquetas, Formato de Respuesta, Productos, Agendamiento                                              |
+| **Flujo de conversación**            | Definido por Pasos a seguir y Casos posibles       | Definido por Escenarios y Rutas                                                                                                                            |
+| **Integraciones externas**           | No                                                 | **Sí (Slack, Notion, Linear y más, para ejecutar acciones directamente desde la conversación)**                                                            |
+| **Ideal para**                       | Flujos lineales y predecibles                      | Conversaciones complejas, naturales y multi-propósito, y para automatizar tareas en herramientas externas.                                               |
 
 > 💡 Ambas versiones coexisten. No es necesario migrar los asistentes V2 existentes. Puedes seguir usándolos y crear asistentes V3 para nuevos casos de uso.
 
@@ -37,6 +38,7 @@ Al hacer clic en **Crear asistente**, verás dos opciones:
 * Quieres reutilizar el mismo asistente en varias etapas del embudo.
 * Buscas conversaciones más naturales donde la IA decida el camino según el contexto.
 * Tienes flujos complejos que antes requerían varios asistentes encadenados.
+* **Necesitas que la IA ejecute acciones en herramientas externas (Slack, Notion, Linear, etc.) directamente desde la conversación, como enviar mensajes o crear tickets.**
 
 ***
 
@@ -49,7 +51,7 @@ Al hacer clic en **Crear asistente**, verás dos opciones:
 
 Al entrar al asistente recién creado, verás el panel de **Resumen** con cuatro pestañas principales:
 
-* **Escenarios:** Aquí defines el comportamiento y los flujos de conversación.
-* **Bloques:** Configura la personalidad base (identidad) del asistente.
-* **Funciones:** Las acciones que el asistente puede ejecutar (cambio de etapa, enviar plantilla, etc.).
-* **Base de conocimiento, Retroalimentación, Probar asistente:** Configuraciones secundarias.
+*   **Escenarios:** Aquí defines el comportamiento y los flujos de conversación.
+*   **Bloques:** Configura la personalidad base (identidad) del asistente.
+*   **Funciones:** Las acciones que el asistente puede ejecutar (cambio de etapa, enviar plantilla, integraciones externas, etc.).
+*   **Base de conocimiento, Retroalimentación, Probar asistente:** Configuraciones secundarias.
