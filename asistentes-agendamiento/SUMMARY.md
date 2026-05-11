@@ -27,10 +27,11 @@
 * [Seguimiento y Métricas de Confirmación de Citas](parte-4-confirmaciones-y-recordatorios/seguimiento-y-metricas-de-confirmacion-de-citas.md)
 * [Cómo configurar confirmaciones y recordatorios en Medilink y Dentalink](parte-4-confirmaciones-y-recordatorios/como-configurar-confirmaciones-y-recordatorios-en-medilink-y-dentalink.md)
 
-## Google Calendar
+## Google Calendar y Outlook Calendar
 
-* [Cómo iniciar sesión y vincular Google Calendar en Vambe](google-calendar/como-iniciar-sesion-y-vincular-google-calendar-en-vambe.md)
-* [Cómo crear un asistente agendador usando Google Calendar](google-calendar/como-crear-un-asistente-agendador-usando-google-calendar.md)
+* [Cómo iniciar sesión y vincular Google Calendar en Vambe](google-calendar-y-outlook-calendar/como-iniciar-sesion-y-vincular-google-calendar-en-vambe.md)
+* [Conectar tu calendario de Outlook a Vambe](google-calendar-y-outlook-calendar/conectar-tu-calendario-de-outlook-a-vambe.md)
+* [Cómo crear un asistente agendador usando Google Calendar](google-calendar-y-outlook-calendar/como-crear-un-asistente-agendador-usando-google-calendar.md)
 
 ## Extras
 

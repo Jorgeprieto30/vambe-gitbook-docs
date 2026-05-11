@@ -11,8 +11,8 @@ Estas credenciales permiten que Vambe se comunique con el sistema clínico para 
 
 #### Requisitos previos
 
-*   Tener una cuenta activa en **Dentalink o Medilink**.
-*   Iniciar sesión con un **usuario administrador**.
+* Tener una cuenta activa en **Dentalink o Medilink**.
+* Iniciar sesión con un **usuario administrador**.
 
 {% hint style="warning" %}
 Importante: si ingresas con un usuario que no es administrador, no podrás ver ni crear credenciales API.
@@ -20,7 +20,7 @@ Importante: si ingresas con un usuario que no es administrador, no podrás ver n
 
 {% stepper %}
 {% step %}
-### Paso 1: Ingresar a Dentalink o Medilink como administrador
+#### Paso 1: Ingresar a Dentalink o Medilink como administrador
 
 * Accede a tu cuenta de Dentalink o Medilink.
 * Inicia sesión utilizando un **usuario con permisos de administrador**.
@@ -28,7 +28,7 @@ Importante: si ingresas con un usuario que no es administrador, no podrás ver n
 {% endstep %}
 
 {% step %}
-### Paso 2: Acceder a la configuración de API
+#### Paso 2: Acceder a la configuración de API
 
 * Dirígete a la **parte superior derecha**.
 
@@ -43,7 +43,7 @@ Esta sección es donde se gestionan las aplicaciones externas que pueden conecta
 {% endstep %}
 
 {% step %}
-### Paso 3: Crear un nuevo cliente API
+#### Paso 3: Crear un nuevo cliente API
 
 * Dentro de Configuración API, haz clic en **Agregar cliente**.
 
@@ -59,7 +59,7 @@ El sistema registrará a Vambe como una aplicación autorizada.
 {% endstep %}
 
 {% step %}
-### Paso 4: Obtener el token de acceso
+#### Paso 4: Obtener el token de acceso
 
 * En el listado de clientes API, busca el cliente llamado **Vambe**.
 
@@ -74,7 +74,7 @@ Este token es la credencial que permitirá a Vambe conectarse con Dentalink o Me
 {% endstep %}
 
 {% step %}
-### Paso 5: Ingresar el token en Vambe desde el catálogo de integraciones
+#### Paso 5: Ingresar el token en Vambe desde el catálogo de integraciones
 
 Una vez que tengas tu token API, procede a conectarlo en Vambe:
 
@@ -103,16 +103,16 @@ Si el token es correcto, Vambe mostrará un mensaje indicando que las credencial
 
 Una vez completados estos pasos:
 
-*   Las credenciales quedan correctamente configuradas en Vambe.
-*   La integración con Dentalink o Medilink queda habilitada.
-*   Vambe podrá utilizar la información clínica según la configuración del asistente y del embudo.
+* Las credenciales quedan correctamente configuradas en Vambe.
+* La integración con Dentalink o Medilink queda habilitada.
+* Vambe podrá utilizar la información clínica según la configuración del asistente y del embudo.
 
 {% hint style="warning" %}
 Errores comunes a evitar:
 
-*   Ingresar con un usuario que no es administrador en Dentalink o Medilink.
-*   Copiar incorrectamente el token (espacios adicionales o incompleto).
-*   Pegar el token en una integración incorrecta dentro de Vambe.
+* Ingresar con un usuario que no es administrador en Dentalink o Medilink.
+* Copiar incorrectamente el token (espacios adicionales o incompleto).
+* Pegar el token en una integración incorrecta dentro de Vambe.
 {% endhint %}
 
 <details>
