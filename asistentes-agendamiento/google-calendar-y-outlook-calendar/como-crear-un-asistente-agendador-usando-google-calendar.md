@@ -1,6 +1,10 @@
-# Cómo crear un asistente agendador usando Google Calendar
+# Cómo crear un asistente agendador usando Google Calendar y Outlook calendar
 
 En este artículo aprenderás a configurar un **asistente agendador utilizando Google Calendar**, ideal para los casos en que deseas **agendar directamente una cita en Google Calendar**, sin depender de una plataforma externa de agendamiento.
+
+{% hint style="info" %}
+Si usas **Outlook calendar** debes seguir las mismas instrucciones pero seleccionando **Outlook calendar**
+{% endhint %}
 
 Este flujo es especialmente útil cuando:
 

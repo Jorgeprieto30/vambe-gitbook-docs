@@ -31,7 +31,7 @@
 
 * [Cómo iniciar sesión y vincular Google Calendar en Vambe](google-calendar-y-outlook-calendar/como-iniciar-sesion-y-vincular-google-calendar-en-vambe.md)
 * [Conectar tu calendario de Outlook a Vambe](google-calendar-y-outlook-calendar/conectar-tu-calendario-de-outlook-a-vambe.md)
-* [Cómo crear un asistente agendador usando Google Calendar](google-calendar-y-outlook-calendar/como-crear-un-asistente-agendador-usando-google-calendar.md)
+* [Cómo crear un asistente agendador usando Google Calendar y Outlook calendar](google-calendar-y-outlook-calendar/como-crear-un-asistente-agendador-usando-google-calendar.md)
 
 ## Extras
 
