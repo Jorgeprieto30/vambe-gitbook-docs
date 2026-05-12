@@ -1,4 +1,4 @@
-# Llamadas con IA (Vambe Phone)
+# Llamadas con IA
 
 ### ¿Para qué sirve esta función?
 
