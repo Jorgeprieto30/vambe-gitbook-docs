@@ -39,4 +39,4 @@
 ## Vambe Llamados
 
 * [Cómo hacer y gestionar llamadas desde Vambe (Vambe Llamados)](vambe-llamados/como-hacer-y-gestionar-llamadas-desde-vambe-vambe-llamados.md)
-* [Llamadas con IA (Vambe Phone)](vambe-llamados/llamadas-con-ia-vambe-phone.md)
+* [Llamadas con IA a clientes](vambe-llamados/llamadas-con-ia-a-clientes.md)
