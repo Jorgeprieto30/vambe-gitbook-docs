@@ -19,7 +19,7 @@ Antes de iniciar, asegúrate de contar con lo siguiente:
 
 * Un teléfono con la app de **WhatsApp Business** instalado (no es compatible con WhatsApp personal).
 
-![](<../.gitbook/assets/WhatsApp Image 2025 12 12 at 9 58 59 AM jpeg.jpeg>)
+<img src="../.gitbook/assets/WhatsApp Image 2025 12 12 at 9 58 59 AM jpeg.jpeg" alt="" width="375">
 
 * Acceso a un **Business Portfolio** de Meta.
 * [Tener el **Business Portfolio** de Meta Verificado](https://academy.vambe.ai/c%C3%B3mo-verificar-tu-negocio-business-manager-en-meta)
