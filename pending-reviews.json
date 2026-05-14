@@ -781,6 +781,17 @@
       "id": "mp5x8yxm_3czjj",
       "tema": "Anotaciones en Dashboards y Panda Time-Aware",
       "created_at": "2026-05-14T20:09:05.242Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "analitica-datos/introduccion-a-la-analitica-de-producto-avanzada-en-vambe.md",
+      "sha": null,
+      "contenido_nuevo": "# Introducción a la Analítica de Producto Avanzada en Vambe\n\nEn Vambe, entendemos que cada decisión de producto impacta directamente en el éxito de tus usuarios. Por eso, hemos revolucionado la forma en que entiendes el comportamiento de tus clientes con nuestra **Analítica de Producto Avanzada**.\n\nOlvídate de las soluciones externas y las integraciones complejas. Ahora tienes a tu disposición una herramienta nativa y potente para:\n\n*   **Desvelar patrones de uso:** Identifica cómo interactúan tus usuarios con cada funcionalidad, qué rutas toman y dónde encuentran fricción.\n*   **Optimizar la experiencia del usuario:** Descubre los puntos débiles de tu producto y las oportunidades para mejorar la satisfacción y retención.\n*   **Tomar decisiones basadas en datos:** Impulsa el crecimiento con información precisa sobre el rendimiento de tu producto y el impacto de tus cambios.\n\nCon la Analítica de Producto Avanzada de Vambe, obtendrás una visión 360 del ciclo de vida de tus usuarios, desde la adquisición hasta la retención, todo dentro de una misma experiencia. Es tu momento de pasar de la intuición a la acción con datos concretos y visualizaciones claras.\n\n***\n\n### Próximos pasos:\n\n*   [Cómo configurar tus eventos de producto](enlace-proximamente.md)\n*   [Explora los dashboards de analítica de producto](enlace-proximamente.md)\n*   [Crea funnels y analiza conversiones](enlace-proximamente.md)",
+      "commit_message": "docs: nuevo — Introducción a la Analítica de Producto Avanzada",
+      "justificacion": "La 'Analítica de Producto Avanzada' es una funcionalidad nueva y significativa que requiere su propia documentación dedicada para introducir el tema y sus beneficios a los usuarios de Vambe.",
+      "id": "mp5ymy9j_slr3m",
+      "tema": "Analítica de Producto Avanzada",
+      "created_at": "2026-05-14T20:47:57.175Z"
     }
   ]
 }
