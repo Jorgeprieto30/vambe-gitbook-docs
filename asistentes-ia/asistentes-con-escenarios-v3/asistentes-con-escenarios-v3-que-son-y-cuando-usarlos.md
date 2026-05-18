@@ -1,12 +1,12 @@
 # Asistentes con Escenarios (V3): ¿Qué son y cuándo usarlos?
 
-Vambe ahora ofrece dos tipos de asistentes. Antes de crear uno, es importante entender cuál se adapta mejor a lo que necesitas.
+Vambe ahora ofrece dos tipos de asistentes. Antes de crear uno, es importante entender cuál se adapta mejor a lo que necesita.
 
 ***
 
 ### Los dos tipos de asistentes
 
-Al hacer clic en **Crear asistente**, verás dos opciones:
+Al hacer clic en **Crear asistente**, verá dos opciones:
 
 <figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,38 +20,40 @@ Al hacer clic en **Crear asistente**, verás dos opciones:
 | **Integraciones externas**           | No                                                 | **Sí (Slack, Notion, Linear y más, para ejecutar acciones directamente desde la conversación)**                                                            |
 | **Ideal para**                       | Flujos lineales y predecibles                      | Conversaciones complejas, naturales y multi-propósito, y para automatizar tareas en herramientas externas.                                               |
 
-> 💡 Ambas versiones coexisten. No es necesario migrar los asistentes V2 existentes. Puedes seguir usándolos y crear asistentes V3 para nuevos casos de uso.
+> 💡 Ambas versiones coexisten. No es necesario migrar los asistentes V2 existentes. Puede seguir usándolos y crear asistentes V3 para nuevos casos de uso.
 
 ***
 
 ### ¿Cuándo usar cada uno?
 
-**Usa Asistente con Bloques (V2) si:**
+**Use Asistente con Bloques (V2) si:**
 
-* Tu flujo es simple y lineal (ej: calificar un lead con 3 preguntas fijas).
-* Ya tienes asistentes configurados y funcionando bien.
-* No necesitas que el asistente navegue entre múltiples temas.
+*   Su flujo es simple y lineal (ej: calificar un lead con 3 preguntas fijas).
+*   Ya tiene asistentes configurados y funcionando bien.
+*   No necesita que el asistente navegue entre múltiples temas.
 
-**Usa Asistente con Escenarios (V3) si:**
+**Use Asistente con Escenarios (V3) si:**
 
-* Tu asistente necesita manejar múltiples situaciones en una misma conversación (ventas + soporte + agendamiento).
-* Quieres reutilizar el mismo asistente en varias etapas del embudo.
-* Buscas conversaciones más naturales donde la IA decida el camino según el contexto.
-* Tienes flujos complejos que antes requerían varios asistentes encadenados.
-* **Necesitas que la IA ejecute acciones en herramientas externas (Slack, Notion, Linear, etc.) directamente desde la conversación, como enviar mensajes o crear tickets.**
+*   Su asistente necesita manejar múltiples situaciones en una misma conversación (ventas + soporte + agendamiento).
+*   Quiere reutilizar el mismo asistente en varias etapas del embudo.
+*   Busca conversaciones más naturales donde la IA decida el camino según el contexto.
+*   Tiene flujos complejos que antes requerían varios asistentes encadenados.
+*   **Necesita que la IA ejecute acciones en herramientas externas (Slack, Notion, Linear, etc.) directamente desde la conversación, como enviar mensajes o crear tickets.**
+*   Requiere un control adicional sobre las respuestas mediante el **Juez personalizado**, accesible directamente desde la interfaz del asistente con escenarios.
 
 ***
 
 ### Cómo crear un Asistente con Escenarios
 
-1. Ve al menú lateral → **Asistente** → haz clic en **+ Crear**.
-2. Selecciona **Asistente con escenarios**.
-3. Asigna un nombre y selecciona el modelo de IA.
-4. Haz clic en **Crear asistente**.
+1.  Vaya al menú lateral → **Asistentes** → haga clic en **+ Crear**.
+2.  Seleccione **Asistente con escenarios**.
+3.  Asigne un nombre y seleccione el modelo de IA.
+4.  Haga clic en **Crear asistente**.
 
-Al entrar al asistente recién creado, verás el panel de **Resumen** con cuatro pestañas principales:
+Al entrar al asistente recién creado, verá el panel de **Resumen** con varias pestañas principales:
 
-*   **Escenarios:** Aquí defines el comportamiento y los flujos de conversación.
+*   **Escenarios:** Aquí define el comportamiento y los flujos de conversación.
 *   **Bloques:** Configura la personalidad base (identidad) del asistente.
 *   **Funciones:** Las acciones que el asistente puede ejecutar (cambio de etapa, enviar plantilla, integraciones externas, etc.).
+*   **Juez:** Configure aquí el Juez personalizado para establecer políticas de revisión y corrección de respuestas de la IA.
 *   **Base de conocimiento, Retroalimentación, Probar asistente:** Configuraciones secundarias.
