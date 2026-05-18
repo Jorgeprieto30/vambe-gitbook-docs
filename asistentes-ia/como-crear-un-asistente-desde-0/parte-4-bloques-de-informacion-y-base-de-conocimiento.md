@@ -7,7 +7,7 @@ description: >-
 
 # Parte 4: Bloques de Información y Base de Conocimiento
 
-Existe una máxima fundamental al configurar su Inteligencia Artificial: **El asistente será tan inteligente como la información que usted le entregue.** Para evitar que la IA asuma, adivine o "alucine" datos, toda la información de su negocio debe estar documentada explícitamente dentro de la plataforma. Para esto, Vambe divide el conocimiento en dos grandes áreas: los **Bloques de Información** (para datos directos y rápidos) y la **Base de Conocimiento** (para archivos extensos y bases de datos).
+Existe una máxima fundamental al configurar su Inteligencia Artificial: **El asistente será tan inteligente como la información que usted le entregue.** Para evitar que la IA asuma, adivine o "alucine" datos, toda la información de su negocio debe estar documentada explícitamente dentro de Vambe. Para esto, Vambe divide el conocimiento en dos grandes áreas: los **Bloques de Información** (para datos directos y rápidos) y la **Base de Conocimiento** (para archivos extensos y bases de datos).
 
 ***
 
@@ -40,8 +40,10 @@ Este es el bloque más versátil. Consiste en un formato de texto libre donde pu
 
 Si usted utiliza plataformas externas conectadas a Vambe, utilizará estos bloques especializados:
 
-* Aplicaciones de reserva: Se utiliza si tiene integraciones de agendamiento (como Reservo, Agenda pro, Dentalink o Medilink). 👉[ \[Ver guía de integraciones de agendamiento aquí\]](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk/s/hQjV55x4bDSryBoT4FYC/)
-* Información de productos: Se utiliza si tiene su e-commerce conectado (como Shopify o WooCommerce) o si carga productos manualmente. 👉 [\[Ver guía de e-commerce aquí\]](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk/s/4RpMIxpq22tf78zYs9Ut/)
+*   Aplicaciones de reserva: Se utiliza si tiene integraciones de agendamiento (como Reservo, Agenda pro, Dentalink o Medilink). 👉 [\[Ver guía de integraciones de agendamiento aquí\]](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk/s/hQjV55x4bDSryBoT4FYC/)
+*   Información de productos (ProductBlock): Este bloque se utiliza si tiene su e-commerce conectado (como Shopify o WooCommerce) o si carga productos manualmente en Vambe. Si sus productos se cargan de forma manual, Vambe permite gestionar **múltiples catálogos de productos independientes**. Al configurar este bloque, podrá **seleccionar el catálogo específico** que desea asignar a este asistente, asegurando que acceda únicamente a la información de los productos relevantes (ej. un catálogo de _Verano 2026_ o _Marca A_).
+    *   [\[Aprenda a gestionar múltiples catálogos de productos aquí\]](../../asistente-ecommerce/gestion-de-productos/gestion-de-multiples-catalogos-de-productos.md)
+    *   [\[Vea la guía general de e-commerce aquí\]](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk/s/4RpMIxpq22tf78zYs9Ut/)
 
 ***
 
