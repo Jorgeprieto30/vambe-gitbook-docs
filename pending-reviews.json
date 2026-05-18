@@ -1030,6 +1030,17 @@
       "id": "mpbbdv7y_k4otc",
       "tema": "Procesamiento de Instrucciones DO NOTS por la IA",
       "created_at": "2026-05-18T14:43:39.214Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "analitica-datos/insights-dashboard-por-vertical.md",
+      "sha": null,
+      "contenido_nuevo": "# Insights Dashboard por Vertical: Centraliza y Visualiza Hallazgos Clave\n\n¡Estamos emocionados de anunciar el lanzamiento en fase beta del **Insights Dashboard por Vertical** en Vambe! Esta nueva herramienta está diseñada para transformar la manera en que visualizas y actúas sobre los datos de tu operación.\n\n## ¿Qué es el Insights Dashboard por Vertical?\n\nEl Insights Dashboard por Vertical es un tablero analítico avanzado, creado específicamente para perfiles de **Admin, Owner, Super-Admin y Agentes**. Su objetivo principal es centralizar y visualizar automáticamente los hallazgos clave de tu operación, permitiéndote tomar decisiones más rápidas y eficientes.\n\nCon esta herramienta, los dueños de negocio dejan de \"adivinar\" qué está sucediendo y obtienen una visión clara y digerida del rendimiento.\n\n## Beneficios Clave para tu Operación\n\nEste dashboard es fundamental para potenciar la competitividad de tu negocio en Vambe:\n\n*   **Detección de Oportunidades:** Identifica hallazgos relevantes y puntos de mejora sin tener que procesar la información manualmente. Vambe te muestra dónde enfocar tus esfuerzos.\n*   **Visibilidad Estratégica:** Ofrece a los administradores una herramienta clara para comprender el rendimiento específico de su vertical. Esto facilita la toma de decisiones informadas y estratégicas.\n*   **Eficiencia en la Gestión:** Al tener la información clave digerida en un tablero intuitivo, los agentes y dueños ahorran tiempo valioso en la creación y análisis de reportes. Podrán enfocarse en acciones concretas que impulsen el crecimiento de su negocio.\n\n## ¿Quiénes pueden acceder?\n\nEl Insights Dashboard por Vertical está disponible para los siguientes perfiles de usuario:\n\n*   **Admin**\n*   **Owner**\n*   **Super-Admin**\n*   **Agentes**\n\n## Acceso y Fase Beta\n\nDurante la fase beta, estaremos recolectando feedback para optimizar la herramienta. Te invitamos a explorarla y compartir tus comentarios.\n\n### Cómo Acceder (próximamente)\n\nPronto publicaremos una guía detallada con los pasos exactos para acceder al Insights Dashboard por Vertical desde Vambe. Mientras tanto, mantente atento a las notificaciones para el acceso inicial.\n",
+      "commit_message": "docs: Insights Dashboard — nuevo artículo de funcionalidad",
+      "justificacion": "Se crea un nuevo artículo dedicado al Insights Dashboard por Vertical para mantener la coherencia temática dentro de la sección de analítica de datos, proporcionando una guía específica y centrada en esta nueva funcionalidad.",
+      "id": "mpbbnvbc_aqyz5",
+      "tema": "Insights Dashboard por Vertical",
+      "created_at": "2026-05-18T14:51:25.896Z"
     }
   ]
 }
