@@ -3,9 +3,9 @@ cover: ../.gitbook/assets/Portada 23.png
 coverY: 0
 ---
 
-# Recuperación de carritos abandonados en Shopify
+# Estrategia de remarketing: Recuperación de carritos abandonados en Shopify
 
-En este artículo aprenderás cómo activar y configurar la recuperación automática de carritos abandonados en Shopify, utilizando Vambe para enviar mensajes de seguimiento a clientes que no finalizaron su compra. Este flujo permite contactar automáticamente a los clientes y aumentar la tasa de conversión de ventas perdidas.
+Potencia tus ventas con la recuperación automática de carritos abandonados en Shopify, una clave del **remarketing** en Vambe. Aprende a configurar esta funcionalidad para enviar mensajes de seguimiento a clientes que no finalizaron su compra, reactivando su interés y aumentando significativamente tu tasa de conversión.
 
 {% hint style="info" %}
 Antes de empezar, asegúrate de probar el flujo con un carrito de test antes de usarlo en producción.
