@@ -1,6 +1,6 @@
 # Asistentes V3: Construcción Inteligente y Guiada con PandAI
 
-La nueva vista de Asistentes V3 transforma por completo la manera en que se construyen y editan los asistentes dentro de Vambe. El enfoque principal de esta actualización es cederle el control operativo a PandAI, convirtiéndolo en un experto capaz de estructurar todo tu asistente de forma interactiva y guiada. **Gracias a las recientes mejoras en su motor, la construcción de asistentes ahora es aún más precisa y confiable, minimizando las 'alucinaciones' desde la creación.**
+La nueva vista de Asistentes V3 transforma por completo la manera en que se construyen y editan los asistentes dentro de Vambe. El enfoque principal de esta actualización es cederle el control operativo a PandAI, convirtiéndolo en un experto capaz de estructurar todo tu asistente de forma interactiva y guiada.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -14,10 +14,11 @@ Desde la vista principal, PandAI toma las riendas de la creación. Ya no necesit
 *   **Definir rutas.**
 *   **Asociar funciones.**
 
-Para asegurar que el resultado sea exactamente lo que necesitas, y **aprovechando la mayor fiabilidad de su motor**, PandAI ahora es mucho más proactivo:
+Para asegurar que el resultado sea exactamente lo que necesitas, PandAI ahora es mucho más proactivo:
 
-*   Preguntas interactivas: Si tu instrucción no es del todo clara, PandAI te hará preguntas para definir los detalles antes de avanzar.
-*   Planes de ejecución: Antes de aplicar cualquier modificación, la IA te propondrá un plan de acción para que valides si la dirección es la correcta. **Esta mejora en la precisión reduce la probabilidad de respuestas inesperadas o 'alucinaciones' en el asistente final.**
+*   **Preguntas interactivas:** Si tu instrucción no es del todo clara, PandAI te hará preguntas para definir los detalles antes de avanzar.
+*   **Planes de ejecución:** Antes de aplicar cualquier modificación, la IA te propondrá un plan de acción para que valides si la dirección es la correcta.
+*   **Comprensión temporal avanzada:** PandAI es ahora `time-aware`. Esto significa que puedes interactuar con él usando fechas y horas relativas (ej. "el viernes pasado", "en dos semanas") y lo entenderá para ayudarte a programar o referenciar eventos con precisión.
 
 ***
 
