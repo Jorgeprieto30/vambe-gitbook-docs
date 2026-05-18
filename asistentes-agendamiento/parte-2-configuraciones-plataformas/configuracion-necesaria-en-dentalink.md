@@ -65,6 +65,10 @@ Los **motivos de atención** son los que finalmente se mostrarán para agendar.
 {% endstep %}
 {% endstepper %}
 
+{% hint style="info" %}
+**Asegure el registro del valor de las citas:** Para que Vambe pueda mapear y registrar el valor económico total de las citas agendadas desde Dentalink, es fundamental que los **tratamientos asociados a cada motivo de atención tengan un precio configurado** en su sistema de Dentalink. Vambe utiliza esta información para brindarle una visibilidad completa del valor de sus agendamientos.
+{% endhint %}
+
 ***
 
 ## Paso 3: Verificar que la especialidad esté asignada a un profesional
