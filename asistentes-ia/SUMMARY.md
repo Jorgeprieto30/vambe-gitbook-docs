@@ -18,6 +18,7 @@
 * [Cómo ingresar al asistente de Inteligencia Artificial](como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md)
 * [Gestión de etiquetas y asignación automática](como-armar-los-bloques/gestion-de-etiquetas-y-asignacion-automatica.md)
 * [Cómo evitar respuestas innecesarias con "No responder"](como-armar-los-bloques/como-evitar-respuestas-innecesarias-con-no-responder.md)
+* [Cómo controlar las respuestas de tu asistente con el Juez](como-armar-los-bloques/como-controlar-las-respuestas-de-tu-asistente-con-el-juez.md)
 
 ## Asistentes con Escenarios (V3)
 
