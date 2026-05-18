@@ -1041,6 +1041,17 @@
       "id": "mpbbnvbc_aqyz5",
       "tema": "Insights Dashboard por Vertical",
       "created_at": "2026-05-18T14:51:25.896Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "analitica-datos/reportes-semanales-de-insights-para-owners.md",
+      "sha": null,
+      "contenido_nuevo": "# Reportes Semanales de Insights para Owners: Visibilidad del Valor de Vambe\n\nPara asegurar que Owners y Super-admins siempre tengan claridad sobre el impacto positivo de Vambe en su operación, hemos lanzado una nueva funcionalidad de reportes automáticos semanales. Estos reportes se envían directamente a su correo electrónico, destacando las métricas más relevantes para tangibilizar el valor y el retorno de inversión (ROI) que Vambe genera.\n\n## ¿Qué son los Reportes Semanales de Insights?\n\nEstos reportes son un resumen conciso de los logros y la eficiencia obtenida con Vambe durante la semana anterior. Están diseñados para ofrecer una visión de alto nivel, sin necesidad de navegar complejos dashboards, presentando los datos clave de manera proactiva.\n\n## ¿Quién recibe estos reportes?\n\nLos reportes se envían automáticamente a todos los **Owners** y **Super-admins** de su cuenta de Vambe.\n\n## Métricas clave destacadas\n\nCada reporte se enfoca en métricas esenciales que demuestran el rendimiento y la eficiencia de Vambe:\n\n*   **Tasa de resolución:** Muestra el porcentaje de casos gestionados y cerrados exitosamente con Vambe. Un indicador directo de la capacidad para atender y finalizar interacciones de manera efectiva.\n*   **Tiempo ahorrado:** Cuantifica las horas de trabajo que Vambe ha permitido ahorrar a su equipo. Esta métrica es crucial para entender el impacto real en la carga de trabajo y la optimización de recursos.\n*   **Automatización pura:** Refleja la cantidad de pasos, interacciones o procesos que fueron gestionados y completados al 100% por la inteligencia artificial de Vambe, sin necesidad de intervención humana. Esto destaca la eficiencia y la escalabilidad de las soluciones de automatización.\n\n## Impacto y Beneficios clave\n\nEsta funcionalidad está diseñada para abordar uno de los desafíos más comunes: la percepción del valor. Con los Reportes Semanales de Insights, Vambe asegura que usted:\n\n1.  **Tangibilice el ROI de Vambe:** Reciba pruebas concretas y proactivas del valor que Vambe genera, sin tener que buscarlas. Cada reporte es una validación del ahorro y la eficiencia.\n2.  **Facilite la toma de decisiones:** Obtenga insights accionables basados en el uso real de Vambe. Esto le permite identificar tendencias, optimizar estrategias y justificar la inversión.\n3.  **Refuerce la confianza en Vambe:** Al visualizar recurrentemente el tiempo ahorrado y la eficiencia de la IA, Vambe se consolida como una herramienta indispensable y confiable para la operación diaria.\n\nVambe trabaja continuamente para que su valor sea innegable y fácilmente visible.\n",
+      "commit_message": "docs: nuevo",
+      "justificacion": "Se crea un nuevo artículo para la funcionalidad de Reportes Semanales de Insights, ya que es un tema distinto y de alto nivel que merece su propio espacio dentro de la sección de analítica.",
+      "id": "mpbbo1an_6h61v",
+      "tema": "Reportes Semanales de Insights para Owners",
+      "created_at": "2026-05-18T14:51:33.647Z"
     }
   ]
 }
