@@ -13,6 +13,22 @@ No se envían conversaciones completas ni intenciones de compra como tal, **a me
 
 ***
 
+#### ¿Cómo obtengo mi Client ID (Vambe ID) para la integración con HubSpot?
+
+Para integrar Vambe con HubSpot, necesitarás tu **Client ID**, también conocido como **Vambe ID**. Este identificador es crucial para vincular correctamente tu cuenta de Vambe con tu CRM.
+
+Actualmente, puedes obtener tu Client ID de la siguiente manera:
+
+1.  Accede a la nueva vista de tu Backoffice de Vambe.
+2.  Busca el icono de llave ('IDs') en la esquina superior derecha de la pantalla.
+3.  Haz clic en el icono para visualizar y copiar tu Client ID.
+
+{% hint style="info" %}
+Por el momento, te recomendamos seguir utilizando la URL antigua del Backoffice (`https://backoffice.vambe.ai/clients/...`) para la mayoría de los flujos y configuraciones, a menos que se indique lo contrario. El Client ID se puede obtener de la nueva vista sin necesidad de usar su URL principal.
+{% endhint %}
+
+***
+
 #### ¿Vambe puede crear contactos nuevos en HubSpot?
 
 Sí. Vambe puede **crear nuevos contactos** en HubSpot de forma automática.
@@ -59,16 +75,6 @@ No obstante, puedes **agregar manualmente la información que estimes relevante*
 
 No. La información proveniente de HubSpot **no se utiliza para segmentar respuestas**.
 La segmentación se realiza directamente dentro de **Vambe**, utilizando sus herramientas actuales.
-
-***
-
-#### ¿Dónde encuentro el ID de cliente (vambe_id) para usar en HubSpot?
-
-El `vambe_id` es un identificador único de cada cliente en Vambe, crucial para ciertos flujos de integración o para referenciar clientes en sistemas externos como HubSpot. 
-
-Para obtener el `vambe_id` de un cliente, debes navegar a la vista detallada de ese cliente en el Backoffice de Vambe. El ID se encuentra en la esquina superior derecha de la interfaz.
-
-Para más detalles sobre la nueva estructura de URLs y la ubicación exacta del `vambe_id`, consulta [Navegación en la Vista del Cliente: Cómo obtener el ID (vambe_id) y URL](../../aplicacion/secciones-de-la-aplicacion/vista-del-cliente-obtener-id-y-url.md).
 
 ***
 
