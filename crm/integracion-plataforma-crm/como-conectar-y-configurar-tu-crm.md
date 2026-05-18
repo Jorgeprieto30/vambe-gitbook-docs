@@ -26,6 +26,24 @@ Si tienes dudas que puedo conectar con mi CRM, puedes [revisarlo aquí](integrac
 
 ***
 
+#### Obtención de su Client ID (Vambe ID)
+
+Para diversas configuraciones e integraciones con su CRM, puede que necesite el **Client ID** de su workspace, también conocido como **Vambe ID**. Este identificador ayuda a Vambe a reconocer su instancia y es fundamental para ciertos procesos de conexión.
+
+Para obtenerlo:
+
+1.  Acceda a la nueva vista de su Backoffice de Vambe.
+2.  Encontrará el icono de llave ('IDs') en la esquina superior derecha de la pantalla.
+3.  Haga clic en este icono para ver y copiar su Client ID.
+
+{% hint style="info" %}
+**Recomendación Importante sobre la URL del Backoffice:**
+
+Actualmente, para la mayoría de los flujos de trabajo y configuraciones en Vambe, se recomienda seguir utilizando la URL antigua del Backoffice (`https://backoffice.vambe.ai/clients/...`). La nueva URL (`https://backoffice.vambe.ai/workspaces/...`) ha sido introducida, pero la antigua es recomendada para asegurar la compatibilidad con todas las funcionalidades existentes mientras se actualizan los flujos internos.
+{% endhint %}
+
+***
+
 #### 1. Conexión Inicial
 
 1.  En el menú lateral izquierdo, ve a la sección **CRM**.
