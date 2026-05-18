@@ -1,6 +1,6 @@
-# Cómo activar la recuperación de carritos abandonados en WooCommerce
+# Potencia tu remarketing: Recuperación de carritos abandonados en WooCommerce
 
-Aprende a configurar el seguimiento de carritos abandonados en tu tienda WooCommerce para que Vambe pueda detectarlos automáticamente y activar mensajes de recuperación a tus clientes por WhatsApp.
+Descubre cómo activar y optimizar la recuperación de carritos abandonados en tu tienda WooCommerce. Con esta funcionalidad de remarketing en Vambe, podrás reactivar clientes, recuperar ventas y potenciar tus conversiones de forma automática a través de WhatsApp.
 
 ***
 
