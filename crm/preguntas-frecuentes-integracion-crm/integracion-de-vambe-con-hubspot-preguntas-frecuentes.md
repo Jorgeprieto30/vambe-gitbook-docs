@@ -62,6 +62,16 @@ La segmentación se realiza directamente dentro de **Vambe**, utilizando sus her
 
 ***
 
+#### ¿Dónde encuentro el ID de cliente (vambe_id) para usar en HubSpot?
+
+El `vambe_id` es un identificador único de cada cliente en Vambe, crucial para ciertos flujos de integración o para referenciar clientes en sistemas externos como HubSpot. 
+
+Para obtener el `vambe_id` de un cliente, debes navegar a la vista detallada de ese cliente en el Backoffice de Vambe. El ID se encuentra en la esquina superior derecha de la interfaz.
+
+Para más detalles sobre la nueva estructura de URLs y la ubicación exacta del `vambe_id`, consulta [Navegación en la Vista del Cliente: Cómo obtener el ID (vambe_id) y URL](../../aplicacion/secciones-de-la-aplicacion/vista-del-cliente-obtener-id-y-url.md).
+
+***
+
 #### ¿Qué permisos necesita Vambe dentro de HubSpot?
 
 Vambe requiere **permisos de lectura y escritura**, necesarios para:
