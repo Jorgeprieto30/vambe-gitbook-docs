@@ -2,6 +2,11 @@
 
 * [Seguimiento de Clientes: Fidelización y Retargeting](README.md)
 
+## Reactivacion
+
+* [Reactivación Inteligente para Ecommerce](reactivacion/reactivacion-inteligente-para-ecommerce.md)
+* [Reactivación Inteligente para Appointments](reactivacion/reactivacion-inteligente-para-appointments.md)
+
 ## Integraciones
 
 * [Integración API: Enviar y Programar Mensajes desde Otro Sistema](integraciones/integracion-api-enviar-y-programar-mensajes-desde-otro-sistema.md)
