@@ -7,10 +7,11 @@ coverY: 0
 
 Con Vambe Ads, tienes el poder de centralizar la creación y gestión de tus campañas publicitarias de Meta (Facebook e Instagram) y Google Ads en un solo lugar. Esto simplifica tu operación y asegura que tus campañas se optimicen con datos de atribución reales de Vambe.
 
-Existen dos maneras de crear campañas en Vambe:
+Existen varias maneras de crear campañas en Vambe, permitiéndote elegir la que mejor se adapte a tu necesidad de agilidad y control:
 
 1.  **Con el Asistente de IA conversacional:** Para una creación guiada y optimizada.
 2.  **De forma manual:** Para un control detallado sobre cada aspecto de tu campaña.
+3.  **Duplicando una campaña existente:** Para reutilizar estructuras probadas y lanzar rápidamente.
 
 ***
 
@@ -155,6 +156,46 @@ Antes de lanzar, asegúrate de que todo esté perfecto:
 
 ***
 
+## 3. Duplicar campañas existentes
+
+Vambe Ads te permite clonar campañas que ya has configurado y lanzado, ahorrando un tiempo valioso y asegurando la consistencia en tus nuevas estrategias. Esta función es ideal para crear variaciones rápidamente o para lanzar campañas similares con ajustes mínimos.
+
+{% stepper %}
+{% step %}
+### Seleccionar la campaña a duplicar
+
+*   Ingresa a **Vambe Ads**.
+*   Navega a la sección de **Campañas**.
+*   En el listado de tus campañas, identifica la campaña que deseas duplicar. Busca el ícono de duplicación (generalmente un cuadrado con un símbolo de copiar o dos cuadrados superpuestos) junto a la campaña.
+{% endstep %}
+
+{% step %}
+### Duplicar con un clic
+
+*   Haz clic en el ícono de duplicación asociado a la campaña elegida.
+*   Vambe creará automáticamente una copia de la configuración técnica y la estructura de la campaña original.
+{% endstep %}
+
+{% step %}
+### Ajustar la campaña en borrador
+
+*   La campaña duplicada se generará en estado de **borrador**.
+*   Podrás acceder a ella de inmediato para realizar ajustes en la segmentación, presupuesto, fechas o cualquier otro parámetro técnico.
+*   Recuerda que los elementos creativos (imágenes, videos, textos de anuncios específicos) *no se copian*. Deberás añadir o actualizar el contenido visual y textual para tu nueva estrategia.
+{% endstep %}
+
+{% step %}
+### Revisar y publicar
+
+*   Una vez que hayas realizado todos los ajustes necesarios y hayas añadido los nuevos elementos creativos, revisa la configuración completa de la campaña.
+*   Cuando estés satisfecho, puedes guardar los cambios y **publicar** la campaña para lanzarla.
+
+✅ ¡Has duplicado y lanzado una nueva campaña en tiempo récord!
+{% endstep %}
+{% endstepper %}
+
+***
+
 ## Gestión de campañas existentes
 
 Desde la sección de **Campañas** en Vambe Ads, puedes:
@@ -162,6 +203,6 @@ Desde la sección de **Campañas** en Vambe Ads, puedes:
 *   **Visualizar el rendimiento:** Accede a métricas clave y al reporte de atribución unificado.
 *   **Editar campañas:** Realiza ajustes a presupuestos, segmentaciones o creatividades.
 *   **Pausar o activar campañas:** Controla el estado de tus campañas en tiempo real.
-*   **Crear variaciones:** Duplica campañas o conjuntos de anuncios para pruebas A/B.
+*   **Crear variaciones o duplicar:** Utiliza la función de duplicación de campañas para generar nuevas versiones rápidamente, como se detalla en la sección [Duplicar campañas existentes](#duplicar-campanas-existentes).
 
 Esta integración completa te da una visión unificada y un control sin precedentes sobre tus esfuerzos publicitarios, todo dentro de Vambe.
