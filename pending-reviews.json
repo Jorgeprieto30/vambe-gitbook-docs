@@ -354,6 +354,17 @@
       "id": "mpn4up10_myh9r",
       "tema": "Dashboard de Resumen",
       "created_at": "2026-05-26T21:14:01.140Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "inteligencia-competitiva/analisis-de-competidores-en-vambe.md",
+      "sha": null,
+      "contenido_nuevo": "---\ndescription: >-\n  Accede a análisis profundos y compara tu rendimiento con el de tus competidores, todo desde Vambe.\ncover: .gitbook/assets/Cover-competidores.png\ncoverY: 0\n---\n\n# Análisis Detallado y Comparación de Competidores en Vambe\n\nComprender el panorama competitivo es esencial para cualquier estrategia de crecimiento. Vambe ahora te proporciona una herramienta de inteligencia competitiva de primer nivel, accesible directamente desde la navegación principal, para que puedas evaluar y comparar tu posición de manera efectiva.\n\nEsta nueva funcionalidad te ofrece una visión clara y concisa de tus competidores, permitiéndote identificar fortalezas, debilidades y oportunidades para tu negocio.\n\n## ¿Qué es la Comparación de Competidores?\n\nLa Comparación de Competidores en Vambe es un módulo estratégico que dedica una página completa a cada uno de los actores clave en tu sector. Cada página está diseñada para brindarte un análisis exhaustivo y estructurado, facilitando la toma de decisiones informadas.\n\n## Beneficios Clave:\n\n*   **Visión Estratégica:** Obtén una perspectiva clara de cómo te posicionas frente a otros en el mercado.\n*   **Decisiones Basadas en Datos:** Accede a información estructurada y métricas clave para fundamentar tus estrategias.\n*   **Identificación de Oportunidades:** Descubre áreas donde tus competidores sobresalen o donde puedes innovar y diferenciarte.\n*   **Monitoreo Continuo:** Mantente al tanto de los movimientos del mercado y adapta tu estrategia con agilidad.\n\n## ¿Qué encontrarás en el análisis de cada competidor?\n\nCada perfil de competidor en Vambe está enriquecido con:\n\n*   **Datos Estructurados:** Información clave sobre el competidor, su modelo de negocio y su propuesta de valor.\n*   **Métricas Relevantes:** Indicadores de rendimiento que te permiten comparar aspectos específicos de su operación con la tuya.\n*   **Recursos Multimedia:** Acceso a materiales visuales o auditivos que proporcionan un contexto adicional sobre sus estrategias y comunicación.\n\n## ¿Cómo acceder?\n\nLa funcionalidad de Comparación de Competidores está disponible en la navegación principal de Vambe. Simplemente busca la sección dedicada a 'Inteligencia Competitiva' o 'Análisis de Competidores' para empezar a explorar.\n\nEsta herramienta es tu aliada para transformar datos en acciones, impulsando la mejora continua y el liderazgo de tu marca en el mercado.\n",
+      "commit_message": "docs: Nueva funcionalidad de Comparación de Competidores",
+      "justificacion": "La funcionalidad de 'Comparación de Competidores' es una nueva característica estratégica que ofrece análisis detallado y datos estructurados, lo cual justifica la creación de un nuevo artículo dedicado para explicarla exhaustivamente sin contaminar otros documentos.",
+      "id": "mpn57wrr_77rvu",
+      "tema": "Comparación de Competidores",
+      "created_at": "2026-05-26T21:24:17.703Z"
     }
   ]
 }
