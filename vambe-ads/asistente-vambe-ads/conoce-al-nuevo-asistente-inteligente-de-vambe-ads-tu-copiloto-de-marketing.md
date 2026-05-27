@@ -19,8 +19,13 @@ La nueva interfaz se divide en dos áreas clave diseñadas para la productividad
 
 El asistente está entrenado para gestionar tu marketing de punta a punta:
 
-*   Análisis de Datos y Decisiones Estratégicas: Al iniciar, le indicas al asistente cuál es tu KPI principal (por ejemplo, "agendamientos" o "ventas"). Luego, simplemente puedes preguntarle: _"¿Cómo rindieron mis campañas en marzo?"_. El asistente analizará la data y te brindará sugerencias precisas y personalizadas, adaptadas a las particularidades de tu cliente y la vertical de tu negocio. De este modo, te dirá exactamente qué campañas tienen mejor eficiencia, cuáles traen más volumen y, lo más importante, cuáles están desperdiciando tu presupuesto, para que sepas dónde reasignar tu dinero de forma estratégica.
-*   Generación de Creatividades Simplificada: Pídele al asistente que cree un anuncio o una variación de uno existente (por ejemplo, "modifica este anuncio para el mercado de Chile"). La IA incluso puede absorber el _branding_ de tu empresa simplemente pasándole un link.
+*   Análisis de Datos y Decisiones Estratégicas: Al iniciar, le indicas al asistente cuál es tu KPI principal (por ejemplo, "agendamientos" o "ventas"). Luego, simplemente puedes preguntarle: _"¿Cómo rindieron mis campañas en marzo?"_. El asistente analizará la data y te dirá exactamente qué campañas tienen mejor eficiencia, cuáles traen más volumen y, lo más importante, cuáles están desperdiciando tu presupuesto, para que sepas dónde reasignar tu dinero.
+*   Generación de Creatividades Simplificada: Pídele al asistente que cree un anuncio, una variación de uno existente (por ejemplo, "modifica este anuncio para el mercado de Chile"), o **genera videos publicitarios completos con IA**. La IA incluso puede absorber el _branding_ de tu empresa simplemente pasándole un link, permitiéndote:
+    *   Crear videos desde cero, editarlos y gestionar todas sus versiones en un mismo lugar.
+    *   Realizar **multigeneración** para lanzar varias creaciones al mismo tiempo.
+    *   Utilizar **guías de estilo** basadas en imágenes o videos de referencia.
+    *   Acceder a un **historial de versiones** detallado para iterar y ajustar sin perder el original.
+    *   **Consideración:** La generación de videos es un proceso que puede tomar entre 4 y 10 minutos.
 *   **Creación y Gestión de Campañas Completas:** La IA comprende tu negocio, lo que te permite crear campañas de marketing desde cero o gestionar las existentes con solo conversar. Simplemente describe tu objetivo ("Quiero lanzar una campaña para promover mi nuevo producto con un descuento del 15%") y el asistente se encargará de configurar los detalles, seleccionar audiencias o ajustar presupuestos.
 *   Gestión Operativa sin Fricción: Olvídate de navegar por menús complejos. Pídele al chat que:
     *   Cree y edite columnas personalizadas.
