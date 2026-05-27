@@ -7,13 +7,13 @@ coverY: 0
 
 {% stepper %}
 {% step %}
-### Ingresa a la sección de conexión de canales
+#### Ingresa a la sección de conexión de canales
 
 Accede a la sección de conexión de canales [aquí](https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales?hsLang=es)
 {% endstep %}
 
 {% step %}
-### Selecciona WhatsApp
+#### Selecciona WhatsApp
 
 Selecciona WhatsApp como tipo de canal a conectar.
 
@@ -21,7 +21,7 @@ Selecciona WhatsApp como tipo de canal a conectar.
 {% endstep %}
 
 {% step %}
-### Completa Nombre del canal y Número de teléfono
+#### Completa Nombre del canal y Número de teléfono
 
 Coloca el Nombre del canal en Vambe y el Número de teléfono.
 
@@ -35,7 +35,7 @@ IMPORTANTE: El número debe estar con el código de país.
 {% endstep %}
 
 {% step %}
-### Escanea el código QR
+#### Escanea el código QR
 
 Escanea el código QR que aparece en pantalla utilizando la cámara de tu teléfono, siguiendo el mismo proceso que usarías para WhatsApp Web. (El código dinámico cambia cada 15 segundos).
 
@@ -51,25 +51,25 @@ Pasos en el teléfono:
 {% endstep %}
 
 {% step %}
-### Espera la confirmación de conexión
+#### Espera la confirmación de conexión
 
 Espera a que el sistema confirme la conexión exitosa.
 {% endstep %}
 
 {% step %}
-### Selecciona el Embudo
+#### Selecciona el Embudo
 
 En el menú que se desplegará, selecciona el embudo específico al que deseas vincular este número de WhatsApp.
 {% endstep %}
 
 {% step %}
-### Finaliza la configuración
+#### Finaliza la configuración
 
 Haz clic en "Finish" o "Finalizar" para terminar la configuración.
 {% endstep %}
 
 {% step %}
-### Verifica que los mensajes entren al embudo
+#### Verifica que los mensajes entren al embudo
 
 Para que los mensajes entren al embudo debemos asegurar que el canal esté vinculado a este; una vez vinculado la IA comenzará a tomar las conversaciones que entran.
 

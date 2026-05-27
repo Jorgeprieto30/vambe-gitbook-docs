@@ -31,7 +31,7 @@ Antes de comenzar, debes contar con:
 
 {% stepper %}
 {% step %}
-### Acceder al Centro de gestión comercial
+#### Acceder al Centro de gestión comercial
 
 1. Accede al [**Centro de gestión comercial de Meta (Business Portfolio)**](http://business.facebook.com/).
 2. En el menú lateral, ir a **Configuraciones del portafolio.**
@@ -40,7 +40,7 @@ Antes de comenzar, debes contar con:
 {% endstep %}
 
 {% step %}
-### Seleccionar cuentas y cuenta de WhatsApp
+#### Seleccionar cuentas y cuenta de WhatsApp
 
 3. Seleccionar **Cuentas de WhatsApp**.
 
@@ -52,7 +52,7 @@ Antes de comenzar, debes contar con:
 {% endstep %}
 
 {% step %}
-### Configuración de pago
+#### Configuración de pago
 
 5. En esa misma vista, ingresar a **Configuración de pago**.
 
@@ -78,7 +78,7 @@ Antes de comenzar, debes contar con:
 
 {% stepper %}
 {% step %}
-### Acceder al Centro de gestión comercial
+#### Acceder al Centro de gestión comercial
 
 1. Accede al [**Centro de gestión comercial de Meta (Business Portfolio)**](http://business.facebook.com/).
 2. En el menú lateral, ir a **Configuraciones del portafolio.**
@@ -87,7 +87,7 @@ Antes de comenzar, debes contar con:
 {% endstep %}
 
 {% step %}
-### Seleccionar cuentas de WhatsApp y administrador
+#### Seleccionar cuentas de WhatsApp y administrador
 
 3. Seleccionar **Cuentas de WhatsApp**.
 
@@ -99,7 +99,7 @@ Antes de comenzar, debes contar con:
 {% endstep %}
 
 {% step %}
-### Editar perfil: imagen, nombre y descripción
+#### Editar perfil: imagen, nombre y descripción
 
 Aquí podrás editar:
 

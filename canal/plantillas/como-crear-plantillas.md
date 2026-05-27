@@ -37,7 +37,7 @@ Para usar plantillas necesitas:
 
 {% stepper %}
 {% step %}
-### Ingresar a la sección de Plantillas
+#### Ingresar a la sección de Plantillas
 
 * En Vambe, ve al menú izquierdo.
 * Haz clic en **Canales**.
@@ -48,18 +48,18 @@ Para usar plantillas necesitas:
 {% endstep %}
 
 {% step %}
-### Crear la plantilla
+#### Crear la plantilla
 
 ![](<../.gitbook/assets/image png Dec 01 2025 12 48 55 6076 PM.png>)
 
 Completa los siguientes campos:
 
-#### Nombre de la plantilla
+**Nombre de la plantilla**
 
 * Debe ser técnico, sin espacios ni caracteres especiales.
 * Ejemplos: `recordatorio_cita`, `seguimiento_pago`, `promo_blackfriday`
 
-#### Categoría
+**Categoría**
 
 Selecciona:
 
@@ -68,22 +68,22 @@ Selecciona:
 
 _(Meta podría ajustar la categoría si considera que no coincide.)_
 
-#### Idioma
+**Idioma**
 
 Selecciona **Español** u otro idioma según lo necesites.
 
-#### Canales
+**Canales**
 
 * Activa **WhatsApp**.
 * Activa también **Instagram** si deseas que la plantilla funcione en ambos canales.
 {% endstep %}
 
 {% step %}
-### Definir el contenido de la plantilla
+#### Definir el contenido de la plantilla
 
 Aquí defines la estructura del mensaje:
 
-#### Encabezado (opcional)
+**Encabezado (opcional)**
 
 ![](<../.gitbook/assets/image png Dec 01 2025 01 18 27 9729 PM.png>)
 
@@ -94,7 +94,7 @@ Puede ser:
 * Video
 * Documento PDF
 
-#### Cuerpo del mensaje (Body)
+**Cuerpo del mensaje (Body)**
 
 ![](<../.gitbook/assets/image png Dec 01 2025 01 19 44 1147 PM.png>)
 
@@ -109,11 +109,11 @@ Puedes incluir variables:
 
 * Ej.: `Hola {{1}}, tu cita está agendada para el {{2}}.`
 
-#### Pie de mensaje (opcional)
+**Pie de mensaje (opcional)**
 
 Texto breve, generalmente informativo.
 
-#### Botones (opcional)
+**Botones (opcional)**
 
 Puedes agregar:
 
@@ -137,7 +137,7 @@ Tip: Las variables permiten personalizar masivamente:
 {% endstep %}
 
 {% step %}
-### Completar los ejemplos para revisión de Meta
+#### Completar los ejemplos para revisión de Meta
 
 ![](<../.gitbook/assets/image png Dec 01 2025 01 29 23 7618 PM.png>)
 
@@ -153,11 +153,11 @@ Luego revisa la vista previa y guarda.
 {% endstep %}
 
 {% step %}
-### Estado, asociación y aprobación de la plantilla
+#### Estado, asociación y aprobación de la plantilla
 
 Una vez creada la plantilla, todavía **no quedará lista para usar**. Antes debe ser asociada a los canales correspondientes y enviada a revisión por Meta.
 
-#### Pasos para habilitarla correctamente:
+**Pasos para habilitarla correctamente:**
 
 * Hacer clic en **Asociar canales** en la plantilla creada
 

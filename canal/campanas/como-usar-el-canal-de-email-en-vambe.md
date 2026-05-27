@@ -16,7 +16,32 @@ Desde el menú lateral, ve a [**Canales**](../conexion-de-canales-de-vambe/como-
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### 1.2 Configura tu dominio
+#### 1.2 Elige tu método de conexión
+
+Al configurar el canal de Email en Vambe, puedes elegir entre dos métodos de conexión:
+
+* **Dominio Vambe** _(recomendado)_ — Vambe te provee un dominio. Solo necesitas ingresar un subdominio y nosotros nos encargamos del resto.
+* **Dominio propio** — Conecta tu propio dominio si no quieres que los correos aparezcan con `@subdominio.vambe-mail.com`.
+
+#### Opción A: Dominio Vambe (recomendado)
+
+Con este método, Vambe te ofrece un dominio directamente, eliminando la necesidad de configurar registros DNS manualmente.
+
+1. Selecciona la opción **Dominio Vambe** al configurar el canal.
+2. Ingresa el **subdominio** que quieras usar (ej: `tuempresa`).
+3. Vambe configurará el resto automáticamente.
+
+Los correos se enviarán y visualizarán con el formato: `@{subdominio}.vambe-mail.com`
+
+{% hint style="info" %}
+✅ El canal queda operativo en **menos de 30 Segundos**
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+#### Opción B: Dominio propio
+
+Usa este método si deseas que los correos se envíen desde tu propio dominio y no quieres que aparezca `vambe-mail.com`.
 
 Completa los siguientes campos:
 

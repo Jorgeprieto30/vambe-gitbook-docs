@@ -9,13 +9,13 @@ Para conectar Instagram, WhatsApp, Messenger o WebChat a Vambe, el primer paso e
 
 {% stepper %}
 {% step %}
-### Ir al menú lateral izquierdo
+#### Ir al menú lateral izquierdo
 
 En la barra de navegación principal, ubica la opción **Canales** y haz clic sobre ella.
 {% endstep %}
 
 {% step %}
-### Seleccionar nuevamente “Canales” en el submenú
+#### Seleccionar nuevamente “Canales” en el submenú
 
 Se desplegará un segundo menú. Vuelve a hacer clic en **Canales**.
 
@@ -23,7 +23,7 @@ Se desplegará un segundo menú. Vuelve a hacer clic en **Canales**.
 {% endstep %}
 
 {% step %}
-### Acceder al panel de gestión de canales
+#### Acceder al panel de gestión de canales
 
 Al realizar estos dos clics, ingresarás directamente al menú donde podrás:
 
@@ -34,7 +34,7 @@ Al realizar estos dos clics, ingresarás directamente al menú donde podrás:
 {% endstep %}
 
 {% step %}
-### Agregar un nuevo canal
+#### Agregar un nuevo canal
 
 Para agregar un nuevo canal, ve a la parte inferior y haz click en **Agregar Canal**.
 

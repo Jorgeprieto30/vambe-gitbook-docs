@@ -47,7 +47,7 @@ Ejemplo válido: https://vambe.dentalink.cl/
 
 {% stepper %}
 {% step %}
-### Crear o acceder a tu cuenta en Meta Business
+#### Crear o acceder a tu cuenta en Meta Business
 
 (Video: 0:10 – 0:40)
 
@@ -59,7 +59,7 @@ Estos datos quedan almacenados en la sección **Información del negocio**.
 {% endstep %}
 
 {% step %}
-### Vincular tu cuenta de WhatsApp Business
+#### Vincular tu cuenta de WhatsApp Business
 
 (Video: 0:42 – 1:15)
 
@@ -72,7 +72,7 @@ Sin WhatsApp y sin movimiento, Meta indicará que el portafolio no es candidato 
 {% endstep %}
 
 {% step %}
-### Iniciar la verificación del negocio
+#### Iniciar la verificación del negocio
 
 (Video: 2:04 – 2:20)
 
@@ -84,7 +84,7 @@ Meta solicitará: nombre del negocio, dirección, teléfono, correo, sitio web y
 {% endstep %}
 
 {% step %}
-### Seleccionar país de operación y tipo de negocio
+#### Seleccionar país de operación y tipo de negocio
 
 (Video: 3:19 – 5:06)
 
@@ -105,7 +105,7 @@ Si aún no tributas con razón social, puedes continuar como persona natural.
 {% endstep %}
 
 {% step %}
-### Revisión de coherencia del nombre y datos
+#### Revisión de coherencia del nombre y datos
 
 (Video: 5:37 – 6:25)
 
@@ -118,7 +118,7 @@ Recomendación para agencias: que el cliente verifique su propio negocio y te ag
 {% endstep %}
 
 {% step %}
-### Verificación documental
+#### Verificación documental
 
 (Video: 6:37 – 7:39)
 
@@ -131,7 +131,7 @@ Los archivos deben ser legibles, vigentes y coherentes con la información ingre
 {% endstep %}
 
 {% step %}
-### Verificación de identidad del representante
+#### Verificación de identidad del representante
 
 (Video: 7:42 – 8:15)
 
@@ -145,7 +145,7 @@ Sube una imagen clara del documento.
 {% endstep %}
 
 {% step %}
-### Resultado de la verificación
+#### Resultado de la verificación
 
 (Video: 8:18 – 8:49)
 

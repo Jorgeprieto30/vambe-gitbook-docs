@@ -9,7 +9,7 @@ Solo una vez vinculaste el canal a Vambe, debemos verificar que el canal esté c
 
 {% stepper %}
 {% step %}
-### Verificar asociación del canal al embudo
+#### Verificar asociación del canal al embudo
 
 * En el menú lateral izquierdo, ir a [**Canales**](https://www.vambeai.com/channels).
 * Buscar el **nombre del embudo** al que quieres asociar el número.
@@ -19,7 +19,7 @@ Solo una vez vinculaste el canal a Vambe, debemos verificar que el canal esté c
 {% endstep %}
 
 {% step %}
-### Si el canal no está asociado
+#### Si el canal no está asociado
 
 * En la sección de ese embudo, hacer clic en el botón **Asociar Canal**.
 
@@ -27,7 +27,7 @@ Solo una vez vinculaste el canal a Vambe, debemos verificar que el canal esté c
 {% endstep %}
 
 {% step %}
-### Seleccionar el canal
+#### Seleccionar el canal
 
 * Seleccionar el **canal** que acabas de conectar.
 

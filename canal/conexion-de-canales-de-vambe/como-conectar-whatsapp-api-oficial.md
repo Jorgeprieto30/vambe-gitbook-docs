@@ -28,7 +28,7 @@ Antes de comenzar, asegúrate de contar con:
 
 {% stepper %}
 {% step %}
-### Iniciar la conexión desde Vambe
+#### Iniciar la conexión desde Vambe
 
 * Ingresa a la sección de conexión de canales: https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales
 * Seleccionar **WhatsApp API (oficial)**.
@@ -37,13 +37,13 @@ Antes de comenzar, asegúrate de contar con:
 
 * Hacer clic en **Registrar número de teléfono**.
 
-![image.png](<../.gitbook/assets/fb358cb463384708952837e4791263c5ed4e35c26b1c494589e5e8079aca337a (2)>)
+![image.png](../.gitbook/assets/fb358cb463384708952837e4791263c5ed4e35c26b1c494589e5e8079aca337a)
 
 Esto abrirá el proceso de conexión directamente con Meta.
 {% endstep %}
 
 {% step %}
-### Registro del número en Meta
+#### Registro del número en Meta
 
 Al hacer clic en “Registrar número de teléfono” dentro de Vambe, se abrirá una nueva pestaña de Meta/Facebook.
 
@@ -60,7 +60,7 @@ Un error muy común es que los usuarios, sin darse cuenta, están conectados con
 {% endstep %}
 
 {% step %}
-### Seleccionar el portafolio y crear la cuenta de WhatsApp Business
+#### Seleccionar el portafolio y crear la cuenta de WhatsApp Business
 
 ![](<../.gitbook/assets/image png Nov 27 2025 03 37 48 6118 PM (2).png>)
 
@@ -71,7 +71,7 @@ Un error muy común es que los usuarios, sin darse cuenta, están conectados con
 {% endstep %}
 
 {% step %}
-### Ingresar la información comercial (Solo si seleccionaste "Crear una cuenta de WhatsApp Business")
+#### Ingresar la información comercial (Solo si seleccionaste "Crear una cuenta de WhatsApp Business")
 
 ![](<../.gitbook/assets/image png Nov 27 2025 03 39 20 6970 PM (2).png>)
 
@@ -87,7 +87,7 @@ Una vez completado, hacer clic en **Siguiente**.
 {% endstep %}
 
 {% step %}
-### Agregar el número de teléfono
+#### Agregar el número de teléfono
 
 ![](<../.gitbook/assets/image png Nov 27 2025 03 39 57 6863 PM (2).png>)
 
@@ -96,7 +96,7 @@ Una vez completado, hacer clic en **Siguiente**.
 {% endstep %}
 
 {% step %}
-### Verificación del número
+#### Verificación del número
 
 ![](<../.gitbook/assets/image png Nov 27 2025 03 40 50 8421 PM (2).png>)
 
@@ -113,7 +113,7 @@ Es fundamental tomar nota del código exactamente como llega (formato XXX XXX). 
 {% endstep %}
 
 {% step %}
-### Finalizar la verificación en Meta
+#### Finalizar la verificación en Meta
 
 ![](<../.gitbook/assets/image png Dec 12 2025 12 37 57 2845 PM (1).png>)
 
@@ -127,7 +127,7 @@ Meta te redirigirá automáticamente a la pestaña de Vambe.
 {% endstep %}
 
 {% step %}
-### Completar la conexión dentro de Vambe
+#### Completar la conexión dentro de Vambe
 
 ![](<../.gitbook/assets/Captura de pantalla 2025 12 04 a la(s) 4 46 44 p m  png (2).png>)
 
@@ -141,13 +141,13 @@ Al regresar a Vambe:
 {% endstep %}
 
 {% step %}
-### Verificar que el número esté asociado al embudo correcto
+#### Verificar que el número esté asociado al embudo correcto
 
 Revisa la guía de verificación [aquí](https://academy.vambe.ai/verificar-que-el-n%C3%BAmero-est%C3%A9-asociado-al-embudo-correcto)
 {% endstep %}
 
 {% step %}
-### Conexión completada
+#### Conexión completada
 
 Después de estos pasos:
 

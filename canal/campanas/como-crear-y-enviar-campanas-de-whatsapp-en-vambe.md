@@ -39,7 +39,7 @@ Se abrirá una ventana de configuración donde debes llenar los datos básicos:
 * **Plantilla**: Selecciona el mensaje que enviarás.
   * _Nota:_ Si tu plantilla no aparece, verifica que esté aprobada y disponible para ese canal específico.
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -59,8 +59,6 @@ Ideal si tienes una base de datos externa.
     * _Tip:_ Puedes agregar campos de "Metadata" fijos si necesitas guardar información extra que no va en el mensaje.
 
     <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
-
-
 3.  **Descargar Ejemplo:** Haz clic en Descargar y actualizar plantilla. Esto te dará un archivo Excel vacío con las columnas exactas que necesitas llenar.<br>
 
     | $$521234569$$ | John Doe     | Jorge   | Mark 120  | $$19000$$ |
@@ -91,8 +89,6 @@ Ideal para contactar a gente con la que ya has hablado.
 
     <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
-
-
 Haz clic en **Crear** para finalizar la configuración.
 
 ***
@@ -106,13 +102,9 @@ Una vez creada, la campaña aparecerá en tu lista con el estado Pendiente. Aún
 1.  Haz clic en el botón azul **Enviar**<br>
 
     <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
-
-
 2.  Aparecerá una barra deslizante. Elige la cantidad de mensajes que quieres disparar (puedes enviarlos todos de una vez o por lotes).<br>
 
     <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
-
-
 3. Haz clic en Enviar X mensajes.
 
 **2. Programar para después**

@@ -18,7 +18,7 @@ Ventajas clave:
 
 {% stepper %}
 {% step %}
-### Crear el canal de Web Chat
+#### Crear el canal de Web Chat
 
 * Ve al menú lateral izquierdo.
 * [Ingresa a Canales](https://academy.vambe.ai/v1/docs/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales).
@@ -36,7 +36,7 @@ Una vez creado, el Web Chat aparecerá en el listado de canales.
 {% endstep %}
 
 {% step %}
-### Generar el script de instalación
+#### Generar el script de instalación
 
 * En el listado de Web Chat, haz clic en los **tres puntos** del Web Chat creado.
 * Selecciona **Generate script**.
@@ -47,13 +47,13 @@ Este script es el código que deberás insertar en tu página web, en el lugar d
 {% endstep %}
 
 {% step %}
-### Configurar el Web Chat
+#### Configurar el Web Chat
 
 Debajo del script encontrarás todas las opciones de personalización. A continuación, se describen cada una.
 
 ![](../.gitbook/assets/image\(103\).png)
 
-#### Información del agente
+**Información del agente**
 
 * **Agent name** — Nombre que verá el cliente como agente del chat.
 * **Agent avatar URL** — URL de la imagen del agente que se mostrará en la esquina superior del chat.
@@ -62,7 +62,7 @@ Debajo del script encontrarás todas las opciones de personalización. A continu
 La URL del avatar debe ser pública y enlazar directamente a la imagen.
 {% endhint %}
 
-#### Solicitud de datos antes de abrir el chat
+**Solicitud de datos antes de abrir el chat**
 
 Puedes pedir información al cliente **antes de que se abra la conversación**:
 
@@ -72,31 +72,31 @@ Puedes pedir información al cliente **antes de que se abra la conversación**:
 
 Si activas alguna de estas opciones, el cliente deberá ingresar esos datos antes de iniciar el chat.
 
-#### Apariencia del Web Chat
+**Apariencia del Web Chat**
 
 * **Dark mode** — Activa el tema oscuro.
 * **Primary color / Secondary color** — Define los colores del botón y del chat.
 
 En la parte inferior derecha verás una **vista previa en tiempo real** del Web Chat.
 
-#### Idioma y textos
+**Idioma y textos**
 
 * **Language** — Selecciona el idioma del Web Chat.
 * **Chat with us text** — Texto que aparecerá junto al botón para invitar al cliente a iniciar la conversación (ejemplo: _¿Hablamos?_ o _Chatea con nosotros_).
 
-#### Posición del botón
+**Posición del botón**
 
 * **Position X**
 * **Position Y**
 
 Permite ajustar la ubicación exacta del botón dentro de tu página web.
 
-#### Restricciones por dominio (opcional)
+**Restricciones por dominio (opcional)**
 
 * **Restrict by origin** — Permite definir desde qué URL puede cargarse el Web Chat.
 * **Enable URL tracking** — Activa el seguimiento del origen del contacto.
 
-#### Preguntas sugeridas
+**Preguntas sugeridas**
 
 Las **Suggested questions** permiten mostrar botones con mensajes predefinidos para que el cliente los envíe con un solo clic.\
 Ejemplos:
@@ -107,7 +107,7 @@ Ejemplos:
 {% endstep %}
 
 {% step %}
-### Insertar el script en tu sitio web
+#### Insertar el script en tu sitio web
 
 1. Copia el **script** que aparece en la parte superior.
 2. Pégalo en el código de tu sitio web, idealmente antes del cierre de la etiqueta `<body>` o según lo indique tu CMS.
@@ -115,7 +115,7 @@ Ejemplos:
 {% endstep %}
 
 {% step %}
-### Verificar la conexión con un embudo
+#### Verificar la conexión con un embudo
 
 Asegúrate de que el Web Chat esté **conectado a un embudo** dentro de Vambe:
 

@@ -17,7 +17,7 @@ Debes tener al menos una plantilla creada 👉 [Como crear plantillas](https://a
 
 {% stepper %}
 {% step %}
-### Enviar plantilla en chats cerrados
+#### Enviar plantilla en chats cerrados
 
 1. Abre el ticket en el panel de conversaciones.
 2. Haz clic en **Enviar plantilla** (botón visible en chats cerrados).
@@ -38,7 +38,7 @@ Este es el método formal para reactivar conversaciones cerradas cumpliendo las 
 
 {% stepper %}
 {% step %}
-### Usar el atajo (slash)
+#### Usar el atajo (slash)
 
 1. En cualquier conversación (abierta o cerrada) escribe **/** (slash).
 2. Escribe las **tres primeras letras** del nombre de tu plantilla.

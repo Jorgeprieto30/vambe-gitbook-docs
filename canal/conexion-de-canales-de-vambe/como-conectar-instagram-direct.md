@@ -18,13 +18,13 @@ Antes de comenzar, asegúrate de que:
 
 {% stepper %}
 {% step %}
-### Ingresar a la sección de conexión de canales
+#### Ingresar a la sección de conexión de canales
 
 [Accede a la sección de conexión de canales](https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales)
 {% endstep %}
 
 {% step %}
-### Seleccionar Instagram Direct
+#### Seleccionar Instagram Direct
 
 Dentro de la sección de canales, selecciona **Instagram Direct**.\
 Se abrirá el flujo de conexión con Instagram.
@@ -33,7 +33,7 @@ Se abrirá el flujo de conexión con Instagram.
 {% endstep %}
 
 {% step %}
-### Iniciar sesión en Instagram
+#### Iniciar sesión en Instagram
 
 Instagram solicitará iniciar sesión. Ingresa el **usuario y contraseña** de la cuenta de Instagram que deseas conectar.
 
@@ -50,7 +50,7 @@ Si no corresponde, cierra sesión en Instagram, inicia sesión con la cuenta cor
 {% endstep %}
 
 {% step %}
-### Aceptar permisos de Instagram
+#### Aceptar permisos de Instagram
 
 Después de iniciar sesión correctamente:
 
@@ -64,7 +64,7 @@ Estos permisos son necesarios para que Vambe pueda leer y responder mensajes dir
 {% endstep %}
 
 {% step %}
-### Conectar Instagram al embudo
+#### Conectar Instagram al embudo
 
 Después de aceptar los permisos:
 
@@ -76,7 +76,7 @@ Desde este momento, los mensajes de Instagram comenzarán a ingresar a ese embud
 {% endstep %}
 
 {% step %}
-### Verificar que Instagram esté correctamente asociado al embudo
+#### Verificar que Instagram esté correctamente asociado al embudo
 
 Como paso final de verificación:
 

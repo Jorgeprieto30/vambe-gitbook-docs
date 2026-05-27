@@ -23,7 +23,7 @@ Antes de comenzar, asegúrate de cumplir con lo siguiente:
 
 {% stepper %}
 {% step %}
-### Paso 1: Ingresar a la sección de Conexión de Canales
+#### Paso 1: Ingresar a la sección de Conexión de Canales
 
 * [Dirígete a la sección de **Conexión de Canales**](https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales)
 * Dentro del listado de canales disponibles, haz clic en **Messenger**.
@@ -32,7 +32,7 @@ Antes de comenzar, asegúrate de cumplir con lo siguiente:
 {% endstep %}
 
 {% step %}
-### Paso 2: Iniciar sesión con Facebook
+#### Paso 2: Iniciar sesión con Facebook
 
 * Se abrirá una ventana de Facebook para iniciar sesión.
 * Verifica que estás utilizando **la cuenta correcta de Facebook**, es decir, aquella que administra la página cuyos mensajes deseas conectar.
@@ -42,7 +42,7 @@ Antes de comenzar, asegúrate de cumplir con lo siguiente:
 {% endstep %}
 
 {% step %}
-### Paso 3: Seleccionar la página de Facebook
+#### Paso 3: Seleccionar la página de Facebook
 
 * Facebook mostrará las páginas asociadas a tu cuenta.
 * Selecciona **la página específica** en la que deseas que el asistente de inteligencia artificial responda los mensajes directos.
@@ -52,7 +52,7 @@ Antes de comenzar, asegúrate de cumplir con lo siguiente:
 {% endstep %}
 
 {% step %}
-### Paso 4: Otorgar permisos al negocio
+#### Paso 4: Otorgar permisos al negocio
 
 * Durante el proceso, Facebook solicitará permisos para:
   * Acceder a los mensajes de la página.
@@ -64,7 +64,7 @@ Antes de comenzar, asegúrate de cumplir con lo siguiente:
 {% endstep %}
 
 {% step %}
-### Paso 5: Guardar la configuración
+#### Paso 5: Guardar la configuración
 
 * Revisa el resumen de permisos y páginas seleccionadas.
 * Haz clic en **De acuerdo** para finalizar la autorización.
@@ -74,7 +74,7 @@ Antes de comenzar, asegúrate de cumplir con lo siguiente:
 {% endstep %}
 
 {% step %}
-### Paso 6: Asociar Messenger a un embudo
+#### Paso 6: Asociar Messenger a un embudo
 
 Una vez finalizada la conexión:
 
@@ -85,7 +85,7 @@ Una vez finalizada la conexión:
 {% endstep %}
 
 {% step %}
-### Paso 7: Verificar que el canal esté asociado al embudo correcto
+#### Paso 7: Verificar que el canal esté asociado al embudo correcto
 
 Como último paso, verifica que el canal quedó correctamente conectado:
 
