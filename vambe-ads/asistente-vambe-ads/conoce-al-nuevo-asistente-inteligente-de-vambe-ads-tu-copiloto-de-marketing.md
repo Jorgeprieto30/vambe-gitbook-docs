@@ -27,3 +27,4 @@ El asistente está entrenado para gestionar tu marketing de punta a punta:
     *   Configure nuevos eventos y te recomiende cuáles optimizar.
     *   Te ayude a configurar el trackeo (generando los links de TikTok a WhatsApp o de tu sitio web).
     *   Exporte reportes listos para descargar con los filtros que le pidas.
+*   **Gestión Proactiva y Comunicación Directa por WhatsApp:** Ahora, lleva el control de tus campañas al siguiente nivel configurando reportes y alertas de performance directamente en tu WhatsApp. Podrás seleccionar KPIs, definir presupuestos y establecer objetivos, recibiendo información crucial y avisos proactivos en tu canal de comunicación preferido. Consulta la guía detallada para [configurar alertas y reportes por WhatsApp](configuracion-alertas-y-reportes-por-whatsapp.md).
