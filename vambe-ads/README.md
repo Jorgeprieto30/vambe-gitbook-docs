@@ -29,20 +29,20 @@ Vambe Ads elimina estas limitaciones conectando anuncios con resultados reales, 
 
 {% stepper %}
 {% step %}
-#### Creación y gestión de campañas de Meta y Google
+### Creación y gestión de campañas de Meta y Google
 
 <div align="left"><figure><img src=".gitbook/assets/Portada 20.png" alt=""><figcaption></figcaption></figure></div>
 
 Ahora puedes crear, editar y gestionar tus campañas publicitarias directamente en Vambe, tanto para Meta (Facebook e Instagram) como para Google Ads. Puedes elegir entre:
 
-* **Asistente de IA conversacional:** Simplemente describe el objetivo de tu campaña (leads, tráfico) y la IA se encargará de configurar borradores, sugerir segmentaciones y organizar conjuntos de anuncios.
-* **Creación manual:** Configura cada detalle, como plataforma, objetivos, presupuesto, segmentación y creativos, con control total sobre el proceso. Puedes iniciar este proceso desde tu reporte de atribución para una visión unificada.
+*   **Asistente de IA conversacional:** Simplemente describe el objetivo de tu campaña (leads, tráfico) y la IA se encargará de configurar borradores, sugerir segmentaciones y organizar conjuntos de anuncios.
+*   **Creación manual:** Configura cada detalle, como plataforma, objetivos, presupuesto, segmentación y creativos, con control total sobre el proceso. Puedes iniciar este proceso desde tu reporte de atribución para una visión unificada.
 
 Todo el trabajo se puede guardar como borrador, editar y perfeccionar antes de la publicación final.
 {% endstep %}
 
 {% step %}
-#### Análisis inteligente
+### Análisis inteligente
 
 <div align="left"><figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -54,7 +54,7 @@ La interfaz de Vambe Ads está diseñada para la ejecución inmediata a través 
 {% endstep %}
 
 {% step %}
-**Atribución real de conversiones**
+#### Atribución real de conversiones
 
 ![Atribución real de conversiones](.gitbook/assets/image\(44\).png)
 
@@ -73,7 +73,7 @@ Casos de uso prácticos:
 {% endstep %}
 
 {% step %}
-**Eventos publicitarios basados en comportamiento real**
+#### Eventos publicitarios basados en comportamiento real
 
 ![Eventos publicitarios basados en comportamiento real](.gitbook/assets/image\(45\).png)
 
@@ -89,7 +89,7 @@ Estos eventos alimentan los algoritmos publicitarios con **señales de alta cali
 {% endstep %}
 
 {% step %}
-**Audiencias dinámicas desde tu embudo**
+#### Audiencias dinámicas desde tu embudo
 
 ![Audiencias dinámicas desde tu embudo](.gitbook/assets/image\(46\).png)
 
@@ -111,27 +111,21 @@ Todo sin exportar archivos ni procesos manuales.
 {% endstep %}
 
 {% step %}
-**Creatividades generadas con Inteligencia Artificial**
+#### Creatividades generadas con Inteligencia Artificial
 
 ![Creatividades generadas con Inteligencia Artificial](.gitbook/assets/image\(47\).png)
 
-Vambe Ads permite generar creatividades asistidas por IA a partir de:
+Vambe Ads permite generar creatividades asistidas por IA a partir de tu sitio web, propuesta de valor y tipo de cliente ideal. Esto facilita la creación de:
 
-* Tu sitio web.
-* Tu propuesta de valor.
-* El tipo de cliente que buscas atraer.
+*   **Imágenes y videos para anuncios:** Genera recursos visuales impactantes, incluyendo videos publicitarios con IA, directamente en Vambe.
+*   **Creatividades para redes sociales:** Diseña contenido visual alineado con tus campañas.
+*   **Textos optimizados:** La IA te apoya en la redacción y optimización de los textos para tus anuncios.
 
-Esto facilita la creación de:
-
-* Imágenes para anuncios.
-* Creatividades para redes sociales.
-* Recursos visuales alineados con tus campañas.
-
-Ahora, la IA también te apoya en la optimización de los textos para tus anuncios.
+Con la creación de videos con IA, puedes lanzar múltiples versiones, usar guías de estilo y gestionar un historial de versiones, todo para mantener tus campañas actualizadas y relevantes.
 {% endstep %}
 
 {% step %}
-**Análisis inteligente del rendimiento publicitario**
+#### Análisis inteligente del rendimiento publicitario
 
 ![Análisis inteligente del rendimiento publicitario](.gitbook/assets/image\(48\).png)
 
