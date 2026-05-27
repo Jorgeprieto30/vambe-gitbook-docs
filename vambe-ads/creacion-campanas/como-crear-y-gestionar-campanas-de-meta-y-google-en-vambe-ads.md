@@ -59,9 +59,11 @@ La IA se encargará de configurar los conjuntos de anuncios con estas especifica
 {% step %}
 ### Creatividades y textos con apoyo de IA
 
-Para tus anuncios, el asistente te asistirá con los creativos:
+Para tus anuncios, el asistente te asistirá con los creativos, ofreciendo nuevas capacidades para videos:
 
-*   **Seleccionar o crear videos y otras creatividades:** Podrás elegir de tu biblioteca de activos en Vambe, usar publicaciones existentes de Instagram, subir nuevas imágenes o **crear videos directamente** para tus anuncios. Esta capacidad te permite aprovechar al máximo el potencial visual de tus campañas, impulsando la interacción y los resultados.
+*   **Seleccionar imágenes/videos:** Podrás elegir de tu biblioteca de activos en Vambe, usar publicaciones existentes de Instagram, subir nuevas piezas, **o generar videos publicitarios con IA directamente en Vambe Ads.**
+    *   Para la creación de videos, el asistente te permitirá definir guías de estilo y gestionar múltiples versiones, sin perder el original.
+    *   **Ten en cuenta:** La generación de videos con IA puede tomar entre 4 y 10 minutos.
 *   **Optimización de textos:** La IA puede sugerir y optimizar los textos de tus anuncios para maximizar su impacto, basándose en tu propuesta de valor y el tipo de cliente.
 
 Revisa las sugerencias y haz los ajustes necesarios.
@@ -130,9 +132,10 @@ _Si no tienes una imagen, elimina esta línea._
 {% step %}
 ### Crear anuncios y creatividades
 
-Diseña tus anuncios con las herramientas integradas:
+Diseña tus anuncios con las herramientas integradas, ahora con opciones mejoradas para video:
 
-*   **Subir o crear videos y otras creatividades:** Sube imágenes o **videos** directamente, o utiliza elementos de tu biblioteca en Vambe. Además, puedes **crear videos** desde cero en Vambe para generar anuncios más dinámicos e impactantes, capturando eficazmente la atención de tu audiencia.
+*   **Subir o generar creatividades:** Sube imágenes o videos directamente, utiliza elementos de tu biblioteca en Vambe, **o crea videos publicitarios con IA**. Podrás acceder a funciones de multigeneración, guías de estilo y un historial de versiones para tus videos directamente en Vambe Ads.
+    *   **Importante:** La generación de videos con IA puede tardar entre 4 y 10 minutos.
 *   **Textos de anuncios:** Redacta títulos, descripciones y llamadas a la acción. Utiliza la opción de **'Optimizar con IA'** para recibir sugerencias y mejorar tus textos.
 *   **Enlaces de destino:** Configura la URL a la que dirigirás el tráfico.
 
