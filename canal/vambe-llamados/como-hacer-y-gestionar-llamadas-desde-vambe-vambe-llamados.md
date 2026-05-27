@@ -1,14 +1,14 @@
 # Cómo hacer y gestionar llamadas desde Vambe (Vambe Llamados)
 
-Vambe Llamados te permite llamar a tus clientes directamente desde Vambe, sin salir de la plataforma. Puedes gestionar llamadas salientes, ver el historial de llamadas por contacto y analizar el rendimiento de tu equipo desde el panel de analítica.
+Vambe Llamados te permite llamar a tus clientes directamente desde Vambe, sin salir de Vambe. Puedes gestionar llamadas salientes, ver el historial de llamadas por contacto y analizar el rendimiento de tu equipo desde el panel de analítica.
 
 ***
 
 ### Requisitos previos
 
 > ⚠️ **Vambe Llamados requiere habilitación previa.** Las llamadas se realizan desde un número externo distinto al número de WhatsApp conectado en Vambe. Para activarlo, debes contactar al **equipo de soporte de Vambe** o al **ingeniero a cargo de tu plataforma**.
-
-Lo mismo aplica si quieres **recibir llamadas entrantes** (cuando un cliente te llama de vuelta): también debe configurarse con soporte o con tu ingeniero asignado.
+>
+> Lo mismo aplica si quieres **recibir llamadas entrantes** (cuando un cliente te llama de vuelta): también debe configurarse con soporte o con tu ingeniero asignado.
 
 ***
 
@@ -16,16 +16,35 @@ Lo mismo aplica si quieres **recibir llamadas entrantes** (cuando un cliente te 
 
 Una vez que Vambe Llamados está habilitado en tu cuenta:
 
-1. **Abre el ticket** del cliente al que quieres llamar.
+1.  **Abre el ticket** del cliente al que quieres llamar.
 2.  En la parte superior derecha del ticket, haz clic en el **ícono de teléfono**.
 
     <figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
-3. Se abrirá el panel de **Opciones de Llamada**, donde podrás elegir desde qué número realizar la llamada (si tienes más de uno conectado).
-4. Selecciona el número y la llamada comenzará.
+3.  Se abrirá el panel de **Opciones de Llamada**, donde podrás elegir desde qué número realizar la llamada (si tienes más de uno conectado).
+4.  Selecciona el número y la llamada comenzará.
 
 > 💡 Si necesitas agregar un número adicional desde el cual llamar, haz clic en **+ Agregar número** dentro del panel de Opciones de Llamada.
 
 <figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Llamadas a Ejecutivos sin IA: Enrutamiento Especializado
+
+Para situaciones que requieren una atención humana directa y sin intermediación de inteligencia artificial, Vambe introduce una funcionalidad de llamadas a ejecutivos sin IA con un enrutamiento optimizado para tu equipo.
+
+Este sistema está diseñado para asegurar que las llamadas sean atendidas rápidamente por un ejecutivo, priorizando la conexión humana.
+
+**¿Cómo funciona el enrutamiento?**
+
+Cuando se activa una llamada a ejecutivos sin IA:
+
+1.  **Notificación a ejecutivos asignados:** Vambe notificará automáticamente a los ejecutivos que estén específicamente asignados para atender este tipo de llamadas.
+2.  **Notificación a todos los ejecutivos (si no hay asignados):** Si no hay ejecutivos asignados a una categoría específica para esta llamada, o si los asignados no responden, Vambe extenderá la notificación a todos los ejecutivos disponibles.
+3.  **Primero en contestar, primero en atender:** El primer ejecutivo que conteste la llamada será quien la tome.
+4.  **Atención individualizada:** Solo un ejecutivo puede atender una llamada a la vez, garantizando una atención dedicada y evitando duplicidades.
+
+Esta funcionalidad asegura un flujo de atención eficiente, priorizando la respuesta humana directa y sin filtros de IA para las interacciones más críticas.
 
 ***
 
@@ -41,7 +60,7 @@ Una vez iniciada la llamada, aparecerá una **barra de llamada en la parte infer
 | ⌨️ **Teclado**    | Abrir el teclado numérico para marcar extensiones o responder menús de voz                              |
 | 🎙️ **Micrófono** | Silenciar / activar tu micrófono                                                                        |
 | 📵 **Colgar**     | Finalizar la llamada                                                                                    |
-| ⠿ **Mover**       | Arrastrar la barra de llamada a cualquier parte de la plataforma para seguir trabajando mientras hablas |
+| ⠿ **Mover**       | Arrastrar la barra de llamada a cualquier parte de Vambe para seguir trabajando mientras hablas |
 
 ***
 
@@ -116,9 +135,10 @@ Haz clic en **Ver detalles** de cualquier agente para ver su panel individual co
 
 ### Resumen rápido
 
-* Vambe Llamados permite realizar llamadas salientes directamente desde cualquier ticket.
-* Requiere habilitación previa por parte del equipo de soporte o el ingeniero de tu cuenta.
-* Durante la llamada puedes silenciar, marcar extensiones y seguir navegando en Vambe.
-* El historial de llamadas por contacto está disponible en el panel lateral derecho del ticket.
-* La analítica de Llamadas (en **Analítica → Calls**) muestra métricas globales, distribución por hora y rendimiento por agente.
-* Para recibir llamadas entrantes también se requiere configuración previa con soporte.
+*   Vambe Llamados permite realizar llamadas salientes directamente desde cualquier ticket.
+*   Requiere habilitación previa por parte del equipo de soporte o el ingeniero de tu cuenta.
+*   Ahora, con la funcionalidad de **Llamadas a Ejecutivos sin IA**, las llamadas pueden enrutarse a ejecutivos asignados o a todo el equipo, siendo el primero en responder quien atiende.
+*   Durante la llamada puedes silenciar, marcar extensiones y seguir navegando en Vambe.
+*   El historial de llamadas por contacto está disponible en el panel lateral derecho del ticket.
+*   La analítica de Llamadas (en **Analítica → Calls**) muestra métricas globales, distribución por hora y rendimiento por agente.
+*   Para recibir llamadas entrantes también se requiere configuración previa con soporte.
