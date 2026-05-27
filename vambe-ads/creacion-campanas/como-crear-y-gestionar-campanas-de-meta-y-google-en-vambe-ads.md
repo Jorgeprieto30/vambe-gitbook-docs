@@ -61,7 +61,7 @@ La IA se encargará de configurar los conjuntos de anuncios con estas especifica
 
 Para tus anuncios, el asistente te asistirá con los creativos:
 
-*   **Seleccionar imágenes/videos:** Podrás elegir de tu biblioteca de activos en Vambe, usar publicaciones existentes de Instagram, o subir nuevas piezas.
+*   **Seleccionar o crear videos y otras creatividades:** Podrás elegir de tu biblioteca de activos en Vambe, usar publicaciones existentes de Instagram, subir nuevas imágenes o **crear videos directamente** para tus anuncios. Esta capacidad te permite aprovechar al máximo el potencial visual de tus campañas, impulsando la interacción y los resultados.
 *   **Optimización de textos:** La IA puede sugerir y optimizar los textos de tus anuncios para maximizar su impacto, basándose en tu propuesta de valor y el tipo de cliente.
 
 Revisa las sugerencias y haz los ajustes necesarios.
@@ -132,7 +132,7 @@ _Si no tienes una imagen, elimina esta línea._
 
 Diseña tus anuncios con las herramientas integradas:
 
-*   **Subir creatividades:** Sube imágenes o videos directamente, o utiliza elementos de tu biblioteca en Vambe.
+*   **Subir o crear videos y otras creatividades:** Sube imágenes o **videos** directamente, o utiliza elementos de tu biblioteca en Vambe. Además, puedes **crear videos** desde cero en Vambe para generar anuncios más dinámicos e impactantes, capturando eficazmente la atención de tu audiencia.
 *   **Textos de anuncios:** Redacta títulos, descripciones y llamadas a la acción. Utiliza la opción de **'Optimizar con IA'** para recibir sugerencias y mejorar tus textos.
 *   **Enlaces de destino:** Configura la URL a la que dirigirás el tráfico.
 
