@@ -93,6 +93,7 @@ A la izquierda de la barra de escritura encontrarás un botón con el símbolo (
 
     > Nota: Solo aparecerán las plantillas que ya tengas configuradas en tu cuenta. _¿No te aparecen? Revisa nuestra guía sobre_ [_\[Cómo crear plantillas aquí\]_](https://academy.vambe.ai/canal/plantillas/como-crear-plantillas)_._
 *   🖼️ Galería: Abre la biblioteca de fotos de tu dispositivo para enviar imágenes o capturas de pantalla.
+*   📹 Videos: Ahora puedes enviar videos de 5 o 10 segundos para añadir dinamismo a tus conversaciones. No hay límite en el número de secuencias o variaciones de video que puedes usar.
 *   📁 Documentos: Te permite adjuntar y enviar archivos PDF u otros documentos almacenados en tu teléfono.
 
 #### 4. Perfil del Cliente
