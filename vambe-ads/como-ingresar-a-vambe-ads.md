@@ -9,7 +9,7 @@ En este artículo aprenderás cómo acceder a **Vambe Ads** y crear tu primer **
 
 {% stepper %}
 {% step %}
-### Paso 1: Acceder a Vambe Ads
+#### Paso 1: Acceder a Vambe Ads
 
 * Ingresa a tu cuenta de **Vambe**.
 * En la esquina superior izquierda, haz clic en el **logo de Vambe**.
@@ -19,18 +19,18 @@ En este artículo aprenderás cómo acceder a **Vambe Ads** y crear tu primer **
 {% endstep %}
 
 {% step %}
-### Paso 2: Crear tu primer Workspace (si no existe)
+#### Paso 2: Crear tu primer Workspace (si no existe)
 
 Si es la primera vez que ingresas a Vambe Ads, el sistema te pedirá crear un **Workspace**.
 
 * Ingresa un **nombre para tu Workspace** (puede ser el nombre de tu empresa, marca o proyecto).
 * Haz clic en **Crear Workspace**.
 
-![Crear Workspace](<.gitbook/assets/Captura de pantalla 2026-02-18 a la(s) 12.13.06 p.m. (1).png>)
+![Crear Workspace](<.gitbook/assets/Captura de pantalla 2026-02-18 a la(s) 12.13.06 p.m..png>)
 {% endstep %}
 
 {% step %}
-### Paso 3: Acceso completado
+#### Paso 3: Acceso completado
 
 Una vez creado el Workspace, ingresarás automáticamente a **Vambe Ads** y podrás comenzar a configurar y administrar tus campañas publicitarias.
 

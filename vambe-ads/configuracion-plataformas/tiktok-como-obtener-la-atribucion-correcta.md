@@ -9,7 +9,7 @@ coverY: 0
 
 {% stepper %}
 {% step %}
-### Abrir o editar el Ad en TikTok Ads Manager
+#### Abrir o editar el Ad en TikTok Ads Manager
 
 Dirígete al Ads Manager de Tiktok. Una vez acá, puedes crear un nuevo Ad o editar un Ad ya creado.
 
@@ -17,7 +17,7 @@ Dirígete al Ads Manager de Tiktok. Una vez acá, puedes crear un nuevo Ad o edi
 {% endstep %}
 
 {% step %}
-### Verificar Optimization location del Ad group
+#### Verificar Optimization location del Ad group
 
 Asegúrate que tu Ad group tiene seleccionado Website como Optimization location. Para revisar esto, puedes hacer click a la izquierda en el Ad Group donde está el Ad.
 
@@ -27,7 +27,7 @@ Asegúrate que tu Ad group tiene seleccionado Website como Optimization location
 {% endstep %}
 
 {% step %}
-### Sección de destino del Ad: pegar la URL de WhatsApp
+#### Sección de destino del Ad: pegar la URL de WhatsApp
 
 Tu Ad tendrá una sección de destino. Aquí es donde pegaremos la URL que dirige a Whatsapp. Para obtener esta URL, dirígete a Vambe Ads.
 
@@ -35,7 +35,7 @@ Tu Ad tendrá una sección de destino. Aquí es donde pegaremos la URL que dirig
 {% endstep %}
 
 {% step %}
-### Generar la URL de WhatsApp en Vambe Ads
+#### Generar la URL de WhatsApp en Vambe Ads
 
 En Vambe Ads dirígete a la sección de Workspaces y haz click en "Generar URL de Whatsapp".
 
@@ -45,7 +45,7 @@ https://performance.vambeai.com/en/workspaces
 {% endstep %}
 
 {% step %}
-### Completar número y mensaje; copiar la URL
+#### Completar número y mensaje; copiar la URL
 
 Esto abrirá un popup donde debes escribir el número de whatsapp al que quieres que los leads de tiktok te hablen y el mensaje con el que quieres iniciar la conversación. Haz click en el botón a la derecha de la url para copiar esta.
 
@@ -53,7 +53,7 @@ Esto abrirá un popup donde debes escribir el número de whatsapp al que quieres
 {% endstep %}
 
 {% step %}
-### Pegar la URL en TikTok y revisar parámetros
+#### Pegar la URL en TikTok y revisar parámetros
 
 Una vez pegues la URL en tiktok podrás revisar los url parameters asociados a esta. Haz click en Edit y asegúrate que los valores de auto-detect y auto-attach estén encendidos.
 
@@ -63,7 +63,7 @@ Una vez pegues la URL en tiktok podrás revisar los url parameters asociados a e
 {% endstep %}
 
 {% step %}
-### Lanzar ADS
+#### Lanzar ADS
 
 Listo! Ahora puedes lanzar tus ADS y trackearemos desde Mercur quienes vienen de Tiktok.
 {% endstep %}

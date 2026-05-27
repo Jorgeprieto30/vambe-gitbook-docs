@@ -15,7 +15,7 @@ Vambe Ads solo envía eventos que cumplen con los **requisitos mínimos que Meta
 
 {% stepper %}
 {% step %}
-### No enviamos eventos si el correo no existe en nuestras bases internas
+#### No enviamos eventos si el correo no existe en nuestras bases internas
 
 Para que Meta, Google o TikTok puedan atribuir un evento, necesitan un identificador confiable del usuario.
 
@@ -29,7 +29,7 @@ Enviar un evento sin correo haría que la plataforma no pueda relacionarlo con n
 {% endstep %}
 
 {% step %}
-### No enviamos eventos sin un clic previo registrado
+#### No enviamos eventos sin un clic previo registrado
 
 Para Google Ads, el evento **solo se enviará si existe un Google Click ID** previo registrado. Sin ese identificador, el evento no se envía. Para Meta y TikTok, también se considera el click ID como señal de atribución, pero pueden existir mecanismos alternativos de matching."
 
@@ -41,7 +41,7 @@ En lugar de enviar señales que no serán utilizadas, Vambe Ads evita enviarlas 
 {% endstep %}
 
 {% step %}
-### Si la información del evento está incompleta, el envío también se bloquea
+#### Si la información del evento está incompleta, el envío también se bloquea
 
 Cada evento requiere ciertos parámetros mínimos (dependiendo de la plataforma y el tipo de evento).
 

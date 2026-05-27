@@ -48,13 +48,13 @@ Recomendación: utilizar un formulario que solicite el número de teléfono **an
 
 {% stepper %}
 {% step %}
-### Accede a Vambe Ads
+#### Accede a Vambe Ads
 
 Ingresa a **Vambe Ads** y dirígete a **Workspaces**.
 {% endstep %}
 
 {% step %}
-### Obtén el script
+#### Obtén el script
 
 En la parte inferior derecha encontrarás la sección **Seguimiento de tráfico web**. Haz clic en **Obtener script de seguimiento**.
 
@@ -64,7 +64,7 @@ Este script contiene un **Tracking ID único** que permite a Vambe identificar v
 {% endstep %}
 
 {% step %}
-### Inserta el script en tu sitio
+#### Inserta el script en tu sitio
 
 * Copia el script de seguimiento.
 * Pégalo **dentro de la etiqueta** `<head>` de tu sitio web.

@@ -35,7 +35,7 @@ Beneficios principales
 
 {% stepper %}
 {% step %}
-### Acceder a la sección de Eventos
+#### Acceder a la sección de Eventos
 
 (Video: 1:07 – 1:14)
 
@@ -50,7 +50,7 @@ Beneficios principales
 {% endstep %}
 
 {% step %}
-### Conectar tu píxel (si no lo has hecho)
+#### Conectar tu píxel (si no lo has hecho)
 
 (Video: 1:17 – 1:22)
 
@@ -62,7 +62,7 @@ Beneficios principales
 {% endstep %}
 
 {% step %}
-### Configurar la conexión del píxel
+#### Configurar la conexión del píxel
 
 (Video: 1:29 – 1:48)
 
@@ -73,7 +73,7 @@ Beneficios principales
 {% endstep %}
 
 {% step %}
-### Ingresar las credenciales del píxel
+#### Ingresar las credenciales del píxel
 
 (Video: 1:56 – 2:14)
 
@@ -85,7 +85,7 @@ Beneficios principales
 {% endstep %}
 
 {% step %}
-### Configurar eventos específicos
+#### Configurar eventos específicos
 
 (Video: 2:18 – 2:41)
 
@@ -108,7 +108,7 @@ Ejemplo práctico:
 {% endstep %}
 
 {% step %}
-### Guardar y activar el evento
+#### Guardar y activar el evento
 
 (Video: 2:48 – 2:58)
 
@@ -120,7 +120,7 @@ A partir de ese momento, cada contacto que entre a la etapa configurada enviará
 {% endstep %}
 
 {% step %}
-### Probar la configuración (Test Event)
+#### Probar la configuración (Test Event)
 
 (Video: 3:18 – 3:37)
 
@@ -132,7 +132,7 @@ A partir de ese momento, cada contacto que entre a la etapa configurada enviará
 {% endstep %}
 
 {% step %}
-### Monitoreo y seguimiento de eventos
+#### Monitoreo y seguimiento de eventos
 
 (Video: 3:41 – 4:09)
 

@@ -43,7 +43,7 @@ Esta configuración aplica para los siguientes tipos de campañas:
 
 {% stepper %}
 {% step %}
-### Ingresar a Google Ads y seleccionar campaña
+#### Ingresar a Google Ads y seleccionar campaña
 
 * Ingresa a **Google Ads**.
 * Ve al menú **Campañas**.
@@ -60,7 +60,7 @@ Esta configuración aplica para los siguientes tipos de campañas:
 
 {% stepper %}
 {% step %}
-### Localizar Campaign URL options
+#### Localizar Campaign URL options
 
 Dentro de la configuración de la campaña, busca la sección **Campaign URL options**.
 
@@ -68,7 +68,7 @@ Dentro de la configuración de la campaña, busca la sección **Campaign URL opt
 {% endstep %}
 
 {% step %}
-### Agregar Tracking template
+#### Agregar Tracking template
 
 En el campo **Tracking template**, agrega el siguiente valor:
 
@@ -95,7 +95,7 @@ En **Google Smart Campaigns**, la configuración se realiza a nivel de anuncio.
 
 {% stepper %}
 {% step %}
-### Pasos para Smart Campaigns
+#### Pasos para Smart Campaigns
 
 * Ingresa a la configuración del anuncio.
 * En la sección **Landing page**, agrega el parámetro directamente a la URL:
@@ -125,7 +125,7 @@ Para que la atribución funcione correctamente, **es obligatorio instalar el scr
 3. En la parte inferior derecha encontrarás la sección **Seguimiento de tráfico web**.
 4. Haz clic en **Obtener script de seguimiento**.
 
-![Obtener script de seguimiento](<../.gitbook/assets/image(81) (1).png>)
+![Obtener script de seguimiento](../.gitbook/assets/image\(81\).png)
 
 Este script contiene un **Tracking ID único** que permite a Vambe:
 
@@ -162,7 +162,7 @@ Recomendación clave:
 
 {% stepper %}
 {% step %}
-### Publica y prueba
+#### Publica y prueba
 
 1. Publica la campaña.
 2. Genera una interacción real (clic + conversación).

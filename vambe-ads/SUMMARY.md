@@ -18,6 +18,7 @@
 ## Asistente Vambe Ads
 
 * [Conoce al Nuevo Asistente Inteligente de Vambe Ads: Tu Copiloto de Marketing](asistente-vambe-ads/conoce-al-nuevo-asistente-inteligente-de-vambe-ads-tu-copiloto-de-marketing.md)
+* [Configuración de alertas y reportes de performance por WhatsApp del Asistente IA de Vambe Ads](asistente-vambe-ads/configuracion-de-alertas-y-reportes-de-performance-por-whatsapp-del-asistente-ia-de-vambe-ads.md)
 
 ## Analiza tus campañas
 

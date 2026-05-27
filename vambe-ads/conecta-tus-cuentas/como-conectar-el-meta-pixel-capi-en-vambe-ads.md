@@ -21,7 +21,7 @@ En resumen, el Pixel conecta lo que ocurre **después del anuncio** con la optim
 
 {% stepper %}
 {% step %}
-### Paso 1: Ingresar a Vambe Ads y a la configuración del Pixel
+#### Paso 1: Ingresar a Vambe Ads y a la configuración del Pixel
 
 * Ingresa a Vambe Ads desde tu cuenta de Vambe: https://academy.vambe.ai/v1/docs/c%C3%B3mo-ingresar-a-vambe-ads
 * En el menú izquierdo, haz clic en **Workspaces**.
@@ -35,7 +35,7 @@ En esta sección, Vambe te mostrará las instrucciones y los campos que necesita
 {% endstep %}
 
 {% step %}
-### Paso 2: Acceder al Administrador de Eventos de Meta
+#### Paso 2: Acceder al Administrador de Eventos de Meta
 
 1. Ingresa a tu cuenta de Meta Business Manager.
 2. Ve al **Administrador de Eventos**: [https://eventsmanager.facebook.com/events\_manager2](https://eventsmanager.facebook.com/events_manager2)
@@ -53,7 +53,7 @@ Si aún no tienes un conjunto de datos creado:
 {% endstep %}
 
 {% step %}
-### Paso 3: Obtener el ID del conjunto de datos (Pixel)
+#### Paso 3: Obtener el ID del conjunto de datos (Pixel)
 
 * Dentro del **Administrador de Eventos (**[**https://eventsmanager.facebook.com/events\_manager2**](https://eventsmanager.facebook.com/events_manager2)**)**, selecciona el conjunto de datos creado.
 * Entra a la pestaña **Configuración**.
@@ -64,7 +64,7 @@ Si aún no tienes un conjunto de datos creado:
 {% endstep %}
 
 {% step %}
-### Paso 4: Configurar la API de Conversión (CAPI) en Meta
+#### Paso 4: Configurar la API de Conversión (CAPI) en Meta
 
 1. Dentro del conjunto de datos, ve a la pestaña **Resumen**.
 2. Busca la sección **Enviar eventos desde un servidor**.
@@ -88,7 +88,7 @@ Si aún no tienes un conjunto de datos creado:
 {% endstep %}
 
 {% step %}
-### Paso 5: Seleccionar eventos y parámetros correctos
+#### Paso 5: Seleccionar eventos y parámetros correctos
 
 ![](../.gitbook/assets/image\(93\).png)
 
@@ -108,7 +108,7 @@ Si aún no tienes un conjunto de datos creado:
 {% endstep %}
 
 {% step %}
-### Paso 6: Generar el token de acceso de CAPI
+#### Paso 6: Generar el token de acceso de CAPI
 
 1. En la sección **Primeros pasos – API de Conversión**, haz clic en **Empezar**.
 
@@ -127,7 +127,7 @@ Si aún no tienes un conjunto de datos creado:
 {% endstep %}
 
 {% step %}
-### Paso 7: Conectar el Pixel en Vambe Ads
+#### Paso 7: Conectar el Pixel en Vambe Ads
 
 1. Regresa a **Vambe Ads**.
 2. En la sección de conexión de Meta Pixel:

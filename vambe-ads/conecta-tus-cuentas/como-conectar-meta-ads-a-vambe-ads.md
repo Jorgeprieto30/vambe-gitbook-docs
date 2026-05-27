@@ -9,7 +9,7 @@ En este artículo aprenderás cómo conectar correctamente **Meta Ads (Facebook 
 
 {% stepper %}
 {% step %}
-### Ingresar a Vambe Ads
+#### Ingresar a Vambe Ads
 
 Ingresa a **Vambe Ads** desde tu cuenta de **Vambe**.
 
@@ -18,7 +18,7 @@ Ingresa a **Vambe Ads** desde tu cuenta de **Vambe**.
 {% endstep %}
 
 {% step %}
-### Acceder a Workspaces
+#### Acceder a Workspaces
 
 En el menú lateral izquierdo, haz clic en **Workspaces**.
 
@@ -28,7 +28,7 @@ Desde aquí podrás conectar y administrar todas tus cuentas publicitarias.
 {% endstep %}
 
 {% step %}
-### Iniciar la conexión con Meta Ads
+#### Iniciar la conexión con Meta Ads
 
 Dentro de **Workspaces**, haz clic en conectar cuenta en Meta Ads.
 
@@ -38,7 +38,7 @@ Al hacer clic, se abrirá una ventana de autenticación de Facebook.
 {% endstep %}
 
 {% step %}
-### Iniciar sesión con el perfil correcto de Facebook
+#### Iniciar sesión con el perfil correcto de Facebook
 
 {% hint style="warning" %}
 El perfil de Facebook que utilices **debe tener acceso al negocio y a la cuenta publicitaria** donde se crean los anuncios.
@@ -57,7 +57,7 @@ Pasos:
 {% endstep %}
 
 {% step %}
-### Revisar y aceptar permisos
+#### Revisar y aceptar permisos
 
 * Facebook mostrará los permisos que se otorgarán a **Vambe Ads**.
 * Haz clic en **Guardar**.
@@ -67,7 +67,7 @@ Una vez aceptados los permisos, serás redirigido automáticamente de vuelta a *
 {% endstep %}
 
 {% step %}
-### Seleccionar la cuenta publicitaria
+#### Seleccionar la cuenta publicitaria
 
 * Ya de vuelta en **Vambe Ads**, haz clic en **Seleccionar cuentas publicitarias**.
 * Elige la **cuenta de anuncios** que deseas conectar.
