@@ -29,6 +29,10 @@
 * [Cómo conectar herramientas externas a tu asistente V3 con Funciones](asistentes-con-escenarios-v3/como-conectar-herramientas-externas-a-tu-asistente-v3-con-funciones.md)
 * [Cómo fusionar asistentes v2 en un asistente v3](asistentes-con-escenarios-v3/como-fusionar-asistentes-v2-en-un-asistente-v3.md)
 
+## MCP
+
+* [Cómo conectar Vambe con Claude mediante el Servidor MCP](mcp/como-conectar-vambe-con-claude-mediante-el-servidor-mcp.md)
+
 ## Funciones
 
 * [Introducción a las Funciones: Potencia tu Asistente IA](funciones/introduccion-a-las-funciones-potencia-tu-asistente-ia.md)
