@@ -932,6 +932,17 @@
       "id": "mpy9nkjx_v9j6j",
       "tema": "Generación de links de videollamada",
       "created_at": "2026-06-03T16:13:54.765Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "marketing-y-crecimiento/nuevo-flujo-de-crecimiento-con-landings-y-email.md",
+      "sha": null,
+      "contenido_nuevo": "# Nuevo Flujo de Crecimiento: Gestión de Landings y Envío de Emails Periódicos\n\nEn Vambe, colaboramos estrechamente con los equipos de crecimiento y marketing para potenciar tu presencia y alcance. Como parte de esta estrategia, hemos implementado un nuevo flujo diseñado para maximizar la visibilidad de nuestro contenido y fortalecer la comunicación con nuestra comunidad.\n\n### Componentes clave del nuevo flujo\n\nEste flujo integra dos herramientas esenciales:\n\n1.  **Landings optimizadas:** Publicamos contenido relevante directamente en landings dedicadas, facilitando el acceso y la interacción con nuestros mensajes clave.\n2.  **Envío quincenal de emails:** Complementamos la experiencia en las landings con el envío de emails cada dos semanas. Estos correos te mantendrán al tanto de las novedades y el contenido más reciente.\n\n### Curación de contenido de valor\n\nPara asegurar que recibas información relevante y de alta calidad, implementamos un proceso de selección y refinamiento semanal del contenido que se publica y se comparte a través de los emails. Esto garantiza que cada comunicación aporte un valor directo a tu experiencia en Vambe.\n\n{% hint style=\"info\" %}\nEste flujo es una iniciativa interna de Vambe para su propio crecimiento y marketing. Para aprender a usar el canal de Email para tus propias campañas, consulta el artículo: [Cómo usar el canal de Email en Vambe](../canal/campanas/como-usar-el-canal-de-email-en-vambe.md).\n{% endhint %}\n",
+      "commit_message": "docs: marketing y crecimiento — Nuevo flujo de crecimiento con landings y email",
+      "justificacion": "Se crea un nuevo artículo para describir el nuevo flujo estratégico de crecimiento y marketing de Vambe, que incluye el uso de landings y el envío periódico de emails, ya que esta información es de alto nivel y no corresponde a una guía de uso de funciones específicas.",
+      "id": "mpyadnme_49nlz",
+      "tema": "Nuevo flujo de crecimiento y marketing con landings y emails",
+      "created_at": "2026-06-03T16:34:11.798Z"
     }
   ]
 }
