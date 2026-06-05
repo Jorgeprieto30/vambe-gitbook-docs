@@ -17,7 +17,7 @@ Accede a la sección de conexión de canales [aquí](https://academy.vambe.ai/c%
 
 Selecciona WhatsApp como tipo de canal a conectar.
 
-![](<../.gitbook/assets/image png Nov 28 2025 03 48 29 1470 PM.png>)
+<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -31,7 +31,7 @@ _El Nombre del canal es un nombre interno; los clientes NO verán este nombre._
 IMPORTANTE: El número debe estar con el código de país.
 {% endhint %}
 
-![](<../.gitbook/assets/image png Nov 28 2025 03 51 12 9160 PM.png>)
+<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -47,7 +47,7 @@ Pasos en el teléfono:
 * Toca "Vincular un dispositivo".
 * Apunta la cámara al código QR mostrado en Vambe.
 
-![](<../.gitbook/assets/image png Nov 28 2025 03 51 54 3894 PM.png>)
+<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

@@ -58,17 +58,15 @@ Selecciona la tarjeta correspondiente para acceder al paso a paso:
 
 **💬 Automatización de Comentarios (Instagram)**
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Automatización de comentarios de Instagram</td><td><a href="/broken/pages/n1ex7pP4fsYDSYgiXn1d">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Automatización de comentarios de Instagram</td><td><a href="https://app.gitbook.com/s/CFdmz6HrosBiYP1q1BJ6/comentarios-de-instagram">Comentarios de Instagram</a></td></tr></tbody></table>
 
-&#x20;**👁️‍🗨️ Campañas**
+**👁️‍🗨️ Campañas**
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Crear y enviar Campañas de WhatsApp</td><td><a href="/broken/pages/wqtH6sILY0XksWsXIvlQ">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Crear y enviar Campañas de WhatsApp</td><td><a href="https://app.gitbook.com/s/CFdmz6HrosBiYP1q1BJ6/campanas">Campañas</a></td></tr></tbody></table>
 
 **🪧Plantillas**
 
 <table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Como crear plantillas</td><td><a href="plantillas/como-crear-plantillas.md">como-crear-plantillas.md</a></td></tr><tr><td>Como enviar mensajes rápidos y plantillas</td><td><a href="plantillas/como-enviar-mensajes-rapidos-y-plantillas.md">como-enviar-mensajes-rapidos-y-plantillas.md</a></td></tr></tbody></table>
-
-
 
 **⚙️ Configuración Meta y Herramientas**
 
