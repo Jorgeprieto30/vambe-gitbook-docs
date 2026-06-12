@@ -379,6 +379,17 @@
       "id": "mqb478tk_nenj3",
       "tema": "Configuración de Guardrails por asistente",
       "created_at": "2026-06-12T16:02:15.272Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "analitica-datos/como-usar-el-detalle-de-widget-en-analiticas.md",
+      "sha": null,
+      "contenido_nuevo": "# Cómo usar el Detalle de Widget en Analíticas para entender tus métricas\n\nPara facilitar la comprensión y el rastreo de los datos en Vambe, hemos añadido la funcionalidad 'Ver detalle' a varios widgets en la sección de Analíticas. Esta mejora te permite ir más allá de los gráficos y resúmenes, accediendo a la información subyacente que compone cada métrica.\n\n## ¿Qué es el Detalle de Widget?\n\nLa opción 'Ver detalle' es un botón que aparece en widgets seleccionados. Al hacer clic, despliega una tabla scrolleable con todos los datos que alimentan el widget. Lo más importante es que la primera columna de esta tabla siempre te mostrará la conversación original asociada, permitiéndote investigar a fondo cualquier dato.\n\nEsta herramienta es clave para:\n\n*   **Validar la información:** Confirma de dónde provienen los datos que Vambe muestra.\n*   **Profundizar en incidentes:** Identifica rápidamente las conversaciones específicas que contribuyen a una métrica, facilitando la detección y solución de problemas.\n*   **Mejorar la confianza:** Ten la seguridad de que las métricas reflejan la realidad de tu operación.\n\n## ¿En qué widgets está disponible?\n\nActualmente, puedes encontrar la opción 'Ver detalle' en los siguientes widgets:\n\n*   **En métricas de Conversaciones:**\n    *   Tarjetas de métricas conversacionales.\n    *   Llamadas de funciones.\n\n*   **En métricas de Tickets:**\n    *   Tarjetas de métricas de tickets.\n    *   Diagramas de flujo (Sankey).\n    *   Tráfico por etapa.\n\n\n\n> 💡 **Próximamente:** Estamos trabajando para extender esta funcionalidad a más widgets en toda la sección de Analíticas, para ofrecerte una visión completa de tus datos en Vambe.\n",
+      "commit_message": "docs: Analíticas — Cómo usar el Detalle de Widget para entender tus métricas",
+      "justificacion": "La funcionalidad 'Ver detalle' es una mejora transversal en la interacción con los widgets de Analíticas, aplicable a diversas secciones (Conversaciones, Tickets y SLA). Crear un artículo dedicado asegura que los usuarios comprendan esta nueva capacidad de forma centralizada y sin diluir el contenido de otros artículos temáticos específicos como el de SLA.",
+      "id": "mqbfypva_eozcg",
+      "tema": "Detalle de Widget en Analíticas",
+      "created_at": "2026-06-12T21:31:32.854Z"
     }
   ]
 }
