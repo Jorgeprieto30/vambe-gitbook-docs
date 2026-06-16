@@ -32,10 +32,9 @@ Antes de comenzar, asegúrate de contar con:
 
 * Ingresa a la sección de conexión de canales: https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales
 * Seleccionar **WhatsApp API (oficial)**.
-
-![](<../.gitbook/assets/image png Nov 27 2025 02 26 35 6182 PM (2).png>)
-
 * Hacer clic en **Registrar número de teléfono**.
+
+<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
 ![image.png](../.gitbook/assets/fb358cb463384708952837e4791263c5ed4e35c26b1c494589e5e8079aca337a)
 
