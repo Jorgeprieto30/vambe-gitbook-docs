@@ -7,8 +7,6 @@ description: >-
 
 # ¿Cómo conectar tu Asistente con sistemas externos (APIs) usando Webhooks?
 
-{% embed url="https://www.youtube.com/watch?v=ifqEe40b5W8" %}
-
 La función Llamada Webhook es la herramienta que permite a tu Inteligencia Artificial "hablar" con otros sistemas fuera de Vambe.
 
 ¿Para qué sirve? Permite enviar o traer datos.
