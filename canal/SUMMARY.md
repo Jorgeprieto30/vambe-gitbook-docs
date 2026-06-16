@@ -14,7 +14,7 @@
 * [Cómo ingresar a la sección de conexión de canales](conexion-de-canales-de-vambe/como-ingresar-a-la-seccion-de-conexion-de-canales.md)
 * [Tipos de Conexión: WhatsApp API, QR y Dual](conexion-de-canales-de-vambe/tipos-de-conexion-whatsapp-api-qr-y-dual.md)
 * [Cómo conectar WhatsApp API (oficial)](conexion-de-canales-de-vambe/como-conectar-whatsapp-api-oficial.md)
-* [Guía de Conexión: WhatsApp API (Método QR) <> Dual Coexistence](conexion-de-canales-de-vambe/guia-de-conexion-whatsapp-api-metodo-qr.md)
+* [Guía de Conexión: WhatsApp API (Método QR - Dual Coexistence)](conexion-de-canales-de-vambe/guia-de-conexion-whatsapp-api-metodo-qr.md)
 * [Cómo conectar WhatsApp QR](conexion-de-canales-de-vambe/como-conectar-whatsapp-qr.md)
 * [Cómo conectar Instagram Direct](conexion-de-canales-de-vambe/como-conectar-instagram-direct.md)
 * [Cómo conectar Facebook Messenger](conexion-de-canales-de-vambe/como-conectar-facebook-messenger.md)
