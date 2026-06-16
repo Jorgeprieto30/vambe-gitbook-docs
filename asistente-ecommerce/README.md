@@ -72,5 +72,4 @@ Tu Asistente Ecommerce no solo sabe de productos. Es capaz de resolver dudas que
 
 Para comenzar, necesitamos obtener las credenciales de tu plataforma específica. Selecciona tu proveedor para ver el paso a paso:
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Obtener Credenciales</td><td><a href="/broken/pages/yeAod6tr7ObBE0NBnWYy">Broken link</a></td><td><a href=".gitbook/assets/Captura de pantalla 2026-02-03 a la(s) 10.43.42 a.m..png">Captura de pantalla 2026-02-03 a la(s) 10.43.42 a.m..png</a></td></tr></tbody></table>
-
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Obtener Credenciales</td><td><a href="https://app.gitbook.com/s/4RpMIxpq22tf78zYs9Ut/parte-1-obtener-credenciales">Parte 1: Obtener credenciales</a></td><td><a href=".gitbook/assets/Captura de pantalla 2026-02-03 a la(s) 10.43.42 a.m..png">Captura de pantalla 2026-02-03 a la(s) 10.43.42 a.m..png</a></td></tr></tbody></table>

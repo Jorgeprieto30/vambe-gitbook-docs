@@ -16,7 +16,7 @@ Requisitos previos
 
 {% stepper %}
 {% step %}
-### Ingresar a Integraciones en Vambe
+#### Ingresar a Integraciones en Vambe
 
 * Ingresa a **Vambe**.
 * Dirígete al menú inferior izquierdo y haz clic en **Ajustes**.
@@ -28,7 +28,7 @@ Requisitos previos
 {% endstep %}
 
 {% step %}
-### Ir a Shopify App Store
+#### Ir a Shopify App Store
 
 * Dentro de la integración de Shopify, haz clic en **Ir a instalar desde Shopify App Store**.
 
@@ -38,7 +38,7 @@ Requisitos previos
 {% endstep %}
 
 {% step %}
-### Instalar la aplicación en Shopify
+#### Instalar la aplicación en Shopify
 
 * En la tienda de aplicaciones de Shopify, haz clic en **Instalar**.
 
@@ -53,7 +53,7 @@ Una vez completado este paso, la aplicación quedará instalada en tu tienda y a
 {% endstep %}
 
 {% step %}
-### Volver a Vambe y finalizar
+#### Volver a Vambe y finalizar
 
 * Una vez instalada la aplicación en Shopify, regresa a **Vambe**.
 * La integración quedará disponible y lista para ser utilizada.

@@ -3,7 +3,7 @@ cover: ../.gitbook/assets/Portada 23.png
 coverY: 0
 ---
 
-# Estrategia de remarketing: Recuperación de carritos abandonados en Shopify
+# Recuperación de carritos abandonados en Shopify
 
 Potencia tus ventas con la recuperación automática de carritos abandonados en Shopify, una clave del **remarketing** en Vambe. Aprende a configurar esta funcionalidad para enviar mensajes de seguimiento a clientes que no finalizaron su compra, reactivando su interés y aumentando significativamente tu tasa de conversión.
 
@@ -17,7 +17,7 @@ Antes de empezar, asegúrate de probar el flujo con un carrito de test antes de 
 
 {% stepper %}
 {% step %}
-### Plan de Shopify requerido
+#### Plan de Shopify requerido
 
 Es obligatorio contar con el plan Grow de Shopify.
 
@@ -25,7 +25,7 @@ Es obligatorio contar con el plan Grow de Shopify.
 {% endstep %}
 
 {% step %}
-### Número de teléfono del cliente
+#### Número de teléfono del cliente
 
 El mensaje se enviará únicamente a clientes que:
 
@@ -38,7 +38,7 @@ No importa si el cliente llegó por Vambe o por la web: el mensaje se enviará e
 {% endstep %}
 
 {% step %}
-### Definir el tiempo de envío
+#### Definir el tiempo de envío
 
 El tiempo de espera antes de enviar el mensaje (por ejemplo, 5 horas después del abandono) se configura dentro de Shopify y se ajusta en el flujo de automatización más adelante.
 {% endstep %}
@@ -57,7 +57,7 @@ El tiempo de espera antes de enviar el mensaje (por ejemplo, 5 horas después de
 
 {% stepper %}
 {% step %}
-### Paso 1: Acceder a la integración de Shopify en Vambe
+#### Paso 1: Acceder a la integración de Shopify en Vambe
 
 1. En Vambe, ve al menú inferior izquierdo y haz clic en **Ajustes**.
 2. Ingresa a **Integraciones**.
@@ -80,15 +80,18 @@ No cierres esta pestaña, ya que volveremos a copiar esta información.
 {% endstep %}
 
 {% step %}
-### Paso 2: Crear la automatización en Shopify
+#### Paso 2: Crear la automatización en Shopify
 
 1. Ingresa a tu cuenta de **Shopify**.
-2. En el menú lateral izquierdo, haz clic en **Marketing**.
+2.  Busca en la barra superior "Automatizaciones"\
+    <br>
+
+    <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 3. Luego selecciona **Automatizaciones.**
+4.  Haz clic en Crear automatizacion.\
+    <br>
 
-![](<../.gitbook/assets/image png Dec 23 2025 01 17 52 5042 PM.png>)
-
-4. Haz clic en **Ver plantillas**.
+    <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 5. Selecciona la plantilla **Recuperar un pedido abandonado**.
 
 ![](<../.gitbook/assets/image png Dec 23 2025 01 31 29 3983 PM.png>)
@@ -103,7 +106,7 @@ No cierres esta pestaña, ya que volveremos a copiar esta información.
 {% endstep %}
 
 {% step %}
-### Paso 3: Configurar el tiempo de espera (Wait)
+#### Paso 3: Configurar el tiempo de espera (Wait)
 
 Dentro del flujo de automatización:
 
@@ -118,7 +121,7 @@ Este valor puedes ajustarlo según tu estrategia.
 {% endstep %}
 
 {% step %}
-### Paso 4: Eliminar el envío de correo por defecto
+#### Paso 4: Eliminar el envío de correo por defecto
 
 1. Al final del flujo encontrarás un bloque llamado **Send marketing email**.
 2. Elimínalo, ya que no utilizaremos correo electrónico para este flujo.
@@ -127,18 +130,18 @@ Este valor puedes ajustarlo según tu estrategia.
 {% endstep %}
 
 {% step %}
-### Paso 5: Agregar la acción HTTP Request
+#### Paso 5: Agregar la acción HTTP Request
 
 1. Haz clic en **Add action** (Agregar acción).
 2. Busca y selecciona **HTTP request**.
 
 ![](<../.gitbook/assets/image png Dec 23 2025 01 35 26 1266 PM.png>)
 
-#### Configuración del HTTP request
+**Configuración del HTTP request**
 
 Usa la información de Vambe que obtuviste en el Paso 1. Copia y pega exactamente lo que aparece en Vambe dentro de los campos de Shopify.
 
-![](<../.gitbook/assets/Screenshare   2025 12 23 9_52_42 AM (1) gif 1.gif>)
+![](<../.gitbook/assets/Screenshare   2025 12 23 9_52_42 AM (1) gif.gif>)
 
 * Método: cambia **HTTP method** a **POST**.
 
@@ -164,7 +167,7 @@ Ejemplo visual de cómo debería quedar:
 {% endstep %}
 
 {% step %}
-### Paso 6: Activar el flujo
+#### Paso 6: Activar el flujo
 
 1. Guarda la acción.
 2. Activa el flujo de trabajo.
@@ -179,7 +182,7 @@ Desde este momento, cada cliente que abandone un carrito recibirá automáticame
 {% endstep %}
 
 {% step %}
-### Paso 7: Ver ejecuciones del flujo en Shopify
+#### Paso 7: Ver ejecuciones del flujo en Shopify
 
 Para revisar las ejecuciones:
 
@@ -191,7 +194,7 @@ Aquí podrás ver todas las veces que este flujo se ha ejecutado.
 {% endstep %}
 
 {% step %}
-### Paso 8: Ver carritos recuperados en Vambe
+#### Paso 8: Ver carritos recuperados en Vambe
 
 Para ver los resultados dentro de Vambe:
 

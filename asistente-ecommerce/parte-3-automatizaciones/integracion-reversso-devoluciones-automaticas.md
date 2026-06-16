@@ -53,8 +53,6 @@ Para conectar ambas plataformas, necesitamos la dirección exacta de tu portal d
     <br>
 
     <figure><img src="../.gitbook/assets/Captura de pantalla 2026-02-03 a la(s) 12.35.24 p.m..png" alt=""><figcaption></figcaption></figure>
-
-
 5.  Pega la URL del portal que copiaste en el paso anterior y haz clic en Siguiente.<br>
 
     <figure><img src="../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -69,8 +67,6 @@ Para que la IA sepa cómo procesar estos casos, debes agregar un bloque de conoc
 2.  En la librería de bloques, busca y agrega "Devoluciones de Productos".<br>
 
     <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-
 3.  En la configuración del bloque, selecciona el Token de Reversso (la integración que acabas de crear) para vincularlo.\
     <br>
 
@@ -93,7 +89,7 @@ Para mantener el orden, te sugerimos la siguiente estructura en tu Embudo de Ven
 
 De esta forma, el asistente principal no se distrae y deriva el caso al "experto" en devoluciones.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

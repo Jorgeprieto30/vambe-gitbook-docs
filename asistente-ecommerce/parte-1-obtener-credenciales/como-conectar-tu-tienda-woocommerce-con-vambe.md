@@ -16,7 +16,7 @@ Requisitos previos
 
 {% stepper %}
 {% step %}
-### Ingresar a Integraciones en Vambe
+#### Ingresar a Integraciones en Vambe
 
 * En Vambe, dirígete al menú lateral izquierdo.
 * Haz clic en **Ajustes**.
@@ -27,7 +27,7 @@ Requisitos previos
 {% endstep %}
 
 {% step %}
-### Descargar el plugin de WooCommerce
+#### Descargar el plugin de WooCommerce
 
 * Dentro de la integración de WooCommerce, haz clic en **Conectar**.
 
@@ -41,7 +41,7 @@ Requisitos previos
 {% endstep %}
 
 {% step %}
-### Instalar el plugin en WooCommerce (WordPress)
+#### Instalar el plugin en WooCommerce (WordPress)
 
 * Ingresa al panel de administración de tu sitio WordPress.
 * En el menú lateral izquierdo, haz clic en **Plugins**.
@@ -61,7 +61,7 @@ Requisitos previos
 {% endstep %}
 
 {% step %}
-### Finalizar la conexión en Vambe
+#### Finalizar la conexión en Vambe
 
 * Regresa a **Vambe**.
 * En la pantalla de la integración de WooCommerce, haz clic en **Siguiente**.
@@ -69,7 +69,7 @@ Requisitos previos
 {% endstep %}
 
 {% step %}
-### Verificar la conexión
+#### Verificar la conexión
 
 * Vuelve a **Ajustes → Integraciones → WooCommerce** en Vambe.
 * Deberías ver la integración como **Conectado**.
