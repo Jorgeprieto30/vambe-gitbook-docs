@@ -23,7 +23,7 @@ Antes de iniciar, asegúrate de contar con lo siguiente:
 
 * Acceso a un **Business Portfolio** de Meta.
 * [Tener el **Business Portfolio** de Meta Verificado](https://academy.vambe.ai/c%C3%B3mo-verificar-tu-negocio-business-manager-en-meta)
-* Una **cuenta de Facebook Business** con permisos para crear o administrar cuentas de WhatsApp Business.&#x20;
+* Una **cuenta de Facebook Business** con permisos para crear o administrar cuentas de WhatsApp Business.
 
 {% hint style="danger" %}
 Al activar WhatsApp Dual, Vambe intentará **conectar automáticamente su línea de crédito** como método de pago para las campañas y el envío de plantillas. (Para consultar los precios, puedes ingresar a _Tarifas de mensajes_ en: [https://business.whatsapp.com/products/platform-pricing?lang=es\_LA](https://business.whatsapp.com/products/platform-pricing?lang=es_LA)).
@@ -49,13 +49,9 @@ Antes de entrar a Vambe, debemos dejar el número "pre-registrado" en la platafo
     <br>
 
     <figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
-
-
 5.  **Verificación**: Ingresa tu número de teléfono. Meta te enviará un código por SMS o Llamada. Ingrésalo para confirmar que el número es tuyo.<br>
 
     <figure><img src="../.gitbook/assets/image (11).png" alt="" width="563"><figcaption></figcaption></figure>
-
-
 6. Una vez verificado y creado dentro de **Meta**, haz clic en **Listo**.
 
 {% hint style="warning" %}
@@ -73,9 +69,12 @@ Ahora que el número ya existe en tu portafolio, vamos a conectarlo a la intelig
 3.  Selecciona la opción WhatsApp API (Recomendado).<br>
 
     <figure><img src="../.gitbook/assets/Captura de pantalla 2026-02-17 a la(s) 3.30.31 p.m..png" alt=""><figcaption></figcaption></figure>
-4.  Se abrirá una ventana emergente. Haz clic en **Registrar número de teléfono**.
 
-    <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+4.  Elegir si queremos conectar un **Whatsapp Business existente** o tienes un **chip nuevo**\
+    <br>
+
+    <figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 
 5. **Inicia sesión** con tu cuenta de Facebook/Meta (la misma donde hiciste la Parte 1).
@@ -112,8 +111,6 @@ El sistema te guiará por tres selecciones rápidas para encontrar el número qu
 #### Parte 4: Escanear el código QR y confirmar
 
 <figure><img src="../.gitbook/assets/image (17).png" alt="" width="287"><figcaption></figcaption></figure>
-
-
 
 Meta mostrará un código QR en pantalla. En este punto, la conexión se valida físicamente con tu celular.
 
