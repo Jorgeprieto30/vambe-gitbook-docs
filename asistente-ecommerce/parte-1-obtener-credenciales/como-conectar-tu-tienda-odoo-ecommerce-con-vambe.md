@@ -22,7 +22,7 @@ description: >-
 3. Ingresa a la sección **Integraciones**.
 4. Dentro de la categoría **Ecommerce**, busca y selecciona **Odoo Ecommerce**.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

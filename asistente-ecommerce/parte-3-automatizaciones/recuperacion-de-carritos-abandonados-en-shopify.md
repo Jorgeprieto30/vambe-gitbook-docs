@@ -88,21 +88,30 @@ No cierres esta pestaña, ya que volveremos a copiar esta información.
 
     <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 3. Luego selecciona **Automatizaciones.**
-4.  Haz clic en Crear automatizacion.\
-    <br>
+4.  Haz clic en Crear automatizacion.
 
     <figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
-5. Selecciona la plantilla **Recuperar un pedido abandonado**.
+5.  Seleccionar Crear **Automatizacion Personalizada**<br>
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+6.  Seleccionar **Explorar Plantillas**<br>
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+7. Selecciona la plantilla **Recuperar un pedido abandonado**.
 
 ![](<../.gitbook/assets/image png Dec 23 2025 01 31 29 3983 PM.png>)
 
-6. Activa la automatización.
+6.  Instalar la automatización.\
+    <br>
 
-![](<../.gitbook/assets/image png Dec 23 2025 01 32 49 2696 PM.png>)
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+7.  Aparecera esta vista y entraremos a editarla<br>
 
-7. Haz clic en **Editar** y luego en **Continuar**.
-
-![](<../.gitbook/assets/image png Dec 23 2025 01 32 59 4711 PM.png>)
+    <figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -115,7 +124,7 @@ Dentro del flujo de automatización:
 
 Recomendación: 5 horas.
 
-![](<../.gitbook/assets/image png Dec 23 2025 01 34 00 6736 PM.png>)
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 Este valor puedes ajustarlo según tu estrategia.
 {% endstep %}
@@ -124,46 +133,31 @@ Este valor puedes ajustarlo según tu estrategia.
 #### Paso 4: Eliminar el envío de correo por defecto
 
 1. Al final del flujo encontrarás un bloque llamado **Send marketing email**.
-2. Elimínalo, ya que no utilizaremos correo electrónico para este flujo.
+2.  Elimínalo, ya que no utilizaremos correo electrónico para este flujo.<br>
 
-![](<../.gitbook/assets/image png Dec 23 2025 01 34 49 4748 PM.png>)
+    <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Paso 5: Agregar la acción HTTP Request
 
-1. Haz clic en **Add action** (Agregar acción).
-2. Busca y selecciona **HTTP request**.
+1. Haz clic en **Add action en verdadero** (Agregar acción).
+2.  Busca y selecciona **HTTP request**.\
+    <br>
 
-![](<../.gitbook/assets/image png Dec 23 2025 01 35 26 1266 PM.png>)
+    <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 **Configuración del HTTP request**
 
-Usa la información de Vambe que obtuviste en el Paso 1. Copia y pega exactamente lo que aparece en Vambe dentro de los campos de Shopify.
+Usa la información de Vambe que obtuviste en el Paso 1. Copia y pega donde aparece CURL.
 
-![](<../.gitbook/assets/Screenshare   2025 12 23 9_52_42 AM (1) gif.gif>)
+<figure><img src="../.gitbook/assets/image (27).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* Método: cambia **HTTP method** a **POST**.
+Volver a Shopify y seleccionar **Importar Curl** y pegar el copiado en Vambe<br>
 
-![](<../.gitbook/assets/image png Dec 23 2025 01 36 03 2593 PM.png>)
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
-* URL: copia la **URL** desde Vambe y pégala en el campo **URL** de Shopify.
-
-![](<../.gitbook/assets/image png Dec 23 2025 01 37 24 9133 PM.png>)
-
-* Headers: agrega los siguientes headers:
-  * Content-Type: `application/json`
-  * X-API-KEY: valor único por cuenta (cópialo desde Vambe)
-
-{% hint style="warning" %}
-Content-Type siempre es `application/json`. X-API-KEY cambia según cada cuenta.
-{% endhint %}
-
-* Body: copia todo el body desde Vambe y pégalo en el campo **Body** en Shopify.
-
-Ejemplo visual de cómo debería quedar:
-
-![](<../.gitbook/assets/image png Dec 23 2025 01 40 54 6584 PM.png>)
+Luego click en Importar y listo !<br>
 {% endstep %}
 
 {% step %}

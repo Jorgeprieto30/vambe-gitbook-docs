@@ -36,9 +36,9 @@ Para conectar ambas plataformas, necesitamos la dirección exacta de tu portal d
 1. Ingresa a tu cuenta de Reversso.
 2. Copia la URL de tu portal (generalmente tiene el formato `tutienda.reversso.dev` o similar).
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -48,7 +48,7 @@ Para conectar ambas plataformas, necesitamos la dirección exacta de tu portal d
 2. Selecciona la pestaña Integraciones.
 3.  Baja hasta la sección Ecommerce y busca la tarjeta de Reversso.<br>
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Haz clic en Conectar.\
     <br>
 
