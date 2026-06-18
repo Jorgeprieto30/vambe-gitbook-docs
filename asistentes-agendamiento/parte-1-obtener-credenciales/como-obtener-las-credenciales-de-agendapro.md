@@ -32,10 +32,10 @@ Antes de comenzar, asegúrate de:
 
 ![](<../.gitbook/assets/image png Dec 17 2025 03 05 08 3059 PM.png>)
 
-2. Dentro de esta sección, haz clic en **Integraciones/API Pública**.
+2.  Dentro de esta sección, haz clic en **Integraciones**.\
+    <br>
 
-![](<../.gitbook/assets/Captura de pantalla 2025 12 17 a la(s) 11 53 25 a m  png 1.png>)
-
+    <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 3. Desplázate hacia abajo hasta encontrar los campos:
    * **API Pública User**
    * **API Pública Password**

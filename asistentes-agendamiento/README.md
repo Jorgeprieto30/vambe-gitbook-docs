@@ -155,4 +155,4 @@ Flujos y mensajes para clientes que ya tienen una cita (confirmaciones, recordat
 
 Comienza por la Parte 1, donde aprenderás cómo obtener las credenciales necesarias según el tipo de agendamiento que utilizarás.
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Parte 1: Obtener credenciales</td><td><a href=".gitbook/assets/credenciales.png">credenciales.png</a></td><td><a href="/broken/pages/OJaZt3gs8e3SLWsZOP7C">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Parte 1: Obtener credenciales</td><td><a href=".gitbook/assets/credenciales.png">credenciales.png</a></td><td><a href="https://app.gitbook.com/s/hQjV55x4bDSryBoT4FYC/parte-1-obtener-credenciales">Parte 1: Obtener credenciales</a></td></tr></tbody></table>

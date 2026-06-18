@@ -22,7 +22,7 @@ Requisito previo
 
 {% stepper %}
 {% step %}
-#### Ingresar a tu cuenta y abrir Administración
+**Ingresar a tu cuenta y abrir Administración**
 
 1. Ingresa a tu cuenta de **Dentalink** con usuario administrador.
 2. Ve a la pestaña **Administración**.
@@ -42,7 +42,7 @@ Los **motivos de atención** son los que finalmente se mostrarán para agendar.
 
 {% stepper %}
 {% step %}
-#### Ubicar y configurar una especialidad
+**Ubicar y configurar una especialidad**
 
 1. En la lista de especialidades, ubica la especialidad que deseas configurar.
 2. A la derecha, haz clic en **Configurar**.
@@ -55,7 +55,7 @@ Los **motivos de atención** son los que finalmente se mostrarán para agendar.
 {% endstep %}
 
 {% step %}
-#### Crear un motivo de atención (si no existe)
+**Crear un motivo de atención (si no existe)**
 
 * Haz clic en **Agregar motivo de atención**.
 * Crea el motivo (ej.: Consulta, Evaluación, Control, etc.).
@@ -77,7 +77,7 @@ Para que un motivo de atención pueda usarse al agendar, la **especialidad debe 
 
 {% stepper %}
 {% step %}
-#### Abrir Gestión de profesionales
+**Abrir Gestión de profesionales**
 
 1. Ve nuevamente a **Administración**.
 2. Ingresa a **Gestión de profesionales**.
@@ -86,7 +86,7 @@ Para que un motivo de atención pueda usarse al agendar, la **especialidad debe 
 {% endstep %}
 
 {% step %}
-#### Seleccionar y editar profesional
+**Seleccionar y editar profesional**
 
 3. Selecciona el profesional correspondiente.
 4. Haz clic en **Editar datos y permisos**.
@@ -95,7 +95,7 @@ Para que un motivo de atención pueda usarse al agendar, la **especialidad debe 
 {% endstep %}
 
 {% step %}
-#### Asignar la especialidad
+**Asignar la especialidad**
 
 5. Desplázate hasta la sección **Especialidad**.
 6. Asigna la especialidad correspondiente (ej.: General).

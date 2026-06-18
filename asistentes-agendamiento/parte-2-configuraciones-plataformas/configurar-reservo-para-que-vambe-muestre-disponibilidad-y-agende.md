@@ -9,7 +9,7 @@ coverY: 0
 
 {% stepper %}
 {% step %}
-### Acceder a configuración en Reservo
+#### Acceder a configuración en Reservo
 
 * Ingresa a tu cuenta de **Reservo**.
 * Haz clic en la pestaña **Configuración** (parte superior).
@@ -22,7 +22,7 @@ coverY: 0
 {% endstep %}
 
 {% step %}
-### Crear o editar un calendario
+#### Crear o editar un calendario
 
 * Aquí deberás **crear el calendario** o usar uno ya creado el cual se mostrará en Vambe.
 * Este calendario será el que la IA usará para agendar automáticamente.
@@ -32,7 +32,7 @@ coverY: 0
 {% endstep %}
 
 {% step %}
-### Revisar la información que se mostrará en Vambe
+#### Revisar la información que se mostrará en Vambe
 
 * Dentro de la configuración del calendario verás:
   * **Tratamientos predefinidos** → serán los servicios disponibles en Vambe.
