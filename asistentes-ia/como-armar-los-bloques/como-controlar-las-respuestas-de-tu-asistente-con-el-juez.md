@@ -62,10 +62,10 @@ Una vez creado, verás la pantalla de **"Juez personalizado"** con todos los jue
 
 El estado del Juez se controla con un toggle y se configura por asistente:
 
-* **Activo:** cuando el asistente genera una respuesta que rompe la regla, el Juez la detiene y le pide que la reformule antes de enviarla al usuario. Si el asistente vuelve a romper la regla, se registra como un incidente.
-* **Inactivo:** el Juez detecta y registra las infracciones, pero no interviene en la conversación.
+*   **Activo:** cuando el asistente genera una respuesta que rompe la regla, el Juez la detiene y le pide que la reformule antes de enviarla al usuario. Si el asistente vuelve a romper la regla, se registra como un incidente.
+*   **Inactivo:** el Juez detecta y registra las infracciones, pero no interviene en la conversación.
 
-> 💡 **Tip:** Empieza en modo **Inactivo** para validar que las reglas están bien definidas y ver con qué frecuencia se activan, antes de habilitarlo formalmente.
+> 💡 **Tip:** Empieza en modo **Inactivo** para validar que las reglas están bien definidas y ver con qué frecuencia se activan, antes de habilitarlo formalmente. Para un monitoreo más eficiente, Vambe ahora ofrece un **indicador de activaciones** que muestra la cantidad de veces que el Juez se ha activado en los últimos 30 días, lo que te permite evaluar su impacto y ajustar las reglas si es necesario.
 
 Puedes revisar las infracciones detectadas en los logs del asistente, igual que con los guardrails.
 
