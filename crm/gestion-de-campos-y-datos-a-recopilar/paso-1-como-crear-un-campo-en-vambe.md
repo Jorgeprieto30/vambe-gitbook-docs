@@ -80,6 +80,8 @@ Mientras más clara sea la descripción, mejor será el dato registrado.
     Hace que el campo sea visible para los usuarios dentro del ticket o perfil del cliente.
 *   Editable por los usuarios
     Permite que agentes y administradores modifiquen el dato manualmente.
+*   **Validación de Formato Rápida**
+    Active esta opción para campos de **tipo Texto** que almacenen **correos electrónicos** o **números de teléfono**. Vambe aplicará automáticamente validaciones de formato estándar, asegurando la consistencia y calidad de los datos recopilados. **Beneficio:** Agilice la captura de información precisa y evite errores comunes de formato.
 
 ![](<../.gitbook/assets/image png Dec 11 2025 02 37 37 5969 PM.png>)
 {% endstep %}
