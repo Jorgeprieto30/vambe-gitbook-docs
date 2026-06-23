@@ -510,6 +510,17 @@
       "id": "mqr2kcfj_6hdl9",
       "tema": "Fallbacks en Asistentes IA",
       "created_at": "2026-06-23T20:00:46.063Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "analitica-datos/insights-pro/que-es-insights-pro-y-como-empezar.md",
+      "sha": null,
+      "contenido_nuevo": "# Insights Pro: Toma Decisiones con Análisis de Datos Avanzado\n\nCon Insights Pro en Vambe, llevas tu capacidad de análisis de datos al siguiente nivel. Esta funcionalidad ofrece herramientas avanzadas para transformar tus datos operativos en información estratégica, permitiéndote identificar tendencias, optimizar procesos y mejorar el rendimiento general de tu negocio.\n\nInsights Pro te permite:\n*   **Visualizar métricas clave** con paneles personalizables.\n*   **Profundizar en tus operaciones** para descubrir oportunidades de mejora.\n*   **Tomar decisiones informadas** basadas en datos concretos y en tiempo real.\n\n***\n\n### Empieza a usar Insights Pro\n\nAcceder a Insights Pro es sencillo y te abrirá un nuevo mundo de posibilidades de análisis.\n\n#### Paso 1 — Navega a la sección de Analítica\n\n1.  En el menú lateral izquierdo de Vambe, selecciona la opción **Analítica**.\n2.  Dentro de la sección de Analítica, verás la nueva opción **Insights Pro**. Haz clic en ella para acceder.\n\n#### Paso 2 — Explora tus primeros paneles\n\nAl ingresar a Insights Pro, encontrarás paneles predefinidos que te mostrarán un resumen de tus datos más relevantes. Estos paneles están diseñados para darte una visión rápida del estado de tu operación.\n\n*   **Identifica los KPIs más importantes:** Observa tus indicadores clave de rendimiento y detecta patrones.\n*   **Familiarízate con la interfaz:** Explora las opciones de filtrado y visualización para adaptarlas a tus necesidades.\n\n#### Paso 3 — Personaliza tu experiencia (Próximamente)\n\nMás adelante, podrás crear tus propios paneles y reportes personalizados, eligiendo las métricas y los tipos de visualización que mejor se ajusten a tus objetivos. Esta flexibilidad te permitirá construir un centro de control de datos diseñado a tu medida.\n\n> 💡 **Consejo:** Dedica tiempo a explorar los datos disponibles. Cuanto más interactúes con Insights Pro, mejor entenderás el potencial para optimizar tu operación en Vambe.\n",
+      "commit_message": "docs: Insights Pro — Qué es y cómo empezar",
+      "justificacion": "Se crea un nuevo artículo para introducir la funcionalidad de Insights Pro, un componente principal de análisis de datos en Vambe que merece su propia documentación.",
+      "id": "mqr531v7_cdefs",
+      "tema": "Insights Pro",
+      "created_at": "2026-06-23T21:11:18.067Z"
     }
   ]
 }
