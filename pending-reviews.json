@@ -415,6 +415,17 @@
       "id": "mqqvbuq6_e3t1w",
       "tema": "Puntos de Mejora del Asistente IA (Pro vs Lite)",
       "created_at": "2026-06-23T16:38:12.558Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "analitica-datos/gestion-de-objetivos/como-gestionar-y-personalizar-objetivos-automaticos.md",
+      "sha": null,
+      "contenido_nuevo": "---\ndescription: >-\n  Aprende a aprovechar los objetivos automáticos de Vambe para optimizar tu rendimiento, cómo se generan y el proceso para personalizarlos según tus necesidades.\n---\n\n# Cómo gestionar y personalizar objetivos automáticos en Vambe\n\nEn Vambe, entendemos que la optimización del rendimiento es clave. Por ello, hemos implementado una funcionalidad que simplifica la gestión de metas: los **Objetivos Automáticos**. Esta característica está diseñada para darte un punto de partida sólido y adaptable, combinando eficiencia con la flexibilidad que necesitas.\n\n## Generación Automática de Objetivos\n\nVambe ahora te proporciona un set de objetivos iniciales de forma automática. Esto significa que no necesitas configurar tus metas desde cero. La aplicación identifica patrones y te propone objetivos relevantes para tu operación, permitiéndote concentrarte directamente en la acción.\n\n**Beneficio clave:** Inicia tu día con una dirección clara y objetivos predefinidos, eliminando la fricción de la configuración manual. Es el verdadero **_plug-n-play_** para tus metas.\n\n## Personalización de tus Objetivos\n\nSabemos que cada operación es única. Por eso, aunque Vambe genere objetivos de forma automática, mantienes el control total para ajustarlos. Puedes modificar cualquier objetivo propuesto para que se alinee perfectamente con tus estrategias y métricas específicas.\n\n**Cómo personalizar:**\n\n1.  **Acceso:** Dirígete a la sección de **Objetivos** dentro de Vambe (usualmente bajo 'Analíticas' o 'Centro de Control').\n2.  **Selección:** Elige el objetivo automático que deseas ajustar.\n3.  **Modificación:** Edita los parámetros (ej. valores, plazos, criterios) para que reflejen tus expectativas precisas.\n4.  **Guardar:** Confirma los cambios para aplicar tu configuración personalizada.\n\n**Beneficio clave:** La capacidad de modificar los objetivos automáticos te permite una adaptación total. Los usuarios más experimentados pueden refinar sus metas con la granularidad necesaria, manteniendo la **customización** sin perder la velocidad del inicio automático.\n\nCon los Objetivos Automáticos de Vambe, obtienes lo mejor de ambos mundos: un comienzo rápido y guiado, y la potencia para modelar tus metas exactamente como las necesitas.\n",
+      "commit_message": "docs: Nueva funcionalidad de Gestión de Objetivos Automáticos",
+      "justificacion": "Esta funcionalidad de 'Gestión de Objetivos Automáticos' no tiene un lugar adecuado en los artículos existentes y merece un espacio dedicado para explicar su generación y personalización.",
+      "id": "mqqxeu4i_8o4rg",
+      "tema": "Gestión de Objetivos Automáticos",
+      "created_at": "2026-06-23T17:36:30.978Z"
     }
   ]
 }
