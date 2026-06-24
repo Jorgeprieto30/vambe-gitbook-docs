@@ -27,7 +27,7 @@ Para enviar la invitación, deberás completar la siguiente información:
 
 * Nombre
 * Apellido
-* Correo electrónico
+* Correo electrónico (Para editar el correo electrónico de un usuario es necesario solicitarlo a nuestro equipo de soporte)
 * Teléfono
 * Rol asignado
 
@@ -41,7 +41,7 @@ En Vambe existen tres roles, cada uno con niveles de acceso diferentes:
 
 ![](<../.gitbook/assets/image png Nov 19 2025 06 42 47 8112 PM.png>)
 
-**Agente**
+**Ejecutivo**
 
 * Puede ver únicamente los **tickets** que se le asignen.
 * No puede modificar la inteligencia artificial.
@@ -90,7 +90,6 @@ Si necesitas modificar los permisos de un usuario:
 3. Podrás editar:
    * Rol
    * Embudos asignados
-   * Información de contacto
 
 También es posible **crear nuevos roles personalizados**, si tu organización lo necesita.
 
