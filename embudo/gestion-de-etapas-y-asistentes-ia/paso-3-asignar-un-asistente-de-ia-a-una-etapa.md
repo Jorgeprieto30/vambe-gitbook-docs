@@ -9,7 +9,7 @@ Para que los tickets ubicados en una etapa sean respondidos automáticamente por
 
 {% stepper %}
 {% step %}
-### Verificar que el asistente esté creado
+#### Verificar que el asistente esté creado
 
 Antes de asignar un asistente a una etapa, es indispensable que el asistente ya exista.
 
@@ -19,7 +19,7 @@ Solo los asistentes previamente creados pueden ser asignados a una etapa.
 {% endstep %}
 
 {% step %}
-### Ingresar al modo edición del embudo
+#### Ingresar al modo edición del embudo
 
 * Dirigirse al **embudo** donde se encuentra la etapa que queremos asignar un asistente.
 * En la parte superior derecha, hacer clic en el **icono del lápiz** (Editar embudo).
@@ -32,7 +32,7 @@ Solo los asistentes previamente creados pueden ser asignados a una etapa.
 {% endstep %}
 
 {% step %}
-### Seleccionar la etapa y asignar el asistente
+#### Seleccionar la etapa y asignar el asistente
 
 * Identificar la **etapa** en la que quieres activar la inteligencia artificial.
 * Desactivar el interruptor **Etapa humana**.
@@ -48,7 +48,7 @@ Una vez seleccionado, esa etapa quedará asociada al asistente elegido.
 {% endstep %}
 
 {% step %}
-### Guardar los cambios
+#### Guardar los cambios
 
 * Hacer clic en **Guardar cambios** en la parte superior derecha.
 * Luego hacer clic en **Volver** para salir del modo edición.
@@ -57,7 +57,7 @@ Una vez seleccionado, esa etapa quedará asociada al asistente elegido.
 {% endstep %}
 
 {% step %}
-### Verificación visual
+#### Verificación visual
 
 Para confirmar que la etapa quedó correctamente configurada con inteligencia artificial:
 

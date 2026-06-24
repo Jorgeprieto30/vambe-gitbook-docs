@@ -24,3 +24,4 @@
 * [Campos Requeridos: Datos obligatorios por etapa](edicion-embudo/campos-requeridos-datos-obligatorios-por-etapa.md)
 * [Lead Scoring: Prioriza tus oportunidades de venta](edicion-embudo/lead-scoring-prioriza-tus-oportunidades-de-venta.md)
 * [Cómo limpiar y mantener tu embudo ordenado](edicion-embudo/como-limpiar-y-mantener-tu-embudo-ordenado.md)
+* [Acciones colectivas: gestiona muchos tickets al mismo tiempo](edicion-embudo/acciones-colectivas-gestiona-muchos-tickets-al-mismo-tiempo.md)

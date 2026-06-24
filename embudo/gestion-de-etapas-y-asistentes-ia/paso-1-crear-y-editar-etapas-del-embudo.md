@@ -11,13 +11,13 @@ Sigue estos pasos para editar las etapas de tu embudo:
 
 {% stepper %}
 {% step %}
-### Ir al embudo
+#### Ir al embudo
 
 * Entra a la sección donde está tu embudo.
 {% endstep %}
 
 {% step %}
-### Entrar en modo edición
+#### Entrar en modo edición
 
 * En la vista del embudo, superior derecha, haz clic en el ícono del lápiz que dice **“Editar Embudo”**.
 
@@ -30,7 +30,7 @@ Sigue estos pasos para editar las etapas de tu embudo:
 {% endstep %}
 
 {% step %}
-### Crear una nueva etapa
+#### Crear una nueva etapa
 
 * En el modo Edición, arrastra el embudo hacia la derecha para mover todas las etapas hacia el lado izquierdo de la pantalla.
 * A la derecha aparecerá un botón con un **signo “+”**.
@@ -38,27 +38,27 @@ Sigue estos pasos para editar las etapas de tu embudo:
 {% endstep %}
 
 {% step %}
-### Poner nombre a la nueva etapa
+#### Poner nombre a la nueva etapa
 
 * Al crear la nueva etapa, escribe el nombre que quieras utilizar.
 {% endstep %}
 
 {% step %}
-### Mover la etapa a la posición correcta
+#### Mover la etapa a la posición correcta
 
 * En la nueva etapa, haz clic en los **seis puntitos** que están arriba a la derecha de la etapa.
 * Manteniendo pulsado, arrastra la etapa hasta la posición correcta dentro de tu embudo.
 {% endstep %}
 
 {% step %}
-### Guardar los cambios
+#### Guardar los cambios
 
 * Cuando hayas creado todas las etapas necesarias y les hayas puesto el nombre correcto, ve a la parte superior derecha.
 * Haz clic en **“Guardar cambios”**.
 {% endstep %}
 
 {% step %}
-### Volver a la vista normal del embudo
+#### Volver a la vista normal del embudo
 
 * Una vez guardados los cambios, haz clic en **“Volver”**.
 * Tu embudo quedará actualizado con las nuevas etapas y nombres.

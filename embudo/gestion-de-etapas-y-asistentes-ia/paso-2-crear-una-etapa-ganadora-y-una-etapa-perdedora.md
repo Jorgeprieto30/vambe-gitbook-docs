@@ -58,19 +58,19 @@ Su función es **estadística y analítica**:
 
 {% stepper %}
 {% step %}
-### Acceder al Embudo
+#### Acceder al Embudo
 
 Ingresa al **Embudo**.
 {% endstep %}
 
 {% step %}
-### Seleccionar la etapa
+#### Seleccionar la etapa
 
 Ubica la etapa que consideras ganadora.
 {% endstep %}
 
 {% step %}
-### Abrir opciones de la etapa
+#### Abrir opciones de la etapa
 
 Haz clic en la **tuerca (⚙️)** de esa etapa.
 
@@ -78,7 +78,7 @@ Haz clic en la **tuerca (⚙️)** de esa etapa.
 {% endstep %}
 
 {% step %}
-### Cambiar tipo de etapa
+#### Cambiar tipo de etapa
 
 Selecciona **Cambiar tipo de etapa**.
 
@@ -86,7 +86,7 @@ Selecciona **Cambiar tipo de etapa**.
 {% endstep %}
 
 {% step %}
-### Elegir Etapa ganadora
+#### Elegir Etapa ganadora
 
 Elige **Etapa ganadora**.
 
@@ -94,7 +94,7 @@ Elige **Etapa ganadora**.
 {% endstep %}
 
 {% step %}
-### Guardar
+#### Guardar
 
 Guardar. Desde este momento, cualquier ticket que entre a esta etapa será marcado como **ganado**.
 
@@ -108,19 +108,19 @@ Guardar. Desde este momento, cualquier ticket que entre a esta etapa será marca
 
 {% stepper %}
 {% step %}
-### Acceder al Embudo
+#### Acceder al Embudo
 
 Ingresa al **Embudo**.
 {% endstep %}
 
 {% step %}
-### Seleccionar la etapa
+#### Seleccionar la etapa
 
 Ubica la etapa que consideras perdedora.
 {% endstep %}
 
 {% step %}
-### Abrir opciones de la etapa
+#### Abrir opciones de la etapa
 
 Haz clic en la **tuerca (⚙️)** de esa etapa.
 
@@ -128,7 +128,7 @@ Haz clic en la **tuerca (⚙️)** de esa etapa.
 {% endstep %}
 
 {% step %}
-### Cambiar tipo de etapa
+#### Cambiar tipo de etapa
 
 Selecciona **Cambiar tipo de etapa**.
 
@@ -136,7 +136,7 @@ Selecciona **Cambiar tipo de etapa**.
 {% endstep %}
 
 {% step %}
-### Elegir Etapa perdedora
+#### Elegir Etapa perdedora
 
 Elige **Etapa perdedora**.
 
@@ -144,7 +144,7 @@ Elige **Etapa perdedora**.
 {% endstep %}
 
 {% step %}
-### Guardar
+#### Guardar
 
 Guardar. Desde este momento, cualquier ticket que entre a esta etapa será marcado como **perdido**.
 

@@ -2,7 +2,7 @@
 description: >-
   Asegura la calidad de tus datos. Configura "candados" para que la IA (o tu
   equipo) no pueda ingresar a un cliente en una etapa específica sin tener los
-  datos obligatorios completos, incluyendo ahora campos de contacto.
+  datos obligatorios completos, incluyendo ahora c
 ---
 
 # Campos Requeridos: Datos obligatorios por etapa
@@ -15,7 +15,7 @@ La funcionalidad de **Campos Requeridos** actúa como un filtro de calidad en tu
 * Si tú mueves manualmente un ticket a "Cotización", el sistema te pedirá rellenar esos datos manualmente.
 
 {% hint style="danger" %}
-**Requisito Previo**: El Campo (Dato), ya sea personalizado o de contacto, debe existir previamente en Vambe y estar asociado al Ticket. _Si aún no los has creado:_ 👉 [\\[Cómo crear campos personalizados y asignarlos al Ticket\\]](https://academy.vambe.ai/crm/gestion-de-campos-y-datos-a-recopilar)
+**Requisito Previo**: El Campo (Dato), ya sea personalizado o de contacto, debe existir previamente en Vambe y estar asociado al Ticket. _Si aún no los has creado:_ 👉 [\\\[Cómo crear campos personalizados y asignarlos al Ticket\\\]](https://academy.vambe.ai/crm/gestion-de-campos-y-datos-a-recopilar)
 {% endhint %}
 
 ***
@@ -49,13 +49,9 @@ Para activar estos requisitos de entrada, sigue estos pasos:
     <br>
 
     <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-
 2.  Selecciona la pestaña Tickets.<br>
 
     <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-
 3. Ubica la columna de la Etapa de Destino (la etapa a la cual quieres ponerle requisitos de entrada).
 4. Activa el interruptor "Campos requeridos".
 5. Selecciona en la lista los datos (incluyendo campos de contacto) que deben estar llenos para permitir la entrada.
@@ -75,13 +71,10 @@ Es importante entender cómo afecta esto a tu operación diaria:
 *   🤖 Movimiento por IA: Es 100% automático. La IA busca el dato en el chat. Si no está, se lo pide al cliente de forma natural en la conversación.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
-
-
+    <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 * 👤 Movimiento Manual (Agente): Si tú arrastras un ticket manualmente hacia una etapa con requisitos, el sistema detectará que falta el dato y abrirá una ventana emergente obligándote a rellenarlo manualmente en ese momento. No podrás soltar el ticket en esa etapa hasta completar la información.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

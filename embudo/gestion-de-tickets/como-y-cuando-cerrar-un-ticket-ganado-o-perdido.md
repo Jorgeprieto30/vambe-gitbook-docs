@@ -42,7 +42,7 @@ Existen cinco formas principales de cerrar un ticket dentro de la plataforma. To
 
 {% stepper %}
 {% step %}
-### Cierre al entrar a una etapa (ejemplo: Finalizado)
+#### Cierre al entrar a una etapa (ejemplo: Finalizado)
 
 Este método se usa cuando el simple hecho de ingresar a una etapa específica **confirma que el ticket fue exitoso**.
 
@@ -74,7 +74,7 @@ Ahora cuando entre alguien a la etapa "Finalizado"...
 {% endstep %}
 
 {% step %}
-### Cierre por tiempo de inactividad (sin respuesta)
+#### Cierre por tiempo de inactividad (sin respuesta)
 
 Se usa cuando un ticket debe considerarse perdido si el cliente no avanza después de cierto plazo.
 
@@ -100,7 +100,7 @@ Pasos:
 {% endstep %}
 
 {% step %}
-### Cierre periódico (por horario o día específico)
+#### Cierre periódico (por horario o día específico)
 
 Permite cerrar tickets de forma automática cada cierto día y hora, sin depender de un evento puntual del cliente.
 
@@ -128,7 +128,7 @@ Pasos:
 {% endstep %}
 
 {% step %}
-### Cierre manual (desde el ticket)
+#### Cierre manual (desde el ticket)
 
 Es la forma más directa y permite decidir caso por caso.
 
@@ -152,7 +152,7 @@ Pasos:
 {% endstep %}
 
 {% step %}
-### Etapas Ganadoras o de Leads Perdidos
+#### Etapas Ganadoras o de Leads Perdidos
 
 Este método se utiliza cuando quieres que una etapa específica del embudo determine automáticamente si un ticket debe considerarse **ganado** o **perdido**, sin necesidad de configurar acciones automáticas adicionales. Una vez marcada como “Ganada” o “Perdida”, cualquier ticket que llegue a esa etapa se resolverá de inmediato según el tipo elegido.
 
