@@ -11,12 +11,12 @@ Vambe permite integrarse nativamente con los CRMs más importantes del mercado p
 
 **Integraciones disponibles:**
 
-*   HubSpot (Deals y Tickets)
-*   Pipedrive
-*   Salesforce
-*   Zoho (CRM y Desk)
-*   ActiveCampaign
-*   Odoo CRM
+* HubSpot (Deals y Tickets)
+* Pipedrive
+* Salesforce
+* Zoho (CRM y Desk)
+* ActiveCampaign
+* Odoo CRM
 
 A continuación, te explicamos paso a paso cómo realizar la conexión y la configuración avanzada de sincronización.
 
@@ -26,32 +26,14 @@ Si tienes dudas que puedo conectar con mi CRM, puedes [revisarlo aquí](integrac
 
 ***
 
-#### Obtención de su Client ID (Vambe ID)
-
-Para diversas configuraciones e integraciones con su CRM, puede que necesite el **Client ID** de su workspace, también conocido como **Vambe ID**. Este identificador ayuda a Vambe a reconocer su instancia y es fundamental para ciertos procesos de conexión.
-
-Para obtenerlo:
-
-1.  Acceda a la nueva vista de su Backoffice de Vambe.
-2.  Encontrará el icono de llave ('IDs') en la esquina superior derecha de la pantalla.
-3.  Haga clic en este icono para ver y copiar su Client ID.
-
-{% hint style="info" %}
-**Recomendación Importante sobre la URL del Backoffice:**
-
-Actualmente, para la mayoría de los flujos de trabajo y configuraciones en Vambe, se recomienda seguir utilizando la URL antigua del Backoffice (`https://backoffice.vambe.ai/clients/...`). La nueva URL (`https://backoffice.vambe.ai/workspaces/...`) ha sido introducida, pero la antigua es recomendada para asegurar la compatibilidad con todas las funcionalidades existentes mientras se actualizan los flujos internos.
-{% endhint %}
-
-***
-
 #### 1. Conexión Inicial
 
-1.  En el menú lateral izquierdo, ve a la sección **CRM**.
-2.  Despliega el menú de **Ajustes** y selecciona **Integraciones**.
-3.  Verás el listado de CRMs disponibles. Haz clic en Conectar en la tarjeta de tu CRM (ej: Pipedrive, HubSpot, etc.).
-4.  Sigue los pasos de autenticación de tu plataforma externa.
-5.  Una vez conectado, volverás a Vambe. Si no ves la integración activa inmediatamente, **actualiza la página.**
-6.  Haz clic en el icono de Lápiz (Editar) para entrar al panel de configuración.
+1. En el menú lateral izquierdo, ve a la sección **CRM**.
+2. Despliega el menú de **Ajustes** y selecciona **Integraciones**.
+3. Verás el listado de CRMs disponibles. Haz clic en Conectar en la tarjeta de tu CRM (ej: Pipedrive, HubSpot, etc.).
+4. Sigue los pasos de autenticación de tu plataforma externa.
+5. Una vez conectado, volverás a Vambe. Si no ves la integración activa inmediatamente, **actualiza la página.**
+6. Haz clic en el icono de Lápiz (Editar) para entrar al panel de configuración.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,9 +43,9 @@ Actualmente, para la mayoría de los flujos de trabajo y configuraciones en Vamb
 
 En la primera pestaña **Sincronizar**, encontrarás tres opciones clave que permiten a Vambe "leer" la estructura de tu CRM:
 
-*   **Sincronizar Campos**: Detecta automáticamente los campos personalizados de tu CRM para que puedas usarlos en Vambe.
-*   **Sincronizar Agentes**: Importa los usuarios de tu CRM para asignar dueños a los contactos.
-*   **Sincronizar Etiquetas**: Trae las etiquetas existentes en tu CRM.
+* **Sincronizar Campos**: Detecta automáticamente los campos personalizados de tu CRM para que puedas usarlos en Vambe.
+* **Sincronizar Agentes**: Importa los usuarios de tu CRM para asignar dueños a los contactos.
+* **Sincronizar Etiquetas**: Trae las etiquetas existentes en tu CRM.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,13 +55,13 @@ En la primera pestaña **Sincronizar**, encontrarás tres opciones clave que per
 
 Esta sección es crítica. Aquí defines los **requisitos mínimos** para que un contacto se envíe al CRM.
 
-*   **¿Cómo funciona?** Seleccionas un embudo y defines qué campos son obligatorios (ej: RUT, Email).
-*   **La Regla:** Si el contacto **NO tiene este dato** (ni la IA ni el humano lo rellenaron), Vambe **NO enviará** el contacto al CRM para evitar ensuciar tu base de datos con leads vacíos.
+* **¿Cómo funciona?** Seleccionas un embudo y defines qué campos son obligatorios (ej: RUT, Email).
+* **La Regla:** Si el contacto **NO tiene este dato** (ni la IA ni el humano lo rellenaron), Vambe **NO enviará** el contacto al CRM para evitar ensuciar tu base de datos con leads vacíos.
 
-1.  Activa el interruptor del embudo que deseas configurar.
-2.  Haz clic en el botón **(+)** y selecciona el campo obligatorio (ej: Email).
+1. Activa el interruptor del embudo que deseas configurar.
+2. Haz clic en el botón **(+)** y selecciona el campo obligatorio (ej: Email).
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -97,10 +79,10 @@ Define el criterio único para evitar duplicados. Vambe buscará en tu CRM si el
 
 Define qué datos debe traer **Vambe desde el CRM hacia adentro**. Puedes activar:
 
-*   Sincronizar asignación de agentes.
-*   Sincronizar etiquetas.
-*   Sincronizar campos de contacto.
-*   Sincronizar Último Negocio: Importante para traer el contexto de ventas anteriores.
+* Sincronizar asignación de agentes.
+* Sincronizar etiquetas.
+* Sincronizar campos de contacto.
+* Sincronizar Último Negocio: Importante para traer el contexto de ventas anteriores.
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -116,11 +98,11 @@ Activa esta opción para que, cuando algo cambie en tu CRM (ej: cambias una etap
 
 Es momento de conectar los cables. Debes decir qué campo de Vambe corresponde a qué campo de tu CRM.
 
-*   **Campos de Contacto:** Asocia datos personales (Nombre, Rut, Email).
+* **Campos de Contacto:** Asocia datos personales (Nombre, Rut, Email).
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-*   **Atributos del Deal (Trato/Ticket):** Asocia datos de la venta (Monto, Producto de interés, Dirección de despacho). Esto es vital para que el negocio se cree con información valiosa en tu CRM.
+* **Atributos del Deal (Trato/Ticket):** Asocia datos de la venta (Monto, Producto de interés, Dirección de despacho). Esto es vital para que el negocio se cree con información valiosa en tu CRM.
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -140,12 +122,12 @@ Esta es la configuración más importante para la automatización. Aquí decides
 
 Debes configurar la siguiente lógica:
 
-1.  **Etapa Vambe**: Selecciona la etapa de tu embudo en Vambe que servirá de "gatillo" (ej: Cuando entre a "Cotización Enviada").
-2.  **Pipeline CRM**: Selecciona a qué embudo de tu CRM irá.
-3.  **Etapa CRM**: Selecciona en qué etapa exacta caerá en tu CRM.
-4.  **Crear Trato (Switch):**
-    *   **Activado**: Crea el Contacto + el Negocio (Deal/Oportunidad).
-    *   **Desactivado**: Solo crea o actualiza el Contacto (sin crear oportunidad de venta).
+1. **Etapa Vambe**: Selecciona la etapa de tu embudo en Vambe que servirá de "gatillo" (ej: Cuando entre a "Cotización Enviada").
+2. **Pipeline CRM**: Selecciona a qué embudo de tu CRM irá.
+3. **Etapa CRM**: Selecciona en qué etapa exacta caerá en tu CRM.
+4. **Crear Trato (Switch):**
+   * **Activado**: Crea el Contacto + el Negocio (Deal/Oportunidad).
+   * **Desactivado**: Solo crea o actualiza el Contacto (sin crear oportunidad de venta).
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
@@ -157,13 +139,13 @@ Además de enviar información desde Vambe a tu CRM, ahora puedes configurar **W
 
 **Beneficios clave:**
 
-*   **Automatización Directa:** Ejecuta acciones en Vambe (ej. enviar mensajes, asignar agentes) tan pronto como una etapa cambia en HubSpot, Pipedrive o Salesforce.
-*   **Optimización de Costos:** Permite a usuarios de planes básicos de CRM (como HubSpot Starter) automatizar acciones que antes requerían planes más avanzados y costosos.
-*   **Flexibilidad:** El trigger ofrece dos opciones para gestionar los contactos:
-    *   **Buscar solo contactos existentes en Vambe:** Activa el workflow solo si el contacto ya está registrado en Vambe.
-    *   **Buscar o crear el contacto si no existe:** Si el contacto no está en Vambe, se creará automáticamente para poder ejecutar el workflow.
+* **Automatización Directa:** Ejecuta acciones en Vambe (ej. enviar mensajes, asignar agentes) tan pronto como una etapa cambia en HubSpot, Pipedrive o Salesforce.
+* **Optimización de Costos:** Permite a usuarios de planes básicos de CRM (como HubSpot Starter) automatizar acciones que antes requerían planes más avanzados y costosos.
+* **Flexibilidad:** El trigger ofrece dos opciones para gestionar los contactos:
+  * **Buscar solo contactos existentes en Vambe:** Activa el workflow solo si el contacto ya está registrado en Vambe.
+  * **Buscar o crear el contacto si no existe:** Si el contacto no está en Vambe, se creará automáticamente para poder ejecutar el workflow.
 
-Para configurar este trigger, dirígete a la sección de [Workflows en Vambe](../workflows/README.md) y selecciona la opción **"Cambio de Etapa CRM"** como gatillante.
+Para configurar este trigger, dirígete a la sección de [Workflows en Vambe](../workflows/) y selecciona la opción **"Cambio de Etapa CRM"** como gatillante.
 
 ***
 
