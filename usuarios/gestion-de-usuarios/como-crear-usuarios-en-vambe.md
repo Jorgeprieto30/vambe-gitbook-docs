@@ -15,23 +15,23 @@ Para incorporar nuevos miembros a tu organización dentro de Vambe, es necesario
 
 ![](<../.gitbook/assets/image png Nov 25 2025 01 33 41 3358 PM.png>)
 
-4. En la **parte superior derecha**, haz clic en el botón verde **Agregar** para crear un nuevo usuario.
+4.  En la **parte superior derecha**, haz clic en el botón verde **Agregar ejecutivo** para crear un nuevo usuario.<br>
 
-![](<../.gitbook/assets/image png Nov 19 2025 06 40 39 7635 PM.png>)
+    <figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Completar los datos del nuevo usuario
 
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
 Para enviar la invitación, deberás completar la siguiente información:
 
 * Nombre
 * Apellido
+* Alias: Nombre visible para el cliente (opcional)
 * Correo electrónico (Para editar el correo electrónico de un usuario es necesario solicitarlo a nuestro equipo de soporte)
-* Teléfono
 * Rol asignado
-
-![](<../.gitbook/assets/image png Nov 19 2025 06 41 18 1171 PM.png>)
 {% endstep %}
 
 {% step %}
@@ -39,7 +39,7 @@ Para enviar la invitación, deberás completar la siguiente información:
 
 En Vambe existen tres roles, cada uno con niveles de acceso diferentes:
 
-![](<../.gitbook/assets/image png Nov 19 2025 06 42 47 8112 PM.png>)
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 **Ejecutivo**
 
@@ -55,17 +55,19 @@ En Vambe existen tres roles, cada uno con niveles de acceso diferentes:
 
 * Tiene acceso total.
 * Puede modificar la inteligencia artificial, automatizaciones, embudos, asistentes y configuraciones avanzadas.
+
+Si quieres ver mas detalles de los roles, puedes ir a [¿Cual es la diferencia entre ejecutivo, Administrador y Super\_administrador?](cual-es-la-diferencia-entre-agente-administrador-y-super_administrador.md)
 {% endstep %}
 
 {% step %}
 #### Definir los embudos a los que tendrá acceso
 
-Si el rol seleccionado es **Agente** o **Administrador**, deberás especificar a qué embudos tendrá acceso dicho usuario.
+Si el rol seleccionado es **Ejecutivo** o **Administrador**, deberás especificar a qué embudos tendrá acceso dicho usuario.
+
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 * Selecciona uno o varios embudos desde la lista disponible.
 * Esto determinará qué información y qué tickets podrá visualizar.
-
-![](<../.gitbook/assets/image png Nov 19 2025 06 44 35 0717 PM.png>)
 {% endstep %}
 
 {% step %}
@@ -91,7 +93,7 @@ Si necesitas modificar los permisos de un usuario:
    * Rol
    * Embudos asignados
 
-También es posible **crear nuevos roles personalizados**, si tu organización lo necesita.
+También es posible **crear nuevos** [**roles personalizados**](gestion-de-permisos-personaliza-el-acceso-de-cada-ejecutivo-a-tu-medida.md#cuando-crear-un-rol-nuevo-en-vez-de-editar-uno-existente), si tu organización lo necesita.
 
 ![](<../.gitbook/assets/image png Nov 19 2025 06 46 23 1250 PM.png>)
 {% endstep %}
