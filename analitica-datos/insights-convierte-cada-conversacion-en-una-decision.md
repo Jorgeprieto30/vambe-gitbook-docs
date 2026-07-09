@@ -41,7 +41,7 @@ Ahí encontrarás los **criterios de cumplimiento de objetivos**, organizados en
 
 > 💡 Los cambios en el perfil se reflejan en la evaluación de la siguiente semana.
 
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11).png" alt="" width="188"><figcaption></figcaption></figure>
 
 #### Sentimiento y resumen ejecutivo
 
