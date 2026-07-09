@@ -7,64 +7,66 @@ description: >-
 
 # Cómo elegir qué agente recibe un ticket y activar notificaciones automáticas
 
-En Vambe puedes asignar agentes de forma automática a las etapas humanas de tu embudo y definir qué notificaciones recibirá cada uno. Esto permite organizar el trabajo del equipo y asegurarse de que siempre haya alguien atendiendo los tickets a tiempo.
+## Cómo elegir qué ejecutivo recibe un ticket y activar notificaciones automáticas
+
+En Vambe puedes asignar ejecutivos de forma automática a las etapas humanas de tu embudo y definir qué notificaciones recibirá cada uno. Esto permite organizar el trabajo del equipo y asegurarse de que siempre haya alguien atendiendo los tickets a tiempo.
 
 > ⚠️ **Nota:** Este proceso solo puede hacerlo un superadministrador o el owner de la cuenta.
 
 ***
 
-### Asignación automática de agentes en una etapa
+#### Asignación automática de ejecutivos en una etapa
 
-La asignación automática sirve para que, cada vez que un ticket entre a una etapa humana, Vambe decida quién será el agente encargado. Puedes crear lógicas de asignación y reutilizarlas en distintas etapas sin tener que configurarlas desde cero cada vez.
+La asignación automática sirve para que, cada vez que un ticket entre a una etapa humana, Vambe decida quién será el ejecutivo encargado. Puedes crear lógicas de asignación y reutilizarlas en distintas etapas sin tener que configurarlas desde cero cada vez.
 
-#### ¿Dónde se configura?
+**¿Dónde se configura?**
 
 1. Ve a tu **Embudo**.
 2.  Identifica la etapa donde quieres configurar la asignación (Ej: _Pendiente enviar cotización_, _Atención Humana_).
 
-    <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://1206003950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPJ99HMo8PHzRCg7pW0PH%2Fuploads%2F0aMqDA1Ip4239AniMNSO%2Fimage.png?alt=media&#x26;token=c2980013-5f12-4c84-8d65-774983d537d0" alt=""><figcaption></figcaption></figure>
 3. Haz clic en la **tuerca de Configuraciones** de esa etapa.
 4.  Entra en **Asignación automática**.<br>
 
-    <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://1206003950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPJ99HMo8PHzRCg7pW0PH%2Fuploads%2F7gvKllbaOEIoCiDWrAOh%2Fimage.png?alt=media&#x26;token=c373d8b5-c6ca-4d55-a0ee-06931e90b89d" alt=""><figcaption></figcaption></figure>
 
 Al ingresar, verás un panel con dos opciones:
 
 * **En blanco** — para crear una nueva lógica desde cero.
 * **Creaciones anteriores** — para reutilizar una configuración que ya habías guardado.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1206003950-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPJ99HMo8PHzRCg7pW0PH%2Fuploads%2FmnUAw2YuBV2QI5QBo3Sz%2Fimage.png?alt=media&#x26;token=3c0f86da-5374-462a-8d03-a31c7e5506a7" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Crear una nueva asignación (Paso a Paso)
+#### Crear una nueva asignación (Paso a Paso)
 
 1. Haz clic en **En blanco**.
 2. **Nombre:** Dale un nombre descriptivo a este grupo. Ej: _"Equipo de Ventas Chile"_. Este nombre te servirá para identificar y reutilizar esta asignación en otras etapas.
 3. **Estrategia de asignación:** Elige cómo Vambe repartirá los tickets (ver sección siguiente).
-4. **Seleccionar ejecutivos:** Busca y marca a los agentes que formarán parte de este grupo.
+4. **Seleccionar ejecutivos:** Busca y marca a los ejecutivos que formarán parte de este grupo.
 5. Haz clic en **Crear** (abajo a la derecha).
 
 ***
 
-### Estrategias de asignación básica disponibles
+#### Estrategias de asignación básica disponibles
 
-| Estrategia         | Descripción                                                                                      |
-| ------------------ | ------------------------------------------------------------------------------------------------ |
-| 🔀 **Al azar**     | Asigna tickets de forma completamente aleatoria. Todos los agentes tienen la misma probabilidad. |
-| ⚖️ **Balanceado**  | Asigna al agente con menos conversaciones abiertas en ese momento.                               |
-| 🔢 **En orden**    | Asigna de forma secuencial: Agente 1 → Agente 2 → Agente 3 → vuelve a empezar.                   |
-| 👤 **Directo**     | Asigna el ticket a un único ejecutivo específico. Solo permite seleccionar un agente.            |
-| 👤❌ **Desasignar** | Elimina cualquier asignación previa cuando el ticket entra a la etapa.                           |
-| 🚫 **Sin acción**  | No realiza ninguna asignación. Útil como resultado de una condición que no debe generar acción.  |
+| Estrategia         | Descripción                                                                                         |
+| ------------------ | --------------------------------------------------------------------------------------------------- |
+| 🔀 **Al azar**     | Asigna tickets de forma completamente aleatoria. Todos los ejecutivos tienen la misma probabilidad. |
+| ⚖️ **Balanceado**  | Asigna al ejecutivo con menos conversaciones abiertas en ese momento.                               |
+| 🔢 **En orden**    | Asigna de forma secuencial: Ejecutivo 1 → Ejecutivo 2 → Ejecutivo 3 → vuelve a empezar.             |
+| 👤 **Directo**     | Asigna el ticket a un único ejecutivo específico. Solo permite seleccionar un ejecutivo.            |
+| 👤❌ **Desasignar** | Elimina cualquier asignación previa cuando el ticket entra a la etapa.                              |
+| 🚫 **Sin acción**  | No realiza ninguna asignación. Útil como resultado de una condición que no debe generar acción.     |
 
 ***
 
-### Estrategias de Asignación Avanzada: Reglas Determinísticas e IA Contextual (¡Nuevo!)
+#### Estrategias de Asignación Avanzada: Reglas Determinísticas e IA Contextual (¡Nuevo!)
 
-La estrategia **Condicional** es el modo más avanzado para la asignación de tickets y leads. Permite enrutar contactos a diferentes agentes o equipos según reglas de negocio específicas y, ahora, con la inteligencia de análisis contextual, sin necesidad de herramientas externas como n8n.
+La estrategia **Condicional** es el modo más avanzado para la asignación de tickets y leads. Permite enrutar contactos a diferentes ejecutivos o equipos según reglas de negocio específicas y, ahora, con la inteligencia de análisis contextual, sin necesidad de herramientas externas como n8n.
 
-#### ¿Para qué sirve?
+**¿Para qué sirve?**
 
 * Asignar según **turno horario**: mañana a un equipo, tarde a otro.
 * Asignar según el **valor del ticket** o _lead score_.
@@ -72,11 +74,11 @@ La estrategia **Condicional** es el modo más avanzado para la asignación de ti
 * Asignar **basado en el contexto de la conversación** para requerimientos específicos.
 * Garantizar que ningún cliente quede sin atención gracias a una **regla de respaldo (Default)**.
 
-#### ¿Cómo funciona?
+**¿Cómo funciona?**
 
 Las estrategias avanzadas evalúan una lista de **reglas en orden, de arriba hacia abajo**. Cuando un ticket entra a la etapa, el sistema revisa cada regla hasta encontrar la primera que se cumpla y ejecuta la asignación correspondiente. Si ninguna regla aplica, se ejecuta la **regla Default**.
 
-#### Configuración paso a paso
+**Configuración paso a paso**
 
 **1. Seleccionar el tipo Condicional**
 
@@ -130,19 +132,19 @@ Cada regla tiene su propia estrategia independiente: Al azar, Balanceado, En ord
 Siempre existe una regla **Default** al final de la lista. Esta se ejecuta cuando ninguna de las reglas anteriores se cumple. Puedes configurarla como:
 
 * Sin acción (nadie asignado si no hay match).
-* Un agente o equipo de respaldo específico que siempre reciba los casos no cubiertos. Esto asegura que ningún ticket quede "en el limbo".
+* Un ejecutivo o equipo de respaldo específico que siempre reciba los casos no cubiertos. Esto asegura que ningún ticket quede "en el limbo".
 
 **7. Ordenar las reglas**
 
 Puedes arrastrar las reglas para cambiar el orden de evaluación. El sistema las revisa de arriba hacia abajo, por lo que el orden importa.
 
-#### Panel Centralizado de Asignaciones
+**Panel Centralizado de Asignaciones**
 
 Ahora dispones de una nueva vista para gestionar todos los _triggers_ de asignación de tus pipelines desde un solo lugar. Este panel centralizado te brinda una vista global y control total sobre cómo se distribuyen tus tickets y leads a través de todas las etapas y embudos. Facilita la creación, edición y monitoreo de todas las reglas de asignación, optimizando tu operación.
 
 _Puedes ver una demostración del panel centralizado_ [_aquí_](https://t9011788524.p.clickup-attachments.com/t9011788524/3017050d-8cd8-43c3-af4f-4d167e290108/triggers-edited.mp4?view=open)_._
 
-#### Vista resumen de la asignación avanzada
+**Vista resumen de la asignación avanzada**
 
 Una vez configurada, al entrar a la asignación desde la etapa verás un panel con:
 
@@ -153,7 +155,7 @@ Una vez configurada, al entrar a la asignación desde la etapa verás un panel c
 
 ***
 
-### ¿Cómo reutilizar una asignación en otra etapa?
+#### ¿Cómo reutilizar una asignación en otra etapa?
 
 Si quieres que el mismo grupo o la misma lógica condicional aplique en otra columna del embudo:
 
@@ -165,7 +167,7 @@ Si quieres que el mismo grupo o la misma lógica condicional aplique en otra col
 
 ***
 
-#### Configurar notificaciones para agentes <a href="#configurar-notificaciones-para-agentes" id="configurar-notificaciones-para-agentes"></a>
+**Configurar notificaciones para ejecutivos**
 
 Una vez configurada la asignación automática, puedes decidir quién será notificado y en qué situaciones.
 
@@ -180,7 +182,7 @@ Aquí puedes elegir:
 
 ¿Quién recibe la **notificación**?
 
-* El agente asignado anteriormente
+* El ejecutivo asignado anteriormente
 * El owner de la cuenta
 * Ambos
 
@@ -204,15 +206,15 @@ Una vez elegido qué notificaciones activar, presiona **Guardar**.
 
 ***
 
-### Resumen final
+#### Resumen final
 
-| Función                                    | Descripción                                                                                                                                          |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Asignación automática**                  | Distribuye tickets usando lógicas al azar, balanceadas, en orden, directa, condicional o desasignando.                                               |
-| **Asignación condicional e IA Contextual** | Enruta tickets a diferentes agentes o equipos según reglas basadas en horario, monto, campos personalizados, _y análisis de la conversación por IA_. |
-| **Panel Centralizado**                     | Gestiona y supervisa todas las reglas de asignación automática de tus pipelines desde un único lugar.                                                |
-| **Reutilización**                          | Guarda grupos y lógicas para aplicarlas en múltiples etapas sin reconfigurar.                                                                        |
-| **Notificaciones**                         | Alerta cuando un ticket entra a una etapa o recibe un mensaje nuevo.                                                                                 |
-| **Permisos**                               | Solo superadministrador u owner puede configurar esto.                                                                                               |
+| Función                                    | Descripción                                                                                                                                             |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Asignación automática**                  | Distribuye tickets usando lógicas al azar, balanceadas, en orden, directa, condicional o desasignando.                                                  |
+| **Asignación condicional e IA Contextual** | Enruta tickets a diferentes ejecutivos o equipos según reglas basadas en horario, monto, campos personalizados, _y análisis de la conversación por IA_. |
+| **Panel Centralizado**                     | Gestiona y supervisa todas las reglas de asignación automática de tus pipelines desde un único lugar.                                                   |
+| **Reutilización**                          | Guarda grupos y lógicas para aplicarlas en múltiples etapas sin reconfigurar.                                                                           |
+| **Notificaciones**                         | Alerta cuando un ticket entra a una etapa o recibe un mensaje nuevo.                                                                                    |
+| **Permisos**                               | Solo superadministrador u owner puede configurar esto.                                                                                                  |
 
-💡 **Buena práctica:** Los agentes deben revisar y cerrar sus tickets asignados cuando terminen para que la asignación balanceada funcione correctamente. En la asignación condicional, asegúrate de que los campos usados en las condiciones estén siempre completos para evitar que todos los tickets caigan en el Default.
+💡 **Buena práctica:** Los ejecutivos deben revisar y cerrar sus tickets asignados cuando terminen para que la asignación balanceada funcione correctamente. En la asignación condicional, asegúrate de que los campos usados en las condiciones estén siempre completos para evitar que todos los tickets caigan en el Default.
