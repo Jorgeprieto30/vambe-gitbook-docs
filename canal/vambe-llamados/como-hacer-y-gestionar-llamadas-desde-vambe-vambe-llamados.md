@@ -1,10 +1,12 @@
 # Cómo hacer y gestionar llamadas desde Vambe (Vambe Llamados)
 
+## Cómo hacer y gestionar llamadas desde Vambe (Vambe Llamados)
+
 Vambe Llamados te permite gestionar la comunicación por voz con tus clientes directamente desde Vambe. Realiza **llamadas salientes** y recibe **llamadas entrantes**, todo sin salir de Vambe. Además, la plataforma está diseñada para que **múltiples ejecutivos gestionen llamadas de forma simultánea**, permitiéndote ver el historial de llamadas por contacto y analizar el rendimiento de tu equipo desde el panel de analítica.
 
 ***
 
-### Requisitos previos
+#### Requisitos previos
 
 > ⚠️ **Vambe Llamados requiere habilitación previa.** Las llamadas se realizan desde un número externo distinto al número de WhatsApp conectado en Vambe. Para activarlo, debes contactar al **equipo de soporte de Vambe** o al **ingeniero a cargo de tu plataforma**.
 
@@ -12,28 +14,28 @@ Lo mismo aplica si quieres **recibir llamadas entrantes** (cuando un cliente te 
 
 ***
 
-### Cómo realizar una llamada desde un ticket
+#### Cómo realizar una llamada desde un ticket
 
 Una vez que Vambe Llamados está habilitado en tu cuenta:
 
 1. **Abre el ticket** del cliente al que quieres llamar.
 2.  En la parte superior derecha del ticket, haz clic en el **ícono de teléfono**.
 
-    <figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FK30bWLaxEX5b8QFsZOXj%2Fimage.png?alt=media&#x26;token=67630c5e-e8ed-48fa-94b7-3eaa137a6d59" alt=""><figcaption></figcaption></figure>
 3. Se abrirá el panel de **Opciones de Llamada**, donde podrás elegir desde qué número realizar la llamada (si tienes más de uno conectado).
 4. Selecciona el número y la llamada comenzará.
 
 > 💡 Si necesitas agregar un número adicional desde el cual llamar, haz clic en **+ Agregar número** dentro del panel de Opciones de Llamada.
 
-<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FJAovS9NekwFw0ZRK6Ai3%2Fimage.png?alt=media&#x26;token=413eccec-18e0-4f41-a65b-1d5b56414db7" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Controles durante la llamada
+#### Controles durante la llamada
 
 Una vez iniciada la llamada, aparecerá una **barra de llamada en la parte inferior de la pantalla** con los siguientes controles:
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FgbVD7CjhUsewipO1WeXb%2Fimage.png?alt=media&#x26;token=eef74103-98ba-4887-89dd-dabb5e81be4d" alt=""><figcaption></figcaption></figure>
 
 | Control           | Función                                                                                                 |
 | ----------------- | ------------------------------------------------------------------------------------------------------- |
@@ -45,7 +47,7 @@ Una vez iniciada la llamada, aparecerá una **barra de llamada en la parte infer
 
 ***
 
-### Ver el historial de llamadas de un contacto
+#### Ver el historial de llamadas de un contacto
 
 Para revisar todas las llamadas que has tenido con un cliente específico:
 
@@ -53,32 +55,32 @@ Para revisar todas las llamadas que has tenido con un cliente específico:
 2. En el panel lateral derecho, haz clic en el **ícono de teléfono** (pestaña de llamadas).
 3. Ahí verás el historial completo de llamadas con ese contacto: fecha, duración y resultado.
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FhzX7eWkPcNEBz94T2FLC%2Fimage.png?alt=media&#x26;token=ea806d9e-bf4b-48c4-9ff6-5a5ebf47bfd0" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### Analítica de Llamadas
+#### Analítica de Llamadas
 
 Vambe cuenta con un panel completo para monitorear y analizar el rendimiento de tu equipo en llamadas.
 
-#### ¿Dónde encontrarlo?
+**¿Dónde encontrarlo?**
 
 Ve al menú lateral izquierdo → **Analítica** → **Calls**.
 
 Puedes filtrar los datos por **rango de fechas** y por **frecuencia** (Diario, Semanal, etc.).
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FiKmctdHK0GzLpd0lzivD%2Fimage.png?alt=media&#x26;token=f466e37c-d874-478e-86f7-b1c35fe1b454" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### Pestaña Resumen
+**Pestaña Resumen**
 
 Muestra las métricas globales del período seleccionado:
 
 | Métrica                    | Descripción                                                     |
 | -------------------------- | --------------------------------------------------------------- |
 | **Tasa de contacto**       | Porcentaje de llamadas en las que se logró contactar al cliente |
-| **Total de agentes**       | Número de agentes registrados en el sistema                     |
+| **Total de ejecutivos**    | Número de ejecutivos registrados en el sistema                  |
 | **Llamadas sin contestar** | Oportunidades perdidas (el cliente no respondió)                |
 | **Llamadas contestadas**   | Conexiones exitosas                                             |
 | **Duración promedio**      | Tiempo promedio de cada llamada                                 |
@@ -93,32 +95,32 @@ Además encontrarás dos gráficos principales:
 
 ***
 
-#### Pestaña Agentes
+**Pestaña Ejecutivos**
 
-Muestra la **tabla de rendimiento por agente**, ordenada por métricas clave:
+Muestra la **tabla de rendimiento por ejecutivo**, ordenada por métricas clave:
 
 | Columna                | Descripción                                                                        |
 | ---------------------- | ---------------------------------------------------------------------------------- |
-| **Rango**              | Posición del agente según su volumen de llamadas                                   |
+| **Rango**              | Posición del ejecutivo según su volumen de llamadas                                |
 | **Total de llamadas**  | Llamadas realizadas en el período                                                  |
 | **Tasa de conversión** | Porcentaje de llamadas que resultaron en un resultado exitoso                      |
 | **Rendimiento**        | Clasificación automática: Bueno / Promedio / Debajo del promedio / Necesita mejora |
 
-Haz clic en **Ver detalles** de cualquier agente para ver su panel individual con:
+Haz clic en **Ver detalles** de cualquier ejecutivo para ver su panel individual con:
 
 * Total de llamadas, llamadas contestadas, sin contestar y duración promedio.
 * Tiempo total de conversación.
 * **Rendimiento:** contactos alcanzados, llamadas por contacto, resultados exitosos y tasa de conversión.
 * **Eficiencia:** tasa de respuesta, llamadas perdidas y promedio de llamadas por día.
-* Pestañas de **Actividad** e **Historial de llamadas** del agente.
+* Pestañas de **Actividad** e **Historial de llamadas** del ejecutivo.
 
 ***
 
-### Resumen rápido
+#### Resumen rápido
 
 * Vambe Llamados permite realizar llamadas salientes directamente desde cualquier ticket.
 * Requiere habilitación previa por parte del equipo de soporte o el ingeniero de tu cuenta.
 * Durante la llamada puedes silenciar, marcar extensiones y seguir navegando en Vambe.
 * El historial de llamadas por contacto está disponible en el panel lateral derecho del ticket.
-* La analítica de Llamadas (en **Analítica → Calls**) muestra métricas globales, distribución por hora y rendimiento por agente.
+* La analítica de Llamadas (en **Analítica → Calls**) muestra métricas globales, distribución por hora y rendimiento por ejecutivo.
 * Para recibir llamadas entrantes también se requiere configuración previa con soporte.
