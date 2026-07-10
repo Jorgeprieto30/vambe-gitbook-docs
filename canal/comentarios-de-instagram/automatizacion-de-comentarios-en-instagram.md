@@ -9,23 +9,21 @@ coverY: 0
 
 # Automatización de Comentarios en Instagram
 
-## Automatización de Comentarios en Instagram: Panel Principal
+## Automatización de Comentarios en Instagram
+
+### Automatización de Comentarios en Instagram: Panel Principal
 
 La sección de **Comentarios** en Vambe es tu centro de control para convertir interacciones públicas en conversaciones privadas y ventas. Desde aquí, podrás definir cómo responde tu IA cuando alguien escribe en tus publicaciones.
 
-### Cómo llegar
+#### Cómo llegar
 
 1. Menú lateral → **Canales.**
 2. Submenú → **Comentarios** (icono Instagram).
 3. Selecciona tu cuenta de Instagram.
 
-<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.41.54 AM.png" alt=""><figcaption></figcaption></figure>
-
 ***
 
-### Cómo funciona
+#### Cómo funciona
 
 Cuando alguien comenta en tu post:
 
@@ -38,15 +36,28 @@ Comentario → Vambe detecta → IA evalúa condición → Si cumple:
 
 ***
 
-### Cómo configurar una automatización
+#### Cómo configurar una automatización
 
 Todas las automatizaciones usan el mismo formulario:
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+**1. Seleccionar Tipo**
 
-#### 1. Seleccionar Etapa
+Elige cómo funciona la automatización. La opción que elijas afecta tu contador de conversaciones.
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+| Tipo            | Qué hace                                                                                                   | Contador de conversaciones                |
+| --------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| **Inteligente** | La IA entiende el contexto y decide cuándo y cómo responder, tanto en el comentario como en el DM.         | Cada activación suma **1 conversación**.  |
+| **Template**    | Publica el comentario y envía por DM el mensaje textual que tú defines, tal cual, **sin pasar por la IA**. | **No suma** conversaciones a tu contador. |
+
+{% hint style="info" %}
+**¿Cuándo conviene el tipo Template?** Es ideal para publicaciones muy virales o concursos, donde solo quieres enviar un mensaje predefinido a quienes comentan sin consumir conversaciones. La contraparte es que pierdes el conocimiento de la IA en ese flujo.
+{% endhint %}
+
+{% hint style="warning" %}
+**Importante:** aunque la automatización sea de tipo Template, si el cliente final **responde el DM**, la IA toma la conversación normalmente según la etapa en la que haya quedado el contacto.
+{% endhint %}
+
+**2. Seleccionar Etapa**
 
 Elige qué etapa del CRM manejará los contactos. Esta etapa determina:
 
@@ -56,9 +67,7 @@ Elige qué etapa del CRM manejará los contactos. Esta etapa determina:
 
 > **Importante**: La etapa debe tener un Asistente IA activo. Sin asistente, no funcionará la automatización.
 
-#### 2. Tipo de Activación
-
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+**3. Tipo de Activación**
 
 | Acción              | Qué hace                          |
 | ------------------- | --------------------------------- |
@@ -67,9 +76,7 @@ Elige qué etapa del CRM manejará los contactos. Esta etapa determina:
 | **DM + Comentario** | Ambas.                            |
 | **Eliminar**        | Borra el comentario.              |
 
-#### 3. Detector de Activación
-
-<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+**4. Detector de Activación**
 
 **Condición IA** (recomendado): Instrucción en lenguaje natural.
 
@@ -85,9 +92,7 @@ precio, costo, info, quiero, envío.
 
 > **Pro Tip**: La Condición IA es más flexible y puede entender sinónimos, errores de ortografía y variaciones. Las palabras clave son más precisas pero menos adaptables.
 
-#### 4. Instrucciones para Comentarios
-
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+**5. Instrucciones para Comentarios**
 
 Guía a la IA sobre cómo responder públicamente.
 
@@ -103,9 +108,7 @@ por información:
 No menciones precios públicamente. Mantén la respuesta breve (máximo 2 líneas).
 ```
 
-#### 5. Instrucciones para DMs
-
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+**6. Instrucciones para DMs**
 
 Guía a la IA sobre cómo iniciar la conversación privada.
 
@@ -119,9 +122,7 @@ Saluda al cliente de forma cálida.
 5. Si es apropiado, invítalo a visitar: https://www.tutienda.com
 ```
 
-#### 6. Contexto Adicional (opcional)
-
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+**7. Contexto Adicional (opcional)**
 
 Información extra: precios, links, promociones, detalles del producto.
 
@@ -132,11 +133,9 @@ Link: mitienda.com/zapatillas. Envío gratis sobre $50.000"
 
 ***
 
-### Tipos de Automatización
+#### Tipos de Automatización
 
-#### Automatización Futura
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.47.18 AM.png" alt=""><figcaption></figcaption></figure>
+**Automatización Futura**
 
 **Qué es**: Regla que se activa con tu **próximo post**.
 
@@ -152,9 +151,7 @@ Link: mitienda.com/zapatillas. Envío gratis sobre $50.000"
 
 ***
 
-#### Automatización Global
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.46.48 AM.png" alt=""><figcaption></figcaption></figure>
+**Automatización Global**
 
 **Qué es**: Regla que aplica a **todos tus posts** (pasados, actuales y futuros).
 
@@ -168,11 +165,7 @@ Link: mitienda.com/zapatillas. Envío gratis sobre $50.000"
 
 ***
 
-#### Post Individual
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.46.02 AM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.46.32 AM.png" alt=""><figcaption></figcaption></figure>
+**Post Individual**
 
 **Qué es**: Regla para un **post específico** que ya existe.
 
@@ -181,35 +174,27 @@ Link: mitienda.com/zapatillas. Envío gratis sobre $50.000"
 **Cuándo usarla**:
 
 * Post antiguo.
-* Sorteo o concurso con reglas particulares.
+* Sorteo o concurso con reglas particulares (aquí el tipo **Template** es especialmente útil para no consumir conversaciones).
 * Probar automatización antes de activar global
 
 **Ventaja**: Puedes tener múltiples automatizaciones en el mismo post (ej: una para ventas, otra para moderación).
 
 ***
 
-### Resumen de diferencias
+#### Resumen de diferencias
 
-| Tipo           | Alcance           | Ideal para                                          |
-| -------------- | ----------------- | --------------------------------------------------- |
-| **Futura**     | Próximo post      | Lanzamientos programados.                           |
-| **Global**     | Todos los posts   | Automatización completa de la cuenta.               |
-| **Individual** | 1 post específico | <p>Posts virales, promociones </p><p>puntuales.</p> |
+| Tipo           | Alcance           | Ideal para                            |
+| -------------- | ----------------- | ------------------------------------- |
+| **Futura**     | Próximo post      | Lanzamientos programados.             |
+| **Global**     | Todos los posts   | Automatización completa de la cuenta. |
+| **Individual** | 1 post específico | Posts virales, promociones puntuales. |
 
-### Gestionar Automatizaciones
+#### Gestionar Automatizaciones
 
 Desde el panel de **Gestionar Automatizaciones** podrás tener una vista global de todas tus automatizaciones, permitiéndote accede de manera más rápida a cada una de ellas
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.42.21 AM.png" alt=""><figcaption></figcaption></figure>
-
-### Registro de Actividad
+#### Registro de Actividad
 
 En cada post podrás ver el historial de decisiones que tomó la IA sobre dicho post.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.50.11 AM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 11.50.19 AM.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
