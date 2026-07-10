@@ -8,6 +8,7 @@
 * [Cómo conectar tu tienda WooCommerce con Vambe](parte-1-obtener-credenciales/como-conectar-tu-tienda-woocommerce-con-vambe.md)
 * [Cómo conectar tu tienda Jumpseller con Vambe](parte-1-obtener-credenciales/como-conectar-tu-tienda-jumpseller-con-vambe.md)
 * [Cómo conectar tu tienda Odoo Ecommerce con Vambe](parte-1-obtener-credenciales/como-conectar-tu-tienda-odoo-ecommerce-con-vambe.md)
+* [Cómo conectar tu tienda PrestaShop con Vambe](parte-1-obtener-credenciales/como-conectar-tu-tienda-prestashop-con-vambe.md)
 
 ## Parte 3: Automatizaciones
 
