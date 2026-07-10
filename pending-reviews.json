@@ -214,6 +214,17 @@
       "id": "mrfiukvv_j4kpw",
       "tema": "Integración Claude Insights",
       "created_at": "2026-07-10T22:43:05.659Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "analitica-datos/metricas-de-agendamiento.md",
+      "sha": null,
+      "contenido_nuevo": "# Métricas de Agendamiento: Análisis detallado del rendimiento de tus asistentes\n\nOptimiza el proceso de agendamiento en Vambe con el nuevo dashboard de **Métricas de Agendamiento**. Esta herramienta proporciona una visualización detallada para comprender el rendimiento de cada asistente agendador, identificar oportunidades de mejora y tomar decisiones basadas en datos para incrementar la eficiencia.\n\n***\n\n### ¿Dónde encontrarlo?\n\nAccede a esta funcionalidad desde el menú principal:\n\n1.  Ve a **Analítica y Datos**.\n2.  Selecciona **Métricas de Agendamiento**.\n\n<figure><img src=\"URL_DE_IMAGEN_DEL_DASHBOARD\" alt=\"Dashboard de Métricas de Agendamiento en Vambe\" width=\"768\"><figcaption>Panel de Métricas de Agendamiento.</figcaption></figure>\n\n***\n\n### Métricas clave\n\nEl dashboard ofrece una vista consolidada de los indicadores más importantes del proceso de agendamiento, desglosados para evaluar el desempeño individual de tus asistentes:\n\n*   **Tasas de confirmación:** Monitorea el porcentaje de citas agendadas que son efectivamente confirmadas. Este indicador es crucial para prever la asistencia y gestionar la disponibilidad.\n*   **Tasas de cancelaciones:** Identifica la frecuencia con la que las citas agendadas terminan en cancelación. Analiza estos datos para comprender patrones y causas subyacentes.\n*   **Tasas de re-agendamientos:** Evalúa cuántas citas son movidas o reprogramadas. Un alto índice de re-agendamientos puede indicar desafíos en la disponibilidad o en la comunicación inicial.\n\n***\n\n### Análisis por asistente agendador\n\nUna de las principales ventajas de este dashboard es la capacidad de filtrar y visualizar todas las métricas anteriores por **asistente agendador**. Esto te permite:\n\n*   **Evaluar el rendimiento individual:** Compara la efectividad de cada miembro de tu equipo en la gestión de citas.\n*   **Identificar necesidades de reforzamiento:** Detecta asistentes que podrían beneficiarse de capacitaciones adicionales en técnicas de confirmación o manejo de objeciones.\n*   **Promover mejores prácticas:** Reconoce a los asistentes con las métricas más sólidas y comparte sus estrategias con el resto del equipo.\n\n***\n\n### Beneficios\n\n*   **Toma decisiones basadas en datos:** Obtén información precisa para optimizar tus estrategias de agendamiento.\n*   **Mejora continua:** Identifica áreas de oportunidad y aplica mejoras para reducir cancelaciones y aumentar las tasas de confirmación y asistencia.\n*   **Gestión eficiente del equipo:** Evalúa el rendimiento de tus asistentes y distribuye las tareas de forma más equitativa y efectiva.\n",
+      "commit_message": "docs: nuevo artículo de Métricas de Agendamiento",
+      "justificacion": "Creación de un artículo dedicado al nuevo dashboard de 'Métricas de Agendamiento', que ofrece un análisis detallado del rendimiento de los asistentes agendadores con tasas de confirmación, cancelación y re-agendamiento, consolidando la información en un lugar adecuado dentro de la sección de 'Analítica y Datos'.",
+      "id": "mrfiv7ng_q4lji",
+      "tema": "Métricas de Agendamiento",
+      "created_at": "2026-07-10T22:43:35.164Z"
     }
   ]
 }
