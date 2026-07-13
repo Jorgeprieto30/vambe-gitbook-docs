@@ -26,6 +26,7 @@
 
 * [Como crear plantillas](plantillas/como-crear-plantillas.md)
 * [Como enviar mensajes rápidos y plantillas](plantillas/como-enviar-mensajes-rapidos-y-plantillas.md)
+* [Analítica de plantillas](plantillas/analitica-de-plantillas.md)
 
 ## Campañas
 
