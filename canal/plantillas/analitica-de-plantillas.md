@@ -1,7 +1,5 @@
 # Analítica de plantillas
 
-## Analítica de plantillas
-
 La **Analítica de plantillas** te muestra, en un solo lugar, cómo está funcionando cada plantilla que envías por WhatsApp: cuántas se entregan, cuántas se leen, cuántas generan respuesta y por qué fallan las que fallan. Es mucho más rápida que antes, sin importar el tamaño de tu cuenta.
 
 > Para entrar: en el menú lateral, ve a **Canales → Plantillas → Analítica plantillas**.
