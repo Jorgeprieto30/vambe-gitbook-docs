@@ -2,12 +2,11 @@
 
 #### ¿Qué información envía exactamente Vambe a HubSpot?
 
-Actualmente, Vambe se integra con **HubSpot Deals** y **HubSpot Tickets**.
-Se envía información asociada a los **tratos y tickets generados desde Vambe**, incluyendo:
+Actualmente, Vambe se integra con **HubSpot Deals** y **HubSpot Tickets**. Se envía información asociada a los **tratos y tickets generados desde Vambe**, incluyendo:
 
-*   Campos del contacto
-*   Campos del trato o ticket
-*   Agentes configurados en HubSpot
+* Campos del contacto
+* Campos del trato o ticket
+* Agentes configurados en HubSpot
 
 No se envían conversaciones completas ni intenciones de compra como tal, **a menos que estas estén previamente mapeadas en campos específicos** dentro de la integración.
 
@@ -19,13 +18,9 @@ Para integrar Vambe con HubSpot, necesitarás tu **Client ID**, también conocid
 
 Actualmente, puedes obtener tu Client ID de la siguiente manera:
 
-1.  Accede a la nueva vista de tu Backoffice de Vambe.
-2.  Busca el icono de llave ('IDs') en la esquina superior derecha de la pantalla.
-3.  Haz clic en el icono para visualizar y copiar tu Client ID.
-
-{% hint style="info" %}
-Por el momento, te recomendamos seguir utilizando la URL antigua del Backoffice (`https://backoffice.vambe.ai/clients/...`) para la mayoría de los flujos y configuraciones, a menos que se indique lo contrario. El Client ID se puede obtener de la nueva vista sin necesidad de usar su URL principal.
-{% endhint %}
+1. Accede a la nueva vista de tu Backoffice de Vambe.
+2. Busca el icono de llave ('IDs') en la esquina superior derecha de la pantalla.
+3. Haz clic en el icono para visualizar y copiar tu Client ID.
 
 ***
 
@@ -43,8 +38,7 @@ Sí. Vambe puede **actualizar contactos ya existentes** en HubSpot.
 
 #### ¿Vambe puede cambiar etapas del pipeline en HubSpot?
 
-No. Vambe **no modifica directamente** las etapas del pipeline de HubSpot.
-Sin embargo, es posible **conectar o crear un “espejo”** entre las etapas configuradas en Vambe y las etapas existentes en HubSpot.
+No. Vambe **no modifica directamente** las etapas del pipeline de HubSpot. Sin embargo, es posible **conectar o crear un “espejo”** entre las etapas configuradas en Vambe y las etapas existentes en HubSpot.
 
 ***
 
@@ -57,24 +51,23 @@ Puedes configurar Workflows en Vambe para que se activen automáticamente cuando
 Este trigger es compatible con planes básicos de HubSpot (como Starter), lo que permite automatizar procesos sin la necesidad de escalar a planes más costosos.
 
 Las opciones disponibles para este trigger son:
-*   **Buscar solo contactos existentes en Vambe:** El workflow se activa solo si el contacto de HubSpot ya tiene un registro en Vambe.
-*   **Buscar o crear el contacto si no existe:** Si el contacto no está en Vambe, se creará automáticamente un nuevo contacto en Vambe para poder procesar el workflow.
 
-Para aprender a configurarlo, consulta el artículo sobre [cómo configurar un Trigger de Workflow por Cambio de Etapa de CRM](../workflows/como-configurar-trigger-cambio-etapa-crm.md).
+* **Buscar solo contactos existentes en Vambe:** El workflow se activa solo si el contacto de HubSpot ya tiene un registro en Vambe.
+* **Buscar o crear el contacto si no existe:** Si el contacto no está en Vambe, se creará automáticamente un nuevo contacto en Vambe para poder procesar el workflow.
+
+Para aprender a configurarlo, consulta el artículo sobre [cómo configurar un Trigger de Workflow por Cambio de Etapa de CRM](https://github.com/Jorgeprieto30/vambe-gitbook-docs/blob/main/crm/workflows/como-configurar-trigger-cambio-etapa-crm.md).
 
 ***
 
 #### ¿Vambe puede leer información de HubSpot para personalizar respuestas de la IA?
 
-No. Vambe **no extrae información desde HubSpot** para que la IA responda en base a esos datos (como nombre, empresa, etapa o vendedor asignado).
-No obstante, puedes **agregar manualmente la información que estimes relevante** para que la IA la utilice en sus respuestas.
+No. Vambe **no extrae información desde HubSpot** para que la IA responda en base a esos datos (como nombre, empresa, etapa o vendedor asignado). No obstante, puedes **agregar manualmente la información que estimes relevante** para que la IA la utilice en sus respuestas.
 
 ***
 
 #### ¿Se puede usar la información de HubSpot para segmentar respuestas del bot?
 
-No. La información proveniente de HubSpot **no se utiliza para segmentar respuestas**.
-La segmentación se realiza directamente dentro de **Vambe**, utilizando sus herramientas actuales.
+No. La información proveniente de HubSpot **no se utiliza para segmentar respuestas**. La segmentación se realiza directamente dentro de **Vambe**, utilizando sus herramientas actuales.
 
 ***
 
@@ -82,16 +75,15 @@ La segmentación se realiza directamente dentro de **Vambe**, utilizando sus her
 
 Vambe requiere **permisos de lectura y escritura**, necesarios para:
 
-*   Crear o actualizar contactos
-*   Crear o actualizar tratos
-*   Crear o actualizar tickets
+* Crear o actualizar contactos
+* Crear o actualizar tratos
+* Crear o actualizar tickets
 
 ***
 
 #### ¿Qué sucede si el cliente revoca el acceso a HubSpot?
 
-La integración **deja de funcionar inmediatamente**.
-No se crearán ni actualizarán contactos, tratos o tickets desde Vambe hacia HubSpot.
+La integración **deja de funcionar inmediatamente**. No se crearán ni actualizarán contactos, tratos o tickets desde Vambe hacia HubSpot.
 
 ***
 
