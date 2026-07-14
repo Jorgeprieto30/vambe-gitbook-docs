@@ -43,8 +43,6 @@ Las opciones disponibles para este trigger son:
 * **Buscar solo contactos existentes en Vambe:** El workflow se activa solo si el contacto de HubSpot ya tiene un registro en Vambe.
 * **Buscar o crear el contacto si no existe:** Si el contacto no está en Vambe, se creará automáticamente un nuevo contacto en Vambe para poder procesar el workflow.
 
-Para aprender a configurarlo, consulta el artículo sobre [cómo configurar un Trigger de Workflow por Cambio de Etapa de CRM](https://github.com/Jorgeprieto30/vambe-gitbook-docs/blob/main/crm/workflows/como-configurar-trigger-cambio-etapa-crm.md).
-
 ***
 
 #### ¿Vambe puede leer información de HubSpot para personalizar respuestas de la IA?
