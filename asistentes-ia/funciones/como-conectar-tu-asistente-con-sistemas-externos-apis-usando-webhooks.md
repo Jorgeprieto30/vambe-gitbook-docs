@@ -7,6 +7,8 @@ description: >-
 
 # ¿Cómo conectar tu Asistente con sistemas externos (APIs) usando Webhooks?
 
+## ¿Cómo conectar tu Asistente con sistemas externos (APIs) usando Webhooks?
+
 La función Llamada Webhook es la herramienta que permite a tu Inteligencia Artificial "hablar" con otros sistemas fuera de Vambe.
 
 ¿Para qué sirve? Permite enviar o traer datos.
@@ -16,28 +18,28 @@ La función Llamada Webhook es la herramienta que permite a tu Inteligencia Arti
 
 ***
 
-#### ⚠️ Requisito: Conocimiento Técnico
+**⚠️ Requisito: Conocimiento Técnico**
 
 Esta función requiere manipular conceptos de programación como APIs, Endpoints, JSON y Métodos HTTP (GET, POST, etc.). Si no te manejas con estos términos, te recomendamos pedir ayuda a tu equipo de desarrollo.
 
 ***
 
-#### Configuración Paso a Paso: Ejemplo "Estado del Pedido"
+**Configuración Paso a Paso: Ejemplo "Estado del Pedido"**
 
 En este ejemplo, configuraremos a la IA para que, cuando un cliente pregunte por su compra, la IA consulte una API externa y le dé la respuesta.
 
 **Paso 1: Instrucción en el Asistente**
 
-1. [Ve a tu Asistente](../como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md) y entra en **Casos Posibles** (ideal para preguntas que pueden surgir en cualquier momento).
+1. Ve a tu Asistente y entra en **Casos Posibles** (ideal para preguntas que pueden surgir en cualquier momento).
 2. Define la lógica en el texto: _"Cuando el cliente necesite saber el estado de su pedido, pídele el número de seguimiento, una vez te lo entrega ejecuta la función webhook"_.
 
 **Paso 2: Configuración Básica del Webhook**
 
 Haz clic en + Agregar Función y selecciona Llamada Webhook.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FKe5SHeiq42aCqlZMYAJT%2Fimage.png?alt=media&#x26;token=cafc7815-5c08-4c7b-9e30-ec00c8d2722b" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2Fftog21EvCOkNn9mDVPMD%2Fimage.png?alt=media&#x26;token=250afde5-9e6e-42c1-958f-f3e66e846fc0" alt=""><figcaption></figcaption></figure>
 
 Configura los datos base:
 
@@ -46,7 +48,7 @@ Configura los datos base:
 3. **Método**: Selecciona el verbo HTTP (GET, POST, PUT, DELETE). Para consultar datos, usaremos GET.
 4. **URL (Endpoint)**: Pega la dirección de tu API.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FTNgcgiIag5Ufe83WYp4f%2Fimage.png?alt=media&#x26;token=e569d8c1-02db-489c-879d-7506c38ff5d4" alt=""><figcaption></figcaption></figure>
 
 **Paso 3: Configuración de Parámetros y Variables**
 
@@ -72,14 +74,14 @@ Revisa la estructura: Debes ver el texto de tu instrucción y, justo debajo, una
 
 * Si ves el texto pero NO ves la tarjeta debajo, la IA leerá la instrucción pero no podrá ejecutar nada. ¡Asegúrate de darle clic a "Crear"!
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FRRwczSiwZv1ev6WfHhmx%2Fimage.png?alt=media&#x26;token=8c0512a5-c0ac-4df0-8fb5-3d315d36b2f0" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### 💡 Otra Alternativa: Webhooks en Workflows
+**💡 Otra Alternativa: Webhooks en Workflows**
 
 ¿Buscas disparar un Webhook cuando ocurre un evento (ej: entra un cliente nuevo, cambia de etapa, o se etiqueta) y no necesariamente en una conversación?
 
 Para esos casos de automatización pura, no uses las funciones del Asistente. Debes usar los Workflows.
 
-👉 [\[Haz clic aquí para ver el artículo completo sobre Workflows y Automatizaciones\]](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk/s/0xCLgfGby0xiCWJaqr57/)
+👉 [\[Haz clic aquí para ver el artículo completo sobre Workflows y Automatizaciones\]](https://academy.vambe.ai/workflows)

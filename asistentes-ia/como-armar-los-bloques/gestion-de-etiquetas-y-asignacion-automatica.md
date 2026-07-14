@@ -1,12 +1,14 @@
 # Gestión de etiquetas y asignación automática
 
+## Gestión de etiquetas y asignación automática
+
 En este artículo aprenderás qué son las etiquetas, cómo crearlas, cómo asignarlas manualmente y cómo configurarlas para que se asignen de forma automática durante una conversación.
 
 Las etiquetas te permiten **clasificar contactos o tickets**, facilitando el seguimiento, la segmentación y la organización del trabajo del equipo.
 
 ***
 
-#### ¿Qué son las etiquetas y para qué sirven?
+**¿Qué son las etiquetas y para qué sirven?**
 
 Las etiquetas son marcadores que se pueden asignar para identificar características relevantes de:
 
@@ -15,15 +17,15 @@ Las etiquetas son marcadores que se pueden asignar para identificar característ
 
 👉 Es muy importante definir desde el inicio **si una etiqueta pertenece al contacto o al ticket**, ya que esto determina dónde se verá y cómo se utilizará.
 
-![Ejemplo de etiquetas](<../.gitbook/assets/image png Dec 19 2025 01 04 02 3752 PM.png>)
+![Ejemplo de etiquetas](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/G0UZX3fGV8BjRqmhOJNF/image%20png%20Dec%2019%202025%2001%2004%2002%203752%20PM.png)
 
 ***
 
-#### Crear una etiqueta
+**Crear una etiqueta**
 
 {% stepper %}
 {% step %}
-#### Paso: Acceder a la sección de Etiquetas
+**Paso: Acceder a la sección de Etiquetas**
 
 * Ve al menú lateral izquierdo.
 * Ingresa a **CRM**.
@@ -31,13 +33,13 @@ Las etiquetas son marcadores que se pueden asignar para identificar característ
 {% endstep %}
 
 {% step %}
-#### Paso: Crear nueva etiqueta
+**Paso: Crear nueva etiqueta**
 
 * Haz clic en **Crear etiqueta**.
 {% endstep %}
 
 {% step %}
-#### Paso: Definir parámetros de la etiqueta
+**Paso: Definir parámetros de la etiqueta**
 
 Al crearla, deberás definir:
 
@@ -47,17 +49,17 @@ Al crearla, deberás definir:
 * **Nombre de la etiqueta** (claro y descriptivo).
 * **Color**, para identificarla visualmente.
 
-![Crear etiqueta](<../.gitbook/assets/image png Dec 19 2025 01 09 25 1794 PM.png>)
+![Crear etiqueta](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/VAkuo8yngxsYISG5KjZO/image%20png%20Dec%2019%202025%2001%2009%2025%201794%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Paso: Finalizar creación
+**Paso: Finalizar creación**
 
 Cuando esté todo listo, haz clic en **Crear**.
 
 La etiqueta quedará disponible para ser usada.
 
-![Etiqueta creada](<../.gitbook/assets/image png Dec 19 2025 01 11 27 8765 PM.png>)
+![Etiqueta creada](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/P3ftY8ivSlYZwM17Z76k/image%20png%20Dec%2019%202025%2001%2011%2027%208765%20PM.png)
 {% endstep %}
 {% endstepper %}
 
@@ -69,31 +71,31 @@ A tener en cuenta: define claramente si una etiqueta pertenece al contacto o al 
 
 ***
 
-#### Asignar etiquetas de forma manual
+**Asignar etiquetas de forma manual**
 
 Puedes asignar etiquetas manualmente de dos maneras, según su tipo:
 
 {% stepper %}
 {% step %}
-#### Etiquetas de tipo ticket
+**Etiquetas de tipo ticket**
 
 * Abre el ticket del contacto.
 * Ve a la parte superior derecha (información del ticket).
 * Busca la sección **Etiquetas**.
 * Haz clic en **Agregar** y selecciona la etiqueta.
 
-![Etiquetas en ticket](<../.gitbook/assets/image png Dec 19 2025 01 15 00 2974 PM.png>)
+![Etiquetas en ticket](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/8sKijykYBixuOUse8HNV/image%20png%20Dec%2019%202025%2001%2015%2000%202974%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Etiquetas de tipo contacto
+**Etiquetas de tipo contacto**
 
 * Abre el ticket.
 * Ve a la información del **Contacto**.
 * En la sección de etiquetas del contacto, haz clic en **Agregar**.
 * Selecciona la etiqueta correspondiente.
 
-![Etiquetas en contacto](<../.gitbook/assets/image png Dec 19 2025 01 18 05 7399 PM.png>)
+![Etiquetas en contacto](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/hyTd8N0l0yqXz9ugSOmA/image%20png%20Dec%2019%202025%2001%2018%2005%207399%20PM.png)
 
 📌 Las etiquetas de contacto se mantienen incluso si el ticket se cierra.
 {% endstep %}
@@ -101,47 +103,47 @@ Puedes asignar etiquetas manualmente de dos maneras, según su tipo:
 
 ***
 
-#### Asignación automática de etiquetas
+**Asignación automática de etiquetas**
 
 Además de asignarlas manualmente, las etiquetas pueden **asignarse automáticamente durante una conversación**, según criterios definidos. Para esto, es necesario configurarlo dentro de un asistente de IA.
 
 ***
 
-#### Configurar etiquetas automáticas en un asistente
+**Configurar etiquetas automáticas en un asistente**
 
 {% stepper %}
 {% step %}
-#### Paso: Acceder al asistente
+**Paso: Acceder al asistente**
 
-1. [Ingresa al Asistente donde quieres que ocurra la asignación.](https://academy.vambe.ai/v1/docs/asistentes-ia-1)
+1. [Ingresa al Asistente donde quieres que ocurra la asignación.](https://academy.vambe.ai/asistentes-ia/como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial)
 {% endstep %}
 
 {% step %}
-#### Paso: Agregar bloque de Etiquetas
+**Paso: Agregar bloque de Etiquetas**
 
 * En el menú lateral del asistente, haz clic en **Agregar otro bloque**.
 
-![Agregar bloque](<../.gitbook/assets/image png Dec 19 2025 01 20 39 9509 PM.png>)
+![Agregar bloque](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/FW5Tmk1ZM0nwb1gD4t0r/image%20png%20Dec%2019%202025%2001%2020%2039%209509%20PM.png)
 
 * Selecciona el bloque **Etiquetas**.
   * Si no existe, haz clic en **Crear bloque**.
 
-![Crear bloque etiquetas](<../.gitbook/assets/image png Dec 19 2025 01 21 53 1714 PM.png>)
+![Crear bloque etiquetas](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/7EfgaXoVL2VzVwjmk8am/image%20png%20Dec%2019%202025%2001%2021%2053%201714%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Paso: Configurar el bloque
+**Paso: Configurar el bloque**
 
 Dentro del bloque:
 
 * **Lado izquierdo:** selecciona la etiqueta que se asignará.
 * **Lado derecho:** escribe la instrucción que explica _cuándo_ debe asignarse esa etiqueta.
 
-![Configurar bloque etiquetas](<../.gitbook/assets/image png Dec 19 2025 01 22 55 7532 PM.png>)
+![Configurar bloque etiquetas](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/SRzVE1BCh0Yil54C3NK8/image%20png%20Dec%2019%202025%2001%2022%2055%207532%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Paso: Guardar y activar
+**Paso: Guardar y activar**
 
 1. Haz clic en **Guardar**.
 2. Verifica que el bloque de etiquetas aparezca activo en el asistente.
@@ -150,7 +152,7 @@ Dentro del bloque:
 
 ***
 
-#### Ejemplo práctico (expandible)
+**Ejemplo práctico (expandible)**
 
 <details>
 
@@ -174,7 +176,7 @@ La IA evaluará la conversación y asignará la etiqueta correcta según lo que 
 
 ***
 
-#### ¿Qué ocurre después?
+**¿Qué ocurre después?**
 
 Una vez configurado:
 
@@ -186,7 +188,7 @@ Esto permite clasificar clientes y oportunidades sin intervención manual, mante
 
 ***
 
-#### Resumen rápido
+**Resumen rápido**
 
 * Las etiquetas sirven para clasificar **contactos o tickets**.
 * Primero debes **crear la etiqueta** y definir su tipo.

@@ -1,5 +1,7 @@
 # Cómo indicar al asistente dónde buscar información dentro de la Base de Conocimiento
 
+## Cómo indicar al asistente dónde buscar información dentro de la Base de Conocimiento
+
 Para que el asistente pueda entregar respuestas precisas, es fundamental enseñarle **cómo**, **cuándo** y **dónde** debe buscar información dentro de los documentos conectados a Vambe.
 
 Existen **dos métodos diferentes** para realizar búsquedas de información en la Base de conocimiento:
@@ -13,7 +15,7 @@ Antes de explicar cómo configurarlos, dos conceptos esenciales:
 
 ***
 
-#### Información que la IA puede y no puede leer
+**Información que la IA puede y no puede leer**
 
 * La IA **sí puede leer**:
   * Texto dentro de PDF (si el PDF es texto real).
@@ -29,7 +31,7 @@ Esto es crítico: si el documento no contiene texto real, la búsqueda fallará.
 
 ***
 
-### ¿Dónde deben configurarse las funciones de búsqueda?
+#### ¿Dónde deben configurarse las funciones de búsqueda?
 
 Las funciones de búsqueda **solo pueden configurarse en los siguientes bloques de instrucción:**
 
@@ -40,9 +42,9 @@ Esto ocurre porque son los únicos bloques que permiten agregar funciones.
 
 ***
 
-## Método 1: Vector Based Search (Búsqueda de Base Vectorial)
+### Método 1: Vector Based Search (Búsqueda de Base Vectorial)
 
-### ¿Qué hace este método?
+#### ¿Qué hace este método?
 
 Realiza una **búsqueda semántica**, comparando lo que escribe el cliente con el contenido de los documentos para encontrar el texto más parecido.
 
@@ -59,76 +61,76 @@ Ejemplo:
 
 {% stepper %}
 {% step %}
-#### Entrar al asistente
+**Entrar al asistente**
 
 * Dirigirse al embudo.
 * Abrir la etapa donde está el asistente.
 * Configuración → Editar asistente.
 
-(Enlace de referencia: https://academy.vambe.ai/es/academy/c%C3%B3mo-ingresar-al-asistente-de-inteligencia-artificial)
+(Enlace de referencia: https://academy.vambe.ai/asistentes-ia/como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial)
 {% endstep %}
 
 {% step %}
-#### Seleccionar el paso donde se ejecutará la búsqueda
+**Seleccionar el paso donde se ejecutará la búsqueda**
 
 Debe definirse **cuándo** queremos buscar la información.\
 Ejemplo: “Cuando el cliente pregunte por un producto”. Ese será el detonante de la búsqueda.
 
-![captura](<../.gitbook/assets/image png Nov 26 2025 04 00 08 3700 PM.png>)
+![captura](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/OiQ6PaGcskLYA9oW2JGB/image%20png%20Nov%2026%202025%2004%2000%2008%203700%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Agregar la función
+**Agregar la función**
 
 * Ir al paso correspondiente.
 * Clic en **Agregar función**.
 * Seleccionar **Búsqueda de base vectorial**.
 * Crear nueva función.
 
-![agregar función](<../.gitbook/assets/image png Nov 26 2025 04 00 55 7743 PM.png>) ![seleccionar](<../.gitbook/assets/image png Nov 26 2025 04 02 37 1573 PM.png>) ![crear](<../.gitbook/assets/image png Nov 26 2025 04 04 11 7474 PM.png>)
+![agregar función](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/oGStYgxbrIqocmX7EYW0/image%20png%20Nov%2026%202025%2004%2000%2055%207743%20PM.png) ![seleccionar](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/v6ZRZjneyUFTirk3uleU/image%20png%20Nov%2026%202025%2004%2002%2037%201573%20PM.png) ![crear](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/HtnwH3Cw9J5rqrHaHisE/image%20png%20Nov%2026%202025%2004%2004%2011%207474%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Configurar parámetros
+**Configurar parámetros**
 
 Dentro de la función se debe definir:
 
 *   Selección de documentos: seleccionar los documentos previamente cargados en la **Base de Conocimiento** desde donde la IA podrá extraer información.
 
-    ![selección de documentos](<../.gitbook/assets/image png Nov 26 2025 04 06 34 3787 PM.png>)
+    ![selección de documentos](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/rvg4ouapTVJRrgnsdjL0/image%20png%20Nov%2026%202025%2004%2006%2034%203787%20PM.png)
 *   Número de documentos o resultados: indica cuánta información traer desde los documentos. Ejemplo: **12** → los “12 fragmentos más similares”.
 
-    ![número de resultados](<../.gitbook/assets/image png Nov 26 2025 04 07 05 6971 PM.png>)
+    ![número de resultados](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/7ll3aN8eaUDfgN1bXCek/image%20png%20Nov%2026%202025%2004%2007%2005%206971%20PM.png)
 *   Umbral de similitud (opcional): define qué tan parecido debe ser el contenido encontrado (valor entre 0 y 1). Ejemplos:
 
     * 0.2 → búsqueda amplia.
     * 0.5 → coincidencias moderadas.
     * 0.8 → coincidencias muy estrictas.
 
-    ![umbral](<../.gitbook/assets/image png Nov 26 2025 04 07 33 0331 PM.png>)
+    ![umbral](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/mDQHaZ94YZTOMeN6k5wU/image%20png%20Nov%2026%202025%2004%2007%2033%200331%20PM.png)
 * Palabra clave de búsqueda: la pista que le damos a la IA. Ejemplo: “Usar el producto mencionado por el cliente como palabra clave de búsqueda.”
 *   Estructura del documento: describir cómo está organizado el documento para que la IA interprete correctamente la información.\
     Ejemplo: “Esta hoja tiene 5 columnas: nombre del producto, descripción, precio, categoría y stock.”
 
-    ![estructura](<../.gitbook/assets/image png Nov 26 2025 04 08 30 9283 PM.png>)
+    ![estructura](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/IKFmRjKA4LnSiOxmNCX9/image%20png%20Nov%2026%202025%2004%2008%2030%209283%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Guardar y usar la función
+**Guardar y usar la función**
 
 En el paso correspondiente escribir la instrucción para ejecutar la función, por ejemplo:
 
 > “Debes ejecutar la función buscar\_información\_producto.”
 
-![usar función](<../.gitbook/assets/image png Nov 26 2025 04 10 51 5922 PM.png>)
+![usar función](https://content.gitbook.com/content/jZ46rFloLOG1hJ2JQGi0/blobs/E26uUANRZ6UPfJXMeXf8/image%20png%20Nov%2026%202025%2004%2010%2051%205922%20PM.png)
 {% endstep %}
 {% endstepper %}
 
 ***
 
-## Método 2: Buscar fila en hoja (solo Google Sheets)
+### Método 2: Buscar fila en hoja (solo Google Sheets)
 
-### ¿Qué hace este método?
+#### ¿Qué hace este método?
 
 Permite buscar un valor exacto en una columna de Google Sheets y obtener toda la fila completa.
 
@@ -144,19 +146,19 @@ Ejemplo:
 
 {% stepper %}
 {% step %}
-#### Entrar al asistente
+**Entrar al asistente**
 
 Mismo procedimiento que en el método anterior.
 {% endstep %}
 
 {% step %}
-#### Seleccionar el paso donde ocurrirá la búsqueda
+**Seleccionar el paso donde ocurrirá la búsqueda**
 
 Ejemplo: “Cuando el cliente mencione un producto específico.”
 {% endstep %}
 
 {% step %}
-#### Crear la función
+**Crear la función**
 
 * Agregar función.
 * Seleccionar **Buscar fila en hoja**.
@@ -164,7 +166,7 @@ Ejemplo: “Cuando el cliente mencione un producto específico.”
 {% endstep %}
 
 {% step %}
-#### Configurar parámetros
+**Configurar parámetros**
 
 La función permite dos formas de conexión:
 
@@ -179,7 +181,7 @@ Luego:
 {% endstep %}
 {% endstepper %}
 
-### Errores comunes
+#### Errores comunes
 
 <details>
 
@@ -195,7 +197,7 @@ Luego:
 
 ***
 
-### Resumen claro de ambos métodos
+#### Resumen claro de ambos métodos
 
 | Método                  |          Tipo de búsqueda | Ideal para                                         | Limitaciones                    |
 | ----------------------- | ------------------------: | -------------------------------------------------- | ------------------------------- |
