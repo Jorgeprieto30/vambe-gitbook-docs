@@ -5,13 +5,15 @@ coverY: 0
 
 # Paso 5: Mejorar tus asistentes con PandaAI
 
+## Paso 5: Mejorar tus asistentes con PandaAI
+
 {% stepper %}
 {% step %}
-#### ¿Dónde se encuentra PandAI?
+**¿Dónde se encuentra PandAI?**
 
 PandAI está disponible en todo momento en la **esquina superior derecha** de Vambe.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 21 12 3653 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/YnvMSi8YyjIPxlDHsmH7/image%20png%20Dec%2024%202025%2001%2021%2012%203653%20PM.png)
 
 Desde ahí puedes abrirlo para:
 
@@ -24,7 +26,7 @@ PandAI está conectado a la información estructurada de tus asistentes y embudo
 {% endstep %}
 
 {% step %}
-#### ¿Para qué sirve PandAI?
+**¿Para qué sirve PandAI?**
 
 PandAI te puede ayudar en múltiples tareas, entre ellas:
 
@@ -48,7 +50,7 @@ PandAI puede generarlos según tu caso.
 {% endstep %}
 
 {% step %}
-#### Uso de PandAI dentro de cada bloque del asistente
+**Uso de PandAI dentro de cada bloque del asistente**
 
 Cada vez que edites un bloque —ya sea de identidad, instrucciones o información— verás un botón llamado:
 
@@ -66,7 +68,7 @@ Esto permite optimizar cada componente del asistente sin necesidad de rehacerlo 
 {% endstep %}
 
 {% step %}
-#### Usar PandAI para corregir información o validar datos
+**Usar PandAI para corregir información o validar datos**
 
 Si necesitas verificar si la información que estás cargando es correcta o consistente, puedes usar PandAI directamente.
 
@@ -79,11 +81,11 @@ Ejemplos de uso:
 
 PandAI puede leer información que le entregues, mejorarla y ayudarte a dejarla lista para colocarla en un bloque correspondiente. **Su motor mejorado garantiza una mayor precisión en estas correcciones y validaciones.**
 
-Enlace relacionado: [Cómo corregir a la IA cuando se equivoca en una conversación](https://academy.vambe.ai/v1/docs/c%C3%B3mo-corregir-a-la-ia-cuando-se-equivoca-en-una-conversaci%C3%B3n)
+Enlace relacionado: [Cómo corregir a la IA cuando se equivoca en una conversación](https://academy.vambe.ai/asistentes-ia/probar-asistente/como-corregir-a-la-ia-cuando-se-equivoca-en-una-conversacion)
 {% endstep %}
 
 {% step %}
-#### ¿Por qué PandAI es importante?
+**¿Por qué PandAI es importante?**
 
 Porque permite:
 

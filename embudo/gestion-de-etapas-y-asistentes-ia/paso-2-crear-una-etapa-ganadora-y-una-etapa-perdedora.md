@@ -5,13 +5,15 @@ coverY: 0
 
 # Paso 2: Crear una etapa ganadora y una etapa perdedora
 
+## Paso 2: Crear una etapa ganadora y una etapa perdedora
+
 En este artículo aprenderás cómo marcar una **etapa ganadora** y una **etapa perdedora** dentro de un embudo en Vambe, y para qué sirve cada una en la gestión y análisis de tus tickets.
 
 Este paso se realiza **después de haber creado las etapas del embudo** y es fundamental para que las métricas y reportes reflejen correctamente los resultados de tu operación.
 
 ***
 
-#### ¿Qué es una etapa ganadora?
+**¿Qué es una etapa ganadora?**
 
 Una **etapa ganadora** representa el punto en el que el cliente **cumplió el objetivo del embudo**.
 
@@ -26,7 +28,7 @@ Ejemplos comunes:
 
 ***
 
-#### ¿Qué es una etapa perdedora?
+**¿Qué es una etapa perdedora?**
 
 Una **etapa perdedora** representa el punto en el que el cliente **no cumplió el objetivo del embudo**.
 
@@ -41,7 +43,7 @@ Ejemplos comunes:
 
 ***
 
-#### Importante: ¿para qué sirve esto?
+**Importante: ¿para qué sirve esto?**
 
 Marcar etapas como ganadoras o perdedoras **no cierra el ticket automáticamente**.
 
@@ -54,114 +56,114 @@ Su función es **estadística y analítica**:
 
 ***
 
-#### Cómo marcar una etapa como ganadora
+**Cómo marcar una etapa como ganadora**
 
 {% stepper %}
 {% step %}
-#### Acceder al Embudo
+**Acceder al Embudo**
 
 Ingresa al **Embudo**.
 {% endstep %}
 
 {% step %}
-#### Seleccionar la etapa
+**Seleccionar la etapa**
 
 Ubica la etapa que consideras ganadora.
 {% endstep %}
 
 {% step %}
-#### Abrir opciones de la etapa
+**Abrir opciones de la etapa**
 
 Haz clic en la **tuerca (⚙️)** de esa etapa.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 23 12 8972 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/X8ij4khtK4iJqZHBc1yQ/image%20png%20Dec%2024%202025%2001%2023%2012%208972%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Cambiar tipo de etapa
+**Cambiar tipo de etapa**
 
 Selecciona **Cambiar tipo de etapa**.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 03 12 4230 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/EKxUFdsGj5r5tZ2VHIvm/image%20png%20Dec%2024%202025%2001%2003%2012%204230%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Elegir Etapa ganadora
+**Elegir Etapa ganadora**
 
 Elige **Etapa ganadora**.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 04 15 8985 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/uUHr4TtXZtV1b27O7B5Q/image%20png%20Dec%2024%202025%2001%2004%2015%208985%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Guardar
+**Guardar**
 
 Guardar. Desde este momento, cualquier ticket que entre a esta etapa será marcado como **ganado**.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 23 57 5098 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/YglwWvTvgyfAM0LXgJQc/image%20png%20Dec%2024%202025%2001%2023%2057%205098%20PM.png)
 {% endstep %}
 {% endstepper %}
 
 ***
 
-#### Cómo marcar una etapa como perdedora
+**Cómo marcar una etapa como perdedora**
 
 {% stepper %}
 {% step %}
-#### Acceder al Embudo
+**Acceder al Embudo**
 
 Ingresa al **Embudo**.
 {% endstep %}
 
 {% step %}
-#### Seleccionar la etapa
+**Seleccionar la etapa**
 
 Ubica la etapa que consideras perdedora.
 {% endstep %}
 
 {% step %}
-#### Abrir opciones de la etapa
+**Abrir opciones de la etapa**
 
 Haz clic en la **tuerca (⚙️)** de esa etapa.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 26 17 5041 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/i4v1JPyivLRmerZn5vBl/image%20png%20Dec%2024%202025%2001%2026%2017%205041%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Cambiar tipo de etapa
+**Cambiar tipo de etapa**
 
 Selecciona **Cambiar tipo de etapa**.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 08 35 4697 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/cWyTGWu206UleGTKWcVU/image%20png%20Dec%2024%202025%2001%2008%2035%204697%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Elegir Etapa perdedora
+**Elegir Etapa perdedora**
 
 Elige **Etapa perdedora**.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 09 01 9133 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/JFlo8F0sAmgfJ6cEnlXp/image%20png%20Dec%2024%202025%2001%2009%2001%209133%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Guardar
+**Guardar**
 
 Guardar. Desde este momento, cualquier ticket que entre a esta etapa será marcado como **perdido**.
 
-![](<../.gitbook/assets/image png Dec 24 2025 01 48 22 8600 PM.png>)
+![](https://content.gitbook.com/content/4nRFeKJn1URTfeH8tYXz/blobs/xIqHG37R7uAC830cA67k/image%20png%20Dec%2024%202025%2001%2048%2022%208600%20PM.png)
 {% endstep %}
 {% endstepper %}
 
 ***
 
-#### Buenas prácticas
+**Buenas prácticas**
 
 * ✅ Tener **una o más etapas ganadoras**, si tu proceso lo requiere.
 * ✅ Tener **al menos una etapa perdedora clara**.
 
 ***
 
-#### ¿Y cómo se cierra un ticket?
+**¿Y cómo se cierra un ticket?**
 
 <details>
 
@@ -170,13 +172,13 @@ Guardar. Desde este momento, cualquier ticket que entre a esta etapa será marca
 Marcar una etapa como ganadora o perdedora **no equivale a cerrar un ticket**.
 
 Si quieres aprender cómo cerrar tickets correctamente, revisa el artículo:\
-[Cómo y cuándo cerrar un ticket (ganado o perdido)](https://academy.vambe.ai/v1/docs/c%C3%B3mo-y-cu%C3%A1ndo-cerrar-un-ticket-ganado-o-perdido)
+[Cómo y cuándo cerrar un ticket (ganado o perdido)](https://academy.vambe.ai/embudo/gestion-de-tickets/como-y-cuando-cerrar-un-ticket-ganado-o-perdido)
 
 </details>
 
 ***
 
-#### Resumen
+**Resumen**
 
 * La **etapa ganadora** marca tickets exitosos.
 * La **etapa perdedora** marca tickets no exitosos.
