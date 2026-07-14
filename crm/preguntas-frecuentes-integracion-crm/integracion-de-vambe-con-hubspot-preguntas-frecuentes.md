@@ -12,18 +12,6 @@ No se envían conversaciones completas ni intenciones de compra como tal, **a me
 
 ***
 
-#### ¿Cómo obtengo mi Client ID (Vambe ID) para la integración con HubSpot?
-
-Para integrar Vambe con HubSpot, necesitarás tu **Client ID**, también conocido como **Vambe ID**. Este identificador es crucial para vincular correctamente tu cuenta de Vambe con tu CRM.
-
-Actualmente, puedes obtener tu Client ID de la siguiente manera:
-
-1. Accede a la nueva vista de tu Backoffice de Vambe.
-2. Busca el icono de llave ('IDs') en la esquina superior derecha de la pantalla.
-3. Haz clic en el icono para visualizar y copiar tu Client ID.
-
-***
-
 #### ¿Vambe puede crear contactos nuevos en HubSpot?
 
 Sí. Vambe puede **crear nuevos contactos** en HubSpot de forma automática.
