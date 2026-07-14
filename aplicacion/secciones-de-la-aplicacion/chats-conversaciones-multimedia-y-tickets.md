@@ -9,11 +9,13 @@ description: >-
 
 ## Chats: Conversaciones, Multimedia y Tickets
 
+### Chats: Conversaciones, Multimedia y Tickets
+
 Para acceder, pulsa el botón "Conversaciones" en el Home o el icono de globo de chat en la barra de navegación inferior.
 
 <figure><img src="https://1643391428-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FxkuEBCZ4rA1IWpvT6sRx%2Fuploads%2FEArXXIxSk6PiBxVMIK5k%2Fimage.png?alt=media&#x26;token=68c78f78-d559-43ff-8061-0d2185da0ab3" alt=""><figcaption></figcaption></figure>
 
-### Conceptos clave: contacto, ticket, conversación y chat
+#### Conceptos clave: contacto, ticket, conversación y chat
 
 Antes de entrar a la gestión, conviene tener claros cuatro términos que usamos en toda la aplicación. Se relacionan entre sí, pero no significan lo mismo.
 
@@ -28,7 +30,7 @@ En una frase: un **contacto** puede tener varios **tickets** a lo largo del tiem
 
 ***
 
-### 1. Organización y Filtros
+#### 1. Organización y Filtros
 
 Vambe te ofrece tres niveles de filtrado para que encuentres exactamente lo que buscas sin distracciones.
 
@@ -65,7 +67,7 @@ A la derecha de la barra de búsqueda encontrarás el botón de Configuración d
 * **Tipo de Etapa**:
   * _Todas / Etapa IA / Etapa humana._
 
-### 2. La Tarjeta del Ticket: Información a primera vista
+#### 2. La Tarjeta del Ticket: Información a primera vista
 
 <figure><img src="https://1643391428-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FxkuEBCZ4rA1IWpvT6sRx%2Fuploads%2FzgaMRxJtkXfzNVujGbjd%2Fimage.png?alt=media&#x26;token=804ebbc0-3076-447f-9bc7-b54fb027da93" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -74,14 +76,14 @@ Antes de abrir una conversación, la tarjeta del cliente en la lista ya te da to
 * **Identidad**: Nombre del cliente y sus iniciales.
 * **Estado**: Etiqueta visual de "Atendido" o "No atendido" (en rojo).
 * **Canal**: Icono pequeño indicando la red social (ej: logo de WhatsApp).
-* **Agente**: Círculo pequeño con las iniciales del agente asignado al caso (ej: _YA_). Los agentes pueden ser asignados automáticamente mediante estrategias avanzadas basadas en reglas y análisis de IA contextual. [Más información sobre asignación automática aquí.](https://github.com/Jorgeprieto30/vambe-gitbook-docs/blob/main/aplicacion/secciones-de-la-aplicacion/usuarios/notificaciones/como-elegir-que-agente-recibe-un-ticket-y-activar-notificaciones-automaticas.md)
+* **Agente**: Círculo pequeño con las iniciales del agente asignado al caso (ej: _YA_). Los agentes pueden ser asignados automáticamente mediante estrategias avanzadas basadas en reglas y análisis de IA contextual. [Más información sobre asignación automática aquí.](https://academy.vambe.ai/usuarios/notificaciones/como-elegir-que-agente-recibe-un-ticket-y-activar-notificaciones-automaticas)
 * **Contexto**:
   * Último mensaje enviado por el cliente.
   * Hora del último mensaje.
   * Etiquetas (Tags): Visualización rápida de etiquetas importantes (ej: _Chile_, _Soporte_).
 * **Etapa Actual**: Una barra azul indica en qué etapa del embudo se encuentra (ej: _Nuevo Ticket - Soporte_).
 
-### 3. Dentro de la Conversación
+#### 3. Dentro de la Conversación
 
 <figure><img src="https://1643391428-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FxkuEBCZ4rA1IWpvT6sRx%2Fuploads%2FpJsiPepMx99smZLoqHb0%2Fimage.png?alt=media&#x26;token=8ec7e4b4-4446-4fbb-afef-3db2dfe09180" alt="" width="209"><figcaption></figcaption></figure>
 
@@ -113,7 +115,7 @@ A la izquierda de la barra de escritura encontrarás un botón con el símbolo (
 * 📹 Videos: Ahora puedes enviar videos de 5 o 10 segundos para añadir dinamismo a tus conversaciones. No hay límite en el número de secuencias o variaciones de video que puedes usar.
 * 📁 Documentos: Te permite adjuntar y enviar archivos PDF u otros documentos almacenados en tu teléfono.
 
-### 4. Perfil del Cliente
+#### 4. Perfil del Cliente
 
 Si necesitas más detalles o quieres cambiar el estado del cliente manualmente, pulsa sobre el Nombre del Cliente en la parte superior del chat. Esto abrirá la ficha de perfil.
 
