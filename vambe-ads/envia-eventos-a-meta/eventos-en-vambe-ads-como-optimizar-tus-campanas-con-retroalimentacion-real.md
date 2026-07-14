@@ -5,7 +5,9 @@ coverY: 0
 
 # Eventos en Vambe Ads: cómo optimizar tus campañas con retroalimentación real
 
-## ¿Qué es la funcionalidad de Eventos en Vambe Ads?
+## Eventos en Vambe Ads: cómo optimizar tus campañas con retroalimentación real
+
+### ¿Qué es la funcionalidad de Eventos en Vambe Ads?
 
 La funcionalidad de **Eventos** permite enviar información de retroalimentación directamente a los píxeles de tus plataformas publicitarias, como **Meta Ads** y **TikTok Ads** (Google Ads estará disponible próximamente).
 
@@ -13,10 +15,10 @@ Estos eventos informan a las plataformas cuándo ocurren acciones reales dentro 
 
 {% hint style="info" %}
 Requisito previo: antes de configurar eventos, debes tener tu píxel correctamente conectado.\
-Si aún no lo has hecho, revisa: 👉 [Cómo conectar el Meta Pixel en Vambe Ads](https://academy.vambe.ai/docs/c%C3%B3mo-conectar-el-pixel-de-meta-a-vambe)
+Si aún no lo has hecho, revisa: 👉 [Cómo conectar el Meta Pixel en Vambe Ads](https://academy.vambe.ai/vambe-ads/conecta-tus-cuentas/como-conectar-el-meta-pixel-capi-en-vambe-ads)
 {% endhint %}
 
-## ¿Para qué sirven los eventos?
+### ¿Para qué sirven los eventos?
 
 Los eventos permiten que tus campañas publicitarias se optimicen automáticamente en base a lo que realmente importa: **acciones reales de tus leads**.
 
@@ -31,26 +33,26 @@ Beneficios principales
 
 {% embed url="https://www.youtube.com/watch?v=WEYz7obYtQE" %}
 
-## Paso a paso: cómo configurar Eventos en Vambe Ads
+### Paso a paso: cómo configurar Eventos en Vambe Ads
 
 {% stepper %}
 {% step %}
-#### Acceder a la sección de Eventos
+**Acceder a la sección de Eventos**
 
 (Video: 1:07 – 1:14)
 
-* [Ingresa a Vambe Ads](https://academy.vambe.ai/v1/docs/c%C3%B3mo-ingresar-a-vambe-ads):
+* [Ingresa a Vambe Ads](https://academy.vambe.ai/vambe-ads/como-ingresar-a-vambe-ads):
 * En el menú lateral izquierdo, haz clic en **Eventos**
 
-![](../.gitbook/assets/image\(123\).png)
+![](https://content.gitbook.com/content/BeqJYnB10ImYM5stMls3/blobs/bAzMquZ6xb2Jf50qHNd0/image\(123\).png)
 
 * Si es tu primera vez, verás la vista vacía de eventos
 
-![](../.gitbook/assets/image\(124\).png)
+![](https://content.gitbook.com/content/BeqJYnB10ImYM5stMls3/blobs/KZhW3CW8UyRO9Upg8zKH/image\(124\).png)
 {% endstep %}
 
 {% step %}
-#### Conectar tu píxel (si no lo has hecho)
+**Conectar tu píxel (si no lo has hecho)**
 
 (Video: 1:17 – 1:22)
 
@@ -58,11 +60,11 @@ Beneficios principales
 * Serás redirigido a la vista de **Workspaces**
 * Aquí se encuentran todas las configuraciones de integraciones
 
-(Véase también: https://academy.vambe.ai/v1/docs/c%C3%B3mo-conectar-el-pixel-de-meta-a-vambe)
+(Véase también: https://academy.vambe.ai/vambe-ads/conecta-tus-cuentas/como-conectar-el-meta-pixel-capi-en-vambe-ads)
 {% endstep %}
 
 {% step %}
-#### Configurar la conexión del píxel
+**Configurar la conexión del píxel**
 
 (Video: 1:29 – 1:48)
 
@@ -73,7 +75,7 @@ Beneficios principales
 {% endstep %}
 
 {% step %}
-#### Ingresar las credenciales del píxel
+**Ingresar las credenciales del píxel**
 
 (Video: 1:56 – 2:14)
 
@@ -85,22 +87,22 @@ Beneficios principales
 {% endstep %}
 
 {% step %}
-#### Configurar eventos específicos
+**Configurar eventos específicos**
 
 (Video: 2:18 – 2:41)
 
 * Vuelve a la vista de **Eventos**
 * Selecciona el **embudo (pipeline)** donde quieres trabajar
 
-![](../.gitbook/assets/image\(125\).png)
+![](https://content.gitbook.com/content/BeqJYnB10ImYM5stMls3/blobs/BxDDNEoUh9DtiJUFmrsx/image\(125\).png)
 
 * Define el evento que deseas enviar
 
-![](../.gitbook/assets/image\(126\).png)
+![](https://content.gitbook.com/content/BeqJYnB10ImYM5stMls3/blobs/tFlhw7AVy02BnLzZFBiT/image\(126\).png)
 
 Ejemplo práctico:
 
-![](../.gitbook/assets/image\(127\).png)
+![](https://content.gitbook.com/content/BeqJYnB10ImYM5stMls3/blobs/oYPZxuvUKqZPhf8DHzMI/image\(127\).png)
 
 * Evento: **Cambio de etapa**
 * Etapa: _Schedule Leads_
@@ -108,7 +110,7 @@ Ejemplo práctico:
 {% endstep %}
 
 {% step %}
-#### Guardar y activar el evento
+**Guardar y activar el evento**
 
 (Video: 2:48 – 2:58)
 
@@ -116,11 +118,11 @@ Ejemplo práctico:
 
 A partir de ese momento, cada contacto que entre a la etapa configurada enviará automáticamente el evento a **Meta** y **TikTok**.
 
-![](../.gitbook/assets/image\(128\).png)
+![](https://content.gitbook.com/content/BeqJYnB10ImYM5stMls3/blobs/E002aWgT7EAWtLGpRHZo/image\(128\).png)
 {% endstep %}
 
 {% step %}
-#### Probar la configuración (Test Event)
+**Probar la configuración (Test Event)**
 
 (Video: 3:18 – 3:37)
 
@@ -132,7 +134,7 @@ A partir de ese momento, cada contacto que entre a la etapa configurada enviará
 {% endstep %}
 
 {% step %}
-#### Monitoreo y seguimiento de eventos
+**Monitoreo y seguimiento de eventos**
 
 (Video: 3:41 – 4:09)
 
@@ -141,13 +143,13 @@ A partir de ese momento, cada contacto que entre a la etapa configurada enviará
 {% endstep %}
 {% endstepper %}
 
-## Tipos de eventos disponibles
+### Tipos de eventos disponibles
 
 (Video: 3:08 – 3:16)
 
 Vambe Ads permite configurar distintos tipos de eventos según tu proceso comercial (por ejemplo, agendamientos, avances de etapa, entre otros). Se recomienda analizar qué tipo de evento se ajusta mejor a la estrategia de tu negocio antes de configurarlos.
 
-## Resultados esperados al usar Eventos
+### Resultados esperados al usar Eventos
 
 (Video: 3:55 – 4:07)
 
@@ -158,13 +160,13 @@ Una correcta configuración de eventos permite:
 * Optimizar automáticamente los algoritmos publicitarios
 * Mejorar la eficiencia del gasto publicitario
 
-## Notas importantes
+### Notas importantes
 
 * Google Ads estará disponible próximamente
 * Configura solo eventos relevantes para tu proceso real
 * Usa siempre **Test Event** para validar
 * Los eventos se envían automáticamente una vez activos
 
-## Conclusión
+### Conclusión
 
 La funcionalidad de **Eventos en Vambe Ads** es una herramienta clave para conectar tus campañas publicitarias con lo que realmente ocurre dentro de tu embudo. Al enviar retroalimentación directa a los píxeles, las plataformas publicitarias dejan de optimizar por clics y comienzan a optimizar por **resultados reales**, permitiéndote reducir costos y mejorar la calidad de tus leads.
