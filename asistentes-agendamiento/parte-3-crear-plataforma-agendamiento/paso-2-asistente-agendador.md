@@ -5,6 +5,8 @@ coverY: 0
 
 # Paso 2: Asistente Agendador
 
+## Paso 2: Asistente Agendador
+
 En este artículo aprenderás a crear y configurar el **asistente de agendamiento**, que es el encargado de **buscar disponibilidad, confirmar datos del paciente y agendar una cita** de forma automática.
 
 Este asistente se asigna a la etapa **Agendamiento** del embudo y trabaja en conjunto con el asistente de “Información y dudas generales” creado en la Parte 1.
@@ -19,12 +21,12 @@ Antes de comenzar, asegúrate de que:
 
 {% stepper %}
 {% step %}
-### Crear el asistente
+#### Crear el asistente
 
 1. Ve al menú lateral izquierdo y entra en **Asistentes**.
 2. Haz clic en **Crear asistente** (arriba a la derecha).
 
-![](<../.gitbook/assets/image (7).png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/T4zJbdX4mLnbcCL4rZDD/image.png)
 
 3. Asigna un **nombre claro** (por ejemplo: _Info y dudas generales_).
 4. Selecciona el modelo de inteligencia artificial recomendado según tu plan.
@@ -32,15 +34,15 @@ Antes de comenzar, asegúrate de que:
 
 Una vez creado, comenzaremos a configurar sus bloques.\
 Si ya tienes tu asistente creado, accede a:\
-https://academy.vambe.ai/c%C3%B3mo-ingresar-al-asistente-de-inteligencia-artificial?hsLang=es
+https://academy.vambe.ai/asistentes-ia/como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial
 
 Para agregar bloques ve al menú de la izquierda y haz click en "agregar bloque".
 
-![](../.gitbook/assets/image\(1\).png)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/qDdOReSLGShTNh0a7Jpb/image\(1\).png)
 {% endstep %}
 
 {% step %}
-### Configurar los bloques de identidad (bloques compartidos)
+#### Configurar los bloques de identidad (bloques compartidos)
 
 En este asistente reutilizaremos varios bloques del asistente anterior para mantener coherencia y ahorrar tiempo.
 
@@ -48,14 +50,14 @@ En este asistente reutilizaremos varios bloques del asistente anterior para mant
 Al reutilizar un bloque existente, este pasa a ser **compartido**. Cualquier cambio que hagas en ese bloque se reflejará automáticamente en todos los asistentes que lo usen.
 {% endhint %}
 
-#### Bloque de Personificación (compartido)
+**Bloque de Personificación (compartido)**
 
 * Dentro del asistente, haz clic en **Agregar otro bloque**.
 * Selecciona **Personificación**.
 * Elige el mismo bloque de personificación usado en el asistente de la Parte 1.
 * Click en "Usar bloque compartido".
 
-#### Bloque de Objetivo (nuevo para agendamiento)
+**Bloque de Objetivo (nuevo para agendamiento)**
 
 Objetivo recomendado para el asistente de agendamiento:
 
@@ -64,9 +66,9 @@ Objetivo recomendado para el asistente de agendamiento:
 * Agendar citas correctamente en la plataforma de reserva.
 * Entregar indicaciones básicas posteriores al agendamiento.
 
-![](<../.gitbook/assets/image png Dec 22 2025 01 42 57 4193 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/OMDsZmPvlebOza1RSGfk/image%20png%20Dec%2022%202025%2001%2042%2057%204193%20PM.png)
 
-#### Bloque de Formato de respuesta (compartido)
+**Bloque de Formato de respuesta (compartido)**
 
 * Agrega el bloque **Formato de respuesta**.
 * Selecciona el mismo bloque utilizado en el asistente anterior.
@@ -75,11 +77,11 @@ Con esto finalizamos los **bloques de identidad**.
 {% endstep %}
 
 {% step %}
-### Configurar los bloques de instrucción
+#### Configurar los bloques de instrucción
 
 Aquí definimos **cómo actúa el asistente** y en qué orden.
 
-#### Bloque: Pasos a seguir
+**Bloque: Pasos a seguir**
 
 Este bloque es el flujo principal del asistente de agendamiento. Incluye llamadas a funciones clave como:
 
@@ -93,17 +95,15 @@ Tip: en el subpaso 2.1 puedes definir qué datos pedir al cliente (RUT, correo, 
 
 Se recomienda agregar una imagen de ejemplo con la estructura completa de los pasos.
 
+<figure><img src="https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/qfNh41E2Qb8I9EfRHwYY/image%20png%20Dec%2022%202025%2001%2044%2020%207010%20PM.png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../.gitbook/assets/image png Dec 22 2025 01 44 20 7010 PM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image png Dec 22 2025 01 44 59 4038 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/y0mHAp0VXZOP4GZ1F43l/image%20png%20Dec%2022%202025%2001%2044%2059%204038%20PM.png" alt=""><figcaption></figcaption></figure>
 
 <br>
 
 Importante: una vez agendado, debes ejecutar la función "Cambio de etapa a agendados" para que el cliente pase al siguiente asistente una vez agendado.
 
-#### Bloque: Caso posible “Paso a Agendados” (compartido)
+**Bloque: Caso posible “Paso a Agendados” (compartido)**
 
 * Usa el mismo bloque compartido creado en la Parte 1.
 * Detecta clientes que:
@@ -112,7 +112,7 @@ Importante: una vez agendado, debes ejecutar la función "Cambio de etapa a agen
   * Preguntan por su hora.\
     Acción: Ejecutar la función **Cambiar de etapa a Agendados**.
 
-#### Bloque: Caso posible “Todos” (compartido)
+**Bloque: Caso posible “Todos” (compartido)**
 
 * Reutilízalo también. Detecta:
   * Dudas complejas.
@@ -122,7 +122,7 @@ Importante: una vez agendado, debes ejecutar la función "Cambio de etapa a agen
 
 Si tienes dudas sobre estos bloques, referencia el artículo de la **Parte 1**.
 
-#### Bloque: No hacer (compartido)
+**Bloque: No hacer (compartido)**
 
 Reutiliza el mismo bloque de límites del asistente inicial, por ejemplo:
 
@@ -133,7 +133,7 @@ Reutiliza el mismo bloque de límites del asistente inicial, por ejemplo:
 {% endstep %}
 
 {% step %}
-### Bloques de información (compartidos)
+#### Bloques de información (compartidos)
 
 En este asistente también se utilizan los mismos bloques de información:
 
@@ -146,19 +146,19 @@ Si necesitas ayuda para crear estos bloques, referencia el artículo de la **Par
 {% endstep %}
 
 {% step %}
-### Bloque nuevo – Aplicaciones de reserva
+#### Bloque nuevo – Aplicaciones de reserva
 
 Este es el **único bloque nuevo** de este asistente.
 
-#### Configuración del bloque
+**Configuración del bloque**
 
 1. Agrega el bloque **Aplicaciones de reserva**.
 
-![](<../.gitbook/assets/image png Dec 22 2025 01 47 40 0962 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/J4ytSGUQRWjzNe2SuRKu/image%20png%20Dec%2022%202025%2001%2047%2040%200962%20PM.png)
 
 2.  **Pestaña Configuración**<br>
 
-    <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2F1iVRb4GsFm71CgDx11oA%2Fimage.png?alt=media&#x26;token=342b91b4-f28e-46e1-93e4-94ae50895115" alt=""><figcaption></figcaption></figure>
 
     * Selecciona el **token** de la clínica.
     * Selecciona la **Sucursal**.
@@ -167,12 +167,12 @@ Este es el **único bloque nuevo** de este asistente.
 
     **Pestaña Servicios**<br>
 
-    <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2FFJ844UtPuRfuwEwuPGVd%2Fimage.png?alt=media&#x26;token=6195978f-5016-4caa-a8b4-b2a7b0bf6e78" alt=""><figcaption></figcaption></figure>
 
     * Aquí verás todos los tratamientos y profesionales cargados desde tu plataforma de agenda.
     * Usa la barra de búsqueda para encontrar rápidamente un tratamiento o profesional específico.
 
-    ### Sincronización
+    #### Sincronización
 
     Una vez completada la configuración, haz clic en **Sincronizar**.<br>
 
@@ -188,7 +188,7 @@ Este es el **único bloque nuevo** de este asistente.
     * Profesionales
     * Disponibilidad
 
-#### Configuración de ejecución de funciones
+**Configuración de ejecución de funciones**
 
 En la parte inferior del bloque deberás definir:
 
@@ -198,15 +198,15 @@ En la parte inferior del bloque deberás definir:
 
 Se recomienda incluir una imagen de referencia con esta configuración.
 
-![](<../.gitbook/assets/image png Dec 22 2025 01 59 20 4468 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/URQ0AnlqzbfP1VaEuMUd/image%20png%20Dec%2022%202025%2001%2059%2020%204468%20PM.png)
 {% endstep %}
 
 {% step %}
-### Guardar y asignar el asistente a la etapa
+#### Guardar y asignar el asistente a la etapa
 
 Tu asistente Agendador ya está creado. Debería verse así:
 
-![](<../.gitbook/assets/image png Dec 22 2025 02 01 45 2630 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/5P4hYFNKoE3DuvPfKNOI/image%20png%20Dec%2022%202025%2002%2001%2045%202630%20PM.png)
 
 Pasos para asignarlo:
 
@@ -218,6 +218,6 @@ Pasos para asignarlo:
 6. Selecciona el asistente de agendamiento.
 7. Guarda los cambios.
 
-Si tienes dudas de cómo asignar el asistente a una etapa, puedes ir leer este artículo dando click [aquí](https://academy.vambe.ai/c%C3%B3mo-asignar-un-asistente-de-inteligencia-artificial-a-una-etapa-del-embudo)
+Si tienes dudas de cómo asignar el asistente a una etapa, puedes ir leer este artículo dando click [aquí](https://academy.vambe.ai/embudo/gestion-de-etapas-y-asistentes-ia/paso-3-asignar-un-asistente-de-ia-a-una-etapa)
 {% endstep %}
 {% endstepper %}

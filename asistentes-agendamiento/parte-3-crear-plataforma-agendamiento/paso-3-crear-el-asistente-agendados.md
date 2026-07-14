@@ -5,6 +5,8 @@ coverY: 0
 
 # Paso 3: Crear el asistente Agendados
 
+## Paso 3: Crear el asistente Agendados
+
 En este artículo aprenderás a crear y configurar el asistente de **Agendados**, el cual se encarga de atender a clientes que **ya tienen una cita creada** y escriben para:
 
 * Confirmar su cita
@@ -22,10 +24,10 @@ Antes de comenzar
   * Agendamiento
   * Agendados
   * Ayuda humana\
-    (Referencia [aquí](https://academy.vambe.ai/paso-0-crear-las-etapas))
+    (Referencia [aquí](https://academy.vambe.ai/asistentes-agendamiento/parte-3-crear-plataforma-agendamiento/paso-0-crear-las-etapas))
 * Haber creado y configurado:
-  * [El asistente Información y dudas generales](https://academy.vambe.ai/paso-1-c%C3%B3mo-crear-tu-primer-asistente-de-agendamiento)
-  * [El asistente Agendamiento](https://academy.vambe.ai/paso-1-c%C3%B3mo-crear-tu-primer-asistente-de-agendamiento)
+  * [El asistente Información y dudas generales](https://academy.vambe.ai/asistentes-agendamiento/parte-3-crear-plataforma-agendamiento/paso-1-como-crear-tu-primer-asistente-de-agendamiento)
+  * [El asistente Agendamiento](https://academy.vambe.ai/asistentes-agendamiento/parte-3-crear-plataforma-agendamiento/paso-2-asistente-agendador)
 
 El asistente que construiremos en este artículo se asigna **exclusivamente a la etapa Agendados**.
 
@@ -36,32 +38,32 @@ El asistente Agendados no debe tener un bloque de “Pasos a seguir”. Los clie
 
 {% stepper %}
 {% step %}
-### Paso 1: Crear el asistente
+#### Paso 1: Crear el asistente
 
 1. Ve al menú lateral izquierdo y entra en **Asistentes**.
 2. Haz clic en **Crear asistente** (arriba a la derecha).
 
-![](../.gitbook/assets/image\(2\).png)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/809SgPjB5QBriX1LnY2N/image\(2\).png)
 
 3. Asigna un **nombre claro** (por ejemplo: _Info y dudas generales_).
 4. Selecciona el modelo de inteligencia artificial recomendado según tu plan.
 5. Haz clic en **Crear asistente**.
 
 Una vez creado, comenzaremos a configurar sus bloques.\
-Si ya tienes tu asistente creado, debes acceder a él [aquí](https://academy.vambe.ai/c%C3%B3mo-ingresar-al-asistente-de-inteligencia-artificial?hsLang=es)
+Si ya tienes tu asistente creado, debes acceder a él [aquí](https://academy.vambe.ai/asistentes-ia/como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial)
 {% endstep %}
 
 {% step %}
-### Paso 2: Configurar los bloques de identidad
+#### Paso 2: Configurar los bloques de identidad
 
-#### Bloque de Personificación (bloque compartido)
+**Bloque de Personificación (bloque compartido)**
 
 * Agrega un bloque de tipo **Personificación**.
 * Selecciona el **mismo bloque** utilizado en los asistentes anteriores.
 
 Esto asegura consistencia en el tono, estilo y personalidad del asistente en todo el embudo.
 
-#### Bloque de Objetivo (bloque nuevo)
+**Bloque de Objetivo (bloque nuevo)**
 
 Crea un nuevo bloque de tipo **Objetivo** con los siguientes puntos:
 
@@ -69,13 +71,13 @@ Crea un nuevo bloque de tipo **Objetivo** con los siguientes puntos:
 * **Gestionar correctamente el estado de la cita**, confirmándola cuando el cliente lo indique y guiando el proceso de cancelación o reprogramación según la intención expresada.
 * Derivar de forma controlada a Agendamiento, enviando al cliente a la etapa correspondiente cuando quiera agendar una nueva cita, evitando reprocesos o conflictos con citas existentes.
 
-![](<../.gitbook/assets/image png Dec 22 2025 02 47 28 0363 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/gZsciDgI2P28gy8J2Ps6/image%20png%20Dec%2022%202025%2002%2047%2028%200363%20PM.png)
 
 {% hint style="warning" %}
 Este asistente **no agenda nuevas citas desde cero**. Si un cliente desea agendar una nueva cita, debe ser derivado al asistente de **Agendamiento**.
 {% endhint %}
 
-#### Bloque de Formato de respuesta (bloque compartido)
+**Bloque de Formato de respuesta (bloque compartido)**
 
 * Agrega un bloque de **Formato de respuesta**.
 * Selecciona el mismo bloque usado en los asistentes anteriores.
@@ -84,16 +86,16 @@ Con esto finalizamos los bloques de identidad.
 {% endstep %}
 
 {% step %}
-### Paso 3: Configurar los bloques de instrucción
+#### Paso 3: Configurar los bloques de instrucción
 
-#### Bloque de Casos posibles “Todos” (bloque compartido)
+**Bloque de Casos posibles “Todos” (bloque compartido)**
 
 * Agrega el bloque **Todos**, que debe existir en todos los asistentes.
 * Cubre situaciones como dudas muy complejas, solicitud explícita de hablar con una persona y casos sensibles o urgentes.
 
 Acción: Ejecutar la función **Cambiar de etapa a Ayuda humana**, informando que un agente continuará la atención en horario hábil.
 
-#### Bloque de Casos posibles “Casos: Agendados” (bloque nuevo)
+**Bloque de Casos posibles “Casos: Agendados” (bloque nuevo)**
 
 Este es el bloque más importante de este asistente.
 
@@ -118,15 +120,13 @@ Lado derecho (acciones):
 
 Es fundamental que las funciones estén correctamente creadas y asociadas a cada caso, siguiendo la estructura recomendada como se muestra en las imágenes:
 
-![](/broken/files/7e3c0028f24ceba60521e6413b32abf90d27c3f2)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/4Z42XQ0TYHdqWv8ifD0s/image%20png%20Dec%2022%202025%2002%2049%2019%200965%20PM.png)
 
-![](<../.gitbook/assets/image png Dec 22 2025 02 49 19 0965 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/1vUlfRHRURGUOn2rnRTB/image%20png%20Dec%2022%202025%2002%2049%2041%200936%20PM.png)
 
-![](<../.gitbook/assets/image png Dec 22 2025 02 49 41 0936 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/AuUEikMLtna3rItZxZyZ/image%20png%20Dec%2022%202025%2002%2049%2054%205815%20PM.png)
 
-![](<../.gitbook/assets/image png Dec 22 2025 02 49 54 5815 PM.png>)
-
-#### Bloque “No hacer” (bloque compartido)
+**Bloque “No hacer” (bloque compartido)**
 
 * Agrega el bloque compartido de **No hacer**, que define los límites del asistente.
 
@@ -139,7 +139,7 @@ Ejemplos:
 {% endstep %}
 
 {% step %}
-### Paso 4: Bloques de información
+#### Paso 4: Bloques de información
 
 Agrega los mismos bloques de información utilizados en los asistentes anteriores, por ejemplo:
 
@@ -155,11 +155,11 @@ El asistente **Agendados no agenda nuevas citas**. Para eso, siempre debe deriva
 
 Así se verá una vez agregados todos los bloques:
 
-![](<../.gitbook/assets/image png Dec 22 2025 02 52 16 8660 PM.png>)
+![](https://content.gitbook.com/content/hQjV55x4bDSryBoT4FYC/blobs/qQ5gO8myGrDbEmyc9EJz/image%20png%20Dec%2022%202025%2002%2052%2016%208660%20PM.png)
 {% endstep %}
 
 {% step %}
-### Paso 5: Guardar y asignar el asistente a la etapa Agendados
+#### Paso 5: Guardar y asignar el asistente a la etapa Agendados
 
 1. Haz clic en **Guardar** dentro del asistente.
 2. Ve al **Embudo**.
@@ -170,13 +170,13 @@ Así se verá una vez agregados todos los bloques:
 7. Guarda los cambios y vuelve al embudo.
 
 Si tienes dudas de cómo asignar el asistente a una etapa, lee:\
-https://academy.vambe.ai/c%C3%B3mo-asignar-un-asistente-de-inteligencia-artificial-a-una-etapa-del-embudo?hsLang=es
+https://academy.vambe.ai/embudo/gestion-de-etapas-y-asistentes-ia/paso-3-asignar-un-asistente-de-ia-a-una-etapa
 
 ✅ Listo.\
 Ya tienes configurado el asistente **Agendados**, preparado para gestionar confirmaciones, reagendamientos, cancelaciones y consultas posteriores a la cita.
 
 Como siguiente paso recomendado, revisa:
 
-* Configuración de notificaciones y recordatorios: https://academy.vambe.ai/paso-1-configuraciones-recordatorio
+* Configuración de notificaciones y recordatorios: https://academy.vambe.ai/asistentes-agendamiento/parte-4-confirmaciones-y-recordatorios/configuraciones-confirmacion-y-recordatorio
 {% endstep %}
 {% endstepper %}

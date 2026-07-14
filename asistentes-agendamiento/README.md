@@ -5,6 +5,8 @@ coverY: 0
 
 # Introducción: Asistentes de Agendamiento en Vambe
 
+## Introducción: Asistentes de Agendamiento en Vambe
+
 Los **Asistentes de Agendamiento** en **Vambe** permiten automatizar por completo la gestión de citas mediante inteligencia artificial, funcionando 24/7 y sin intervención humana.
 
 Este sistema se adapta tanto a **plataformas de reserva especializadas** como a **calendarios tradicionales**, según el tipo de negocio y operación que tengas.
@@ -13,11 +15,11 @@ Con Vambe, un cliente puede iniciar una conversación, resolver dudas, ver dispo
 
 ***
 
-## Plataformas de agendamiento compatibles
+### Plataformas de agendamiento compatibles
 
 En Vambe existen **dos grandes formas de agendar** con inteligencia artificial:
 
-### Agendamiento con Calendarios (Google y Outlook)
+#### Agendamiento con Calendarios (Google y Outlook)
 
 Vambe se integra directamente con **Google Calendar** y **Outlook Calendar**, permitiendo gestionar la disponibilidad y las citas de uno o varios miembros del equipo.
 
@@ -31,11 +33,11 @@ Este tipo de agendamiento es ideal para:
 Si quieres usar este tipo de agendamiento, revisa el artículo específico aquí:
 
 Cómo agendar con Google Calendar y Outlook Calendar en Vambe\
-https://academy.vambe.ai/v1/docs/c%C3%B3mo-iniciar-sesi%C3%B3n-y-vincular-google-calendar-en-vambe
+https://academy.vambe.ai/asistentes-de-agendamiento/google-calendar-y-outlook-calendar/como-iniciar-sesion-y-vincular-google-calendar-en-vambe
 
 ***
 
-### El poder de los calendarios con Vambe
+#### El poder de los calendarios con Vambe
 
 Al conectar Google u Outlook Calendar con Vambe, se habilitan tres funciones clave:
 
@@ -47,19 +49,19 @@ Esta integración permite coordinar agendas de **múltiples miembros del equipo*
 
 {% stepper %}
 {% step %}
-### Obtención de disponibilidad inteligente
+#### Obtención de disponibilidad inteligente
 
 El sistema identifica los espacios libres más cercanos. Si no hay disponibilidad inmediata, propone automáticamente los próximos horarios disponibles.
 {% endstep %}
 
 {% step %}
-### Definición de horarios laborales
+#### Definición de horarios laborales
 
 Puedes configurar jornadas de trabajo específicas para evitar agendamientos fuera de horario.
 {% endstep %}
 
 {% step %}
-### Múltiples calendarios conectados
+#### Múltiples calendarios conectados
 
 Vambe puede consultar varios calendarios de agentes con permisos de administrador.
 
@@ -67,7 +69,7 @@ Si un agente no tiene disponibilidad pero otro sí, la IA gestiona correctamente
 {% endstep %}
 
 {% step %}
-### Métodos de asignación de citas
+#### Métodos de asignación de citas
 
 Puedes definir cómo se asignan las reuniones:
 
@@ -81,7 +83,7 @@ Además, Vambe genera automáticamente la descripción del evento basada en la c
 
 ***
 
-### Agendamiento con Aplicaciones de Reserva
+#### Agendamiento con Aplicaciones de Reserva
 
 El segundo tipo de agendamiento utiliza el bloque **Aplicaciones de Reserva**, diseñado para integrarse con plataformas especializadas como:
 
@@ -104,7 +106,7 @@ En las siguientes secciones encontrarás el paso a paso para integrar cada plata
 
 ***
 
-## ¿Qué puedes lograr con los asistentes de agendamiento?
+### ¿Qué puedes lograr con los asistentes de agendamiento?
 
 Con cualquiera de las dos modalidades (Calendarios o Aplicaciones de Reserva), Vambe te permite:
 
@@ -123,31 +125,31 @@ Además, puedes automatizar procesos adicionales como:
 
 ***
 
-## Cómo continuar
+### Cómo continuar
 
 Para implementar correctamente una plataforma de agendamiento en Vambe, esta sección está organizada en cuatro partes:
 
 {% stepper %}
 {% step %}
-### Parte 1: Obtención de credenciales
+#### Parte 1: Obtención de credenciales
 
 Aquí aprenderás cómo obtener las credenciales necesarias según el tipo de agendamiento que utilizarás.
 {% endstep %}
 
 {% step %}
-### Parte 2: Asistente inicial (información y dudas)
+#### Parte 2: Asistente inicial (información y dudas)
 
 Configuraciones para el asistente que atiende preguntas generales e informa al usuario.
 {% endstep %}
 
 {% step %}
-### Parte 3: Asistente de agendamiento
+#### Parte 3: Asistente de agendamiento
 
 Configuración específica del asistente encargado de coordinar la reserva y manejo de disponibilidad.
 {% endstep %}
 
 {% step %}
-### Parte 4: Asistente para clientes agendados
+#### Parte 4: Asistente para clientes agendados
 
 Flujos y mensajes para clientes que ya tienen una cita (confirmaciones, recordatorios, cambios).
 {% endstep %}
@@ -155,4 +157,4 @@ Flujos y mensajes para clientes que ya tienen una cita (confirmaciones, recordat
 
 Comienza por la Parte 1, donde aprenderás cómo obtener las credenciales necesarias según el tipo de agendamiento que utilizarás.
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Parte 1: Obtener credenciales</td><td><a href=".gitbook/assets/credenciales.png">credenciales.png</a></td><td><a href="https://app.gitbook.com/s/hQjV55x4bDSryBoT4FYC/parte-1-obtener-credenciales">Parte 1: Obtener credenciales</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Parte 1: Obtener credenciales</td><td><a href="https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2Fe9O74LyPJRhaab7U7W0V%2Fcredenciales.png?alt=media&#x26;token=f24d8264-d944-4802-94bc-dc559bf35c9d">https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2Fe9O74LyPJRhaab7U7W0V%2Fcredenciales.png?alt=media&#x26;token=f24d8264-d944-4802-94bc-dc559bf35c9d</a></td><td></td></tr></tbody></table>
