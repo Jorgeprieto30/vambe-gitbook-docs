@@ -1,10 +1,12 @@
 # Cómo limpiar y mantener tu embudo ordenado
 
+## Cómo limpiar y mantener tu embudo ordenado
+
 Un embudo sano refleja la realidad de tu negocio. Si tienes cientos de leads acumulados en etapas sin moverse, tu embudo deja de ser útil — no sabes qué leads son reales, los agentes pierden el foco y los análisis no sirven. En este artículo aprenderás a limpiar tu embudo de una vez y a mantenerlo ordenado de forma automática.
 
 ***
 
-### ¿Por qué se acumula el embudo?
+#### ¿Por qué se acumula el embudo?
 
 Los tickets se acumulan principalmente por dos razones:
 
@@ -15,11 +17,11 @@ Los tickets se acumulan principalmente por dos razones:
 
 ***
 
-### Parte 1: Limpiar el embudo manualmente (una sola vez)
+#### Parte 1: Limpiar el embudo manualmente (una sola vez)
 
 Este es el primer paso: hacer una limpieza general de todos los tickets viejos acumulados. Se hace con filtros y acciones colectivas.
 
-#### Paso 1: Definir qué quieres limpiar
+**Paso 1: Definir qué quieres limpiar**
 
 Antes de tocar nada, decide:
 
@@ -29,7 +31,7 @@ Antes de tocar nada, decide:
 
 > 💡 No es necesario limpiar todas las etapas. Si tienes etapas humanas donde tus agentes están activos y al día, no las toques. Enfócate en las etapas donde sabes que hay tickets abandonados.
 
-#### Paso 2: Aplicar filtros en el embudo
+**Paso 2: Aplicar filtros en el embudo**
 
 1. Ve a tu **Embudo**.
 2. Haz clic en el botón de **Filtros**.
@@ -38,7 +40,7 @@ Antes de tocar nada, decide:
    * **Etapa:** Selecciona solo las etapas que quieres limpiar (ej: Inicial, Agendamiento, Asistencia Humana).
    * **Agente asignado** _(opcional):_ Si quieres limpiar solo los tickets de un agente específico.
 
-#### Paso 3: Usar acciones colectivas
+**Paso 3: Usar acciones colectivas**
 
 Una vez aplicados los filtros, esta es la parte más importante:
 
@@ -46,9 +48,7 @@ Una vez aplicados los filtros, esta es la parte más importante:
 2.  Haz clic en **Acciones colectivas**.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-
+    <figure><img src="https://927025893-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4nRFeKJn1URTfeH8tYXz%2Fuploads%2F8qIcQPG8DpWSmmRYMdbT%2Fimage.png?alt=media&#x26;token=f3bde7a8-5d6e-443e-bc7f-eaa0351f0b31" alt=""><figcaption></figcaption></figure>
 3. Elige qué hacer con ellos:
 
 | Opción                                | Cuándo usarla                                                                                          |
@@ -60,13 +60,13 @@ Una vez aplicados los filtros, esta es la parte más importante:
 
 ***
 
-### Parte 2: Configurar la etapa "Clientes Perdidos"
+#### Parte 2: Configurar la etapa "Clientes Perdidos"
 
 Esta etapa es la clave para mantener el embudo limpio de forma automática a largo plazo. Cuando un cliente entra a esta etapa, el ticket se cierra, se marca como perdido y la próxima vez que ese cliente escriba, entra de nuevo al embudo desde el inicio con la IA.
 
-#### Cómo configurarla
+**Cómo configurarla**
 
-Necesitas crear un [**Workflow**](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk/s/0xCLgfGby0xiCWJaqr57/) con el siguiente trigger y acciones:
+Necesitas crear un [**Workflow**](https://academy.vambe.ai/workflows) con el siguiente trigger y acciones:
 
 **Trigger:** Ingreso a etapa → _"Clientes Perdidos"_
 
@@ -80,11 +80,11 @@ Necesitas crear un [**Workflow**](https://app.gitbook.com/o/9CuC7LM0j6YJ7xZrMGfk
 
 ***
 
-### Parte 3: Automatizar el cierre de leads inactivos
+#### Parte 3: Automatizar el cierre de leads inactivos
 
 La limpieza manual es para poner el embudo al día. Pero para mantenerlo limpio hacia adelante, necesitas automatizaciones que cierren los tickets abandonados sin que tengas que hacerlo tú.
 
-#### Automatización por inactividad
+**Automatización por inactividad**
 
 Usa el trigger de **Inactividad del contacto** en un Workflow:
 
@@ -108,7 +108,7 @@ Puedes replicar esta lógica para cada etapa que quieras monitorear. Por ejemplo
 
 > 💡 **Define el tiempo según el ritmo de tu negocio.** No es lo mismo un negocio de venta rápida donde 2 días es demasiado, que uno de servicios complejos donde el cliente puede tardar una semana en responder.
 
-#### Bonus: Enviar encuesta antes de cerrar
+**Bonus: Enviar encuesta antes de cerrar**
 
 Si quieres aprovechar el momento del cierre para obtener feedback, puedes agregar un paso de espera y encuesta antes de mover el ticket a Clientes Perdidos:
 
@@ -122,7 +122,7 @@ Trigger: Inactividad del contacto (2 días, etapa: Inicial)
 
 ***
 
-### Parte 4: Ordenar las etapas humanas (el tip más importante)
+#### Parte 4: Ordenar las etapas humanas (el tip más importante)
 
 Si tienes muchos tickets acumulados en una sola etapa de "Asistencia Humana", el problema de fondo no es la limpieza — es que el proceso está subdefinido.
 
@@ -162,7 +162,7 @@ Cliente contratado
 
 ***
 
-### Resumen: El sistema completo
+#### Resumen: El sistema completo
 
 ```
 1. LIMPIEZA INICIAL
