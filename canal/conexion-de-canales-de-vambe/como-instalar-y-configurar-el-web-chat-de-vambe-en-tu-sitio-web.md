@@ -5,11 +5,13 @@ coverY: 0
 
 # Cómo instalar y configurar el Web Chat de Vambe en tu sitio web
 
+## Cómo instalar y configurar el Web Chat de Vambe en tu sitio web
+
 Perfecto, voy a crear el artículo desde cero. Combiné tu guía paso a paso con la explicación técnica del desarrollador y lo que se ve en las capturas.
 
 ***
 
-### Cómo conectar y configurar el Web Chat de Vambe en tu sitio web
+#### Cómo conectar y configurar el Web Chat de Vambe en tu sitio web
 
 El Web Chat de Vambe te permite integrar un chat flotante directamente en tu página web, conectando automáticamente a los visitantes con un embudo específico dentro de Vambe.
 
@@ -23,18 +25,18 @@ Cada conversación iniciada desde el Web Chat entra directamente a tu embudo, pe
 * Agregar pestañas (tabs) adicionales con enlaces, recursos y accesos directos.
 * Autenticar usuarios de forma segura mediante JWT.
 
-#### Crear el canal de Web Chat
+**Crear el canal de Web Chat**
 
 1. Ve al menú lateral izquierdo y entra a la sección de **Canales**.
 2. Haz clic en **Agregar canal**.
 3.  Selecciona **Web Chat** y luego haz clic en **Conectar**.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FYtuGnztUQmnDtKjRl8qy%2Fimage.png?alt=media&#x26;token=ee02d6c9-ef2e-48b1-af52-f44a2cfff4e3" alt=""><figcaption></figcaption></figure>
 
 Se abrirá la vista de configuración (**Configurando Webchat**), donde podrás personalizar todo el comportamiento y la apariencia del chat. A la derecha verás siempre el panel **Previsualiza los cambios**, que refleja en vivo cada ajuste que realices.
 
-#### Configuración principal
+**Configuración principal**
 
 **Nombre del canal y embudo**
 
@@ -62,9 +64,9 @@ Si activas una o más de estas opciones, el cliente deberá completar esos datos
 * **Colores** — Define el color primario y secundario del botón y del chat.
 * **Tema** — Elige cómo se verá el chat entre **Modo claro** y **Modo oscuro**.
 
-<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FlCLXC7QjHdiR18PRTLGj%2Fimage.png?alt=media&#x26;token=b2fb7e48-eb9e-41d2-a4e4-d6a22e1c481f" alt=""><figcaption></figcaption></figure>
 
-#### Opciones avanzadas
+**Opciones avanzadas**
 
 Despliega la sección **Avanzado** para acceder a configuraciones adicionales de posición, fuente, restricciones y autenticación.
 
@@ -87,8 +89,6 @@ Despliega la sección **Avanzado** para acceder a configuraciones adicionales de
 <details>
 
 <summary><strong>Autenticar usuarios con JWT (configuración técnica)</strong></summary>
-
-
 
 {% hint style="info" %}
 **Nota:** Esta sección es más técnica y está pensada para clientes con un equipo de desarrollo. Si no necesitas validar la identidad de tus usuarios, puedes omitirla.
@@ -125,9 +125,9 @@ En este caso, el ID de usuario (`user-123`) viene en el campo `sub`.
 
 </details>
 
-#### Secciones del Web Chat
+**Secciones del Web Chat**
 
-<figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2Fy8iBaF2GJVBlf1PMw6nX%2Fimage.png?alt=media&#x26;token=3735a25f-4b3b-461a-aec0-38a556f1ff5a" alt=""><figcaption></figcaption></figure>
 
 Las **Secciones** son las pestañas (tabs) que verá el cliente en la parte inferior del Web Chat. Puedes agregar **hasta cuatro tabs**. La pestaña de **Chat** viene por defecto; si dejas solo esa, el webchat se muestra directamente con la vista de conversación.
 
@@ -153,9 +153,9 @@ Dentro de cada sección puedes agregar distintos bloques para armar el contenido
 
 Cada bloque permite elegir su ícono, ocupar el ancho completo y ajustar su orden. El panel de previsualización refleja en vivo cómo se verá cada bloque.
 
-<figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FK36kFHgwuakAnRTBdhap%2Fimage.png?alt=media&#x26;token=406d8507-ff2d-4df1-abef-0e14ca9d9c4d" alt=""><figcaption></figcaption></figure>
 
-#### Generar e insertar el script en tu sitio web
+**Generar e insertar el script en tu sitio web**
 
 Una vez configurado el Web Chat, ve a la vista de **Conectar** para obtener el script de instalación.
 
@@ -167,7 +167,7 @@ Con el nuevo formato, el script solo necesita el **Client ID** y el **Channel ID
 
 > **Importante:** Cualquier valor que escribas manualmente en el script sobrescribirá la configuración guardada en Vambe. Por ejemplo, si defines colores en el script, esos colores tendrán prioridad sobre los configurados en el editor.
 
-#### Verificar la conexión con el embudo
+**Verificar la conexión con el embudo**
 
 Antes de terminar, asegúrate de que el Web Chat esté conectado al embudo correcto dentro de Vambe. Esto garantiza que cada contacto que inicie una conversación:
 
@@ -177,4 +177,4 @@ Antes de terminar, asegúrate de que el Web Chat esté conectado al embudo corre
 
 Una vez verificado, haz clic en **Crear** para dejar el canal activo.
 
-Más información: [Verificar la conexión con un embudo](https://academy.vambe.ai/v1/docs/verificar-que-el-n%C3%BAmero-est%C3%A9-asociado-al-embudo-correcto)
+Más información: [Verificar la conexión con un embudo](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/verificar-que-el-numero-este-asociado-al-embudo-correcto)

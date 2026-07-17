@@ -9,6 +9,8 @@ coverY: 0
 
 ### Cómo agregar un método de pago y configurar el perfil de tu número de WhatsApp API
 
+#### Cómo agregar un método de pago y configurar el perfil de tu número de WhatsApp API
+
 {% embed url="https://www.youtube.com/watch?v=HNthqqHjzLg" %}
 
 Para poder enviar **plantillas** (HSM templates) y **campañas** a través de WhatsApp API, es obligatorio asociar un método de pago válido. Además, configurar correctamente la foto, el nombre para mostrar y la descripción del perfil mejora la experiencia del usuario y aumenta la confianza de tus contactos.
@@ -21,7 +23,7 @@ Esta guía explica ambos procesos paso a paso.
 
 Antes de comenzar, debes contar con:
 
-* [Tu **número de WhatsApp API ya conectado** a Vambe.](https://academy.vambe.ai/c%C3%B3mo-conectar-whatsapp-api-oficial)
+* [Tu **número de WhatsApp API ya conectado** a Vambe.](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/como-conectar-whatsapp-api-oficial)
 * Acceso al **Business Portfolio (Centro de Gestión Comercial de Meta)** con permisos para:
   * Ver _Cuentas de WhatsApp_
   * Administrar _Configuración de pago_
@@ -29,7 +31,7 @@ Antes de comenzar, debes contar con:
 
 ***
 
-#### Parte 1 — Agregar un método de pago a tu cuenta de WhatsApp API
+**Parte 1 — Agregar un método de pago a tu cuenta de WhatsApp API**
 
 {% hint style="success" %}
 **Opción recomendada: usa el método de pago de Vambe.** No necesitas asociar una tarjeta en Meta: puedes cargar el envío de plantillas al método de pago de Vambe, y estas se facturan junto con tu suscripción, en un solo cobro. Si prefieres esta opción, escríbele a tu contacto en Vambe para activarla. Si en cambio quieres facturar directamente con Meta, sigue los pasos de más abajo.
@@ -80,7 +82,7 @@ Antes de comenzar, debes contar con:
 
 ***
 
-#### Parte 2 — Configurar el perfil del número en WhatsApp Manager
+**Parte 2 — Configurar el perfil del número en WhatsApp Manager**
 
 {% stepper %}
 {% step %}
@@ -135,7 +137,7 @@ Esto ayuda a mejorar la confianza del usuario y evita bloqueos o reportes.
 
 ***
 
-#### Buenas prácticas recomendadas
+**Buenas prácticas recomendadas**
 
 * Utiliza **un logo claro y legible** como imagen del canal.
 * Mantén un **nombre para mostrar coherente** con tu marca y tus redes oficiales.

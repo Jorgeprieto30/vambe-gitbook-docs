@@ -7,11 +7,13 @@ coverY: 0
 
 ## Cómo conectar WhatsApp QR
 
+### Cómo conectar WhatsApp QR
+
 {% stepper %}
 {% step %}
 **Ingresa a la sección de conexión de canales**
 
-Accede a la sección de conexión de canales [aquí](https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales?hsLang=es)
+Accede a la sección de conexión de canales [aquí](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/como-ingresar-a-la-seccion-de-conexion-de-canales)
 {% endstep %}
 
 {% step %}
@@ -59,7 +61,7 @@ WhatsApp cambió cómo se vinculan los dispositivos: para algunas cuentas ahora 
 
 Para esos casos existe una segunda forma de conectar, dentro de la misma pantalla. Si el QR no funciona, haz clic en la opción **¿WhatsApp te pide una clave de acceso? Conéctate importando tu sesión**.
 
-<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FUmawvndRNLYiW6Xu24O0%2Fimage.png?alt=media&#x26;token=09632517-3daf-4c9a-85da-ebdcaa003ce4" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Este método aparece solo cuando hace falta. Si conectas con el QR de siempre, no cambia nada para ti.
@@ -69,7 +71,7 @@ Este método aparece solo cuando hace falta. Si conectas con el QR de siempre, n
 
 Arrastra el botón **Extract WhatsApp Session** hacia tu barra de marcadores. Si no ves la barra de marcadores, actívala desde el menú del navegador (en Brave o Chrome: menú → Marcadores → Mostrar barra de marcadores).
 
-<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FLIeM0rh2Y5cTx891rB9r%2Fimage.png?alt=media&#x26;token=46823e0d-fd4a-40ae-916e-1769888a0929" alt=""><figcaption></figcaption></figure>
 
 **2. Extrae tu sesión**
 
@@ -85,7 +87,7 @@ El archivo `wa-extract.json` contiene las credenciales completas de tu cuenta. N
 
 Vuelve a Vambe y haz clic en **Continuar**. Arrastra el archivo `wa-extract.json` a la zona de carga o haz clic para buscarlo.
 
-<figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F7TNgtuin5yfiOz3mozsZ%2Fimage.png?alt=media&#x26;token=b6110624-aab5-4381-877f-56f66ab47872" alt=""><figcaption></figcaption></figure>
 
 La conexión puede tardar unos minutos. Si demora demasiado, puedes volver a subir el archivo para reintentar. Una vez conectado, tu WhatsApp queda vinculado igual que con el QR.
 {% endstep %}
@@ -113,9 +115,9 @@ Haz clic en "Finish" o "Finalizar" para terminar la configuración.
 
 Para que los mensajes entren al embudo debemos asegurar que el canal esté vinculado a este; una vez vinculado la IA comenzará a tomar las conversaciones que entran.
 
-Dirígete a la sección de conexión de canales y verifica que el número esté conectado al embudo [aquí](https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales?hsLang=es)
+Dirígete a la sección de conexión de canales y verifica que el número esté conectado al embudo [aquí](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/como-ingresar-a-la-seccion-de-conexion-de-canales)
 
-También puedes verificar específicamente que este [asignado al embudo correcto](https://academy.vambe.ai/verificar-que-el-n%C3%BAmero-est%C3%A9-asociado-al-embudo-correcto)
+También puedes verificar específicamente que este [asignado al embudo correcto](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/verificar-que-el-numero-este-asociado-al-embudo-correcto)
 {% endstep %}
 {% endstepper %}
 

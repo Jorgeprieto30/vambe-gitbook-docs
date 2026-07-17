@@ -7,22 +7,24 @@ cover: ../.gitbook/assets/Portada 16.png
 coverY: 0
 ---
 
-# Guía de Conexión: WhatsApp API (Método QR)
+# Guía de Conexión: WhatsApp API (Método QR - Dual Coexistence)
+
+## Guía de Conexión: WhatsApp API (Método QR - Dual Coexistence)
 
 Este método híbrido permite conectar un número de WhatsApp Business utilizando tanto elementos de la conexión oficial por API como la vinculación mediante código QR. Es una alternativa rápida y flexible cuando se requiere conectar un número sin completar el proceso completo de verificación por SMS.
 
 Al finalizar este proceso, tu número quedará activo dentro de Vambe y podrás asociarlo a un embudo para que la inteligencia artificial gestione los mensajes entrantes.
 
-#### Requisitos previos
+**Requisitos previos**
 
 Antes de iniciar, asegúrate de contar con lo siguiente:
 
 * Un teléfono con la app de **WhatsApp Business** instalado (no es compatible con WhatsApp personal).
 
-<img src="../.gitbook/assets/WhatsApp Image 2025 12 12 at 9 58 59 AM jpeg.jpeg" alt="" width="375">
+<img src="https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/QuVHU0Oz1pxLh80m9eLj/WhatsApp%20Image%202025%2012%2012%20at%209%2058%2059%20AM%20jpeg.jpeg" alt="" width="375">
 
 * Acceso a un **Business Portfolio** de Meta.
-* [Tener el **Business Portfolio** de Meta Verificado](https://academy.vambe.ai/c%C3%B3mo-verificar-tu-negocio-business-manager-en-meta)
+* [Tener el **Business Portfolio** de Meta Verificado](https://academy.vambe.ai/canal/configuracion-en-meta/como-verificar-tu-negocio-business-manager-en-meta)
 * Una **cuenta de Facebook Business** con permisos para crear o administrar cuentas de WhatsApp Business.
 
 {% hint style="danger" %}
@@ -35,7 +37,7 @@ Vambe, como **Meta Business Partner**, aplica una **comisión del 10%** por la g
 Para **desactivar la línea de crédito**, debe **contactar a soporte** por los canales oficiales
 {% endhint %}
 
-#### Parte 1: Configuración inicial en Meta
+**Parte 1: Configuración inicial en Meta**
 
 Antes de entrar a Vambe, debemos dejar el número "pre-registrado" en la plataforma de Meta.
 
@@ -44,14 +46,14 @@ Antes de entrar a Vambe, debemos dejar el número "pre-registrado" en la platafo
 3.  Busca la sección Cuentas de WhatsApp.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FkwSkjLk8kpwqITy4pl1p%2Fimage.png?alt=media&#x26;token=9755e71c-e11d-418e-9431-1f3234ebdef5" alt=""><figcaption></figcaption></figure>
 4.  Haz clic en **Agregar** > Vincula una cuenta de Whatsapp Business.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F4o3vy2zJOtaDYTFHp8yJ%2Fimage.png?alt=media&#x26;token=fa0e0213-0de0-4e2d-82fa-7428a9f1f348" alt="" width="563"><figcaption></figcaption></figure>
 5.  **Verificación**: Ingresa tu número de teléfono. Meta te enviará un código por SMS o Llamada. Ingrésalo para confirmar que el número es tuyo.<br>
 
-    <figure><img src="../.gitbook/assets/image (11).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FUveOLZaIzkGjN72pIUQA%2Fimage.png?alt=media&#x26;token=b7841364-cbbf-497d-aa62-505f63e89a8b" alt="" width="563"><figcaption></figcaption></figure>
 6. Una vez verificado y creado dentro de **Meta**, haz clic en **Listo**.
 
 {% hint style="warning" %}
@@ -60,32 +62,28 @@ Nota: Solo cuando el número exista aquí, podrás pasar a la Parte 2 en Vambe.
 
 ***
 
-#### Parte 2: Iniciar la conexión desde Vambe
+**Parte 2: Iniciar la conexión desde Vambe**
 
 Ahora que el número ya existe en tu portafolio, vamos a conectarlo a la inteligencia artificial.<br>
 
-1. Ingresa a Vambe y ve al menú lateral [Canales](como-ingresar-a-la-seccion-de-conexion-de-canales.md).
+1. Ingresa a Vambe y ve al menú lateral Canales.
 2. Haz clic en el botón azul + Agregar canal (abajo a la izquierda).
 3.  Selecciona la opción WhatsApp API (Recomendado).<br>
 
-    <figure><img src="../.gitbook/assets/Captura de pantalla 2026-02-17 a la(s) 3.30.31 p.m..png" alt=""><figcaption></figcaption></figure>
-
-
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FjwvmYtjdQtQHGQC2Fejj%2FCaptura%20de%20pantalla%202026-02-17%20a%20la(s)%203.30.31%E2%80%AFp.m..png?alt=media&#x26;token=f3317ba0-0476-46de-803d-205d09ed1040" alt=""><figcaption></figcaption></figure>
 4.  Elegir si queremos conectar un **Whatsapp Business existente** o tienes un **chip nuevo**\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
-
-
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F3OSypZDLdORgJJHiAqlT%2Fimage.png?alt=media&#x26;token=f658ae9f-994e-4dc4-bd67-6d970a70f37a" alt=""><figcaption></figcaption></figure>
 5. **Inicia sesión** con tu cuenta de Facebook/Meta (la misma donde hiciste la Parte 1).
 6.  Te preguntará si quieres conectar tu cuenta con "Vambe AI Main". Haz clic en Continuar y luego en Empezar.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (13).png" alt="" width="338"><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FQ8vzT35AKkLwJru9ZbEf%2Fimage.png?alt=media&#x26;token=351a6d7a-c7c7-49d8-8e6e-fcd427bfbc3c" alt="" width="338"><figcaption></figcaption></figure>
 
 ***
 
-#### Parte 3: Selección de Activos
+**Parte 3: Selección de Activos**
 
 El sistema te guiará por tres selecciones rápidas para encontrar el número que creaste en la Parte 1:
 
@@ -93,24 +91,24 @@ El sistema te guiará por tres selecciones rápidas para encontrar el número qu
 2.  Cuenta de WhatsApp: Selecciona "**Conecta una app de WhatsApp Business"**.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (14).png" alt="" width="334"><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FZB3Dk4lMMK13w6Xdtsm2%2Fimage.png?alt=media&#x26;token=3a2bf215-18f6-474b-907a-2fb4fac40d99" alt="" width="334"><figcaption></figcaption></figure>
 3.  **Número de Teléfono:**
 
     *   Al llegar a este paso, selecciona Agregar un nuevo número de WhatsApp y debes ingresar el mismo numero que ingresaste antes.
 
-        <figure><img src="../.gitbook/assets/image (15).png" alt="" width="375"><figcaption></figcaption></figure>
+        <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F3Kn2ae6OHuaHLexd63rq%2Fimage.png?alt=media&#x26;token=66b33149-d0b8-4872-93cc-2e3241fdd44f" alt="" width="375"><figcaption></figcaption></figure>
     * Una vez hagas click en siguiente verás una lista. Selecciona el número que registraste anteriormente (debería aparecer marcado como "**Registrado**").<br>
 
-    <figure><img src="../.gitbook/assets/image (16).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FQ7hTpPd0JfboWVajflDo%2Fimage.png?alt=media&#x26;token=55edba17-5ecf-4a34-8fa4-c04aa5be8cb9" alt="" width="375"><figcaption></figcaption></figure>
 
     \
     Para finalizar click en **siguiente**
 
 ***
 
-#### Parte 4: Escanear el código QR y confirmar
+**Parte 4: Escanear el código QR y confirmar**
 
-<figure><img src="../.gitbook/assets/image (17).png" alt="" width="287"><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F5qZV5k3SNbyZn0jGNt94%2Fimage.png?alt=media&#x26;token=7da6859d-b59c-4484-a7c4-90366d1ff66e" alt="" width="287"><figcaption></figcaption></figure>
 
 Meta mostrará un código QR en pantalla. En este punto, la conexión se valida físicamente con tu celular.
 
@@ -129,7 +127,7 @@ El proceso de conexión puede tardar unos segundos. Verás en el teléfono que s
 
 ***
 
-#### Parte 5: Finalizar Configuración
+**Parte 5: Finalizar Configuración**
 
 De vuelta en el navegador de tu computador:
 
@@ -139,12 +137,12 @@ De vuelta en el navegador de tu computador:
 4. Permisos: Meta te mostrará un resumen de lo que se compartirá con Vambe (administrar conversaciones, eventos, etc.). Haz clic en Confirmar.
 5. Verás el estado "Conectando a tu cuenta...". Cuando finalice, haz clic en Finalizar.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FUCK5mQDzrgShZXWxt0a7%2Fimage.png?alt=media&#x26;token=86de1337-6c81-4f59-a97d-ea0358987c65" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### Parte 6: Verificación Final
+**Parte 6: Verificación Final**
 
 ¡Listo! El número ha quedado conectado oficialmente.
 
-Para asegurarte de que la IA responda, debes hacer un último chequeo: 👉 [\[Verifica aquí que el número esté asociado al embudo correcto\]](verificar-que-el-numero-este-asociado-al-embudo-correcto.md)
+Para asegurarte de que la IA responda, debes hacer un último chequeo: 👉 \[Verifica aquí que el número esté asociado al embudo correcto]

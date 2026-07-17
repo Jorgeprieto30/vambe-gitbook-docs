@@ -9,44 +9,46 @@ coverY: 0
 
 # Cómo conectar WhatsApp API (oficial)
 
+## Cómo conectar WhatsApp API (oficial)
+
 En esta guía paso a paso aprenderás cómo registrar tu número en Meta, configurar tu cuenta de WhatsApp Business y finalmente conectar el canal a tu embudo en Vambe.
 
 Este proceso permite utilizar la integración oficial de WhatsApp Business API, la única que garantiza estabilidad y cumplimiento con las políticas de Meta.
 
 ***
 
-#### Requisitos previos
+**Requisitos previos**
 
 Antes de comenzar, asegúrate de contar con:
 
 * Un número telefónico que pueda recibir **SMS o llamadas**.
 * Un número que **no esté vinculado actualmente a ninguna cuenta de WhatsApp**.
 * Un **portafolio comercial activo en Meta/Facebook** (el mismo utilizado para administrar anuncios).
-* Tener la cuenta de [Meta Verificada](../configuracion-en-meta/como-verificar-tu-negocio-business-manager-en-meta.md)
+* Tener la cuenta de Meta Verificada
 
 ***
 
 {% stepper %}
 {% step %}
-#### Iniciar la conexión desde Vambe
+**Iniciar la conexión desde Vambe**
 
-* Ingresa a la sección de conexión de canales: https://academy.vambe.ai/c%C3%B3mo-ingresar-a-la-secci%C3%B3n-de-conexi%C3%B3n-de-canales
+* Ingresa a la sección de conexión de canales: https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/como-ingresar-a-la-seccion-de-conexion-de-canales
 * Seleccionar **WhatsApp API (oficial)**.
 * Hacer clic en **Registrar número de teléfono**.
 
-<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FAtAhWVSjicOjoTKeiJL3%2Fimage.png?alt=media&#x26;token=7fe47f33-17b9-46b4-9f40-bf6e5bc80878" alt=""><figcaption></figcaption></figure>
 
-![image.png](../.gitbook/assets/fb358cb463384708952837e4791263c5ed4e35c26b1c494589e5e8079aca337a)
+![image.png](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/VvQfmKEpzGApiQfzwGmp/fb358cb463384708952837e4791263c5ed4e35c26b1c494589e5e8079aca337a)
 
 Esto abrirá el proceso de conexión directamente con Meta.
 {% endstep %}
 
 {% step %}
-#### Registro del número en Meta
+**Registro del número en Meta**
 
 Al hacer clic en “Registrar número de teléfono” dentro de Vambe, se abrirá una nueva pestaña de Meta/Facebook.
 
-![](<../.gitbook/assets/image png Nov 27 2025 03 36 56 3610 PM (2).png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/dxkj3CjWjDcTverYFY5H/image%20png%20Nov%2027%202025%2003%2036%2056%203610%20PM.png)
 
 * La pantalla mostrará el mensaje **“Conecta tu cuenta fácilmente a Vambe”**.
 * Verifica en la esquina superior derecha que estás utilizando la **cuenta correcta de Facebook Business**.
@@ -59,9 +61,9 @@ Un error muy común es que los usuarios, sin darse cuenta, están conectados con
 {% endstep %}
 
 {% step %}
-#### Seleccionar el portafolio y crear la cuenta de WhatsApp Business
+**Seleccionar el portafolio y crear la cuenta de WhatsApp Business**
 
-![](<../.gitbook/assets/image png Nov 27 2025 03 37 48 6118 PM (2).png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/6zE96kRmqQ5TF2cmmyZ0/image%20png%20Nov%2027%202025%2003%2037%2048%206118%20PM.png)
 
 * Meta mostrará los **portafolios comerciales** asociados a tu cuenta. Selecciona el portafolio correcto.
 * Selecciona tu **cuenta de WhatsApp Business** existente.
@@ -70,9 +72,9 @@ Un error muy común es que los usuarios, sin darse cuenta, están conectados con
 {% endstep %}
 
 {% step %}
-#### Ingresar la información comercial (Solo si seleccionaste "Crear una cuenta de WhatsApp Business")
+**Ingresar la información comercial (Solo si seleccionaste "Crear una cuenta de WhatsApp Business")**
 
-![](<../.gitbook/assets/image png Nov 27 2025 03 39 20 6970 PM (2).png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/m5bezygbm0zOfCqznK2y/image%20png%20Nov%2027%202025%2003%2039%2020%206970%20PM.png)
 
 Meta solicitará los datos principales de la empresa asociados al número de WhatsApp API. Debes completar:
 
@@ -86,18 +88,18 @@ Una vez completado, hacer clic en **Siguiente**.
 {% endstep %}
 
 {% step %}
-#### Agregar el número de teléfono
+**Agregar el número de teléfono**
 
-![](<../.gitbook/assets/image png Nov 27 2025 03 39 57 6863 PM (2).png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/INLXHc8y5NJjfD0xghg9/image%20png%20Nov%2027%202025%2003%2039%2057%206863%20PM.png)
 
 * Hacer clic en **Agregar nuevo número de teléfono**.
 * Ingresar el **número que deseas conectar** a WhatsApp API.
 {% endstep %}
 
 {% step %}
-#### Verificación del número
+**Verificación del número**
 
-![](<../.gitbook/assets/image png Nov 27 2025 03 40 50 8421 PM (2).png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/dEHxyNavn5iGri7Ir3Pz/image%20png%20Nov%2027%202025%2003%2040%2050%208421%20PM.png)
 
 Meta te pedirá seleccionar un método de verificación:
 
@@ -112,9 +114,9 @@ Es fundamental tomar nota del código exactamente como llega (formato XXX XXX). 
 {% endstep %}
 
 {% step %}
-#### Finalizar la verificación en Meta
+**Finalizar la verificación en Meta**
 
-![](<../.gitbook/assets/image png Dec 12 2025 12 37 57 2845 PM (1).png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/S0aZxRoeebtyVNAHIAsi/image%20png%20Dec%2012%202025%2012%2037%2057%202845%20PM.png)
 
 Una vez verificado el número:
 
@@ -126,9 +128,9 @@ Meta te redirigirá automáticamente a la pestaña de Vambe.
 {% endstep %}
 
 {% step %}
-#### Completar la conexión dentro de Vambe
+**Completar la conexión dentro de Vambe**
 
-![](<../.gitbook/assets/Captura de pantalla 2025 12 04 a la(s) 4 46 44 p m  png (2).png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/oH4AaRuQLPCOKxxM4oz8/Captura%20de%20pantalla%202025%2012%2004%20a%20la\(s\)%204%2046%2044%E2%80%AFp%20m%20%20png.png)
 
 Al regresar a Vambe:
 
@@ -140,13 +142,13 @@ Al regresar a Vambe:
 {% endstep %}
 
 {% step %}
-#### Verificar que el número esté asociado al embudo correcto
+**Verificar que el número esté asociado al embudo correcto**
 
-Revisa la guía de verificación [aquí](https://academy.vambe.ai/verificar-que-el-n%C3%BAmero-est%C3%A9-asociado-al-embudo-correcto)
+Revisa la guía de verificación [aquí](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/verificar-que-el-numero-este-asociado-al-embudo-correcto)
 {% endstep %}
 
 {% step %}
-#### Conexión completada
+**Conexión completada**
 
 Después de estos pasos:
 

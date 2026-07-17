@@ -5,15 +5,17 @@ coverY: 0
 
 # Como crear plantillas
 
+## Como crear plantillas
+
 En esta guía aprenderás a **crear, categorizar y configurar plantillas de WhatsApp en Vambe** para responder más rápido, abrir conversaciones cerradas (más de 24 h sin actividad), enviar campañas masivas cumpliendo las políticas de Meta o para enviar mensajes rápidos.
 
 ***
 
-#### ¿Qué es una plantilla y para qué sirve?
+**¿Qué es una plantilla y para qué sirve?**
 
 Una **plantilla** es un mensaje preaprobado por Meta que te permite:
 
-* [Responder más rápido mensajes repetitivos.](https://academy.vambe.ai/como-enviar-mensajes-r%C3%A1pidos-y-plantillas)
+* [Responder más rápido mensajes repetitivos.](https://academy.vambe.ai/canal/plantillas/como-enviar-mensajes-rapidos-y-plantillas)
 * **Abrir conversaciones cerradas** (cuando pasaron más de 24 h desde el último mensaje del cliente).
 * Iniciar chats desde cero (por ejemplo, leads que llegan desde formularios).
 * Enviar **campañas masivas** a decenas, cientos o miles de contactos.
@@ -26,31 +28,31 @@ Una **plantilla** es un mensaje preaprobado por Meta que te permite:
 
 ***
 
-#### Requisitos previos
+**Requisitos previos**
 
 Para usar plantillas necesitas:
 
-* Tener un [**número de WhatsApp Business API**](https://academy.vambe.ai/c%C3%B3mo-conectar-whatsapp-api-oficial) o [número híbrido conectado](https://academy.vambe.ai/c%C3%B3mo-conectar-un-n%C3%BAmero-de-whatsapp-business-a-vambe-mediante-el-m%C3%A9todo-h%C3%ADbrido-api-qr) en Vambe.
-* Tener un [**método de pago activo**](https://academy.vambe.ai/c%C3%B3mo-agregar-un-m%C3%A9todo-de-pago-y-configurar-el-perfil-de-tu-n%C3%BAmero-de-whatsapp-api) en tu cuenta de WhatsApp dentro de Meta (obligatorio para enviar plantillas y campañas).
+* Tener un [**número de WhatsApp Business API**](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/como-conectar-whatsapp-api-oficial) o [número híbrido conectado](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/guia-de-conexion-whatsapp-api-metodo-qr) en Vambe.
+* Tener un [**método de pago activo**](https://academy.vambe.ai/canal/configuracion-en-meta/como-agregar-un-metodo-de-pago-y-configurar-el-perfil-de-tu-numero-de-whatsapp-api) en tu cuenta de WhatsApp dentro de Meta (obligatorio para enviar plantillas y campañas).
 
 ***
 
 {% stepper %}
 {% step %}
-#### Ingresar a la sección de Plantillas
+**Ingresar a la sección de Plantillas**
 
 * En Vambe, ve al menú izquierdo.
 * Haz clic en **Canales**.
 * En el submenú, selecciona **Plantillas**.
 * Haz clic en **Crear**.
 
-![](<../.gitbook/assets/image png Dec 01 2025 12 47 07 3673 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/kPSlFrnU0n3aJZ8nv1LN/image%20png%20Dec%2001%202025%2012%2047%2007%203673%20PM.png)
 {% endstep %}
 
 {% step %}
-#### Crear la plantilla
+**Crear la plantilla**
 
-![](<../.gitbook/assets/image png Dec 01 2025 12 48 55 6076 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/n6Rsqh8pnNvYSoRcoTAi/image%20png%20Dec%2001%202025%2012%2048%2055%206076%20PM.png)
 
 Completa los siguientes campos:
 
@@ -79,13 +81,13 @@ Selecciona **Español** u otro idioma según lo necesites.
 {% endstep %}
 
 {% step %}
-#### Definir el contenido de la plantilla
+**Definir el contenido de la plantilla**
 
 Aquí defines la estructura del mensaje:
 
 **Encabezado (opcional)**
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 18 27 9729 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/6CHYCF5mpq2s66VmmKR7/image%20png%20Dec%2001%202025%2001%2018%2027%209729%20PM.png)
 
 Puede ser:
 
@@ -96,7 +98,7 @@ Puede ser:
 
 **Cuerpo del mensaje (Body)**
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 19 44 1147 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/Woa5EMTC4G9GwJUk7lVY/image%20png%20Dec%2001%202025%2001%2019%2044%201147%20PM.png)
 
 Es el contenido principal.
 
@@ -119,15 +121,15 @@ Puedes agregar:
 
 * **Respuestas rápidas**
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 25 46 1538 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/BT2f9ggfP2nR5vw3NDxG/image%20png%20Dec%2001%202025%2001%2025%2046%201538%20PM.png)
 
 * **Botón con URL**
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 22 25 7995 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/75P3aSCJgHD0tbyuLXwC/image%20png%20Dec%2001%202025%2001%2022%2025%207995%20PM.png)
 
 * **Botón para llamar por teléfono**
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 27 44 4166 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/JaujkVOVfNYsMSLdQ47z/image%20png%20Dec%2001%202025%2001%2027%2044%204166%20PM.png)
 
 Tip: Las variables permiten personalizar masivamente:
 
@@ -137,9 +139,9 @@ Tip: Las variables permiten personalizar masivamente:
 {% endstep %}
 
 {% step %}
-#### Completar los ejemplos para revisión de Meta
+**Completar los ejemplos para revisión de Meta**
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 29 23 7618 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/vgq8RIDvW6jUYPKu70ur/image%20png%20Dec%2001%202025%2001%2029%2023%207618%20PM.png)
 
 Antes de guardar, debes completar valores de ejemplo para cada variable. Esto permite que Meta entienda el contexto del mensaje.
 
@@ -153,7 +155,7 @@ Luego revisa la vista previa y guarda.
 {% endstep %}
 
 {% step %}
-#### Estado, asociación y aprobación de la plantilla
+**Estado, asociación y aprobación de la plantilla**
 
 Una vez creada la plantilla, todavía **no quedará lista para usar**. Antes debe ser asociada a los canales correspondientes y enviada a revisión por Meta.
 
@@ -161,12 +163,12 @@ Una vez creada la plantilla, todavía **no quedará lista para usar**. Antes deb
 
 * Hacer clic en **Asociar canales** en la plantilla creada
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 33 10 9326 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/tcD891rFs2qzsYg9Joje/image%20png%20Dec%2001%202025%2001%2033%2010%209326%20PM.png)
 
 * Seleccionar el canal donde quieres usar la plantilla (por ejemplo, WhatsApp API).
 * Hacer clic en **Habilitar**
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 35 22 8917 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/kTExsn6PWMZL0Hnxec5D/image%20png%20Dec%2001%202025%2001%2035%2022%208917%20PM.png)
 
 Qué ocurre después:
 
@@ -183,15 +185,15 @@ Para actualizar el estado:
 * Haz clic en **Sincronizar**.
 * Meta suele responder en minutos.
 
-![](<../.gitbook/assets/image png Dec 01 2025 01 38 27 8770 PM.png>)
+![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/ThWEAndiAOFNQM7GOvwt/image%20png%20Dec%2001%202025%2001%2038%2027%208770%20PM.png)
 {% endstep %}
 {% endstepper %}
 
 ***
 
-## Uso de las plantillas
+### Uso de las plantillas
 
-### ¿Cuándo se debe usar una plantilla?
+#### ¿Cuándo se debe usar una plantilla?
 
 Debes utilizar una plantilla cuando:
 
@@ -204,7 +206,7 @@ Debes utilizar una plantilla cuando:
 
 ***
 
-### 💲 Costo por envío de plantillas
+#### 💲 Costo por envío de plantillas
 
 El envío de plantillas tiene un costo definido por Meta. Cada vez que envías una plantilla para iniciar o reactivar una conversación (fuera de la ventana de 24 horas), se genera un cobro según:
 
@@ -218,7 +220,7 @@ Este cobro no depende de si el cliente responde o no; se genera de forma automá
 
 ***
 
-### Plantillas en acciones automáticas
+#### Plantillas en acciones automáticas
 
 Las plantillas también pueden usarse en:
 
@@ -231,7 +233,7 @@ Solo debes elegir la plantilla que corresponda dentro de la acción automática 
 
 ***
 
-### Buenas prácticas
+#### Buenas prácticas
 
 * Sé breve y directo.
 * Usa variables, pero siempre asegúrate de que tendrán valor.
@@ -242,7 +244,7 @@ Solo debes elegir la plantilla que corresponda dentro de la acción automática 
 
 ***
 
-## Solución de problemas frecuentes
+### Solución de problemas frecuentes
 
 <details>
 
