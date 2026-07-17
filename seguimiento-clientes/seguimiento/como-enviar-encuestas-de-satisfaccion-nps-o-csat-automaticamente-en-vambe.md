@@ -5,13 +5,15 @@ coverY: 0
 
 # Cómo enviar encuestas de satisfacción (NPS o CSAT) automáticamente en Vambe
 
+## Cómo enviar encuestas de satisfacción (NPS o CSAT) automáticamente en Vambe
+
 En este artículo aprenderás a configurar el envío automático de encuestas de satisfacción NPS o CSAT a tus clientes a través de WhatsApp API, una vez que un ticket se cierra o alcanza una etapa determinada en Vambe.
 
 Este seguimiento te permite medir la experiencia real de tus clientes y mejorar continuamente tus procesos de atención, ventas o soporte.
 
 ***
 
-### ¿Cuándo se envían las encuestas?
+#### ¿Cuándo se envían las encuestas?
 
 Existen **dos formas** de enviar encuestas en Vambe, con comportamientos distintos:
 
@@ -24,24 +26,24 @@ Existen **dos formas** de enviar encuestas en Vambe, con comportamientos distint
 
 ***
 
-### Requisitos previos
+#### Requisitos previos
 
 Antes de comenzar, asegúrate de cumplir con lo siguiente:
 
-* ✅ Tener [WhatsApp API correctamente conectado en Vambe](https://academy.vambe.ai/v1/docs/c%C3%B3mo-conectar-whatsapp-api-oficial)
+* ✅ Tener [WhatsApp API correctamente conectado en Vambe](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/como-conectar-whatsapp-api-oficial)
 * ✅ Tener al menos un tipo de ticket creado
 * ✅ Tener ese tipo de ticket asignado a una o más etapas del embudo
-* ✅ Saber cómo cerrar un ticket 👉 [Cómo y cuándo cerrar un ticket ganado o perdido](https://academy.vambe.ai/v1/docs/c%C3%B3mo-y-cu%C3%A1ndo-cerrar-un-ticket-ganado-o-perdido)
+* ✅ Saber cómo cerrar un ticket 👉 [Cómo y cuándo cerrar un ticket ganado o perdido](https://academy.vambe.ai/embudo/gestion-de-tickets/como-y-cuando-cerrar-un-ticket-ganado-o-perdido)
 
 > ⚠️ La acción de enviar encuesta de feedback es **solo compatible con WhatsApp API y metodo dual**. No funciona con WhatsApp QR.
 
 ***
 
-### Método 1: Configuración desde el tipo de ticket
+#### Método 1: Configuración desde el tipo de ticket
 
 Este es el método más simple. La encuesta se envía automáticamente cada vez que un ticket de ese tipo se cierra formalmente.
 
-#### Paso 1: Acceder a la configuración de tickets
+**Paso 1: Acceder a la configuración de tickets**
 
 1. Ve al menú lateral izquierdo.
 2. Ingresa a **CRM**.
@@ -49,14 +51,14 @@ Este es el método más simple. La encuesta se envía automáticamente cada vez 
 4. Selecciona el tipo de ticket al que deseas asociar la encuesta.
 5. Haz clic en **Editar**.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FxgNE0TAkDFhpnm0kZddt%2Fimage.png?alt=media&#x26;token=aba7c28e-f2a2-47f3-8f44-03c272c06dd2" alt=""><figcaption></figcaption></figure>
 
-#### Paso 2: Configurar el Feedback (NPS o CSAT)
+**Paso 2: Configurar el Feedback (NPS o CSAT)**
 
 1. Dentro del tipo de ticket, ve a la pestaña **Feedback**.
 2. Haz clic en **Administrar**.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FquZWglPel8vU1B4u3KDY%2Fimage.png?alt=media&#x26;token=095404cc-a23f-48d3-b4b6-75328be9cbe6" alt=""><figcaption></figcaption></figure>
 
 Se abrirá un panel donde deberás definir:
 
@@ -65,9 +67,9 @@ Se abrirá un panel donde deberás definir:
 * **NPS** (Net Promoter Score) — mide la probabilidad de que el cliente te recomiende a un amigo, con escala del 1 al 10.
 * **CSAT** (Customer Satisfaction Score) — mide la satisfacción general con el servicio recibido.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2F94ZddV1Glj2JmDHIvZo1%2Fimage.png?alt=media&#x26;token=1c801edc-ee8f-4782-a5bf-108f8831663b" alt=""><figcaption></figcaption></figure>
 
-#### Paso 3: Definir el tiempo de espera
+**Paso 3: Definir el tiempo de espera**
 
 Aquí defines cuánto tiempo después del cierre del ticket se enviará la encuesta. El contador comienza solo cuando el ticket se cierra.
 
@@ -77,29 +79,29 @@ Ejemplos:
 * 1 hora después
 * 3 días después
 
-#### Paso 4: Revisar y guardar
+**Paso 4: Revisar y guardar**
 
 Una vez configurado el tipo de encuesta y el tiempo de espera, verás una vista previa de la encuesta que recibirá el cliente. Haz clic en **Guardar**.
 
 > ✅ Con esto, la encuesta queda activa y se programará automáticamente cada vez que se cierre un ticket de ese tipo.
 
-#### Paso 5: Revisar el mensaje que se enviará al cliente
+**Paso 5: Revisar el mensaje que se enviará al cliente**
 
 **Opción A: WhatsApp Flows**
 
 1. Ve al menú lateral izquierdo → **Canales** → **WhatsApp Flows**.
 2. Ahí verás el flujo de la encuesta que se enviará al cliente.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FPKzoXX2DHY5pubpKOhD3%2Fimage.png?alt=media&#x26;token=ccad6066-e3d1-47e9-8f5f-75be2ed675c6" alt=""><figcaption></figcaption></figure>
 
 **Opción B: Plantillas de WhatsApp**
 
 1. Ve al menú lateral izquierdo → **Plantillas**.
 2. Busca la plantilla asociada al feedback NPS o CSAT.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FP0kIk7eABxK7zEhA5HJV%2Fimage.png?alt=media&#x26;token=ae6e7ac9-2db5-4351-a6d8-326abbff8bc6" alt=""><figcaption></figcaption></figure>
 
-#### Paso 6: Ver encuestas programadas y respuestas por ticket
+**Paso 6: Ver encuestas programadas y respuestas por ticket**
 
 Dentro de cada ticket:
 
@@ -114,7 +116,7 @@ Ahí podrás ver:
 
 ***
 
-### Método 2: Enviar encuestas desde un Workflow
+#### Método 2: Enviar encuestas desde un Workflow
 
 Este método es más flexible. Te permite enviar la encuesta en base a **cualquier evento de tu embudo**, no solo el cierre de ticket. Por ejemplo: cuando el cliente entra a una etapa específica, cuando se actualiza un campo, o cuando se recibe una señal vía webhook.
 
@@ -122,12 +124,12 @@ Este método es más flexible. Te permite enviar la encuesta en base a **cualqui
 💡 Si tienes dudas sobre cómo funcionan los Flows y sus gatillantes disponibles, te recomendamos leer primero el [artículo de Workflows](https://academy.vambe.ai/workflows).
 {% endhint %}
 
-#### Paso 1: Crear el Flow
+**Paso 1: Crear el Flow**
 
 1. Ve al menú lateral izquierdo → **Workflows** → **Flows**.
 2. Haz clic en **Crear Flow** (arriba a la derecha).
 
-#### Paso 2: Seleccionar el trigger (gatillante)
+**Paso 2: Seleccionar el trigger (gatillante)**
 
 Elige el evento que disparará el envío de la encuesta. _**Algunos ejemplos útiles:**_
 
@@ -140,9 +142,9 @@ Elige el evento que disparará el envío de la encuesta. _**Algunos ejemplos út
 
 Para el caso más común — enviar la encuesta al cerrar una venta — selecciona **Ingreso a etapa** y elige la etapa correspondiente. Ej: _"Cliente Finalizado"_.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FWbM2uff6b9BgFoL94GyS%2Fimage.png?alt=media&#x26;token=34b6f65d-12fc-4b61-9d52-d5270447cb65" alt=""><figcaption></figcaption></figure>
 
-#### Paso 3: Agregar una Espera
+**Paso 3: Agregar una Espera**
 
 Después del trigger, haz clic en **+** y selecciona **Acción → Espera**.
 
@@ -156,9 +158,9 @@ Define cuánto tiempo esperar antes de enviar la encuesta:
 💡 Dar un tiempo de espera antes de enviar la encuesta es una buena práctica: le da margen al cliente para recibir su producto o servicio antes de ser evaluado.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FmolsxGiLUMik007PBYhg%2Fimage.png?alt=media&#x26;token=74f4d14b-f5a5-40f8-9b45-4ec9e00f1c9e" alt=""><figcaption></figcaption></figure>
 
-#### Paso 4: Agregar la acción de encuesta
+**Paso 4: Agregar la acción de encuesta**
 
 Haz clic en **+** después de la espera y selecciona **Acción → Enviar encuesta de feedback**.
 
@@ -169,9 +171,9 @@ Elige el tipo de encuesta:
 
 El cliente recibirá la encuesta directamente en WhatsApp como un formulario interactivo.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FCp2Z2Qq6mDYfiVoRKgqO%2Fimage.png?alt=media&#x26;token=8cab318c-7568-4824-b5c2-9d99bd16af8d" alt=""><figcaption></figcaption></figure>
 
-#### Paso 5: Guardar y activar el Flow
+**Paso 5: Guardar y activar el Flow**
 
 Una vez armado el flujo completo, haz clic en **Guardar** (arriba a la derecha). Asegúrate de que el Flow quede en estado **Activo** para que comience a ejecutarse.
 
@@ -183,11 +185,11 @@ Ingreso a etapa (Cliente Finalizado)
             └── Enviar encuesta de feedback (NPS)
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1826713808-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaWdF2maABWMUlsLRSGSv%2Fuploads%2FTqty3JbDt9pzcWRHxavA%2Fimage.png?alt=media&#x26;token=1f88d92c-ae9f-4b18-822b-4facedfe9fce" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### ¿Cuál método usar?
+#### ¿Cuál método usar?
 
 |                              | Configuración de tickets | Workflows                               |
 | ---------------------------- | ------------------------ | --------------------------------------- |
@@ -199,7 +201,7 @@ Ingreso a etapa (Cliente Finalizado)
 
 ***
 
-### Resumen rápido
+#### Resumen rápido
 
 * Las encuestas NPS y CSAT se envían automáticamente por WhatsApp API.
 * Tienes dos métodos: desde la **configuración de tickets** (al cierre) o desde un **Workflow** (cualquier evento).
