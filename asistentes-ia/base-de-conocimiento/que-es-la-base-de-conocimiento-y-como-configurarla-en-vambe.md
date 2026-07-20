@@ -1,5 +1,7 @@
 # ¿Qué es la Base de Conocimiento y cómo configurarla en Vambe?
 
+{% embed url="https://drive.google.com/file/d/1We-cw-1uQz8I23WubcKUsdecx4XHYDO7/view?usp=sharing" %}
+
 La **Base de Conocimiento** es un espacio central dentro de Vambe donde puedes almacenar, organizar y conectar información clave para que los asistentes de inteligencia artificial la utilicen al responder a los clientes.
 
 Gracias a la base de conocimiento, los asistentes pueden entregar respuestas más precisas, coherentes y alineadas con la información real de tu negocio.
