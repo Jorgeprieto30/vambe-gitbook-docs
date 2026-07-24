@@ -47,6 +47,17 @@
       "id": "mrz374lb_ftnnn",
       "tema": "Idioma por defecto del Owner",
       "created_at": "2026-07-24T15:20:20.735Z"
+    },
+    {
+      "tipo": "crear",
+      "path": "asistente-ecommerce/resumen-ecommerce-dashboard-de-ventas-y-rendimiento.md",
+      "sha": null,
+      "contenido_nuevo": "# Resumen de Ecommerce: Dashboard de Ventas y Rendimiento\n\nDescubre la nueva sección **Resumen** dentro de la pestaña **Ecommerce** en Vambe, tu centro de control analítico integral para todas tus ventas. Este dashboard te ofrece una visión clara y detallada del rendimiento de tu negocio, permitiéndote tomar decisiones informadas con base en datos clave.\n\n> Para entrar: en el menú lateral, ve a **Ecommerce** y luego haz clic en la pestaña **Resumen**.\n\n---\n\n### ¿Qué puedes encontrar en el Resumen de Ecommerce?\n\nEn esta sección, encontrarás métricas y análisis esenciales para optimizar tus operaciones de ecommerce:\n\n*   **Historial de Ventas en el tiempo:** Visualiza la evolución de tus ventas a lo largo del tiempo, diferenciando entre las ventas generadas en Vambe y las externas.\n*   **Total de ventas en el tiempo:** Accede al monto total de ventas acumulado en el periodo seleccionado.\n*   **Análisis de Productos y Embudos:**\n    *   **Productos más vendidos:** Identifica rápidamente qué productos impulsan más ingresos.\n    *   **Etapas con más ventas:** Comprende qué fases de tus embudos de ventas son las más efectivas.\n    *   **Embudos con más ventas:** Conoce cuáles de tus embudos de venta están generando los mejores resultados.\n*   **Detalle de ventas por producto:** Obtén una visión granular del rendimiento de cada uno de tus productos.\n*   **KPIs de Eficiencia en Ventas:**\n    *   **Time to sale:** El tiempo promedio que le toma a un contacto convertirse en cliente.\n    *   **Messages to sale:** El número promedio de mensajes necesarios para cerrar una venta.\n    {% hint style=\"info\" %}\n    Estos KPIs están disponibles exclusivamente para ventas gestionadas a través de Vambe.\n    {% endhint %}\n*   **KPIs de Optimización:**\n    *   **Carritos recuperados:** Mide la efectividad de tus estrategias para convertir carritos abandonados en ventas.\n    *   **Cross-sell:** Analiza el rendimiento de tus tácticas de venta cruzada.\n\n---\n\n### Beneficios del Resumen de Ecommerce\n\nCon el Resumen de Ecommerce, podrás:\n\n*   **Entender tu rendimiento:** Obtén una visión holística de tus ventas y el comportamiento del cliente.\n*   **Detectar oportunidades:** Identifica productos estrella, embudos eficientes y puntos de mejora.\n*   **Optimizar estrategias:** Ajusta tus procesos de venta y comunicación con base en datos concretos.\n*   **Medir la eficiencia:** Evalúa el impacto de tus esfuerzos en tiempo real.\n\n---\n\nCualquier feedback o idea que tengas, ¡no dudes en compartirla!\n",
+      "commit_message": "docs(ecommerce): agrega el resumen de ecommerce como dashboard de ventas",
+      "justificacion": "Se crea un artículo dedicado para el nuevo dashboard 'Resumen de Ecommerce' ubicado en la pestaña de Ecommerce, que ofrece una visión analítica integral de ventas y rendimiento, distinto de los dashboards personalizables.",
+      "id": "mrz3vc9m_xtnsr",
+      "tema": "Resumen de Ecommerce",
+      "created_at": "2026-07-24T15:39:10.426Z"
     }
   ]
 }
