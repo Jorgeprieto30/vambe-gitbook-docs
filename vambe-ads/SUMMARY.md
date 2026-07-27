@@ -14,6 +14,7 @@
 * [Google Ads: Cómo obtener la atribución correcta](configuracion-plataformas/google-ads-como-obtener-la-atribucion-correcta.md)
 * [Meta Ads: cómo obtener una atribución correcta](configuracion-plataformas/meta-ads-como-obtener-una-atribucion-correcta.md)
 * [Tiktok: Cómo obtener la atribución correcta](configuracion-plataformas/tiktok-como-obtener-la-atribucion-correcta.md)
+* [Script del botón de WhatsApp: qué hace y cómo validarlo con tu equipo de seguridad](configuracion-plataformas/script-del-boton-de-whatsapp-que-hace-y-como-validarlo-con-tu-equipo-de-seguridad.md)
 
 ## Asistente Vambe Ads
 
