@@ -145,7 +145,7 @@ Además de enviar información desde Vambe a tu CRM, ahora puedes configurar **W
   * **Buscar solo contactos existentes en Vambe:** Activa el workflow solo si el contacto ya está registrado en Vambe.
   * **Buscar o crear el contacto si no existe:** Si el contacto no está en Vambe, se creará automáticamente para poder ejecutar el workflow.
 
-Para configurar este trigger, dirígete a la sección de [Workflows en Vambe](../workflows/) y selecciona la opción **"Cambio de Etapa CRM"** como gatillante.
+Para configurar este trigger, dirígete a la sección de [Workflows en Vambe](https://github.com/Jorgeprieto30/vambe-gitbook-docs/blob/main/crm/workflows/README.md) y selecciona la opción **"Cambio de Etapa CRM"** como gatillante.
 
 ***
 

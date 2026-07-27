@@ -14,7 +14,7 @@ Para asignar campos a un ticket debemos trabajar con tipos de ticket.
 
 {% stepper %}
 {% step %}
-### Crear un tipo de ticket (si aún no existe)
+#### Crear un tipo de ticket (si aún no existe)
 
 Ruta: CRM → Ticket → +
 
@@ -30,7 +30,7 @@ Configurar:
 {% endstep %}
 
 {% step %}
-### Asociar campos al tipo de ticket
+#### Asociar campos al tipo de ticket
 
 1. Selecciona el tipo de ticket creado.
 2. Haz clic en **Asociar campos**.
@@ -47,7 +47,7 @@ A partir de ahora, esos campos estarán visibles en todos los tickets de ese tip
 {% endstep %}
 
 {% step %}
-### Asignar el tipo de ticket a un embudo o etapa
+#### Asignar el tipo de ticket a un embudo o etapa
 
 Este paso es fundamental: si un embudo o etapa no tiene asignado un tipo de ticket, los campos nunca se guardarán.
 
@@ -77,14 +77,14 @@ Al asignar el tipo de ticket, debes hacer click en guardar cambios.
 {% endstep %}
 
 {% step %}
-### Regla clave: el tipo de ticket debe permanecer consistente
+#### Regla clave: el tipo de ticket debe permanecer consistente
 
 * Si un ticket entra a una etapa con un tipo de ticket distinto, el sistema reemplazará los datos anteriores del tipo previo.
 * Por eso se recomienda: un embudo = un tipo de ticket, salvo casos muy específicos.
 {% endstep %}
 
 {% step %}
-### Cómo recopila la IA la información en el ticket
+#### Cómo recopila la IA la información en el ticket
 
 Cuando:
 

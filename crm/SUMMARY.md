@@ -20,3 +20,7 @@
 ## Tickets
 
 * [Cómo exportar la información de mis tickets](tickets/como-exportar-la-informacion-de-mis-tickets.md)
+
+***
+
+* [Segmentos: identifica y activa a los contactos correctos, sin filtrar manualmente](segmentos-identifica-y-activa-a-los-contactos-correctos-sin-filtrar-manualmente.md)

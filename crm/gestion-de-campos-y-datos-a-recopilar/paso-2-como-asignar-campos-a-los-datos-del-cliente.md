@@ -4,7 +4,7 @@ Una vez que el campo está creado, podemos asignarlo al perfil del cliente para 
 
 {% stepper %}
 {% step %}
-### Ir a la sección de Clientes
+#### Ir a la sección de Clientes
 
 En el menú lateral:
 
@@ -14,7 +14,7 @@ CRM → Clientes
 {% endstep %}
 
 {% step %}
-### Asociar los campos
+#### Asociar los campos
 
 Arriba a la derecha hacer clic en:
 
