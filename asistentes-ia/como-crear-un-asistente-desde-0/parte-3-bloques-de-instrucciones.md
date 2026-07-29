@@ -34,7 +34,7 @@ Se estructura mediante una secuencia lógica y ordenada (Paso 1, Paso 2, Paso 3)
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-⚠️ **Importante**: Para que estas acciones se cumplan, debe asegurarse de agregar correctamente la función utilizando el botón "**+ Agregar función**". 👉 [**\[Visite la sección de Funciones aquí para más detalles\]**](/broken/pages/KsYXjY1ljbT0miwhmAIg)
+⚠️ **Importante**: Para que estas acciones se cumplan, debe asegurarse de agregar correctamente la función utilizando el botón "**+ Agregar función**". 👉 [**\[Visite la sección de Funciones aquí para más detalles\]**](https://app.gitbook.com/s/jZ46rFloLOG1hJ2JQGi0/funciones)
 {% endhint %}
 
 **¿Cuándo usar más de un Asistente?** Si nota que sus "Pasos a seguir" se vuelven excesivamente largos o complejos (por ejemplo, intentando que un solo asistente califique, venda, cobre y agende), la IA podría confundirse. En estos casos, la mejor práctica es dividir el flujo creando múltiples asistentes. Un "Asistente Inicial" puede encargarse de la derivación, enviando al cliente mediante un Cambio de Etapa a un "Asistente de Ventas" dedicado exclusivamente a esa labor.
