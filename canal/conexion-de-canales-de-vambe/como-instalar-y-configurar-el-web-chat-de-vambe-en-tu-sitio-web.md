@@ -5,14 +5,6 @@ coverY: 0
 
 # Cómo instalar y configurar el Web Chat de Vambe en tu sitio web
 
-## Cómo instalar y configurar el Web Chat de Vambe en tu sitio web
-
-Perfecto, voy a crear el artículo desde cero. Combiné tu guía paso a paso con la explicación técnica del desarrollador y lo que se ve en las capturas.
-
-***
-
-#### Cómo conectar y configurar el Web Chat de Vambe en tu sitio web
-
 El Web Chat de Vambe te permite integrar un chat flotante directamente en tu página web, conectando automáticamente a los visitantes con un embudo específico dentro de Vambe.
 
 Cada conversación iniciada desde el Web Chat entra directamente a tu embudo, permitiéndote gestionar leads, conversaciones y tickets desde un solo lugar. Además, ahora cuentas con un editor completo que incluye un panel de previsualización en vivo, donde verás reflejado cada cambio mientras configuras el chat.
