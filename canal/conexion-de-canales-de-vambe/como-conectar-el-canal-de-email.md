@@ -4,9 +4,7 @@
 
 #### ¿Para qué sirve?
 
-El canal de Email te permite enviar correos directamente desde Vambe usando tu propio dominio. Una vez conectado, podrás crear campañas masivas con plantillas personalizadas, enviar emails individuales desde la vista de un ticket y automatizar envíos mediante Workflows.
-
-> ⚠️ **Versión actual — Outbound:** Por ahora, el canal de email funciona de forma outbound (envío hacia tus contactos). La integración con el sistema de tickets y la IA está en desarrollo y llegará próximamente.
+El canal de Email te permite enviar y recibir correos directamente desde Vambe usando tu propio dominio. Una vez conectado, podrás crear campañas masivas con plantillas personalizadas, enviar emails individuales desde la vista de un ticket, automatizar envíos mediante Workflows y recibir las respuestas de tus contactos como tickets dentro de tu embudo.
 
 {% hint style="info" %}
 Una vez conectado el canal, aprende a crear plantillas, enviar campañas y automatizar envíos en Cómo usar el canal de Email en Vambe.
@@ -75,6 +73,16 @@ Copia cada valor desde Vambe y pégalo en la configuración DNS de tu proveedor.
 {% endhint %}
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FkUDhW9Z3RtRLYT9HXgb5%2Fimage.png?alt=media&#x26;token=85834731-afbc-45c6-b350-8ed59214bc57" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### Paso 4: Activa la recepción de respuestas
+
+Con el canal conectado ya puedes enviar. Para que las respuestas de tus contactos lleguen a Vambe y se abran como tickets, activa la recepción desde el ícono de bandeja del canal.
+
+{% hint style="info" %}
+Sigue el paso a paso en [Cómo activar la recepción de correos](como-activar-la-recepcion-de-correos.md).
+{% endhint %}
 
 ***
 

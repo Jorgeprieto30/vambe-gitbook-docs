@@ -4,9 +4,7 @@
 
 #### ¿Para qué sirve?
 
-Con el canal de Email conectado puedes crear campañas masivas con plantillas personalizadas, enviar emails individuales desde la vista de un ticket y automatizar envíos mediante Workflows.
-
-> ⚠️ **Versión actual — Outbound:** Por ahora, el canal de email funciona de forma outbound (envío hacia tus contactos). La integración con el sistema de tickets y la IA está en desarrollo y llegará próximamente.
+Con el canal de Email conectado puedes crear campañas masivas con plantillas personalizadas, enviar emails individuales desde la vista de un ticket y automatizar envíos mediante Workflows. Y cuando activas la recepción, las respuestas de tus contactos vuelven a Vambe como tickets dentro de tu embudo.
 
 {% hint style="info" %}
 ¿Aún no conectaste tu canal de Email? Primero sigue la guía de Cómo conectar el canal de Email.
@@ -112,6 +110,16 @@ Puedes disparar envíos de email automáticamente usando Workflows, igual que co
 Cada vez que se cumpla la condición del disparador, Vambe enviará el email automáticamente. La ejecución queda registrada en el historial del ticket como **Ejecución de Workflow — Exitoso**.
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FAdbmQJAqWTX8LDEr18SS%2Fimage.png?alt=media&#x26;token=414c683a-1ab7-4b4e-aa7a-15a83730714a" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### Paso 5: Recibir y responder correos
+
+Las respuestas de tus contactos llegan a Vambe como tickets del embudo asociado al canal. Para verlas, entra a **Chat** y usa el filtro **Correos**: cada hilo se abre con su historial completo y puedes responder desde el mismo ticket con **Responder** o **Responder a todos**. Tu asistente también puede atenderlas de forma automática.
+
+{% hint style="info" %}
+Para habilitar la recepción en tu canal, sigue la guía de [Cómo activar la recepción de correos](../conexion-de-canales-de-vambe/como-activar-la-recepcion-de-correos.md).
+{% endhint %}
 
 ***
 
