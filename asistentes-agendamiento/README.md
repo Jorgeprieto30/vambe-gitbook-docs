@@ -63,9 +63,9 @@ Puedes configurar jornadas de trabajo específicas para evitar agendamientos fue
 {% step %}
 #### Múltiples calendarios conectados
 
-Vambe puede consultar varios calendarios de agentes con permisos de administrador.
+Vambe puede consultar varios calendarios de Ejecutivos con permisos de administrador.
 
-Si un agente no tiene disponibilidad pero otro sí, la IA gestiona correctamente la asignación.
+Si un Ejecutivo no tiene disponibilidad pero otro sí, la IA gestiona correctamente la asignación.
 {% endstep %}
 
 {% step %}
@@ -73,9 +73,9 @@ Si un agente no tiene disponibilidad pero otro sí, la IA gestiona correctamente
 
 Puedes definir cómo se asignan las reuniones:
 
-* Asignación aleatoria entre agentes disponibles
+* Asignación aleatoria entre Ejecutivos disponibles
 * Criterio personalizado con IA, según reglas del negocio (por sucursal, tipo de cliente, etc.)
-* Asignación por agente específico, usando etiquetas o historial del cliente
+* Asignación por Ejecutivo específico, usando etiquetas o historial del cliente
 
 Además, Vambe genera automáticamente la descripción del evento basada en la conversación y mensajes de confirmación enviados por WhatsApp.
 {% endstep %}
@@ -88,6 +88,7 @@ Además, Vambe genera automáticamente la descripción del evento basada en la c
 El segundo tipo de agendamiento utiliza el bloque **Aplicaciones de Reserva**, diseñado para integrarse con plataformas especializadas como:
 
 * **Dentalink / Medilink**
+* **DentalSoft**
 * **Reservo**
 * **AgendaPro**
 
