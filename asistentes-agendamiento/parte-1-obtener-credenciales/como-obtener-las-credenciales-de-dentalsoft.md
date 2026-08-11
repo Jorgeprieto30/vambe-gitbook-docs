@@ -92,6 +92,41 @@ Errores comunes a evitar:
 * Compartir estas credenciales por canales no seguros: con ellas se puede acceder a la información de la clínica.
 {% endhint %}
 
+#### Qué información sincroniza Vambe desde DentalSoft
+
+Al conectar la integración, Vambe lee la configuración de tu cuenta de DentalSoft y la replica dentro de Vambe: sucursales, tratamientos, profesionales y la relación entre ellos. Conocer los criterios que se aplican en cada caso te permitirá revisar tu información en DentalSoft antes de conectar y corregir cualquier dato que no se refleje como esperas.
+
+**Sucursales**
+
+Se traen todas las sucursales del listado de la clínica, sin filtros ni condiciones adicionales.
+
+**Tratamientos**
+
+Los tratamientos en Vambe corresponden a las especialidades de DentalSoft. Se sincroniza toda especialidad que se encuentre activa; las inactivas se omiten.
+
+El nombre del tratamiento en Vambe es el nombre de la especialidad, y su descripción corresponde a la abreviación de esa misma especialidad.
+
+La duración no proviene de DentalSoft: se configura directamente en Vambe y se expresa en bloques. El largo del bloque —5 o 15 minutos, según la clínica— se lee desde tu cuenta de DentalSoft al momento de conectar las credenciales.
+
+**Profesionales**
+
+Un profesional queda asociado a una sucursal solo si su usuario en DentalSoft cumple con **todas** las condiciones siguientes:
+
+* Su **tipo de profesional** es **Usuario con agenda**. Ningún otro tipo se sincroniza.
+* El **usuario está activo**.
+* Tiene un **usuario (login) asignado**. Un profesional sin usuario asociado se descarta.
+* Está **asignado a esa sucursal** en su ficha de usuario.
+
+Si un profesional no aparece en Vambe, revisa estos cuatro puntos en su ficha de DentalSoft: basta con que uno no se cumpla para que quede fuera de la sincronización.
+
+**Asociación entre profesionales y tratamientos**
+
+La relación entre profesionales y tratamientos se construye a partir de las especialidades asignadas a cada usuario: el profesional queda disponible bajo cada especialidad que tenga registrada en su ficha.
+
+{% hint style="warning" %}
+Un profesional que no tenga **ninguna** especialidad asignada en DentalSoft queda asociado a **todos** los tratamientos de su sucursal. Si observas que un profesional aparece disponible para todos los tratamientos, revisa su ficha de usuario en DentalSoft y asígnale las especialidades que corresponda.
+{% endhint %}
+
 <details>
 
 <summary>¿Te ha sido útil este artículo?</summary>
