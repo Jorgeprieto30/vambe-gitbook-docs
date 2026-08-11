@@ -43,7 +43,21 @@ El widget de actividad muestra el volumen de eventos de tu equipo dividido en bl
 
 ### La tabla de Ejecutivos: elige qué columnas ver
 
-Debajo de los widgets encontrarás la tabla de rendimiento por Ejecutivo, con los tickets, tasas y cumplimiento de SLA de cada uno. Puedes elegir qué columnas mostrar según lo que te interese: si tu cuenta no tiene configurado SLA o CSAT, por ejemplo, puedes ocultar esas columnas y quedarte solo con la información que sí usas.
+Debajo de los widgets encontrarás la tabla de rendimiento por Ejecutivo, con los tickets, tasas, cumplimiento de SLA, plantillas enviadas, horas en línea y CSAT de cada uno. Puedes elegir qué columnas mostrar según lo que te interese: si tu cuenta no tiene configurado SLA o CSAT, por ejemplo, puedes ocultar esas columnas y quedarte solo con la información que sí usas.
+
+![Tabla de rendimiento por Ejecutivo, con las columnas de tickets, tasas, SLA, plantillas, horas en línea y CSAT](<.gitbook/assets/tabla-rendimiento-ejecutivos (1).png>)
+
+#### Las columnas de SLA: el cumplimiento como dato principal
+
+Las tres columnas de SLA —**1ª respuesta**, **Próx. respuesta** y **Resolución**— muestran como dato principal el porcentaje de cumplimiento de cada Ejecutivo, y justo debajo, en tamaño menor, el tiempo promedio. Así sabes de inmediato si se está cumpliendo el objetivo y, en la misma celda, qué tan rápido se está respondiendo. Al ordenar por cualquiera de estas columnas, el orden sigue el porcentaje de cumplimiento.
+
+#### Plantillas: la gestión saliente de cada Ejecutivo
+
+La columna **Plantillas** cuenta las plantillas de WhatsApp que envió cada Ejecutivo durante el período seleccionado, sin considerar las que se envían desde campañas. Te sirve para ver quién está haciendo gestión saliente y con qué intensidad, y para mantener a la vista el volumen de envíos de tu equipo.
+
+{% hint style="info" %}
+En los dashboards que ya tienes creados, activa esta columna desde la configuración del widget, en la sección **Columnas**. En los dashboards nuevos viene incluida por defecto.
+{% endhint %}
 
 ***
 
