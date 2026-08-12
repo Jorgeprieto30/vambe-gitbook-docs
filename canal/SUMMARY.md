@@ -34,6 +34,7 @@
 * [Cómo crear y enviar campañas de WhatsApp en Vambe](campanas/como-crear-y-enviar-campanas-de-whatsapp-en-vambe.md)
 * [Marketing Messages Lite (MM Lite): Nueva forma de enviar mensajes promocionales en WhatsApp](campanas/marketing-messages-lite-mm-lite-nueva-forma-de-enviar-mensajes-promocionales-en-whatsapp.md)
 * [Cómo usar el canal de Email en Vambe](campanas/como-usar-el-canal-de-email-en-vambe.md)
+* [Desuscripción en campañas de email](campanas/desuscripcion-en-campanas-de-email.md)
 
 ## Comentarios de Instagram
 

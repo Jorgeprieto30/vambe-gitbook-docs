@@ -37,6 +37,12 @@ El editor incluye los siguientes elementos:
 * **Columnas** — diseño en dos o más columnas
 * **Firma** — puedes vincular una firma creada previamente
 * **Redes sociales** — íconos con enlaces a tus perfiles
+* **Baja** — enlace para que tus contactos puedan darse de baja de tus correos de marketing
+* **HTML** — para insertar tu propio código HTML
+
+{% hint style="warning" %}
+Toda plantilla que uses en campañas de marketing necesita un link de baja. Si falta, Vambe te avisa sobre el editor y puedes agregarlo con el bloque **Baja**. Revísalo en [Desuscripción en campañas de email](desuscripcion-en-campanas-de-email.md).
+{% endhint %}
 
 **Vista previa**
 
@@ -69,6 +75,8 @@ Las campañas permiten enviar un email masivo a una lista de destinatarios.
 **Ver métricas de la campaña**
 
 Una vez enviada, puedes revisar el estado de cada campaña desde la pestaña **Envíos** en la sección de Plantillas Email. Ahí verás nombre de la campaña, cantidad de destinatarios, fecha de envío y estado.
+
+Los envíos que salieron aparecen como **Enviada**. Si un destinatario se dio de baja o fue bloqueado manualmente, su envío aparece como **Bloqueado** y no se le envía el correo. Puedes revisar el detalle en [Desuscripción en campañas de email](desuscripcion-en-campanas-de-email.md).
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FNFFejCmxA6MYKqW30xBX%2Fimage.png?alt=media&#x26;token=2cccc2f5-d31d-4074-985e-215f17038d2d" alt=""><figcaption></figcaption></figure>
 
