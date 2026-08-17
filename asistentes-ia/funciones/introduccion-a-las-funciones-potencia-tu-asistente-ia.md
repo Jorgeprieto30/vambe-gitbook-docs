@@ -16,7 +16,7 @@ Dentro de la configuración de tu Asistente, existen múltiples bloques (como pe
 1. **Pasos a Seguir**: Puedes instruir a la IA para que ejecute una acción como parte de su flujo de conversación lineal (ej: _Pasos 1, 2, 3... Ejecutar función_).
 2. **Casos Posibles:** Puedes configurar que una función se active si ocurre una situación específica durante la charla (ej: _Si el cliente pide devolución -> Ejecutar función_).
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FOssLdcHg2tawaII781X8%2Fimage.png?alt=media&#x26;token=5b57d39f-a935-4b52-895d-7d166b385a3a" alt=""><figcaption></figcaption></figure>
 
 **¿Cómo funcionan?**
 
@@ -35,18 +35,18 @@ Actualmente, Vambe cuenta con una amplia variedad de funciones para cubrir disti
 * Cambio de Etapa
 * Quitar contacto del embudo
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Cambio de Etapa</td><td><a href="como-cambiar-un-ticket-de-una-etapa-a-otra-de-forma-automatica.md">como-cambiar-un-ticket-de-una-etapa-a-otra-de-forma-automatica.md</a></td></tr><tr><td>Quitar contacto del embudo</td><td><a href="como-hacer-que-la-ia-elimine-un-contacto-del-embudo-si-no-califica-durante-el-chat-o-es-spam.md">como-hacer-que-la-ia-elimine-un-contacto-del-embudo-si-no-califica-durante-el-chat-o-es-spam.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Cambio de Etapa</td><td></td></tr><tr><td>Quitar contacto del embudo</td><td></td></tr></tbody></table>
 
 **Comunicación y Envío de Información:**
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Enviar Plantilla</td><td><a href="como-hacer-que-la-ia-envie-una-plantilla-de-whatsapp-automaticamente.md">como-hacer-que-la-ia-envie-una-plantilla-de-whatsapp-automaticamente.md</a></td></tr><tr><td>Enviar Audio</td><td><a href="dale-voz-a-tu-ia-configuracion-de-la-funcion-enviar-audio.md">dale-voz-a-tu-ia-configuracion-de-la-funcion-enviar-audio.md</a></td></tr><tr><td>Enviar Documento o Imagen</td><td><a href="como-hacer-que-la-ia-envie-un-pdf-imagen-o-archivo-automaticamente.md">como-hacer-que-la-ia-envie-un-pdf-imagen-o-archivo-automaticamente.md</a></td></tr><tr><td>Crear Nota</td><td><a href="como-hacer-que-la-ia-deje-notas-internas-en-el-chat.md">como-hacer-que-la-ia-deje-notas-internas-en-el-chat.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Enviar Plantilla</td><td></td></tr><tr><td>Enviar Audio</td><td></td></tr><tr><td>Enviar Documento o Imagen</td><td></td></tr><tr><td>Crear Nota</td><td></td></tr></tbody></table>
 
 **Herramientas y Cálculos:**
 
 * Búsqueda Base Vectorial (Buscar en documentos específicos)
 * Drive File Transformer
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Búsqueda Base Vectorial</td><td><a href="como-indicar-al-asistente-donde-buscar-informacion-dentro-de-la-base-de-conocimiento.md">como-indicar-al-asistente-donde-buscar-informacion-dentro-de-la-base-de-conocimiento.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Búsqueda Base Vectorial</td><td></td></tr></tbody></table>
 
 **Integraciones y Conectividad:**
 
@@ -60,8 +60,9 @@ Actualmente, Vambe cuenta con una amplia variedad de funciones para cubrir disti
 * Link Fintoc
 * Vambe
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Llamada Webhook</td><td><a href="como-conectar-tu-asistente-con-sistemas-externos-apis-usando-webhooks.md">como-conectar-tu-asistente-con-sistemas-externos-apis-usando-webhooks.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Llamada Webhook</td><td></td></tr></tbody></table>
 
 **Ecommerce**:
 
 * Obtener Estado de Orden
+* Cambiar Dirección de Envío
