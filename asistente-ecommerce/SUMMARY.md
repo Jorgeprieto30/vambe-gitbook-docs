@@ -16,3 +16,4 @@
 * [Cómo activar la recuperación de carritos abandonados en WooCommerce](parte-3-automatizaciones/como-activar-la-recuperacion-de-carritos-abandonados-en-woocommerce.md)
 * [Integración Reversso: Devoluciones Automáticas](parte-3-automatizaciones/integracion-reversso-devoluciones-automaticas.md)
 * [Integración con Envíame: Seguimiento de pedidos en tiempo real](parte-3-automatizaciones/integracion-con-enviame-seguimiento-de-pedidos-en-tiempo-real.md)
+* [Cambio de dirección de envío en Shopify](parte-3-automatizaciones/cambio-de-direccion-de-envio-en-shopify.md)
