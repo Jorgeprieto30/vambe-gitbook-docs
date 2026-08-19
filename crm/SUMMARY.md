@@ -11,6 +11,7 @@
 ## Integración plataforma CRM
 
 * [Integración de Vambe con CRMs: qué es posible, qué se sincroniza y qué debes considerar](integracion-plataforma-crm/integracion-de-vambe-con-crms-que-es-posible-que-se-sincroniza-y-que-debes-considerar.md)
+* [Cómo obtener las credenciales de Odoo CRM](integracion-plataforma-crm/como-obtener-las-credenciales-de-odoo-crm.md)
 * [Cómo conectar y configurar tu CRM](integracion-plataforma-crm/como-conectar-y-configurar-tu-crm.md)
 
 ## Preguntas frecuentes integración CRM
