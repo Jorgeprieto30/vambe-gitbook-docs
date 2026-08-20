@@ -19,7 +19,7 @@ Sigue estos pasos para crear esta regla de excepción en tu bot:
 
 **Paso 1: Ingresar al Asistente**
 
-1. Ve al menú [Asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md) en la barra lateral izquierda.
+1. Ve al menú [Asistente](../asistentes-con-bloques-v2/como-ingresar-al-asistente-de-inteligencia-artificial.md) en la barra lateral izquierda.
 2. Selecciona el asistente que está conectado a tu canal.
 3. Haz clic en **+ Agregar otro bloque** (si no lo tienes) y selecciona **Casos Posibles**, o entra al que ya tienes creado.
 

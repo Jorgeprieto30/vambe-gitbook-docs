@@ -30,7 +30,7 @@ Si decides que la IA debe descartar y eliminar a estos contactos basándose en s
 
 **Paso 1: Ingresar al Cerebro de la IA**
 
-1. [Ve al menú Asistente.](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md)
+1. [Ve al menú Asistente.](../asistentes-con-bloques-v2/como-ingresar-al-asistente-de-inteligencia-artificial.md)
 2. Entra a editar tu bot.
 3. Dirígete a los bloques de **Pasos a Seguir** (si es una pregunta de filtro lineal) o **Casos Posibles** (si puede ocurrir en cualquier momento).
 

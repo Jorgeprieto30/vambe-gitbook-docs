@@ -37,7 +37,7 @@ Sigue estos pasos para adjuntar tus archivos:
 
 **Paso 1: Ingresar al Asistente**
 
-1. [Ve al menú Asistente.](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md)
+1. [Ve al menú Asistente.](../asistentes-con-bloques-v2/como-ingresar-al-asistente-de-inteligencia-artificial.md)
 2. Entra a **Pasos a Seguir** o **Casos Posibles.**
 
 **Paso 2: La Instrucción**

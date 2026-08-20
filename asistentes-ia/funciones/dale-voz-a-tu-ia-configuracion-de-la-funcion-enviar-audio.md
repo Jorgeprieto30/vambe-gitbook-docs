@@ -36,7 +36,7 @@ Sigue estos pasos para que tu asistente empiece a hablar:
 
 **Paso 1: Ingresar al Asistente**
 
-1. [Ve al menú Asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md) y selecciona el bot.
+1. [Ve al menú Asistente](../asistentes-con-bloques-v2/como-ingresar-al-asistente-de-inteligencia-artificial.md) y selecciona el bot.
 2. Ubícate en Pasos a Seguir o Casos Posibles.
 
 **Paso 2: Instrucción de Contenido (El Guion)**

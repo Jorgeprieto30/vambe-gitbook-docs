@@ -22,7 +22,7 @@ Sigue estos pasos para que tu bot empiece a tomar apuntes:
 
 **Paso 1: Ingresar al Asistente**
 
-1. [Ve al menú Asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md).
+1. [Ve al menú Asistente](../asistentes-con-bloques-v2/como-ingresar-al-asistente-de-inteligencia-artificial.md).
 2. Entra a Pasos a Seguir (si es un resumen al final de un flujo) o Casos Posibles (si es para anotar una incidencia específica, como un reclamo).
 
 **Paso 2: La Instrucción (El Pedido)**
