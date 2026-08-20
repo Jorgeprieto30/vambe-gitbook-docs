@@ -22,7 +22,7 @@ Sigue estos pasos para que tu bot empiece a tomar apuntes:
 
 **Paso 1: Ingresar al Asistente**
 
-1. [Ve al menú Asistente](../como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md).
+1. [Ve al menú Asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md).
 2. Entra a Pasos a Seguir (si es un resumen al final de un flujo) o Casos Posibles (si es para anotar una incidencia específica, como un reclamo).
 
 **Paso 2: La Instrucción (El Pedido)**
@@ -48,8 +48,6 @@ Configura los campos:
 3. **Contenido de la nota**: Aquí le dices a la IA qué escribir. Puedes poner instrucciones como: _"Resumen de lo solicitado por el cliente"_ o _"Datos de facturación del cliente"_.
 
 <figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Paso 4: Verificación Visual**
 

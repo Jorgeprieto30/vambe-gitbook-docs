@@ -45,7 +45,7 @@ Para empezar, es fundamental que ingreses a la configuración de tu cerebro de I
 
 **Paso 1: Ingresar al Asistente**
 
-1. [Ingresar al asistente](../como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md)
+1. [Ingresar al asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md)
 2. Selecciona el asistente que deseas editar (o crea uno nuevo).
 3. Una vez dentro, ubica los bloques de Pasos a Seguir o Casos Posibles. Recuerda que las funciones solo viven dentro de estos dos bloques.
 
@@ -75,8 +75,6 @@ Se abrirá un panel de configuración donde debes llenar dos campos vitales:
    * _Ejemplo de Descripción:_ "Cuando el cliente me responda las preguntas".
 
 <figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Paso 4: Verificación Visual (¿Cómo debe verse?)**
 

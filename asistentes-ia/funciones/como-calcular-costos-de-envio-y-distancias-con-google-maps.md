@@ -21,7 +21,7 @@ Sigue estos pasos para conectar la conversación con tu automatización:
 
 **Paso 1: Ingresar al Asistente**
 
-1. Ve al menú [Asistente](../como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md).
+1. Ve al menú [Asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md).
 2. Entra a Pasos a Seguir (recomendado) o Casos Posibles.
 
 **Paso 2: La Instrucción (El Gatillo)**
@@ -59,8 +59,6 @@ Aquí debes elegir cuál de las dos opciones usarás:
 3. **Contenido Generado por IA:**
    * **User Destination:** Dale la instrucción para buscar la dirección del cliente (Ej: "Obtén la dirección de destino del usuario en formato calle, comuna, ciudad").
 
-
-
 **Opción B:** Distancia entre **Puntos Dinámicos** Ideal para medir distancias entre dos puntos variables (A y B) sin una base fija.
 
 1.  Selecciona Get distance from dynamic points.
@@ -78,4 +76,3 @@ Aquí debes elegir cuál de las dos opciones usarás:
 Asegúrate de ver la tarjeta de la función "🗺️ Get distance..." justo debajo de tu texto de instrucción. Si la tarjeta está ahí, tu IA ya está lista para calcular rutas.
 
 <figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
-

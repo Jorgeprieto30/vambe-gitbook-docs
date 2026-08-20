@@ -36,7 +36,7 @@ Sigue estos pasos para que tu asistente empiece a hablar:
 
 **Paso 1: Ingresar al Asistente**
 
-1. [Ve al menú Asistente](../como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md) y selecciona el bot.
+1. [Ve al menú Asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md) y selecciona el bot.
 2. Ubícate en Pasos a Seguir o Casos Posibles.
 
 **Paso 2: Instrucción de Contenido (El Guion)**
@@ -76,7 +76,7 @@ Revisa la estructura: Debes ver el recuadro con tu instrucción escrita y, justo
 
 #### 💡 Preguntas Frecuentes
 
-¿Puedo subir mis propios audios pregrabados? No con esta función. Esta herramienta es generativa: crea el audio al instante basándose en lo que la IA decide responder. Si quieres enviar un archivo de audio fijo (MP3), debes usar la función _\[Enviar Documento o Imagen]_&#x20;
+¿Puedo subir mis propios audios pregrabados? No con esta función. Esta herramienta es generativa: crea el audio al instante basándose en lo que la IA decide responder. Si quieres enviar un archivo de audio fijo (MP3), debes usar la función _\[Enviar Documento o Imagen]_
 
 ¿Funciona en otros idiomas? ¡Sí! Si la instrucción es "Responde en inglés" o si el cliente habla en otro idioma, la IA generará el audio en ese idioma con una fluidez sorprendente.
 

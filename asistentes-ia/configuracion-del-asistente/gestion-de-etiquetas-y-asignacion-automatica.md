@@ -1,4 +1,12 @@
-# Gestión de etiquetas y asignación automática
+# Gestión de etiquetas y asignación automática (V2)
+
+{% hint style="warning" %}
+**La configuración del bloque de Etiquetas descrita en este artículo corresponde al Asistente con Bloques (V2), la versión anterior de los Asistentes IA de Vambe.**
+
+La creación de etiquetas en el CRM es transversal y aplica a cualquier asistente. En los **Asistentes con Escenarios (V3)**, las Etiquetas se configuran desde los bloques de identidad del asistente.
+
+[Conocer los Asistentes con Escenarios (V3)](../asistentes-con-escenarios-v3/asistentes-con-escenarios-v3-que-son-y-cuando-usarlos.md)
+{% endhint %}
 
 ## Gestión de etiquetas y asignación automática
 
@@ -115,7 +123,7 @@ Además de asignarlas manualmente, las etiquetas pueden **asignarse automáticam
 {% step %}
 **Paso: Acceder al asistente**
 
-1. [Ingresa al Asistente donde quieres que ocurra la asignación.](https://academy.vambe.ai/asistentes-ia/como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial)
+1. [Ingresa al Asistente donde quieres que ocurra la asignación.](como-ingresar-al-asistente-de-inteligencia-artificial.md)
 {% endstep %}
 
 {% step %}

@@ -1,13 +1,19 @@
 ---
 description: >-
-  Entregue los datos técnicos a su IA. Aprenda a estructurar los Bloques de
-  Información y a conectar la Base de Conocimiento para que su asistente
-  responda con precisión sobre nuestra información
+  Asistente con Bloques (V2). Estructure los Bloques de Información y conecte la
+  Base de Conocimiento para que su asistente responda con precisión sobre
+  nuestra información
 ---
 
 # Parte 4: Bloques de Información y Base de Conocimiento
 
-## Parte 4: Bloques de Información y Base de Conocimiento
+{% hint style="warning" %}
+**Este artículo corresponde al Asistente con Bloques (V2), la versión anterior de los Asistentes IA de Vambe.**
+
+Los asistentes que se crean actualmente son los **Asistentes con Escenarios (V3)**. La Base de Conocimiento, en cambio, es transversal: funciona igual en ambas versiones.
+
+[Conocer los Asistentes con Escenarios (V3)](../asistentes-con-escenarios-v3/asistentes-con-escenarios-v3-que-son-y-cuando-usarlos.md)
+{% endhint %}
 
 Existe una máxima fundamental al configurar su Inteligencia Artificial: **El asistente será tan inteligente como la información que usted le entregue.** Para evitar que la IA asuma, adivine o "alucine" datos, toda la información de su negocio debe estar documentada explícitamente dentro de Vambe. Para esto, Vambe divide el conocimiento en dos grandes áreas: los **Bloques de Información** (para datos directos y rápidos) y la **Base de Conocimiento** (para archivos extensos y bases de datos).
 
@@ -57,7 +63,7 @@ Esta sección le permite conectar archivos pesados, documentos PDF, hojas de cá
 
 **Paso 1: Cargar la información al sistema**
 
-Antes de asignarla a su asistente, los documentos deben estar previamente cargados o conectados en el módulo general del sistema. 👉 \[Visite este artículo para aprender a conectar documentos en la Base de Conocimiento General]
+Antes de asignarla a su asistente, los documentos deben estar previamente cargados o conectados en el módulo general del sistema. 👉 [¿Qué es la Base de Conocimiento y cómo configurarla en Vambe?](../base-de-conocimiento/que-es-la-base-de-conocimiento-y-como-configurarla-en-vambe.md)
 
 **Paso 2: Asociar las carpetas a su Asistente**
 
@@ -73,7 +79,7 @@ Una vez que sus archivos estén cargados en el sistema, debe indicarle a este as
 
 Al asociar las carpetas, la IA tiene una "noción general" de esos documentos. Sin embargo, si usted tiene bases de datos gigantes (ejemplo: un Excel con miles de repuestos de automóviles o el estado de miles de pedidos) y necesita que la IA vaya a buscar un dato _exacto y obligatorio_ a ese archivo externo, debe utilizar la **Función de Búsqueda Vectorial.**
 
-Esta función se configura dentro de los bloques de **Pasos a seguir o Casos Posibles** que vimos en la Parte 3, **obligando a la IA a escanear el documento antes de responder**. 👉 \[Aprenda a configurar la Función de Búsqueda Vectorial aquí]
+Esta función se configura dentro de los bloques de **Pasos a seguir o Casos Posibles** que vimos en la Parte 3, **obligando a la IA a escanear el documento antes de responder**. 👉 [Cómo indicar al asistente dónde buscar información dentro de la Base de Conocimiento](../funciones/como-indicar-al-asistente-donde-buscar-informacion-dentro-de-la-base-de-conocimiento.md)
 
 ***
 

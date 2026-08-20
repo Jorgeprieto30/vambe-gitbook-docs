@@ -11,8 +11,6 @@ Cuando conectas tu cuenta de Instagram a Vambe, es muy común que tus clientes r
 
 Por defecto, la Inteligencia Artificial intentará ser educada y responder a esa interacción, lo que puede generar una conversación forzada o poco natural. Para solucionar esto, usaremos un "truco" en el bloque de Casos Posibles para obligar a la IA a guardar silencio ante estas reacciones.
 
-
-
 ***
 
 #### Configuración Paso a Paso
@@ -21,7 +19,7 @@ Sigue estos pasos para crear esta regla de excepción en tu bot:
 
 **Paso 1: Ingresar al Asistente**
 
-1. Ve al menú [Asistente](../como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md) en la barra lateral izquierda.
+1. Ve al menú [Asistente](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md) en la barra lateral izquierda.
 2. Selecciona el asistente que está conectado a tu canal.
 3. Haz clic en **+ Agregar otro bloque** (si no lo tienes) y selecciona **Casos Posibles**, o entra al que ya tienes creado.
 
@@ -39,7 +37,7 @@ En el recuadro de la derecha (donde le decimos a la IA qué hacer), vamos a darl
 
 Copia y pega este texto (asegúrate de incluir los espacios en blanco entre las comillas):
 
-> **SIEMPRE responde el siguiente texto: "                      "**
+> **SIEMPRE responde el siguiente texto: " "**
 
 _**¿Por qué hacemos esto?**_ Al obligar a la IA a responder solo con un espacio vacío, el sistema detecta que no hay un mensaje real que enviar y, en la práctica, la IA no le enviará nada al cliente, dejándolo en "visto" de forma natural.
 

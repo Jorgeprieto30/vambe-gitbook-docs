@@ -2,23 +2,23 @@
 
 * [Asistentes IA](README.md)
 
-## Como crear un asistente desde 0
+## Asistentes con Bloques (V2)
 
-* [Parte 1: La Mentalidad](como-crear-un-asistente-desde-0/parte-1-la-mentalidad.md)
-* [Parte 2: Bloques de Identidad](como-crear-un-asistente-desde-0/parte-2-bloques-de-identidad.md)
-* [Parte 3: Bloques de Instrucciones](como-crear-un-asistente-desde-0/parte-3-bloques-de-instrucciones.md)
-* [Parte 4: Bloques de Información y Base de Conocimiento](como-crear-un-asistente-desde-0/parte-4-bloques-de-informacion-y-base-de-conocimiento.md)
+* [Parte 1: La Mentalidad](asistentes-con-bloques-v2/parte-1-la-mentalidad.md)
+* [Parte 2: Bloques de Identidad](asistentes-con-bloques-v2/parte-2-bloques-de-identidad.md)
+* [Parte 3: Bloques de Instrucciones](asistentes-con-bloques-v2/parte-3-bloques-de-instrucciones.md)
+* [Parte 4: Bloques de Información y Base de Conocimiento](asistentes-con-bloques-v2/parte-4-bloques-de-informacion-y-base-de-conocimiento.md)
 
 ## Base de Conocimiento
 
 * [¿Qué es la Base de Conocimiento y cómo configurarla en Vambe?](base-de-conocimiento/que-es-la-base-de-conocimiento-y-como-configurarla-en-vambe.md)
 
-## Como armar los bloques
+## Configuración del asistente
 
-* [Cómo ingresar al asistente de Inteligencia Artificial](como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md)
-* [Gestión de etiquetas y asignación automática](como-armar-los-bloques/gestion-de-etiquetas-y-asignacion-automatica.md)
-* [Cómo evitar respuestas innecesarias con "No responder"](como-armar-los-bloques/como-evitar-respuestas-innecesarias-con-no-responder.md)
-* [Cómo controlar las respuestas de tu asistente con el Juez](como-armar-los-bloques/como-controlar-las-respuestas-de-tu-asistente-con-el-juez.md)
+* [Cómo ingresar al asistente de Inteligencia Artificial (V2)](configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md)
+* [Gestión de etiquetas y asignación automática (V2)](configuracion-del-asistente/gestion-de-etiquetas-y-asignacion-automatica.md)
+* [Cómo evitar respuestas innecesarias con "No responder"](configuracion-del-asistente/como-evitar-respuestas-innecesarias-con-no-responder.md)
+* [Cómo controlar las respuestas de tu asistente con el Juez](configuracion-del-asistente/como-controlar-las-respuestas-de-tu-asistente-con-el-juez.md)
 
 ## Asistentes con Escenarios (V3)
 

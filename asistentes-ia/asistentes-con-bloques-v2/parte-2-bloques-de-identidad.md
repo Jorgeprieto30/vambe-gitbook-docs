@@ -1,11 +1,19 @@
 ---
 description: >-
-  Dale personalidad a tu IA. Aprende a configurar los Bloques de Identidad
+  Asistente con Bloques (V2). Configure los Bloques de Identidad
   (Personificación, Objetivo y Formato de Respuesta) para definir el tono, el
-  rol y la misión de tu asistente.
+  rol y la misión de su asistente.
 ---
 
 # Parte 2: Bloques de Identidad
+
+{% hint style="warning" %}
+**Este artículo corresponde al Asistente con Bloques (V2), la versión anterior de los Asistentes IA de Vambe.**
+
+Los asistentes que se crean actualmente son los **Asistentes con Escenarios (V3)**. Los asistentes V2 existentes siguen funcionando con normalidad y no es necesario migrarlos.
+
+[Conocer los Asistentes con Escenarios (V3)](../asistentes-con-escenarios-v3/asistentes-con-escenarios-v3-que-son-y-cuando-usarlos.md)
+{% endhint %}
 
 Ya entendemos que un asistente es como una figura de Lego. Ahora vamos a colocar las primeras piezas: los **Bloques de Identidad.**
 
@@ -25,7 +33,7 @@ Antes de escribir una sola palabra, debes tener algo muy claro: **Aquí NO van l
 
 #### 1. Personificación (El Rol)
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2F0ddokPNPrXnrhuM9jhjd%2Fimage.png?alt=media&#x26;token=d80f16d9-afa3-4570-b39e-67778b6f6c67" alt=""><figcaption></figcaption></figure>
 
 Aquí defines quién es la inteligencia artificial y le das un breve contexto de la empresa para que entienda su entorno.
 
@@ -47,7 +55,7 @@ _(Tip: Si no eres muy bueno redactando, puedes escribir una idea básica y usar 
 
 #### 2. Objetivo (La Misión)
 
-<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FoXjbsi8Vk3CdUtTvlPP8%2Fimage.png?alt=media&#x26;token=4054689d-d038-4f19-8bc6-6e09d644597e" alt=""><figcaption></figcaption></figure>
 
 Este bloque establece la directriz principal de la Inteligencia Artificial. Representa la **meta final** que el asistente debe cumplir en su interacción con el usuario. La IA orientará todas sus respuestas y acciones para alcanzar sistemáticamente este propósito.
 
@@ -63,7 +71,7 @@ Recomendación: Se sugiere establecer un máximo de tres objetivos para mantener
 
 #### 3. Formato de Respuesta (El Estilo)
 
-<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FlNju7LYovYbp5vKRyDAT%2Fimage.png?alt=media&#x26;token=dddf73ec-429a-45e9-b4d0-c70bc49a53b1" alt=""><figcaption></figcaption></figure>
 
 Aquí le decimos a la IA cómo debe expresarse. Este bloque es vital para humanizar al bot y evitar que envíe testamentos gigantescos de texto.
 
@@ -76,8 +84,6 @@ Asegura respuestas consistentes y alineadas a la marca.
 **Ejemplo de cómo redactarlo:**
 
 > "Debes responder de forma MUY breve, limitándote a 200 caracteres (es MUY importante que seas breve en tus respuestas). Usa un tono semiformal, amigable y accesible, combinando profesionalismo con calidez. Puedes incluir algunos emojis para enfatizar puntos clave o para añadir un toque personal, pero sin excederte. La idea es mantener la conversación ligera y agradable sin perder la claridad y efectividad en la comunicación. Debes responder de la forma más humana y natural posible.
->
->
 >
 > REGLA ABSOLUTA PARA PRODUCTOS - SEGUIR EN ESTE ORDEN:
 >

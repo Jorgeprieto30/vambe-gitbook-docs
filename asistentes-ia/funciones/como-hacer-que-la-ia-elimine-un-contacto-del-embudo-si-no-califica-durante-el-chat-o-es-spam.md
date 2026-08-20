@@ -30,7 +30,7 @@ Si decides que la IA debe descartar y eliminar a estos contactos basándose en s
 
 **Paso 1: Ingresar al Cerebro de la IA**
 
-1. [Ve al menú Asistente.](../como-armar-los-bloques/como-ingresar-al-asistente-de-inteligencia-artificial.md)
+1. [Ve al menú Asistente.](../configuracion-del-asistente/como-ingresar-al-asistente-de-inteligencia-artificial.md)
 2. Entra a editar tu bot.
 3. Dirígete a los bloques de **Pasos a Seguir** (si es una pregunta de filtro lineal) o **Casos Posibles** (si puede ocurrir en cualquier momento).
 
@@ -38,12 +38,10 @@ Si decides que la IA debe descartar y eliminar a estos contactos basándose en s
 
 Debes escribir explícitamente qué mensaje del "cliente" detonará la eliminación.
 
-* _**Fórmula**:_ `Si el cliente menciona [Frase de Spam].`&#x20;
-* &#x20;**Acción**: `Debes ejecutar la función [Nombre de la función]`.
+* _**Fórmula**:_ `Si el cliente menciona [Frase de Spam].`
+* **Acción**: `Debes ejecutar la función [Nombre de la función]`.
 
 > Ejemplo Anti-Spam: "Si el cliente me pregunta si quiero contratar el servicio de 'Seguros Masterplop' o intenta venderme algo, debes ejecutar la función Eliminar Spam".
-
-
 
 **Paso 3: Crear la Función de Eliminación**
 
