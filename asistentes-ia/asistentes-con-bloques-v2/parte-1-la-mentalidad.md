@@ -79,4 +79,4 @@ Darle esta secuencialidad evita que la IA se salte reglas o intente adivinar dat
 
 Te invito a revisar como se crea cada una de las partes del asistente, importante que **TODAS** son necesarias para crear un asistente de forma completa.
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Bloques de identidad</td><td></td></tr><tr><td>Bloques de instrucciones</td><td></td></tr><tr><td>Bloques de información y base de conocimiento</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Bloques de identidad</td><td><a href="parte-2-bloques-de-identidad.md">parte-2-bloques-de-identidad.md</a></td></tr><tr><td>Bloques de instrucciones</td><td><a href="parte-3-bloques-de-instrucciones.md">parte-3-bloques-de-instrucciones.md</a></td></tr><tr><td>Bloques de información y base de conocimiento</td><td><a href="parte-4-bloques-de-informacion-y-base-de-conocimiento.md">parte-4-bloques-de-informacion-y-base-de-conocimiento.md</a></td></tr></tbody></table>
