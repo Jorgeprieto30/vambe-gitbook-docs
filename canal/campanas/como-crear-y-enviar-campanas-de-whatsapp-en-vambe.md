@@ -1,9 +1,12 @@
 ---
+description: >-
+  Guía de las campañas de WhatsApp creadas desde la Vista antigua: prepara tu
+  archivo, configura la campaña, envíala y revisa sus resultados.
 cover: ../.gitbook/assets/Portada 16.png
 coverY: 0
 ---
 
-# Cómo crear y enviar campañas de WhatsApp en Vambe
+# Cómo crear y enviar campañas de WhatsApp desde la Vista antigua
 
 ## Cómo crear y enviar campañas de WhatsApp en Vambe
 

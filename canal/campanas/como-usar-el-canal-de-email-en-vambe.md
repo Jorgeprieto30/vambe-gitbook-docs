@@ -41,7 +41,7 @@ El editor incluye los siguientes elementos:
 * **HTML** — para insertar tu propio código HTML
 
 {% hint style="warning" %}
-Toda plantilla que uses en campañas de marketing necesita un link de baja. Si falta, Vambe te avisa sobre el editor y puedes agregarlo con el bloque **Baja**. Revísalo en [Desuscripción en campañas de email](desuscripcion-en-campanas-de-email.md).
+Toda plantilla que uses en campañas de marketing necesita un link de baja. Si falta, Vambe te avisa sobre el editor y puedes agregarlo con el bloque **Baja**. Revísalo en Desuscripción en campañas de email.
 {% endhint %}
 
 **Vista previa**
@@ -53,6 +53,10 @@ Antes de enviar, usa la pestaña **Vista previa** para ver cómo se verá el cor
 #### Paso 2: Enviar una campaña
 
 Las campañas permiten enviar un email masivo a una lista de destinatarios.
+
+{% hint style="info" %}
+Para enviar un correo dentro de una secuencia de contacto —combinado con WhatsApp o llamadas IA, con esperas entre un paso y otro, y con analítica por paso— arma tu campaña desde **Canales → Campañas**. Revisa [Campañas: contacta a tus clientes con un flujo omnicanal](campanas-contacta-a-tus-clientes-con-un-flujo-omnicanal.md).
+{% endhint %}
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FudDbbaCpjdwyhLtCObWz%2Fimage.png?alt=media&#x26;token=6b782af1-9c05-474c-85a9-2f7aef64a7a8" alt=""><figcaption></figcaption></figure>
 
@@ -76,7 +80,7 @@ Las campañas permiten enviar un email masivo a una lista de destinatarios.
 
 Una vez enviada, puedes revisar el estado de cada campaña desde la pestaña **Envíos** en la sección de Plantillas Email. Ahí verás nombre de la campaña, cantidad de destinatarios, fecha de envío y estado.
 
-Los envíos que salieron aparecen como **Enviada**. Si un destinatario se dio de baja o fue bloqueado manualmente, su envío aparece como **Bloqueado** y no se le envía el correo. Puedes revisar el detalle en [Desuscripción en campañas de email](desuscripcion-en-campanas-de-email.md).
+Los envíos que salieron aparecen como **Enviada**. Si un destinatario se dio de baja o fue bloqueado manualmente, su envío aparece como **Bloqueado** y no se le envía el correo. Puedes revisar el detalle en Desuscripción en campañas de email.
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FNFFejCmxA6MYKqW30xBX%2Fimage.png?alt=media&#x26;token=2cccc2f5-d31d-4074-985e-215f17038d2d" alt=""><figcaption></figcaption></figure>
 
@@ -126,7 +130,7 @@ Cada vez que se cumpla la condición del disparador, Vambe enviará el email aut
 Las respuestas de tus contactos llegan a Vambe como tickets del embudo asociado al canal. Para verlas, entra a **Chat** y usa el filtro **Correos**: cada hilo se abre con su historial completo y puedes responder desde el mismo ticket con **Responder** o **Responder a todos**. Tu asistente también puede atenderlas de forma automática.
 
 {% hint style="info" %}
-Para habilitar la recepción en tu canal, sigue la guía de [Cómo activar la recepción de correos](../conexion-de-canales-de-vambe/como-activar-la-recepcion-de-correos.md).
+Para habilitar la recepción en tu canal, sigue la guía de Cómo activar la recepción de correos.
 {% endhint %}
 
 ***
