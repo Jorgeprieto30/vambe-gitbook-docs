@@ -12,8 +12,6 @@ Esto cambia la pregunta que puedes responder sobre tus envíos: en vez de cuánt
 
 > Para entrar: en el menú de la izquierda, ve a **Canales** y luego a **Campañas**. Para crear una, haz clic en **+ Crear campaña**.
 
-\[IMAGEN 1: listado de Campañas con las columnas Nombre, Pasos, Audiencia, Proceso de envío y el botón + Crear campaña]
-
 ***
 
 ## Cómo funciona una campaña
@@ -45,7 +43,7 @@ Puedes elegir entre estos objetivos:
 * **Eventos personalizados** que tenga configurados tu organización.
 * **Sin objetivo**, cuando lo que buscas es simplemente que la persona te responda.
 
-\[IMAGEN 2: modal Creando campaña con el desplegable de Objetivo abierto, mostrando Cambio de etapa, Orden creada, Cita reservada, Cita confirmada y eventos personalizados]
+<figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Elige el objetivo pensando en qué te gustaría poder afirmar al final de la campaña. Si tu objetivo es una orden creada, el panel de resultados te mostrará cuántas personas compraron y por qué monto; si es «Sin objetivo», te mostrará cuántas respondieron.
@@ -61,7 +59,7 @@ Debajo eliges **Nuevo flujo** —o uno que hayas guardado antes— y vas agregan
 
 Al seleccionar un paso, se configura en el panel de la derecha. En los pasos de mensajería y de llamada defines el **canal** por el que sale el contacto y la **etapa al responder**, es decir, el embudo y la columna donde caerá el ticket si la persona contesta por ahí. Después eliges la plantilla —o la guía de llamada, en el caso de la llamada IA— y nombras las variables que la plantilla necesita.
 
-\[IMAGEN 3: configuración del paso Enviar plantilla, con Canal, Etapa al responder, Plantilla a enviar y Nombres de las variables]
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Cuando tu flujo tiene varios pasos por distintos canales, lo más simple es apuntar todos a la misma etapa: así, responda por donde responda, el cliente entra al mismo lugar de tu embudo.
@@ -77,8 +75,6 @@ Antes de continuar, ponle un **nombre al flujo**. Los flujos quedan guardados co
 
 Al pasar a la audiencia, Vambe te confirma tres cosas: el flujo queda fijo y para cambiarlo tendrás que crear otra campaña, la audiencia se validará contra esos pasos, y todavía no se envía nada.
 
-\[IMAGEN 4: modal de confirmación Crear la campaña y pasar a la audiencia]
-
 ***
 
 ## Paso 2: carga la audiencia
@@ -91,8 +87,6 @@ Un segmento es un grupo de clientes que cumple con las reglas que tú defines �
 
 Selecciona el segmento, decide cómo se completan las variables de tus plantillas —puedes rellenarlas tú con un valor fijo, como un saludo— y haz clic en **Cargar audiencia**.
 
-\[IMAGEN 5: pestaña Audiencia con Segmentos seleccionado y el listado de segmentos disponibles]
-
 ### Planilla Excel
 
 Si tu base está fuera de Vambe, sube una planilla. Vambe te arma la plantilla exacta que necesitas: una fila por contacto con las columnas obligatorias **telefono**, **email** y **nombre**, más una columna por cada variable de cada paso del flujo. En lugar de completar las variables plantilla por plantilla, las llenas todas centralizadas en el mismo archivo.
@@ -101,11 +95,7 @@ También puedes agregar columnas opcionales: campos de metadata que quieras guar
 
 Descarga la planilla de ejemplo, complétala con tus datos y súbela en el recuadro de carga.
 
-\[IMAGEN 6: pestaña Audiencia con Planilla excel seleccionada y la previsualización de columnas]
-
 Al confirmar, Vambe registra a todos los contactos que aún no existían y te muestra un resumen de la carga: cuántos contactos se crearon, cuántos ya existían y cuántas filas se omitieron.
-
-\[IMAGEN 7: resumen de la carga con contactos creados, contactos ya existentes y filas omitidas]
 
 {% hint style="warning" %}
 Una vez confirmada, la audiencia queda fija: no se puede modificar. Revisa bien tu segmento o tu planilla antes de confirmar.
@@ -123,7 +113,7 @@ Tienes tres modalidades:
 * **Programar envío**: eliges el día y la hora en que quieres que salga.
 * **Enviar en grupos**: defines cuántas personas entran en cada grupo y cuánta pausa hay entre uno y otro —por ejemplo, 100 personas cada una hora—, y decides si el primer grupo sale ahora o queda programado.
 
-\[IMAGEN 9: pantalla de envío con la opción Enviar en grupos, personas por grupo y pausa entre grupos]
+<figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Enviar en grupos distribuye la carga en el tiempo y ayuda a cuidar la reputación de tu número de WhatsApp y de tu dominio de correo cuando la audiencia es grande.
@@ -145,11 +135,11 @@ Muestra el desempeño general contra el objetivo que definiste, dentro de una **
 
 Ahí encuentras cuántas personas convirtieron y cuánto demoraron en hacerlo, cuántas respondieron, y el alcance del envío separado entre alcanzados, parciales —a quienes se pudo contactar por algunos medios pero no por otros— y no alcanzados.
 
-\[IMAGEN 13: pestaña Resumen con Respondieron, Cuándo respondieron y el alcance de la campaña]
+<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
 Más abajo, el bloque **Qué pasó entre un envío y el siguiente** es el que te dice si cada paso vale la pena: te muestra qué porcentaje respondió después del primer paso, cuánto sumó el segundo sobre lo que quedaba, y así sucesivamente.
 
-\[IMAGEN 11: bloque Qué pasó entre un envío y el siguiente, con el porcentaje que respondió y convirtió en cada paso]
+<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
 ### Progreso por paso
 
@@ -157,15 +147,9 @@ Entrega el detalle de cada nodo del flujo: la vista previa del mensaje, el canal
 
 Es normal que el primer paso tenga muchos más envíos que el segundo, y aquí entiendes exactamente por qué. Vambe desglosa **por qué fallaron los envíos** (números no registrados, restricciones de entrega) y **por qué se omitieron**: la mayoría suele ser gente que ya respondió o convirtió entre un paso y otro, y por lo tanto no hacía falta volver a contactar, más quienes se dieron de baja de los mensajes de marketing.
 
-\[IMAGEN 14: detalle del primer paso con la distribución por estado y el desglose de fallos]
-
-\[IMAGEN 15: detalle del segundo paso, con los envíos omitidos porque el contacto ya había respondido]
-
 ### Destinatarios
 
 El listado persona por persona, con su estado, el grupo en que salió, la fecha de envío y el resultado. Puedes buscar por nombre, teléfono o email, filtrar, descargar la tabla y abrir la conversación de cualquier destinatario para ver caso a caso qué ocurrió.
-
-\[IMAGEN 16: pestaña Destinatarios con el listado de contactos, su estado y su resultado]
 
 ***
 
