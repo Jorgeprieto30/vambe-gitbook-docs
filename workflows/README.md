@@ -101,14 +101,18 @@ Finalmente, define qué hará Vambe. Puedes encadenar múltiples acciones una tr
 * **Cambiar etapa**
 * **Actualizar campos**
 * **Asignar ejecutivo** / **Desasignar ejecutivos**
+* **Notificar ejecutivos asignados:** Envía una notificación en Vambe a los ejecutivos responsables del contacto, con el mensaje que definas. Útil para avisarles de inmediato cuando ocurre algo relevante en el ticket.
 * **Marcar como ganado o perdido**
 * **Cerrar ticket** / **Abrir ticket**
 * **Obtener o crear contacto**
 * **Actualizar monto del ticket**
 
+<figure><img src=".gitbook/assets/notificar-ejecutivos-asignados.png" alt=""><figcaption></figcaption></figure>
+
 #### Conversacional
 
-* **Enviar mensaje con IA:** Genera un mensaje usando inteligencia artificial según el prompt que definas.
+* **Enviar mensaje con IA:** Invoca directamente al asistente correspondiente dentro del mismo flujo, lo que le permite considerar el historial completo de la conversación, los escenarios configurados y las instrucciones definidas para generar una respuesta más precisa y alineada al contexto real del contacto.
+* **Detener respuesta de la IA:** Interrumpe la respuesta automática del asistente en la conversación, sin importar qué evento haya activado el flujo. Útil cuando quieres que distintos triggers puedan pausar al asistente de la misma forma, sin depender de la configuración particular de cada uno.
 * **Enviar plantilla:** Envía un mensaje pre-aprobado de WhatsApp. Ideal cuando han pasado más de 24 horas desde el último mensaje del cliente.
 * **Enviar archivo**
 * **Enviar mensaje de voz**
@@ -117,6 +121,10 @@ Finalmente, define qué hará Vambe. Puedes encadenar múltiples acciones una tr
 * **Enviar mensaje:** Mensaje de texto simple sin IA.
 * **Enviar mensaje programado**
 * **Activar llamada IA**
+
+> Los asistentes que responden dentro de un workflow no ejecutan funciones que generen efectos secundarios, salvo que estén configuradas directamente en el workflow.
+
+<figure><img src=".gitbook/assets/detener-respuesta-ia.png" alt=""><figcaption></figcaption></figure>
 
 #### CRM
 
