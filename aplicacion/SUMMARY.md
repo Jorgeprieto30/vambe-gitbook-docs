@@ -8,3 +8,4 @@
 * [Centro de Notificaciones: Tu Bandeja de Entrada Inteligente](secciones-de-la-aplicacion/centro-de-notificaciones-tu-bandeja-de-entrada-inteligente.md)
 * [Chats: Conversaciones, Multimedia y Tickets](secciones-de-la-aplicacion/chats-conversaciones-multimedia-y-tickets.md)
 * [Perfil y Soporte: Configuración de Usuario](secciones-de-la-aplicacion/perfil-y-soporte-configuracion-de-usuario.md)
+* [Llamadas desde la app móvil: contacta a tus clientes estés donde estés](secciones-de-la-aplicacion/llamadas-desde-la-app-movil-contacta-a-tus-clientes-estes-donde-estes.md)

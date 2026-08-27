@@ -1,7 +1,8 @@
 ---
 description: >-
-  Configura tu cuenta. Accede a Vambe Academy, gestiona la recepción de
-  notificaciones en tu dispositivo, reporta problemas y administra tu sesión.
+  Configura tu cuenta. Revisa tu estado de llamadas, accede a Vambe Academy,
+  gestiona la recepción de notificaciones en tu dispositivo, reporta problemas y
+  administra tu sesión.
 ---
 
 # Perfil y Soporte: Configuración de Usuario
@@ -10,7 +11,7 @@ Para acceder a tu configuración personal, pulsa el botón "Perfil" (icono de us
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-Esta sección es administrativa y te permite gestionar aspectos clave de tu experiencia con la aplicación, dividida en cuatro bloques visuales.
+Esta sección es administrativa y te permite gestionar aspectos clave de tu experiencia con la aplicación, organizada en bloques visuales.
 
 <figure><img src="../.gitbook/assets/IMG_7467.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -21,8 +22,6 @@ En la parte superior verás tu Avatar, Nombre y Correo Electrónico asociado a l
 ### 2. Estado de Disponibilidad
 
 <figure><img src="../.gitbook/assets/IMG_7468.jpg" alt="" width="375"><figcaption></figcaption></figure>
-
-
 
 Desde tu perfil puedes actualizar tu estado de disponibilidad en tiempo real. Pulsa **Actualiza tu estado** y elige entre las opciones disponibles:
 
@@ -43,15 +42,32 @@ Desde tu perfil puedes actualizar tu estado de disponibilidad en tiempo real. Pu
     * Este botón (App): Le dice a los servidores de Vambe si _deben_ o _no deben_ enviar alertas a este dispositivo específico. Es el "interruptor maestro" de la aplicación.
     * Configuración del iPhone/Android (Sistema): Le dice a tu teléfono si debe _mostrar_ las alertas que llegan.
 
-    > Recomendación: Mantén este interruptor activado si eres un agente activo. Si lo desactivas aquí, no recibirás avisos aunque los permisos de tu teléfono estén encendidos.
+    > Recomendación: Mantén este interruptor activado si eres un ejecutivo activo. Si lo desactivas aquí, no recibirás avisos aunque los permisos de tu teléfono estén encendidos.
 
-### 4. Ayuda y Soporte
+### 4. Llamadas
+
+<figure><img src="../.gitbook/assets/app-perfil-llamadas.png" alt="" width="375"><figcaption><p>Estado de tus vías de llamada dentro del bloque Preferencias</p></figcaption></figure>
+
+La fila **Llamadas** te muestra si puedes llamar a tus clientes desde el celular y por qué vía. Encontrarás dos indicadores:
+
+* 📞 **Teléfono**: los números de telefonía tradicional conectados a tu cuenta.
+* 💬 **WhatsApp**: los números de WhatsApp API habilitados para llamar.
+
+Cada indicador tiene un punto de color. En **verde**, la vía está conectada y puedes usarla. En **gris**, esa vía no logró conectarse y la app te avisará que no puedes realizar llamadas por ahí. Si tu cuenta no tiene las llamadas habilitadas, la misma fila te lo indicará.
+
+> 💡 Revisa esta sección antes de salir a terreno: es la forma más rápida de confirmar que podrás llamar sin sorpresas. El flujo completo está en [Llamadas desde la app móvil](llamadas-desde-la-app-movil-contacta-a-tus-clientes-estes-donde-estes.md).
+
+### 5. Idioma
+
+Desde **Idioma** eliges en qué lenguaje quieres ver la aplicación. El cambio aplica solo a tu usuario y no afecta a tus compañeros de equipo ni a las conversaciones con tus clientes.
+
+### 6. Ayuda y Soporte
 
 Desde la sección **Ayuda** tienes tres opciones:
 
 #### 🎓 Aprende en Vambe Academy
 
-Acceso directo a [academy.vambe.ai](https://academy.vambe.ai). Se abrirá el navegador para que puedas consultar guías, tutoriales y cursos sobre cómo sacar el máximo provecho a la plataforma.
+Acceso directo a [academy.vambe.ai](https://academy.vambe.ai). Se abrirá el navegador para que puedas consultar guías, tutoriales y cursos sobre cómo sacar el máximo provecho a Vambe.
 
 #### ⚠️ Reportar un problema
 
@@ -59,10 +75,10 @@ Si encuentras un error, la app se cierra inesperadamente o algo no funciona como
 
 #### 💬 Chat con soporte
 
-Abre el chat con **Luis**, el asistente de soporte de Vambe — el mismo canal disponible en la plataforma web, ahora directamente en la app.
+Abre el chat con **Luis**, el asistente de soporte de Vambe, el mismo canal disponible en la versión web.
 
 ***
 
-### 5. Cerrar Sesión
+### 7. Cerrar Sesión
 
 Usa esta opción para desconectar tu cuenta del dispositivo. Recomendable si compartes el teléfono o tablet con otros miembros del equipo.
