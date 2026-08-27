@@ -46,6 +46,7 @@
 * [Cómo hacer y gestionar llamadas desde Vambe (Vambe Llamados)](vambe-llamados/como-hacer-y-gestionar-llamadas-desde-vambe-vambe-llamados.md)
 * [Llamadas con IA](vambe-llamados/llamadas-con-ia.md)
 * [Voice Scoring](vambe-llamados/voice-scoring.md)
+* [Entrega de llamadas: recibe las llamadas donde te acomode](vambe-llamados/entrega-de-llamadas-recibe-las-llamadas-donde-te-acomode.md)
 
 ## Vambe Meet
 
