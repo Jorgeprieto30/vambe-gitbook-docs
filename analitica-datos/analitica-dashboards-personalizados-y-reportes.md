@@ -1,7 +1,5 @@
 # Analítica: Dashboards Personalizados y Reportes
 
-## Analítica: Dashboards Personalizados y Reportes
-
 La sección de **Analítica** te permite construir tus propios dashboards para visualizar y cruzar la información de tu operación en Vambe: ventas, conversaciones, satisfacción, cumplimiento de SLA y automatización de Instagram. Puedes armarlos desde cero, partir de una plantilla, o simplemente pedírselo a **PandAI** en lenguaje natural.
 
 {% hint style="info" %}
@@ -238,89 +236,13 @@ Para que alguien invitado pueda abrir un dashboard compartido, su rol dentro de 
 
 ***
 
-### Cómo pedirle a PandAI que te cree análisis
+### Crea tus análisis pidiéndoselo a PandAI
 
-No necesitas construir cada widget manualmente: puedes pedirle a **PandAI** que arme el gráfico, la tabla o el dashboard completo en lenguaje natural. Mientras más específico seas, mejor entiende qué necesitas.
+No necesitas construir cada widget manualmente: puedes pedirle a **PandAI** que arme el gráfico, la tabla o el dashboard completo en lenguaje natural.
 
-#### Cómo formular un buen pedido
-
-Un buen pedido a PandAI suele incluir:
-
-1. **Qué quieres ver** (la métrica o pregunta de negocio).
-2. **Sobre qué datos** (embudo, canal, etapa, campo personalizado).
-3. **En qué periodo** (última semana, últimos 3 meses, comparado con el periodo anterior).
-4. **Cómo lo quieres visualizar** (si tienes preferencia: barras, línea de tiempo, tabla).
-
-{% hint style="success" %}
-**Ejemplos de buenos pedidos:**
-
-* "Muéstrame un gráfico de líneas con los tickets ganados y perdidos del embudo Ventas Chile, por semana, de los últimos 3 meses."
-* "Arma una tabla con la tasa de éxito por ejecutivo en el embudo de Soporte, ordenada de mayor a menor."
-* "Quiero un dashboard con: tráfico de etapas del embudo Ventas, tickets por canal y tasa de éxito en el tiempo."
-* "Crea un mapa de calor de mensajes recibidos por día y hora, para ver a qué horas necesito más gente disponible."
+{% hint style="info" %}
+👉 [**Pídele a PandAI que cree tus análisis**](https://academy.vambe.ai/pandai/pidele-a-pandai-que-cree-tus-analisis) — cómo formular un buen pedido, qué puede y qué no puede hacer, y ejemplos por tipo de negocio.
 {% endhint %}
-
-{% hint style="warning" %}
-Pedidos muy genéricos como "muéstrame cómo va todo" obligan a PandAI a adivinar qué te importa. Sé específico sobre la métrica y el corte de datos que necesitas.
-{% endhint %}
-
-#### Qué puede hacer PandAI (y qué no)
-
-PandAI puede, directamente desde el chat:
-
-* Crear un dashboard nuevo, desde cero o desde una plantilla.
-* Agregar widgets a un dashboard existente, uno a la vez.
-* Editar el nombre o los filtros de un widget o de un dashboard ya creado.
-
-Por ahora, **no puede**:
-
-* Eliminar un widget existente (elimínalo directamente desde la interfaz).
-* Duplicar o clonar un dashboard completo.
-* Exportar un análisis a PDF, Excel o imagen desde el chat.
-
-{% hint style="warning" %}
-Si le pides a PandAI que agregue varios widgets de una vez, es mejor pedirlos de a uno o confirmar que los vaya agregando en pasos —agregar muchos en paralelo puede desordenar el layout del dashboard.
-{% endhint %}
-
-#### Ejemplos por tipo de negocio
-
-**Ecommerce / retail**
-
-* "Muéstrame el recorrido de tickets desde 'Carrito' hasta 'Compra confirmada', para ver dónde se caen más los clientes."
-* "Compárame las ventas en el tiempo de los últimos 2 meses contra el mismo periodo anterior."
-* "Dame la distribución de mi campo personalizado 'Categoría de producto' con su tasa de éxito, para saber qué categoría vende más."
-
-**Inmobiliaria / servicios con ciclo de venta largo**
-
-* "Muéstrame el tiempo promedio de permanencia por etapa en mi embudo de Ventas, quiero saber dónde se estancan los leads."
-* "Arma un boxplot del campo 'Presupuesto del cliente' para entender el rango de precios que más consulta."
-* "Dame la tasa de éxito por ejecutivo en los últimos 6 meses."
-
-**Atención al cliente / soporte**
-
-* "Quiero la tasa de cumplimiento SLA de primera respuesta del último mes, comparada con el mes anterior."
-* "Muéstrame la resolución humano vs. IA de mi embudo de Soporte, con su tasa de conversión."
-* "Dame el detalle de alucinaciones pendientes de revisar de las últimas 2 semanas."
-
-**Agencias / equipos comerciales con varios ejecutivos**
-
-* "Arma una tabla de tickets ganados y tasa de éxito por ejecutivo, del mes en curso."
-* "Muéstrame las conversaciones por canal, desglosadas por humano e IA."
-* "Dame el mapa de calor de mensajes por día y hora, para planificar los turnos de mi equipo."
-
-#### Situaciones y qué mirar para obtener feedback accionable
-
-| Lo que te preocupa                                            | Qué pedirle a PandAI                                                                                     |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| "Siento que estoy perdiendo leads pero no sé dónde"           | Recorrido de tickets + tráfico de etapas del embudo, para ver en qué etapa se cae la mayoría.            |
-| "No sé si mi equipo está respondiendo a tiempo"               | Tasa de cumplimiento SLA de primera respuesta y tiempo de resolución, comparado con el periodo anterior. |
-| "Quiero saber si la IA está funcionando bien o fallando"      | Tasa de alucinaciones en el tiempo + detalle de alucinaciones pendientes + latencia de respuesta IA.     |
-| "No sé a qué horas necesito más gente"                        | Mapa de calor de mensajes recibidos por día y hora.                                                      |
-| "Quiero saber si vale la pena tener IA atendiendo"            | Widget de Ahorro (dinero y tiempo ahorrado) + resolución humano vs. IA con tasa de conversión.           |
-| "No sé qué le preguntan más mis clientes"                     | Distribución de un campo personalizado de texto o de opciones relacionado a motivo de contacto.          |
-| "Quiero saber si mis clientes están contentos"                | Puntaje de satisfacción (CSAT/NPS) en el tiempo + distribución por categoría (promotores/detractores).   |
-| "Quiero comparar el desempeño de mis ejecutivos"              | Tabla de tasa de éxito y tickets ganados por ejecutivo, con filtro de periodo.                           |
-| "Quiero saber si mis campañas de Instagram están funcionando" | KPIs generales + posts destacados del dashboard de Instagram.                                            |
 
 ***
 
