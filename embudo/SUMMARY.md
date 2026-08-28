@@ -8,7 +8,7 @@
 * [Paso 2: Crear una etapa ganadora y una etapa perdedora](gestion-de-etapas-y-asistentes-ia/paso-2-crear-una-etapa-ganadora-y-una-etapa-perdedora.md)
 * [Paso 3: Asignar un asistente de IA a una etapa](gestion-de-etapas-y-asistentes-ia/paso-3-asignar-un-asistente-de-ia-a-una-etapa.md)
 * [Paso 4: Ver los asistentes asignados](gestion-de-etapas-y-asistentes-ia/paso-4-ver-los-asistentes-asignados.md)
-* [Paso 5: Mejorar tus asistentes con PandaAI](gestion-de-etapas-y-asistentes-ia/paso-5-mejorar-tus-asistentes-con-pandaai.md)
+* [Paso 5: Mejorar tus asistentes con PandAI](gestion-de-etapas-y-asistentes-ia/paso-5-mejorar-tus-asistentes-con-pandaai.md)
 
 ## Gestion de tickets
 
