@@ -29,6 +29,12 @@ Una vez que Vambe Llamados está habilitado en tu cuenta:
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FJAovS9NekwFw0ZRK6Ai3%2Fimage.png?alt=media&#x26;token=413eccec-18e0-4f41-a65b-1d5b56414db7" alt=""><figcaption></figcaption></figure>
 
+#### Llamadas por WhatsApp y el permiso del cliente
+
+WhatsApp exige que el cliente autorice las llamadas comerciales antes de que puedas marcarle. Vambe resuelve ese paso por ti.
+
+Si eliges un número de WhatsApp y el contacto todavía no ha dado su autorización, Vambe le envía la **solicitud de permiso de llamada** por WhatsApp de forma automática. Una vez que el cliente la acepta, puedes llamarlo por ese número cuando lo necesites.
+
 ***
 
 #### Controles durante la llamada
@@ -124,3 +130,4 @@ Haz clic en **Ver detalles** de cualquier ejecutivo para ver su panel individual
 * El historial de llamadas por contacto está disponible en el panel lateral derecho del ticket.
 * La analítica de Llamadas (en **Analítica → Calls**) muestra métricas globales, distribución por hora y rendimiento por ejecutivo.
 * Para recibir llamadas entrantes también se requiere configuración previa con soporte.
+* Si eliges un número de WhatsApp para llamar, Vambe gestiona automáticamente el permiso de llamada del cliente cuando aún no lo ha otorgado.
