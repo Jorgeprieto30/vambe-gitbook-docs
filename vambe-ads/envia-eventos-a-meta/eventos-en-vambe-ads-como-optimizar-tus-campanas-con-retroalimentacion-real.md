@@ -143,6 +143,35 @@ A partir de ese momento, cada contacto que entre a la etapa configurada enviará
 {% endstep %}
 {% endstepper %}
 
+### Revisa el resumen de tus eventos
+
+Dentro de **Eventos**, la pestaña **Resumen** te muestra de un vistazo cómo está funcionando el envío de tus eventos a las plataformas publicitarias, sin tener que revisar cada evento configurado por separado.
+
+Arriba a la derecha eliges el **período** que quieres analizar, con rangos predefinidos (hoy, últimos 7/14/30 días, este mes, mes pasado, últimos 3/6 meses) o un rango personalizado en el calendario.
+
+![Selector de período](<../.gitbook/assets/resumen-eventos-selector-periodo (1).png>)
+
+Para ese período, cuatro indicadores resumen el estado general:
+
+* **Total**: todos los eventos generados.
+* **Exitosos**: los que llegaron correctamente a la plataforma publicitaria.
+* **Omitidos**: los que no se enviaron porque el contacto no traía la información necesaria para atribuirse (por ejemplo, sin click ID ni datos de contacto).
+* **Fallidos**: los que la plataforma publicitaria rechazó, normalmente por un problema de configuración.
+
+Debajo, el gráfico **Eventos por día** muestra la evolución diaria de cada una de estas categorías, útil para detectar picos o caídas en el envío. Más abajo, la tabla de **Eventos** lista cada evento configurado junto con su cantidad de **enviados** —los que efectivamente salieron hacia la plataforma publicitaria, sin contar los omitidos— y su **tasa de éxito** sobre esos enviados.
+
+![Resumen de eventos con KPIs, gráfico y tabla](<../.gitbook/assets/resumen-eventos-kpis-tabla (1).png>)
+
+Al hacer clic en cualquier fila de la tabla se abre un panel con el detalle de ese evento en particular, dividido en dos pestañas:
+
+* **Resumen**: repite los mismos indicadores y el gráfico diario acotados a ese evento, y agrega el detalle de por qué se omitió o falló cada envío —por ejemplo, que el clic sea más antiguo que la ventana de conversión configurada, o que el contacto no traiga datos de atribución— junto con una breve explicación de qué hacer en cada caso.
+
+![Detalle de un evento con causas de fallidos y omitidos](<../.gitbook/assets/resumen-eventos-detalle-resumen (1).png>)
+
+* **Historial**: un registro cronológico de cada envío de ese evento, con la plataforma de destino, el contacto asociado, la fecha y hora exactas, y si el envío fue exitoso u omitido.
+
+![Historial de envíos de un evento](<../.gitbook/assets/resumen-eventos-detalle-historial (1).png>)
+
 ### Tipos de eventos disponibles
 
 (Video: 3:08 – 3:16)
