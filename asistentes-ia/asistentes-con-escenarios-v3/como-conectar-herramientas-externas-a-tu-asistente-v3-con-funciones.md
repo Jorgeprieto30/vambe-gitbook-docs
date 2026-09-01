@@ -15,7 +15,7 @@ Al crear una función de integración externa, encontrarás las siguientes opcio
 * **Linear** — Crea tickets en el Linear de tu equipo
 * **Agregar Fila a Hoja** — Conecta Google Sheets y agrega una fila cuando se cumpla la condición
 * **Buscar Fila en Hoja** — Busca una fila específica en Google Sheets según la condición
-* **Link Fintoc** — Genera un link de pago con Fintoc para realizar un pago o acción financiera
+* **Link de pago** — Genera un link de pago con Fintoc o Mercado Pago para cobrarle a tu cliente dentro del chat
 * **Checkout Vambe** — Crea un link de checkout con productos Vambe y sus cantidades
 
 {% hint style="info" %}
@@ -40,7 +40,7 @@ Haz clic en **+ Crear función**. Se abrirá un panel con las categorías dispon
 * Cálculos
 * **Integraciones externas** ← selecciona esta
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FUZ7TmWQPn6Wv6kzXpDHo%2Fimage.png?alt=media&#x26;token=7b08a946-bf79-432b-81b7-22914f20fffa" alt=""><figcaption></figcaption></figure>
 
 #### 3. Elige la integración
 

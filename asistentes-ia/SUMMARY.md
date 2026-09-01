@@ -41,6 +41,7 @@
 * [¿Cómo calcular costos de envío y distancias con Google Maps?](funciones/como-calcular-costos-de-envio-y-distancias-con-google-maps.md)
 * [¿Cómo enviar archivos específicos desde una carpeta de Google Drive?](funciones/como-enviar-archivos-especificos-desde-una-carpeta-de-google-drive.md)
 * [¿Cómo evitar que la IA responda a las reacciones en Instagram?](funciones/como-evitar-que-la-ia-responda-a-las-reacciones-en-instagram.md)
+* [¿Cómo cobrar dentro del chat con un link de pago?](funciones/como-cobrar-dentro-del-chat-con-un-link-de-pago.md)
 
 ## Probar Asistente
 

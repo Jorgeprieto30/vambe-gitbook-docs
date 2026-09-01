@@ -57,7 +57,7 @@ Actualmente, Vambe cuenta con una amplia variedad de funciones para cubrir disti
 * Google Maps
 * Outlook
 * Reservo
-* Link Fintoc
+* [Link de pago (Fintoc o Mercado Pago)](como-cobrar-dentro-del-chat-con-un-link-de-pago.md)
 * Vambe
 
 <table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Llamada Webhook</td><td></td></tr></tbody></table>
