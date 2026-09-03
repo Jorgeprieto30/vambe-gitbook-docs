@@ -7,8 +7,20 @@
 El canal de Email te permite enviar y recibir correos directamente desde Vambe usando tu propio dominio. Una vez conectado, podrás crear campañas masivas con plantillas personalizadas, enviar emails individuales desde la vista de un ticket, automatizar envíos mediante Workflows y recibir las respuestas de tus contactos como tickets dentro de tu embudo.
 
 {% hint style="info" %}
-Una vez conectado el canal, aprende a crear plantillas, enviar campañas y automatizar envíos en Cómo usar el canal de Email en Vambe.
+Una vez conectado el canal, aprende a crear plantillas, enviar campañas y automatizar envíos en [Cómo usar el canal de Email en Vambe](../campanas/como-usar-el-canal-de-email-en-vambe.md).
 {% endhint %}
+
+***
+
+#### Antes de empezar
+
+Ten esto a mano para completar la conexión de una sola vez:
+
+* Permisos para crear canales en tu cuenta de Vambe.
+* La casilla real que recibe los correos: `contacto@`, `ventas@`, `soporte@`.
+* Alguien con acceso a esa casilla, si vas a activar la recepción en el momento.
+* El embudo de destino, con su asistente ya configurado.
+* Acceso al panel DNS de tu dominio, solo si conectarás con dominio propio.
 
 ***
 
@@ -16,7 +28,7 @@ Una vez conectado el canal, aprende a crear plantillas, enviar campañas y autom
 
 Desde el menú lateral, ve a **Canales** y haz clic en **+ Asociar canal**. En las opciones disponibles, selecciona **Email**.
 
-<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FsKBQFZUkHKtPSJjw7XXY%2Fimage.png?alt=media&#x26;token=96040218-06b5-4457-9b39-285d5b1e7720" alt=""><figcaption></figcaption></figure>
+![Diálogo de conexión de canal con la tarjeta Email](../.gitbook/assets/image.png)
 
 ***
 
@@ -26,6 +38,10 @@ Al configurar el canal de Email en Vambe, puedes elegir entre dos métodos de co
 
 * **Dominio Vambe** _(recomendado)_ — Vambe te provee un dominio. Solo necesitas ingresar un subdominio y nosotros nos encargamos del resto.
 * **Dominio propio** — Conecta tu propio dominio si no quieres que los correos aparezcan con `@subdominio.vambe-mail.com`.
+
+{% hint style="info" %}
+**Cómo elegir:** el criterio no es solo la imagen de marca, sino si administras tus propios DNS. Si tienes acceso al panel de tu dominio y sabes moverte en él, el dominio propio te sirve. Si no, el dominio de Vambe deja el canal andando en la misma sesión y sin depender de nadie.
+{% endhint %}
 
 **Opción A: Dominio Vambe (recomendado)**
 
@@ -38,45 +54,81 @@ Con este método, Vambe te ofrece un dominio directamente, eliminando la necesid
 Los correos se enviarán y visualizarán con el formato: `@{subdominio}.vambe-mail.com`
 
 {% hint style="info" %}
-✅ El canal queda operativo en **menos de 30 Segundos**
+✅ El canal queda operativo en **menos de 30 segundos**. Con esta ruta puedes saltar directamente al Paso 4.
 {% endhint %}
 
-<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F4jEVTkJx4NxhcpG46WQU%2Fimage.png?alt=media&#x26;token=cd230903-993f-41df-a7a3-9916ed0036d9" alt=""><figcaption></figcaption></figure>
+![Paso 1: elegir el dominio de Vambe](<../.gitbook/assets/image (21).png>)
 
 **Opción B: Dominio propio**
 
-Usa este método si deseas que los correos se envíen desde tu propio dominio y no quieres que aparezca `vambe-mail.com`.
+Usa este método si deseas que los correos se envíen desde tu propio dominio y no quieres que aparezca `vambe-mail.com`. El asistente pasa de tres pasos a cuatro al elegir esta ruta.
 
 Completa los siguientes campos:
 
 * **Dominio:** el dominio desde el que enviarás (ej: `tuempresa.com`)
-* **Email del remitente:** el prefijo del correo (ej: `noreply`)
+* **Email del remitente:** el prefijo del correo, la parte antes de la arroba (ej: `contacto`, `ventas`)
 * **Nombre del remitente:** el nombre que verán tus contactos al recibir el mail
 
 Haz clic en **Continuar**.
 
-<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FLgYkgxwDLvJewHY9WUpC%2Fimage.png?alt=media&#x26;token=158da9c7-b7c7-4218-b960-98220eb1acf2" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Si tu asistente va a conversar por este canal, evita un remitente del tipo `noreply` y elige uno que invite a responder. En el **nombre del remitente** usa tu nombre comercial, no el nombre interno del proyecto.
+{% endhint %}
+
+![Paso 2: dominio, email del remitente y nombre del remitente](<../.gitbook/assets/image (1).png>)
 
 ***
 
 #### Paso 3: Agrega los registros DNS
 
-Este paso aplica solo si conectaste con **dominio propio**. Vambe te mostrará los registros que debes agregar en el administrador de tu dominio (GoDaddy, Dynadot, Cloudflare, etc.). Los registros son:
+Este paso aplica solo si conectaste con **dominio propio**. Vambe te mostrará los registros que debes agregar en el administrador de tu dominio (GoDaddy, Dynadot, Cloudflare, etc.). Son cuatro: uno confirma que el dominio es tuyo y los otros tres autentican el envío.
 
-* **SPF (Return Path):** un registro CNAME en tu dominio
-* **DKIM Selector 1 y 2:** dos registros CNAME adicionales para autenticación
+| Registro          | Tipo  | Para qué sirve                                            | Ojo con                                         |
+| ----------------- | ----- | --------------------------------------------------------- | ----------------------------------------------- |
+| `_vambe-verify`   | TXT   | Confirma la propiedad del dominio y evita la suplantación | Es el único TXT. Se pega tal cual, sin comillas |
+| `em####`          | CNAME | Autenticación de envío                                    | Proxy desactivado                               |
+| `vmb._domainkey`  | CNAME | Firma del dominio                                         | Proxy desactivado                               |
+| `vmb2._domainkey` | CNAME | Firma del dominio                                         | Proxy desactivado                               |
 
-Copia cada valor desde Vambe y pégalo en la configuración DNS de tu proveedor. Si no lo haces de inmediato, puedes hacer clic en **Verificar después** y completarlo más tarde.
+Copia cada valor desde Vambe y pégalo en la configuración DNS de tu proveedor. Al terminar, presiona **Verificar DNS**. Si prefieres hacerlo más tarde, **Verificar después** no cancela la conexión: puedes cerrar el diálogo y retomarlo desde la sección **Canales**.
 
-{% hint style="warning" %}
-⏱️ **Ten en cuenta:** La propagación DNS puede tomar hasta 48 horas. Puedes revisar el estado de verificación en cualquier momento desde la sección **Canales**, donde verás el indicador **Verificar DNS** junto a tu canal de email.
+![Paso con los registros DNS y el aviso de propagación](../.gitbook/assets/registros-dns.jpg)
+
+{% hint style="danger" %}
+⚠️ **El error que más tiempo hace perder:** en los tres CNAME el proxy tiene que quedar desactivado. En Cloudflare el control se llama **Proxy status** y debe mostrar **DNS only**, con la nube gris y no naranja. Si el registro queda proxeado, la verificación nunca pasa y no aparece ningún error que lo explique.
 {% endhint %}
 
-<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FkUDhW9Z3RtRLYT9HXgb5%2Fimage.png?alt=media&#x26;token=85834731-afbc-45c6-b350-8ed59214bc57" alt=""><figcaption></figcaption></figure>
+![Cloudflare: el registro TXT de verificación](../.gitbook/assets/cloudflare-txt.jpg)
+
+![Cloudflare: registro CNAME con Proxy status en DNS only](../.gitbook/assets/cloudflare-dns-only.jpg)
+
+**Entender los contadores**
+
+Verás tres números distintos según dónde estés, y ninguno indica un error:
+
+| Verás                | Cuándo                             | Qué cuenta                             |
+| -------------------- | ---------------------------------- | -------------------------------------- |
+| **0/4 verificados**  | Mientras cargas los registros      | El TXT de propiedad más los tres CNAME |
+| **Verificado (3/3)** | En el canal ya conectado           | Solo los tres CNAME de autenticación   |
+| **Verificado (1/1)** | En la recepción por dominio propio | El registro de entrada                 |
+
+{% hint style="warning" %}
+⏱️ **Ten en cuenta:** por lo general la verificación toma segundos, pero la propagación DNS puede tardar hasta 48 horas. Si pasan los dos días sin verificar, revisa primero el proxy y luego los registros carácter por carácter.
+{% endhint %}
+
+![Un check verde por registro cuando la verificación queda lista](../.gitbook/assets/dns-verificado.jpg)
 
 ***
 
-#### Paso 4: Activa la recepción de respuestas
+#### Paso 4: Verifica que el envío quedó activo
+
+En **Configuración del Canal** la etiqueta **ENVÍO** debe aparecer activa. Ese es el estado correcto al terminar la conexión por cualquiera de las dos rutas: envío activo y recepción todavía pendiente.
+
+![Configuración del Canal con el envío verificado](../.gitbook/assets/canal-envio-activo.jpg)
+
+***
+
+#### Paso 5: Activa la recepción de respuestas
 
 Con el canal conectado ya puedes enviar. Para que las respuestas de tus contactos lleguen a Vambe y se abran como tickets, activa la recepción desde el ícono de bandeja del canal.
 
@@ -86,4 +138,4 @@ Sigue el paso a paso en [Cómo activar la recepción de correos](como-activar-la
 
 ***
 
-¡Listo! Tu canal de Email quedó conectado. El siguiente paso es crear plantillas y enviar tus campañas.
+¡Listo! Tu canal de Email quedó conectado. El siguiente paso es definir [cómo responde tu asistente en el canal de correo](como-configurar-las-respuestas-de-tu-asistente-en-el-canal-de-correo.md) y crear tus plantillas y campañas.
