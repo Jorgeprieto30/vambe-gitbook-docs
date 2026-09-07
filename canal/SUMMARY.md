@@ -36,6 +36,7 @@
 * [Cómo crear y enviar campañas de WhatsApp desde la Vista antigua](campanas/como-crear-y-enviar-campanas-de-whatsapp-en-vambe.md)
 * [Marketing Messages Lite (MM Lite): Nueva forma de enviar mensajes promocionales en WhatsApp](campanas/marketing-messages-lite-mm-lite-nueva-forma-de-enviar-mensajes-promocionales-en-whatsapp.md)
 * [Cómo usar el canal de Email en Vambe](campanas/como-usar-el-canal-de-email-en-vambe.md)
+* [Buenas prácticas de email: protege la reputación de tu dominio y evita el spam](campanas/buenas-practicas-de-email-protege-la-reputacion-de-tu-dominio-y-evita-el-spam.md)
 * [Desuscripción en campañas de email](campanas/desuscripcion-en-campanas-de-email.md)
 
 ## Comentarios de Instagram
