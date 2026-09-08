@@ -16,8 +16,6 @@ Un flujo se compone de tres piezas clave:
 2. **Condición (Filtro)**: Reglas opcionales para decidir si avanzar o no (Ej: "¿Es fin de semana?").
 3. **Acción**: Lo que el sistema hará (Ej: "Enviar mensaje").
 
-<figure><img src="https://3884081802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0xCLgfGby0xiCWJaqr57%2Fuploads%2F4jhZb4xyYgl0dh2hFb17%2FCaptura%20de%20pantalla%202026-02-06%20a%20la(s)%201.20.34%E2%80%AFp.m..png?alt=media&#x26;token=e6f7185e-a8ad-438d-8b6a-dba1a40f3069" alt=""><figcaption></figcaption></figure>
-
 ***
 
 #### 2. Selecciona tu Trigger (Gatillante)
@@ -39,7 +37,7 @@ Lo primero es definir qué debe pasar para que el flujo se active. Vambe ofrece 
 
 **CRM:**
 
-* **Cambio de Etapa CRM (Nuevo):** Se activa cuando un contacto cambia de etapa en HubSpot, Pipedrive o Salesforce. Este trigger simplifica la automatización al permitir que Vambe reaccione directamente a movimientos en tu CRM, sin necesidad de configurar flujos complejos en la plataforma externa. Ofrece opciones para buscar solo contactos existentes en Vambe o para crear uno si no existe. Aprende a [configurar este trigger aquí](https://github.com/Jorgeprieto30/vambe-gitbook-docs/blob/main/workflows/como-configurar-trigger-cambio-etapa-crm.md).
+* **Cambio de Etapa CRM (Nuevo):** Se activa cuando un contacto cambia de etapa en HubSpot, Pipedrive o Salesforce.
 
 **E-commerce y Agendamiento (Evento Capturado):** Fundamental para Shopify/WooCommerce. Se activa cuando se crea una orden (Order Created), se recupera un carrito, o se agenda una cita.
 
@@ -50,7 +48,7 @@ Lo primero es definir qué debe pasar para que el flujo se active. Vambe ofrece 
 * **NPS/CSAT respondido:** Para tomar acciones según la calificación del cliente.
 * **Llamada finalizada:** Cuando termina una llamada con el contacto.
 * **Reacción a mensaje:** Cuando el contacto reacciona a un mensaje.
-* **Inactividad del contacto (Nuevo):** Se activa cuando el contacto lleva un tiempo definido sin enviar un mensaje. Permite configurar etapas específicas, duración y Espera Inteligente para respetar horarios hábiles.
+* **Inactividad del contacto (Nuevo):** Se activa cuando el contacto lleva un tiempo definido sin enviar un mensaje.
 * **Inactividad del agente (Nuevo):** Se activa cuando el agente lleva un tiempo definido sin responder al contacto.
 
 **Externos y Técnicos:**
@@ -58,26 +56,15 @@ Lo primero es definir qué debe pasar para que el flujo se active. Vambe ofrece 
 * **Webhook:** Para recibir señales de tu propio sistema.
 * **Trigger Recurrente:** Para ejecutar tareas periódicas. Ej: Cada lunes a las 9 AM.
 * **Typeform respondido:** Se dispara automáticamente cuando un cliente completa un formulario de Typeform.
-* **Fila insertada en Google Sheet (Nuevo):** Se activa cuando se agrega una nueva fila en una hoja de cálculo de Google Sheets. Requiere autenticar una cuenta de Google en el nodo y seleccionar la hoja y la pestaña que se quiere escuchar; Vambe detecta automáticamente las columnas y las deja disponibles como variables.
+* **Fila insertada en Google Sheet (Nuevo):** Se activa cuando se agrega una nueva fila en una hoja de cálculo de Google Sheets.
 * **Flow activado por IA:** Se activa cuando una función de un asistente lo ejecuta.
 * **Evento de error:** Se activa cuando ocurre un error en el flujo.
-
-<figure><img src="https://3884081802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0xCLgfGby0xiCWJaqr57%2Fuploads%2FTznLSmyxM6wXDFPCCcTe%2Fimage.png?alt=media&#x26;token=6d48938c-73ff-48e7-842c-eca49bcda93c" alt=""><figcaption></figcaption></figure>
-
-**Triggers activados por eventos externos**
-
-Algunos gatillantes, como Fila insertada en Google Sheet, se activan a partir de un evento que ocurre fuera de Vambe. Estos triggers tienen dos particularidades importantes:
-
-1. **Requieren una cuenta conectada.** La autenticación se configura directamente en el nodo, donde puedes conectar una nueva cuenta o gestionar las existentes. Al autorizar el acceso, selecciona únicamente las hojas de cálculo que vas a utilizar: si no seleccionas ninguna, la integración obtiene acceso a todas.
-2. **No traen un contacto asociado.** Como el evento no nace de una conversación, debes agregar una acción de **Obtener o crear contacto** inmediatamente después del trigger y mapear los datos de la fila (por ejemplo, el teléfono) para identificar al contacto. Sin este paso, el flujo falla al ejecutarse.
-
-> La sincronización del evento externo puede demorar uno o dos minutos desde que se inserta la fila hasta que el flujo se ejecuta en Vambe.
 
 ***
 
 #### 3. Agrega Condiciones (Filtros)
 
-Una vez activado el trigger, puedes poner "puertas" lógicas. Si la condición se cumple (Sí), el flujo sigue un camino; si no (No), puede seguir otro o detenerse.
+Una vez activado el trigger, puedes poner "puertas" lógicas.
 
 Tipos de condiciones disponibles:
 
@@ -86,8 +73,6 @@ Tipos de condiciones disponibles:
 * **Condición de Canal:** "¿El cliente habla por Instagram o WhatsApp?".
 * **Evaluar con IA:** Usar inteligencia artificial para decidir si el cliente cumple un requisito complejo.
 * **Condición Aleatoria:** Dividir el tráfico 50/50 (A/B Testing).
-
-<figure><img src="https://3884081802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0xCLgfGby0xiCWJaqr57%2Fuploads%2FKAIOj70V7duglsA7rVmD%2Fimage.png?alt=media&#x26;token=f6865a39-79e7-4e43-9344-e27ddc7fdaf1" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -101,30 +86,42 @@ Finalmente, define qué hará Vambe. Puedes encadenar múltiples acciones una tr
 * **Cambiar etapa**
 * **Actualizar campos**
 * **Asignar ejecutivo** / **Desasignar ejecutivos**
-* **Notificar ejecutivos asignados:** Envía una notificación en Vambe a los ejecutivos responsables del contacto, con el mensaje que definas. Útil para avisarles de inmediato cuando ocurre algo relevante en el ticket.
+* **Notificar ejecutivos asignados**
 * **Marcar como ganado o perdido**
 * **Cerrar ticket** / **Abrir ticket**
 * **Obtener o crear contacto**
 * **Actualizar monto del ticket**
 
-<figure><img src=".gitbook/assets/notificar-ejecutivos-asignados.png" alt=""><figcaption></figcaption></figure>
-
 #### Conversacional
 
-* **Enviar mensaje con IA:** Invoca directamente al asistente correspondiente dentro del mismo flujo, lo que le permite considerar el historial completo de la conversación, los escenarios configurados y las instrucciones definidas para generar una respuesta más precisa y alineada al contexto real del contacto.
-* **Detener respuesta de la IA:** Interrumpe la respuesta automática del asistente en la conversación, sin importar qué evento haya activado el flujo. Útil cuando quieres que distintos triggers puedan pausar al asistente de la misma forma, sin depender de la configuración particular de cada uno.
+* **Enviar mensaje con IA**
+* **Detener respuesta de la IA**
 * **Enviar plantilla:** Envía un mensaje pre-aprobado de WhatsApp. Ideal cuando han pasado más de 24 horas desde el último mensaje del cliente.
+* **Enviar plantilla de email:** Envía un correo a partir de una plantilla o redactado por un agente, con distintas opciones de destinatario.
 * **Enviar archivo**
 * **Enviar mensaje de voz**
-* **Crear nota:** Deja una nota interna visible solo para los agentes.
-* **Enviar encuesta de feedback:** Envía una encuesta NPS o CSAT directamente al contacto.
-* **Enviar mensaje:** Mensaje de texto simple sin IA.
+* **Crear nota**
+* **Enviar encuesta de feedback**
+* **Enviar mensaje**
 * **Enviar mensaje programado**
 * **Activar llamada IA**
 
-> Los asistentes que responden dentro de un workflow no ejecutan funciones que generen efectos secundarios, salvo que estén configuradas directamente en el workflow.
+**Destinatarios y contenido en el nodo Enviar plantilla de email**
 
-<figure><img src=".gitbook/assets/detener-respuesta-ia.png" alt=""><figcaption></figcaption></figure>
+Al configurar esta acción, primero eliges el canal de email desde el que sale el correo. Luego defines el destinatario:
+
+| Destinatario            | Qué hace                                                                                                                    |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Correo del contacto** | Envía el correo a la dirección del cliente asociado al ticket.                                                              |
+| **Rol interno**         | Envía el correo a todos los ejecutivos que tengan el rol que selecciones.                                                   |
+| **Ejecutivo asignado**  | Envía el correo a los ejecutivos asignados al ticket.                                                                       |
+| **Personalizado**       | Defines manualmente los campos Para, CC y CCO. Solo admite direcciones internas: no permite ingresar el correo del cliente. |
+
+Para el contenido, puedes elegir una **plantilla** ya creada o pedirle a un **agente** que redacte el correo. Si eliges que lo escriba un agente, tú defines el asunto y le das instrucciones sobre qué debe incluir el mensaje. También puedes elegir qué agente redacta el correo; si dejas el campo vacío, Vambe usa el agente asignado a la etapa donde está el ticket. Cuando el workflow se ejecuta a partir de un evento dentro de una conversación, el agente redacta el correo con el contexto de esa conversación.
+
+\[IMAGEN 1: nodo Enviar plantilla de email con contenido Escrito por un agente, asunto e instrucciones para el agente]
+
+\[IMAGEN 2: selector de destinatario mostrando la opción Rol interno con la lista de roles disponibles]
 
 #### CRM
 
@@ -135,79 +132,77 @@ Finalmente, define qué hará Vambe. Puedes encadenar múltiples acciones una tr
 
 #### General
 
-* **Enviar webhook:** Envía una señal a un sistema externo.
-* **Ejecutar función de IA:** Activa una función configurada en un asistente.
+* **Enviar webhook**
+* **Ejecutar función de IA**
 * **Crear tarea**
-* **Agregar fila a Google Sheet:** Ideal para reportes y registros externos.
-* **Ejecutar código:** Para automatizaciones de alta complejidad en Python o Javascript. Los resultados están disponibles en nodos posteriores mediante `data`, `logs` y `errors`.
-* **Espera:** Pausa el flujo durante un tiempo definido antes de continuar con la siguiente acción.
-* **Cancelar flujo programado:** Cancela un flujo que está en espera antes de que se ejecute.
-* **Detener flujo:** Finaliza el flujo en ese punto.
+* **Agregar fila a Google Sheet**
+* **Ejecutar código**
+* **Espera**
+* **Cancelar flujo programado**
+* **Detener flujo**
 
 **Cancelación inteligente en el nodo Espera**
 
-El nodo de Espera cuenta con opciones de cancelación automática. Puedes activar una o varias para que la espera se detenga si ocurre algo mientras el flujo está en pausa:
+El nodo de Espera cuenta con opciones de cancelación automática.
 
-| Opción de cancelación               | Cuándo usarla                                                                                                                        |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Cancelar al cambiar de etapa**    | Si el ticket se mueve a otra etapa, la espera se detiene. Evita ejecutar acciones sobre tickets que ya avanzaron.                    |
-| **Cancelar si el contacto escribe** | Si el cliente responde durante la espera, se cancela. Ideal para flujos de reactivación.                                             |
-| **Cancelar si un agente escribe**   | Si un agente interviene manualmente, el flujo se detiene. Evita que la automatización interfiera con conversaciones humanas activas. |
-
-<figure><img src="https://3884081802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0xCLgfGby0xiCWJaqr57%2Fuploads%2FbnZfuPNHpDkfe37osd7H%2Fimage.png?alt=media&#x26;token=da71f252-8ef3-4cf1-b4b2-fac8d21c31b6" alt=""><figcaption></figcaption></figure>
+| Opción de cancelación               | Cuándo usarla                                             |
+| ----------------------------------- | --------------------------------------------------------- |
+| **Cancelar al cambiar de etapa**    | Si el ticket se mueve a otra etapa, la espera se detiene. |
+| **Cancelar si el contacto escribe** | Si el cliente responde durante la espera, se cancela.     |
+| **Cancelar si un agente escribe**   | Si un agente interviene manualmente, el flujo se detiene. |
 
 ***
 
 #### Ejemplos de uso ("Recetas")
 
-#### 🔔 1. Reactivar cliente inactivo sin interrumpir si ya respondió
+#### 1. Reactivar cliente inactivo sin interrumpir si ya respondió
 
-**Trigger:** Inactividad del contacto (30 min, etapa: Calificación) **Espera:** 5 minutos → Cancelar si el contacto escribe ✅ **Acción:** Enviar mensaje con IA → _"Reactivar la conversación preguntando si el cliente sigue interesado."_
-
-***
-
-#### 🚨 2. Agente que no responde → Reasignación automática
-
-**Trigger:** Inactividad del agente (4 horas, etapa: Pendiente enviar cotización) **Acción 1:** Desasignar ejecutivos **Acción 2:** Asignar etiqueta → _"Sin atención"_ **Acción 3:** Asignar ejecutivo (balanceado) **Acción 4:** Crear nota → _"Cliente sin atención, contactar inmediatamente."_
+**Trigger:** Inactividad del contacto (30 min, etapa: Calificación) **Espera:** 5 minutos → Cancelar si el contacto escribe **Acción:** Enviar mensaje con IA → reactivar la conversación.
 
 ***
 
-#### 🛍️ 3. Post-venta inteligente: encuesta + oferta de recompra
+#### 2. Agente que no responde → Reasignación automática
 
-**Trigger:** Evento capturado (Order Created) **Espera:** 4 días → Cancelar al cambiar de etapa ✅ **Acción 1:** Enviar encuesta de feedback (NPS) **Trigger 2:** NPS/CSAT respondido **Condición:** ¿Puntaje mayor a 8? **Acción 2 (Si):** Enviar plantilla con oferta de recompra
-
-***
-
-#### 🔥 4. Lead scoring automático con alerta al mejor agente
-
-**Trigger:** Monto del ticket actualizado **Condición:** Monto mayor a $1.000.000 **Acción 1:** Cambiar etapa → _"Prioritario"_ **Acción 2:** Asignar ejecutivo → _agente senior específico_ **Acción 3:** Crear tarea → _"Llamar cliente en menos de 1 hora"_ **Acción 4:** Agregar fila a Google Sheet → registro de leads de alto valor
+**Trigger:** Inactividad del agente (4 horas) **Acción 1:** Desasignar ejecutivos **Acción 2:** Asignar etiqueta Sin atención **Acción 3:** Asignar ejecutivo (balanceado) **Acción 4:** Crear nota.
 
 ***
 
-#### 📋 5. Cierre automático de tickets abandonados + registro
+#### 3. Post-venta inteligente: encuesta + oferta de recompra
 
-**Trigger:** Inactividad del contacto (2 días, etapa: Inicial) **Acción 1:** Marcar como perdido **Acción 2:** Asignar etiqueta → _"Abandonado"_ **Acción 3:** Agregar fila a Google Sheet → Nombre, teléfono, etapa, fecha **Acción 4:** Cerrar ticket
+**Trigger:** Evento capturado (Order Created) **Espera:** 4 días **Acción 1:** Enviar encuesta de feedback (NPS) **Trigger 2:** NPS/CSAT respondido **Condición:** ¿Puntaje mayor a 8? **Acción 2 (Sí):** Enviar plantilla con oferta de recompra.
+
+***
+
+#### 4. Lead scoring automático con alerta al mejor agente
+
+**Trigger:** Monto del ticket actualizado **Condición:** Monto mayor a $1.000.000 **Acción 1:** Cambiar etapa a Prioritario **Acción 2:** Asignar ejecutivo senior **Acción 3:** Crear tarea de llamada **Acción 4:** Agregar fila a Google Sheet.
+
+***
+
+#### 5. Cierre automático de tickets abandonados + registro
+
+**Trigger:** Inactividad del contacto (2 días) **Acción 1:** Marcar como perdido **Acción 2:** Asignar etiqueta Abandonado **Acción 3:** Agregar fila a Google Sheet **Acción 4:** Cerrar ticket.
 
 ***
 
 #### 6. Automatización por cambio de etapa en el CRM
 
-**Trigger:** Cambio de Etapa CRM (Cuando un contacto entra a "Cotización Aprobada" en HubSpot) **Acción 1:** Enviar plantilla → _"¡Felicidades por tu compra! En breve un miembro de nuestro equipo se contactará para coordinar los próximos pasos."_ **Acción 2:** Cambiar etapa (en Vambe) → _"Cliente Activo"_ **Acción 3:** Crear tarea → _"Realizar llamada de bienvenida en 24 horas."_
+**Trigger:** Cambio de Etapa CRM **Acción 1:** Enviar plantilla de bienvenida **Acción 2:** Cambiar etapa **Acción 3:** Crear tarea de llamada de bienvenida.
 
 ***
 
 #### 7. Automatización para clientes problemáticos: Alerta y seguimiento
 
-**Trigger:** Etiqueta asignada ("Cliente Problemático") **Condición:** (Opcional, ej: Canal = "WhatsApp" para gestión específica) **Acción 1:** Asignar ejecutivo → _"Agente de Soporte Senior"_ **Acción 2:** Crear nota → _"Cliente etiquetado como problemático. Revisar historial para ofrecer solución proactiva."_ **Acción 3:** Enviar mensaje con IA → _"\[Mensaje diseñado para desescalar la situación y proponer una resolución, adaptado al contexto]."_ **Acción 4:** Agregar fila a Google Sheet → _"Registro de incidentes para análisis y mejora continua."_
+**Trigger:** Etiqueta asignada Cliente Problemático **Acción 1:** Asignar ejecutivo de Soporte Senior **Acción 2:** Crear nota **Acción 3:** Enviar mensaje con IA para desescalar **Acción 4:** Agregar fila a Google Sheet.
 
 ***
 
-#### 📄 8. Ingreso de leads desde una planilla de Google Sheets
+#### 8. Ingreso de leads desde una planilla de Google Sheets
 
-**Trigger:** Fila insertada en Google Sheet (hoja "Leads", pestaña "Formulario web") **Acción 1:** Obtener o crear contacto → mapear la columna de teléfono y de nombre desde las variables de la fila **Acción 2:** Enviar plantilla → _mensaje de bienvenida_ **Acción 3:** Asignar etiqueta → _"Lead planilla"_ **Acción 4:** Asignar ejecutivo (balanceado)
+**Trigger:** Fila insertada en Google Sheet **Acción 1:** Obtener o crear contacto **Acción 2:** Enviar plantilla de bienvenida **Acción 3:** Asignar etiqueta **Acción 4:** Asignar ejecutivo (balanceado).
 
 ***
 
 #### 9. Modo Test
 
-Antes de lanzar tu workflow al público, utiliza el Modo Test. Esta herramienta te permite simular una conversación y ver paso a paso cómo se activan los triggers y si las condiciones se cumplen o fallan, asegurando que tu lógica sea perfecta antes de afectar a clientes reales.
+Antes de lanzar tu workflow al público, utiliza el Modo Test para simular una conversación y ver paso a paso cómo se activan los triggers y si las condiciones se cumplen o fallan.
