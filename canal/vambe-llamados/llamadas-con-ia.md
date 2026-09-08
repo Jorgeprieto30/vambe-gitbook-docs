@@ -4,7 +4,7 @@
 
 Vambe Phone te permite realizar y recibir llamadas con tus contactos directamente desde Vambe, potenciadas por un asistente de IA. En lugar de necesitar un equipo de agentes humanos para hacer seguimiento masivo, la IA puede contactar a cientos de leads de forma automática, calificar su interés, agendar citas y registrar cada interacción — todo sin intervención manual.
 
-El asistente de voz opera igual que el asistente de chat: su comportamiento lo define la etapa del embudo en la que se encuentra el ticket al momento de la llamada.
+El asistente de voz opera igual que el asistente de chat: por defecto, su comportamiento lo define la etapa del embudo en la que se encuentra el ticket al momento de la llamada. Sin embargo, puedes fijar un asistente específico en una **guía de llamada** para que esa llamada siempre use ese asistente, sin importar la etapa.
 
 {% hint style="info" %}
 💡 **¿Cuándo usar llamadas con IA?** Es especialmente útil para campañas de reactivación, seguimientos post-formulario, confirmación de citas o cualquier flujo donde el contacto rápido y a escala marque la diferencia.
@@ -42,6 +42,22 @@ Antes de usar llamadas con IA, necesitas tener un número de teléfono activo en
 
 ***
 
+### Guías de llamada
+
+Una guía de llamada es una plantilla reutilizable que le indica a la IA qué debe lograr en una llamada. La usas al lanzar una campaña, al configurar un workflow o al llamar manualmente desde un ticket, y agrupa tres campos:
+
+* **Objetivo:** qué debe conseguir la IA en esa llamada (por ejemplo, "confirmar la asistencia del usuario a la reunión del jueves").
+* **Asistente:** el asistente de IA que conducirá la llamada.
+* **Primer mensaje:** el saludo con el que la IA abre la conversación.
+
+Si fijas un asistente en la guía, ese asistente se mantiene durante toda la llamada, sin importar los cambios de etapa que pueda tener el ticket: se ignora el asistente de la etapa y siempre se usa el que quedó fijado en la guía. Si no fijas un asistente, la llamada sigue el comportamiento por defecto y usa el asistente de la etapa del embudo en la que está el ticket.
+
+{% hint style="info" %}
+💡 **Una guía, muchos usos.** Como una guía de llamada puede estar asociada a varias campañas y workflows a la vez, cuando editas su objetivo, su asistente o su primer mensaje, ese cambio se aplica automáticamente en todos los lugares donde se usa esa guía. No necesitas actualizar cada campaña o workflow por separado.
+{% endhint %}
+
+***
+
 ### Formas de activar una llamada con IA
 
 Hay tres maneras de gatillar una llamada desde Vambe:
@@ -56,16 +72,16 @@ Hay tres maneras de gatillar una llamada desde Vambe:
 2.  Selecciona el tipo **Llamadas con IA**.\
     <br>
 
-    <figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FsWHsoqPVEsSVzMa3J0EW%2Fimage.png?alt=media&#x26;token=b0859375-42d9-4f51-9926-4234cafe0f36" alt=""><figcaption></figcaption></figure>
 3. Completa los campos del formulario:
 
 **Campos obligatorios:**
 
 * **Teléfono Vambe:** el número desde el que se realizarán las llamadas.
-* **Etapa de entrada (opcional):** la etapa del embudo a la que entrará el ticket. Esto determina qué asistente manejará la llamada.
-* **Primer mensaje (opcional):** el mensaje de inicio de la llamada. Puedes agregar variables dinámicas (nombre del contacto, empresa, etc.) con el botón **Agregar Variable**.
+* **Etapa de entrada (opcional):** la etapa del embudo a la que entrará el ticket. Si la guía de llamada que uses no tiene un asistente fijado, esta etapa es la que determina qué asistente manejará la llamada.
+* **Guía de llamada (opcional):** selecciona una guía existente para reutilizar su objetivo, asistente y primer mensaje, o define un primer mensaje puntual para esta campaña. Puedes agregar variables dinámicas (nombre del contacto, empresa, etc.) con el botón **Agregar Variable**.
 
-<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F7LurJvLhEfpDglL9ATeD%2Fimage.png?alt=media&#x26;token=836e6b48-e350-4912-8147-31202b9523af" alt=""><figcaption></figcaption></figure>
 
 **Carga de contactos:**
 
@@ -87,7 +103,7 @@ Hay tres maneras de gatillar una llamada desde Vambe:
 
 5. Haz clic en **Crear** y luego en **Enviar** para lanzar la campaña.
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FQuZNwO9ICeINBcdJoIuq%2Fimage.png?alt=media&#x26;token=b3dd733b-2f2d-4257-ad03-45e0ccacc267" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -99,7 +115,7 @@ Hay tres maneras de gatillar una llamada desde Vambe:
 2. Agrega la acción **Activar llamada IA**.
 3. Configura:
    * **Teléfono de voz:** el número desde el que se realizará la llamada.
-   * **Primer mensaje (opcional):** mensaje de inicio personalizado.
+   * **Guía de llamada (opcional):** reutiliza una guía existente, con su objetivo, asistente y primer mensaje, o define un primer mensaje puntual para esta acción.
    * **Duración máxima:** límite en minutos.
 
 **Ejemplo de reintento automático con Workflows:**
@@ -119,9 +135,10 @@ Si quieres reintentar la llamada cuando no hay respuesta, agrega una **Condició
 1. Abre el ticket del contacto en el embudo.
 2. Haz clic en el ícono de llamada en la barra superior del ticket.
 3. En el panel **Opciones de Llamada**, selecciona el número de Vambe y haz clic en el ícono de **Llamar con IA** (ícono de robot).
-4. La IA iniciará la llamada de inmediato.
+4. Elige, de forma opcional, una **guía de llamada** que le indique a la IA qué debe lograr en esta llamada: al seleccionarla verás su objetivo, el asistente fijado y el primer mensaje que usará.
+5. La IA iniciará la llamada de inmediato.
 
-<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2Fmea4mhj7PvbyOB89Dj4Z%2Fimage.png?alt=media&#x26;token=2f702f0c-071b-4309-b273-3082f7cf8544" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -155,11 +172,13 @@ Al ingresar a una campaña de llamadas, la pestaña **Métricas** te muestra:
 
 ### Configuración del asistente de voz
 
-El asistente que maneja la llamada es el mismo que está asignado a la etapa del embudo donde entra el ticket. La lógica de configuración es idéntica a la del asistente de chat:
+Por defecto, el asistente que maneja la llamada es el mismo que está asignado a la etapa del embudo donde entra el ticket. La lógica de configuración es idéntica a la del asistente de chat:
 
 * Define el **objetivo** de la llamada con claridad (ej: "agendar una demo", "confirmar interés", "inscribir en lista de espera").
 * Usa un **formato breve** en las instrucciones: en voz, respuestas largas generan fricción.
 * Puedes usar **funciones** (como cambiar etapa, crear tarea, etc.) igual que en chat.
+
+Si en cambio fijas un asistente en la guía de llamada, ese asistente reemplaza al de la etapa para toda la llamada: aunque el ticket cambie de etapa durante la conversación, la IA sigue usando el asistente fijado en la guía hasta que la llamada termina.
 
 > 💡 Para llamadas, se recomienda indicar explícitamente en el asistente que se trata de un canal de voz y que las respuestas deben ser concisas y naturales.
 
@@ -174,3 +193,5 @@ El asistente que maneja la llamada es el mismo que está asignado a la etapa del
 **¿Puedo usar variables personalizadas en el mensaje de inicio?** Sí, tanto en campañas como en workflows puedes agregar variables dinámicas desde el botón **Agregar Variable**.
 
 **¿Las llamadas desde workflows tienen las mismas métricas que las campañas?** Las transcripciones, resúmenes y grabaciones están disponibles a nivel de ticket. Las métricas agregadas (tasa de conversión, efectividad de reintentos) aplican solo a campañas.
+
+**¿Qué pasa si edito una guía de llamada que ya está en uso?** El cambio se aplica de inmediato a todas las campañas y workflows que la usan; no es necesario volver a configurarlos uno por uno.
