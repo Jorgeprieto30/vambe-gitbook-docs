@@ -14,6 +14,7 @@
 * [Configurar Reservo para que Vambe muestre disponibilidad y agende](parte-2-configuraciones-plataformas/configurar-reservo-para-que-vambe-muestre-disponibilidad-y-agende.md)
 * [Configuración necesaria en Dentalink](parte-2-configuraciones-plataformas/configuracion-necesaria-en-dentalink.md)
 * [Configuración necesaria en DentalSoft](parte-2-configuraciones-plataformas/configuracion-necesaria-en-dentalsoft.md)
+* [Cómo activar webhooks de citas y pagos en tiempo real en AgendaPro y Dentalink/Medilink](parte-2-configuraciones-plataformas/como-activar-webhooks-de-citas-y-pagos-en-tiempo-real-en-agendapro-y-dentalink-medilink.md)
 
 ## Parte 3: Crear plataforma agendamiento
 
