@@ -29,7 +29,7 @@ Este primer paso es igual sin importar la plataforma que utilices.
 4. Desplázate hasta la sección **Webhooks**.
 5. Copia la URL que corresponde a la cuenta o token que quieres activar.
 
-![](../.gitbook/assets/vambe-webhooks-section.png)
+![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2FLo2COIpl0NibRX1Aitul%2Fvambe-webhooks-section.png?alt=media)
 
 {% hint style="warning" %}
 Si tienes más de una cuenta o token conectado, cada uno tiene su propia URL. Repite esta configuración una vez por cada uno.
@@ -52,7 +52,7 @@ Con la URL copiada, sigue la guía según la plataforma que utilices.
 * Inicia sesión en tu cuenta de **AgendaPro**.
 * En la esquina superior derecha, haz clic en el ícono de ajustes y selecciona **Configuraciones**.
 
-![](../.gitbook/assets/agendapro-configuraciones-menu.png)
+![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2Fn5OKhXUy8Wo5YTopLODw%2Fagendapro-configuraciones-menu.png?alt=media)
 {% endstep %}
 
 {% step %}
@@ -60,7 +60,7 @@ Con la URL copiada, sigue la guía según la plataforma que utilices.
 
 * En el menú lateral izquierdo, dentro de **Opciones avanzadas**, haz clic en **Integraciones**.
 
-![](../.gitbook/assets/agendapro-integraciones-sidebar.png)
+![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2FfALbMWeVETt0i13C9C1p%2Fagendapro-integraciones-sidebar.png?alt=media)
 {% endstep %}
 
 {% step %}
@@ -72,7 +72,7 @@ Con la URL copiada, sigue la guía según la plataforma que utilices.
 * Verifica que el interruptor **Activo** esté encendido.
 * Haz clic en **Guardar**.
 
-![](../.gitbook/assets/agendapro-webhook-modal.png)
+![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2FNZl3BooLvfWv51OI3DH4%2Fagendapro-webhook-modal.png?alt=media)
 {% endstep %}
 {% endstepper %}
 
@@ -86,7 +86,7 @@ Con la URL copiada, sigue la guía según la plataforma que utilices.
 * En la parte superior derecha, haz clic en **Administrador**.
 * Selecciona la opción **Configuración Webhook**.
 
-![](../.gitbook/assets/dentalink-administrador-menu.png)
+![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2F4WCEdeTdZ0OWRRrMlq3i%2Fdentalink-administrador-menu.png?alt=media)
 {% endstep %}
 
 {% step %}
@@ -94,7 +94,7 @@ Con la URL copiada, sigue la guía según la plataforma que utilices.
 
 * Haz clic en el botón verde **+ Agregar proveedor**.
 
-![](../.gitbook/assets/dentalink-agregar-proveedor.png)
+![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2FDH4kVNLbwzcJfmSWlWFN%2Fdentalink-agregar-proveedor.png?alt=media)
 {% endstep %}
 
 {% step %}
@@ -104,7 +104,28 @@ Con la URL copiada, sigue la guía según la plataforma que utilices.
 * En **Ingrese la URL del callback**, pega la URL que copiaste desde Vambe.
 * Haz clic en **Guardar**.
 
-![](../.gitbook/assets/dentalink-crear-proveedor-modal.png)
+![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2FVrFJ5DrKxDqsDGZ5axFl%2Fdentalink-crear-proveedor-modal.png?alt=media)
+{% endstep %}
+
+{% step %}
+#### Activar las notificaciones del proveedor
+
+El proveedor queda creado, pero todavía no recibe notificaciones: falta indicarle qué eventos debe avisar.
+
+* En el listado de proveedores, el proveedor que acabas de crear (por ejemplo, **Vambe**) aparece con cuatro acciones disponibles: **Editar**, **Llaves**, **Notificaciones** y **Desactivar** (o **Activar**, si está inactivo). Haz clic en **Notificaciones**.
+
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+* Se abre el modal **Lista de entidades**, con todas las entidades que Dentalink o Medilink puede notificar (Cita, Contrato, Paciente, Pagos, entre otras).
+* Baja hasta la sección **Cita** y marca las casillas **Crear** y **Modificar**, tanto en la columna **Producto** como en la columna **API**. Por ahora, estas son las únicas casillas que necesitas activar para que Vambe reciba las citas en tiempo real; el resto de entidades quedan disponibles para configuraciones futuras (por ejemplo, webhooks de pagos).
+
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+* Haz clic en **Cerrar** para guardar.
+
+{% hint style="warning" %}
+Sin este paso, Dentalink o Medilink puede tener el webhook guardado pero no enviará los eventos de citas: la fila del proveedor debe tener también las notificaciones de **Cita** activadas.
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
@@ -127,6 +148,7 @@ Listo. Desde este momento, cada vez que se cree, actualice o cambie de estado un
 * ❌ Pegar una URL incompleta o distinta a la que copiaste desde Vambe.
 * ❌ En AgendaPro, dejar el interruptor **Activo** apagado.
 * ❌ No hacer clic en **Guardar** después de pegar la URL.
+* ❌ En Dentalink o Medilink, crear el proveedor pero olvidar activar las casillas de **Notificaciones** de Cita.
 * ❌ Configurar solo una cuenta o token cuando tienes varios conectados.
 
 </details>
