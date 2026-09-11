@@ -49,6 +49,7 @@
 * [Llamadas con IA](vambe-llamados/llamadas-con-ia.md)
 * [Voice Scoring](vambe-llamados/voice-scoring.md)
 * [Entrega de llamadas: recibe las llamadas donde te acomode](vambe-llamados/entrega-de-llamadas-recibe-las-llamadas-donde-te-acomode.md)
+* [Cómo agregar un número a Vambe Phone](vambe-llamados/como-agregar-un-numero-a-vambe-phone.md)
 
 ## Vambe Meet
 
