@@ -4,10 +4,10 @@
 
 #### ¿Para qué sirve?
 
-El canal de Email te permite enviar y recibir correos directamente desde Vambe usando tu propio dominio. Una vez conectado, podrás crear campañas masivas con plantillas personalizadas, enviar emails individuales desde la vista de un ticket, automatizar envíos mediante Workflows y recibir las respuestas de tus contactos como tickets dentro de tu embudo.
+El canal de Email te permite enviar y recibir correos directamente desde Vambe. Según lo que necesites, puedes conectar la casilla real de tu equipo (Gmail o Outlook) para que tu asistente responda conversaciones desde tu propia bandeja, o conectar un dominio para enviar campañas masivas con plantillas personalizadas. También puedes hacer ambas cosas con la misma cuenta.
 
 {% hint style="info" %}
-Una vez conectado el canal, aprende a crear plantillas, enviar campañas y automatizar envíos en [Cómo usar el canal de Email en Vambe](../campanas/como-usar-el-canal-de-email-en-vambe.md).
+Una vez conectado el canal, aprende a crear plantillas, enviar campañas y automatizar envíos en Cómo usar el canal de Email en Vambe.
 {% endhint %}
 
 ***
@@ -17,24 +17,62 @@ Una vez conectado el canal, aprende a crear plantillas, enviar campañas y autom
 Ten esto a mano para completar la conexión de una sola vez:
 
 * Permisos para crear canales en tu cuenta de Vambe.
-* La casilla real que recibe los correos: `contacto@`, `ventas@`, `soporte@`.
-* Alguien con acceso a esa casilla, si vas a activar la recepción en el momento.
 * El embudo de destino, con su asistente ya configurado.
-* Acceso al panel DNS de tu dominio, solo si conectarás con dominio propio.
+* Si vas a responder conversaciones desde tu propia casilla: acceso a esa cuenta de Gmail u Outlook para autorizar a Vambe.
+* Si vas a enviar campañas: la casilla real que recibe los correos (`contacto@`, `ventas@`, `soporte@`) y, si conectarás un dominio propio, acceso a su panel DNS.
 
 ***
 
-#### Paso 1: Agrega el canal
+#### Paso 1: Agrega el canal y elige para qué lo vas a usar
 
-Desde el menú lateral, ve a **Canales** y haz clic en **+ Asociar canal**. En las opciones disponibles, selecciona **Email**.
+Desde el menú lateral, ve a **Canales** y haz clic en **+ Agregar canal**. En las opciones disponibles, selecciona **Email**.
 
-![Diálogo de conexión de canal con la tarjeta Email](../.gitbook/assets/image.png)
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+
+Vambe te pregunta primero **¿Para qué vas a usar el correo?**, con tres opciones:
+
+* **Responder y enviar correos** — para atender clientes: los correos que te escriben llegan a la bandeja de Vambe y los contestas ahí mismo, además de poder escribir correos individuales. Conecta tu casilla real (Gmail u Outlook).
+* **Solo enviar campañas** — para enviar correos masivos a tus listas de contactos: newsletters, promociones y seguimientos automáticos con plantillas. Usa un dominio verificado, propio o de Vambe.
+* **Ambas** — conecta tu casilla para responder mensajes y, además, verifica tu dominio para enviar campañas masivas desde una misma cuenta.
+
+<figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Cómo elegir:** si tu prioridad es que el asistente conteste conversaciones uno a uno desde una casilla real del equipo, parte por **Responder y enviar correos**. Si lo que necesitas es mandar campañas masivas con tu marca, ve directo a **Solo enviar campañas**. **Ambas** te deja las dos cosas configuradas de una vez.
+{% endhint %}
 
 ***
 
-#### Paso 2: Elige tu método de conexión
+#### Responder y enviar correos: conecta tu casilla real (Gmail u Outlook)
 
-Al configurar el canal de Email en Vambe, puedes elegir entre dos métodos de conexión:
+Esta ruta conecta la cuenta real del equipo —Gmail u Outlook— para que las conversaciones del asistente salgan y entren directamente en esa bandeja: la persona que escribe recibe la respuesta en el mismo hilo, incluido en **Enviados**, y desde la dirección real, no desde un remitente genérico. Al conectar la casilla, Vambe también importa el historial reciente de conversaciones de esa cuenta.
+
+1. Elige tu proveedor de correo: **Gmail** o **Outlook**.
+2. Revisa qué autorizas exactamente: Vambe pide permiso para leer los correos que llegan a esa casilla y mostrarlos en Vambe, y para enviar respuestas en tu nombre. No borra ni mueve nada de la cuenta original.
+
+<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+
+3. Confirma el inicio de sesión con la cuenta de correo que quieres conectar y acepta los permisos.
+
+<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+
+4. Al terminar, la casilla aparece en una nueva sección **Email** dentro de tu lista de canales conectados, con su propio estado e íconos de acción.
+
+<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+Si la casilla queda revocada o alcanza la cuota del proveedor, el envío conversacional **falla de forma visible**: no cae en silencio hacia un envío alternativo desde otra dirección. El estado de la casilla se ve directamente en el canal, así que conviene revisarlo si notas que las respuestas no están saliendo.
+{% endhint %}
+
+{% hint style="info" %}
+Si ya tenías canales configurados por **reenvío (forwarding)**, siguen funcionando igual: conectar la casilla real no elimina el forwarding existente. Son dos formas de recibir correo que pueden convivir.
+{% endhint %}
+
+***
+
+#### Solo enviar campañas: elige tu método de conexión de dominio
+
+Esta ruta aplica si elegiste **Solo enviar campañas** o **Ambas**. Al configurar el canal, puedes elegir entre dos métodos:
 
 * **Dominio Vambe** _(recomendado)_ — Vambe te provee un dominio. Solo necesitas ingresar un subdominio y nosotros nos encargamos del resto.
 * **Dominio propio** — Conecta tu propio dominio si no quieres que los correos aparezcan con `@subdominio.vambe-mail.com`.
@@ -57,7 +95,7 @@ Los correos se enviarán y visualizarán con el formato: `@{subdominio}.vambe-ma
 ✅ El canal queda operativo en **menos de 30 segundos**. Con esta ruta puedes saltar directamente al Paso 4.
 {% endhint %}
 
-![Paso 1: elegir el dominio de Vambe](<../.gitbook/assets/image (21).png>)
+![Paso 1: elegir el dominio de Vambe](https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F4jEVTkJx4NxhcpG46WQU%2Fimage.png?alt=media\&token=cd230903-993f-41df-a7a3-9916ed0036d9)
 
 **Opción B: Dominio propio**
 
@@ -75,11 +113,11 @@ Haz clic en **Continuar**.
 Si tu asistente va a conversar por este canal, evita un remitente del tipo `noreply` y elige uno que invite a responder. En el **nombre del remitente** usa tu nombre comercial, no el nombre interno del proyecto.
 {% endhint %}
 
-![Paso 2: dominio, email del remitente y nombre del remitente](<../.gitbook/assets/image (1).png>)
+![Paso 2: dominio, email del remitente y nombre del remitente](https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FLgYkgxwDLvJewHY9WUpC%2Fimage.png?alt=media\&token=158da9c7-b7c7-4218-b960-98220eb1acf2)
 
 ***
 
-#### Paso 3: Agrega los registros DNS
+#### Agrega los registros DNS
 
 Este paso aplica solo si conectaste con **dominio propio**. Vambe te mostrará los registros que debes agregar en el administrador de tu dominio (GoDaddy, Dynadot, Cloudflare, etc.). Son cuatro: uno confirma que el dominio es tuyo y los otros tres autentican el envío.
 
@@ -92,15 +130,15 @@ Este paso aplica solo si conectaste con **dominio propio**. Vambe te mostrará l
 
 Copia cada valor desde Vambe y pégalo en la configuración DNS de tu proveedor. Al terminar, presiona **Verificar DNS**. Si prefieres hacerlo más tarde, **Verificar después** no cancela la conexión: puedes cerrar el diálogo y retomarlo desde la sección **Canales**.
 
-![Paso con los registros DNS y el aviso de propagación](../.gitbook/assets/registros-dns.jpg)
+![Paso con los registros DNS y el aviso de propagación](https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FSRXmTRyIIO0DBfWiXqEo%2Fregistros-dns.jpg?alt=media)
 
 {% hint style="danger" %}
 ⚠️ **El error que más tiempo hace perder:** en los tres CNAME el proxy tiene que quedar desactivado. En Cloudflare el control se llama **Proxy status** y debe mostrar **DNS only**, con la nube gris y no naranja. Si el registro queda proxeado, la verificación nunca pasa y no aparece ningún error que lo explique.
 {% endhint %}
 
-![Cloudflare: el registro TXT de verificación](../.gitbook/assets/cloudflare-txt.jpg)
+![Cloudflare: el registro TXT de verificación](https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FgNDCqhNenwpwwISpEIqj%2Fcloudflare-txt.jpg?alt=media)
 
-![Cloudflare: registro CNAME con Proxy status en DNS only](../.gitbook/assets/cloudflare-dns-only.jpg)
+![Cloudflare: registro CNAME con Proxy status en DNS only](https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FwgZjWY2i4UTfiLPRhOra%2Fcloudflare-dns-only.jpg?alt=media)
 
 **Entender los contadores**
 
@@ -116,26 +154,32 @@ Verás tres números distintos según dónde estés, y ninguno indica un error:
 ⏱️ **Ten en cuenta:** por lo general la verificación toma segundos, pero la propagación DNS puede tardar hasta 48 horas. Si pasan los dos días sin verificar, revisa primero el proxy y luego los registros carácter por carácter.
 {% endhint %}
 
-![Un check verde por registro cuando la verificación queda lista](../.gitbook/assets/dns-verificado.jpg)
+![Un check verde por registro cuando la verificación queda lista](https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2Fk3UTiTZgyWdY4jFCao3X%2Fdns-verificado.jpg?alt=media)
 
 ***
 
-#### Paso 4: Verifica que el envío quedó activo
+#### Verifica que el envío quedó activo
 
-En **Configuración del Canal** la etiqueta **ENVÍO** debe aparecer activa. Ese es el estado correcto al terminar la conexión por cualquiera de las dos rutas: envío activo y recepción todavía pendiente.
+En **Configuración del Canal** la etiqueta **ENVÍO** debe aparecer activa. Ese es el estado correcto al terminar la conexión de dominio por cualquiera de las dos rutas: envío activo y recepción todavía pendiente.
 
-![Configuración del Canal con el envío verificado](../.gitbook/assets/canal-envio-activo.jpg)
+![Configuración del Canal con el envío verificado](https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FLrl4lMMmJoscjyC3Akk1%2Fcanal-envio-activo.jpg?alt=media)
 
 ***
 
-#### Paso 5: Activa la recepción de respuestas
+#### Activa la recepción de respuestas (canal por dominio)
 
-Con el canal conectado ya puedes enviar. Para que las respuestas de tus contactos lleguen a Vambe y se abran como tickets, activa la recepción desde el ícono de bandeja del canal.
+Si conectaste el canal para campañas y quieres que las respuestas de tus contactos también lleguen a Vambe y se abran como tickets, activa la recepción desde el ícono de bandeja del canal.
 
 {% hint style="info" %}
-Sigue el paso a paso en [Cómo activar la recepción de correos](como-activar-la-recepcion-de-correos.md).
+Sigue el paso a paso en Cómo activar la recepción de correos.
 {% endhint %}
 
 ***
 
-¡Listo! Tu canal de Email quedó conectado. El siguiente paso es definir [cómo responde tu asistente en el canal de correo](como-configurar-las-respuestas-de-tu-asistente-en-el-canal-de-correo.md) y crear tus plantillas y campañas.
+#### Qué no cambia
+
+El email marketing —tus campañas masivas— se sigue enviando siempre con el dominio autenticado del cliente, sea el dominio de Vambe o uno propio. Conectar tu casilla real para conversaciones no reemplaza ni afecta ese envío.
+
+***
+
+¡Listo! Tu canal de Email quedó conectado. El siguiente paso es definir cómo responde tu asistente en el canal de correo y crear tus plantillas y campañas.
