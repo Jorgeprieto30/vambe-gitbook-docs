@@ -184,6 +184,24 @@ Si en cambio fijas un asistente en la guía de llamada, ese asistente reemplaza 
 
 ***
 
+### Enviar y recibir mensajes por el canal del contacto durante la llamada
+
+Mientras una llamada está en curso, el asistente puede enviar mensajes al contacto por su canal habitual (por ejemplo, WhatsApp) en tiempo real. Esto sirve para hacerle llegar cualquier información que conviene tener por escrito mientras se habla: un link de pago, una confirmación, una dirección o cualquier mensaje informativo.
+
+<figure><img src="../.gitbook/assets/Captura de pantalla 2026-09-14 a la(s) 11.35.11.png" alt=""><figcaption></figcaption></figure>
+
+Tú decides cuándo se dispara ese envío: se indica directamente en los **escenarios o bloques** del asistente, especificando en qué caso de la llamada quieres que se mande el mensaje.
+
+La comunicación funciona en ambos sentidos. Si el contacto responde por ese mismo canal mientras la llamada sigue activa, ese mensaje se incorpora a la conversación en curso y la IA puede tomarlo en cuenta para seguir la llamada. Esto abre la puerta a pedirle al contacto que envíe una imagen, un correo u otro dato que se maneja mejor por escrito —como una foto de un documento— sin necesidad de que la IA lo transcriba en voz.
+
+<figure><img src="../.gitbook/assets/Captura de pantalla 2026-09-14 a la(s) 11.36.27.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+⚠️ **Requiere una conversación abierta en el canal.** El envío de mensajes durante la llamada funciona sobre una conversación ya abierta con el contacto en ese canal. Si la conversación está cerrada, usa la función de enviar plantilla para poder reabrirla.
+{% endhint %}
+
+***
+
 ### Preguntas frecuentes
 
 **¿La IA puede recibir llamadas entrantes?** Sí, si activas el toggle de **Llamadas entrantes** en la configuración del teléfono. El asistente asignado a la etapa del ticket manejará la llamada.
@@ -195,3 +213,5 @@ Si en cambio fijas un asistente en la guía de llamada, ese asistente reemplaza 
 **¿Las llamadas desde workflows tienen las mismas métricas que las campañas?** Las transcripciones, resúmenes y grabaciones están disponibles a nivel de ticket. Las métricas agregadas (tasa de conversión, efectividad de reintentos) aplican solo a campañas.
 
 **¿Qué pasa si edito una guía de llamada que ya está en uso?** El cambio se aplica de inmediato a todas las campañas y workflows que la usan; no es necesario volver a configurarlos uno por uno.
+
+**¿El envío de mensajes durante la llamada funciona para cualquier conversación?** Funciona para conversaciones que ya están abiertas en el canal. Para conversaciones cerradas, la función fallaría; en esos casos usa el envío de plantilla, que sí puede reabrir la conversación.
