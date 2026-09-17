@@ -11,7 +11,12 @@ Antes de confirmar una campaña con [flujo omnicanal](https://academy.vambe.ai/c
 ### Dónde verlo
 
 1. Al crear una campaña, en el último paso (**Enviar la campaña**), justo antes de elegir **Enviar ahora**, **Programar envío** o **Enviar en grupos**, Vambe muestra el resumen del costo estimado del envío desglosado por canal.
+
+<figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+
 2. Una vez enviada, en el **listado de campañas** aparece una columna **Costo aprox.** con el costo acumulado de esa campaña, que se actualiza todas las noches a medida que avanza el envío.
+
+<figure><img src="../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
