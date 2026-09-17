@@ -40,6 +40,9 @@
 * [Desuscripción en campañas de email](campanas/desuscripcion-en-campanas-de-email.md)
 * [Educa a tu equipo sobre el nuevo cobro de Meta](campanas/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta.md)
 * [Recompra recurrente Ecommerce](campanas/recompra-recurrente-ecommerce.md)
+* [Tres formas de reducir el costo de tus mensajes de servicio](campanas/tres-formas-de-reducir-el-costo-de-tus-mensajes-de-servicio.md)
+* [Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp](campanas/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp.md)
+* [Revisa el costo estimado de tus envíos antes de lanzar una campaña](campanas/revisa-el-costo-estimado-de-tus-envios-antes-de-lanzar-una-campana.md)
 
 ## Comentarios de Instagram
 

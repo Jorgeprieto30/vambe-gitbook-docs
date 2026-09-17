@@ -76,11 +76,11 @@ Un mensaje que cuesta centavos y termina en una venta o una cita agendada es bar
 
 Esta sección del Academy reúne las formas concretas de hacerlo:
 
-* **Tres formas de reducir el costo de tus mensajes de servicio** — el resumen de las tres formas con mayor impacto.
-* **Reduce mensajes con WhatsApp Flows** — condensa varias preguntas en un solo formulario.
-* **Aprovecha la ventana de 72 horas con campañas Click-to-WhatsApp** — convierte una buena práctica de adquisición en ahorro directo.
-* **Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp** — usa webchat, correo, Instagram y llamadas donde tiene sentido.
-* **Educa a tu equipo sobre el nuevo cobro de Meta** — para que el ahorro no dependa solo de la configuración técnica.
+* [**Tres formas de reducir el costo de tus mensajes de servicio**](https://academy.vambe.ai/canal/campanas/tres-formas-de-reducir-el-costo-de-tus-mensajes-de-servicio) — el resumen de las tres formas con mayor impacto.
+* **Reduce mensajes con WhatsApp Flows** — condensa varias preguntas en un solo formulario. _(guía en preparación)_
+* [**Aprovecha la ventana de 72 horas con campañas Click-to-WhatsApp**](https://academy.vambe.ai/vambe-ads/configuracion-plataformas/campanas-click-to-whatsapp-en-meta-como-crearlas-por-que-convienen-y-como-medir-su-impacto) — convierte una buena práctica de adquisición en ahorro directo.
+* [**Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp**](https://academy.vambe.ai/canal/campanas/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp) — usa webchat, correo, Instagram y llamadas donde tiene sentido.
+* [**Educa a tu equipo sobre el nuevo cobro de Meta**](https://academy.vambe.ai/canal/campanas/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta) — para que el ahorro no dependa solo de la configuración técnica.
 
 ***
 

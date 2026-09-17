@@ -9,6 +9,10 @@ El Web Chat de Vambe te permite integrar un chat flotante directamente en tu pá
 
 Cada conversación iniciada desde el Web Chat entra directamente a tu embudo, permitiéndote gestionar leads, conversaciones y tickets desde un solo lugar. Además, ahora cuentas con un editor completo que incluye un panel de previsualización en vivo, donde verás reflejado cada cambio mientras configuras el chat.
 
+{% hint style="info" %}
+El Web Chat no es lo mismo que el **botón flotante de WhatsApp**: el Web Chat abre una conversación dentro de tu propio sitio, mientras que el botón flotante redirige al visitante hacia una conversación de WhatsApp. Si lo que necesitas es ese botón, revisa [Script del botón de WhatsApp: qué hace y cómo validarlo con tu equipo de seguridad](https://academy.vambe.ai/vambe-ads/configuracion-plataformas/script-del-boton-de-whatsapp-que-hace-y-como-validarlo-con-tu-equipo-de-seguridad).
+{% endhint %}
+
 **Ventajas clave:**
 
 * Solicitar datos del cliente antes de iniciar la conversación (correo, teléfono, nombre).
@@ -168,5 +172,9 @@ Antes de terminar, asegúrate de que el Web Chat esté conectado al embudo corre
 * Sea gestionado correctamente por IA o por Ejecutivos.
 
 Una vez verificado, haz clic en **Crear** para dejar el canal activo.
+
+{% hint style="info" %}
+**Antes de dar por cerrada la configuración, haz una prueba real:** abre el Web Chat desde tu sitio publicado, inicia una conversación de prueba y confirma en Vambe que el ticket entró al embudo y a la etapa que esperabas. Es la forma más rápida de detectar un embudo mal seleccionado antes de que llegue el primer visitante real.
+{% endhint %}
 
 Más información: [Verificar la conexión con un embudo](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/verificar-que-el-numero-este-asociado-al-embudo-correcto)
