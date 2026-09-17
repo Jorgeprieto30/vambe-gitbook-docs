@@ -43,6 +43,9 @@
 * [Tres formas de reducir el costo de tus mensajes de servicio](campanas/tres-formas-de-reducir-el-costo-de-tus-mensajes-de-servicio.md)
 * [Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp](campanas/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp.md)
 * [Revisa el costo estimado de tus envíos antes de lanzar una campaña](campanas/revisa-el-costo-estimado-de-tus-envios-antes-de-lanzar-una-campana.md)
+* [Reduce mensajes con WhatsApp Flows](campanas/reduce-mensajes-con-whatsapp-flows.md)
+* [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](campanas/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes.md)
+* [Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente](campanas/mensajes-interactivos-botones-enlaces-y-flows-en-un-mismo-asistente.md)
 
 ## Comentarios de Instagram
 

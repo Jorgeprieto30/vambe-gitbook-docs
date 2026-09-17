@@ -12,9 +12,7 @@ La forma de reducir el impacto de este cobro no consiste en dejar de atender cli
 
 En vez de levantar la misma información pregunta por pregunta —nombre, correo, servicio, fecha—, un **Flow** de WhatsApp presenta un formulario nativo donde el cliente completa varios datos en una sola interacción. Menos mensajes de ida y vuelta, mismo dato recopilado.
 
-{% hint style="warning" %}
-La guía paso a paso para crear Flows en Vambe todavía está en preparación. Se publicará en esta sección apenas esté lista.
-{% endhint %}
+Revisa cuándo conviene usarlo y cómo crearlo: [Reduce mensajes con WhatsApp Flows](https://academy.vambe.ai/canal/campanas/reduce-mensajes-con-whatsapp-flows) y [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](https://academy.vambe.ai/canal/campanas/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes).
 
 ### 2. Aprovecha la ventana de 72 horas con campañas Click-to-WhatsApp
 
