@@ -39,6 +39,7 @@
 * [Buenas prácticas de email: protege la reputación de tu dominio y evita el spam](campanas/buenas-practicas-de-email-protege-la-reputacion-de-tu-dominio-y-evita-el-spam.md)
 * [Desuscripción en campañas de email](campanas/desuscripcion-en-campanas-de-email.md)
 * [Educa a tu equipo sobre el nuevo cobro de Meta](campanas/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta.md)
+* [Recompra recurrente Ecommerce](campanas/recompra-recurrente-ecommerce.md)
 
 ## Comentarios de Instagram
 
