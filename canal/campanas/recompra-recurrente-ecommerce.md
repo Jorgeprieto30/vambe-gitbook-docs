@@ -38,7 +38,7 @@ Ve a **Canales → Campañas**, entra a la pestaña **Dinámica** y haz clic en 
 * **Avisar X días antes de recompra**: cuántos días antes de la fecha estimada en que se le acabará el producto quieres contactar al cliente
 * **Evaluación**: a qué hora del día se hace la evaluación diaria
 
-<figure><img src="../.gitbook/assets/tut-02-form-real.jpg" alt="Formulario de creación de campaña dinámica con nombre, objetivo, audiencia/segmento, tipo de campaña, aviso de días y evaluación"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/p_02_form_campana.png" alt=""><figcaption></figcaption></figure>
 
 Si al configurar esto no tienes productos declarados como recomprables, la campaña te lo va a advertir y te va a pedir ir a configurarlos.
 
@@ -50,7 +50,7 @@ Declarar producto por producto si es recomprable y cada cuántos días se recomp
 
 La IA analiza las compras pasadas de tus propios clientes, detecta qué tan seguido se repite cada producto y con qué probabilidad un cliente vuelve a comprarlo, y a partir de eso calcula un **score de confianza** de que ese producto efectivamente es recomprable, junto con el número de días de recompra.
 
-<figure><img src="../.gitbook/assets/tut-05-ia-micro.jpg" alt="Modal de Recompra sugerida por IA, con el slider de confianza mínima y la tabla de productos con clientes, tasa de recompra, días y nivel de confianza"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/p_05_ia_sugerida.png" alt=""><figcaption></figcaption></figure>
 
 Moviendo el slider de **confianza mínima** puedes ver más o menos productos sugeridos: con una confianza más baja aparecen más productos: con una confianza más alta, menos, pero con mayor certeza. Al aceptar, todos esos productos quedan marcados como recomprables, con los días que corresponde a cada uno.
 
@@ -60,7 +60,7 @@ Moviendo el slider de **confianza mínima** puedes ver más o menos productos su
 
 Volviendo a la campaña, la lista de productos recomprables ya viene cargada con los que superaron el umbral de confianza que elegiste. Puedes dejarlos todos aplicados o quitar los que no te interesen.
 
-<figure><img src="../.gitbook/assets/tut-06-productos-micro (1).jpg" alt="Formulario de campaña con los productos recomprables ya seleccionados y el panel de próximos envíos proyectados"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/p_06_productos_seleccionados.png" alt=""><figcaption></figcaption></figure>
 
 A la derecha, el panel de **Próximos envíos proyectados** te muestra qué pasaría si esta campaña se lanzara hoy, mañana y pasado mañana: qué cliente recibiría el mensaje y con qué producto, según sus compras y el ritmo de recompra calculado.
 
@@ -70,7 +70,7 @@ A la derecha, el panel de **Próximos envíos proyectados** te muestra qué pasa
 
 En el segundo paso de la campaña defines el **canal** por el que se va a contactar a cada cliente y la **etapa** a la que se moverá al responder. Por ahora, este tipo de campaña solo funciona enviando **plantillas de recompra**: un tipo especial de plantilla de Meta.
 
-<figure><img src="../.gitbook/assets/tut-08-flujo-micro (1).jpg" alt="Paso 2 de la campaña: configuración de canal, etapa al responder y selección de plantilla de recompra"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/p_08_flujo_plantilla.png" alt=""><figcaption></figcaption></figure>
 
 Si todavía no tienes una plantilla de recompra creada, puedes crearla ahí mismo con el botón **Crear plantilla de recompra**.
 
@@ -80,7 +80,7 @@ Si todavía no tienes una plantilla de recompra creada, puedes crearla ahí mism
 
 Una plantilla de recompra es una plantilla de Meta que viene con un botón de tipo **Checkout**: el link al carrito de compra se genera automáticamente para cada cliente, con el producto correspondiente ya cargado. Tú puedes editar el texto del mensaje y el texto del botón; el link se arma solo.
 
-<figure><img src="../.gitbook/assets/tut-09-crear-v2.jpg" alt="Modal Crear Plantilla, con el cuerpo del mensaje, el botón tipo Checkout con la URL generada automáticamente, y la vista previa"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/p_09_crear_plantilla.png" alt=""><figcaption></figcaption></figure>
 
 Como toda plantilla de WhatsApp, debe pasar por la aprobación de Meta antes de poder enviarse. Este proceso suele tomar minutos, pero puede tardar hasta 24 horas.
 
@@ -92,7 +92,7 @@ Mientras la plantilla espera aprobación, tu campaña queda creada en estado **B
 
 Una vez que Meta aprueba la plantilla, el botón para activar la campaña queda disponible.
 
-<figure><img src="../.gitbook/assets/tut-11-activar-final.jpg" alt="Campaña dinámica en la lista de Campañas, en estado Borrador y con el botón de activar ya habilitado"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/p_11_activar.png" alt=""><figcaption></figcaption></figure>
 
 Al activarla, se envía de inmediato a todos los clientes a los que les corresponda ese día. Desde ahí, la campaña se vuelve a evaluar todos los días —buscando quién debe ser contactado hoy— y sigue así de forma permanente, hasta que decidas desactivarla.
 
