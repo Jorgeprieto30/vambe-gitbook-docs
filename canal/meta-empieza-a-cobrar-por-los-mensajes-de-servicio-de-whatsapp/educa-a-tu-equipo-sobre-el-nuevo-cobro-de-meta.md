@@ -3,7 +3,7 @@
 Desde el 1 de octubre de 2026, Meta cobra por cada mensaje de servicio que un negocio envía por la API de WhatsApp —el mensaje libre de siempre, sin plantilla, que hasta ahora era gratis. Es un cambio de Meta, no de Vambe, y aplica a cualquier negocio que use esta API, sea que responda la IA o una persona.
 
 {% hint style="info" %}
-Si todavía no tienes claro qué es un mensaje de servicio ni cómo se cobra, empieza por **Meta empieza a cobrar por los mensajes de servicio de WhatsApp** —este artículo asume que ya revisaste ese contexto.
+Si todavía no tienes claro qué es un mensaje de servicio ni cómo se cobra, empieza por [**Meta empieza a cobrar por los mensajes de servicio de WhatsApp**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp) —este artículo asume que ya revisaste ese contexto.
 {% endhint %}
 
 Flows, campañas Click-to-WhatsApp y mover tráfico a otros canales bajan el costo hasta cierto punto. Lo que puede diluir ese ahorro es que tu propio equipo, al responder manualmente, siga usando la misma cantidad de mensajes de siempre. El cobro de Meta no distingue entre IA y humano: si tus ejecutivos mandan tres mensajes sueltos donde uno solo bastaría, ese hábito se cobra igual que si lo hiciera el asistente.

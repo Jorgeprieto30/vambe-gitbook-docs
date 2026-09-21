@@ -3,7 +3,7 @@
 Los mensajes interactivos permiten que tu asistente envíe experiencias más estructuradas que un mensaje de texto simple: botones, listas o un Flow completo, según lo que necesite la conversación en ese momento.
 
 * **Botones y listas** son más adecuados cuando el cliente debe elegir entre pocas alternativas.
-* Un **Flow** es especialmente útil cuando el asistente necesita capturar varios datos de manera ordenada —ver **Crea Flows de WhatsApp para capturar información estructurada de tus clientes**.
+* Un **Flow** es especialmente útil cuando el asistente necesita capturar varios datos de manera ordenada —ver [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes.md).
 
 {% hint style="info" %}
 Un **enlace** no es un componente independiente del mensaje interactivo general: hoy se confirma como parte de una **pantalla de Flow**, no como un tipo de mensaje aparte. Conviene separar los tres conceptos: botones y listas son mensajes interactivos; los enlaces van dentro de una pantalla de Flow; los formularios son WhatsApp Flows.
@@ -18,6 +18,10 @@ Un **enlace** no es un componente independiente del mensaje interactivo general:
 * Cada Flow que el asistente vaya a enviar debe estar **registrado en la configuración del asistente**.
 * El Flow debe estar **publicado en el número de WhatsApp** correspondiente —si no lo está, el asistente no podrá enviarlo.
 * La **descripción** de cada Flow registrado debe indicar cuándo debe enviarse, no solo qué campos contiene: es lo que el asistente usa para decidir el momento correcto.
+
+{% hint style="info" %}
+¿Necesitas el paso a paso completo, con pantallas y errores comunes? Revisa [Cómo conectar un WhatsApp Flow a un asistente](crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes.md), dentro de la guía de creación de Flows.
+{% endhint %}
 
 ***
 

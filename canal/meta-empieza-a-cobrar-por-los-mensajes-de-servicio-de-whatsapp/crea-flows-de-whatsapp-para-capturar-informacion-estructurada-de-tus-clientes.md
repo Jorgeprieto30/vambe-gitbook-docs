@@ -1,7 +1,7 @@
 # Crea Flows de WhatsApp para capturar información estructurada de tus clientes
 
 {% hint style="info" %}
-¿No tienes claro si un Flow es lo que necesitas? Revisa primero **Reduce mensajes con WhatsApp Flows** para ver cuándo conviene usarlo.
+¿No tienes claro si un Flow es lo que necesitas? Revisa primero [**Reduce mensajes con WhatsApp Flows**](reduce-mensajes-con-whatsapp-flows.md) para ver cuándo conviene usarlo.
 {% endhint %}
 
 ***
@@ -23,10 +23,14 @@ Los WhatsApp Flows no funcionan con cualquier conexión. Requieren un número co
 
 Los Flows se crean y administran desde **Canales → WhatsApp Flows**. Ahí verás dos pestañas —**Flows** y **Plantillas asociadas**—, el listado de tus flujos existentes ("Tus Flujos") y el botón **+ Crear** para empezar uno nuevo.
 
-<figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FF53xiBbfCbDurNV7Yvnj%2Fimage.png?alt=media&#x26;token=9860a816-fe22-49b4-9040-3ff2e29cb50c" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+También puedes crear tu Flow conversando con **PandAI**: descríbele el formulario que necesitas —qué datos quieres pedir y en qué orden— y te arma la estructura de pantallas y campos, sin tener que construir cada bloque manualmente en el editor.
+{% endhint %}
 
 {% hint style="warning" %}
-Crear el Flow no significa que se enviará automáticamente a los clientes. Una vez publicado, debe abrirse mediante un mensaje interactivo del asistente, una plantilla de WhatsApp o una automatización —ver **Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente**.
+Crear el Flow no significa que se enviará automáticamente a los clientes. Una vez publicado, debe abrirse mediante un mensaje interactivo del asistente, una plantilla de WhatsApp o una automatización —más abajo, en **Cómo conectar un WhatsApp Flow a un asistente**.
 {% endhint %}
 
 ***
@@ -35,7 +39,7 @@ Crear el Flow no significa que se enviará automáticamente a los clientes. Una 
 
 Al hacer clic en **+ Crear** se abre el editor **Crear flujo de WhatsApp**, dividido en un panel de configuración a la izquierda y una vista previa en vivo dentro de un teléfono a la derecha.
 
-<figure><img src="../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FiRAYBymAA4PEyBZvTFta%2Fimage.png?alt=media&#x26;token=264d42f4-94e1-4da1-9343-1051f3086164" alt=""><figcaption></figcaption></figure>
 
 **Sección Principal**
 
@@ -107,6 +111,96 @@ Si vas a enviar el Flow mediante una plantilla de WhatsApp, esa plantilla debe c
 
 ***
 
+### Cómo conectar un WhatsApp Flow a un asistente
+
+Un Flow creado y publicado no se envía solo: hay que indicarle al asistente cuándo debe abrirlo.
+
+**1. Verifica que el asistente sea V3**
+
+Los WhatsApp Flows solo funcionan con asistentes **V3**. Los asistentes V2 no tienen la función de mensajes interactivos.
+
+**2. Publica el Flow en un número de WhatsApp**
+
+El Flow debe estar disponible en el **mismo número** desde el cual responde el asistente:
+
+1. Ve a la sección de Flows.
+2. Abre el Flow que quieres usar.
+3. Revisa o completa sus pantallas y campos.
+4. Publicálo en el número de WhatsApp correspondiente.
+5. Guarda los cambios.
+
+{% hint style="warning" %}
+Un Flow publicado solamente en un canal web, Instagram u otro canal **no podrá enviarse** como WhatsApp Flow.
+{% endhint %}
+
+**3. Abre el asistente V3**
+
+1. Ve a **Asistentes**.
+2. Abre el asistente V3.
+3. Entra a su configuración o automatizaciones.
+4. Busca **Enviar mensaje interactivo**.
+
+**4. Activa los mensajes interactivos**
+
+Activa la función **Enviar mensaje interactivo**. Esta función permite que el asistente envíe botones, listas o WhatsApp Flows.
+
+**5. Agrega el Flow al asistente**
+
+Dentro de la configuración de mensajes interactivos:
+
+1. Selecciona **Agregar Flow**.
+2. Elige el Flow correspondiente.
+3. Escribe una **descripción clara de cuándo debe utilizarlo** —por ejemplo, «Cuando el cliente quiere seleccionar una sesión de cine y elegir un asiento», no solo una lista de los campos del formulario.
+
+{% hint style="info" %}
+La descripción debe indicar **cuándo** debe enviarse el Flow, no solamente qué campos contiene. El asistente decide el momento correcto en base a esa descripción.
+{% endhint %}
+
+**6. Guarda la configuración**
+
+{% hint style="warning" %}
+Si ya había otros Flows configurados, asegúrate de conservarlos: la lista de Flows **reemplaza la configuración anterior completa**, no se acumula sola.
+{% endhint %}
+
+**7. Indica al asistente que use la función en la ruta correspondiente**
+
+Conectar el Flow al asistente no hace que se envíe automáticamente. La ruta o escenario donde se recopilan esos datos debe indicarle al asistente que utilice la función de mensajes interactivos, con una referencia de función con un formato similar a:
+
+```
+{{function:Send Interactive Message(...)}}
+```
+
+{% hint style="danger" %}
+No escribas manualmente el nombre del Flow dentro de la ruta. El Flow que se va a utilizar se determina mediante la descripción configurada en los mensajes interactivos, no por lo que escribas en la ruta.
+{% endhint %}
+
+La ruta también debe indicar qué hacer después de que el cliente complete el formulario, porque las respuestas regresan como datos estructurados.
+
+**8. Verifica la conexión del asistente**
+
+Confirma que:
+
+* El asistente sea V3.
+* El asistente esté asignado a una etapa activa.
+* La etapa pertenezca a un embudo conectado al número de WhatsApp.
+* El Flow esté publicado en ese mismo número.
+* La ruta incluya la referencia de **Enviar mensaje interactivo**.
+* La descripción del Flow explique claramente cuándo debe utilizarse.
+
+**Errores comunes**
+
+* **El Flow existe, pero no se envía:** probablemente no está publicado en el número de WhatsApp.
+* **El asistente no encuentra el Flow:** no fue agregado a la lista de mensajes interactivos.
+* **El Flow está conectado, pero el asistente sigue preguntando campo por campo:** falta la referencia de función dentro de la ruta.
+* **El Flow no funciona en Instagram o Web Chat:** los WhatsApp Flows funcionan solo para WhatsApp.
+* **El asistente es V2:** esta función solo está disponible en asistentes V3.
+
+{% hint style="info" %}
+Para la explicación conceptual de cómo conviven botones, listas y Flows dentro de un mismo asistente, revisa [Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente](mensajes-interactivos-botones-enlaces-y-flows-en-un-mismo-asistente.md).
+{% endhint %}
+
+***
+
 ### Casos avanzados
 
 Algunos escenarios —lógica condicional compleja entre pantallas, o conectar el Flow a un sistema externo para traer datos dinámicos— pueden requerir configuración adicional más allá de este editor. Si tu caso lo necesita, conviérsalo con tu equipo de implementación de Vambe.
@@ -115,4 +209,4 @@ Algunos escenarios —lógica condicional compleja entre pantallas, o conectar e
 
 ### En resumen
 
-Un Flow se arma con pantallas, y cada pantalla con bloques —encabezado, cuerpo, campos de entrada y un pie de página que decide a dónde salta el cliente—, todo visible en tiempo real en la vista previa del teléfono. Una vez creado, no se envía solo: falta indicarle al asistente cuándo debe abrirlo. Eso se configura en **Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente**.
+Un Flow se arma con pantallas, y cada pantalla con bloques —encabezado, cuerpo, campos de entrada y un pie de página que decide a dónde salta el cliente—, todo visible en tiempo real en la vista previa del teléfono, o descrito directamente a **PandAI**. Una vez creado y publicado en el número correcto, contéctalo a tu asistente V3 siguiendo los pasos de esta guía para que sepa cuándo enviarlo.

@@ -38,14 +38,7 @@
 * [Cómo usar el canal de Email en Vambe](campanas/como-usar-el-canal-de-email-en-vambe.md)
 * [Buenas prácticas de email: protege la reputación de tu dominio y evita el spam](campanas/buenas-practicas-de-email-protege-la-reputacion-de-tu-dominio-y-evita-el-spam.md)
 * [Desuscripción en campañas de email](campanas/desuscripcion-en-campanas-de-email.md)
-* [Educa a tu equipo sobre el nuevo cobro de Meta](campanas/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta.md)
 * [Recompra recurrente Ecommerce](campanas/recompra-recurrente-ecommerce.md)
-* [Tres formas de reducir el costo de tus mensajes de servicio](campanas/tres-formas-de-reducir-el-costo-de-tus-mensajes-de-servicio.md)
-* [Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp](campanas/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp.md)
-* [Revisa el costo estimado de tus envíos antes de lanzar una campaña](campanas/revisa-el-costo-estimado-de-tus-envios-antes-de-lanzar-una-campana.md)
-* [Reduce mensajes con WhatsApp Flows](campanas/reduce-mensajes-con-whatsapp-flows.md)
-* [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](campanas/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes.md)
-* [Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente](campanas/mensajes-interactivos-botones-enlaces-y-flows-en-un-mismo-asistente.md)
 
 ## Comentarios de Instagram
 
@@ -65,4 +58,11 @@
 
 ***
 
-* [Meta empieza a cobrar por los mensajes de servicio de WhatsApp](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp.md)
+* [Meta empieza a cobrar por los mensajes de servicio de WhatsApp](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/README.md)
+  * [Tres formas de reducir el costo de tus mensajes de servicio](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/tres-formas-de-reducir-el-costo-de-tus-mensajes-de-servicio.md)
+  * [Reduce mensajes con WhatsApp Flows](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/reduce-mensajes-con-whatsapp-flows.md)
+  * [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes.md)
+  * [Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/mensajes-interactivos-botones-enlaces-y-flows-en-un-mismo-asistente.md)
+  * [Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp.md)
+  * [Calcula el costo estimado de tus mensajes de servicio, directo desde Vambe](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/calcula-el-costo-estimado-de-tus-mensajes-de-servicio-directo-desde-vambe.md)
+  * [Educa a tu equipo sobre el nuevo cobro de Meta](meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta.md)
