@@ -13,7 +13,7 @@ En vez de tener esta conversación:
 El cliente completa esos mismos datos en un solo formulario, dentro del propio chat.
 
 {% hint style="info" %}
-Esta página explica qué es un Flow y cuándo conviene usarlo. Para el paso a paso de creación dentro de Vambe, revisa **Crea Flows de WhatsApp para capturar información estructurada de tus clientes**.
+Esta página explica qué es un Flow y cuándo conviene usarlo. Para el paso a paso de creación dentro de Vambe —incluyendo cómo armarlo conversando con **PandAI** en vez de construirlo campo por campo—, revisa [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](https://academy.vambe.ai/canal/whatsapp-flows/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes).
 {% endhint %}
 
 ***
@@ -37,15 +37,15 @@ Estos son ejemplos ilustrativos de Meta —no son clientes de Vambe— que muest
 
 * **Generación de leads con datos de contacto:** el negocio ofrece acceso anticipado a una promoción, el cliente completa nombre, correo y acepta términos en un formulario dentro del chat, y recibe la confirmación en el mismo hilo.
 
-<figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FlKVmOtYMryia16oCG5Y6%2Fimage.png?alt=media&#x26;token=84ae35dc-05cd-4338-beca-1a3dcee2b18b" alt=""><figcaption></figcaption></figure>
 
 * **Calificación de interés de compra:** el cliente selecciona categoría, marcas preferidas y uso que le dará al producto; con esas respuestas, el negocio muestra opciones ya filtradas para elegir una y continuar la compra.
 
-<figure><img src="../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FIzpGJistgjHFhrKkvvPx%2Fimage.png?alt=media&#x26;token=bb20c798-5d7a-484f-9cfc-898be54fae14" alt=""><figcaption></figcaption></figure>
 
 * **Solicitud estructurada en servicios financieros:** el cliente revisa una oferta pre-aprobada, elige monto y plazo, ingresa los datos de pago que corresponda, y confirma en una pantalla de resumen antes de enviar.
 
-<figure><img src="../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F2QEuE60jTe6WSVXBADKJ%2Fimage.png?alt=media&#x26;token=f49e297d-0728-44df-8913-6bc751eab17a" alt=""><figcaption></figcaption></figure>
 
 Los tres casos comparten lo mismo: un proceso con **inicio y fin claros**, donde los datos se pueden recoger con campos estructurados —no una conversación abierta que cambia según lo que responde el cliente.
 
@@ -88,4 +88,4 @@ Un Flow debe resolver una tarea concreta y relativamente predecible. No reemplaz
 
 ### En resumen
 
-Un Flow bien acotado reemplaza varios mensajes de ida y vuelta por un solo formulario dentro de WhatsApp, sin sacrificar la calidad del dato que recibes. La clave es usarlo donde el proceso es repetitivo y predecible, y dejar la conversación libre para todo lo demás. Para crear el tuyo, sigue **Crea Flows de WhatsApp para capturar información estructurada de tus clientes**.
+Un Flow bien acotado reemplaza varios mensajes de ida y vuelta por un solo formulario dentro de WhatsApp, sin sacrificar la calidad del dato que recibes —y puedes armarlo campo por campo o simplemente describérselo a **PandAI**. La clave es usarlo donde el proceso es repetitivo y predecible, y dejar la conversación libre para todo lo demás. Para crear el tuyo, sigue [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](https://academy.vambe.ai/canal/whatsapp-flows/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes).

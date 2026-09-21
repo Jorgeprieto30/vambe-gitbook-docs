@@ -4,7 +4,7 @@
 Este artículo asume que ya revisaste [**Meta empieza a cobrar por los mensajes de servicio de WhatsApp**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp), donde se explica qué es un mensaje de servicio y cómo se cobra desde el 1 de octubre de 2026.
 {% endhint %}
 
-La forma de reducir el impacto de este cobro no consiste en dejar de atender clientes, sino en diseñar conversaciones más eficientes. Hay tres palancas concretas, y esta página es el punto de entrada a cada una.
+La forma de reducir el impacto de este cobro no consiste en dejar de atender clientes, sino en diseñar conversaciones más eficientes. Hay tres formas concretas de hacerlo, y esta página es el punto de entrada a cada una.
 
 ***
 
@@ -12,7 +12,7 @@ La forma de reducir el impacto de este cobro no consiste en dejar de atender cli
 
 En vez de levantar la misma información pregunta por pregunta —nombre, correo, servicio, fecha—, un **Flow** de WhatsApp presenta un formulario nativo donde el cliente completa varios datos en una sola interacción. Menos mensajes de ida y vuelta, mismo dato recopilado.
 
-Revisa cuándo conviene usarlo y cómo crearlo: Reduce mensajes con WhatsApp Flows y Crea Flows de WhatsApp para capturar información estructurada de tus clientes.
+Revisa cuándo conviene usarlo y cómo crearlo: [Reduce mensajes con WhatsApp Flows](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/reduce-mensajes-con-whatsapp-flows) y [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](https://academy.vambe.ai/canal/whatsapp-flows/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes).
 
 ### 2. Aprovecha la ventana de 72 horas con campañas Click-to-WhatsApp
 
@@ -24,7 +24,7 @@ Revisa la guía completa para crear estas campañas, entender por qué conviene 
 
 No todas las conversaciones necesitan ocurrir en WhatsApp. Web Chat, correo, Instagram, Messenger y llamadas pueden absorber una parte del volumen que hoy pasa por WhatsApp, siempre que el caso no requiera específicamente ese canal.
 
-Revisa cómo evaluar y conectar cada canal: Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp.
+Revisa cómo evaluar y conectar cada canal: [Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp).
 
 {% hint style="info" %}
 Una de las rutas más directas es el **Web Chat**: un chat flotante dentro de tu propio sitio, que no depende de la API de WhatsApp. Revisa [Cómo instalar y configurar el Web Chat de Vambe en tu sitio web](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/como-instalar-y-configurar-el-web-chat-de-vambe-en-tu-sitio-web).
@@ -43,4 +43,10 @@ Una de las rutas más directas es el **Web Chat**: un chat flotante dentro de tu
 Los mensajes que **recibe** el negocio nunca se cobran; el cobro aplica solo a los mensajes que **envías**. Y la ventana de 72 horas no hace gratis el anuncio en sí —se refiere únicamente al costo de entrega de los mensajes dentro de esa conversación.
 {% endhint %}
 
-Y una palanca más, tan importante como las técnicas: si tu equipo sigue respondiendo manualmente con la misma cantidad de mensajes de siempre, el ahorro se diluye. Revisa Educa a tu equipo sobre el nuevo cobro de Meta para instalar el mismo criterio en las conversaciones que lleva tu equipo.
+***
+
+### Siguiente paso: instala el mismo criterio en tu equipo
+
+{% hint style="success" %}
+Estas tres formas técnicas bajan el costo hasta cierto punto. Si tu equipo sigue respondiendo manualmente con la misma cantidad de mensajes de siempre, el ahorro se diluye. Continúa en [**Educa a tu equipo sobre el nuevo cobro de Meta**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta) para instalar el mismo criterio en las conversaciones que lleva tu equipo.
+{% endhint %}

@@ -1,7 +1,7 @@
 # Crea Flows de WhatsApp para capturar información estructurada de tus clientes
 
 {% hint style="info" %}
-¿No tienes claro si un Flow es lo que necesitas? Revisa primero [**Reduce mensajes con WhatsApp Flows**](reduce-mensajes-con-whatsapp-flows.md) para ver cuándo conviene usarlo.
+¿No tienes claro si un Flow es lo que necesitas? Revisa primero [**Reduce mensajes con WhatsApp Flows**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/reduce-mensajes-con-whatsapp-flows) para ver cuándo conviene usarlo.
 {% endhint %}
 
 ***
@@ -196,7 +196,7 @@ Confirma que:
 * **El asistente es V2:** esta función solo está disponible en asistentes V3.
 
 {% hint style="info" %}
-Para la explicación conceptual de cómo conviven botones, listas y Flows dentro de un mismo asistente, revisa [Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente](mensajes-interactivos-botones-enlaces-y-flows-en-un-mismo-asistente.md).
+Para la explicación conceptual de cómo conviven botones, listas y Flows dentro de un mismo asistente, revisa [Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente](https://academy.vambe.ai/canal/whatsapp-flows/mensajes-interactivos-botones-enlaces-y-flows-en-un-mismo-asistente).
 {% endhint %}
 
 ***
