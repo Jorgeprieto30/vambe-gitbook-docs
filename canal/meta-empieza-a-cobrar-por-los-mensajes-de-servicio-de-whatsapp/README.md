@@ -44,7 +44,7 @@ Para poner el impacto en contexto: del análisis que hicimos sobre nuestra base 
 
 ### Lo que cambia con las plantillas dentro de una conversación abierta
 
-Este es un punto que conviene tener muy claro, porque es fácil confundirlo.
+Este es un punto que conviene tener muy claro, porque es fácil confundirlo. La tabla siguiente describe una conversación normal, **fuera de la ventana gratuita de 72 horas** de un anuncio Click-to-WhatsApp:
 
 |                                                                  | Marketing                      | Utilidad                               |
 | ---------------------------------------------------------------- | ------------------------------ | -------------------------------------- |
@@ -54,7 +54,11 @@ Este es un punto que conviene tener muy claro, porque es fácil confundirlo.
 
 En otras palabras, lo único que cambia acá es que la plantilla de utilidad deja de ser gratis dentro de una conversación ya abierta —el costo de abrir una conversación cerrada no se toca.
 
-Por eso es importante revisar, dentro de una conversación que no viene de un anuncio Click-to-WhatsApp (o sea, sin la ventana gratuita de 72 horas activa), si de verdad conviene seguir mandando plantillas —de marketing o de utilidad— cuando la conversación ya está abierta. Desde octubre, ese envío tiene el mismo costo que un mensaje de servicio en el caso de utilidad, así que vale la pena considerarlo dentro del cálculo de costo por conversación y no asumir que "como es plantilla, es gratis".
+{% hint style="success" %}
+Esta tabla no aplica dentro de la **ventana de 72 horas** que se abre con un anuncio Click-to-WhatsApp: ahí, tanto marketing como utilidad —y también los mensajes de servicio— salen **gratis**, sin excepción, mientras la ventana siga abierta.
+{% endhint %}
+
+Por eso es importante revisar, dentro de una conversación que no viene de un anuncio Click-to-WhatsApp (o sea, sin esa ventana gratuita de 72 horas activa), si de verdad conviene seguir mandando plantillas —de marketing o de utilidad— cuando la conversación ya está abierta. Desde octubre, ese envío tiene el mismo costo que un mensaje de servicio en el caso de utilidad, así que vale la pena considerarlo dentro del cálculo de costo por conversación y no asumir que "como es plantilla, es gratis".
 
 ***
 
@@ -76,14 +80,14 @@ Un mensaje que cuesta centavos y termina en una venta o una cita agendada es bar
 
 Esta sección del Academy reúne las formas concretas de hacerlo:
 
-* [**Tres formas de reducir el costo de tus mensajes de servicio**](https://academy.vambe.ai/canal/campanas/tres-formas-de-reducir-el-costo-de-tus-mensajes-de-servicio) — el resumen de las tres formas con mayor impacto.
-* [**Reduce mensajes con WhatsApp Flows**](https://academy.vambe.ai/canal/campanas/reduce-mensajes-con-whatsapp-flows) — condensa varias preguntas en un solo formulario.
+* [**Tres formas de reducir el costo de tus mensajes de servicio**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/tres-formas-de-reducir-el-costo-de-tus-mensajes-de-servicio) — el resumen de las tres formas con mayor impacto.
+* [**Reduce mensajes con WhatsApp Flows**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/reduce-mensajes-con-whatsapp-flows) — condensa varias preguntas en un solo formulario.
 * [**Aprovecha la ventana de 72 horas con campañas Click-to-WhatsApp**](https://academy.vambe.ai/vambe-ads/configuracion-plataformas/campanas-click-to-whatsapp-en-meta-como-crearlas-por-que-convienen-y-como-medir-su-impacto) — convierte una buena práctica de adquisición en ahorro directo.
-* [**Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp**](https://academy.vambe.ai/canal/campanas/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp) — usa webchat, correo, Instagram y llamadas donde tiene sentido.
-* [**Educa a tu equipo sobre el nuevo cobro de Meta**](https://academy.vambe.ai/canal/campanas/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta) — para que el ahorro no dependa solo de la configuración técnica.
+* [**Diversifica tus canales de atención y reduce lo que se cobra por WhatsApp**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/diversifica-tus-canales-de-atencion-y-reduce-lo-que-se-cobra-por-whatsapp) — usa webchat, correo, Instagram y llamadas donde tiene sentido.
+* [**Educa a tu equipo sobre el nuevo cobro de Meta**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/educa-a-tu-equipo-sobre-el-nuevo-cobro-de-meta) — para que el ahorro no dependa solo de la configuración técnica.
 
 ***
 
 ### En resumen
 
-Desde el 1 de octubre, cada mensaje de servicio que tu negocio envía por la API de WhatsApp tiene costo, sin importar quién lo escribió —porque Meta, al ver que este canal es donde de verdad ocurre el negocio de miles de empresas, decidió cobrar por el valor que genera. La tarifa es por mensaje entregado, según el país del destinatario, del orden de centavos de dólar y sin descuento por volumen, con 1.000 mensajes gratis por número al mes. Además, desde octubre las plantillas de utilidad dejan de ser gratis dentro de una conversación abierta —hoy solo marketing se cobra ahí— así que conviene revisar el uso de plantillas dentro de conversaciones que no vienen de un anuncio. El resto depende de cómo diseñes tu conversación —y esta sección te muestra cómo.
+Desde el 1 de octubre, cada mensaje de servicio que tu negocio envía por la API de WhatsApp tiene costo, sin importar quién lo escribió —porque Meta, al ver que este canal es donde de verdad ocurre el negocio de miles de empresas, decidió cobrar por el valor que genera. La tarifa es por mensaje entregado, según el país del destinatario, del orden de centavos de dólar y sin descuento por volumen, con 1.000 mensajes gratis por número al mes. Además, desde octubre las plantillas de utilidad dejan de ser gratis dentro de una conversación abierta —hoy solo marketing se cobra ahí—, salvo dentro de la ventana de 72 horas de un anuncio Click-to-WhatsApp, donde todo sigue gratis. El resto depende de cómo diseñes tu conversación —y esta sección te muestra cómo.
