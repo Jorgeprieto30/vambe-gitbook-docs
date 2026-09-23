@@ -1,5 +1,13 @@
 # Crea Flows de WhatsApp para capturar información estructurada de tus clientes
 
+Cuando necesitas pedirle datos a un cliente —su nombre, su correo, qué servicio busca— hacerlo con mensajes de texto sueltos funciona, pero es lento y da pie a errores de tipeo o respuestas incompletas. Los Flows de WhatsApp resuelven esto: son formularios nativos que se abren dentro del mismo chat, con campos, botones y pantallas que guian al cliente paso a paso. Puedes pedirle a **PandAI** que los arme por ti o crearlos a mano.
+
+{% hint style="info" %}
+**Para entrar:** en el menú lateral, ve a **Canales → WhatsApp Flows**.
+{% endhint %}
+
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FF53xiBbfCbDurNV7Yvnj%2Fimage.png?alt=media&#x26;token=9860a816-fe22-49b4-9040-3ff2e29cb50c" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 ¿No tienes claro si un Flow es lo que necesitas? Revisa primero [**Reduce mensajes con WhatsApp Flows**](https://academy.vambe.ai/canal/meta-empieza-a-cobrar-por-los-mensajes-de-servicio-de-whatsapp/reduce-mensajes-con-whatsapp-flows) para ver cuándo conviene usarlo.
 {% endhint %}
@@ -17,39 +25,32 @@ Los WhatsApp Flows no funcionan con cualquier conexión. Requieren un número co
 | WhatsApp QR / Web WhatsApp              | No                                                                                                                              |
 | Instagram, Messenger, Web Chat o TikTok | No usan WhatsApp Flows                                                                                                          |
 
-***
-
-### Dónde se administran
-
-Los Flows se crean y administran desde **Canales → WhatsApp Flows**. Ahí verás dos pestañas —**Flows** y **Plantillas asociadas**—, el listado de tus flujos existentes ("Tus Flujos") y el botón **+ Crear** para empezar uno nuevo.
-
-<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FF53xiBbfCbDurNV7Yvnj%2Fimage.png?alt=media&#x26;token=9860a816-fe22-49b4-9040-3ff2e29cb50c" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-También puedes crear tu Flow conversando con **PandAI**: descríbele el formulario que necesitas —qué datos quieres pedir y en qué orden— y te arma la estructura de pantallas y campos, sin tener que construir cada bloque manualmente en el editor.
-{% endhint %}
-
 {% hint style="warning" %}
 Crear el Flow no significa que se enviará automáticamente a los clientes. Una vez publicado, debe abrirse mediante un mensaje interactivo del asistente, una plantilla de WhatsApp o una automatización —más abajo, en **Cómo conectar un WhatsApp Flow a un asistente**.
 {% endhint %}
 
 ***
 
-### El editor de creación
+### Creación con PandAI: que lo arme por ti
 
-Al hacer clic en **+ Crear** se abre el editor **Crear flujo de WhatsApp**, dividido en un panel de configuración a la izquierda y una vista previa en vivo dentro de un teléfono a la derecha.
+Si prefieres no construir el Flow bloque por bloque, PandAI ofrece dos caminos, disponibles al darle contexto sobre **Asistentes**:
+
+* **Crear un WhatsApp Flow** — le describes qué información necesitas capturar y PandAI arma el Flow completo de forma automática, aplicando el mismo proceso que harías a mano pero sin que tengas que tocar cada pantalla tú mismo. Igual que en la creación manual, este Flow queda como una pieza suelta: si lo quieres dentro de un asistente, hay que ir a asociarlo a mano en **Mensajes Interactivos**.
+* **Condensar una ruta en un WhatsApp Flow** — PandAI lee los escenarios y rutas de tu asistente y te recomienda qué rutas conversacionales conviene transformar en un Flow, para reducir la cantidad de mensajes que el asistente tiene que enviar para recolectar la misma información. A diferencia de la opción anterior, aquí no necesitas asociar nada tú mismo: PandAI conecta el Flow resultante directo a la función de **Mensajes Interactivos** del asistente.
+
+***
+
+### Creación manual: paso a paso
+
+Si prefieres armar el Flow tú mismo —o quieres entender qué hay detrás de lo que PandAI genera—, desde **Canales → WhatsApp Flows** haz clic en **+ Crear** para abrir el constructor, dividido en un panel de configuración a la izquierda y una vista previa en vivo dentro de un teléfono a la derecha. Ahí defines tres cosas antes de tocar el contenido del formulario:
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FiRAYBymAA4PEyBZvTFta%2Fimage.png?alt=media&#x26;token=264d42f4-94e1-4da1-9343-1051f3086164" alt=""><figcaption></figcaption></figure>
-
-**Sección Principal**
 
 * **Nombre del flujo** — el nombre interno con el que identificarás este Flow (por ejemplo, «Encuesta satisfacción»).
 * **Categorías** — se agregan con **Agregar categoría**.
 * **Números de WhatsApp** — se agregan con **Agregar número**; define en qué número(s) va a estar disponible este Flow.
 
-**Sección Pantallas**
-
-Cada pantalla ("Pantalla 1", "Pantalla 2"...) tiene:
+Con eso listo, arma el contenido del formulario en **Pantallas**. Cada pantalla ("Pantalla 1", "Pantalla 2"...) tiene:
 
 * **Título** — lo que ve el cliente como encabezado de la pantalla.
 * **ID de pantalla** — un identificador interno en mayúsculas (por ejemplo, `START`, `CONFIRM`) que se usa para enrutar entre pantallas.
@@ -113,7 +114,7 @@ Si vas a enviar el Flow mediante una plantilla de WhatsApp, esa plantilla debe c
 
 ### Cómo conectar un WhatsApp Flow a un asistente
 
-Un Flow creado y publicado no se envía solo: hay que indicarle al asistente cuándo debe abrirlo.
+Un Flow creado y publicado no se envía solo: hay que indicarle al asistente cuándo debe abrirlo. Si lo generaste con la opción **Condensar una ruta** de PandAI, esta conexión ya quedó hecha; si lo creaste a mano o con **Crear un WhatsApp Flow**, sigue estos pasos.
 
 **1. Verifica que el asistente sea V3**
 
@@ -209,4 +210,4 @@ Algunos escenarios —lógica condicional compleja entre pantallas, o conectar e
 
 ### En resumen
 
-Un Flow se arma con pantallas, y cada pantalla con bloques —encabezado, cuerpo, campos de entrada y un pie de página que decide a dónde salta el cliente—, todo visible en tiempo real en la vista previa del teléfono, o descrito directamente a **PandAI**. Una vez creado y publicado en el número correcto, contéctalo a tu asistente V3 siguiendo los pasos de esta guía para que sepa cuándo enviarlo.
+Un Flow se arma con pantallas, y cada pantalla con bloques —encabezado, cuerpo, campos de entrada y un pie de página que decide a dónde salta el cliente. Puedes armarlo tú mismo en el editor, pedírselo a PandAI ya listo, o pedirle a PandAI que directamente convierta una ruta conversacional existente en un Flow y la conecte sola. Sea cual sea el camino, una vez publicado en el número correcto falta un último paso —salvo que uses «Condensar una ruta»—: conectarlo a tu asistente V3 siguiendo esta guía para que sepa cuándo enviarlo.
