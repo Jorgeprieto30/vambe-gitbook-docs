@@ -40,6 +40,7 @@
 * [Buenas prácticas de email: protege la reputación de tu dominio y evita el spam](campanas/buenas-practicas-de-email-protege-la-reputacion-de-tu-dominio-y-evita-el-spam.md)
 * [Desuscripción en campañas de email](campanas/desuscripcion-en-campanas-de-email.md)
 * [Recompra recurrente Ecommerce](campanas/recompra-recurrente-ecommerce.md)
+* [Campañas Click to WhatsApp en Meta: cómo crearlas, por qué convienen y cómo medir su impacto](campanas/campanas-click-to-whatsapp-en-meta-como-crearlas-por-que-convienen-y-como-medir-su-impacto.md)
 
 ## Comentarios de Instagram
 
@@ -62,4 +63,3 @@
 * [WhatsApp Flows](whatsapp-flows/README.md)
   * [Crea Flows de WhatsApp para capturar información estructurada de tus clientes](whatsapp-flows/crea-flows-de-whatsapp-para-capturar-informacion-estructurada-de-tus-clientes.md)
   * [Mensajes Interactivos: botones, enlaces y Flows en un mismo asistente](whatsapp-flows/mensajes-interactivos-botones-enlaces-y-flows-en-un-mismo-asistente.md)
-  * [Campañas Click to WhatsApp en Meta: cómo crearlas, por qué convienen y cómo medir su impacto](whatsapp-flows/campanas-click-to-whatsapp-en-meta-como-crearlas-por-que-convienen-y-como-medir-su-impacto.md)
