@@ -118,7 +118,7 @@ Aquí está el verdadero valor de cobrar desde el chat: el pago no queda como un
 * La integración con Mercado Pago está disponible para cuentas chilenas.
 * Revisa que la etapa de destino exista en el embudo antes de guardar la función; así evitas que un pago acreditado se quede sin su movimiento correspondiente.
 * **Fintoc no exige ningún requisito adicional** para conectar tu cuenta bancaria, más allá de los datos que pides al crear la función (banco, tipo de cuenta, número de cuenta y RUT del titular). El cliente que paga tampoco necesita tener ni crear una cuenta en Fintoc.
-* En la práctica, **no se traslada una comisión visible al cliente** por pagar a través de Fintoc dentro de Vambe.
+* **No hay comisión para ti como cliente de Vambe** por cobrar a través de Fintoc dentro de la plataforma —y en la práctica, sale más económico que contratar Fintoc de forma directa por tu cuenta.
 
 ***
 
