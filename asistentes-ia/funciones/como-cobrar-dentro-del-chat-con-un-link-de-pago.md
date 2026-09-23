@@ -45,7 +45,7 @@ Con la cuenta conectada, el siguiente paso es darle a tu asistente la herramient
 
 Entra a tu asistente, abre la pestaña **Funciones** y haz clic en **+ Crear función**. En la categoría **Pagos** encontrarás **Link de pago**.
 
-<figure><img src="../.gitbook/assets/img-funcion-catalogo-pagos.png" alt="Panel Crear función con la categoría Pagos, donde se encuentra Link de pago"><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FVSxpachzwuCLrExmtrpH%2Fimg-funcion-catalogo-pagos.png?alt=media" alt="Panel Crear función con la categoría Pagos, donde se encuentra Link de pago"><figcaption></figcaption></figure>
 
 Se abrirá el panel de configuración con los siguientes campos:
 
@@ -61,12 +61,12 @@ Se abrirá el panel de configuración con los siguientes campos:
 * **Monto fijo (opcional)** — si siempre cobras el mismo valor (una reserva, una suscripción, un abono), escríbelo aquí. Si lo dejas en blanco, el monto se define durante la conversación.
 
 {% hint style="info" %}
-Si eliges **Fintoc** y todavía no tienes una cuenta bancaria configurada, Vambe te lo muestra ahí mismo: haz clic en **Agregar una cuenta bancaria** e ingresa el banco, el tipo de cuenta, el número de cuenta y el RUT del titular. Con esos datos la cuenta queda lista para recibir los cobros.
+Si eliges **Fintoc** y todavía no tienes una cuenta bancaria configurada, Vambe te lo muestra ahí mismo: haz clic en **Agregar una cuenta bancaria** e ingresa el banco, el tipo de cuenta, el número de cuenta y el RUT del titular. Con esos datos la cuenta queda lista para recibir los cobros. **Esta cuenta es la tuya, la del negocio que cobra** —no hace falta crear ni configurar nada adicional en Fintoc.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/img-fintoc-config-aviso.png" alt="Configuración de la función Link de pago con Fintoc seleccionado y el aviso de cuenta bancaria pendiente"><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2Fd7OOYAAdeIXtXD0RDUgu%2Fimg-fintoc-config-aviso.png?alt=media" alt="Configuración de la función Link de pago con Fintoc seleccionado y el aviso de cuenta bancaria pendiente"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/img-agregar-cuenta-bancaria.png" alt="Formulario para agregar una cuenta bancaria: banco, tipo de cuenta, número de cuenta y RUT del titular"><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2Fd9wcOJ7iPMMszYx8mG71%2Fimg-agregar-cuenta-bancaria.png?alt=media" alt="Formulario para agregar una cuenta bancaria: banco, tipo de cuenta, número de cuenta y RUT del titular"><figcaption></figcaption></figure>
 
 ***
 
@@ -84,9 +84,13 @@ Procura que la instrucción del texto y la descripción interna de la función d
 
 ## 4. Qué ve tu cliente
 
-El asistente envía el enlace dentro de la conversación. Al abrirlo, el cliente llega al checkout de Mercado Pago, donde elige cómo pagar: con su cuenta de Mercado Pago, desde la app, o con tarjeta de crédito, débito o prepaga sin necesidad de tener cuenta.
+El asistente envía el enlace dentro de la conversación. Lo que ve el cliente al abrirlo depende de qué medio de pago elegiste al crear la función.
+
+**Con Mercado Pago**, el cliente llega al checkout de Mercado Pago, donde elige cómo pagar: con su cuenta de Mercado Pago, desde la app, o con tarjeta de crédito, débito o prepaga sin necesidad de tener cuenta.
 
 <figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FZ1hRivBxbBqF68lKOpPk%2Fimg-checkout-mp.png?alt=media" alt="Checkout de Mercado Pago con las opciones de pago disponibles"><figcaption></figcaption></figure>
+
+**Con Fintoc**, el cliente paga por transferencia bancaria autorizando el cobro con las credenciales de su propio banco. **No necesita crear ni tener una cuenta en Fintoc**: la cuenta que configuraste en el paso 2 es la del negocio que recibe el pago, no algo que el cliente final deba gestionar.
 
 Una vez completado el pago, ve una confirmación y puede volver al chat. No necesitas avisarle a nadie: el cobro ya quedó registrado.
 
@@ -101,7 +105,7 @@ Aquí está el verdadero valor de cobrar desde el chat: el pago no queda como un
 1. **El contacto cambia de etapa.** Se mueve automáticamente a la etapa que configuraste en el campo **Etapa tras pago exitoso**, sin que nadie tenga que arrastrar la tarjeta a mano.
 2. **Se dispara el evento de pago exitoso.** Ese evento puedes usarlo como gatillante en **Workflows** para encadenar lo que venga después: enviar el comprobante, agendar la entrega, avisar a tu equipo interno o iniciar el proceso de postventa. Si cobraste por Fintoc, el evento se llama **Pago Fintoc exitoso**.
 
-<figure><img src="../.gitbook/assets/img-pago-fintoc-exitoso-workflow.png" alt="Evento Pago Fintoc exitoso como activador de un workflow"><figcaption></figcaption></figure>
+<figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2F9lHLqcZVmWg4DRQbqKWG%2Fimg-pago-fintoc-exitoso-workflow.png?alt=media" alt="Evento Pago Fintoc exitoso como activador de un workflow"><figcaption></figcaption></figure>
 
 ***
 
@@ -113,6 +117,8 @@ Aquí está el verdadero valor de cobrar desde el chat: el pago no queda como un
 
 * La integración con Mercado Pago está disponible para cuentas chilenas.
 * Revisa que la etapa de destino exista en el embudo antes de guardar la función; así evitas que un pago acreditado se quede sin su movimiento correspondiente.
+* **Fintoc no exige ningún requisito adicional** para conectar tu cuenta bancaria, más allá de los datos que pides al crear la función (banco, tipo de cuenta, número de cuenta y RUT del titular). El cliente que paga tampoco necesita tener ni crear una cuenta en Fintoc.
+* En la práctica, **no se traslada una comisión visible al cliente** por pagar a través de Fintoc dentro de Vambe.
 
 ***
 
