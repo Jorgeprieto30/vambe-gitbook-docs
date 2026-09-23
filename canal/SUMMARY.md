@@ -23,6 +23,7 @@
 * [Cómo conectar el canal de Email](conexion-de-canales-de-vambe/como-conectar-el-canal-de-email.md)
 * [Cómo activar la recepción de correos](conexion-de-canales-de-vambe/como-activar-la-recepcion-de-correos.md)
 * [Cómo configurar las respuestas de tu asistente en el canal de correo](conexion-de-canales-de-vambe/como-configurar-las-respuestas-de-tu-asistente-en-el-canal-de-correo.md)
+* [Conecta un botón de WhatsApp flotante a tu sitio web](conexion-de-canales-de-vambe/conecta-un-boton-de-whatsapp-flotante-a-tu-sitio-web.md)
 
 ## Plantillas
 
