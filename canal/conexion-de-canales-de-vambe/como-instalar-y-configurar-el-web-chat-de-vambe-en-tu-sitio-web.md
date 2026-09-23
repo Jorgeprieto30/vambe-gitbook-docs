@@ -163,6 +163,19 @@ Con el nuevo formato, el script solo necesita el **Client ID** y el **Channel ID
 
 > **Importante:** Cualquier valor que escribas manualmente en el script sobrescribirá la configuración guardada en Vambe. Por ejemplo, si defines colores en el script, esos colores tendrán prioridad sobre los configurados en el editor.
 
+**Instalarlo en Shopify**
+
+Si tu sitio está en Shopify, puedes instalar el script directamente desde el editor de tema, sin necesidad de una app externa.
+
+1. Desde tu panel de Shopify, ve a **Tienda online → Ver código** (junto al tema activo).
+2. Dentro del explorador de archivos, abre **Layout → theme.liquid**.
+3. Pega el script que copiaste desde Vambe dentro del `<head>` del archivo.
+4. Guarda los cambios.
+
+Como `theme.liquid` es el layout que usan todas las páginas de tu tienda (home, productos, colecciones, blog, carrito), el Web Chat queda instalado en todo el sitio con este único paso.
+
+Puedes revisar mas detalle aquí: [https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/conecta-un-boton-de-whatsapp-flotante-a-tu-sitio-web](https://academy.vambe.ai/canal/conexion-de-canales-de-vambe/conecta-un-boton-de-whatsapp-flotante-a-tu-sitio-web)
+
 **Verificar la conexión con el embudo**
 
 Antes de terminar, asegúrate de que el Web Chat esté conectado al embudo correcto dentro de Vambe. Esto garantiza que cada contacto que inicie una conversación:
