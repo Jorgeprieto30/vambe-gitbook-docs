@@ -9,3 +9,7 @@
 ## Casos de uso
 
 * [Cómo automatizar acciones por inactividad usando Workflows](casos-de-uso/como-automatizar-acciones-por-inactividad-usando-workflows.md)
+
+***
+
+* [Secuencias: agrupa reintentos sin duplicar nodos](secuencias-agrupa-reintentos-sin-duplicar-nodos.md)

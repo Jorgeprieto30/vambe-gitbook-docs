@@ -4,6 +4,10 @@ Los **Workflows** son el motor de automatización de Vambe. Similar a herramient
 
 **¿Para qué sirven?** Desde enviar un mensaje de "Fuera de Horario" los fines de semana, hasta encuestar a un cliente 4 días después de una compra en Shopify. Si ocurre "X", Vambe hará "Y".
 
+<figure><img src=".gitbook/assets/1-antes-workflow-sin-secuencias.png" alt=""><figcaption></figcaption></figure>
+
+
+
 ***
 
 #### 1. Estructura de un Workflow
@@ -73,6 +77,7 @@ Tipos de condiciones disponibles:
 * **Condición de Canal:** "¿El cliente habla por Instagram o WhatsApp?".
 * **Evaluar con IA:** Usar inteligencia artificial para decidir si el cliente cumple un requisito complejo.
 * **Condición Aleatoria:** Dividir el tráfico 50/50 (A/B Testing).
+* **Condición de secuencia (Nuevo):** Ramifica el flujo según cómo terminó un nodo de tipo Secuencia —ver Secuencias: agrupa reintentos sin duplicar nodos.
 
 ***
 
@@ -119,9 +124,9 @@ Al configurar esta acción, primero eliges el canal de email desde el que sale e
 
 Para el contenido, puedes elegir una **plantilla** ya creada o pedirle a un **agente** que redacte el correo. Si eliges que lo escriba un agente, tú defines el asunto y le das instrucciones sobre qué debe incluir el mensaje. También puedes elegir qué agente redacta el correo; si dejas el campo vacío, Vambe usa el agente asignado a la etapa donde está el ticket. Cuando el workflow se ejecuta a partir de un evento dentro de una conversación, el agente redacta el correo con el contexto de esa conversación.
 
-\[IMAGEN 1: nodo Enviar plantilla de email con contenido Escrito por un agente, asunto e instrucciones para el agente]
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-\[IMAGEN 2: selector de destinatario mostrando la opción Rol interno con la lista de roles disponibles]
+<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 #### CRM
 
@@ -138,6 +143,7 @@ Para el contenido, puedes elegir una **plantilla** ya creada o pedirle a un **ag
 * **Agregar fila a Google Sheet**
 * **Ejecutar código**
 * **Espera**
+* **Secuencia (Nuevo):** Agrupa varios nodos que se ejecutan en orden, con esperas y condiciones de salida configurables entre cada uno —ideal para lógicas de reintento. Ver Secuencias: agrupa reintentos sin duplicar nodos.
 * **Cancelar flujo programado**
 * **Detener flujo**
 
@@ -203,6 +209,12 @@ El nodo de Espera cuenta con opciones de cancelación automática.
 
 ***
 
-#### 9. Modo Test
+#### 9. Reintentos de contacto sin duplicar nodos (Nuevo)
+
+**Trigger:** Etiqueta asignada **Acción:** Secuencia — Activar llamada IA (condición de salida: llamada contestada, espera 1 minuto si no) × 3 intentos **Condición de secuencia:** ¿Condición cumplida o Finalizada? Ver el detalle completo en Secuencias: agrupa reintentos sin duplicar nodos.
+
+***
+
+#### 10. Modo Test
 
 Antes de lanzar tu workflow al público, utiliza el Modo Test para simular una conversación y ver paso a paso cómo se activan los triggers y si las condiciones se cumplen o fallan.
