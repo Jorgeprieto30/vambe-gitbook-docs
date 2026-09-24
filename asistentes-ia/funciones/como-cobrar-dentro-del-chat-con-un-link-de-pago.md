@@ -29,7 +29,20 @@ En **Ajustes → Integraciones**, busca la sección **PAGOS** y haz clic en la t
 
 Dentro del detalle encontrarás el bloque **Cuentas de Mercado Pago** y el botón **+ Agregar Cuenta**. Al autorizar el acceso, la cuenta queda listada con el estado **Conectado** y ya puede recibir cobros desde cualquier conversación.
 
-Más abajo, el bloque **Características** te muestra qué medios quedan habilitados para tus clientes: **tarjetas de crédito y débito**, **cuotas** y el **saldo de la billetera de Mercado Pago**.
+{% hint style="info" %}
+No necesitas una cuenta especial de Mercado Pago para esta integración: funciona con la cuenta que ya tienes, sea **personal o de empresa**. Conectarla toma menos de 10 minutos y no requiere ayuda técnica.
+{% endhint %}
+
+Más abajo, el bloque **Características** te muestra qué medios quedan habilitados para tus clientes:
+
+* **Tarjetas de crédito y débito.**
+* **Cuotas** — tu cliente puede pagar en hasta **12 cuotas sin interés**, incluso sin tarjeta de crédito, usando su línea BNPL de Mercado Pago.
+* **Saldo de la billetera de Mercado Pago.**
+* **Combinación de múltiples tarjetas** en una misma compra.
+
+{% hint style="info" %}
+Sin importar cuántas cuotas elija el cliente, **tú recibes el pago completo al momento de la venta**: el diferimiento de las cuotas lo asume Mercado Pago, no Vambe ni tu negocio.
+{% endhint %}
 
 <figure><img src="https://1176996256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjZ46rFloLOG1hJ2JQGi0%2Fuploads%2FD4hME7yxCEWbNElpzSA9%2Fimg-mp-cuenta-conectada.png?alt=media" alt="Detalle de la integración de Mercado Pago con una cuenta conectada"><figcaption></figcaption></figure>
 
