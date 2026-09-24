@@ -95,6 +95,30 @@
       "id": "muforu4k_funws",
       "tema": "Condiciones en Secuencias",
       "created_at": "2026-09-24T15:28:02.372Z"
+    },
+    {
+      "tipo": "actualizar",
+      "path": "embudo/gestion-de-etapas-y-asistentes-ia/paso-5-mejorar-tus-asistentes-con-pandaai.md",
+      "sha": "45cc023dd60d8899f48c2b9f3290323448cb0664",
+      "contenido_nuevo": "---\ncover: ../.gitbook/assets/Portada 21.png\ncoverY: 0\n---\n\n# Paso 5: Mejorar tus asistentes con PandAI\n\nGracias a las **mejoras en sus capacidades para gestionar y utilizar información o funciones**, PandAI está conectado a la información estructurada de tus asistentes y embudos. Esto le permite explicarte con mayor eficacia cómo funcionan, redactar prompts más precisos, encontrar errores en un flujo y potenciar cualquier bloque que estés editando, **optimizando la construcción y el rendimiento de tus asistentes**.\n\nToda la guía vive ahora en la sección PandAI de Vambe Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "commit_message": "docs: PandAI — Mejora de capacidades para optimizar asistentes.",
+      "justificacion": "El artículo se actualiza para reflejar cómo las capacidades mejoradas de PandAI optimizan la construcción y el rendimiento de los asistentes.",
+      "contenido_actual": "---\ncover: ../.gitbook/assets/Portada 21.png\ncoverY: 0\n---\n\n# Paso 5: Mejorar tus asistentes con PandAI\n\nPandAI está conectado a la información estructurada de tus asistentes y embudos, así que puede explicarte cómo funcionan, redactar mejores prompts, encontrar errores en un flujo y potenciar cualquier bloque que estés editando.\n\nToda la guía vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "id": "mufrzs8o_ug32x",
+      "tema": "Mejora en PandAI",
+      "created_at": "2026-09-24T16:58:12.024Z"
+    },
+    {
+      "tipo": "actualizar",
+      "path": "asistentes-ia/asistentes-con-escenarios-v3/asistentes-v3-construccion-inteligente-y-guiada-con-pandai.md",
+      "sha": "f31d2a9677484e75da302eae31e7dd1b99893b43",
+      "contenido_nuevo": "# Asistentes V3: Construcción Inteligente y Guiada con PandAI\n\nEn los Asistentes con Escenarios (V3) puedes construir y editar tu asistente conversando con PandAI. Gracias a sus **capacidades mejoradas para gestionar y utilizar eficazmente información y funciones**, PandAI puede ahora crear los escenarios, definir las rutas y asociar las funciones con mayor inteligencia y precisión, mientras tú validas cada paso desde la previsualización en tiempo real.\n\nEste contenido vive ahora en la sección PandAI de Vambe Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "commit_message": "docs: PandAI V3 — Construcción inteligente y guiada de asistentes.",
+      "justificacion": "Se integra la mejora en PandAI para destacar una construcción de asistentes V3 más inteligente y precisa.",
+      "contenido_actual": "# Asistentes V3: Construcción Inteligente y Guiada con PandAI\n\nEn los Asistentes con Escenarios (V3) puedes construir y editar tu asistente conversando con PandAI: le describes qué necesitas y él crea los escenarios, define las rutas y asocia las funciones, mientras tú validas cada paso desde la previsualización en tiempo real.\n\nEste contenido vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "id": "mufrzs8o_ml54c",
+      "tema": "Mejora en PandAI",
+      "created_at": "2026-09-24T16:58:12.024Z"
     }
   ]
 }
