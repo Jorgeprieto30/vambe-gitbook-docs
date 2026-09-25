@@ -25,3 +25,4 @@
 ***
 
 * [Segmentos: identifica y activa a los contactos correctos, sin filtrar manualmente](segmentos-identifica-y-activa-a-los-contactos-correctos-sin-filtrar-manualmente.md)
+* [Importar clientes: crea contactos, contactos en un canal y tickets desde una planilla](importar-clientes-crea-contactos-contactos-en-un-canal-y-tickets-desde-una-planilla.md)
