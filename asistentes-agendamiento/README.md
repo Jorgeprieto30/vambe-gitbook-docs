@@ -91,6 +91,7 @@ El segundo tipo de agendamiento utiliza el bloque **Aplicaciones de Reserva**, d
 * **DentalSoft**
 * **Reservo**
 * **AgendaPro**
+* **Philaxmed**
 
 Este enfoque es ideal para clínicas, centros médicos y negocios que ya cuentan con un sistema de reservas estructurado.
 
@@ -103,7 +104,7 @@ Con estas integraciones, Vambe puede:
 
 Para utilizar este tipo de agendamiento, es necesario configurar el bloque **Aplicaciones de Reserva** dentro del asistente.
 
-En las siguientes secciones encontrarás el paso a paso para integrar cada plataforma.
+En las siguientes secciones encontrarás el paso a paso para integrar cada plataforma, incluyendo [Philaxmed](parte-1-obtener-credenciales/como-conectar-philaxmed-en-vambe.md).
 
 ***
 

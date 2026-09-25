@@ -8,6 +8,7 @@
 * [Cómo obtener las credenciales de AgendaPro](parte-1-obtener-credenciales/como-obtener-las-credenciales-de-agendapro.md)
 * [Cómo obtener las credenciales de Dentalink o Medilink](parte-1-obtener-credenciales/como-obtener-las-credenciales-de-dentalink-o-medilink.md)
 * [Cómo obtener las credenciales de DentalSoft](parte-1-obtener-credenciales/como-obtener-las-credenciales-de-dentalsoft.md)
+* [Cómo conectar Philaxmed en Vambe](parte-1-obtener-credenciales/como-conectar-philaxmed-en-vambe.md)
 
 ## Parte 2: Configuraciones Plataformas
 
