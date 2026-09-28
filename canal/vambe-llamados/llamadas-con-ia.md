@@ -40,6 +40,19 @@ Antes de usar llamadas con IA, necesitas tener un número de teléfono activo en
 
 > ⚠️ **Importante:** La voz y el mensaje de inicio configurados aquí son el valor por defecto. Si lanzas una campaña o un workflow con un mensaje distinto, ese mensaje sobreescribe el de la configuración del teléfono.
 
+#### Voz y modo expresivo
+
+<figure><img src="../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+
+Al elegir la voz de tu asistente, puedes reproducir un ejemplo de audio de cada una antes de seleccionarla, y ajustar qué tan expresiva suena.
+
+* **Modo expresivo** — usa el modelo de voz más nuevo, con entonación más natural e incluso risas cuando corresponde. Viene **activado por defecto**. Antes funcionaba bien solo con algunas voces; ahora funciona bien con **todas**.
+* **Nivel de expresividad** — con el modo expresivo activado, eliges entre **Sutil**, **Natural** (expresividad moderada, solo cuando aporta — recomendado como punto de partida) o **Creativo** (más expresivo). Recomendamos probar **Creativo**.
+
+{% hint style="info" %}
+Con el modo expresivo activado, la **velocidad de habla no se puede ajustar**.
+{% endhint %}
+
 ***
 
 ### Guías de llamada
@@ -188,13 +201,13 @@ Si en cambio fijas un asistente en la guía de llamada, ese asistente reemplaza 
 
 Mientras una llamada está en curso, el asistente puede enviar mensajes al contacto por su canal habitual (por ejemplo, WhatsApp) en tiempo real. Esto sirve para hacerle llegar cualquier información que conviene tener por escrito mientras se habla: un link de pago, una confirmación, una dirección o cualquier mensaje informativo.
 
-<figure><img src="../.gitbook/assets/Captura de pantalla 2026-09-14 a la(s) 11.35.11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FOq0RHdTwc1lnX4TxwK94%2FCaptura%20de%20pantalla%202026-09-14%20a%20la(s)%2011.35.11.png?alt=media&#x26;token=8ab9a3a0-8725-4045-829f-f4a73de74b0d" alt=""><figcaption></figcaption></figure>
 
 Tú decides cuándo se dispara ese envío: se indica directamente en los **escenarios o bloques** del asistente, especificando en qué caso de la llamada quieres que se mande el mensaje.
 
 La comunicación funciona en ambos sentidos. Si el contacto responde por ese mismo canal mientras la llamada sigue activa, ese mensaje se incorpora a la conversación en curso y la IA puede tomarlo en cuenta para seguir la llamada. Esto abre la puerta a pedirle al contacto que envíe una imagen, un correo u otro dato que se maneja mejor por escrito —como una foto de un documento— sin necesidad de que la IA lo transcriba en voz.
 
-<figure><img src="../.gitbook/assets/Captura de pantalla 2026-09-14 a la(s) 11.36.27.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FHw3gppC0MKQJQk3AjGVz%2FCaptura%20de%20pantalla%202026-09-14%20a%20la(s)%2011.36.27.png?alt=media&#x26;token=1fd4d825-d38c-42b9-8823-a705dc18ff78" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 ⚠️ **Requiere una conversación abierta en el canal.** El envío de mensajes durante la llamada funciona sobre una conversación ya abierta con el contacto en ese canal. Si la conversación está cerrada, usa la función de enviar plantilla para poder reabrirla.
