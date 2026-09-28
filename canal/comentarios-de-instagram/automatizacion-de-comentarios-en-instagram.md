@@ -193,6 +193,55 @@ Link: mitienda.com/zapatillas. Envío gratis sobre $50.000"
 
 Desde el panel de **Gestionar Automatizaciones** podrás tener una vista global de todas tus automatizaciones, permitiéndote accede de manera más rápida a cada una de ellas
 
+***
+
+#### Pausa tus automatizaciones sin eliminarlas
+
+Además de Instagram, esta misma pausa está disponible para tus automatizaciones de comentarios en **Facebook** y **Mercado Libre**. Puedes pausar toda la cuenta, varias automatizaciones a la vez, o una sola —sin borrar nada.
+
+<figure><img src="../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+
+**Cómo pausar una automatización individual**
+
+En el listado de **Gestionar Automatizaciones**, pasa el cursor sobre la fila y haz clic en el ícono de pausa (⏸️) junto a **Editar** y **Eliminar**.
+
+<figure><img src="../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+
+Se abre el modal **Pausar automatización**, que te confirma:
+
+* Solo se pausa esa automatización en particular; las demás siguen activas.
+* Se detienen respuestas, mensajes DM y eliminaciones.
+* Tu configuración se mantiene sin cambios.
+* La pausa dura hasta que la reactives.
+
+<figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
+
+**Cómo pausar todas las automatizaciones de una cuenta**
+
+Desde el panel principal de **Comentarios**, haz clic en **Pausar automatizaciones**, arriba a la derecha. Se abre el modal **Pausar todas las automatizaciones**, indicando la cuenta sobre la que va a aplicar (por ejemplo, "Vambe Meta – Instagram").
+
+<figure><img src="../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+**La pausa global es por cuenta de Vambe, no por empresa.** Si tu empresa tiene varias cuentas conectadas (por ejemplo, Instagram y Facebook, o varias cuentas de Instagram), tienes que pausar cada una desde su propia vista —seleccionando esa cuenta en el panel de Comentarios.
+{% endhint %}
+
+{% hint style="warning" %}
+**La pausa de cuenta manda sobre la individual.** Si pausas toda la cuenta, ninguna automatización responde mientras dure la pausa, aunque esa automatización en particular siga marcada como activa por separado.
+{% endhint %}
+
+**Qué pasa mientras una automatización está pausada**
+
+* No responde comentarios, no envía DM ni elimina comentarios.
+* La configuración queda intacta: al reactivarla, vuelve a funcionar exactamente como estaba.
+* Las automatizaciones pausadas se identifican con la etiqueta **Pausada** en el listado.
+
+{% hint style="danger" %}
+**No hay respuestas retroactivas.** Los comentarios que lleguen mientras la automatización está pausada quedan guardados en el feed, pero no reciben respuesta automática —ni siquiera después de que reactives la automatización. Si necesitas responderlos, tendrás que hacerlo manualmente.
+{% endhint %}
+
+***
+
 #### Registro de Actividad
 
 En cada post podrás ver el historial de decisiones que tomó la IA sobre dicho post.
