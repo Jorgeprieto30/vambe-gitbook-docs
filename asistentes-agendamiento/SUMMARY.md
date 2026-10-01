@@ -30,6 +30,7 @@
 * [Configuraciones Confirmación y Recordatorio](parte-4-confirmaciones-y-recordatorios/configuraciones-confirmacion-y-recordatorio.md)
 * [Seguimiento y Métricas de Confirmación de Citas](parte-4-confirmaciones-y-recordatorios/seguimiento-y-metricas-de-confirmacion-de-citas.md)
 * [Cómo configurar confirmaciones y recordatorios en Medilink y Dentalink](parte-4-confirmaciones-y-recordatorios/como-configurar-confirmaciones-y-recordatorios-en-medilink-y-dentalink.md)
+* [Pacientes: toda la base de tu agenda, filtrable y lista para tu próxima campaña](parte-4-confirmaciones-y-recordatorios/pacientes-toda-la-base-de-tu-agenda-filtrable-y-lista-para-tu-proxima-campana.md)
 
 ## Google Calendar y Outlook Calendar
 
