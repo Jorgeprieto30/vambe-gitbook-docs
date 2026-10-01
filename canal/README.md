@@ -58,7 +58,7 @@ Selecciona la tarjeta correspondiente para acceder al paso a paso:
 
 **💬 Automatización de Comentarios (Instagram)**
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Automatización de comentarios de Instagram</td><td><a href="https://app.gitbook.com/s/CFdmz6HrosBiYP1q1BJ6/comentarios-de-instagram">Comentarios de Instagram</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Automatización de comentarios de Instagram</td><td><a href="https://app.gitbook.com/s/CFdmz6HrosBiYP1q1BJ6/comentarios-de-instagram-y-facebook">Comentarios de Instagram y Facebook</a></td></tr></tbody></table>
 
 **👁️‍🗨️ Campañas**
 

@@ -7,11 +7,11 @@ cover: ../.gitbook/assets/instagrams comments.png
 coverY: 0
 ---
 
-# Automatización de Comentarios en Instagram
+# Automatización de Comentarios en Instagram y Facebook
 
-## Automatización de Comentarios en Instagram
+## Automatización de Comentarios en Instagram y Facebook
 
-### Automatización de Comentarios en Instagram: Panel Principal
+### Automatización de Comentarios en Instagram y Facebook: Panel Principal
 
 La sección de **Comentarios** en Vambe es tu centro de control para convertir interacciones públicas en conversaciones privadas y ventas. Desde aquí, podrás definir cómo responde tu IA cuando alguien escribe en tus publicaciones.
 
@@ -19,7 +19,7 @@ La sección de **Comentarios** en Vambe es tu centro de control para convertir i
 
 1. Menú lateral → **Canales.**
 2. Submenú → **Comentarios** (icono Instagram).
-3. Selecciona tu cuenta de Instagram.
+3. Selecciona tu cuenta de Instagram o Facebook.
 
 ***
 

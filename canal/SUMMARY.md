@@ -42,9 +42,9 @@
 * [Recompra recurrente Ecommerce](campanas/recompra-recurrente-ecommerce.md)
 * [Campañas Click to WhatsApp en Meta: cómo crearlas, por qué convienen y cómo medir su impacto](campanas/campanas-click-to-whatsapp-en-meta-como-crearlas-por-que-convienen-y-como-medir-su-impacto.md)
 
-## Comentarios de Instagram
+## Comentarios de Instagram y Facebook
 
-* [Automatización de Comentarios en Instagram](comentarios-de-instagram/automatizacion-de-comentarios-en-instagram.md)
+* [Automatización de Comentarios en Instagram y Facebook](comentarios-de-instagram-y-facebook/automatizacion-de-comentarios-en-instagram.md)
 
 ## Vambe Llamados
 
