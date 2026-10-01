@@ -136,6 +136,38 @@ Debes configurar la siguiente lógica:
 
 <figure><img src="https://310161448-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRUgcMYDLALCYrWDqh6tC%2Fuploads%2F8VyZcnqKugkufRw3imtt%2Fimage.png?alt=media&#x26;token=60b74a80-c72d-4c43-9915-4e40b211ed71" alt=""><figcaption></figcaption></figure>
 
+**Salesforce: flujo de leads con conversión a contacto y oportunidad**
+
+En Salesforce, un contacto puede entrar como **Lead** y, cuando está listo para venderse, convertirse en un **Contacto con su Oportunidad (Opportunity)**. Vambe acompaña ese recorrido con el **Flujo de leads**: tus contactos viajan como leads, como siempre, y tú defines en qué momento del embudo se convierten.
+
+Cuando la conversión ocurre, Vambe marca el lead en un estado terminal de Salesforce y crea el contacto con su oportunidad. Así tu equipo comercial recibe la oportunidad en el momento exacto en que el prospecto avanzó lo suficiente en tu embudo.
+
+{% hint style="info" %}
+**Para entrar:** en el menú lateral izquierdo, ve a **CRM**, abre la integración de Salesforce con el icono de Lápiz y selecciona **Crear en el CRM**. Luego, en la pestaña **Cuáles se crean**, haz clic en el botón **Flujo cliente** (arriba a la derecha).
+{% endhint %}
+
+**Paso 1: elige el flujo y el estado de conversión**
+
+En el panel **Flujo cliente** selecciona **Flujo de leads**. Debajo encontrarás el campo **Conversión del Lead**, donde eliges el estado que recibirá el lead cuando una etapa con **Crear Trato** lo convierta en Contacto con su Oportunidad. Por ejemplo, **Closed - Converted**. Luego haz clic en **Guardar**.
+
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+
+**Paso 2: mapea tus etapas**
+
+Ve a la sección **Etapas** y asocia cada etapa de tu embudo en Vambe con una etapa de Salesforce. Las etapas que mantienes como lead se asocian al pipeline **Lead (estado)**, y la etapa donde quieres que ocurra la conversión se asocia a una etapa que no sea de lead, con **Crear Trato** activado.
+
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+
+Por ejemplo:
+
+* **Inicial**: Lead (estado) / Open - Not Contacted
+* **Envío de cotización**: Lead (estado) / Working - Contacted
+* **Agendador**: Proceso de Ventas 2 / Qualification, con **Crear Trato** activado
+
+{% hint style="warning" %}
+Para que la conversión se realice, el contacto debe llegar a una etapa de Vambe que tenga mapeada una etapa de Salesforce que no sea de lead y que tenga activada la opción **Crear Trato**.
+{% endhint %}
+
 ***
 
 #### 8. Automatización Inversa: Trigger de Workflow por Cambio de Etapa CRM
