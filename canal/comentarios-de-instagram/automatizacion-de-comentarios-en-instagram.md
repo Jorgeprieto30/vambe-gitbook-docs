@@ -1,8 +1,8 @@
 ---
 description: >-
   Convierte comentarios en ventas. Accede al panel de automatización de
-  Instagram y elige entre estrategias Globales, por Post o Futuras todas estas
-  impulsadas por IA.
+  Instagram y Facebook, y elige entre estrategias Globales, por Post o Futuras
+  todas estas impulsadas por IA.
 cover: ../.gitbook/assets/instagrams comments.png
 coverY: 0
 ---
@@ -20,6 +20,16 @@ La sección de **Comentarios** en Vambe es tu centro de control para convertir i
 1. Menú lateral → **Canales.**
 2. Submenú → **Comentarios** (icono Instagram).
 3. Selecciona tu cuenta de Instagram.
+
+***
+
+#### También disponible en Facebook
+
+Todo lo que describe este artículo funciona igual en **Facebook**: mismas automatizaciones, mismos flujos y la misma vista de siempre, ahora también sobre tu página de Facebook. La diferencia es que en Facebook las automatizaciones corren tanto sobre **publicaciones** como sobre **anuncios**.
+
+{% hint style="danger" %}
+**Requiere reconectar la cuenta.** Para poder recibir los comentarios de Facebook, Vambe necesita permisos nuevos de Meta. Es necesario **reconectar la cuenta de Facebook** y volver a **enlazar el canal de Messenger**. A los clientes a los que les falte este paso les va a aparecer un banner dentro de la plataforma indicándoles que reconecten.
+{% endhint %}
 
 ***
 
@@ -199,13 +209,13 @@ Desde el panel de **Gestionar Automatizaciones** podrás tener una vista global 
 
 Además de Instagram, esta misma pausa está disponible para tus automatizaciones de comentarios en **Facebook** y **Mercado Libre**. Puedes pausar toda la cuenta, varias automatizaciones a la vez, o una sola —sin borrar nada.
 
-<figure><img src="../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FFZkSKxCaVIXYam9PDp4w%2Fimage.png?alt=media&#x26;token=e5f27a27-87c3-4ea4-946a-14534a19fb73" alt=""><figcaption></figcaption></figure>
 
 **Cómo pausar una automatización individual**
 
 En el listado de **Gestionar Automatizaciones**, pasa el cursor sobre la fila y haz clic en el ícono de pausa (⏸️) junto a **Editar** y **Eliminar**.
 
-<figure><img src="../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FJOEFj2QIo41t4aNifux8%2Fimage.png?alt=media&#x26;token=6f6d959d-f9b8-4307-a9a0-d337337570e3" alt=""><figcaption></figcaption></figure>
 
 Se abre el modal **Pausar automatización**, que te confirma:
 
@@ -214,13 +224,13 @@ Se abre el modal **Pausar automatización**, que te confirma:
 * Tu configuración se mantiene sin cambios.
 * La pausa dura hasta que la reactives.
 
-<figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2FFNq7bjSZa5TrJxtRx67L%2Fimage.png?alt=media&#x26;token=8fcdef6f-c631-4fbf-9da9-d41d245cec73" alt=""><figcaption></figcaption></figure>
 
 **Cómo pausar todas las automatizaciones de una cuenta**
 
 Desde el panel principal de **Comentarios**, haz clic en **Pausar automatizaciones**, arriba a la derecha. Se abre el modal **Pausar todas las automatizaciones**, indicando la cuenta sobre la que va a aplicar (por ejemplo, "Vambe Meta – Instagram").
 
-<figure><img src="../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2Fi51WEJU42Upca8njUrc3%2Fimage.png?alt=media&#x26;token=d5d53718-eebf-4c76-94ee-6dff4818a0a4" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **La pausa global es por cuenta de Vambe, no por empresa.** Si tu empresa tiene varias cuentas conectadas (por ejemplo, Instagram y Facebook, o varias cuentas de Instagram), tienes que pausar cada una desde su propia vista —seleccionando esa cuenta en el panel de Comentarios.
