@@ -13,3 +13,4 @@
 ***
 
 * [Secuencias: agrupa reintentos sin duplicar nodos](secuencias-agrupa-reintentos-sin-duplicar-nodos.md)
+* [Cómo armar lógica de Call Center con el nodo Llamada entrante](como-armar-logica-de-call-center-con-el-nodo-llamada-entrante.md)

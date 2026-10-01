@@ -4,9 +4,7 @@ Los **Workflows** son el motor de automatización de Vambe. Similar a herramient
 
 **¿Para qué sirven?** Desde enviar un mensaje de "Fuera de Horario" los fines de semana, hasta encuestar a un cliente 4 días después de una compra en Shopify. Si ocurre "X", Vambe hará "Y".
 
-<figure><img src=".gitbook/assets/1-antes-workflow-sin-secuencias.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="https://3884081802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0xCLgfGby0xiCWJaqr57%2Fuploads%2FDJXlUy9wldfzRSN3ALIE%2F1-antes-workflow-sin-secuencias.png?alt=media&#x26;token=62037929-7f9d-4271-ba26-ba4ccc10aa61" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -51,6 +49,7 @@ Lo primero es definir qué debe pasar para que el flujo se active. Vambe ofrece 
 * **Mensaje enviado por un humano:** Se activa cuando un agente envía un mensaje.
 * **NPS/CSAT respondido:** Para tomar acciones según la calificación del cliente.
 * **Llamada finalizada:** Cuando termina una llamada con el contacto.
+* **Llamada entrante (Nuevo):** Se activa en cuanto entra una llamada a uno de los teléfonos de voz que selecciones — antes de que la llamada se conecte con nadie. Ver el detalle en Cómo armar lógica de Call Center con el nodo Llamada entrante.
 * **Reacción a mensaje:** Cuando el contacto reacciona a un mensaje.
 * **Inactividad del contacto (Nuevo):** Se activa cuando el contacto lleva un tiempo definido sin enviar un mensaje.
 * **Inactividad del agente (Nuevo):** Se activa cuando el agente lleva un tiempo definido sin responder al contacto.
@@ -110,6 +109,8 @@ Finalmente, define qué hará Vambe. Puedes encadenar múltiples acciones una tr
 * **Enviar mensaje**
 * **Enviar mensaje programado**
 * **Activar llamada IA**
+* **Rechazar llamada (Nuevo):** Corta la llamada entrante. Solo disponible después de un nodo **Llamada entrante**.
+* **Enrutar llamada (Nuevo):** Conecta la llamada entrante con un ejecutivo o con IA. Solo aparece si activaste "Decidir el enrutamiento en este flujo" en el nodo **Llamada entrante** —ver Cómo armar lógica de Call Center con el nodo Llamada entrante.
 
 **Destinatarios y contenido en el nodo Enviar plantilla de email**
 
@@ -124,9 +125,9 @@ Al configurar esta acción, primero eliges el canal de email desde el que sale e
 
 Para el contenido, puedes elegir una **plantilla** ya creada o pedirle a un **agente** que redacte el correo. Si eliges que lo escriba un agente, tú defines el asunto y le das instrucciones sobre qué debe incluir el mensaje. También puedes elegir qué agente redacta el correo; si dejas el campo vacío, Vambe usa el agente asignado a la etapa donde está el ticket. Cuando el workflow se ejecuta a partir de un evento dentro de una conversación, el agente redacta el correo con el contexto de esa conversación.
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://3884081802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0xCLgfGby0xiCWJaqr57%2Fuploads%2FZjlJh4J63xRFtWSPzwDA%2Fimage.png?alt=media&#x26;token=3f7c060c-4b6f-4172-a382-0f359646537d" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://3884081802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F0xCLgfGby0xiCWJaqr57%2Fuploads%2FqgelnnWVW6vCFANAIf8z%2Fimage.png?alt=media&#x26;token=710ca2b1-7a12-49e9-96b5-ef7b03fabee0" alt=""><figcaption></figcaption></figure>
 
 #### CRM
 
@@ -215,6 +216,14 @@ El nodo de Espera cuenta con opciones de cancelación automática.
 
 ***
 
-#### 10. Modo Test
+#### 10. Enrutamiento de llamadas entrantes según etapa (Nuevo)
+
+**Trigger:** Llamada entrante (decidir el enrutamiento en este flujo activado) **Condición:** Condición de etapa — ¿Está en una etapa humana? **Acción (Si):** Cambiar etapa a una etapa con IA → Enrutar llamada **Acción (No):** Rechazar llamada. Ver el detalle completo en Cómo armar lógica de Call Center con el nodo Llamada entrante.
+
+<figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 11. Modo Test
 
 Antes de lanzar tu workflow al público, utiliza el Modo Test para simular una conversación y ver paso a paso cómo se activan los triggers y si las condiciones se cumplen o fallan.
