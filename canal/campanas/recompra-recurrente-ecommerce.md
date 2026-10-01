@@ -48,21 +48,17 @@ Si al configurar esto no tienes productos declarados como recomprables, la campa
 
 Declarar producto por producto si es recomprable y cada cuántos días se recompra puede ser lento y tedioso —y además es difícil recuperar esa información a mano para todo el catálogo. Por eso existe un algoritmo que lo hace por ti: entra a **Ecommerce → Productos** y haz clic en **Definir recompra**.
 
-La IA analiza las compras pasadas de tus propios clientes, detecta qué tan seguido se repite cada producto y con qué probabilidad un cliente vuelve a comprarlo, y a partir de eso calcula un **score de confianza** de que ese producto efectivamente es recomprable, junto con el número de días de recompra.
+La IA analiza las compras pasadas de tus propios clientes, detecta qué tan seguido se repite cada producto y con qué probabilidad un cliente vuelve a comprarlo, y a partir de eso **recomienda qué productos son recomprables**, junto con el número de días de recompra de cada uno.
 
-<figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2Fn0X0LXC7WH3xoGYjDg3z%2Fp_05_ia_sugerida.png?alt=media&#x26;token=dab86f95-f5aa-446e-953e-69bdaec75536" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
-Moviendo el slider de **confianza mínima** puedes ver más o menos productos sugeridos: con una confianza más baja aparecen más productos: con una confianza más alta, menos, pero con mayor certeza. Al aceptar, todos esos productos quedan marcados como recomprables, con los días que corresponde a cada uno.
-
-{% hint style="info" %}
-En catálogos con muchos productos, este mismo modal puede aparecer en una versión más simple: sin el slider de **confianza mínima** ni la columna de confianza. Ahí, el algoritmo ya preselecciona (con el casillero marcado) los productos que recomienda como recomprables, y tu único trabajo es revisarlos y desmarcar los que no quieras incluir. Al confirmar, la configuración de recompra se aplica solo a los productos que dejaste marcados.
-{% endhint %}
+El algoritmo ya viene con los productos recomendados **preseleccionados** (casillero marcado); tu único trabajo es revisarlos y desmarcar los que no quieras incluir. Al confirmar, la configuración de recompra se aplica solo a los productos que dejaste marcados, con los días de recompra que corresponde a cada uno.
 
 ***
 
 ### Paso 3: revisar los productos y la proyección
 
-Volviendo a la campaña, la lista de productos recomprables ya viene cargada con los que superaron el umbral de confianza que elegiste —o los que quedaron marcados, si usaste la versión simplificada. Puedes dejarlos todos aplicados o quitar los que no te interesen.
+Volviendo a la campaña, la lista de productos recomprables ya viene cargada con los que el algoritmo recomendó y dejaste marcados en el paso anterior. Puedes dejarlos todos aplicados o quitar los que no te interesen.
 
 <figure><img src="https://502444442-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCFdmz6HrosBiYP1q1BJ6%2Fuploads%2F130Ji8xqkiJBhJY2VAJA%2Fp_06_productos_seleccionados.png?alt=media&#x26;token=d1dd42ed-d533-4440-8082-1446bc2b9563" alt=""><figcaption></figcaption></figure>
 
