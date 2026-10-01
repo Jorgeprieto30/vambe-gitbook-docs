@@ -53,6 +53,7 @@
 * [Voice Scoring](vambe-llamados/voice-scoring.md)
 * [Entrega de llamadas: recibe las llamadas donde te acomode](vambe-llamados/entrega-de-llamadas-recibe-las-llamadas-donde-te-acomode.md)
 * [Cómo agregar un número a Vambe Phone](vambe-llamados/como-agregar-un-numero-a-vambe-phone.md)
+* [Menú IVR en llamadas entrantes: deja que cada cliente elija cómo ser atendido](vambe-llamados/menu-ivr-en-llamadas-entrantes-deja-que-cada-cliente-elija-como-ser-atendido.md)
 
 ## Vambe Meet
 
