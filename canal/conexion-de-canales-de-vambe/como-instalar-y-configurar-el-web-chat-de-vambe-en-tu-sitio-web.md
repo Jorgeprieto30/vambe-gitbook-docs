@@ -119,6 +119,23 @@ json
 
 En este caso, el ID de usuario (`user-123`) viene en el campo `sub`.
 
+**Cómo enviar el token desde tu sitio**
+
+Genera el token en tu servidor, firmado con el mismo secret que configuraste en Vambe. Luego agrégalo al script como `userToken`:
+
+```html
+<script>
+window.embeddedWebchatConfig = {
+  clientId: "TU_CLIENT_ID",
+  channelId: "TU_CHANNEL_ID",
+  userToken: "TOKEN_FIRMADO_POR_TU_SERVIDOR"
+};
+</script>
+<script src="https://vambeai.com/webchat.js"></script>
+```
+
+El Webchat no se cargará si el token no viene en el script, si su firma no coincide con el secret, si ya expiró o si no contiene el campo de ID configurado.
+
 </details>
 
 **Secciones del Web Chat**
