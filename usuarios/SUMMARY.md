@@ -8,6 +8,7 @@
 * [¿Cuál es la diferencia entre ejecutivo, Administrador y Super\_administrador?](gestion-de-usuarios/cual-es-la-diferencia-entre-agente-administrador-y-super_administrador.md)
 * [Gestión de Permisos: personaliza el acceso de cada Ejecutivo a tu medida](gestion-de-usuarios/gestion-de-permisos-personaliza-el-acceso-de-cada-ejecutivo-a-tu-medida.md)
 * [Cómo crear y gestionar equipos de trabajo en Vambe](gestion-de-usuarios/como-crear-y-gestionar-equipos-de-trabajo-en-vambe.md)
+* [Seguridad de la cuenta: controla quién entra y cómo](gestion-de-usuarios/seguridad-de-la-cuenta-controla-quien-entra-y-como.md)
 
 ## Notificaciones
 
