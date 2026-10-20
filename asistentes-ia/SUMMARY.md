@@ -19,6 +19,7 @@
 
 * [Cómo evitar respuestas innecesarias con "No responder"](configuracion-del-asistente/como-evitar-respuestas-innecesarias-con-no-responder.md)
 * [Cómo controlar las respuestas de tu asistente con el Juez](configuracion-del-asistente/como-controlar-las-respuestas-de-tu-asistente-con-el-juez.md)
+* [Correcciones: enseña a tu asistente con ejemplos reales](configuracion-del-asistente/correcciones-ensena-a-tu-asistente-con-ejemplos-reales.md)
 
 ## MCP
 
