@@ -11,7 +11,7 @@ Vambe permite integrarse nativamente con los CRMs más importantes del mercado p
 
 **Integraciones disponibles:**
 
-* HubSpot (Deals y Tickets)
+* HubSpot (Deals, Leads y Tickets)
 * Pipedrive
 * Salesforce
 * Zoho (CRM y Desk)
@@ -167,6 +167,80 @@ Por ejemplo:
 {% hint style="warning" %}
 Para que la conversión se realice, el contacto debe llegar a una etapa de Vambe que tenga mapeada una etapa de Salesforce que no sea de lead y que tenga activada la opción **Crear Trato**.
 {% endhint %}
+
+**HubSpot: flujo de leads con creación de deal**
+
+En HubSpot, los **Leads** son un objeto pensado para Marketing y para prospectos que todavía están en las primeras etapas del embudo, antes de convertirse en un negocio concreto. Con el **Flujo de leads**, Vambe crea y mueve leads en HubSpot mientras el prospecto se califica, y crea el **deal** solo cuando la oportunidad se vuelve un negocio real. Así tu equipo de Marketing sigue el avance de cada prospecto y tu equipo comercial recibe en su pipeline de deals únicamente las oportunidades que ya están listas.
+
+{% hint style="info" %}
+**Para entrar:** en el menú lateral izquierdo, ve a **CRM**, abre la integración de HubSpot con el icono de Lápiz y selecciona **Crear en el CRM**. Luego, en la pestaña **Cuáles se sincronizan**, haz clic en el botón **Flujo cliente** (arriba a la derecha).
+{% endhint %}
+
+**Cómo viaja un contacto en el Flujo de leads**
+
+{% stepper %}
+{% step %}
+**Se crea el contacto**
+
+Cuando un contacto nuevo entra a Vambe, Vambe lo crea en HubSpot como un contacto normal, con su nombre, teléfono y email. En esta etapa, HubSpot todavía no lo trata como lead.
+{% endstep %}
+
+{% step %}
+**Se crea el lead**
+
+Cuando el ticket entra a la primera etapa de Vambe mapeada a Leads, Vambe crea un **Lead** en HubSpot asociado a ese contacto, en el pipeline y la etapa de Leads que configuraste. Desde ese momento ambos conviven: el contacto guarda quién es la persona y el lead representa esta oportunidad concreta de venta en curso.
+{% endstep %}
+
+{% step %}
+**El lead avanza en la calificación**
+
+Cada vez que el ticket cambia de etapa en Vambe, el lead se mueve a la etapa correspondiente de tu pipeline de Leads. Mientras no exista un deal, las notas, tareas y el owner se registran en el contacto.
+{% endstep %}
+
+{% step %}
+**Se crea el deal**
+
+Cuando el ticket llega a una etapa de Vambe mapeada a un pipeline de deals con **Crear Trato** activado, la oportunidad pasa a ser un negocio real. Antes de crear el deal, Vambe revisa si un vendedor ya calificó ese lead manualmente en HubSpot: si ya existe un deal creado desde ese lead, Vambe lo utiliza en lugar de crear otro. Si no existe, Vambe crea el deal en el pipeline y la etapa configurados para esa etapa de Vambe.
+{% endstep %}
+
+{% step %}
+**El lead queda asociado al deal**
+
+Vambe asocia el lead al deal como su deal principal. Así, en HubSpot puedes ver de qué lead nació cada negocio.
+{% endstep %}
+{% endstepper %}
+
+Si el mismo contacto vuelve a comprar más adelante, Vambe crea un nuevo lead. El contacto es uno solo, pero cada ciclo de venta tiene su propio lead.
+
+{% hint style="warning" %}
+El deal solo se crea cuando el ticket entra a una etapa de Vambe mapeada a un pipeline de deals que tenga activada la opción **Crear Trato**. Mientras el ticket avance por etapas de Leads, en HubSpot solo existirán el contacto y su lead.
+{% endhint %}
+
+**Paso 1: elige el Flujo de leads**
+
+En el panel **Flujo cliente** encontrarás dos opciones: **Flujo de leads** y **Flujo de deals**. Selecciona **Flujo de leads** y haz clic en **Guardar**.
+
+<figure><img src="../.gitbook/assets/hubspot-flujo-cliente.webp" alt="Panel Flujo cliente con las opciones Flujo de leads y Flujo de deals"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+El flujo que elijas aplica a los contactos que se vinculen desde ese momento. Los contactos que ya están vinculados siguen sincronizando contra el objeto con el que fueron creados.
+{% endhint %}
+
+**Paso 2: indica qué etapas van a Leads y cuáles a deals**
+
+Ve a la sección **Etapas**. Junto a cada etapa de Vambe encontrarás un selector con dos íconos: el ícono de persona asocia la etapa al pipeline de **Leads** y el otro ícono la asocia a un pipeline de **deals**. Las etapas asociadas a Leads se muestran en color morado, y las asociadas a deals mantienen el color normal.
+
+<figure><img src="../.gitbook/assets/hubspot-etapas-leads-deals.webp" alt="Sección Etapas con etapas asociadas a Leads (en morado) y a deals"><figcaption></figcaption></figure>
+
+**Paso 3: elige el pipeline y la etapa en HubSpot**
+
+Para las etapas asociadas a Leads, selecciona el pipeline de Leads y la etapa que tendrá el lead en HubSpot (por ejemplo, **Attempting**). Para la etapa donde quieres que nazca el negocio, selecciona tu pipeline de deals con su etapa y activa **Crear Trato**.
+
+Por ejemplo:
+
+* **Nuevo contacto**: Lead pipeline / New
+* **Propuesta Comercial**: Lead pipeline / Attempting
+* **Reunión agendada**: Prospección SDR / Reunión agendada, con **Crear Trato** activado
 
 ***
 

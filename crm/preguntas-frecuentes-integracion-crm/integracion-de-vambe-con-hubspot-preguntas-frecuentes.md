@@ -2,11 +2,11 @@
 
 #### ¿Qué información envía exactamente Vambe a HubSpot?
 
-Actualmente, Vambe se integra con **HubSpot Deals** y **HubSpot Tickets**. Se envía información asociada a los **tratos y tickets generados desde Vambe**, incluyendo:
+Actualmente, Vambe se integra con **HubSpot Deals**, **HubSpot Leads** y **HubSpot Tickets**. Se envía información asociada a los **tratos, leads y tickets generados desde Vambe**, incluyendo:
 
 * Campos del contacto
 * Campos del trato o ticket
-* Agentes configurados en HubSpot
+* Ejecutivos configurados en HubSpot
 
 No se envían conversaciones completas ni intenciones de compra como tal, **a menos que estas estén previamente mapeadas en campos específicos** dentro de la integración.
 
@@ -24,9 +24,17 @@ Sí. Vambe puede **actualizar contactos ya existentes** en HubSpot.
 
 ***
 
+#### ¿Vambe puede crear Leads en HubSpot?
+
+Sí. Con el **Flujo de leads**, Vambe crea un **Lead** asociado al contacto cuando el ticket entra a la primera etapa mapeada a tu pipeline de Leads, y lo mueve de etapa a medida que el ticket avanza en Vambe. Cuando el ticket llega a una etapa mapeada a un pipeline de deals con **Crear Trato** activado, Vambe crea el deal (o usa el que un vendedor ya haya creado desde ese lead) y lo asocia al lead.
+
+Revisa el paso a paso en [Cómo conectar y configurar tu CRM](../integracion-plataforma-crm/como-conectar-y-configurar-tu-crm.md).
+
+***
+
 #### ¿Vambe puede cambiar etapas del pipeline en HubSpot?
 
-No. Vambe **no modifica directamente** las etapas del pipeline de HubSpot. Sin embargo, es posible **conectar o crear un “espejo”** entre las etapas configuradas en Vambe y las etapas existentes en HubSpot.
+No. Vambe **no modifica directamente** las etapas del pipeline de HubSpot. Sin embargo, es posible **conectar o crear un “espejo”** entre las etapas configuradas en Vambe y las etapas existentes en HubSpot. Por ejemplo, en el Flujo de leads, cada cambio de etapa en Vambe mueve el lead a la etapa que mapeaste en tu pipeline de Leads.
 
 ***
 
@@ -62,6 +70,7 @@ No. La información proveniente de HubSpot **no se utiliza para segmentar respue
 Vambe requiere **permisos de lectura y escritura**, necesarios para:
 
 * Crear o actualizar contactos
+* Crear o actualizar leads
 * Crear o actualizar tratos
 * Crear o actualizar tickets
 
@@ -69,13 +78,13 @@ Vambe requiere **permisos de lectura y escritura**, necesarios para:
 
 #### ¿Qué sucede si el cliente revoca el acceso a HubSpot?
 
-La integración **deja de funcionar inmediatamente**. No se crearán ni actualizarán contactos, tratos o tickets desde Vambe hacia HubSpot.
+La integración **deja de funcionar inmediatamente**. No se crearán ni actualizarán contactos, leads, tratos o tickets desde Vambe hacia HubSpot.
 
 ***
 
 #### ¿Qué datos se almacenan y dónde?
 
-Se almacenan y sincronizan los **datos asociados a contactos, tratos y tickets** que se generan desde Vambe hacia HubSpot, de acuerdo con los campos configurados en la integración.
+Se almacenan y sincronizan los **datos asociados a contactos, leads, tratos y tickets** que se generan desde Vambe hacia HubSpot, de acuerdo con los campos configurados en la integración.
 
 ***
 

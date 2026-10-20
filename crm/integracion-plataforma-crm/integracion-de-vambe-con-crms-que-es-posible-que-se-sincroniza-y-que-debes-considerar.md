@@ -85,7 +85,7 @@ Actualmente, Vambe se integra con los siguientes CRMs:
 
 * Zoho
 * Odoo
-* HubSpot (Deals y Tickets)
+* HubSpot (Deals, Leads y Tickets)
 * Pipedrive
 * ActiveCampaign
 * Salesforce
@@ -96,14 +96,14 @@ Cada uno tiene **capacidades y limitaciones propias**, y por eso la integración
 
 La siguiente tabla resume **qué objetos se pueden crear o sincronizar desde Vambe hacia cada CRM**:
 
-| CRM                     | Leads | Contactos | Tratos / Deals |               Tags | Ejecutivos |
-| ----------------------- | ----: | --------: | -------------: | -----------------: | ---------: |
-| Zoho                    |     ❌ |         ✅ |              ✅ |                  ✅ |          ✅ |
-| Odoo                    |  🟡\* |         ✅ |              ✅ |                  ✅ |          ✅ |
-| HubSpot (Deals/Tickets) |     ❌ |         ✅ |              ✅ |                  ❌ |          ✅ |
-| Pipedrive               |     ❌ |         ✅ |              ✅ | ✅ (solo en tratos) |          ✅ |
-| ActiveCampaign          |     ❌ |         ✅ |              ✅ |                  ✅ |         🟡 |
-| Salesforce              |  🟡\* |         ✅ |              ✅ |                  ✅ |          ✅ |
+| CRM                           | Leads | Contactos | Tratos / Deals |               Tags | Ejecutivos |
+| ----------------------------- | ----: | --------: | -------------: | -----------------: | ---------: |
+| Zoho                          |     ❌ |         ✅ |              ✅ |                  ✅ |          ✅ |
+| Odoo                          |  🟡\* |         ✅ |              ✅ |                  ✅ |          ✅ |
+| HubSpot (Deals/Leads/Tickets) |     ✅ |         ✅ |              ✅ |                  ❌ |          ✅ |
+| Pipedrive                     |     ❌ |         ✅ |              ✅ | ✅ (solo en tratos) |          ✅ |
+| ActiveCampaign                |     ❌ |         ✅ |              ✅ |                  ✅ |         🟡 |
+| Salesforce                    |  🟡\* |         ✅ |              ✅ |                  ✅ |          ✅ |
 
 🟡 _En Odoo y Salesforce, el concepto de “Lead” se maneja como un Trato, no como un objeto independiente._
 
@@ -116,6 +116,7 @@ La siguiente tabla resume **qué objetos se pueden crear o sincronizar desde Vam
 * Actualmente, Vambe **no trabaja con el objeto Lead puro** en la mayoría de los CRMs.
 * Esto es intencional: muchos CRMs manejan leads de forma inconsistente o directamente no los utilizan.
 * En Odoo y Salesforce, el lead se asimila a un trato, por eso aparecen como compatibilidad parcial.
+* En **HubSpot**, Vambe sí trabaja con el objeto **Lead** a través del **Flujo de leads**: crea un lead asociado al contacto mientras el prospecto se califica, y crea el deal cuando el ticket entra a una etapa con **Crear Trato** activado. Revisa cómo configurarlo en [Cómo conectar y configurar tu CRM](como-conectar-y-configurar-tu-crm.md).
 
 👉 **Vambe trabaja principalmente con Contactos y Tratos.**
 
