@@ -49,7 +49,8 @@ Lo primero es definir qué debe pasar para que el flujo se active. Vambe ofrece 
 * **Mensaje enviado por un humano:** Se activa cuando un agente envía un mensaje.
 * **NPS/CSAT respondido:** Para tomar acciones según la calificación del cliente.
 * **Llamada finalizada:** Cuando termina una llamada con el contacto.
-* **Llamada entrante (Nuevo):** Se activa en cuanto entra una llamada a uno de los teléfonos de voz que selecciones — antes de que la llamada se conecte con nadie. Ver el detalle en Cómo armar lógica de Call Center con el nodo Llamada entrante.
+* **Llamada entrante (Nuevo):** Se activa en cuanto entra una llamada a uno de los teléfonos de voz que selecciones — antes de que la llamada se conecte con nadie. Ver el detalle en [Cómo armar lógica de Call Center con el nodo Llamada entrante](como-armar-logica-de-call-center-con-el-nodo-llamada-entrante.md).
+* **Conversación iniciada desde anuncio de WhatsApp (CTWA) (Nuevo):** Se activa apenas un contacto escribe por WhatsApp desde un anuncio Click to WhatsApp. Se elige en el trigger **Evento capturado**. Ver el detalle en [Reacciona en Workflows cuando un contacto llega desde un anuncio de WhatsApp (CTWA)](reacciona-en-workflows-cuando-un-contacto-llega-desde-un-anuncio-de-whatsapp-ctwa.md).
 * **Reacción a mensaje:** Cuando el contacto reacciona a un mensaje.
 * **Inactividad del contacto (Nuevo):** Se activa cuando el contacto lleva un tiempo definido sin enviar un mensaje.
 * **Inactividad del agente (Nuevo):** Se activa cuando el agente lleva un tiempo definido sin responder al contacto.
@@ -76,7 +77,8 @@ Tipos de condiciones disponibles:
 * **Condición de Canal:** "¿El cliente habla por Instagram o WhatsApp?".
 * **Evaluar con IA:** Usar inteligencia artificial para decidir si el cliente cumple un requisito complejo.
 * **Condición Aleatoria:** Dividir el tráfico 50/50 (A/B Testing).
-* **Condición de secuencia (Nuevo):** Ramifica el flujo según cómo terminó un nodo de tipo Secuencia —ver Secuencias: agrupa reintentos sin duplicar nodos.
+* **Condición por evento:** Evalúa si el contacto tuvo un evento determinado en un período de tiempo. Ej: "¿Tuvo una conversación iniciada desde un anuncio de WhatsApp (CTWA) en los últimos 7 días?" —ver [Reacciona en Workflows cuando un contacto llega desde un anuncio de WhatsApp (CTWA)](reacciona-en-workflows-cuando-un-contacto-llega-desde-un-anuncio-de-whatsapp-ctwa.md).
+* **Condición de secuencia (Nuevo):** Ramifica el flujo según cómo terminó un nodo de tipo Secuencia —ver [Secuencias: agrupa reintentos sin duplicar nodos](secuencias-agrupa-reintentos-sin-duplicar-nodos.md).
 
 ***
 
@@ -110,7 +112,7 @@ Finalmente, define qué hará Vambe. Puedes encadenar múltiples acciones una tr
 * **Enviar mensaje programado**
 * **Activar llamada IA**
 * **Rechazar llamada (Nuevo):** Corta la llamada entrante. Solo disponible después de un nodo **Llamada entrante**.
-* **Enrutar llamada (Nuevo):** Conecta la llamada entrante con un ejecutivo o con IA. Solo aparece si activaste "Decidir el enrutamiento en este flujo" en el nodo **Llamada entrante** —ver Cómo armar lógica de Call Center con el nodo Llamada entrante.
+* **Enrutar llamada (Nuevo):** Conecta la llamada entrante con un ejecutivo o con IA. Solo aparece si activaste "Decidir el enrutamiento en este flujo" en el nodo **Llamada entrante** —ver [Cómo armar lógica de Call Center con el nodo Llamada entrante](como-armar-logica-de-call-center-con-el-nodo-llamada-entrante.md).
 
 **Destinatarios y contenido en el nodo Enviar plantilla de email**
 
@@ -144,7 +146,7 @@ Para el contenido, puedes elegir una **plantilla** ya creada o pedirle a un **ag
 * **Agregar fila a Google Sheet**
 * **Ejecutar código**
 * **Espera**
-* **Secuencia (Nuevo):** Agrupa varios nodos que se ejecutan en orden, con esperas y condiciones de salida configurables entre cada uno —ideal para lógicas de reintento. Ver Secuencias: agrupa reintentos sin duplicar nodos.
+* **Secuencia (Nuevo):** Agrupa varios nodos que se ejecutan en orden, con esperas y condiciones de salida configurables entre cada uno —ideal para lógicas de reintento. Ver [Secuencias: agrupa reintentos sin duplicar nodos](secuencias-agrupa-reintentos-sin-duplicar-nodos.md).
 * **Cancelar flujo programado**
 * **Detener flujo**
 
@@ -212,18 +214,24 @@ El nodo de Espera cuenta con opciones de cancelación automática.
 
 #### 9. Reintentos de contacto sin duplicar nodos (Nuevo)
 
-**Trigger:** Etiqueta asignada **Acción:** Secuencia — Activar llamada IA (condición de salida: llamada contestada, espera 1 minuto si no) × 3 intentos **Condición de secuencia:** ¿Condición cumplida o Finalizada? Ver el detalle completo en Secuencias: agrupa reintentos sin duplicar nodos.
+**Trigger:** Etiqueta asignada **Acción:** Secuencia — Activar llamada IA (condición de salida: llamada contestada, espera 1 minuto si no) × 3 intentos **Condición de secuencia:** ¿Condición cumplida o Finalizada? Ver el detalle completo en [Secuencias: agrupa reintentos sin duplicar nodos](secuencias-agrupa-reintentos-sin-duplicar-nodos.md).
 
 ***
 
 #### 10. Enrutamiento de llamadas entrantes según etapa (Nuevo)
 
-**Trigger:** Llamada entrante (decidir el enrutamiento en este flujo activado) **Condición:** Condición de etapa — ¿Está en una etapa humana? **Acción (Si):** Cambiar etapa a una etapa con IA → Enrutar llamada **Acción (No):** Rechazar llamada. Ver el detalle completo en Cómo armar lógica de Call Center con el nodo Llamada entrante.
+**Trigger:** Llamada entrante (decidir el enrutamiento en este flujo activado) **Condición:** Condición de etapa — ¿Está en una etapa humana? **Acción (Si):** Cambiar etapa a una etapa con IA → Enrutar llamada **Acción (No):** Rechazar llamada. Ver el detalle completo en [Cómo armar lógica de Call Center con el nodo Llamada entrante](como-armar-logica-de-call-center-con-el-nodo-llamada-entrante.md).
 
 <figure><img src=".gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-#### 11. Modo Test
+#### 11. Bienvenida y etiquetado de leads que llegan desde un anuncio (Nuevo)
+
+**Trigger:** Evento capturado — Conversación iniciada desde anuncio de WhatsApp (CTWA) **Acción 1:** Asignar etiqueta Lead de pauta **Acción 2:** Asignar ejecutivo de ventas **Acción 3:** Enviar mensaje con IA con la bienvenida de la campaña. Ver el detalle completo en [Reacciona en Workflows cuando un contacto llega desde un anuncio de WhatsApp (CTWA)](reacciona-en-workflows-cuando-un-contacto-llega-desde-un-anuncio-de-whatsapp-ctwa.md).
+
+***
+
+#### 12. Modo Test
 
 Antes de lanzar tu workflow al público, utiliza el Modo Test para simular una conversación y ver paso a paso cómo se activan los triggers y si las condiciones se cumplen o fallan.
