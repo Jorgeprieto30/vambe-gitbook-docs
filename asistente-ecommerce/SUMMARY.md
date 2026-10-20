@@ -17,3 +17,4 @@
 * [Integración Reversso: Devoluciones Automáticas](parte-3-automatizaciones/integracion-reversso-devoluciones-automaticas.md)
 * [Integración con Envíame: Seguimiento de pedidos en tiempo real](parte-3-automatizaciones/integracion-con-enviame-seguimiento-de-pedidos-en-tiempo-real.md)
 * [Cambio de dirección de envío en Shopify](parte-3-automatizaciones/cambio-de-direccion-de-envio-en-shopify.md)
+* [Recuperación de carrito abandonado: configura tu flujo desde Vambe](parte-3-automatizaciones/recuperacion-de-carrito-abandonado-configura-tu-flujo-desde-vambe.md)
