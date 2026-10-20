@@ -1,43 +1,131 @@
-# Segmentos: identifica y activa a los contactos correctos, sin filtrar manualmente
+# Clientes y Segmentos: filtra tu base y conviértela en audiencias para tus campañas
 
-Segmentos permite construir audiencias reutilizables dentro del CRM a partir de reglas que tú defines: etapa del embudo, historial de compras, agendamientos, etiquetas, o cualquier combinación de estos criterios. En lugar de revisar contacto por contacto para determinar a quién reactivar o a quién ofrecer un nuevo producto, la condición se define una sola vez y Vambe entrega de inmediato la lista completa de los contactos que la cumplen.
+En Vambe, un segmento es una **vista filtrada de tus clientes**. Partes de toda tu base, aplicas los filtros que describen al grupo que te interesa —por ejemplo, clientes con la etiqueta «Chile» que no interactúan contigo hace más de 30 días— y guardas esa vista para volver a ella o para enviarle una campaña cuando lo necesites.
 
-> Para acceder: en el menú de la izquierda, dirígete a **CRM** y luego a **Segmentos**.
+Los segmentos son dinámicos: no guardan una lista fija de personas, sino los criterios. Cada vez que abres un segmento o que una campaña lo calcula, Vambe busca a todos los clientes que cumplen esos criterios en ese momento, así que la audiencia siempre está al día. En esta guía verás cómo filtrar tu base, guardar un segmento, enviarle una campaña y pedirle a PandAI que haga todo el proceso por ti.
 
-<figure><img src="https://310161448-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRUgcMYDLALCYrWDqh6tC%2Fuploads%2FKygP1uc7aLei16DBuvYB%2Fimage.png?alt=media&#x26;token=13dff3b0-0ff7-425d-971a-3496211128ac" alt="" width="201"><figcaption></figcaption></figure>
+> Para entrar: en el menú de la izquierda, ve a **CRM** y luego a **Clientes**. En la parte superior encontrarás dos pestañas: **Clientes**, con toda tu base, y **Segmentos**, con las vistas que has guardado.
 
-***
-
-## Qué se puede definir en un segmento
-
-Un segmento es una regla aplicada sobre la base de contactos. Es posible construir condiciones como:
-
-* Contactos que pasaron por la etapa X y también por la etapa Y del embudo.
-* Contactos que compraron el producto A hace un año.
-* Contactos que agendaron el tratamiento X hace 4 meses.
-* Contactos que llevan comprando durante los últimos 2 meses consecutivos.
-
-Estas condiciones pueden combinarse según las necesidades del negocio. Esta funcionalidad resulta particularmente útil para las verticales de e-commerce y appointments, donde permite identificar con precisión quién compró un producto determinado en un rango de fechas, o quién agendó un tratamiento específico hace un período definido, y actuar sobre esa lista de inmediato.
+<figure><img src=".gitbook/assets/segmentos-01-clientes.webp" alt="Vista Clientes con las pestañas Clientes y Segmentos, el panel de filtros a la izquierda y los botones Enviar campaña y Guardar como segmento"><figcaption></figcaption></figure>
 
 ***
 
-## Cómo crear un segmento
+## Filtra tu base de clientes
 
-Existen dos formas de crear un segmento, y ambas producen el mismo resultado.
+La pestaña **Clientes** muestra a todas las personas registradas en tu cuenta, con sus canales, etiquetas y ejecutivos responsables. A la izquierda está el panel de **Filtros**: a medida que los aplicas, la lista se actualiza y el contador superior te indica cuántos clientes cumplen los criterios (por ejemplo, «Mostrando 20 de 1.060 clientes»).
 
-La primera consiste en describirle a Pandai, en lenguaje natural, qué contactos se necesitan — por ejemplo, "contactos que agendaron un botox hace 4 meses" o "contactos que compran alimento para mascotas todos los meses". Pandai construye las reglas correspondientes y deja el segmento listo para su revisión.
+### Qué puedes filtrar
 
-La segunda es crearlo manualmente desde el formulario de segmentos, agregando las reglas de forma individual: etiquetas, etapas del embudo (si el contacto pasó por una etapa o si se encuentra actualmente en ella), canal de contacto, campos personalizados y, en cuentas que trabajan con la vertical de appointments, el tratamiento asociado. Un ejemplo simple: es posible filtrar a todos los contactos que realizaron un pedido de un producto específico entre dos fechas, y el segmento devuelve esa lista completa de inmediato.
+Los filtros están organizados en cuatro grupos:
 
-> El campo de tratamiento solo está disponible en cuentas que trabajan con la vertical de appointments; en e-commerce no aparece, ya que no aplica.
+* **Cliente**: canales, etiquetas, ejecutivos responsables, fecha de creación, última interacción y campos personalizados.
+* **Compras**: cantidad de compras y fecha de la última compra. Disponible para cuentas de e-commerce.
+* **Citas**: sucursales y condiciones de las citas. Disponible para cuentas de agendamiento.
+* **Tickets**: atributos de los tickets del cliente, como estado de vida, estado de resolución, canal, etapa actual, si pasó por una etapa, etiquetas, responsables, fecha de creación y campos.
 
-<figure><img src="https://310161448-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRUgcMYDLALCYrWDqh6tC%2Fuploads%2FZH0avSVXcfXoqRnwYw0u%2Fimage.png?alt=media&#x26;token=d4d1deb8-b81e-4e75-95ec-97307ea1009a" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/segmentos-02-grupos-filtros.webp" alt="Panel de filtros con los grupos Cliente, Compras, Citas y Tickets, y el ícono «Con algún ticket que cumpla»"><figcaption></figcaption></figure>
+
+### Cómo se combinan los filtros
+
+Todos los filtros que aplicas se suman entre sí: un cliente aparece en la lista solo si cumple con **todos** ellos. Si filtras por la etiqueta «Chile» y por una última interacción de hace más de 30 días, verás únicamente a los clientes que tienen esa etiqueta **y** que llevan ese tiempo sin interactuar.
+
+Dentro de cada filtro, en cambio, decides cómo se evalúan las opciones que eliges:
+
+* **Cualquiera**: basta con que el cliente cumpla al menos una de las opciones seleccionadas.
+* **Todas**: el cliente debe cumplir con todas las opciones seleccionadas.
+* **Ninguna**: el cliente no debe cumplir ninguna de las opciones seleccionadas.
+
+Así, por ejemplo, puedes buscar clientes que tengan la etiqueta «Chile» o «México», clientes que tengan ambas etiquetas a la vez, o clientes que no tengan ninguna de ellas. En los filtros de fecha puedes elegir entre un rango **Relativo** (desde hace y hasta hace cierta cantidad de días) o una **Fecha exacta**.
+
+<figure><img src=".gitbook/assets/segmentos-03-filtros-etiquetas.webp" alt="Filtro de Etiquetas con las opciones Cualquiera, Todas y Ninguna, y filtro de Última interacción configurado desde hace 30 días"><figcaption></figcaption></figure>
+
+### Filtros sobre los tickets del cliente
+
+Un mismo cliente puede tener varios tickets, en distintos embudos y canales. Por eso, junto al título **Tickets** del panel encontrarás unos íconos que definen cómo se aplican esos filtros: puedes indicar que basta con que **algún ticket** del cliente cumpla con los criterios, o exigir que **todos sus tickets** los cumplan. Esto te permite, por ejemplo, distinguir entre clientes que tienen al menos un ticket en una etapa determinada y clientes cuyos tickets están todos en esa etapa.
+
+***
+
+## Guarda tu vista como segmento
+
+Cuando encuentras un grupo que quieres seguir de cerca o contactar más adelante, no necesitas anotarlo ni exportarlo. Con los filtros aplicados, haz clic en **Guardar como segmento**, en la parte superior derecha.
+
+Vambe te propone automáticamente un nombre y una descripción a partir de los filtros activos —por ejemplo, «Clientes chilenos inactivos: clientes ubicados en Chile que no han interactuado en los últimos 30 días»—. Puedes ajustarlos si lo necesitas y luego haz clic en **Guardar segmento**.
+
+<figure><img src=".gitbook/assets/segmentos-04-guardar-segmento.webp" alt="Ventana Guardar como segmento con el nombre y la descripción sugeridos"><figcaption></figcaption></figure>
+
+Al guardarlo, se abre la vista del segmento: la lista de clientes que lo componen y, a la izquierda, los filtros que lo definen. En esta vista los filtros aparecen bloqueados para que no los modifiques por accidente; si quieres cambiarlos, haz clic en **Editar**, en la esquina superior derecha.
+
+<figure><img src=".gitbook/assets/segmentos-05-vista-segmento-editar.webp" alt="Vista de un segmento guardado, con sus filtros a la izquierda y el botón Editar"><figcaption></figcaption></figure>
+
+***
+
+## Consulta y administra tus segmentos
+
+En la pestaña **Segmentos** encontrarás el listado **Mis segmentos**, con todas las vistas guardadas en tu cuenta. Para cada una verás su nombre, la descripción de los criterios que la definen, quién la creó y la cantidad de clientes que la cumplen en este momento.
+
+Desde cada fila puedes:
+
+* **Ver** el segmento, para revisar quiénes lo componen y cuáles son sus filtros.
+* **Enviar una campaña** directamente a ese grupo.
+* **Eliminar** el segmento.
+
+También puedes buscar un segmento por su nombre o crear uno nuevo con **+ Crear segmento**, que te lleva a la vista de clientes para que apliques los filtros.
+
+<figure><img src=".gitbook/assets/segmentos-06-listado.webp" alt="Pestaña Segmentos con el listado Mis segmentos y las acciones de cada fila"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Como un segmento es solo una vista de clientes con filtros, trabajar entre las pestañas Clientes y Segmentos es natural: lo que filtras en una lo guardas y lo reutilizas en la otra.
+{% endhint %}
+
+### Segmentos de solo lectura
+
+Algunos segmentos creados con un formato anterior aparecen en el listado con la etiqueta **Solo lectura**. Corresponden a reglas que no tienen equivalente en los filtros actuales. Puedes abrirlos para ver a sus clientes y seguir usándolos en tus campañas, pero sus filtros no se pueden editar. Si necesitas un grupo distinto, crea un segmento nuevo con **+ Nuevo segmento**.
+
+<figure><img src=".gitbook/assets/segmentos-07-solo-lectura.webp" alt="Segmento con la etiqueta Solo lectura y el aviso «Segmento del formato anterior»"><figcaption></figcaption></figure>
+
+***
+
+## Envía una campaña a un segmento
+
+El objetivo de un segmento es poder contactar a ese grupo en el momento oportuno. Para hacerlo, haz clic en el ícono de **Enviar campaña** en la fila del segmento. También encontrarás el botón **Enviar campaña** en la parte superior de la vista Clientes.
+
+Se abrirá el formulario de creación de campaña con el segmento ya cargado: lo verás en la parte superior y, en el paso **Audiencia**, aparecerá fijo como destinatario. Solo te queda armar el flujo de contacto, definir las variables de tus plantillas y elegir cómo y cuándo sale el envío.
+
+<figure><img src=".gitbook/assets/segmentos-08-campana-audiencia.webp" alt="Formulario Creando campaña con el segmento cargado y bloqueado en el paso Audiencia"><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+El segmento es dinámico hasta que confirmas la audiencia de la campaña. En ese momento se calculan los clientes que cumplen los criterios y la audiencia de esa campaña queda fija.
+{% endhint %}
+
+Para conocer el detalle de cada paso de una campaña —flujo, audiencia y envío— revisa [Campañas: contacta a tus clientes con un flujo omnicanal](https://academy.vambe.ai/canal/campanas/campanas-contacta-a-tus-clientes-con-un-flujo-omnicanal).
+
+***
+
+## Crea segmentos y campañas con PandAI
+
+No necesitas conocer cada filtro ni cada pantalla para llegar a tus clientes. Basta con contarle a **PandAI**, en tus palabras, a quién quieres escribirle y qué quieres decirle. PandAI puede crear el segmento, la plantilla de WhatsApp y la campaña en una misma conversación.
+
+Por ejemplo, desde un embudo puedes escribirle: «Envía un mensaje a todos nuestros clientes de la industria automotriz en este embudo, invitándolos a conocer nuestra oficina, ya que queremos mostrarles nuevas implementaciones que hemos desarrollado». A partir de esa instrucción, PandAI:
+
+1. **Construye el segmento** con los criterios que describiste y te muestra cuántos clientes lo cumplen, con un acceso directo para revisarlo (**Ver segmento**).
+2. **Propone el mensaje** de la campaña tal como se verá en WhatsApp. Puedes usarlo tal cual (**Usar este mensaje**), ajustarlo (**Editar**) o elegir una plantilla que ya tengas aprobada (**Usar una plantilla existente**).
+3. **Completa el formulario de campaña**: elige el segmento, crea el paso de envío de la plantilla, selecciona el canal de WhatsApp del embudo y la etapa a la que llegará el ticket cuando el cliente responda.
+
+<figure><img src=".gitbook/assets/segmentos-09-pandai-segmento.webp" alt="Conversación con PandAI mostrando el segmento creado y el mensaje propuesto para la campaña"><figcaption></figcaption></figure>
+
+Antes de crear la campaña, PandAI te pide confirmación. Revisa que todo coincida con lo que conversaron y, cuando esté listo, la campaña queda creada. Desde el último paso del formulario eliges cómo y cuándo enviarla.
+
+<figure><img src=".gitbook/assets/segmentos-10-pandai-campana.webp" alt="Formulario de campaña completado por PandAI, con la plantilla en revisión de Meta"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Si PandAI crea una plantilla nueva, esta se envía a Meta para su aprobación. Puedes crear la campaña de inmediato: se activará en cuanto Meta apruebe la plantilla.
+{% endhint %}
 
 ***
 
 ## Segmentos RFM automáticos
 
-Además de los segmentos que creas tú —con Pandai o manualmente—, cada tienda de e-commerce conectada cuenta con 11 segmentos que Vambe calcula y actualiza solo, sin que definas ninguna regla. Aparecen agrupados bajo la etiqueta **RFM · automático** en el listado de segmentos.
+Además de los segmentos que creas tú —con PandAI o manualmente—, cada tienda de e-commerce conectada cuenta con 11 segmentos que Vambe calcula y actualiza solo, sin que definas ninguna regla. Aparecen agrupados bajo la etiqueta **RFM · automático** en el listado de segmentos.
 
 <figure><img src=".gitbook/assets/Captura de pantalla 2026-09-14 a la(s) 6.42.03 p.m. (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -76,24 +164,10 @@ El mapa completo de los 11 segmentos se lee así:
 
 ### Cómo se usan
 
-Una vez calculados, los segmentos RFM se usan exactamente igual que cualquier otro segmento: puedes previsualizar los contactos que los componen y enviarles una campaña de mensajes o llamadas con IA directamente desde el segmento.
-
-***
-
-## Consulta de segmentos
-
-Una vez creados, todos los segmentos quedan disponibles en un listado único, con su nombre, una descripción de la regla que los define, el usuario que los creó y la cantidad de contactos que califican en cada momento. Por ejemplo, un segmento como "En Touchpoint mes 1 (Nutrición)" puede agrupar miles de contactos que se encuentran actualmente en esa etapa específica del pipeline.
-
-***
-
-## Acciones disponibles sobre un segmento
-
-Sobre un segmento ya creado existen dos acciones disponibles. La primera es **previsualizar** los contactos que lo componen, para conocer el tamaño y la composición de esa audiencia antes de tomar una decisión. La segunda es **enviar una campaña** directamente desde el segmento: es posible lanzar una campaña de mensajes o activar llamadas con IA hacia todos los contactos que lo componen, sin necesidad de exportar listas ni de reconstruir la audiencia en otra herramienta.
-
-<figure><img src="https://310161448-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRUgcMYDLALCYrWDqh6tC%2Fuploads%2F4lX4aaeuYWcsxwjk6pTv%2Fimage.png?alt=media&#x26;token=641b7ab7-45f6-442d-b11a-53d434d0bff2" alt=""><figcaption></figcaption></figure>
+Una vez calculados, los segmentos RFM se usan exactamente igual que cualquier otro segmento: puedes ver los clientes que los componen y enviarles una campaña directamente desde el listado.
 
 ***
 
 ## En resumen
 
-Segmentos convierte la información disponible sobre los contactos —qué compraron, qué agendaron, en qué etapa se encuentran, o qué tan seguido y cuánto compran— en audiencias accionables, sin depender de filtros manuales ni de exportación de datos. Ya sea que el segmento lo construya Pandai, se arme regla por regla, o se calcule solo con RFM, el resultado es el mismo: identificar con precisión a quién dirigirse, y actuar de inmediato.
+Clientes y Segmentos funcionan como una sola herramienta: filtras tu base con la combinación de criterios que necesites —atributos del cliente, sus tickets, sus compras o sus citas—, guardas esa vista como segmento y la activas con una campaña en pocos clics. Y si prefieres no recorrer la interfaz, basta con decirle a PandAI a quién quieres llegar y qué quieres comunicar para que arme el segmento, el mensaje y la campaña por ti.

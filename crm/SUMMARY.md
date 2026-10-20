@@ -24,5 +24,5 @@
 
 ***
 
-* [Segmentos: identifica y activa a los contactos correctos, sin filtrar manualmente](segmentos-identifica-y-activa-a-los-contactos-correctos-sin-filtrar-manualmente.md)
+* [Clientes y Segmentos: filtra tu base y conviértela en audiencias para tus campañas](segmentos-identifica-y-activa-a-los-contactos-correctos-sin-filtrar-manualmente.md)
 * [Importar clientes: crea contactos, contactos en un canal y tickets desde una planilla](importar-clientes-crea-contactos-contactos-en-un-canal-y-tickets-desde-una-planilla.md)
