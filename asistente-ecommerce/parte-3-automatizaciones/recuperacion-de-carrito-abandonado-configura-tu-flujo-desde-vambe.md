@@ -9,7 +9,7 @@ description: >-
 
 Cada tienda conectada a Vambe tiene su propio flujo de recuperación de carritos abandonados, que puedes ver, activar y personalizar sin salir de Vambe. Detrás funciona como un **Workflow**, así que tienes libertad para elegir las plantillas, definir reintentos y enviar el mensaje solo cuando se cumplan las condiciones que tú decidas, por ejemplo, cierto monto de carrito.
 
-Esta funcionalidad está disponible para tiendas **Shopify, WooCommerce, Jumpseller y Magento**. En este artículo aprenderás a leer las métricas de recuperación, a entender el flujo que viene listo y a ajustarlo a tu estrategia.
+Esta funcionalidad está disponible para tiendas **Shopify, WooCommerce, Jumpseller, Magento y PrestaShop**. En este artículo aprenderás a leer las métricas de recuperación, a entender el flujo que viene listo y a ajustarlo a tu estrategia.
 
 {% hint style="info" %}
 **Para entrar:** en el menú de la izquierda, ve a **E-commerce** y luego a **Recuperación**. Allí haz clic en **Configuración** y selecciona tu tienda.
@@ -106,7 +106,7 @@ El indicador de salud te avisa cuando algo impide que el flujo funcione. Si una 
 Por ejemplo, una plantilla que está **En revisión** te permite guardar el flujo, pero este se mantiene inactivo. Cuando WhatsApp aprueba la plantilla, el flujo se vuelve a activar.
 
 {% hint style="warning" %}
-La detección del carrito abandonado sigue llegando desde tu tienda. En Shopify necesitas tener configurado Flow y en WooCommerce, el plugin activado. Revisa las guías de [Shopify](recuperacion-de-carritos-abandonados-en-shopify.md) y [WooCommerce](como-activar-la-recuperacion-de-carritos-abandonados-en-woocommerce.md) para dejarlo listo.
+La detección del carrito abandonado sigue llegando desde tu tienda. En Shopify necesitas tener configurado Flow; en WooCommerce, el plugin activado, y en PrestaShop, el módulo **Batch Cart** con el permiso `batchcart_abandoned_carts`. Revisa las guías de [Shopify](recuperacion-de-carritos-abandonados-en-shopify.md), [WooCommerce](como-activar-la-recuperacion-de-carritos-abandonados-en-woocommerce.md) y [PrestaShop](../parte-1-obtener-credenciales/como-conectar-tu-tienda-prestashop-con-vambe.md) para dejarlo listo.
 {% endhint %}
 
 ***
