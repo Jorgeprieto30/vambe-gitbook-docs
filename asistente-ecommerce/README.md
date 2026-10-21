@@ -2,18 +2,20 @@
 description: >-
   Transforma tu tienda online. Descubre cómo la IA gestiona tu catálogo en
   tiempo real, recupera carritos, cierra ventas y mide resultados en Shopify,
-  WooCommerce y Jumpseller.
+  WooCommerce, Jumpseller, PrestaShop y Odoo.
 ---
 
 # Asistente Ecommerce: Tu vendedor experto con IA
 
 El **Asistente Ecommerce** de Vambe no es solo un chatbot; es un vendedor entrenado capaz de conectarse directamente al "cerebro" de tu tienda online.
 
-Actualmente, soportamos integración nativa con las tres plataformas líderes del mercado:
+Actualmente, soportamos integración nativa con las principales plataformas del mercado:
 
 * 🛍️ **Shopify**
 * 🟣 **WooCommerce**
 * 🏷️ **Jumpseller**
+* 🛒 **PrestaShop**
+* 🧩 **Odoo Ecommerce**
 
 Al conectar tu tienda, habilitas a la Inteligencia Artificial para realizar el ciclo completo de venta: desde la recomendación del producto hasta el cobro y la recuperación de ventas perdidas.
 
