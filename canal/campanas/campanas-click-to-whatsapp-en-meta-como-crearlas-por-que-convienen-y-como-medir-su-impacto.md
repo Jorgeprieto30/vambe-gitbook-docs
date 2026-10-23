@@ -12,11 +12,15 @@ La campaña se crea y publica desde el Administrador de Anuncios o Meta Business
 
 ## Por qué conviene este formato
 
-### La ventana de 72 horas
+### La ventana de 7 días
 
-Cuando alguien te escribe desde un anuncio Click to WhatsApp o desde el botón de tu página de Facebook, Meta lo trata como un punto de entrada gratuito (_free entry point_). Si respondes dentro de las primeras 24 horas, se abre una ventana de 72 horas en la que los mensajes de esa conversación no tienen costo de entrega.
+Cuando alguien te escribe desde un anuncio Click to WhatsApp o desde el botón de tu página de Facebook, Meta lo trata como un punto de entrada gratuito (_free entry point_). Si respondes dentro de las primeras 24 horas, se abre una ventana de hasta 7 días (168 horas) en la que los mensajes de esa conversación —incluidas las plantillas— no tienen costo de entrega.
 
-El beneficio aplica cuando la persona entra desde el anuncio o desde el botón de la página, en Android o iOS — escritorio y web no están soportados —, y requiere que el negocio responda dentro de esas primeras 24 horas. Es política de Meta y puede cambiar.
+El beneficio aplica cuando la persona entra desde el anuncio o desde el botón de la página, en Android o iOS — escritorio y web no están soportados —, y requiere que el negocio responda dentro de esas primeras 24 horas. Cumplidos los 7 días, la conversación vuelve a regirse por las tarifas habituales de Meta, según el tipo de mensaje (servicio, utilidad o marketing). Es política de Meta y puede cambiar.
+
+{% hint style="info" %}
+La ventana de atención de 24 horas sigue vigente: para escribirle un mensaje libre al cliente, él debe haberte escrito en las últimas 24 horas. Si pasa más tiempo sin que escriba, necesitas una plantilla aprobada para retomar la conversación, y dentro de la ventana de 7 días esa plantilla tampoco tiene costo de entrega.
+{% endhint %}
 
 ### Cuatro razones para usar campañas CTWA
 
@@ -117,7 +121,7 @@ Publica y envía un mensaje de prueba para confirmar que llega al número de Wha
 {% endstepper %}
 
 {% hint style="warning" %}
-El error más frecuente ocurre en el paso de **Destino del mensaje**: **Destino automático** viene activado por defecto y envía a la persona a la app de mensajería donde más interactúa, que puede ser Messenger o Instagram en vez de WhatsApp. Cuando eso pasa, la conversación no abre la ventana de 72 horas y no queda atribuida en el embudo. Si el objetivo es WhatsApp, ese interruptor va apagado.
+El error más frecuente ocurre en el paso de **Destino del mensaje**: **Destino automático** viene activado por defecto y envía a la persona a la app de mensajería donde más interactúa, que puede ser Messenger o Instagram en vez de WhatsApp. Cuando eso pasa, la conversación no abre la ventana de 7 días y no queda atribuida en el embudo. Si el objetivo es WhatsApp, ese interruptor va apagado.
 {% endhint %}
 
 ***
@@ -126,7 +130,7 @@ El error más frecuente ocurre en el paso de **Destino del mensaje**: **Destino 
 
 El anuncio abre la puerta; lo que pasa después del clic decide si hay venta. Cuatro reglas prácticas ayudan a aprovecharlo:
 
-El **mensaje de apertura debe calzar con el creativo** — si el anuncio ofrece una evaluación gratis, el mensaje pre-llenado tiene que hablar de esa evaluación, no un genérico "Hola, quiero información". Hay que **responder en segundos, no en horas**: además de mejorar la conversión, hacerlo dentro de las primeras 24 horas es justamente la condición que deja activa la ventana de 72 horas.
+El **mensaje de apertura debe calzar con el creativo** — si el anuncio ofrece una evaluación gratis, el mensaje pre-llenado tiene que hablar de esa evaluación, no un genérico "Hola, quiero información". Hay que **responder en segundos, no en horas**: además de mejorar la conversión, hacerlo dentro de las primeras 24 horas es justamente la condición que deja activa la ventana de 7 días.
 
 También conviene **calificar en el chat**: dos o tres preguntas bien puestas separan al curioso del comprador, y esa señal es la que después alimenta las campañas. Y es mejor dar **respuestas completas en vez de muchas cortas** — consolidar la respuesta en un mensaje bien armado mejora la experiencia y ordena la operación.
 
@@ -160,7 +164,7 @@ Las campañas de Meta y Google también se pueden **crear y editar desde Vambe**
 
 ## Errores que más cuestan
 
-Además de dejar **Destino automático** encendido, hay otros errores que le cuestan caro a la campaña. **Publicar sin asistente activo** hace que el anuncio genere chats a cualquier hora; si nadie responde rápido, el lead se enfría y la ventana de 72 horas no se aprovecha. Un **creativo que no anticipa el canal** también resta: conviene decir explícito "escríbenos por WhatsApp", porque eso reduce clics accidentales y sube la calidad del chat.
+Además de dejar **Destino automático** encendido, hay otros errores que le cuestan caro a la campaña. **Publicar sin asistente activo** hace que el anuncio genere chats a cualquier hora; si nadie responde rápido, el lead se enfría y la ventana de 7 días no se aprovecha. Un **creativo que no anticipa el canal** también resta: conviene decir explícito "escríbenos por WhatsApp", porque eso reduce clics accidentales y sube la calidad del chat.
 
 Otro error frecuente es **leer "conversaciones iniciadas" como si fueran ventas** —es una métrica de apertura, no de resultado—, y **no devolver eventos de conversión**: sin esa señal, Meta optimiza a ciegas hacia quien abre chats, no hacia quien compra. Por último, **cambiar el número de destino sin avisar** rompe la continuidad de la atribución y deja campañas activas apuntando a un canal que ya no se atiende.
 
@@ -183,4 +187,4 @@ Otro error frecuente es **leer "conversaciones iniciadas" como si fueran ventas*
 
 ## En resumen
 
-El anuncio abre la puerta; la velocidad de respuesta define el resultado. Una campaña Click to WhatsApp bien configurada elimina la fricción entre el anuncio y la conversación, y aprovecha la ventana de 72 horas para calificar al lead mientras aún está caliente. Lo que separa una buena campaña de una que solo genera chats sin cerrar es lo que pasa después del clic — y esa parte del ciclo, del anuncio al cierre, es la que Vambe Ads te permite ver completa.
+El anuncio abre la puerta; la velocidad de respuesta define el resultado. Una campaña Click to WhatsApp bien configurada elimina la fricción entre el anuncio y la conversación, y aprovecha la ventana de 7 días para calificar al lead mientras aún está caliente. Lo que separa una buena campaña de una que solo genera chats sin cerrar es lo que pasa después del clic — y esa parte del ciclo, del anuncio al cierre, es la que Vambe Ads te permite ver completa.
