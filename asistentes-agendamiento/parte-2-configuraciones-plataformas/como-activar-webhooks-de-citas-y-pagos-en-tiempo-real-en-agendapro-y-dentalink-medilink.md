@@ -68,11 +68,29 @@ Con la URL copiada, sigue la guía según la plataforma que utilices.
 
 * Dentro de la sección **API Pública**, desplázate hasta **Webhooks**.
 * Haz clic en **Crear Webhook**.
+
+El modal que se abre depende de la versión de tu cuenta de AgendaPro. Sigue las indicaciones de la versión que corresponda.
+
+**AgendaPro V1**
+
 * Pega la URL que copiaste desde Vambe en el campo **URL**.
 * Verifica que el interruptor **Activo** esté encendido.
 * Haz clic en **Guardar**.
 
 ![](https://1514718626-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FhQjV55x4bDSryBoT4FYC%2Fuploads%2FNZl3BooLvfWv51OI3DH4%2Fagendapro-webhook-modal.png?alt=media)
+
+**AgendaPro V3**
+
+El modal se llama **Nuevo webhook** e incluye una lista de **Eventos** y el interruptor **Habilitado**.
+
+* Pega la URL que copiaste desde Vambe en el campo **URL**.
+* En **Eventos**, marca **booking.created** y **booking.updated**.
+* Verifica que el interruptor **Habilitado** esté encendido.
+* Haz clic en **Guardar**.
+
+{% hint style="warning" %}
+En AgendaPro V3 es importante marcar ambos eventos: **booking.created** y **booking.updated** son los que le avisan a Vambe cuando una cita se crea o cambia.
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
@@ -146,7 +164,8 @@ Listo. Desde este momento, cada vez que se cree, actualice o cambie de estado un
 
 * ❌ No usar una cuenta administrador en AgendaPro, Dentalink o Medilink.
 * ❌ Pegar una URL incompleta o distinta a la que copiaste desde Vambe.
-* ❌ En AgendaPro, dejar el interruptor **Activo** apagado.
+* ❌ En AgendaPro V1, dejar el interruptor **Activo** apagado.
+* ❌ En AgendaPro V3, guardar el webhook sin marcar los eventos **booking.created** y **booking.updated**, o con el interruptor **Habilitado** apagado.
 * ❌ No hacer clic en **Guardar** después de pegar la URL.
 * ❌ En Dentalink o Medilink, crear el proveedor pero olvidar activar las casillas de **Notificaciones** de Cita.
 * ❌ Configurar solo una cuenta o token cuando tienes varios conectados.
