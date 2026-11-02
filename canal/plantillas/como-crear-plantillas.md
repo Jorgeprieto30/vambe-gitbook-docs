@@ -7,7 +7,7 @@ coverY: 0
 
 ## Como crear plantillas
 
-En esta guía aprenderás a **crear, categorizar y configurar plantillas de WhatsApp en Vambe** para responder más rápido, abrir conversaciones cerradas (más de 24 h sin actividad), enviar campañas masivas cumpliendo las políticas de Meta o para enviar mensajes rápidos.
+En esta guía aprenderás a **crear y configurar plantillas de WhatsApp en Vambe** para responder más rápido, abrir conversaciones cerradas (más de 24 h sin actividad), enviar campañas masivas cumpliendo las políticas de Meta o enviar mensajes rápidos. Todo el formulario cabe en una sola vista y, mientras escribes, ves en un teléfono cómo recibirá el mensaje tu cliente.
 
 ***
 
@@ -44,137 +44,113 @@ Para usar plantillas necesitas:
 * En Vambe, ve al menú izquierdo.
 * Haz clic en **Canales**.
 * En el submenú, selecciona **Plantillas**.
-* Haz clic en **Crear**.
+* Haz clic en **Crear plantilla**.
 
 ![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/kPSlFrnU0n3aJZ8nv1LN/image%20png%20Dec%2001%202025%2012%2047%2007%203673%20PM.png)
 {% endstep %}
 
 {% step %}
-**Crear la plantilla**
+**Completar el formulario**
 
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/n6Rsqh8pnNvYSoRcoTAi/image%20png%20Dec%2001%202025%2012%2048%2055%206076%20PM.png)
+Se abre una sola ventana con todo lo que necesitas: a la izquierda configuras la plantilla y a la derecha ves la vista previa del teléfono, que se va actualizando a medida que escribes.
 
-Completa los siguientes campos:
+<figure><img src="../.gitbook/assets/plantillas-01 (1).webp" alt="Formulario Crear plantilla vacío, con la vista previa del teléfono a la derecha"><figcaption></figcaption></figure>
 
-**Nombre de la plantilla**
+**Nombre**
+
+Puedes escribir el nombre que prefieras. Si no lo defines, Vambe te sugiere uno automáticamente a partir del contenido de tu mensaje.
 
 * Debe ser técnico, sin espacios ni caracteres especiales.
 * Ejemplos: `recordatorio_cita`, `seguimiento_pago`, `promo_blackfriday`
 
-**Categoría**
-
-Selecciona:
-
-* **Utilidad**, para recordatorios, códigos, información importante.
-* **Marketing**, para promociones y acciones comerciales.
-
-_(Meta podría ajustar la categoría si considera que no coincide.)_
-
-**Idioma**
-
-Selecciona **Español** u otro idioma según lo necesites.
-
 **Canales**
 
-* Activa **WhatsApp**.
-* Activa también **Instagram** si deseas que la plantilla funcione en ambos canales.
-{% endstep %}
+Desplega el selector **Canales** y marca los canales donde quieres usar la plantilla. Puedes buscar por nombre o por número.
 
-{% step %}
-**Definir el contenido de la plantilla**
+<figure><img src="../.gitbook/assets/plantillas-03.webp" alt="Selector de canales con números de WhatsApp y otras plataformas"><figcaption></figcaption></figure>
 
-Aquí defines la estructura del mensaje:
+**Variante**
+
+Elige entre **Estándar**, **Carrusel** o **Flujo**. Esta guía explica la variante **Estándar**, la más usada para mensajes de texto con botones opcionales.
 
 **Encabezado (opcional)**
 
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/6CHYCF5mpq2s66VmmKR7/image%20png%20Dec%2001%202025%2001%2018%2027%209729%20PM.png)
+Puede ser texto, imagen, video o documento PDF. Si no lo necesitas, déjalo en **Ninguno**.
 
-Puede ser:
+**Cuerpo del mensaje**
 
-* Texto (incluye negrita si deseas)
-* Imagen
-* Video
-* Documento PDF
-
-**Cuerpo del mensaje (Body)**
-
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/Woa5EMTC4G9GwJUk7lVY/image%20png%20Dec%2001%202025%2001%2019%2044%201147%20PM.png)
-
-Es el contenido principal.
+Es el contenido principal, con un máximo de 1024 caracteres. Usa la barra de formato para dar estilo al texto (negrita, cursiva, tachado, listas, citas y emojis).
 
 Recomendaciones:
 
-* Claro y directo
-* Profesional pero cercano
+* Claro y directo.
+* Profesional pero cercano.
 
-Puedes incluir variables:
+**Pie de página (opcional)**
 
-* Ej.: `Hola {{1}}, tu cita está agendada para el {{2}}.`
-
-**Pie de mensaje (opcional)**
-
-Texto breve, generalmente informativo.
-
-**Botones (opcional)**
-
-Puedes agregar:
-
-* **Respuestas rápidas**
-
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/BT2f9ggfP2nR5vw3NDxG/image%20png%20Dec%2001%202025%2001%2025%2046%201538%20PM.png)
-
-* **Botón con URL**
-
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/75P3aSCJgHD0tbyuLXwC/image%20png%20Dec%2001%202025%2001%2022%2025%207995%20PM.png)
-
-* **Botón para llamar por teléfono**
-
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/JaujkVOVfNYsMSLdQ47z/image%20png%20Dec%2001%202025%2001%2027%2044%204166%20PM.png)
-
-Tip: Las variables permiten personalizar masivamente:
-
-* `{{1}} = nombre del cliente`
-* `{{2}} = fecha`
-* `{{3}} = dirección`, etc.
+Texto breve de hasta 60 caracteres, generalmente informativo. Por ejemplo: _Acepta TyC_.
 {% endstep %}
 
 {% step %}
-**Completar los ejemplos para revisión de Meta**
+**Agregar variables y completar sus ejemplos**
 
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/vgq8RIDvW6jUYPKu70ur/image%20png%20Dec%2001%202025%2001%2029%2023%207618%20PM.png)
+Las variables te permiten personalizar el mensaje para cada cliente. Hay dos formas de agregarlas:
 
-Antes de guardar, debes completar valores de ejemplo para cada variable. Esto permite que Meta entienda el contexto del mensaje.
+* Escribe el nombre de la variable en el campo junto a **Agregar variable** (por ejemplo, `nombre_cliente`) y haz clic en el botón.
+* O escríbela directamente en el texto entre llaves dobles, como `{{nombre_cliente}}`.
+
+En el cuerpo, cada variable aparece como una etiqueta que puedes quitar con la **x**.
 
 Ejemplo:
 
-* `{{1}} = Felipe`
-* `{{2}} = 25 de enero`
-* `{{3}} = Av. Kennedy 1234`
+* `Hola {{nombre_cliente}}, tu cita está agendada para el {{fecha}}.`
 
-Luego revisa la vista previa y guarda.
+Tip: usa nombres claros para cada variable (`nombre_cliente`, `fecha`, `direccion`), así será más fácil saber qué dato corresponde a cada una cuando envíes la plantilla o configures una campaña.
+
+**Ejemplos para la revisión de Meta**
+
+Antes de crear la plantilla, debes completar un valor de ejemplo para cada variable. Esto permite que Meta entienda el contexto del mensaje.
+
+Ejemplo:
+
+* `nombre_cliente` = Felipe
+* `fecha` = 25 de enero
+* `direccion` = Av. Kennedy 1234
 {% endstep %}
 
 {% step %}
-**Estado, asociación y aprobación de la plantilla**
+**Categoría y baja de promociones**
 
-Una vez creada la plantilla, todavía **no quedará lista para usar**. Antes debe ser asociada a los canales correspondientes y enviada a revisión por Meta.
+No necesitas elegir la categoría: al escribir tu mensaje, la IA de Vambe detecta si corresponde a **Marketing** o a **Utilidad** y te la muestra arriba de la vista previa. La categoría se asigna automáticamente y no se puede cambiar manualmente.
 
-**Pasos para habilitarla correctamente:**
+Si la plantilla es de **Marketing**, Vambe activa por defecto la opción **Incluir baja de promociones**, para que tus clientes puedan dejar de recibir promociones cuando quieran. Puedes mostrarla como **Pie de página** o como **Botón**, y en la vista previa verás cómo queda.
 
-* Hacer clic en **Asociar canales** en la plantilla creada
+<figure><img src="../.gitbook/assets/plantillas-02.webp" alt="Plantilla de marketing con variable de nombre y botón No recibir promociones en la vista previa"><figcaption></figcaption></figure>
 
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/tcD891rFs2qzsYg9Joje/image%20png%20Dec%2001%202025%2001%2033%2010%209326%20PM.png)
+_(Meta puede ajustar la categoría si considera que no coincide con el contenido del mensaje.)_
+{% endstep %}
 
-* Seleccionar el canal donde quieres usar la plantilla (por ejemplo, WhatsApp API).
-* Hacer clic en **Habilitar**
+{% step %}
+**Botones y permiso de llamada (opcionales)**
 
-![](https://content.gitbook.com/content/CFdmz6HrosBiYP1q1BJ6/blobs/kTExsn6PWMZL0Hnxec5D/image%20png%20Dec%2001%202025%2001%2035%2022%208917%20PM.png)
+En **Botones**, haz clic en **Agregar botón** para sumar:
+
+* **Respuestas rápidas**
+* **Botón con URL**
+* **Botón para llamar por teléfono**
+
+Al final del formulario también encontrarás **Incluir solicitud de permiso de llamada**. Esta opción solo aparece si tienes activadas las llamadas de WhatsApp en tu cuenta.
+{% endstep %}
+
+{% step %}
+**Crear y esperar la aprobación de Meta**
+
+Revisa la vista previa y haz clic en **Crear**. Como indica el aviso junto al botón, la plantilla queda sujeta a validación de Meta.
 
 Qué ocurre después:
 
-* Al habilitarla, **Vambe envía automáticamente la plantilla a revisión de Meta**.
-* El estado cambiará a **Pendiente** mientras Meta la evalúa.
-* Una vez aprobada por Meta, la plantilla quedará **lista para usar** tanto en:
+* El estado de la plantilla será **Pendiente** mientras Meta la evalúa.
+* Una vez aprobada, quedará **lista para usar** en:
   * Envíos manuales
   * Mensajes rápidos
   * Acciones automáticas
@@ -211,10 +187,10 @@ Debes utilizar una plantilla cuando:
 El envío de plantillas tiene un costo definido por Meta. Cada vez que envías una plantilla para iniciar o reactivar una conversación (fuera de la ventana de 24 horas), se genera un cobro según:
 
 * **El país del cliente:** Las tarifas varían dependiendo de la región geográfica del número receptor.
-* **El tipo de conversación:** El costo se determina por la categoría aprobada (marketing, utilidad o autenticación).
+* **El tipo de conversación:** El costo se determina por la categoría de la plantilla (marketing o utilidad).
 * **Las tarifas vigentes:** Los precios son establecidos directamente por Meta y pueden sufrir ajustes.
 
-Este cobro no depende de si el cliente responde o no; se genera de forma automática al momento de enviar la plantilla desde el sistema.
+Este cobro no depende de si el cliente responde o no; se genera de forma automática al momento de enviar la plantilla desde Vambe.
 
 👉 Te recomendamos revisar periódicamente las [tarifas oficiales de Meta](https://business.whatsapp.com/products/platform-pricing?lang=es_LA) para entender el impacto en tu facturación.
 
@@ -250,7 +226,7 @@ Solo debes elegir la plantilla que corresponda dentro de la acción automática 
 
 <summary>❌ Meta rechazó mi plantilla</summary>
 
-* Ajusta el texto o la categoría.
+* Ajusta el texto de tu mensaje y vuelve a crearla.
 * Evita promociones agresivas, claims falsos o confusos.
 
 </details>
