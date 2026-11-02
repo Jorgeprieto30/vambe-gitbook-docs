@@ -193,6 +193,30 @@ Esta opción le permite llevar la experiencia de prueba directamente a su dispos
 
 ***
 
+## Historial de pruebas
+
+Cada prueba que haces queda guardada para que puedas retomarla cuando quieras. Al hacer clic en **Nueva prueba**, Vambe conserva la conversación anterior y abre una conversación en blanco, de modo que ni tus pruebas ni las de tu equipo se pierden al probar otro escenario.
+
+El historial está disponible en el Playground general, en el test de embudo y en el test del asistente. Para abrirlo, haz clic en el ícono de historial que aparece junto a **Selecciona para probar**; desde ahí puedes alternar entre las pestañas **Embudos** y **Asistentes** según lo que quieras revisar.
+
+<figure><img src="../.gitbook/assets/probar-asistente-02-historial-pruebas.webp" alt="Historial de pruebas del asistente con la lista de pruebas guardadas, su fecha y la prueba activa"><figcaption></figcaption></figure>
+
+### Qué puedes hacer con cada prueba
+
+Cada prueba del historial muestra su nombre, la fecha de su última actividad y quién la creó, lo que resulta útil cuando varias personas de tu equipo prueban el mismo embudo. Desde la lista puedes:
+
+* **Volver a una prueba anterior y seguir conversando** con ella, retomando justo donde la dejaste.
+* **Renombrarla**, para identificarla fácilmente más adelante.
+* **Eliminarla**, cuando ya no la necesites.
+
+Estas opciones están disponibles en el menú de tres puntos que aparece junto a cada prueba.
+
+### Nombres automáticos con IA
+
+No necesitas ponerle nombre a cada prueba: Vambe la nombra sola con IA a partir del primer mensaje de la conversación, por ejemplo "Agenda una cita" o "Cotización de auto". Así encuentras rápidamente la prueba que buscas, y puedes cambiar el nombre cuando quieras.
+
+***
+
 #### Resumen general
 
 | **Método**                  | **Para qué sirve**                      | **Cuándo usarlo**                                                                                                                 |
