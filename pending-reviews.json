@@ -381,6 +381,42 @@
       "id": "mwnzrl1q_2v3oq",
       "tema": "Mejora en Interpretación de Prompts de IA",
       "created_at": "2026-11-19T20:17:20.462Z"
+    },
+    {
+      "tipo": "actualizar",
+      "path": "asistentes-ia/asistentes-con-escenarios-v3/asistentes-v3-construccion-inteligente-y-guiada-con-pandai.md",
+      "sha": "f31d2a9677484e75da302eae31e7dd1b99893b43",
+      "contenido_nuevo": "# Asistentes V3: Construcción Inteligente y Guiada con PandAI\n\nEn los Asistentes con Escenarios (V3) puedes construir y editar tu asistente conversando con PandAI: le describes qué necesitas y él crea los escenarios, define las rutas y asocia las funciones, mientras tú validas cada paso desde la previsualización en tiempo real. Gracias a las mejoras en su *self-healing* y seguridad, PandAI garantiza una construcción más robusta y un uso sin riesgos, permitiéndote confiar plenamente en la eficacia de tus asistentes.\n\nEste contenido vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "commit_message": "docs: PandAI Self-Healing – Refuerza la construcción inteligente y guiada",
+      "justificacion": "Se añade cómo el *self-healing* y la seguridad de PandAI garantizan una construcción más robusta y un uso sin riesgos de los asistentes V3.",
+      "contenido_actual": "# Asistentes V3: Construcción Inteligente y Guiada con PandAI\n\nEn los Asistentes con Escenarios (V3) puedes construir y editar tu asistente conversando con PandAI: le describes qué necesitas y él crea los escenarios, define las rutas y asocia las funciones, mientras tú validas cada paso desde la previsualización en tiempo real.\n\nEste contenido vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "id": "mwo0pgrg_1kdw5",
+      "tema": "PandAI Self-Healing y Seguridad",
+      "created_at": "2026-11-19T20:43:41.212Z"
+    },
+    {
+      "tipo": "actualizar",
+      "path": "asistentes-ia/probar-asistente/como-corregir-a-la-ia-cuando-se-equivoca-en-una-conversacion.md",
+      "sha": "7419e00bbcf237dfa2e9aa8e3ec84085dc3d2376",
+      "contenido_nuevo": "# ¿Cómo corregir a la IA cuando se equivoca en una conversación?\n\nCuando la IA comete un error en una conversación real con un cliente puedes corregirla desde esa misma conversación con PandAI, sin tener que buscar el bloque manualmente. Estas capacidades de corrección manual complementan el robusto *self-healing* de PandAI, que reduce la necesidad de intervención al mejorar su autonomía y precisión.\n\nEl paso a paso completo vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Cómo corregir a la IA cuando se equivoca en una conversación**](https://academy.vambe.ai/pandai/como-corregir-a-la-ia-cuando-se-equivoca-en-una-conversacion)\n{% endhint %}\n",
+      "commit_message": "docs: PandAI Self-Healing – Contextualiza la corrección manual con el *self-healing*",
+      "justificacion": "Se explica que las mejoras en el *self-healing* de PandAI reducen la frecuencia de errores, pero la opción de corrección manual sigue disponible para afinar los asistentes.",
+      "contenido_actual": "# ¿Cómo corregir a la IA cuando se equivoca en una conversación?\n\nCuando la IA comete un error en una conversación real con un cliente puedes corregirla desde esa misma conversación con PandAI, sin tener que buscar el bloque manualmente.\n\nEl paso a paso completo vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Cómo corregir a la IA cuando se equivoca en una conversación**](https://academy.vambe.ai/pandai/como-corregir-a-la-ia-cuando-se-equivoca-en-una-conversacion)\n{% endhint %}\n",
+      "id": "mwo0pgrg_3ryp6",
+      "tema": "PandAI Self-Healing y Seguridad",
+      "created_at": "2026-11-19T20:43:41.212Z"
+    },
+    {
+      "tipo": "actualizar",
+      "path": "embudo/gestion-de-etapas-y-asistentes-ia/paso-5-mejorar-tus-asistentes-con-pandaai.md",
+      "sha": "45cc023dd60d8899f48c2b9f3290323448cb0664",
+      "contenido_nuevo": "---\ncover: ../.gitbook/assets/Portada 21.png\ncoverY: 0\n---\n\n# Paso 5: Mejorar tus asistentes con PandAI\n\nPandAI está conectado a la información estructurada de tus asistentes y embudos, así que puede explicarte cómo funcionan, redactar mejores prompts, encontrar errores en un flujo y potenciar cualquier bloque que estés editando. Además, con sus nuevas capacidades de *self-healing* y seguridad, garantiza que tus asistentes funcionen de manera más autónoma y fiable, sin riesgos.\n\nToda la guía vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "commit_message": "docs: PandAI Self-Healing – Detalla las mejoras en asistentes",
+      "justificacion": "Se integra que el *self-healing* y la seguridad son mejoras que contribuyen a asistentes más autónomos y fiables, potenciando su funcionalidad.",
+      "contenido_actual": "---\ncover: ../.gitbook/assets/Portada 21.png\ncoverY: 0\n---\n\n# Paso 5: Mejorar tus asistentes con PandAI\n\nPandAI está conectado a la información estructurada de tus asistentes y embudos, así que puede explicarte cómo funcionan, redactar mejores prompts, encontrar errores en un flujo y potenciar cualquier bloque que estés editando.\n\nToda la guía vive ahora en la sección PandAI del Academy.\n\n{% hint style=\"info\" %}\n👉 [**Construir y mejorar tus asistentes con PandAI**](https://academy.vambe.ai/pandai/construir-y-mejorar-tus-asistentes-con-pandai)\n{% endhint %}\n",
+      "id": "mwo0pgrg_mdhlh",
+      "tema": "PandAI Self-Healing y Seguridad",
+      "created_at": "2026-11-19T20:43:41.212Z"
     }
   ]
 }
